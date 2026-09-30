@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens (colours, fonts, spacing) are defined here in step 2.
+ * Tailwind v4 reads them from the `@theme` block, so every colour in the
+ * design lives in this one file.
+ */
+
+body {
+  background: #ffffff;
+  color: #0f2a3d;
+}
