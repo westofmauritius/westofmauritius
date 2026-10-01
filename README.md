@@ -59,6 +59,15 @@ src/
   lib/              Non-UI code: content loading, SEO helpers, db, e-mail
 ```
 
+## Design system
+
+- Tokens (colours, fonts, type sizes) live in `src/app/globals.css`.
+- Fonts: Cormorant Garamond (headings, wordmark) and Inter (body), loaded in
+  `src/lib/fonts.ts` and self-hosted by `next/font`.
+- Reusable pieces live in `src/components/ui` (wordmark, buttons, cards …) and
+  `src/components/layout` (header, footer).
+- Review everything at **`/styleguide`** (internal, not indexed).
+
 ## Content rules
 
 - Anything invented for layout purposes is marked as a **placeholder**: it

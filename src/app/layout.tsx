@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import { fontVariables } from "@/lib/fonts";
 import "./globals.css";
 
-// Temporary root layout. Fonts, colours and the language-aware layout
-// (`src/app/[locale]/layout.tsx`) are added in steps 2 and 3.
+// Temporary root layout. Step 3 moves <html lang> and the header/footer into
+// the language-aware layout at `src/app/[locale]/layout.tsx`.
 export const metadata: Metadata = {
   title: "West Mauritius",
   description:
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className="h-full antialiased">
+    <html lang="en" className={`${fontVariables} h-full`}>
       <body className="flex min-h-full flex-col">{children}</body>
     </html>
   );

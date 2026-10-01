@@ -1,12 +1,122 @@
 @import "tailwindcss";
 
 /*
- * Design tokens (colours, fonts, spacing) are defined here in step 2.
- * Tailwind v4 reads them from the `@theme` block, so every colour in the
- * design lives in this one file.
+ * Design tokens.
+ *
+ * Every colour, font and type size in the design is defined here. Tailwind v4
+ * turns each `--color-*` into utilities (`bg-lagoon-500`, `text-ocean-900`,
+ * `border-sand-200` …), `--font-*` into `font-display` / `font-sans`, and
+ * `--text-*` into `text-display-1` etc. Change a value here and it changes
+ * everywhere.
+ *
+ * Contrast notes (WCAG AA needs 4.5:1 for body text):
+ *   ocean-900 on white   14.8   — default text
+ *   ink-muted on white    6.4   — secondary text
+ *   lagoon-700 on white   6.5   — turquoise text/links (lagoon-500 is 3.1, so
+ *                                 use it only for large or decorative elements)
+ *   white on coral-600    5.0   — coral buttons
+ *
+ * `static` makes Tailwind output every token as a CSS variable, even ones no
+ * class uses yet, so they can also be used directly as var(--color-…).
  */
+@theme static {
+  /* Lagoon turquoise — the shallow water inside the reef. */
+  --color-lagoon-50: #effbfa;
+  --color-lagoon-100: #d5f4f1;
+  --color-lagoon-200: #aee8e3;
+  --color-lagoon-300: #79d6cf;
+  --color-lagoon-400: #3fbcb4;
+  --color-lagoon-500: #1fa39b;
+  --color-lagoon-600: #15837d;
+  --color-lagoon-700: #146964;
+  --color-lagoon-800: #145451;
+  --color-lagoon-900: #134644;
 
-body {
-  background: #ffffff;
-  color: #0f2a3d;
+  /* Deep ocean blue — beyond the reef. Also our main text colour. */
+  --color-ocean-50: #eef5fa;
+  --color-ocean-100: #d6e6f1;
+  --color-ocean-200: #adcbe1;
+  --color-ocean-300: #7aa7c9;
+  --color-ocean-400: #4b82ab;
+  --color-ocean-500: #2e6590;
+  --color-ocean-600: #224f74;
+  --color-ocean-700: #1c3f5d;
+  --color-ocean-800: #16314a;
+  --color-ocean-900: #0f2a3d;
+  --color-ocean-950: #0a1c2a;
+
+  /* Sand beige — beaches and calm background sections. */
+  --color-sand-50: #fbf8f3;
+  --color-sand-100: #f5efe4;
+  --color-sand-200: #ece0cc;
+  --color-sand-300: #ddc8a6;
+  --color-sand-400: #c9ab7e;
+  --color-sand-500: #b38f5f;
+
+  /* Sunset coral — accents only: buttons, the sun in the logo, highlights. */
+  --color-coral-50: #fff4f1;
+  --color-coral-100: #ffe5de;
+  --color-coral-200: #ffc9bb;
+  --color-coral-300: #ffa58f;
+  --color-coral-400: #f9785c;
+  --color-coral-500: #ec5a3c;
+  --color-coral-600: #c2452b;
+  --color-coral-700: #b13521;
+
+  /* Semantic names, so components say what a colour is for. */
+  --color-ink: var(--color-ocean-900);
+  --color-ink-muted: #4a6275;
+  --color-surface: #ffffff;
+  --color-surface-alt: var(--color-sand-50);
+  --color-line: var(--color-sand-200);
+
+  /* Fonts. The CSS variables are set by next/font in src/lib/fonts.ts. */
+  --font-display: var(--font-cormorant), "Times New Roman", serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+
+  /*
+   * Display sizes for headings. clamp() scales smoothly from phone to desktop
+   * without breakpoints: clamp(min, preferred, max).
+   */
+  --text-display-1: clamp(2.75rem, 1.9rem + 4.2vw, 5.5rem);
+  --text-display-1--line-height: 1.02;
+  --text-display-1--letter-spacing: -0.01em;
+  --text-display-2: clamp(2.1rem, 1.6rem + 2.4vw, 3.75rem);
+  --text-display-2--line-height: 1.08;
+  --text-display-3: clamp(1.6rem, 1.35rem + 1.2vw, 2.4rem);
+  --text-display-3--line-height: 1.15;
+}
+
+@layer base {
+  :root {
+    /* The site is designed for a light, magazine-like look only. */
+    color-scheme: light;
+  }
+
+  body {
+    @apply bg-surface font-sans text-ink;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display font-medium text-balance;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-coral-500;
+  }
+
+  ::selection {
+    @apply bg-lagoon-200 text-ocean-950;
+  }
+}
+
+/* Small uppercase label above headings ("Guides", "Tamarin" …). Set the
+   colour where it is used, since it differs on light and dark backgrounds. */
+@utility eyebrow {
+  @apply text-xs font-medium tracking-[0.22em] uppercase;
 }
