@@ -1,4 +1,4 @@
-import { collection, config, fields } from "@keystatic/core";
+import { collection, config, fields, singleton } from "@keystatic/core";
 import type { ComponentSchema } from "@keystatic/core";
 import { routing, type Locale } from "@/i18n/routing";
 import { guideCategoryKeys } from "@/lib/guide-categories";
@@ -176,9 +176,28 @@ export default config({
   ui: {
     brand: { name: "West Mauritius" },
     navigation: {
+      Site: ["homepage"],
       Guide: ["areas", "places", "guides"],
       "Live in the West": ["living"],
     },
+  },
+  singletons: {
+    homepage: singleton({
+      label: "Start page",
+      path: "content/homepage/",
+      format: { data: "yaml" },
+      schema: {
+        hero: fields.conditional(
+          fields.checkbox({
+            label: "Use a photo at the top",
+            description:
+              "Without a photo, the start page shows an illustrated west-coast sunset. Choose a wide photo (at least 2400 px) that really shows the west coast.",
+            defaultValue: false,
+          }),
+          { true: photo("home"), false: fields.empty() },
+        ),
+      },
+    }),
   },
   collections: {
     areas: collection({

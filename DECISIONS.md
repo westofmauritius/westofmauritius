@@ -57,3 +57,15 @@ to-do list, TODO_OLIVER.md, is in Swedish.)
 
 - **Vitest** for unit tests of plain logic, **Playwright + axe** for
   end-to-end and accessibility tests in a real browser.
+
+## Start page
+
+- **Illustrated hero instead of a stock photo.** Stock photos could not be
+  verified to show the west coast of Mauritius, and the brief forbids images
+  of the wrong place. The hero is an original SVG sunset scene (a few KB,
+  sharp everywhere, no layout shift), with a separate tall framing for
+  phones. A real photo can replace it any time in Keystatic → Start page.
+- **Featured places lead the "Places to know" section**, topped up with
+  other places, so paid placements get visibility on the start page without
+  turning it into an ad grid.
+- **Organization + WebSite structured data** on the start page.

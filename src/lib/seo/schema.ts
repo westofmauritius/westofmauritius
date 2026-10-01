@@ -117,3 +117,30 @@ export function articleSchema(
     }),
   };
 }
+
+/** Who publishes the site, and the site itself (start page only). */
+export function organizationSchema(
+  brand: string,
+  locale: string,
+  homeUrl: string,
+) {
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": `${siteUrl}/#organization`,
+      name: brand,
+      url: homeUrl,
+      logo: `${siteUrl}/icon.svg`,
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website-${locale}`,
+      name: brand,
+      url: homeUrl,
+      inLanguage: locale,
+      publisher: { "@id": `${siteUrl}/#organization` },
+    },
+  ];
+}

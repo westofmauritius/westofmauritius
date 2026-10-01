@@ -24,7 +24,11 @@ describe("closedDays", () => {
   it("returns the days not covered by any row", () => {
     expect(
       closedDays([
-        { days: ["tu", "we", "th", "fr", "sa"], opens: "12:00", closes: "22:00" },
+        {
+          days: ["tu", "we", "th", "fr", "sa"],
+          opens: "12:00",
+          closes: "22:00",
+        },
         { days: ["su"], opens: "12:00", closes: "16:00" },
       ]),
     ).toEqual(["mo"]);

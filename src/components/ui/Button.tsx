@@ -1,7 +1,7 @@
 import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/cn";
 
-type Variant = "primary" | "accent" | "outline" | "light";
+type Variant = "primary" | "accent" | "outline" | "light" | "outlineLight";
 
 const variants: Record<Variant, string> = {
   // Deep ocean: the default call to action.
@@ -12,6 +12,8 @@ const variants: Record<Variant, string> = {
     "border border-ocean-900/25 text-ocean-900 hover:border-ocean-900 hover:bg-ocean-900/5",
   // For use on top of photos or dark sections.
   light: "bg-white/95 text-ocean-900 hover:bg-white",
+  outlineLight:
+    "border border-white/60 text-white hover:border-white hover:bg-white/10",
 };
 
 const base =

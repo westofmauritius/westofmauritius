@@ -15,15 +15,22 @@ describe("guide categories", () => {
   });
 
   it("translates slugs between languages", () => {
-    expect(translateCategorySlug("couchers-de-soleil", "fr", "en")).toBe("sunsets");
-    expect(translateCategorySlug("sunsets", "en", "fr")).toBe("couchers-de-soleil");
+    expect(translateCategorySlug("couchers-de-soleil", "fr", "en")).toBe(
+      "sunsets",
+    );
+    expect(translateCategorySlug("sunsets", "en", "fr")).toBe(
+      "couchers-de-soleil",
+    );
   });
 
   it("has a unique URL-safe slug per language", () => {
     for (const locale of routing.locales) {
-      const slugs = guideCategoryKeys.map((k) => guideCategories[k].slug[locale]);
+      const slugs = guideCategoryKeys.map(
+        (k) => guideCategories[k].slug[locale],
+      );
       expect(new Set(slugs).size).toBe(slugs.length);
-      for (const slug of slugs) expect(slug).toMatch(/^[a-z0-9]+(-[a-z0-9]+)*$/);
+      for (const slug of slugs)
+        expect(slug).toMatch(/^[a-z0-9]+(-[a-z0-9]+)*$/);
     }
   });
 });
