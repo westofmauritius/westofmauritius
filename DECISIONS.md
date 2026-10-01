@@ -119,3 +119,14 @@ to-do list, TODO_OLIVER.md, is in Swedish.)
   thank-you page.
 - **The live site's API cannot read `content/`**, so the content check writes
   `src/lib/generated/content-index.json` (area slugs) at build time.
+
+## Admin
+
+- **One password + signed session cookie**, no user accounts (brief: no
+  accounts in v1). HMAC-SHA256 with `ADMIN_SESSION_SECRET`, HttpOnly,
+  Secure, SameSite=Strict, 8 hours. Constant-time password check, 5
+  attempts per 15 minutes. Admin is off unless both secrets are set.
+- **Server-rendered tables with GET filters** (no client JavaScript), CSV
+  export of exactly the filtered list. CSV is Excel-safe (BOM) and
+  neutralises formula injection. The newsletter export contains only
+  confirmed, still-subscribed addresses.

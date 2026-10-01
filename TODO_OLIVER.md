@@ -48,3 +48,15 @@ att uppgifterna delas med byggherrar och mäklare. Låt en jurist granska
 texten mot GDPR och Mauritius Data Protection Act 2017 innan lansering. Om
 texten ändras: lägg till en ny version i filen i stället för att ändra den
 gamla, så att varje sparat lead visar exakt vad personen godkände.
+
+## 5. Adminsidan (/admin)
+
+Lägg till som Secrets i Cloudflare:
+
+- `ADMIN_PASSWORD` = ett långt, unikt lösenord (minst 16 tecken).
+- `ADMIN_SESSION_SECRET` = en slumpmässig sträng på minst 32 tecken (t.ex.
+  `openssl rand -hex 32`). Byter du den loggas alla ut.
+
+Logga sedan in på `https://<din-sajt>/admin`. Där ser och filtrerar du leads,
+kontaktmeddelanden och nyhetsbrevsprenumeranter, och exporterar till CSV.
+Utan dessa två inställningar är adminsidan avstängd.
