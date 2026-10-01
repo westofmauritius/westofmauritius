@@ -10,7 +10,8 @@
     "contact": "Contact",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "mainNav": "Main navigation"
+    "mainNav": "Main navigation",
+    "places": "Places"
   },
   "LanguageSwitcher": {
     "label": "Language"
@@ -71,6 +72,10 @@
     },
     "styleguide": {
       "title": "Style guide"
+    },
+    "places": {
+      "title": "Places",
+      "intro": "Restaurants, beaches, sunset spots, activities and shopping across the west coast. Search, or filter by area and theme."
     }
   },
   "ComingSoon": {
@@ -147,7 +152,11 @@
     "lastVerified": "Details last checked {date}.",
     "checkDetails": "Details can change — check with the venue before you go.",
     "moreIn": "More in {area}",
-    "photoBy": "Photo: {credit}"
+    "photoBy": "Photo: {credit}",
+    "galleryOpen": "Open photo {n} of {total}",
+    "galleryClose": "Close",
+    "galleryPrevious": "Previous photo",
+    "galleryNext": "Next photo"
   },
   "GuideCategories": {
     "restaurants": {
@@ -189,5 +198,18 @@
     "placesTitle": "Places in this guide",
     "areasTitle": "Areas in this guide",
     "moreTitle": "More {category} guides"
+  },
+  "PlacesPage": {
+    "eyebrow": "The west coast",
+    "search": "Search",
+    "searchPlaceholder": "Name, area or theme…",
+    "area": "Area",
+    "anyArea": "All areas",
+    "category": "Category",
+    "anyCategory": "All categories",
+    "featuredOnly": "Featured only",
+    "reset": "Clear filters",
+    "results": "{count} places",
+    "noResults": "No places match these filters."
   }
 }

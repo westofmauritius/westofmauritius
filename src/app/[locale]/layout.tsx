@@ -57,6 +57,7 @@ export default async function LocaleLayout({
             items={[
               { label: t("areas"), href: "/areas" },
               { label: t("guides"), href: "/guides" },
+              { label: t("places"), href: "/places" },
               { label: t("live"), href: "/live-in-the-west" },
               { label: t("about"), href: "/about" },
             ]}
@@ -75,6 +76,7 @@ export default async function LocaleLayout({
                 items: [
                   { label: t("areas"), href: "/areas" },
                   { label: t("guides"), href: "/guides" },
+                  { label: t("places"), href: "/places" },
                 ],
               },
               {

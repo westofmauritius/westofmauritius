@@ -150,10 +150,18 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       {highlights.length > 0 && (
         <section className="border-t border-line bg-sand-50 py-20 sm:py-28">
           <Container size="wide">
-            <SectionHeading
-              title={t("featuredTitle")}
-              intro={t("featuredIntro")}
-            />
+            <div className="flex flex-wrap items-end justify-between gap-6">
+              <SectionHeading
+                title={t("featuredTitle")}
+                intro={t("featuredIntro")}
+              />
+              <Link
+                href="/places"
+                className="text-sm font-medium text-lagoon-700 hover:underline"
+              >
+                {t("allPlaces")} →
+              </Link>
+            </div>
             <div className="mt-12 grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
               {highlights.map((place) => (
                 <PlaceCard

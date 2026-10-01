@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { PlaceCard } from "@/components/content/PlaceCard";
+import { PlaceGallery } from "@/components/content/PlaceGallery";
 import { Prose } from "@/components/content/Prose";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { SiteMap } from "@/components/map/SiteMap";
@@ -72,7 +73,6 @@ export default async function PlacePage({ params }: Props) {
   const category = t(`Categories.${place.category}.one`);
   const closed = closedDays(place.openingHours);
   const dateFormat = new Intl.DateTimeFormat(locale, { dateStyle: "long" });
-  const hero = place.images[0] ?? null;
 
   return (
     <>
@@ -120,19 +120,27 @@ export default async function PlacePage({ params }: Props) {
       </Container>
 
       <Container size="wide">
-        <Photo
-          photo={hero}
-          fallbackTone={place.placeholderTone}
-          fallbackLabel={place.name}
-          aspect="aspect-[4/3] sm:aspect-[16/9] lg:aspect-[21/9]"
-          sizes="100vw"
-          priority
-          credit={
-            hero?.credit
-              ? t("PlacePage.photoBy", { credit: hero.credit })
-              : undefined
-          }
-        />
+        {place.images.length > 0 ? (
+          <PlaceGallery
+            photos={place.images}
+            labels={{
+              open: t.raw("PlacePage.galleryOpen") as string,
+              close: t("PlacePage.galleryClose"),
+              previous: t("PlacePage.galleryPrevious"),
+              next: t("PlacePage.galleryNext"),
+              // Raw template: the gallery fills in {credit} per photo.
+              photoBy: t.raw("PlacePage.photoBy") as string,
+            }}
+          />
+        ) : (
+          <Photo
+            photo={null}
+            fallbackTone={place.placeholderTone}
+            fallbackLabel={place.name}
+            aspect="aspect-[4/3] sm:aspect-[16/9] lg:aspect-[21/9]"
+            sizes="100vw"
+          />
+        )}
       </Container>
 
       <Container

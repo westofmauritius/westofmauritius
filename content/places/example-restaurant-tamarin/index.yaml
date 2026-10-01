@@ -19,7 +19,35 @@ openingHours:
       - su
     opens: '12:00'
     closes: '16:00'
-images: []
+images:
+  - image: /images/places/example-restaurant-tamarin/images/0/image.svg
+    alt:
+      en:
+        text: Placeholder photo 1
+      fr:
+        text: Photo provisoire 1
+    credit: Placeholder
+  - image: /images/places/example-restaurant-tamarin/images/1/image.svg
+    alt:
+      en:
+        text: Placeholder photo 2
+      fr:
+        text: Photo provisoire 2
+    credit: Placeholder
+  - image: /images/places/example-restaurant-tamarin/images/2/image.svg
+    alt:
+      en:
+        text: Placeholder photo 3
+      fr:
+        text: Photo provisoire 3
+    credit: Placeholder
+  - image: /images/places/example-restaurant-tamarin/images/3/image.svg
+    alt:
+      en:
+        text: Placeholder photo 4
+      fr:
+        text: Photo provisoire 4
+    credit: Placeholder
 placeholderTone: sunset
 content:
   en:

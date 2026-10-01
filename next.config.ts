@@ -1,12 +1,16 @@
 import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
+import { deviceSizes, imageSizes } from "./src/lib/image-sizes";
 
 const nextConfig: NextConfig = {
   images: {
-    // Image resizing on Cloudflare needs its Images service, which is set up
-    // in the performance step (12) before real photos are added. Until then
-    // images are served as uploaded.
-    unoptimized: true,
+    // Photos are resized at build time (scripts/optimize-images.mjs) and
+    // served as static WebP files; the loader picks the right width. Free,
+    // fast, and nothing to run per request on Cloudflare.
+    loader: "custom",
+    loaderFile: "./src/lib/image-loader.ts",
+    deviceSizes,
+    imageSizes,
   },
 };
 

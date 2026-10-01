@@ -44,6 +44,7 @@ export const routing = defineRouting({
     // src/lib/guide-categories.ts and the guide's "URL in this language".
     "/guides/[category]": "/guides/[category]",
     "/guides/[category]/[slug]": "/guides/[category]/[slug]",
+    "/places": { en: "/places", fr: "/lieux" },
     "/places/[slug]": { en: "/places/[slug]", fr: "/lieux/[slug]" },
     "/live-in-the-west": { en: "/live-in-the-west", fr: "/vivre-dans-l-ouest" },
     "/live-in-the-west/[slug]": {

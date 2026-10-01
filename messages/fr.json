@@ -10,7 +10,8 @@
     "contact": "Contact",
     "openMenu": "Ouvrir le menu",
     "closeMenu": "Fermer le menu",
-    "mainNav": "Navigation principale"
+    "mainNav": "Navigation principale",
+    "places": "Adresses"
   },
   "LanguageSwitcher": {
     "label": "Langue"
@@ -71,6 +72,10 @@
     },
     "styleguide": {
       "title": "Guide de style"
+    },
+    "places": {
+      "title": "Adresses",
+      "intro": "Restaurants, plages, spots de coucher de soleil, activités et shopping sur toute la côte ouest. Cherchez, ou filtrez par région et par thème."
     }
   },
   "ComingSoon": {
@@ -147,7 +152,11 @@
     "lastVerified": "Infos vérifiées le {date}.",
     "checkDetails": "Les infos peuvent changer — vérifiez auprès de l’établissement avant de venir.",
     "moreIn": "À découvrir aussi à {area}",
-    "photoBy": "Photo : {credit}"
+    "photoBy": "Photo : {credit}",
+    "galleryOpen": "Ouvrir la photo {n} sur {total}",
+    "galleryClose": "Fermer",
+    "galleryPrevious": "Photo précédente",
+    "galleryNext": "Photo suivante"
   },
   "GuideCategories": {
     "restaurants": {
@@ -189,5 +198,18 @@
     "placesTitle": "Les adresses de ce guide",
     "areasTitle": "Les régions de ce guide",
     "moreTitle": "Autres guides : {category}"
+  },
+  "PlacesPage": {
+    "eyebrow": "La côte ouest",
+    "search": "Rechercher",
+    "searchPlaceholder": "Nom, région ou thème…",
+    "area": "Région",
+    "anyArea": "Toutes les régions",
+    "category": "Catégorie",
+    "anyCategory": "Toutes les catégories",
+    "featuredOnly": "À la une uniquement",
+    "reset": "Effacer les filtres",
+    "results": "{count} adresses",
+    "noResults": "Aucune adresse ne correspond à ces filtres."
   }
 }

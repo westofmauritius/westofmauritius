@@ -69,3 +69,19 @@ to-do list, TODO_OLIVER.md, is in Swedish.)
   other places, so paid placements get visibility on the start page without
   turning it into an ad grid.
 - **Organization + WebSite structured data** on the start page.
+
+## Places, gallery and images
+
+- **A places page with search and filters** (`/en/places`, `/fr/lieux`). All
+  cards are rendered on the server (good for SEO, works without JavaScript);
+  a small client component hides non-matching ones. Filters are stored in
+  the URL so results can be shared. No map on this page: the area and
+  category pages already have maps, and the list stays fast.
+- **Gallery in a native `<dialog>`**: the browser provides focus trapping,
+  Escape and focus return; we add arrow keys and previous/next buttons.
+- **Images resized at build time** with sharp into WebP at fixed widths
+  (`public/_img`, not in git) and served by a custom `next/image` loader.
+  Free, no per-request image service, and photos uploaded in full size
+  through Keystatic still load quickly on phones.
+- **Placeholder "photos" are SVGs labelled PLACEHOLDER PHOTO**, used only on
+  one fictional place to exercise the gallery.
