@@ -85,3 +85,15 @@ to-do list, TODO_OLIVER.md, is in Swedish.)
   through Keystatic still load quickly on phones.
 - **Placeholder "photos" are SVGs labelled PLACEHOLDER PHOTO**, used only on
   one fictional place to exercise the gallery.
+
+## Live in the West
+
+- **Structure only, as briefed:** four buying schemes (PDS, IRS, RES, Smart
+  City — names only), six area guides for buyers and two general guides,
+  each with headed sections marked "To be written". No facts about rules,
+  prices or taxes until the owner writes them.
+- **Three audiences named up front** (moving from abroad, coming home,
+  investing) so each reader recognises themselves before the content.
+- **Enquiry calls to action on the paths that lead to buying:** Live in the
+  West pages, every area page (with the area pre-selected) and every guide.
+  Each link carries its position for conversion analytics.

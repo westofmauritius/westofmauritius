@@ -1,0 +1,12 @@
+kind: area
+area: chamarel
+order: 6
+placeholder: true
+content:
+  en:
+    title: Buying in Chamarel
+    excerpt: Placeholder — to be written.
+  fr:
+    title: Acheter à Chamarel
+    slug: acheter-a-chamarel
+    excerpt: Texte provisoire — à rédiger.

@@ -81,5 +81,21 @@ export type Guide = {
   placeholderTone: PlaceholderTone;
 };
 
+export type LivingKind = "scheme" | "area" | "general";
+
+export type LivingArticle = {
+  key: string;
+  slug: string;
+  slugs: Record<string, string>;
+  kind: LivingKind;
+  areaSlug: string | null;
+  order: number;
+  title: string;
+  excerpt: string;
+  seoDescription: string;
+  placeholder: boolean;
+  updatedAt: string | null;
+};
+
 /** Detail pages also get the long text as a Markdoc tree, rendered in step 5. */
 export type WithBody<T> = T & { body: MarkdocNode };

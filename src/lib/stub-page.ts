@@ -6,7 +6,7 @@ import { resolveLocale } from "@/i18n/locale";
 import type { StaticPathname } from "@/i18n/routing";
 import { localeAlternates } from "@/lib/seo/alternates";
 
-type StubKey = "live" | "about" | "contact" | "privacy";
+type StubKey = "about" | "contact" | "privacy";
 type Props = { params: Promise<{ locale: string }> };
 
 /**

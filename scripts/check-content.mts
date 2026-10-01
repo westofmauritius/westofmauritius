@@ -126,6 +126,27 @@ async function main() {
     }
   }
 
+  // Live in the West: unique URL per language, and not one of the fixed
+  // pages that share the /live-in-the-west/… address space.
+  const reservedLivingSlugs = new Set(["enquire", "demande"]);
+  const seenLivingUrls = new Map<string, string>();
+  for (const { slug, entry } of living) {
+    for (const [locale, text] of Object.entries(entry.content)) {
+      const url = text.slug || slug;
+      if (reservedLivingSlugs.has(url)) {
+        errors.push(
+          `Live in the West "${slug}": the URL "${url}" is reserved for the enquiry form.`,
+        );
+      }
+      const other = seenLivingUrls.get(`${locale}/${url}`);
+      if (other)
+        errors.push(
+          `Live in the West "${other}" and "${slug}" both use the URL "${url}" in ${locale}.`,
+        );
+      seenLivingUrls.set(`${locale}/${url}`, slug);
+    }
+  }
+
   for (const { slug, entry } of living) {
     const label = `Live in the West "${slug}"`;
     if (entry.area && !areaSlugs.has(entry.area))

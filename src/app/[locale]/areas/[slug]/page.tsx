@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { EnquiryCta } from "@/components/content/EnquiryCta";
 import { PlaceCard } from "@/components/content/PlaceCard";
 import { Prose } from "@/components/content/Prose";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
@@ -131,6 +132,11 @@ export default async function AreaPage({ params }: Props) {
             zoom={area.mapZoom}
             markers={places.map((place) => placeMarker(place, locale))}
             className="aspect-square"
+          />
+          <EnquiryCta
+            area={{ slug: area.slug, name: area.name }}
+            position={`area-${area.slug}`}
+            className="mt-6"
           />
         </aside>
       </Container>

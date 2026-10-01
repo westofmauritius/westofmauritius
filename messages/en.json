@@ -211,5 +211,32 @@
     "reset": "Clear filters",
     "results": "{count} places",
     "noResults": "No places match these filters."
+  },
+  "LivePage": {
+    "eyebrow": "Live in the West",
+    "audienceTitle": "Who this is for",
+    "audienceAbroad": "Moving from abroad",
+    "audienceAbroadText": "You are dreaming of a life by the lagoon and want to know how buying works for foreigners.",
+    "audienceHome": "Coming home",
+    "audienceHomeText": "You are Mauritian, living in Europe, the UK or Australia, and want a home on the west coast.",
+    "audienceInvest": "Investing",
+    "audienceInvestText": "You are looking at the west coast as a place to invest, with or without living here.",
+    "schemesTitle": "Ways to buy",
+    "schemesIntro": "The schemes buyers from abroad ask about most.",
+    "areasTitle": "Buying by area",
+    "areasIntro": "What it is like to live in each corner of the west coast.",
+    "generalTitle": "Before you buy",
+    "enquireTitle": "Tell us what you are looking for",
+    "enquireText": "Share your plans and budget, and we will put you in touch with people who can help. No obligation.",
+    "enquireCta": "Start your enquiry",
+    "readMore": "Read"
+  },
+  "LiveArticle": {
+    "ctaTitle": "Thinking of buying?",
+    "ctaTitleArea": "Thinking of buying in {area}?",
+    "ctaText": "Tell us what you are looking for, and we will put you in touch with people who know the market.",
+    "ctaButton": "Start your enquiry",
+    "related": "More to read",
+    "updated": "Updated {date}"
   }
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { EnquiryCta } from "@/components/content/EnquiryCta";
 import { GuideCard } from "@/components/content/GuideCard";
 import { PlaceCard } from "@/components/content/PlaceCard";
 import { Prose } from "@/components/content/Prose";
@@ -188,6 +189,7 @@ export default async function GuidePage({ params }: Props) {
 
       <Container size="prose" className="py-14">
         <Prose node={guide.body} />
+        <EnquiryCta position={`guide-${guide.key}`} className="mt-12" />
 
         {guideAreas.length > 0 && (
           <div className="mt-12 border-t border-line pt-8">

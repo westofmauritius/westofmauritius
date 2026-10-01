@@ -1,6 +1,7 @@
 import type {
   Area,
   Guide,
+  LivingArticle,
   Place,
   PlaceCategory,
   Weekday,
@@ -143,4 +144,23 @@ export function organizationSchema(
       publisher: { "@id": `${siteUrl}/#organization` },
     },
   ];
+}
+
+export function livingArticleSchema(
+  article: LivingArticle,
+  url: string,
+  options: { locale: string; brand: string },
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.excerpt,
+    url,
+    mainEntityOfPage: url,
+    inLanguage: options.locale,
+    ...(article.updatedAt && { dateModified: article.updatedAt }),
+    author: { "@type": "Organization", name: options.brand, url: siteUrl },
+    publisher: { "@type": "Organization", name: options.brand, url: siteUrl },
+  };
 }

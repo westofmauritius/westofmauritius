@@ -1,0 +1,12 @@
+kind: area
+area: la-gaulette
+order: 4
+placeholder: true
+content:
+  en:
+    title: Buying in La Gaulette
+    excerpt: Placeholder — to be written.
+  fr:
+    title: Acheter à La Gaulette
+    slug: acheter-a-la-gaulette
+    excerpt: Texte provisoire — à rédiger.

@@ -211,5 +211,32 @@
     "reset": "Effacer les filtres",
     "results": "{count} adresses",
     "noResults": "Aucune adresse ne correspond à ces filtres."
+  },
+  "LivePage": {
+    "eyebrow": "Vivre dans l’Ouest",
+    "audienceTitle": "Pour qui",
+    "audienceAbroad": "Venir de l’étranger",
+    "audienceAbroadText": "Vous rêvez d’une vie au bord du lagon et voulez savoir comment un étranger peut acheter.",
+    "audienceHome": "Rentrer au pays",
+    "audienceHomeText": "Vous êtes Mauricien, vous vivez en Europe, au Royaume-Uni ou en Australie, et vous voulez une maison sur la côte ouest.",
+    "audienceInvest": "Investir",
+    "audienceInvestText": "Vous voyez la côte ouest comme un lieu d’investissement, que vous y viviez ou non.",
+    "schemesTitle": "Les façons d’acheter",
+    "schemesIntro": "Les dispositifs sur lesquels les acheteurs étrangers posent le plus de questions.",
+    "areasTitle": "Acheter par région",
+    "areasIntro": "À quoi ressemble la vie dans chaque coin de la côte ouest.",
+    "generalTitle": "Avant d’acheter",
+    "enquireTitle": "Dites-nous ce que vous cherchez",
+    "enquireText": "Partagez votre projet et votre budget, nous vous mettrons en relation avec des personnes qui peuvent vous aider. Sans engagement.",
+    "enquireCta": "Faire une demande",
+    "readMore": "Lire"
+  },
+  "LiveArticle": {
+    "ctaTitle": "Vous pensez acheter ?",
+    "ctaTitleArea": "Vous pensez acheter à {area} ?",
+    "ctaText": "Dites-nous ce que vous cherchez, nous vous mettrons en relation avec des personnes qui connaissent le marché.",
+    "ctaButton": "Faire une demande",
+    "related": "À lire aussi",
+    "updated": "Mis à jour le {date}"
   }
 }

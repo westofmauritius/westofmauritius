@@ -1,0 +1,10 @@
+kind: scheme
+order: 3
+placeholder: true
+content:
+  en:
+    title: RES — Real Estate Scheme
+    excerpt: Placeholder — to be written.
+  fr:
+    title: RES — Real Estate Scheme
+    excerpt: Texte provisoire — à rédiger.

@@ -1,0 +1,12 @@
+kind: area
+area: black-river
+order: 3
+placeholder: true
+content:
+  en:
+    title: Buying in Black River
+    excerpt: Placeholder — to be written.
+  fr:
+    title: Acheter à Rivière Noire
+    slug: acheter-a-riviere-noire
+    excerpt: Texte provisoire — à rédiger.

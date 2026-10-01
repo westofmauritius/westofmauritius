@@ -1,0 +1,12 @@
+kind: area
+area: le-morne
+order: 5
+placeholder: true
+content:
+  en:
+    title: Buying in Le Morne
+    excerpt: Placeholder — to be written.
+  fr:
+    title: Acheter au Morne
+    slug: acheter-au-morne
+    excerpt: Texte provisoire — à rédiger.

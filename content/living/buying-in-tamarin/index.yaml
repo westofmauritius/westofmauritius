@@ -1,0 +1,12 @@
+kind: area
+area: tamarin
+order: 2
+placeholder: true
+content:
+  en:
+    title: Buying in Tamarin
+    excerpt: Placeholder — to be written.
+  fr:
+    title: Acheter à Tamarin
+    slug: acheter-a-tamarin
+    excerpt: Texte provisoire — à rédiger.
