@@ -15,3 +15,36 @@ variables:
   `https://westmauritius.mu` när domänen är kopplad.
 
 Utan den pekar kanoniska adresser, hreflang och sitemap på `localhost`.
+
+## 2. Databas för leads (Neon, gratis)
+
+1. Skapa ett konto på <https://neon.tech> och ett projekt (region: Frankfurt
+   ligger närmast Mauritius och Europa).
+2. Kopiera "connection string" (börjar med `postgres://`).
+3. Skapa tabellerna en gång, från din dator i projektmappen:
+   `DATABASE_URL="postgres://…" npm run db:migrate`
+4. Cloudflare → westofmauritius → Settings → Variables and secrets → lägg
+   till `DATABASE_URL` som **Secret**.
+
+Utan databasen svarar formulären på den publicerade sajten "tillfälligt
+otillgängligt" i stället för att tappa leads.
+
+## 3. E-post (Resend, gratis upp till 3 000 mejl/månad)
+
+1. Skapa konto på <https://resend.com>, skapa en API-nyckel.
+2. Verifiera domänen `westmauritius.mu` i Resend (lägg in DNS-posterna de
+   visar hos din domänleverantör).
+3. Lägg till som Secrets i Cloudflare:
+   - `RESEND_API_KEY`
+   - `EMAIL_FROM` = t.ex. `West Mauritius <hello@westmauritius.mu>`
+   - `LEAD_NOTIFY_EMAIL` = adressen där du vill få nya leads
+   - `IP_HASH_SALT` = en lång slumpmässig sträng (t.ex. från
+     `openssl rand -hex 32`)
+
+## 4. Juridisk granskning av samtyckestexterna
+
+Samtyckestexten för leads (i `src/lib/forms/consent.ts`) säger uttryckligen
+att uppgifterna delas med byggherrar och mäklare. Låt en jurist granska
+texten mot GDPR och Mauritius Data Protection Act 2017 innan lansering. Om
+texten ändras: lägg till en ny version i filen i stället för att ändra den
+gamla, så att varje sparat lead visar exakt vad personen godkände.

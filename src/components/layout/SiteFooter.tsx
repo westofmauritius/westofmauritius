@@ -9,6 +9,8 @@ type SiteFooterProps = {
   columns: { title: string; items: NavItem[] }[];
   /** Small print, e.g. copyright. */
   legal: string;
+  /** Newsletter sign-up, shown above the link columns. */
+  newsletter?: React.ReactNode;
 };
 
 /** Deep-ocean footer: the "night" end of the page after the sunset colours. */
@@ -17,9 +19,20 @@ export function SiteFooter({
   tagline,
   columns,
   legal,
+  newsletter,
 }: SiteFooterProps) {
   return (
     <footer className="mt-auto bg-ocean-900 text-ocean-100">
+      {newsletter && (
+        <div className="border-b border-white/10">
+          <Container
+            size="wide"
+            className="max-w-2xl py-14 lg:max-w-7xl lg:[&>div]:max-w-xl"
+          >
+            {newsletter}
+          </Container>
+        </div>
+      )}
       <Container
         size="wide"
         className="grid gap-12 py-16 md:grid-cols-[1.5fr_repeat(3,1fr)]"

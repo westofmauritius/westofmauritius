@@ -12,6 +12,7 @@
  *
  * Run by hand with: npm run content:check
  */
+import { writeFileSync } from "node:fs";
 import { createReader } from "@keystatic/core/reader";
 import keystaticConfig from "../keystatic.config";
 
@@ -163,6 +164,14 @@ async function main() {
   );
   for (const w of warnings) console.warn(`  warning: ${w}`);
   for (const e of errors) console.error(`  ERROR: ${e}`);
+
+  // Code that runs on the live site (the form API) cannot read content/, so
+  // the facts it needs are written to a small generated file at build time.
+  const index = { areas: areas.map((a) => a.slug).sort() };
+  writeFileSync(
+    "src/lib/generated/content-index.json",
+    JSON.stringify(index, null, 2) + "\n",
+  );
 
   if (errors.length > 0) {
     console.error(

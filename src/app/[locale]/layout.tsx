@@ -3,6 +3,9 @@ import { NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
+import { FormsProvider } from "@/components/forms/FormsProvider";
+import { NewsletterForm } from "@/components/forms/NewsletterForm";
+import { consentTexts, currentConsent } from "@/lib/forms/consent";
 import { resolveLocale } from "@/i18n/locale";
 import { routing } from "@/i18n/routing";
 import { fontVariables } from "@/lib/fonts";
@@ -92,6 +95,13 @@ export default async function LocaleLayout({
                 ],
               },
             ]}
+            newsletter={
+              <FormsProvider>
+                <NewsletterForm
+                  consentText={consentTexts[currentConsent.newsletter][locale]}
+                />
+              </FormsProvider>
+            }
             legal={`© ${new Date().getFullYear()} ${brand}. ${f("rights")}`}
           />
         </NextIntlClientProvider>

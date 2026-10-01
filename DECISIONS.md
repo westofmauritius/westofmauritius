@@ -97,3 +97,25 @@ to-do list, TODO_OLIVER.md, is in Swedish.)
 - **Enquiry calls to action on the paths that lead to buying:** Live in the
   West pages, every area page (with the area pre-selected) and every guide.
   Each link carries its position for conversion analytics.
+
+## Forms, leads and e-mail
+
+- **One validation module for browser and server** (`src/lib/forms`),
+  returning error codes that each side translates. The server always
+  re-validates.
+- **Neon Postgres over HTTP** with plain parameterised SQL (no ORM): small
+  bundle, works on Workers, no SQL injection. Schema in `db/schema.sql`.
+- **In-memory store** for development and tests; a live site without a
+  database answers "temporarily unavailable" instead of losing leads.
+- **Spam protection without third parties:** honeypot field, a minimum fill
+  time (set by JavaScript), and per-visitor rate limits stored as salted IP
+  hashes (never IPs). Bots get a normal "ok" response.
+- **Versioned consent texts** stored with each lead, naming the sharing with
+  developers and agents explicitly (required for selling leads).
+- **Double opt-in newsletter** with confirm and unsubscribe links.
+- **Resend via plain fetch** (no SDK). E-mail failures never fail a form:
+  the submission is saved first.
+- **Forms work without JavaScript**: they post to the API and land on a
+  thank-you page.
+- **The live site's API cannot read `content/`**, so the content check writes
+  `src/lib/generated/content-index.json` (area slugs) at build time.

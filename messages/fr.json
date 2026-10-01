@@ -64,7 +64,7 @@
     },
     "contact": {
       "title": "Contact",
-      "intro": "Questions, conseils ou partenariats — écrivez-nous."
+      "intro": "Questions, bons plans, corrections ou partenariats — écrivez-nous."
     },
     "privacy": {
       "title": "Confidentialité",
@@ -238,5 +238,102 @@
     "ctaButton": "Faire une demande",
     "related": "À lire aussi",
     "updated": "Mis à jour le {date}"
+  },
+  "Forms": {
+    "required": "obligatoire",
+    "optional": "facultatif",
+    "errors": {
+      "required": "Merci de remplir ce champ.",
+      "email": "Merci d’indiquer une adresse e-mail valide, par ex. nom@exemple.com.",
+      "tooLong": "Ce texte est trop long.",
+      "invalid": "Merci de choisir une des options.",
+      "consent": "Merci de cocher cette case pour continuer.",
+      "phoneInvalid": "Merci d’indiquer un numéro avec des chiffres, par ex. +33 6 12 34 56 78."
+    },
+    "errorSummary": "Merci de vérifier {count} champs :",
+    "errorSummaryOne": "Merci de vérifier ce champ :",
+    "status": {
+      "sending": "Envoi…",
+      "rateLimited": "Vous avez envoyé plusieurs messages en peu de temps. Merci de réessayer dans une heure.",
+      "unavailable": "Désolé, le formulaire est momentanément indisponible. Merci de réessayer plus tard ou de nous écrire.",
+      "network": "Le message n’a pas pu être envoyé. Vérifiez votre connexion et réessayez."
+    },
+    "lead": {
+      "aboutYou": "Vous",
+      "yourPlans": "Votre projet",
+      "anythingElse": "Autre chose",
+      "name": "Nom complet",
+      "email": "E-mail",
+      "phone": "Téléphone ou WhatsApp",
+      "phoneHint": "Avec l’indicatif, par ex. +33 6 12 34 56 78",
+      "country": "Pays de résidence",
+      "countryPlaceholder": "Choisir un pays",
+      "budget": "Budget",
+      "timeframe": "Quand souhaitez-vous acheter ?",
+      "areas": "Régions qui vous intéressent",
+      "areasHint": "Choisissez celles qui vous plaisent — ou aucune si vous ne savez pas encore.",
+      "message": "Dites-nous en plus",
+      "messageHint": "Type de bien, nombre de chambres, indispensables…",
+      "newsletter": "Envoyez-moi aussi la newsletter d’Ouest Maurice (désabonnement à tout moment).",
+      "privacy": "Comment nous traitons vos données : politique de confidentialité",
+      "submit": "Envoyer ma demande",
+      "successTitle": "Merci — votre demande est partie",
+      "successText": "Nous avons bien reçu vos informations et reviendrons vers vous rapidement. Une confirmation a été envoyée à votre adresse e-mail.",
+      "consentLabel": "Consentement"
+    },
+    "budgets": {
+      "under-300k": "Moins de 300 000 €",
+      "300k-600k": "300 000 € – 600 000 €",
+      "600k-1m": "600 000 € – 1 million €",
+      "over-1m": "Plus d’1 million €",
+      "unsure": "Je ne sais pas encore"
+    },
+    "timeframes": {
+      "within-6-months": "D’ici 6 mois",
+      "6-12-months": "Dans 6 à 12 mois",
+      "1-2-years": "Dans 1 à 2 ans",
+      "just-curious": "Simple curiosité pour l’instant"
+    },
+    "contact": {
+      "name": "Nom",
+      "email": "E-mail",
+      "topic": "Objet",
+      "topics": {
+        "general": "Question générale",
+        "partnership": "Partenariat ou publicité",
+        "feedback": "Remarque ou correction"
+      },
+      "message": "Message",
+      "privacy": "Nous utilisons vos coordonnées uniquement pour vous répondre. Politique de confidentialité",
+      "submit": "Envoyer le message",
+      "successTitle": "Merci pour votre message",
+      "successText": "Nous vous répondrons dès que possible."
+    },
+    "newsletter": {
+      "title": "La côte ouest dans votre boîte mail",
+      "text": "Nouveaux guides, adresses et histoires de l’ouest de l’île Maurice. Quelques e-mails par mois, sans spam.",
+      "email": "Adresse e-mail",
+      "submit": "S’abonner",
+      "successTitle": "Presque terminé",
+      "successText": "Vérifiez votre boîte mail et cliquez sur le lien pour confirmer votre inscription."
+    }
+  },
+  "Enquire": {
+    "title": "Dites-nous ce que vous cherchez",
+    "intro": "Partagez votre projet et nous vous mettrons en relation avec des promoteurs et des agents qui peuvent vous aider. Deux minutes suffisent, sans engagement."
+  },
+  "ThankYou": {
+    "title": "Merci",
+    "lead": "Votre demande a bien été envoyée. Nous reviendrons vers vous rapidement.",
+    "contact": "Votre message a bien été envoyé. Nous vous répondrons dès que possible.",
+    "newsletter": "Vérifiez votre boîte mail et cliquez sur le lien pour confirmer votre inscription.",
+    "back": "Retour à l’accueil"
+  },
+  "NewsletterStatus": {
+    "title": "Newsletter",
+    "confirmed": "Merci — votre inscription est confirmée.",
+    "unsubscribed": "Vous êtes désabonné. Vous ne recevrez plus de newsletter.",
+    "invalid": "Ce lien n’est plus valide. Si besoin, contactez-nous.",
+    "default": "Gérez votre abonnement à partir des liens de nos e-mails."
   }
 }

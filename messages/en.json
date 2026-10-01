@@ -64,7 +64,7 @@
     },
     "contact": {
       "title": "Contact",
-      "intro": "Questions, tips or partnerships — we would love to hear from you."
+      "intro": "Questions, tips, corrections or partnerships — we would love to hear from you."
     },
     "privacy": {
       "title": "Privacy",
@@ -238,5 +238,102 @@
     "ctaButton": "Start your enquiry",
     "related": "More to read",
     "updated": "Updated {date}"
+  },
+  "Forms": {
+    "required": "required",
+    "optional": "optional",
+    "errors": {
+      "required": "Please fill this in.",
+      "email": "Please enter a valid e-mail address, e.g. name@example.com.",
+      "tooLong": "This is too long.",
+      "invalid": "Please choose one of the options.",
+      "consent": "Please tick this box to continue.",
+      "phoneInvalid": "Please enter a phone number with digits, e.g. +44 7700 900123."
+    },
+    "errorSummary": "Please check {count} fields:",
+    "errorSummaryOne": "Please check this field:",
+    "status": {
+      "sending": "Sending…",
+      "rateLimited": "You have sent several messages in a short time. Please try again in an hour.",
+      "unavailable": "Sorry, the form is temporarily unavailable. Please try again later, or e-mail us.",
+      "network": "The message could not be sent. Check your connection and try again."
+    },
+    "lead": {
+      "aboutYou": "About you",
+      "yourPlans": "Your plans",
+      "anythingElse": "Anything else",
+      "name": "Full name",
+      "email": "E-mail",
+      "phone": "Phone or WhatsApp",
+      "phoneHint": "With country code, e.g. +33 6 12 34 56 78",
+      "country": "Country you live in",
+      "countryPlaceholder": "Choose a country",
+      "budget": "Budget",
+      "timeframe": "When would you like to buy?",
+      "areas": "Areas you are interested in",
+      "areasHint": "Choose any that appeal — or none if you are not sure yet.",
+      "message": "Tell us more",
+      "messageHint": "Type of property, bedrooms, must-haves…",
+      "newsletter": "Also send me the West Mauritius newsletter (you can unsubscribe at any time).",
+      "privacy": "How we handle your data: privacy policy",
+      "submit": "Send my enquiry",
+      "successTitle": "Thank you — your enquiry is on its way",
+      "successText": "We have received your details and will be in touch soon. A confirmation has been sent to your e-mail address.",
+      "consentLabel": "Consent"
+    },
+    "budgets": {
+      "under-300k": "Under €300,000",
+      "300k-600k": "€300,000 – €600,000",
+      "600k-1m": "€600,000 – €1 million",
+      "over-1m": "Over €1 million",
+      "unsure": "Not sure yet"
+    },
+    "timeframes": {
+      "within-6-months": "Within 6 months",
+      "6-12-months": "In 6 to 12 months",
+      "1-2-years": "In 1 to 2 years",
+      "just-curious": "Just curious for now"
+    },
+    "contact": {
+      "name": "Name",
+      "email": "E-mail",
+      "topic": "Subject",
+      "topics": {
+        "general": "General question",
+        "partnership": "Partnership or advertising",
+        "feedback": "Feedback or a correction"
+      },
+      "message": "Message",
+      "privacy": "We use your details only to reply to you. Privacy policy",
+      "submit": "Send message",
+      "successTitle": "Thank you for your message",
+      "successText": "We will reply as soon as we can."
+    },
+    "newsletter": {
+      "title": "The west coast, in your inbox",
+      "text": "New guides, places and stories from the west of Mauritius. A few e-mails a month, no spam.",
+      "email": "E-mail address",
+      "submit": "Subscribe",
+      "successTitle": "Almost there",
+      "successText": "Please check your inbox and click the link to confirm your subscription."
+    }
+  },
+  "Enquire": {
+    "title": "Tell us what you are looking for",
+    "intro": "Share your plans and we will put you in touch with developers and agents who can help. It takes two minutes, and there is no obligation."
+  },
+  "ThankYou": {
+    "title": "Thank you",
+    "lead": "Your enquiry has been sent. We will be in touch soon.",
+    "contact": "Your message has been sent. We will reply as soon as we can.",
+    "newsletter": "Please check your inbox and click the link to confirm your subscription.",
+    "back": "Back to the start page"
+  },
+  "NewsletterStatus": {
+    "title": "Newsletter",
+    "confirmed": "Thank you — your subscription is confirmed.",
+    "unsubscribed": "You have been unsubscribed. You will not receive any more newsletters.",
+    "invalid": "This link is not valid any more. If you need help, please contact us.",
+    "default": "Manage your newsletter subscription from the links in our e-mails."
   }
 }
