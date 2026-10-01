@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "npm run content:check",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
@@ -12,14 +13,21 @@
     "format:check": "prettier --check .",
     "check": "npm run lint && npm run typecheck && npm run format:check",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "content:check": "tsx scripts/check-content.mts"
   },
   "dependencies": {
+    "@keystar/ui": "^0.10.0",
+    "@keystatic/core": "^0.6.9",
+    "@keystatic/next": "^5.0.5",
+    "@markdoc/markdoc": "^0.4.0",
     "@opennextjs/cloudflare": "^1.20.7",
     "next": "16.3.8",
     "next-intl": "^4.14.8",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-aria": "^3.50.0",
+    "react-dom": "19.2.8",
+    "react-stately": "^3.48.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -31,6 +39,7 @@
     "prettier": "^3.9.9",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "tailwindcss": "^4",
+    "tsx": "^4.23.15",
     "typescript": "^5",
     "wrangler": "^4.145.0"
   },

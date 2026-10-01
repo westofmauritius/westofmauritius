@@ -1,0 +1,23 @@
+name: Le Morne
+order: 5
+placeholder: true
+location:
+  lat: -20.456
+  lng: 57.313
+mapZoom: 13
+hero:
+  discriminant: false
+placeholderTone: sunset
+content:
+  en:
+    name: Le Morne
+    tagline: Placeholder tagline for Le Morne.
+    intro: >-
+      Placeholder. A two- or three-sentence introduction to Le Morne: what it
+      feels like, who it suits and the best time to visit.
+  fr:
+    name: Le Morne
+    tagline: Accroche provisoire pour Le Morne.
+    intro: >-
+      Texte provisoire. Une introduction de deux ou trois phrases sur Le Morne :
+      son ambiance, à qui le lieu plaît et la meilleure période pour venir.

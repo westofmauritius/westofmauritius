@@ -1,0 +1,23 @@
+name: Tamarin
+order: 2
+placeholder: true
+location:
+  lat: -20.326
+  lng: 57.372
+mapZoom: 13
+hero:
+  discriminant: false
+placeholderTone: sunset
+content:
+  en:
+    name: Tamarin
+    tagline: Placeholder tagline for Tamarin.
+    intro: >-
+      Placeholder. A two- or three-sentence introduction to Tamarin: what it
+      feels like, who it suits and the best time to visit.
+  fr:
+    name: Tamarin
+    tagline: Accroche provisoire pour Tamarin.
+    intro: >-
+      Texte provisoire. Une introduction de deux ou trois phrases sur Tamarin :
+      son ambiance, à qui le lieu plaît et la meilleure période pour venir.

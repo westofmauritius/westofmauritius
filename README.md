@@ -106,6 +106,17 @@ runtime; `npm run deploy` builds and deploys from your machine.
   `src/components/layout` (header, footer).
 - Review everything at **`/styleguide`** (internal, not indexed).
 
+## Content
+
+- Edited in Keystatic at `/keystatic`; stored as files in `content/`. The model
+  (fields, collections, translations) is in `keystatic.config.ts`.
+- Pages read content through `src/lib/content/` (`getAreas`, `getPlace` …),
+  which returns flat, single-language objects.
+- `npm run content:check` runs before every build and stops it if content
+  links are broken.
+- How to edit, and how to enable editing on the live site:
+  [docs/content-editing.md](docs/content-editing.md).
+
 ## Content rules
 
 - Anything invented for layout purposes is marked as a **placeholder**: it

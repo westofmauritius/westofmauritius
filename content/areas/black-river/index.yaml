@@ -1,0 +1,24 @@
+name: Black River
+order: 3
+placeholder: true
+location:
+  lat: -20.36
+  lng: 57.372
+mapZoom: 13
+hero:
+  discriminant: false
+placeholderTone: ocean
+content:
+  en:
+    name: Black River
+    tagline: Placeholder tagline for Black River.
+    intro: >-
+      Placeholder. A two- or three-sentence introduction to Black River: what it
+      feels like, who it suits and the best time to visit.
+  fr:
+    name: Rivière Noire
+    tagline: Accroche provisoire pour Rivière Noire.
+    intro: >-
+      Texte provisoire. Une introduction de deux ou trois phrases sur Rivière
+      Noire : son ambiance, à qui le lieu plaît et la meilleure période pour
+      venir.

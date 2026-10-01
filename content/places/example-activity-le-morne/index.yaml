@@ -1,0 +1,20 @@
+name: Example activity, Le Morne
+category: activity
+area: le-morne
+placeholder: true
+featured: false
+location:
+  lat: -20.453
+  lng: 57.317
+openingHours: []
+images: []
+placeholderTone: lagoon
+content:
+  en:
+    summary: >-
+      Placeholder. A fictional activity used to test the layout — not a real
+      business.
+  fr:
+    summary: >-
+      Texte provisoire. Un activité fictif pour tester la mise en page — pas un
+      vrai établissement.

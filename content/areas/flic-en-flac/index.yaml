@@ -1,0 +1,24 @@
+name: Flic en Flac
+order: 1
+placeholder: true
+location:
+  lat: -20.274
+  lng: 57.371
+mapZoom: 13
+hero:
+  discriminant: false
+placeholderTone: lagoon
+content:
+  en:
+    name: Flic en Flac
+    tagline: Placeholder tagline for Flic en Flac.
+    intro: >-
+      Placeholder. A two- or three-sentence introduction to Flic en Flac: what
+      it feels like, who it suits and the best time to visit.
+  fr:
+    name: Flic en Flac
+    tagline: Accroche provisoire pour Flic en Flac.
+    intro: >-
+      Texte provisoire. Une introduction de deux ou trois phrases sur Flic en
+      Flac : son ambiance, à qui le lieu plaît et la meilleure période pour
+      venir.

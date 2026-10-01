@@ -1,0 +1,24 @@
+name: La Gaulette
+order: 4
+placeholder: true
+location:
+  lat: -20.425
+  lng: 57.36
+mapZoom: 13
+hero:
+  discriminant: false
+placeholderTone: lagoon
+content:
+  en:
+    name: La Gaulette
+    tagline: Placeholder tagline for La Gaulette.
+    intro: >-
+      Placeholder. A two- or three-sentence introduction to La Gaulette: what it
+      feels like, who it suits and the best time to visit.
+  fr:
+    name: La Gaulette
+    tagline: Accroche provisoire pour La Gaulette.
+    intro: >-
+      Texte provisoire. Une introduction de deux ou trois phrases sur La
+      Gaulette : son ambiance, à qui le lieu plaît et la meilleure période pour
+      venir.

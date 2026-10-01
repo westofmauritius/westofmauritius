@@ -1,0 +1,23 @@
+name: Chamarel
+order: 6
+placeholder: true
+location:
+  lat: -20.427
+  lng: 57.388
+mapZoom: 13
+hero:
+  discriminant: false
+placeholderTone: sand
+content:
+  en:
+    name: Chamarel
+    tagline: Placeholder tagline for Chamarel.
+    intro: >-
+      Placeholder. A two- or three-sentence introduction to Chamarel: what it
+      feels like, who it suits and the best time to visit.
+  fr:
+    name: Chamarel
+    tagline: Accroche provisoire pour Chamarel.
+    intro: >-
+      Texte provisoire. Une introduction de deux ou trois phrases sur Chamarel :
+      son ambiance, à qui le lieu plaît et la meilleure période pour venir.
