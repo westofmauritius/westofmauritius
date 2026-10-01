@@ -20,7 +20,7 @@ export default async function AdminLoginPage({
   return (
     <main className="flex min-h-screen items-center justify-center px-4">
       <div className="w-full max-w-sm rounded-sm bg-white p-8 shadow-sm ring-1 ring-line">
-        <Wordmark name="West Mauritius" className="text-xl" />
+        <Wordmark name="West of Mauritius" className="text-xl" />
         <h1 className="mt-8 text-3xl">Admin</h1>
         {!adminConfigured() ? (
           <p className="mt-4 text-sm leading-relaxed text-ink-muted">

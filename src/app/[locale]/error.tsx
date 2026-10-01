@@ -10,13 +10,13 @@ import { Container } from "@/components/ui/Container";
 const texts = {
   en: {
     title: "Something went wrong",
-    body: "Sorry — this page could not be shown. Please try again in a moment.",
+    body: "Sorry, this page could not be shown. Please try again in a moment.",
     retry: "Try again",
     home: "Back to the start page",
   },
   fr: {
     title: "Un problème est survenu",
-    body: "Désolé — cette page n’a pas pu s’afficher. Merci de réessayer dans un instant.",
+    body: "Désolé, cette page n’a pas pu s’afficher. Merci de réessayer dans un instant.",
     retry: "Réessayer",
     home: "Retour à l’accueil",
   },

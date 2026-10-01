@@ -3,7 +3,7 @@ import { fontVariables } from "@/lib/fonts";
 import "../globals.css";
 
 export const metadata: Metadata = {
-  title: "Admin · West Mauritius",
+  title: "Admin · West of Mauritius",
   robots: { index: false, follow: false },
 };
 

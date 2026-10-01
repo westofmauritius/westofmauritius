@@ -21,7 +21,7 @@ export default async function ProtectedAdminLayout({
       <header className="border-b border-line bg-white">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 py-4 sm:px-6">
           <div className="flex items-center gap-6">
-            <Wordmark name="West Mauritius" className="text-lg" />
+            <Wordmark name="West of Mauritius" className="text-lg" />
             <nav aria-label="Admin">
               <ul className="flex flex-wrap gap-4 text-sm">
                 {tabs.map((tab) => (

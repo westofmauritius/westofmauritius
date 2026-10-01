@@ -8,19 +8,26 @@ location:
   lng: 57.3774
 address: Coastal Road, Tamarin
 openingHours: []
-images: []
+images:
+  - image: /images/places/tamarin-salt-pans/images/0/image.jpg
+    alt:
+      en:
+        text: The Tamarin salt pans seen from above, a patchwork of shallow basins
+      fr:
+        text: Les salines de Tamarin vues du ciel, un damier de bassins peu profonds
+    credit: Arne Müseler · CC BY-SA 3.0 de · Wikimedia Commons
+    creditUrl: https://commons.wikimedia.org/wiki/File:Mauritius_tamarin_salt_fields.jpg
 placeholderTone: sand
 content:
   en:
     name: Tamarin salt pans
     summary: >-
-      Shallow basins where seawater was left to evaporate in the sun — for a
-      long time the island's main source of salt, and a piece of coastal
-      heritage.
+      Shallow basins where seawater was left to evaporate in the sun, for a long
+      time the island's main source of salt, and a piece of coastal heritage.
     hoursNote: Visible from the road. Ask before entering the basins.
   fr:
     name: Salines de Tamarin
     summary: >-
-      Des bassins peu profonds où l’eau de mer s’évaporait au soleil — longtemps
+      Des bassins peu profonds où l’eau de mer s’évaporait au soleil, longtemps
       la principale source de sel de l’île, et un morceau de patrimoine côtier.
     hoursNote: Visibles depuis la route. Demandez avant d’entrer dans les bassins.

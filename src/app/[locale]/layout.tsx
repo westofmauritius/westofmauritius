@@ -123,6 +123,7 @@ export default async function LocaleLayout({
                 item(f("privacy"), "/privacy"),
                 item(f("cookies"), "/cookies"),
                 item(f("terms"), "/terms"),
+                item(f("credits"), "/credits"),
               ],
             },
           ]}

@@ -22,9 +22,9 @@ test("lead form: shows errors, pre-selects the area, then sends", async ({
 
   await waitLikeAHuman(page);
   await page.getByLabel(/Nom complet/).fill("Marie Test");
-  await page.getByLabel(/^E-mail/).fill("marie@example.com");
+  await page.getByLabel(/^Email/).fill("marie@example.com");
   await page.getByLabel(/Pays de résidence/).selectOption("FR");
-  await page.getByRole("radio", { name: "300 000 € – 600 000 €" }).check();
+  await page.getByRole("radio", { name: "300 000 € à 600 000 €" }).check();
   await page.getByRole("radio", { name: "Dans 1 à 2 ans" }).check();
   await page.locator("#lead-consent").check();
   await page.getByRole("button", { name: "Envoyer ma demande" }).click();
@@ -38,7 +38,7 @@ test("contact form sends a message", async ({ page }) => {
   // Scoped to the page content: the footer has its own e-mail field (newsletter).
   const main = page.getByRole("main");
   await main.getByLabel(/^Name/).fill("Sam Test");
-  await main.getByLabel(/^E-mail/).fill("sam@example.com");
+  await main.getByLabel(/^Email/).fill("sam@example.com");
   await main.getByLabel(/^Subject/).selectOption("feedback");
   await main.getByLabel(/^Message/).fill("Lovely site.");
   await main.getByRole("button", { name: "Send message" }).click();
@@ -53,7 +53,7 @@ test("newsletter sign-up asks for consent, then confirms by e-mail", async ({
   await page.goto("/en/areas");
   const footer = page.getByRole("contentinfo");
   await waitLikeAHuman(page);
-  await footer.getByLabel(/E-mail address/).fill("reader@example.com");
+  await footer.getByLabel(/Email address/).fill("reader@example.com");
   await footer.getByRole("button", { name: "Subscribe" }).click();
   await expect(
     footer.getByText("Please tick this box to continue."),

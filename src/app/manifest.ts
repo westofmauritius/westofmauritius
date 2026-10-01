@@ -3,8 +3,8 @@ import type { MetadataRoute } from "next";
 /** Web app manifest: name, colours and icons when the site is saved to a home screen. */
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "West Mauritius",
-    short_name: "West Mauritius",
+    name: "West of Mauritius",
+    short_name: "West of Mauritius",
     description:
       "Restaurants, beaches, sunsets and living on the west coast of Mauritius.",
     start_url: "/",

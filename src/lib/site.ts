@@ -2,7 +2,7 @@ import type { Locale } from "@/i18n/routing";
 
 /** The brand name shown in each language. */
 export const brandName: Record<Locale, string> = {
-  en: "West Mauritius",
+  en: "West of Mauritius",
   fr: "Ouest Maurice",
 };
 

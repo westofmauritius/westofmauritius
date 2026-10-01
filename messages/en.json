@@ -26,12 +26,13 @@
     "rights": "All rights reserved.",
     "cookies": "Cookies",
     "terms": "Terms of use",
-    "planTrip": "Plan your trip"
+    "planTrip": "Plan your trip",
+    "credits": "Photo credits"
   },
   "Home": {
     "eyebrow": "The west coast of Mauritius",
     "title": "Lagoons, mountains and the island’s finest sunsets",
-    "intro": "Where to eat, swim and watch the sun go down — and what it takes to make the west coast home.",
+    "intro": "Where to eat, swim and watch the sun go down, and what it takes to make the west coast home.",
     "ctaGuides": "Explore the guides",
     "ctaLive": "Live in the West",
     "areasTitle": "Six places, one coast",
@@ -45,7 +46,7 @@
     "allGuides": "All guides",
     "liveEyebrow": "Live in the West",
     "liveTitle": "Dreaming of a home by the lagoon?",
-    "liveText": "Whether you are moving from abroad or coming home, we explain how buying property on the west coast works — and put you in touch with people who can help.",
+    "liveText": "Whether you are moving from abroad or coming home, we explain how buying property on the west coast works, and put you in touch with people who can help.",
     "liveCta": "How buying works",
     "liveEnquire": "Tell us what you are looking for"
   },
@@ -56,7 +57,7 @@
     },
     "guides": {
       "title": "Guides",
-      "intro": "Beaches, sunsets, walks, places to eat and shop — and everything practical for a stay on the west coast."
+      "intro": "Beaches, sunsets, walks, places to eat and shop, and everything practical for a stay on the west coast."
     },
     "live": {
       "title": "Live in the West",
@@ -68,7 +69,7 @@
     },
     "contact": {
       "title": "Contact",
-      "intro": "Questions, tips, corrections or partnerships — we would love to hear from you."
+      "intro": "Questions, tips, corrections or partnerships? We would love to hear from you."
     },
     "privacy": {
       "title": "Privacy",
@@ -151,14 +152,15 @@
     "phone": "Phone",
     "directions": "Get directions",
     "lastVerified": "Details last checked {date}.",
-    "checkDetails": "Details can change — check with the venue before you go.",
+    "checkDetails": "Details can change, so check with the venue before you go.",
     "moreIn": "More in {area}",
     "photoBy": "Photo: {credit}",
     "galleryOpen": "Open photo {n} of {total}",
     "galleryClose": "Close",
     "galleryPrevious": "Previous photo",
     "galleryNext": "Next photo",
-    "inGuides": "In our guides"
+    "inGuides": "In our guides",
+    "hoursRange": "{opens} to {closes}"
   },
   "GuideCategories": {
     "restaurants": {
@@ -255,7 +257,7 @@
     "optional": "optional",
     "errors": {
       "required": "Please fill this in.",
-      "email": "Please enter a valid e-mail address, e.g. name@example.com.",
+      "email": "Please enter a valid email address, e.g. name@example.com.",
       "tooLong": "This is too long.",
       "invalid": "Please choose one of the options.",
       "consent": "Please tick this box to continue.",
@@ -266,7 +268,7 @@
     "status": {
       "sending": "Sending…",
       "rateLimited": "You have sent several messages in a short time. Please try again in an hour.",
-      "unavailable": "Sorry, the form is temporarily unavailable. Please try again later, or e-mail us.",
+      "unavailable": "Sorry, the form is temporarily unavailable. Please try again later, or email us.",
       "network": "The message could not be sent. Check your connection and try again."
     },
     "lead": {
@@ -274,7 +276,7 @@
       "yourPlans": "Your plans",
       "anythingElse": "Anything else",
       "name": "Full name",
-      "email": "E-mail",
+      "email": "Email",
       "phone": "Phone or WhatsApp",
       "phoneHint": "With country code, e.g. +33 6 12 34 56 78",
       "country": "Country you live in",
@@ -282,20 +284,20 @@
       "budget": "Budget",
       "timeframe": "When would you like to buy?",
       "areas": "Areas you are interested in",
-      "areasHint": "Choose any that appeal — or none if you are not sure yet.",
+      "areasHint": "Choose any that appeal, or none if you are not sure yet.",
       "message": "Tell us more",
-      "messageHint": "Type of property, bedrooms, must-haves…",
-      "newsletter": "Also send me the West Mauritius newsletter (you can unsubscribe at any time).",
+      "messageHint": "Type of property, bedrooms, essentials…",
+      "newsletter": "Also send me the West of Mauritius newsletter (you can unsubscribe at any time).",
       "privacy": "How we handle your data: privacy policy",
       "submit": "Send my enquiry",
-      "successTitle": "Thank you — your enquiry is on its way",
-      "successText": "We have received your details and will be in touch soon. A confirmation has been sent to your e-mail address.",
+      "successTitle": "Thank you, your enquiry is on its way",
+      "successText": "We have received your details and will be in touch soon. A confirmation has been sent to your email address.",
       "consentLabel": "Consent"
     },
     "budgets": {
       "under-300k": "Under €300,000",
-      "300k-600k": "€300,000 – €600,000",
-      "600k-1m": "€600,000 – €1 million",
+      "300k-600k": "€300,000 to €600,000",
+      "600k-1m": "€600,000 to €1 million",
       "over-1m": "Over €1 million",
       "unsure": "Not sure yet"
     },
@@ -307,7 +309,7 @@
     },
     "contact": {
       "name": "Name",
-      "email": "E-mail",
+      "email": "Email",
       "topic": "Subject",
       "topics": {
         "general": "General question",
@@ -318,12 +320,13 @@
       "privacy": "We use your details only to reply to you. Privacy policy",
       "submit": "Send message",
       "successTitle": "Thank you for your message",
-      "successText": "We will reply as soon as we can."
+      "successText": "We will reply as soon as we can.",
+      "topicPlaceholder": "Choose a subject"
     },
     "newsletter": {
       "title": "The west coast, in your inbox",
-      "text": "New guides, places and stories from the west of Mauritius. A few e-mails a month, no spam.",
-      "email": "E-mail address",
+      "text": "New guides, places and stories from the west of Mauritius. A few emails a month, no spam.",
+      "email": "Email address",
       "submit": "Subscribe",
       "successTitle": "Almost there",
       "successText": "Please check your inbox and click the link to confirm your subscription."
@@ -342,9 +345,18 @@
   },
   "NewsletterStatus": {
     "title": "Newsletter",
-    "confirmed": "Thank you — your subscription is confirmed.",
+    "confirmed": "Thank you, your subscription is confirmed.",
     "unsubscribed": "You have been unsubscribed. You will not receive any more newsletters.",
     "invalid": "This link is not valid any more. If you need help, please contact us.",
-    "default": "Manage your newsletter subscription from the links in our e-mails."
+    "default": "Manage your newsletter subscription from the links in our emails."
+  },
+  "CreditsPage": {
+    "title": "Photo credits",
+    "intro": "The photographers whose work appears on this site, with the licence of each photo and a link to the original.",
+    "shows": "Shows",
+    "by": "Photo by {name}",
+    "licence": "Licence: {licence}",
+    "source": "View the original",
+    "none": "No photos yet."
   }
 }

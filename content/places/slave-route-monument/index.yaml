@@ -8,7 +8,19 @@ location:
   lat: -20.4524
   lng: 57.3144
 openingHours: []
-images: []
+images:
+  - image: /images/places/slave-route-monument/images/0/image.jpg
+    alt:
+      en:
+        text: >-
+          Le Morne Brabant above the palm trees, at the foot of which the
+          memorial stands
+      fr:
+        text: >-
+          Le Morne Brabant au loin derrière les palmiers, au pied duquel se
+          trouve le mémorial
+    credit: Cristian Lorini · CC BY-SA 3.0 · Wikimedia Commons
+    creditUrl: https://commons.wikimedia.org/wiki/File:Le_Morne_-_panoramio.jpg
 placeholderTone: ocean
 content:
   en:

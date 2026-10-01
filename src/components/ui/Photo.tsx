@@ -14,15 +14,12 @@ type PhotoProps = {
   sizes: string;
   /** Load immediately (for the main image at the top of a page). */
   priority?: boolean;
-  /** Credit line, e.g. "Photo: Jane Doe · CC BY 2.0". Links to the photo's
-   * source page when it has one (Creative Commons licences ask for that). */
-  credit?: string;
   className?: string;
 };
 
 /**
  * A content photo, or the labelled placeholder gradient while there is none.
- * The photographer credit is shown on the image when given.
+ * Photographers are credited on the photo credits page, not on the image.
  */
 export function Photo({
   photo,
@@ -31,7 +28,6 @@ export function Photo({
   aspect,
   sizes,
   priority,
-  credit,
   className,
 }: PhotoProps) {
   if (!photo) {
@@ -55,22 +51,6 @@ export function Photo({
         priority={priority}
         className="object-cover"
       />
-      {credit && (
-        <figcaption className="absolute right-2 bottom-2 max-w-[calc(100%-1rem)] truncate rounded-sm bg-black/60 px-2 py-0.5 text-[0.6875rem] text-white">
-          {photo.creditUrl ? (
-            <a
-              href={photo.creditUrl}
-              rel="noopener"
-              target="_blank"
-              className="underline-offset-2 hover:underline"
-            >
-              {credit}
-            </a>
-          ) : (
-            credit
-          )}
-        </figcaption>
-      )}
     </figure>
   );
 }

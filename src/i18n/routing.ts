@@ -65,6 +65,7 @@ export const routing = defineRouting({
     "/privacy": { en: "/privacy", fr: "/confidentialite" },
     "/cookies": "/cookies",
     "/terms": { en: "/terms", fr: "/conditions" },
+    "/credits": "/credits",
     "/thank-you": { en: "/thank-you", fr: "/merci" },
     "/newsletter": "/newsletter",
     "/styleguide": "/styleguide",

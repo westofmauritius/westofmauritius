@@ -1,4 +1,4 @@
-# West Mauritius
+# West of Mauritius
 
 Source code for **westmauritius.mu** (English) and, later, **ouestmaurice.mu**
 (French): a premium lifestyle and travel guide to the west coast of

@@ -92,7 +92,7 @@ export function ContactForm() {
         form={FORM}
         name="topic"
         label={labels.topic}
-        placeholder="—"
+        placeholder={t("contact.topicPlaceholder")}
         options={contactTopics.map((v) => ({
           value: v,
           label: t(`contact.topics.${v}`),

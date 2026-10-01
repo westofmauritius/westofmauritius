@@ -26,12 +26,13 @@
     "rights": "Tous droits réservés.",
     "cookies": "Cookies",
     "terms": "Conditions d’utilisation",
-    "planTrip": "Préparer son voyage"
+    "planTrip": "Préparer son voyage",
+    "credits": "Crédits photo"
   },
   "Home": {
     "eyebrow": "La côte ouest de l’île Maurice",
     "title": "Lagons, montagnes et les plus beaux couchers de soleil de l’île",
-    "intro": "Où manger, se baigner et regarder le soleil se coucher — et comment faire de la côte ouest son chez-soi.",
+    "intro": "Où manger, se baigner et regarder le soleil se coucher, et comment s’installer sur la côte ouest.",
     "ctaGuides": "Découvrir les guides",
     "ctaLive": "Vivre dans l’Ouest",
     "areasTitle": "Six lieux, une côte",
@@ -45,9 +46,9 @@
     "allGuides": "Tous les guides",
     "liveEyebrow": "Vivre dans l’Ouest",
     "liveTitle": "Vous rêvez d’une maison au bord du lagon ?",
-    "liveText": "Que vous veniez de l’étranger ou que vous rentriez au pays, nous expliquons comment acheter un bien sur la côte ouest — et vous mettons en relation avec les bonnes personnes.",
+    "liveText": "Que vous veniez de l’étranger ou que vous rentriez au pays, nous expliquons comment acheter un bien sur la côte ouest, et vous mettons en relation avec les bonnes personnes.",
     "liveCta": "Comment acheter",
-    "liveEnquire": "Dites-nous ce que vous cherchez"
+    "liveEnquire": "Décrivez votre projet"
   },
   "Pages": {
     "areas": {
@@ -56,7 +57,7 @@
     },
     "guides": {
       "title": "Guides",
-      "intro": "Plages, couchers de soleil, randonnées, restaurants et boutiques — et tout le côté pratique d’un séjour sur la côte ouest."
+      "intro": "Plages, couchers de soleil, randonnées, restaurants et boutiques, et tout le côté pratique d’un séjour sur la côte ouest."
     },
     "live": {
       "title": "Vivre dans l’Ouest",
@@ -68,7 +69,7 @@
     },
     "contact": {
       "title": "Contact",
-      "intro": "Questions, bons plans, corrections ou partenariats — écrivez-nous."
+      "intro": "Questions, bons plans, corrections ou partenariats : nous vous lisons."
     },
     "privacy": {
       "title": "Confidentialité",
@@ -151,14 +152,15 @@
     "phone": "Téléphone",
     "directions": "Itinéraire",
     "lastVerified": "Infos vérifiées le {date}.",
-    "checkDetails": "Les infos peuvent changer — vérifiez auprès de l’établissement avant de venir.",
+    "checkDetails": "Les infos peuvent changer : vérifiez auprès de l’établissement avant de venir.",
     "moreIn": "À découvrir aussi à {area}",
     "photoBy": "Photo : {credit}",
     "galleryOpen": "Ouvrir la photo {n} sur {total}",
     "galleryClose": "Fermer",
     "galleryPrevious": "Photo précédente",
     "galleryNext": "Photo suivante",
-    "inGuides": "Dans nos guides"
+    "inGuides": "Dans nos guides",
+    "hoursRange": "{opens} à {closes}"
   },
   "GuideCategories": {
     "restaurants": {
@@ -229,7 +231,7 @@
     "audienceAbroad": "Venir de l’étranger",
     "audienceAbroadText": "Vous rêvez d’une vie au bord du lagon et voulez savoir comment un étranger peut acheter.",
     "audienceHome": "Rentrer au pays",
-    "audienceHomeText": "Vous êtes Mauricien, vous vivez en Europe, au Royaume-Uni ou en Australie, et vous voulez une maison sur la côte ouest.",
+    "audienceHomeText": "Vous êtes Mauricien, vous vivez en Europe ou en Australie, et vous voulez une maison sur la côte ouest.",
     "audienceInvest": "Investir",
     "audienceInvestText": "Vous voyez la côte ouest comme un lieu d’investissement, que vous y viviez ou non.",
     "schemesTitle": "Les façons d’acheter",
@@ -237,7 +239,7 @@
     "areasTitle": "Acheter par région",
     "areasIntro": "À quoi ressemble la vie dans chaque coin de la côte ouest.",
     "generalTitle": "Avant d’acheter",
-    "enquireTitle": "Dites-nous ce que vous cherchez",
+    "enquireTitle": "Décrivez votre projet",
     "enquireText": "Partagez votre projet et votre budget, nous vous mettrons en relation avec des personnes qui peuvent vous aider. Sans engagement.",
     "enquireCta": "Faire une demande",
     "readMore": "Lire"
@@ -245,7 +247,7 @@
   "LiveArticle": {
     "ctaTitle": "Vous pensez acheter ?",
     "ctaTitleArea": "Vous pensez acheter à {area} ?",
-    "ctaText": "Dites-nous ce que vous cherchez, nous vous mettrons en relation avec des personnes qui connaissent le marché.",
+    "ctaText": "Décrivez votre projet, nous vous mettrons en relation avec des personnes qui connaissent le marché.",
     "ctaButton": "Faire une demande",
     "related": "À lire aussi",
     "updated": "Mis à jour le {date}"
@@ -255,7 +257,7 @@
     "optional": "facultatif",
     "errors": {
       "required": "Merci de remplir ce champ.",
-      "email": "Merci d’indiquer une adresse e-mail valide, par ex. nom@exemple.com.",
+      "email": "Merci d’indiquer une adresse email valide, par ex. nom@exemple.com.",
       "tooLong": "Ce texte est trop long.",
       "invalid": "Merci de choisir une des options.",
       "consent": "Merci de cocher cette case pour continuer.",
@@ -274,28 +276,28 @@
       "yourPlans": "Votre projet",
       "anythingElse": "Autre chose",
       "name": "Nom complet",
-      "email": "E-mail",
+      "email": "Email",
       "phone": "Téléphone ou WhatsApp",
       "phoneHint": "Avec l’indicatif, par ex. +33 6 12 34 56 78",
       "country": "Pays de résidence",
       "countryPlaceholder": "Choisir un pays",
       "budget": "Budget",
-      "timeframe": "Quand souhaitez-vous acheter ?",
+      "timeframe": "Horizon d’achat",
       "areas": "Régions qui vous intéressent",
-      "areasHint": "Choisissez celles qui vous plaisent — ou aucune si vous ne savez pas encore.",
-      "message": "Dites-nous en plus",
+      "areasHint": "Choisissez celles qui vous plaisent, ou aucune si vous ne savez pas encore.",
+      "message": "Précisions",
       "messageHint": "Type de bien, nombre de chambres, indispensables…",
-      "newsletter": "Envoyez-moi aussi la newsletter d’Ouest Maurice (désabonnement à tout moment).",
+      "newsletter": "Je souhaite aussi recevoir la newsletter d’Ouest Maurice (désabonnement à tout moment).",
       "privacy": "Comment nous traitons vos données : politique de confidentialité",
       "submit": "Envoyer ma demande",
-      "successTitle": "Merci — votre demande est partie",
-      "successText": "Nous avons bien reçu vos informations et reviendrons vers vous rapidement. Une confirmation a été envoyée à votre adresse e-mail.",
+      "successTitle": "Merci, votre demande est partie",
+      "successText": "Nous avons bien reçu vos informations et reviendrons vers vous rapidement. Une confirmation a été envoyée à votre adresse email.",
       "consentLabel": "Consentement"
     },
     "budgets": {
       "under-300k": "Moins de 300 000 €",
-      "300k-600k": "300 000 € – 600 000 €",
-      "600k-1m": "600 000 € – 1 million €",
+      "300k-600k": "300 000 € à 600 000 €",
+      "600k-1m": "600 000 € à 1 million €",
       "over-1m": "Plus d’1 million €",
       "unsure": "Je ne sais pas encore"
     },
@@ -307,7 +309,7 @@
     },
     "contact": {
       "name": "Nom",
-      "email": "E-mail",
+      "email": "Email",
       "topic": "Objet",
       "topics": {
         "general": "Question générale",
@@ -318,19 +320,20 @@
       "privacy": "Nous utilisons vos coordonnées uniquement pour vous répondre. Politique de confidentialité",
       "submit": "Envoyer le message",
       "successTitle": "Merci pour votre message",
-      "successText": "Nous vous répondrons dès que possible."
+      "successText": "Nous vous répondrons dès que possible.",
+      "topicPlaceholder": "Choisir un sujet"
     },
     "newsletter": {
       "title": "La côte ouest dans votre boîte mail",
-      "text": "Nouveaux guides, adresses et histoires de l’ouest de l’île Maurice. Quelques e-mails par mois, sans spam.",
-      "email": "Adresse e-mail",
+      "text": "Nouveaux guides, adresses et histoires de l’ouest de l’île Maurice. Quelques messages par mois, sans spam.",
+      "email": "Adresse email",
       "submit": "S’abonner",
       "successTitle": "Presque terminé",
       "successText": "Vérifiez votre boîte mail et cliquez sur le lien pour confirmer votre inscription."
     }
   },
   "Enquire": {
-    "title": "Dites-nous ce que vous cherchez",
+    "title": "Décrivez votre projet",
     "intro": "Partagez votre projet et nous vous mettrons en relation avec des promoteurs et des agents qui peuvent vous aider. Deux minutes suffisent, sans engagement."
   },
   "ThankYou": {
@@ -342,9 +345,18 @@
   },
   "NewsletterStatus": {
     "title": "Newsletter",
-    "confirmed": "Merci — votre inscription est confirmée.",
+    "confirmed": "Merci, votre inscription est confirmée.",
     "unsubscribed": "Vous êtes désabonné. Vous ne recevrez plus de newsletter.",
-    "invalid": "Ce lien n’est plus valide. Si besoin, contactez-nous.",
-    "default": "Gérez votre abonnement à partir des liens de nos e-mails."
+    "invalid": "Ce lien n’est plus valide. Si besoin, passez par la page contact.",
+    "default": "Gérez votre abonnement à partir des liens de nos messages."
+  },
+  "CreditsPage": {
+    "title": "Crédits photo",
+    "intro": "Les photographes dont les images illustrent ce site, avec la licence de chaque photo et un lien vers l’original.",
+    "shows": "Montre",
+    "by": "Photo de {name}",
+    "licence": "Licence : {licence}",
+    "source": "Voir l’original",
+    "none": "Pas encore de photos."
   }
 }

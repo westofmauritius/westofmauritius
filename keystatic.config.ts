@@ -209,7 +209,7 @@ const time = (label: string) =>
 export default config({
   storage,
   ui: {
-    brand: { name: "West Mauritius" },
+    brand: { name: "West of Mauritius" },
     navigation: {
       Site: ["homepage", "about", "privacy", "cookies", "terms"],
       Guide: ["areas", "places", "guides"],

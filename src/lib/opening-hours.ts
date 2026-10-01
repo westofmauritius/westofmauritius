@@ -42,7 +42,7 @@ export function formatDays(days: Weekday[], locale: Locale): string {
   return runs
     .map((run) =>
       run.length >= 3
-        ? `${dayName(run[0], locale)}–${dayName(run.at(-1)!, locale)}`
+        ? `${dayName(run[0], locale)} ${locale === "fr" ? "à" : "to"} ${dayName(run.at(-1)!, locale)}`
         : run.map((d) => dayName(d, locale)).join(", "),
     )
     .join(", ");

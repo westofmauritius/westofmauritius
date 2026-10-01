@@ -30,7 +30,7 @@ export async function GET(
     csv = toCsv(leads, [
       { header: "Received (UTC)", value: (l) => l.createdAt },
       { header: "Name", value: (l) => l.name },
-      { header: "E-mail", value: (l) => l.email },
+      { header: "Email", value: (l) => l.email },
       { header: "Phone / WhatsApp", value: (l) => l.phone },
       { header: "Country", value: (l) => l.country },
       { header: "Budget", value: (l) => budgetLabel(l.budget) },
@@ -47,7 +47,7 @@ export async function GET(
     csv = toCsv(messages, [
       { header: "Received (UTC)", value: (m) => m.createdAt },
       { header: "Name", value: (m) => m.name },
-      { header: "E-mail", value: (m) => m.email },
+      { header: "Email", value: (m) => m.email },
       { header: "Topic", value: (m) => topicLabel(m.topic) },
       { header: "Message", value: (m) => m.message },
       { header: "Language", value: (m) => m.locale },
@@ -58,7 +58,7 @@ export async function GET(
       (s) => s.confirmedAt && !s.unsubscribedAt,
     );
     csv = toCsv(subscribers, [
-      { header: "E-mail", value: (s) => s.email },
+      { header: "Email", value: (s) => s.email },
       { header: "Language", value: (s) => s.locale },
       { header: "Confirmed (UTC)", value: (s) => s.confirmedAt },
     ]);

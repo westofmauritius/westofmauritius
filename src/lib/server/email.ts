@@ -17,7 +17,7 @@ type Email = {
 export async function sendEmail(email: Email): Promise<boolean> {
   const key = process.env.RESEND_API_KEY;
   const from =
-    process.env.EMAIL_FROM ?? "West Mauritius <onboarding@resend.dev>";
+    process.env.EMAIL_FROM ?? "West of Mauritius <onboarding@resend.dev>";
   if (!key) {
     console.info(
       `[email not sent: RESEND_API_KEY missing] To: ${email.to} — ${email.subject}`,

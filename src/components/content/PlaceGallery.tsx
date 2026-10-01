@@ -11,8 +11,6 @@ type GalleryLabels = {
   close: string;
   previous: string;
   next: string;
-  /** e.g. "Photo: {credit}" */
-  photoBy: string;
 };
 
 type PlaceGalleryProps = {
@@ -64,11 +62,6 @@ export function PlaceGallery({ photos, labels }: PlaceGalleryProps) {
           sizes="100vw"
           className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
         />
-        {main.credit && (
-          <span className="absolute right-2 bottom-2 rounded-sm bg-black/35 px-2 py-0.5 text-[0.625rem] text-white">
-            {fill(labels.photoBy, { credit: main.credit })}
-          </span>
-        )}
       </button>
 
       {rest.length > 0 && (
@@ -118,20 +111,6 @@ export function PlaceGallery({ photos, labels }: PlaceGalleryProps) {
             )}
             <figcaption className="mt-3 text-center text-sm text-ocean-100">
               {photo.alt}
-              {photo.credit && " · "}
-              {photo.credit &&
-                (photo.creditUrl ? (
-                  <a
-                    href={photo.creditUrl}
-                    rel="noopener"
-                    target="_blank"
-                    className="underline underline-offset-2 hover:text-white"
-                  >
-                    {fill(labels.photoBy, { credit: photo.credit })}
-                  </a>
-                ) : (
-                  fill(labels.photoBy, { credit: photo.credit })
-                ))}
               <span className="ml-3 text-ocean-300 tabular-nums">
                 {current + 1} / {total}
               </span>

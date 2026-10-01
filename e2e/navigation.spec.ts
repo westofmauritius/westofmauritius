@@ -2,7 +2,7 @@ import { expect, test } from "@playwright/test";
 
 test("the start page leads to an area and on to a place", async ({ page }) => {
   await page.goto("/en");
-  await expect(page).toHaveTitle(/West Mauritius/);
+  await expect(page).toHaveTitle(/West of Mauritius/);
   await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
 
   await page
@@ -90,4 +90,34 @@ test("the guides have an RSS feed per language", async ({ request }) => {
   expect(xml).toContain("/fr/guides/plages/plages-de-la-cote-ouest");
   // Placeholder guides are not announced.
   expect(xml).not.toContain("exemple");
+});
+
+test("no dashes or hyphens in the visible text", async ({ page }) => {
+  // The owner wants none: they read as machine-written. Spot-check a few
+  // text-heavy pages in both languages (URLs and code are not text).
+  for (const url of [
+    "/en",
+    "/fr",
+    "/en/areas/le-morne",
+    "/fr/guides/preparer-son-voyage/preparer-un-sejour-cote-ouest",
+    "/en/places/martello-tower-la-preneuse",
+    "/fr/vivre-dans-l-ouest/demande",
+  ]) {
+    await page.goto(url);
+    const text = await page.locator("body").innerText();
+    expect(text, url).not.toMatch(/[‒-―]|\p{L}-\p{L}/u);
+  }
+});
+
+test("photo credits live on their own page, not on the photos", async ({
+  page,
+}) => {
+  await page.goto("/en/places/chamarel-falls");
+  await expect(page.getByText(/Wikimedia Commons/)).toHaveCount(0);
+  await page
+    .getByRole("contentinfo")
+    .getByRole("link", { name: "Photo credits" })
+    .click();
+  await expect(page).toHaveURL(/\/en\/credits$/);
+  await expect(page.getByText(/Licence: CC/).first()).toBeVisible();
 });

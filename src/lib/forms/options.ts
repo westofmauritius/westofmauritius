@@ -56,7 +56,9 @@ export function countryOptions(
   locale: string,
 ): { value: string; label: string }[] {
   const names = new Intl.DisplayNames([locale], { type: "region" });
-  const label = (code: string) => names.of(code) ?? code;
+  // The site shows no hyphens (owner's style rule), so "Guinea-Bissau"
+  // reads "Guinea Bissau" and "Nouvelle-Zélande" "Nouvelle Zélande".
+  const label = (code: string) => (names.of(code) ?? code).replace(/-/g, " ");
   const rest = countryCodes
     .filter((c) => !priorityCountries.includes(c))
     .map((c) => ({ value: c, label: label(c) }))

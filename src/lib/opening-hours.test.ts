@@ -3,7 +3,7 @@ import { closedDays, formatDays } from "./opening-hours";
 
 describe("formatDays", () => {
   it("joins three or more consecutive days into a range", () => {
-    expect(formatDays(["tu", "we", "th", "fr", "sa"], "en")).toBe("Tue–Sat");
+    expect(formatDays(["tu", "we", "th", "fr", "sa"], "en")).toBe("Tue to Sat");
   });
 
   it("lists one or two days separately", () => {
@@ -12,11 +12,11 @@ describe("formatDays", () => {
   });
 
   it("sorts days into week order", () => {
-    expect(formatDays(["su", "mo", "tu", "we"], "en")).toBe("Mon–Wed, Sun");
+    expect(formatDays(["su", "mo", "tu", "we"], "en")).toBe("Mon to Wed, Sun");
   });
 
   it("uses the visitor's language", () => {
-    expect(formatDays(["mo", "tu", "we"], "fr")).toBe("lun.–mer.");
+    expect(formatDays(["mo", "tu", "we"], "fr")).toBe("lun. à mer.");
   });
 });
 

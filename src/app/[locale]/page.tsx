@@ -28,16 +28,15 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "Home" });
   return {
     // The start page uses the full brand name as its title, without the "· Brand" suffix.
-    title: { absolute: `${brandName[locale]} — ${t("eyebrow")}` },
+    title: { absolute: `${brandName[locale]} · ${t("eyebrow")}` },
     alternates: localeAlternates("/", locale),
   };
 }
 
 export default async function HomePage({ params }: PageProps<"/[locale]">) {
   const locale = await resolveLocale(params);
-  const [t, tPlace, home, areas, places, guides] = await Promise.all([
+  const [t, home, areas, places, guides] = await Promise.all([
     getTranslations({ locale, namespace: "Home" }),
-    getTranslations({ locale, namespace: "PlacePage" }),
     getHomepage(locale),
     getAreas(locale),
     getPlaces(locale),
@@ -100,23 +99,6 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
             </ButtonLink>
           </div>
         </Container>
-        {/* Credit outside the image itself: the image sits under the gradient. */}
-        {home.hero?.credit && (
-          <p className="absolute right-3 bottom-3 max-w-[calc(100%-1.5rem)] truncate text-[0.6875rem] text-ocean-100">
-            {home.hero.creditUrl ? (
-              <a
-                href={home.hero.creditUrl}
-                rel="noopener"
-                target="_blank"
-                className="hover:underline"
-              >
-                {tPlace("photoBy", { credit: home.hero.credit })}
-              </a>
-            ) : (
-              tPlace("photoBy", { credit: home.hero.credit })
-            )}
-          </p>
-        )}
       </section>
 
       {/* Areas */}

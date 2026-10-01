@@ -42,7 +42,7 @@ otillgängligt" i stället för att tappa leads.
    visar hos din domänleverantör).
 3. Lägg till som Secrets i Cloudflare:
    - `RESEND_API_KEY`
-   - `EMAIL_FROM` = t.ex. `West Mauritius <hello@westmauritius.mu>`
+   - `EMAIL_FROM` = t.ex. `West of Mauritius <hello@westmauritius.mu>`
    - `LEAD_NOTIFY_EMAIL` = adressen där du vill få nya leads
    - `IP_HASH_SALT` = en lång slumpmässig sträng (t.ex. från
      `openssl rand -hex 32`)

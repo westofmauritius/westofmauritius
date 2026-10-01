@@ -9,7 +9,20 @@ places:
   - example-shopping-spot-black-river
   - example-shopping-spot-la-gaulette
 hero:
-  discriminant: false
+  discriminant: true
+  value:
+    image: /images/places/wolmar-beach/images/0/image.jpg
+    alt:
+      en:
+        text: >-
+          Flic en Flac beach and its lagoon from the air, with the mountains of
+          the west behind
+      fr:
+        text: >-
+          La plage de Flic en Flac et son lagon vus du ciel, avec les montagnes
+          de l’ouest derrière
+    credit: Arne Müseler · CC BY-SA 3.0 de · Wikimedia Commons
+    creditUrl: https://commons.wikimedia.org/wiki/File:Mauritius_flic_en_flac_beach.jpg
 placeholderTone: ocean
 content:
   en:

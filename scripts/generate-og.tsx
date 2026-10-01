@@ -32,7 +32,7 @@ const locales = ["en", "fr"] as const;
 type Locale = (typeof locales)[number];
 const messages = { en, fr } as const;
 const brand: Record<Locale, string> = {
-  en: "West Mauritius",
+  en: "West of Mauritius",
   fr: "Ouest Maurice",
 };
 

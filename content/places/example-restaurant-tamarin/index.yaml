@@ -20,43 +20,55 @@ openingHours:
     opens: '12:00'
     closes: '16:00'
 images:
-  - image: /images/places/example-restaurant-tamarin/images/0/image.svg
+  - image: /images/places/example-restaurant-tamarin/images/0/image.jpg
     alt:
       en:
-        text: Placeholder photo 1
+        text: The town of Tamarin below the Tourelle du Tamarin
       fr:
-        text: Photo provisoire 1
-    credit: Placeholder
-  - image: /images/places/example-restaurant-tamarin/images/1/image.svg
+        text: La ville de Tamarin au pied de la Tourelle du Tamarin
+    credit: Diego Delso · CC BY-SA 4.0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:Tourelle_du_Tamarin,_Mauricio,_2025-09-25,_DD_06-2.jpg
+  - image: /images/places/example-restaurant-tamarin/images/1/image.jpg
     alt:
       en:
-        text: Placeholder photo 2
+        text: The green hills above Tamarin, looking towards the sea
       fr:
-        text: Photo provisoire 2
-    credit: Placeholder
-  - image: /images/places/example-restaurant-tamarin/images/2/image.svg
+        text: Les collines vertes qui dominent Tamarin, face à la mer
+    credit: carrotmadman6 from Mauritius · CC BY 2.0 · Wikimedia Commons
+    creditUrl: https://commons.wikimedia.org/wiki/File:Tamarin_(4823918010).jpg
+  - image: /images/places/tamarin-bay/images/0/image.jpg
     alt:
       en:
-        text: Placeholder photo 3
+        text: >-
+          Aerial view of Tamarin and its beach, with a mountain behind the
+          village
       fr:
-        text: Photo provisoire 3
-    credit: Placeholder
-  - image: /images/places/example-restaurant-tamarin/images/3/image.svg
+        text: >-
+          Vue aérienne de Tamarin et de sa plage, avec une montagne derrière le
+          village
+    credit: Arne Müseler · CC BY-SA 3.0 de · Wikimedia Commons
+    creditUrl: https://commons.wikimedia.org/wiki/File:Mauritius_tamarin_beach.jpg
+  - image: /images/places/tamarin-bay/images/1/image.jpg
     alt:
       en:
-        text: Placeholder photo 4
+        text: A small boat in Tamarin Bay with the peaks of the west behind
       fr:
-        text: Photo provisoire 4
-    credit: Placeholder
+        text: >-
+          Un petit bateau dans la baie de Tamarin, avec les pics de l’ouest
+          derrière
+    credit: Vaughan McShane · CC BY-SA 2.0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:Tamarin_Bay_against_the_dramatic_volcanic_backdrop_of_western_Mauritius.jpg
 placeholderTone: sunset
 content:
   en:
     summary: >-
-      Placeholder. A fictional restaurant used to test the layout — not a real
+      Placeholder. A fictional restaurant used to test the layout, not a real
       business.
     hoursNote: Placeholder opening hours.
   fr:
     summary: >-
-      Texte provisoire. Un restaurant fictif pour tester la mise en page — pas
-      un vrai établissement.
+      Texte provisoire. Un restaurant fictif pour tester la mise en page, pas un
+      vrai établissement.
     hoursNote: Horaires provisoires.

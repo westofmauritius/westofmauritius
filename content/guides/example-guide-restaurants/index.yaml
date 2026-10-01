@@ -9,7 +9,17 @@ places:
   - example-restaurant-tamarin
   - example-restaurant-flic-en-flac
 hero:
-  discriminant: false
+  discriminant: true
+  value:
+    image: /images/guides/example-guide-restaurants/hero/image.jpg
+    alt:
+      en:
+        text: Sunset over the Indian Ocean from Flic en Flac beach
+      fr:
+        text: Coucher de soleil sur l’océan Indien depuis la plage de Flic en Flac
+    credit: dronepicr · CC BY 2.0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:Sunset_over_the_Indian_Ocean_at_Flic_en_Flac_Beach,_Mauritius_(53697787236).jpg
 placeholderTone: sunset
 content:
   en:

@@ -60,7 +60,7 @@ export default async function AdminLeadsPage({
         className="mt-8 grid gap-4 rounded-sm bg-white p-5 ring-1 ring-line sm:grid-cols-3 lg:grid-cols-7"
       >
         <label className="text-xs font-medium sm:col-span-3 lg:col-span-2">
-          Search name or e-mail
+          Search name or email
           <input
             type="search"
             name="q"
@@ -197,7 +197,7 @@ export default async function AdminLeadsPage({
                   {budgetLabel(lead.budget)}
                 </td>
                 <td className="px-4 py-3">{timeframeLabel(lead.timeframe)}</td>
-                <td className="px-4 py-3">{lead.areas.join(", ") || "—"}</td>
+                <td className="px-4 py-3">{lead.areas.join(", ") || "none"}</td>
                 <td className="max-w-xs px-4 py-3 text-ink-muted">
                   {lead.message ? (
                     <details>
@@ -209,7 +209,7 @@ export default async function AdminLeadsPage({
                       <p className="mt-2 whitespace-pre-wrap">{lead.message}</p>
                     </details>
                   ) : (
-                    "—"
+                    "none"
                   )}
                 </td>
                 <td className="px-4 py-3 text-xs text-ink-muted">

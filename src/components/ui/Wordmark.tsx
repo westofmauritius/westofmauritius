@@ -1,7 +1,7 @@
 import { cn } from "@/lib/cn";
 
 type WordmarkProps = {
-  /** "West Mauritius" or "Ouest Maurice". */
+  /** "West of Mauritius" or "Ouest Maurice". */
   name: string;
   /** Use "light" on dark backgrounds such as photos or the ocean footer. */
   tone?: "dark" | "light";

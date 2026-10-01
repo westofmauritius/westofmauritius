@@ -19,17 +19,17 @@ export async function notifyNewLead(lead: LeadData) {
       "",
       `Name:       ${lead.name}`,
       `E-mail:     ${lead.email}`,
-      `Phone:      ${lead.phone || "—"}`,
+      `Phone:      ${lead.phone || "none"}`,
       `Country:    ${lead.country}`,
       `Budget:     ${lead.budget}`,
       `Timeframe:  ${lead.timeframe}`,
-      `Areas:      ${lead.areas.join(", ") || "—"}`,
+      `Areas:      ${lead.areas.join(", ") || "none"}`,
       `Newsletter: ${lead.newsletter ? "yes" : "no"}`,
       `Language:   ${lead.locale}`,
-      `Source:     ${lead.source || "—"}`,
+      `Source:     ${lead.source || "none"}`,
       "",
       "Message:",
-      lead.message || "—",
+      lead.message || "none",
       "",
       `All leads: ${siteUrl}/admin/leads`,
     ].join("\n"),
@@ -91,7 +91,7 @@ const confirmTexts: Record<
   fr: {
     subject: "Merci de confirmer votre inscription",
     body: (link, unsubscribe) =>
-      `Bonjour,\n\nMerci de confirmer que vous souhaitez recevoir la newsletter d’${brandName.fr} :\n${link}\n\nSi vous ne vous êtes pas inscrit, ignorez simplement cet e-mail.\n\nDésabonnement à tout moment : ${unsubscribe}`,
+      `Bonjour,\n\nMerci de confirmer que vous souhaitez recevoir la newsletter d’${brandName.fr} :\n${link}\n\nSi vous ne vous êtes pas inscrit, ignorez simplement ce message.\n\nDésabonnement à tout moment : ${unsubscribe}`,
   },
 };
 

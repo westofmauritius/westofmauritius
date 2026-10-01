@@ -19,11 +19,20 @@ export const consentTexts = {
     en: "I want to receive the West Mauritius newsletter by email. I can unsubscribe at any time.",
     fr: "Je souhaite recevoir la newsletter d’Ouest Maurice par e-mail. Je peux me désabonner à tout moment.",
   },
+  // New brand name (West of Mauritius) and no "e-mail" spelling.
+  "lead-2026-10b": {
+    en: "I agree that West of Mauritius may store my details and share them with selected property developers and estate agents on the west coast of Mauritius, so they can contact me about my enquiry. I can withdraw my consent at any time.",
+    fr: "J’accepte qu’Ouest Maurice conserve mes coordonnées et les transmette à des promoteurs immobiliers et agents immobiliers sélectionnés de la côte ouest de l’île Maurice, afin qu’ils me contactent au sujet de ma demande. Je peux retirer mon consentement à tout moment.",
+  },
+  "newsletter-2026-10b": {
+    en: "I want to receive the West of Mauritius newsletter by email. I can unsubscribe at any time.",
+    fr: "Je souhaite recevoir la newsletter d’Ouest Maurice par courriel. Je peux me désabonner à tout moment.",
+  },
 } satisfies Record<string, Record<Locale, string>>;
 
 export type ConsentVersion = keyof typeof consentTexts;
 
 export const currentConsent = {
-  lead: "lead-2026-10",
-  newsletter: "newsletter-2026-10",
+  lead: "lead-2026-10b",
+  newsletter: "newsletter-2026-10b",
 } as const satisfies Record<string, ConsentVersion>;

@@ -4,8 +4,8 @@ placeholder: true
 content:
   en:
     title: How buying works
-    excerpt: Placeholder — to be written.
+    excerpt: Placeholder, to be written.
   fr:
     title: Comment acheter
     slug: comment-acheter
-    excerpt: Texte provisoire — à rédiger.
+    excerpt: Texte provisoire, à rédiger.

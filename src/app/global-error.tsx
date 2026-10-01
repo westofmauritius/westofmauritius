@@ -26,7 +26,7 @@ export default function GlobalError({
         }}
       >
         <main>
-          <h1 style={{ fontWeight: 400, fontSize: 40 }}>West Mauritius</h1>
+          <h1 style={{ fontWeight: 400, fontSize: 40 }}>West of Mauritius</h1>
           <p style={{ fontFamily: "system-ui, sans-serif" }}>
             Something went wrong. / Un problème est survenu.
           </p>

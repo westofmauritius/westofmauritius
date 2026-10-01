@@ -13,7 +13,7 @@ export default async function AdminNewsletterPage() {
           <h1 className="text-4xl">Newsletter</h1>
           <p className="mt-2 text-sm text-ink-muted">
             {active.length} confirmed · {subscribers.length} in total
-            (unconfirmed sign-ups must not be e-mailed)
+            (unconfirmed signups must not be emailed)
           </p>
         </div>
         {/* A file download from an API route, not a page: a plain <a> is correct. */}
@@ -29,7 +29,7 @@ export default async function AdminNewsletterPage() {
         <table className="w-full text-left text-sm">
           <thead className="border-b border-line bg-sand-50 text-xs tracking-wide text-ink-muted uppercase">
             <tr>
-              {["E-mail", "Language", "Signed up", "Status"].map((h) => (
+              {["Email", "Language", "Signed up", "Status"].map((h) => (
                 <th key={h} scope="col" className="px-4 py-3 font-medium">
                   {h}
                 </th>

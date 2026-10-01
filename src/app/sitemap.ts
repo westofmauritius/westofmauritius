@@ -46,6 +46,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ["/privacy", 0.2],
     ["/cookies", 0.2],
     ["/terms", 0.2],
+    ["/credits", 0.1],
   ];
   for (const [href, priority] of staticPages) add(() => href, null, priority);
 

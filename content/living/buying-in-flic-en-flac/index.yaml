@@ -5,8 +5,8 @@ placeholder: true
 content:
   en:
     title: Buying in Flic en Flac
-    excerpt: Placeholder — to be written.
+    excerpt: Placeholder, to be written.
   fr:
     title: Acheter à Flic en Flac
     slug: acheter-a-flic-en-flac
-    excerpt: Texte provisoire — à rédiger.
+    excerpt: Texte provisoire, à rédiger.

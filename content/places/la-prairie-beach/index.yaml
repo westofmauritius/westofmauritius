@@ -8,7 +8,16 @@ location:
   lng: 57.3534
 address: La Prairie
 openingHours: []
-images: []
+images:
+  - image: /images/places/la-prairie-beach/images/0/image.jpg
+    alt:
+      en:
+        text: Le Morne Brabant and its peninsula seen from the south
+      fr:
+        text: Le Morne Brabant et sa péninsule vus du sud
+    credit: dronepicr · CC BY 2.0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_southwest_tip_of_Mauritius_(53696881752).jpg
 placeholderTone: lagoon
 content:
   en:

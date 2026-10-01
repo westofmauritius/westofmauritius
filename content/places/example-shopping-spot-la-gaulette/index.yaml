@@ -7,14 +7,23 @@ location:
   lat: -20.423
   lng: 57.364
 openingHours: []
-images: []
+images:
+  - image: /images/places/example-shopping-spot-la-gaulette/images/0/image.jpg
+    alt:
+      en:
+        text: La Gaulette and Île aux Bénitiers in the lagoon, seen from the hills
+      fr:
+        text: La Gaulette et l’île aux Bénitiers dans le lagon, vues des hauteurs
+    credit: Benoît Prieur · CC0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:%C3%8Ele_aux_B%C3%A9nitiers_depuis_le_belv%C3%A9d%C3%A8re_de_Chamarel_(mars_2020)_-_2.jpg
 placeholderTone: ocean
 content:
   en:
     summary: >-
-      Placeholder. A fictional shopping spot used to test the layout — not a
-      real business.
+      Placeholder. A fictional shopping spot used to test the layout, not a real
+      business.
   fr:
     summary: >-
-      Texte provisoire. Un lieu de shopping fictif pour tester la mise en page —
+      Texte provisoire. Un lieu de shopping fictif pour tester la mise en page,
       pas un vrai établissement.

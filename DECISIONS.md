@@ -262,3 +262,24 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
   monument …) so search engines get more than "TouristAttraction".
 - **Real content is listed before placeholder examples** everywhere (guides
   and places).
+
+## Owner's style rules (October 2026)
+
+- **Brand name is "West of Mauritius"** (French edition still "Ouest
+  Maurice"). Consent texts mentioning the brand got new versions
+  (`lead-2026-10b`, `newsletter-2026-10b`); the old ones stay, as records of
+  what earlier visitors agreed to.
+- **No dashes or hyphens in visible text.** The owner finds that em dashes
+  and hyphenated words read as machine-written. Sentences were rewritten
+  (commas, colons, full stops, parentheses), ranges use "to" / "à"
+  ("Tue to Sat", "€300,000 to €600,000"), and French words that need a
+  hyphen by spelling ("au-dessus", "sud-ouest", "Port-Louis") were avoided by
+  rephrasing; "email" replaces "e-mail". URLs keep their hyphens (they are
+  addresses, not text). An end-to-end test checks key pages.
+- **No credits on the photos.** Creative Commons licences still require
+  attribution, so every photo is credited on one page (`/credits`, built
+  from the content) linked from the footer of every page.
+- **Every place and guide has a photo.** Where no free photo of the exact
+  spot exists (the Slave Route Monument, La Prairie), the photo shows the
+  setting and the alt text says so honestly. Fictional placeholder
+  businesses show landscapes of their area, never a made-up storefront.

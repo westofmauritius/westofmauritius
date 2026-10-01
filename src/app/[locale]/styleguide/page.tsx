@@ -13,7 +13,7 @@ import { brandName } from "@/lib/site";
 // Internal page for reviewing the design system. Not linked from the site and
 // hidden from search engines.
 export const metadata: Metadata = {
-  title: "Style guide · West Mauritius",
+  title: "Style guide · West of Mauritius",
   robots: { index: false, follow: false },
 };
 
@@ -52,7 +52,7 @@ export default async function StyleguidePage({
         as="h1"
         eyebrow="Internal"
         title="Style guide"
-        intro="Colours, type and components for West Mauritius. Everything here comes from src/app/globals.css and src/components/ui."
+        intro="Colours, type and components for West of Mauritius. Everything here comes from src/app/globals.css and src/components/ui."
       />
 
       <Section title="Wordmark">

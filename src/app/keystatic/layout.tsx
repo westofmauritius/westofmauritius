@@ -4,7 +4,7 @@ import { keystaticEnabled } from "@/lib/keystatic";
 import KeystaticApp from "./keystatic";
 
 export const metadata: Metadata = {
-  title: "Content editor · West Mauritius",
+  title: "Content editor · West of Mauritius",
   robots: { index: false, follow: false },
 };
 

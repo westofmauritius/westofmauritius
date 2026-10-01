@@ -8,7 +8,28 @@ location:
   lng: 57.367
 address: Wolmar, Flic en Flac
 openingHours: []
-images: []
+images:
+  - image: /images/places/wolmar-beach/images/0/image.jpg
+    alt:
+      en:
+        text: >-
+          Flic en Flac beach and its lagoon from the air, with the mountains of
+          the west behind
+      fr:
+        text: >-
+          La plage de Flic en Flac et son lagon vus du ciel, avec les montagnes
+          de l’ouest derrière
+    credit: Arne Müseler · CC BY-SA 3.0 de · Wikimedia Commons
+    creditUrl: https://commons.wikimedia.org/wiki/File:Mauritius_flic_en_flac_beach.jpg
+  - image: /images/places/wolmar-beach/images/1/image.jpg
+    alt:
+      en:
+        text: The sand at Flic en Flac under a big sky, looking south
+      fr:
+        text: Le sable de Flic en Flac sous un grand ciel, vers le sud
+    credit: Benoît Prieur · CC0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:Flic-en-Flac_beach,_March_2020_(2).jpg
 placeholderTone: lagoon
 content:
   en:

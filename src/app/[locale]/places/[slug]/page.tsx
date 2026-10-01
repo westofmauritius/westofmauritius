@@ -134,8 +134,6 @@ export default async function PlacePage({ params }: Props) {
               close: t("PlacePage.galleryClose"),
               previous: t("PlacePage.galleryPrevious"),
               next: t("PlacePage.galleryNext"),
-              // Raw template: the gallery fills in {credit} per photo.
-              photoBy: t.raw("PlacePage.photoBy") as string,
             }}
           />
         ) : (
@@ -189,7 +187,10 @@ export default async function PlacePage({ params }: Props) {
                               {formatDays(row.days, locale)}
                             </th>
                             <td className="py-0.5 tabular-nums">
-                              {row.opens}–{row.closes}
+                              {t("PlacePage.hoursRange", {
+                                opens: row.opens,
+                                closes: row.closes,
+                              })}
                             </td>
                           </tr>
                         ))}

@@ -20,7 +20,7 @@ hero:
       en:
         text: Le Morne Brabant rising above the lagoon
       fr:
-        text: Le Morne Brabant au-dessus du lagon
+        text: Le Morne Brabant dominant le lagon
     credit: Jolaus · CC0 · Wikimedia Commons
     creditUrl: https://commons.wikimedia.org/wiki/File:Le_Morne_Brabant,_Maurizio.jpg
 placeholderTone: lagoon
@@ -28,8 +28,8 @@ content:
   en:
     title: A day at Le Morne
     excerpt: >-
-      History, a world-famous lagoon and two very different beaches: how to
-      spend a day at the south-west tip of Mauritius.
+      History, a world famous lagoon and two very different beaches: how to
+      spend a day at the southwest tip of Mauritius.
     seoDescription: >-
       A day at Le Morne, Mauritius: the Slave Route Monument, Le Morne public
       beach, La Prairie, the lagoon and boat trips to Île aux Bénitiers.
@@ -38,7 +38,8 @@ content:
     slug: une-journee-au-morne
     excerpt: >-
       L’histoire, un lagon de renommée mondiale et deux plages très différentes
-      : comment passer une journée à la pointe sud-ouest de Maurice.
+      : comment passer une journée à l’extrémité sud de la côte ouest de
+      Maurice.
     seoDescription: >-
       Une journée au Morne, île Maurice : le monument de la Route de l’esclave,
       la plage publique du Morne, La Prairie et l’île aux Bénitiers.
