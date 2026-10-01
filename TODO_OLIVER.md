@@ -5,13 +5,11 @@ förberett: när en inställning saknas faller sajten tillbaka på ett säkert l
 i stället för att gå sönder. Punkterna står i den ordning de behövs för att gå
 live.
 
-## 0. Vilken gren som går live
+## 0. Vilken gren som går live ✅ klart
 
-Allt arbete ligger på grenen `claude/westmauritius-site-planning-eje8l5`.
-Skapa en `main`-gren från den (eller slå ihop den via en pull request), gör
-`main` till standardgren på GitHub och välj `main` som produktionsgren i
-Cloudflare → westofmauritius → Settings → Build. Keystatic (punkt 9) sparar
-ändringar i standardgrenen, så det är den Cloudflare ska bygga.
+`main` är standardgren på GitHub och produktionsgren i Cloudflare. Allt som
+hamnar i `main` byggs och publiceras. Keystatic (punkt 9) sparar ändringar
+i `main`.
 
 ## 1. Cloudflare: byggvariabel för adressen
 
@@ -131,7 +129,7 @@ redigera på den publicerade sajten behövs en GitHub-app. Stegen står i
 
 ## Kontroll före lansering
 
-- [ ] `main` byggs i Cloudflare (punkt 0)
+- [x] `main` byggs i Cloudflare (punkt 0)
 - [ ] `NEXT_PUBLIC_SITE_URL` satt (punkt 1)
 - [ ] Neon kopplad och `npm run db:migrate` körd (punkt 2)
 - [ ] Resend verifierad och secrets satta (punkt 3); skicka ett testlead
