@@ -3,6 +3,7 @@ import { Wordmark } from "@/components/ui/Wordmark";
 import { Link } from "@/i18n/navigation";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { MobileNav } from "./MobileNav";
+import { NavLink } from "./NavLink";
 import type { NavItem } from "./nav";
 
 type SiteHeaderProps = {
@@ -41,12 +42,7 @@ export function SiteHeader({
           <ul className="flex items-center gap-8 text-sm tracking-wide">
             {items.map((item) => (
               <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className="text-ink-muted transition-colors hover:text-ink"
-                >
-                  {item.label}
-                </Link>
+                <NavLink item={item} />
               </li>
             ))}
           </ul>

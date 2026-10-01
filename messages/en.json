@@ -14,7 +14,8 @@
     "places": "Places"
   },
   "LanguageSwitcher": {
-    "label": "Language"
+    "label": "Language",
+    "skipToContent": "Skip to content"
   },
   "Footer": {
     "tagline": "A guide to the west coast of Mauritius, from Flic en Flac to Le Morne.",

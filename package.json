@@ -20,7 +20,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "db:migrate": "node scripts/db-migrate.mjs",
-    "og:generate": "tsx scripts/generate-og.tsx"
+    "og:generate": "tsx scripts/generate-og.tsx",
+    "test:e2e": "npm run prebuild && next build && playwright test"
   },
   "dependencies": {
     "@keystar/ui": "^0.10.0",

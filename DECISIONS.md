@@ -169,3 +169,15 @@ to-do list, TODO_OLIVER.md, is in Swedish.)
   flagged as placeholders (noindex) until reviewed by a lawyer.
 - **French typography is applied to rendered long text too**, not only
   titles.
+
+## Accessibility and testing
+
+- **Skip link, `aria-current` on the active section, focus management** in
+  the mobile menu (focus moves in, Escape closes, focus returns), and
+  reduced-motion support.
+- **Automated WCAG 2.2 AA checks with axe** on every page type in both
+  languages, run in the end-to-end suite. The map canvas is excluded from
+  axe: it is supplementary (every place is also listed as text with links).
+- **End-to-end tests run against a production build** with the in-memory
+  store and throw-away admin credentials; each test uses its own fake IP so
+  rate limits do not interfere.

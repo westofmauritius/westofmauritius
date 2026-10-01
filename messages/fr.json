@@ -14,7 +14,8 @@
     "places": "Adresses"
   },
   "LanguageSwitcher": {
-    "label": "Langue"
+    "label": "Langue",
+    "skipToContent": "Aller au contenu"
   },
   "Footer": {
     "tagline": "Le guide de la côte ouest de l’île Maurice, de Flic en Flac au Morne.",

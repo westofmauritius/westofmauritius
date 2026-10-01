@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, usePathname } from "@/i18n/navigation";
 import type { NavItem } from "./nav";
 
@@ -26,17 +26,32 @@ export function MobileNav({
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
-  // Stop the page behind the menu from scrolling while it is open.
+  const button = useRef<HTMLButtonElement>(null);
+  const menu = useRef<HTMLElement>(null);
+
+  // While open: stop the page behind from scrolling, move focus into the
+  // menu, and let Escape close it (returning focus to the menu button).
   useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "";
+    if (!open) return;
+    document.body.style.overflow = "hidden";
+    menu.current?.querySelector("a")?.focus();
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setOpen(false);
+        button.current?.focus();
+      }
+    };
+    document.addEventListener("keydown", onKey);
     return () => {
       document.body.style.overflow = "";
+      document.removeEventListener("keydown", onKey);
     };
   }, [open]);
 
   return (
     <div className="md:hidden">
       <button
+        ref={button}
         type="button"
         onClick={() => setOpen(!open)}
         aria-expanded={open}
@@ -59,6 +74,7 @@ export function MobileNav({
 
       {open && (
         <nav
+          ref={menu}
           id="mobile-menu"
           className="fixed inset-x-0 top-16 bottom-0 z-40 overflow-y-auto bg-white px-4 pt-6 pb-10"
         >

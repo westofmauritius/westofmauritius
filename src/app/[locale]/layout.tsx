@@ -56,6 +56,13 @@ export default async function LocaleLayout({
         {/* Gives client components the language. messages={null}: no
             client component needs texts, so none are sent to the browser. */}
         <NextIntlClientProvider messages={null}>
+          {/* First stop for keyboard users: jump past the header to the content. */}
+          <a
+            href="#main"
+            className="sr-only z-[60] rounded-full bg-ocean-900 px-5 py-3 text-sm text-white focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
+          >
+            {l("skipToContent")}
+          </a>
           <SiteHeader
             brandName={brand}
             items={[
@@ -70,7 +77,13 @@ export default async function LocaleLayout({
             closeLabel={t("closeMenu")}
             languageLabel={l("label")}
           />
-          <main className="flex flex-1 flex-col">{children}</main>
+          <main
+            id="main"
+            tabIndex={-1}
+            className="flex flex-1 flex-col outline-none"
+          >
+            {children}
+          </main>
           <SiteFooter
             brandName={brand}
             tagline={f("tagline")}
