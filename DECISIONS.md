@@ -283,8 +283,6 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
   spot exists (the Slave Route Monument, La Prairie), the photo shows the
   setting and the alt text says so honestly. Fictional placeholder
   businesses show landscapes of their area, never a made-up storefront.
-- **Start page headline "Welcome to the “best” coast!"** with the lagoons
-  line moved into the intro below it.
 - **Cards show photo, label and title only**, no summary; section intros
   on the start page and theme descriptions are gone. Card lists show two
   per row on phones and four on large screens, so more places fit on
