@@ -10,9 +10,12 @@
     "typecheck": "next typegen && tsc --noEmit",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "check": "npm run lint && npm run typecheck && npm run format:check"
+    "check": "npm run lint && npm run typecheck && npm run format:check",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
   },
   "dependencies": {
+    "@opennextjs/cloudflare": "^1.20.7",
     "next": "16.3.8",
     "next-intl": "^4.14.8",
     "react": "19.2.8",
@@ -28,7 +31,8 @@
     "prettier": "^3.9.9",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.145.0"
   },
   "engines": {
     "node": ">=20.9"

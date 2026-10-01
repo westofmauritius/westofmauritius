@@ -42,3 +42,8 @@ next-env.d.ts
 
 # env example is safe to commit
 !.env.example
+
+# cloudflare / opennext
+.open-next
+.wrangler
+.dev.vars*

@@ -17,6 +17,7 @@ Chamarel — with a "Live in the West" section that collects property leads.
 | Leads database  | Neon Postgres + Drizzle ORM        | 9             |
 | E-mail          | Resend                             | 9             |
 | Analytics       | Free, cookieless (decided step 11) | 11            |
+| Hosting         | Cloudflare Workers via OpenNext    | 3             |
 
 ## Getting started
 
@@ -58,6 +59,27 @@ src/
   i18n/             Language config and translated URL paths (step 3)
   lib/              Non-UI code: content loading, SEO helpers, db, e-mail
 ```
+
+## Deploying to Cloudflare
+
+The site runs on Cloudflare Workers. `next build` output is converted into a
+Worker by [OpenNext](https://opennext.js.org/cloudflare)
+(`@opennextjs/cloudflare`); settings are in `wrangler.jsonc` and
+`open-next.config.ts`.
+
+Cloudflare dashboard → Workers → westofmauritius → Settings → Build:
+
+| Setting         | Value                              |
+| --------------- | ---------------------------------- |
+| Build command   | `npx opennextjs-cloudflare build`  |
+| Deploy command  | `npx opennextjs-cloudflare deploy` |
+| Build variables | `NEXT_PUBLIC_SITE_URL=https://…`   |
+
+`NEXT_PUBLIC_*` values are baked in at build time, so they must be **build**
+variables, not runtime variables.
+
+Locally: `npm run preview` builds the Worker and runs it in Cloudflare's
+runtime; `npm run deploy` builds and deploys from your machine.
 
 ## Languages and URLs
 

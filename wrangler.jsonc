@@ -1,0 +1,29 @@
+// Cloudflare Workers configuration. The site runs as a Worker built by
+// OpenNext (@opennextjs/cloudflare), which converts the Next.js build output
+// into something Workers can run. See open-next.config.ts.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Must match the Worker's name in the Cloudflare dashboard.
+  "name": "westofmauritius",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-09-30",
+  // nodejs_compat: Next.js needs Node.js APIs.
+  // global_fetch_strictly_public: server-side fetch() can only reach the
+  // public internet, not other Workers on the same zone.
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  // Static files (JS, CSS, fonts, prerendered pages) served by Cloudflare.
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS",
+  },
+  // Lets the Worker call itself, which OpenNext uses for some internal requests.
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "westofmauritius",
+    },
+  ],
+  "observability": {
+    "enabled": true,
+  },
+}
