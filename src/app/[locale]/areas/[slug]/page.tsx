@@ -18,6 +18,8 @@ import { getArea, getAreas } from "@/lib/content/areas";
 import { getPlaces } from "@/lib/content/places";
 import type { Place, PlaceCategory } from "@/lib/content/types";
 import { localeAlternates } from "@/lib/seo/alternates";
+import { ogImage } from "@/lib/seo/og-images";
+import { openGraphBase } from "@/lib/seo/open-graph";
 import { areaSchema } from "@/lib/seo/schema";
 import { absoluteUrl } from "@/lib/seo/urls";
 
@@ -43,7 +45,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       { pathname: "/areas/[slug]", params: { slug } },
       locale,
     ),
-    openGraph: { title: area.name, description: area.seoDescription },
+    openGraph: {
+      ...openGraphBase(locale),
+      images: ogImage(locale, area.name, "areas", slug),
+      title: area.name,
+      description: area.seoDescription,
+    },
     // Placeholder pages stay out of Google until real content is written.
     ...(area.placeholder && { robots: { index: false } }),
   };

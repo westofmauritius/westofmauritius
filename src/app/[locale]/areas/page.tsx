@@ -9,6 +9,7 @@ import { getPathname } from "@/i18n/navigation";
 import { resolveLocale } from "@/i18n/locale";
 import { getAreas } from "@/lib/content/areas";
 import { localeAlternates } from "@/lib/seo/alternates";
+import { openGraphBase } from "@/lib/seo/open-graph";
 
 export async function generateMetadata({
   params,
@@ -19,7 +20,11 @@ export async function generateMetadata({
     title: t("title"),
     description: t("intro"),
     alternates: localeAlternates("/areas", locale),
-    openGraph: { title: t("title"), description: t("intro") },
+    openGraph: {
+      ...openGraphBase(locale),
+      title: t("title"),
+      description: t("intro"),
+    },
   };
 }
 

@@ -9,6 +9,7 @@ import { getAreas } from "@/lib/content/areas";
 import { getPlaces } from "@/lib/content/places";
 import type { PlaceCategory } from "@/lib/content/types";
 import { localeAlternates } from "@/lib/seo/alternates";
+import { openGraphBase } from "@/lib/seo/open-graph";
 
 const categories: PlaceCategory[] = [
   "restaurant",
@@ -27,7 +28,11 @@ export async function generateMetadata({
     title: t("title"),
     description: t("intro"),
     alternates: localeAlternates("/places", locale),
-    openGraph: { title: t("title"), description: t("intro") },
+    openGraph: {
+      ...openGraphBase(locale),
+      title: t("title"),
+      description: t("intro"),
+    },
   };
 }
 

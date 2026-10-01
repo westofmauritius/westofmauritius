@@ -19,6 +19,8 @@ import {
   guideCategoryKeys,
 } from "@/lib/guide-categories";
 import { localeAlternates } from "@/lib/seo/alternates";
+import { ogImage } from "@/lib/seo/og-images";
+import { openGraphBase } from "@/lib/seo/open-graph";
 
 type Props = PageProps<"/[locale]/guides/[category]">;
 
@@ -60,7 +62,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       }),
       locale,
     ),
-    openGraph: { title: t("title"), description: t("intro") },
+    openGraph: {
+      ...openGraphBase(locale),
+      images: ogImage(locale, t("title"), "guides", key),
+      title: t("title"),
+      description: t("intro"),
+    },
   };
 }
 

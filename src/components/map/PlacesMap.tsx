@@ -2,8 +2,7 @@
 
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { Map as MapLibreMap } from "maplibre-gl";
-import { useEffect, useRef, useState } from "react";
-import { cn } from "@/lib/cn";
+import { useEffect, useRef } from "react";
 
 export type MapMarker = {
   id: string;
@@ -22,10 +21,8 @@ type PlacesMapProps = {
   markers: MapMarker[];
   /** Accessible name, e.g. "Map of Tamarin". */
   label: string;
-  loadingText: string;
   /** Translated help texts shown when someone tries to scroll the map. */
   gestureHelp: { touch: string; desktop: string; mac: string };
-  className?: string;
 };
 
 // Free vector map from OpenFreeMap (OpenStreetMap data). No API key and no
@@ -46,12 +43,9 @@ export function PlacesMap({
   zoom,
   markers,
   label,
-  loadingText,
   gestureHelp,
-  className,
 }: PlacesMapProps) {
   const container = useRef<HTMLDivElement>(null);
-  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     const element = container.current;
@@ -100,7 +94,6 @@ export function PlacesMap({
           element
             .querySelector(".maplibregl-ctrl-attrib.maplibregl-compact-show")
             ?.classList.remove("maplibregl-compact-show");
-          setLoaded(true);
         });
 
         for (const marker of markers) {
@@ -131,12 +124,9 @@ export function PlacesMap({
   }, [center.lat, center.lng, zoom, markers, gestureHelp]);
 
   return (
-    <div
-      className={cn(
-        "relative overflow-hidden rounded-sm bg-lagoon-50",
-        className,
-      )}
-    >
+    // Fills MapFrame, which shows the "loading" text underneath until the
+    // map has drawn over it.
+    <div className="absolute inset-0">
       <div
         ref={container}
         role="region"
@@ -145,11 +135,6 @@ export function PlacesMap({
         // own CSS sets position: relative on this element.
         className="h-full w-full"
       />
-      {!loaded && (
-        <p className="pointer-events-none absolute inset-0 flex items-center justify-center text-sm text-ink-muted">
-          {loadingText}
-        </p>
-      )}
     </div>
   );
 }

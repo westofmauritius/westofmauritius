@@ -23,3 +23,10 @@ export const areaNames = [
   "Le Morne",
   "Chamarel",
 ] as const;
+
+/**
+ * Whether search engines may index the site. Off unless
+ * NEXT_PUBLIC_ALLOW_INDEXING=true, so preview addresses (workers.dev) never
+ * compete with the real domain in Google. Switch on once the domain is live.
+ */
+export const allowIndexing = process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true";

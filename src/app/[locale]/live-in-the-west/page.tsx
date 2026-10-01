@@ -10,6 +10,7 @@ import { resolveLocale } from "@/i18n/locale";
 import { getAreas } from "@/lib/content/areas";
 import { getLivingArticles } from "@/lib/content/living";
 import { localeAlternates } from "@/lib/seo/alternates";
+import { openGraphBase } from "@/lib/seo/open-graph";
 
 export async function generateMetadata({
   params,
@@ -20,7 +21,11 @@ export async function generateMetadata({
     title: t("title"),
     description: t("intro"),
     alternates: localeAlternates("/live-in-the-west", locale),
-    openGraph: { title: t("title"), description: t("intro") },
+    openGraph: {
+      ...openGraphBase(locale),
+      title: t("title"),
+      description: t("intro"),
+    },
   };
 }
 

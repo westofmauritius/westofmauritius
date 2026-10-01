@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
-import { PlacesMap, type MapMarker } from "./PlacesMap";
+import { MapFrame } from "./MapFrame";
+import type { MapMarker } from "./PlacesMap";
 
 type SiteMapProps = {
   center: { lat: number; lng: number };
@@ -20,7 +21,7 @@ export async function SiteMap({
 }: SiteMapProps) {
   const t = await getTranslations("Map");
   return (
-    <PlacesMap
+    <MapFrame
       center={center}
       zoom={zoom}
       markers={markers}

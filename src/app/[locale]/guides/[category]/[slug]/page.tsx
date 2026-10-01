@@ -19,6 +19,8 @@ import { getPlaces } from "@/lib/content/places";
 import type { Guide } from "@/lib/content/types";
 import { categoryFromSlug, guideCategories } from "@/lib/guide-categories";
 import { localeAlternates } from "@/lib/seo/alternates";
+import { ogImage } from "@/lib/seo/og-images";
+import { openGraphBase } from "@/lib/seo/open-graph";
 import { articleSchema } from "@/lib/seo/schema";
 import { absoluteUrl } from "@/lib/seo/urls";
 import { brandName } from "@/lib/site";
@@ -70,6 +72,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: guide.seoDescription,
     alternates: localeAlternates((l) => guideHref(guide, l), locale),
     openGraph: {
+      ...openGraphBase(locale),
+      images: ogImage(locale, guide.title, "guides", guide.category, guide.key),
       type: "article",
       title: guide.title,
       description: guide.seoDescription,

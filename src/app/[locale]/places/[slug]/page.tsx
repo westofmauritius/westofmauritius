@@ -18,7 +18,10 @@ import { routing } from "@/i18n/routing";
 import { getAreas } from "@/lib/content/areas";
 import { getPlace, getPlaces } from "@/lib/content/places";
 import { closedDays, formatDays } from "@/lib/opening-hours";
+import { optimizableImage } from "@/lib/image-sizes";
 import { localeAlternates } from "@/lib/seo/alternates";
+import { ogImage } from "@/lib/seo/og-images";
+import { openGraphBase } from "@/lib/seo/open-graph";
 import { placeSchema } from "@/lib/seo/schema";
 import { absoluteUrl } from "@/lib/seo/urls";
 
@@ -45,11 +48,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale,
     ),
     openGraph: {
+      ...openGraphBase(locale),
+      images: ogImage(locale, place.name, "places", slug),
       title: place.name,
       description: place.seoDescription,
-      ...(place.images[0] && {
-        images: [{ url: place.images[0].src, alt: place.images[0].alt }],
-      }),
+      // Social networks need a photo (not an SVG); otherwise the generated image is used.
+      ...(place.images[0] &&
+        optimizableImage.test(place.images[0].src) && {
+          images: [{ url: place.images[0].src, alt: place.images[0].alt }],
+        }),
     },
     ...(place.placeholder && { robots: { index: false } }),
   };

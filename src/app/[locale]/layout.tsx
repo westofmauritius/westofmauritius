@@ -9,7 +9,8 @@ import { consentTexts, currentConsent } from "@/lib/forms/consent";
 import { resolveLocale } from "@/i18n/locale";
 import { routing } from "@/i18n/routing";
 import { fontVariables } from "@/lib/fonts";
-import { brandName, siteUrl } from "@/lib/site";
+import { allowIndexing, brandName, siteUrl } from "@/lib/site";
+import { openGraphBase } from "@/lib/seo/open-graph";
 import "../globals.css";
 
 // Build one static version of every page per language.
@@ -30,11 +31,10 @@ export async function generateMetadata({
     // Pages set only their own title; the brand is appended automatically.
     title: { default: brand, template: `%s · ${brand}` },
     description: t("description"),
-    openGraph: {
-      siteName: brand,
-      locale: locale === "fr" ? "fr_FR" : "en_GB",
-      type: "website",
-    },
+    openGraph: openGraphBase(locale),
+    twitter: { card: "summary_large_image" },
+    // Before launch (or on preview addresses) nothing is indexed; see allowIndexing.
+    ...(!allowIndexing && { robots: { index: false, follow: false } }),
   };
 }
 

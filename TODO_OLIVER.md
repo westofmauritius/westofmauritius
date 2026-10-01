@@ -60,3 +60,14 @@ Lägg till som Secrets i Cloudflare:
 Logga sedan in på `https://<din-sajt>/admin`. Där ser och filtrerar du leads,
 kontaktmeddelanden och nyhetsbrevsprenumeranter, och exporterar till CSV.
 Utan dessa två inställningar är adminsidan avstängd.
+
+## 6. Slå på indexering när domänen är live
+
+Tills vidare blockerar sajten sökmotorer (robots.txt och `noindex`), så att
+förhandsadressen på workers.dev inte hamnar i Google. När
+`westmauritius.mu` är kopplad och `NEXT_PUBLIC_SITE_URL` pekar dit:
+
+- Cloudflare → Build variables: `NEXT_PUBLIC_ALLOW_INDEXING` = `true`, och
+  bygg om.
+- Lägg till sajten i Google Search Console och skicka in
+  `https://westmauritius.mu/sitemap.xml`.

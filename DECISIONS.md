@@ -130,3 +130,27 @@ to-do list, TODO_OLIVER.md, is in Swedish.)
   export of exactly the filtered list. CSV is Excel-safe (BOM) and
   neutralises formula injection. The newsletter export contains only
   confirmed, still-subscribed addresses.
+
+## SEO files, sharing images and security
+
+- **Indexing is opt-in** (`NEXT_PUBLIC_ALLOW_INDEXING=true`). Until then
+  robots.txt disallows everything and pages carry `noindex`, so a preview
+  address (workers.dev) never competes with the real domain in Google.
+- **sitemap.xml lists every indexable page in both languages with hreflang
+  alternates**; placeholder content and utility pages are left out.
+- **Sharing images are drawn at build time** (`scripts/generate-og.tsx`,
+  satori + resvg) into `public/og/`. Next.js's `opengraph-image` routes were
+  tried first but added ~820 kB (gzip) of image engine to the Worker for
+  images that never change between builds. Pages with a real photo share
+  the photo instead (never an SVG, which social networks reject).
+- **The map is loaded with `next/dynamic` and `ssr: false`**: otherwise the
+  server bundle carried 1.1 MB of MapLibre it never runs. Worker size after
+  these two changes: ~1.8 MB gzip.
+- **Security headers** on every response (HSTS, nosniff, frame denial,
+  referrer policy, permissions policy) and a Content-Security-Policy that
+  lists the only outside hosts used (OpenFreeMap, Umami). `'unsafe-inline'`
+  scripts are allowed because prerendered pages cannot carry per-request
+  nonces; the editor (`/keystatic`) is exempt because it talks to GitHub.
+  Static files get headers and long cache lifetimes from `public/_headers`.
+- **Icons generated once** from one SVG (favicon.ico with 16/32/48 px,
+  Apple touch icon, maskable PWA icons); the web manifest uses them.

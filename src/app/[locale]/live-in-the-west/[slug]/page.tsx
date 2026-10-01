@@ -14,6 +14,8 @@ import { getAreas } from "@/lib/content/areas";
 import { getLivingArticle, getLivingArticles } from "@/lib/content/living";
 import type { LivingArticle } from "@/lib/content/types";
 import { localeAlternates } from "@/lib/seo/alternates";
+import { ogImage } from "@/lib/seo/og-images";
+import { openGraphBase } from "@/lib/seo/open-graph";
 import { livingArticleSchema } from "@/lib/seo/schema";
 import { absoluteUrl } from "@/lib/seo/urls";
 import { brandName } from "@/lib/site";
@@ -51,6 +53,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: article.seoDescription,
     alternates: localeAlternates((l) => articleHref(article, l), locale),
     openGraph: {
+      ...openGraphBase(locale),
+      images: ogImage(locale, article.title, "living", article.key),
       type: "article",
       title: article.title,
       description: article.seoDescription,
