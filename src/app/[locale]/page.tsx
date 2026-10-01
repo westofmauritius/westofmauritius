@@ -4,6 +4,8 @@ import { GuideCard } from "@/components/content/GuideCard";
 import { GuideThemes } from "@/components/content/GuideThemes";
 import { PlaceCard } from "@/components/content/PlaceCard";
 import { HeroArt } from "@/components/home/HeroArt";
+import { placeMarker } from "@/components/map/markers";
+import { SiteMap } from "@/components/map/SiteMap";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { Container } from "@/components/ui/Container";
@@ -48,7 +50,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
   // places stay first (getPlaces sorts them). sort() is stable.
   const highlights = [...places]
     .sort((a, b) => Number(a.placeholder) - Number(b.placeholder))
-    .slice(0, 6);
+    .slice(0, 8);
 
   return (
     <>
@@ -118,7 +120,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       <section className="py-20 sm:py-28">
         <Container size="wide">
           <div className="flex flex-wrap items-end justify-between gap-6">
-            <SectionHeading title={t("areasTitle")} intro={t("areasIntro")} />
+            <SectionHeading title={t("areasTitle")} />
             <Link
               href="/areas"
               className="text-sm font-medium text-lagoon-700 hover:underline"
@@ -170,10 +172,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         <section className="border-t border-line bg-sand-50 py-20 sm:py-28">
           <Container size="wide">
             <div className="flex flex-wrap items-end justify-between gap-6">
-              <SectionHeading
-                title={t("featuredTitle")}
-                intro={t("featuredIntro")}
-              />
+              <SectionHeading title={t("featuredTitle")} />
               <Link
                 href="/places"
                 className="text-sm font-medium text-lagoon-700 hover:underline"
@@ -181,7 +180,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                 {t("allPlaces")} →
               </Link>
             </div>
-            <div className="mt-12 grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-12 grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4">
               {highlights.map((place) => (
                 <PlaceCard
                   key={place.slug}
@@ -213,13 +212,35 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                   {t("allGuides")} →
                 </Link>
               </div>
-              <div className="mt-10 grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
-                {guides.slice(0, 3).map((guide) => (
+              <div className="mt-10 grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4">
+                {guides.slice(0, 4).map((guide) => (
                   <GuideCard key={guide.key} guide={guide} />
                 ))}
               </div>
             </div>
           )}
+        </Container>
+      </section>
+
+      {/* Every place on one map: the quickest way to see the coast at a glance. */}
+      <section className="border-t border-line bg-sand-50 py-20 sm:py-28">
+        <Container size="wide">
+          <div className="flex flex-wrap items-end justify-between gap-6">
+            <SectionHeading title={t("mapTitle")} />
+            <Link
+              href="/places"
+              className="text-sm font-medium text-lagoon-700 hover:underline"
+            >
+              {t("allOnMap")} →
+            </Link>
+          </div>
+          <SiteMap
+            name={t("mapTitle")}
+            center={{ lat: -20.37, lng: 57.37 }}
+            zoom={10}
+            markers={places.map((place) => placeMarker(place, locale))}
+            className="mt-10 aspect-[4/5] sm:aspect-[16/9] lg:aspect-[21/9]"
+          />
         </Container>
       </section>
 

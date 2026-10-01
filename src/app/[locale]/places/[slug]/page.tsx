@@ -310,7 +310,7 @@ export default async function PlacePage({ params }: Props) {
         <section className="border-t border-line py-16">
           <Container size="wide">
             <h2 className="text-display-3">{t("PlacePage.inGuides")}</h2>
-            <div className="mt-10 grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-10 grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4">
               {inGuides.map((guide) => (
                 <GuideCard key={guide.key} guide={guide} />
               ))}
@@ -325,7 +325,7 @@ export default async function PlacePage({ params }: Props) {
             <h2 className="text-display-3">
               {t("PlacePage.moreIn", { area: area.name })}
             </h2>
-            <div className="mt-10 grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-10 grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4">
               {nearby.map((p) => (
                 <PlaceCard key={p.slug} place={p} areaName={area.name} />
               ))}

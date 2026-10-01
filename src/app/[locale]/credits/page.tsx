@@ -82,7 +82,7 @@ export default async function CreditsPage({ params }: Props) {
                   fallbackTone="sand"
                   fallbackLabel=""
                   aspect="aspect-[4/3]"
-                  sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                  sizes="(min-width: 1024px) 25vw, 50vw"
                   className="rounded-sm"
                 />
                 <p className="mt-3 text-ink">{photo.alt}</p>

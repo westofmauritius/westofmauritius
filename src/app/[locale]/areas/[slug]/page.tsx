@@ -161,7 +161,7 @@ export default async function AreaPage({ params }: Props) {
               <h3 className="mb-6 eyebrow text-ink-muted">
                 {t(`Categories.${category}.many`)}
               </h3>
-              <div className="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4">
                 {places.map((place) => (
                   <PlaceCard key={place.slug} place={place} />
                 ))}

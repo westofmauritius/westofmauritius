@@ -119,7 +119,7 @@ export default async function GuideCategoryPage({ params }: Props) {
             <h2 className="mb-6 eyebrow text-ink-muted">
               {t("CategoryPage.guidesTitle")}
             </h2>
-            <div className="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4">
               {guides.map((guide) => (
                 <GuideCard key={guide.key} guide={guide} />
               ))}
@@ -144,7 +144,7 @@ export default async function GuideCategoryPage({ params }: Props) {
                   markers={places.map((place) => placeMarker(place, locale))}
                   className="mt-8 aspect-[4/5] sm:aspect-[16/9] lg:aspect-[21/9]"
                 />
-                <div className="mt-12 grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="mt-12 grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4">
                   {places.map((place) => (
                     <PlaceCard
                       key={place.slug}

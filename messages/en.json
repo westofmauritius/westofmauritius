@@ -31,15 +31,13 @@
   },
   "Home": {
     "eyebrow": "The west coast of Mauritius",
-    "title": "Lagoons, mountains and the island’s finest sunsets",
-    "intro": "Where to eat, swim and watch the sun go down, and what it takes to make the west coast home.",
+    "title": "Welcome to the “best” coast!",
+    "intro": "Lagoons, mountains and the island’s finest sunsets. Where to eat, swim and watch the sun go down, and what it takes to make the west coast home.",
     "ctaGuides": "Explore the guides",
     "ctaLive": "Live in the West",
     "areasTitle": "Six places, one coast",
-    "areasIntro": "From the long beach at Flic en Flac to the mountain at Le Morne, each corner of the west has its own pace.",
     "allAreas": "All areas",
     "featuredTitle": "Places to know",
-    "featuredIntro": "Restaurants, beaches and sunset spots worth the detour.",
     "allPlaces": "Browse all places",
     "themesTitle": "Plan by theme",
     "latestTitle": "Latest guides",
@@ -48,7 +46,9 @@
     "liveTitle": "Dreaming of a home by the lagoon?",
     "liveText": "Whether you are moving from abroad or coming home, we explain how buying property on the west coast works, and put you in touch with people who can help.",
     "liveCta": "How buying works",
-    "liveEnquire": "Tell us what you are looking for"
+    "liveEnquire": "Tell us what you are looking for",
+    "mapTitle": "The west on one map",
+    "allOnMap": "Search all places"
   },
   "Pages": {
     "areas": {

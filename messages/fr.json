@@ -31,15 +31,13 @@
   },
   "Home": {
     "eyebrow": "La côte ouest de l’île Maurice",
-    "title": "Lagons, montagnes et les plus beaux couchers de soleil de l’île",
-    "intro": "Où manger, se baigner et regarder le soleil se coucher, et comment s’installer sur la côte ouest.",
+    "title": "Bienvenue sur la\u00a0«\u202fmeilleure\u202f» côte\u00a0!",
+    "intro": "Lagons, montagnes et les plus beaux couchers de soleil de l’île. Où manger, se baigner et regarder le soleil se coucher, et comment s’installer sur la côte ouest.",
     "ctaGuides": "Découvrir les guides",
     "ctaLive": "Vivre dans l’Ouest",
     "areasTitle": "Six lieux, une côte",
-    "areasIntro": "De la longue plage de Flic en Flac à la montagne du Morne, chaque coin de l’Ouest a son propre rythme.",
     "allAreas": "Toutes les régions",
     "featuredTitle": "Les adresses à connaître",
-    "featuredIntro": "Restaurants, plages et spots de coucher de soleil qui valent le détour.",
     "allPlaces": "Voir toutes les adresses",
     "themesTitle": "Par thème",
     "latestTitle": "Derniers guides",
@@ -48,7 +46,9 @@
     "liveTitle": "Vous rêvez d’une maison au bord du lagon ?",
     "liveText": "Que vous veniez de l’étranger ou que vous rentriez au pays, nous expliquons comment acheter un bien sur la côte ouest, et vous mettons en relation avec les bonnes personnes.",
     "liveCta": "Comment acheter",
-    "liveEnquire": "Décrivez votre projet"
+    "liveEnquire": "Décrivez votre projet",
+    "mapTitle": "Tout l’ouest sur une carte",
+    "allOnMap": "Chercher une adresse"
   },
   "Pages": {
     "areas": {

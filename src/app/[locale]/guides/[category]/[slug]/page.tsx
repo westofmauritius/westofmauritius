@@ -213,7 +213,7 @@ export default async function GuidePage({ params }: Props) {
         <section className="border-t border-line bg-sand-50 py-16">
           <Container size="wide">
             <h2 className="text-display-3">{t("GuidePage.placesTitle")}</h2>
-            <div className="mt-10 grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-10 grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4">
               {places.map((place) => (
                 <PlaceCard
                   key={place.slug}
@@ -232,7 +232,7 @@ export default async function GuidePage({ params }: Props) {
             <h2 className="text-display-3">
               {t("GuidePage.moreTitle", { category: categoryTitle })}
             </h2>
-            <div className="mt-10 grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-10 grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4">
               {more.map((g) => (
                 <GuideCard key={g.key} guide={g} />
               ))}

@@ -53,7 +53,7 @@ export default async function GuidesPage({
       <section className="mt-16">
         <h2 className="text-display-3">{t("GuidesPage.latestTitle")}</h2>
         {guides.length > 0 ? (
-          <div className="mt-8 grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4">
             {guides.map((guide) => (
               <GuideCard key={guide.key} guide={guide} />
             ))}

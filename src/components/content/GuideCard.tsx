@@ -17,7 +17,6 @@ export async function GuideCard({ guide }: { guide: Guide }) {
       }}
       title={guide.title}
       eyebrow={t(`GuideCategories.${guide.category}.title`)}
-      excerpt={guide.excerpt}
       image={
         guide.hero && (
           <Photo
@@ -25,7 +24,7 @@ export async function GuideCard({ guide }: { guide: Guide }) {
             fallbackTone={guide.placeholderTone}
             fallbackLabel={guide.title}
             aspect="aspect-[4/3]"
-            sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+            sizes="(min-width: 1024px) 25vw, 50vw"
           />
         )
       }

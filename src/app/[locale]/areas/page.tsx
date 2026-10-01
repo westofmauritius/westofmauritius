@@ -78,7 +78,6 @@ export default async function AreasPage({
             href={{ pathname: "/areas/[slug]", params: { slug: area.slug } }}
             title={area.name}
             eyebrow={area.tagline}
-            excerpt={area.intro}
             image={
               area.hero && (
                 <Photo

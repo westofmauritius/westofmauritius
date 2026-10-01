@@ -10,8 +10,8 @@ import { guideCategories, guideCategoryKeys } from "@/lib/guide-categories";
  * The guide themes as tall tiles. Scrolls sideways on phones (with snap
  * points), one row on large screens.
  *
- * Each tile borrows the main photo of a real (non-placeholder) guide in its
- * theme; themes without one keep the gradient.
+ * Each tile borrows the main photo of a guide in its theme (a real guide's
+ * when there is one); themes without any photo keep the gradient.
  */
 export async function GuideThemes() {
   const locale = (await getLocale()) as Locale;
@@ -19,8 +19,10 @@ export async function GuideThemes() {
     getTranslations("GuideCategories"),
     getGuides(locale),
   ]);
+  // A real guide's photo first; placeholder guides have photos too.
   const photoFor = (key: string) =>
     guides.find((g) => g.category === key && !g.placeholder && g.hero)?.hero ??
+    guides.find((g) => g.category === key && g.hero)?.hero ??
     null;
   return (
     <ul className="-mx-4 flex snap-x snap-mandatory scroll-px-4 gap-4 overflow-x-auto px-4 pb-4 sm:mx-0 sm:grid sm:grid-cols-3 sm:overflow-visible sm:px-0 lg:grid-cols-6">
@@ -55,7 +57,6 @@ export async function GuideThemes() {
                 {t(`${key}.title`)}
               </span>
             </div>
-            <p className="mt-3 text-sm leading-relaxed text-ink-muted">{t(`${key}.intro`)}</p>
           </Link>
         </li>
       ))}

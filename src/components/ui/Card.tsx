@@ -9,7 +9,6 @@ type CardProps = {
   title: string;
   /** Small label above the title, e.g. the area or category. */
   eyebrow?: string;
-  excerpt?: string;
   /** Real image (usually a next/image element). Omit to show a placeholder. */
   image?: React.ReactNode;
   placeholderTone?: PlaceholderTone;
@@ -23,15 +22,15 @@ type CardProps = {
 };
 
 /**
- * Editorial card for places, guides and areas: image on top, text below,
- * the whole card is one link. Kept quiet (no borders, no shadows) to feel
+ * Editorial card for places, guides and areas: image on top, label and title
+ * below, the whole card is one link. No summary text: the owner wants cards
+ * to stay visual and compact (summaries are on the pages themselves). Kept quiet (no borders, no shadows) to feel
  * like a magazine rather than a listings site.
  */
 export function Card({
   href,
   title,
   eyebrow,
-  excerpt,
   image,
   placeholderTone = "lagoon",
   featured,
@@ -61,9 +60,13 @@ export function Card({
           </div>
         )}
       </div>
-      <div className="pt-4">
-        {eyebrow && <p className="mb-2 eyebrow text-ink-muted">{eyebrow}</p>}
-        <h3 className="text-2xl leading-tight">
+      <div className="pt-3 sm:pt-4">
+        {eyebrow && (
+          <p className="mb-1.5 eyebrow text-[0.625rem] text-ink-muted sm:mb-2 sm:text-xs">
+            {eyebrow}
+          </p>
+        )}
+        <h3 className="text-lg leading-snug sm:text-2xl sm:leading-tight">
           {/* The ::after makes the whole card clickable while keeping one link. */}
           <Link
             href={href}
@@ -72,9 +75,6 @@ export function Card({
             {title}
           </Link>
         </h3>
-        {excerpt && (
-          <p className="mt-2 leading-relaxed text-ink-muted">{excerpt}</p>
-        )}
       </div>
     </article>
   );

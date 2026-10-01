@@ -174,14 +174,12 @@ export default async function StyleguidePage({
             href="/styleguide"
             eyebrow="Tamarin · Placeholder"
             title="Example beach"
-            excerpt="Placeholder text. A short description of the place goes here."
             placeholder
           />
           <Card
             href="/styleguide"
             eyebrow="Black River · Placeholder"
             title="Example restaurant"
-            excerpt="Placeholder text. Shows how a featured (paid) placement looks."
             placeholderTone="sunset"
             featured
             placeholder
@@ -190,7 +188,6 @@ export default async function StyleguidePage({
             href="/styleguide"
             eyebrow="Le Morne · Placeholder"
             title="Example sunset spot"
-            excerpt="Placeholder text. Cards have no borders or shadows, like a magazine."
             placeholderTone="sand"
             placeholder
           />
