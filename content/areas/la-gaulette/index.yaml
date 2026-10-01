@@ -1,24 +1,45 @@
 name: La Gaulette
 order: 4
-placeholder: true
+placeholder: false
 location:
-  lat: -20.425
+  lat: -20.427
   lng: 57.36
 mapZoom: 13
 hero:
-  discriminant: false
+  discriminant: true
+  value:
+    image: /images/areas/la-gaulette/hero/image.jpg
+    alt:
+      en:
+        text: >-
+          Clear turquoise lagoon off La Gaulette, with Le Morne Brabant on the
+          horizon
+      fr:
+        text: Le lagon turquoise de La Gaulette, avec le Morne Brabant à l’horizon
+    credit: Lukas von Daeniken from Schweiz · CC BY-SA 2.0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:%C3%8Ele_aux_B%C3%A9nitiers_and_Le_Morne_(22937338593).jpg
 placeholderTone: lagoon
 content:
   en:
     name: La Gaulette
-    tagline: Placeholder tagline for La Gaulette.
+    tagline: A fishing village on Le Morne's lagoon
     intro: >-
-      Placeholder. A two- or three-sentence introduction to La Gaulette: what it
-      feels like, who it suits and the best time to visit.
+      A small, unhurried village between the mountains and a wide lagoon. From
+      here, boats head out to Île aux Bénitiers and the Crystal Rock,
+      kitesurfers to the waters off Le Morne, and the road climbs up to
+      Chamarel.
+    seoDescription: >-
+      La Gaulette, west Mauritius: a quiet fishing village, boat trips to Île
+      aux Bénitiers and the Crystal Rock, kitesurfing and the road to Chamarel.
   fr:
     name: La Gaulette
-    tagline: Accroche provisoire pour La Gaulette.
+    tagline: Un village de pêcheurs sur le lagon du Morne
     intro: >-
-      Texte provisoire. Une introduction de deux ou trois phrases sur La
-      Gaulette : son ambiance, à qui le lieu plaît et la meilleure période pour
-      venir.
+      Un petit village tranquille entre les montagnes et un vaste lagon. D’ici
+      partent les bateaux pour l’île aux Bénitiers et le Crystal Rock, les
+      kitesurfeurs vers les eaux du Morne, et la route qui grimpe à Chamarel.
+    seoDescription: >-
+      La Gaulette, ouest de l’île Maurice : un village de pêcheurs paisible,
+      l’île aux Bénitiers et le Crystal Rock, le kitesurf et la route de
+      Chamarel.

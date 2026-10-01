@@ -1,0 +1,45 @@
+name: Chamarel Falls
+category: activity
+area: chamarel
+placeholder: false
+featured: false
+location:
+  lat: -20.4431
+  lng: 57.386
+openingHours: []
+images:
+  - image: /images/places/chamarel-falls/images/0/image.jpg
+    alt:
+      en:
+        text: Chamarel Falls dropping over a basalt cliff into a forested gorge
+      fr:
+        text: >-
+          La cascade de Chamarel tombant d’une falaise de basalte dans une gorge
+          boisée
+    credit: dronepicr · CC BY 2.0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:Chamarel_Waterfall_in_Mauritius_(53698126454).jpg
+  - image: /images/places/chamarel-falls/images/1/image.jpg
+    alt:
+      en:
+        text: Chamarel Falls seen across the forest
+      fr:
+        text: La cascade de Chamarel vue par-dessus la forêt
+    credit: Benoît Prieur · CC0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:Cascade_de_Chamarel_(mars_2020)_-_1.jpg
+placeholderTone: lagoon
+content:
+  en:
+    name: Chamarel Falls
+    summary: >-
+      A river plunging about 95 metres over a sheer basalt cliff into a forested
+      pool — the most spectacular waterfall on the island.
+    hoursNote: Entrance fee. Check opening times before you go.
+  fr:
+    name: Cascade de Chamarel
+    summary: >-
+      Une rivière qui chute d’environ 95 mètres le long d’une falaise de basalte
+      dans un bassin entouré de forêt — la cascade la plus spectaculaire de
+      l’île.
+    hoursNote: Entrée payante. Vérifiez les horaires avant de venir.

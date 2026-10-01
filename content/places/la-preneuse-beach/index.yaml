@@ -1,0 +1,33 @@
+name: La Preneuse beach
+category: sunset
+area: black-river
+placeholder: false
+featured: false
+location:
+  lat: -20.354
+  lng: 57.366
+address: La Preneuse
+openingHours: []
+images:
+  - image: /images/places/la-preneuse-beach/images/0/image.jpg
+    alt:
+      en:
+        text: La Preneuse public beach at Black River
+      fr:
+        text: La plage publique de La Preneuse, à Rivière Noire
+    credit: Contrarianmind · CC BY-SA 3.0 · Wikimedia Commons
+    creditUrl: https://commons.wikimedia.org/wiki/File:La-preneuse-beach-mauritius.jpg
+placeholderTone: sunset
+content:
+  en:
+    name: La Preneuse beach
+    summary: >-
+      A small public beach at Black River, watched over by a 19th-century
+      Martello tower — a lovely place to see the sun go down.
+    hoursNote: Public beach, open to everyone.
+  fr:
+    name: Plage de La Preneuse
+    summary: >-
+      Une petite plage publique à Rivière Noire, veillée par une tour Martello
+      du XIXe siècle — un très bel endroit pour regarder le soleil se coucher.
+    hoursNote: Plage publique, ouverte à tous.

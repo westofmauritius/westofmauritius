@@ -1,24 +1,44 @@
 name: Black River
 order: 3
-placeholder: true
+placeholder: false
 location:
   lat: -20.36
-  lng: 57.372
+  lng: 57.37
 mapZoom: 13
 hero:
-  discriminant: false
+  discriminant: true
+  value:
+    image: /images/areas/black-river/hero/image.jpg
+    alt:
+      en:
+        text: Forested ravines of Black River Gorges seen from the Gorges Viewpoint
+      fr:
+        text: >-
+          Les ravins boisés des Gorges de Rivière Noire vus depuis le point de
+          vue
+    credit: Lukas von Daeniken from Schweiz · CC BY-SA 2.0 · Wikimedia Commons
+    creditUrl: https://commons.wikimedia.org/wiki/File:Gorges_Viewpoint_(22937657943).jpg
 placeholderTone: ocean
 content:
   en:
     name: Black River
-    tagline: Placeholder tagline for Black River.
+    tagline: Fishing boats, a British tower and the way to the gorges
     intro: >-
-      Placeholder. A two- or three-sentence introduction to Black River: what it
-      feels like, who it suits and the best time to visit.
+      Black River — Rivière Noire — is the working heart of the west coast: the
+      base for big-game fishing boats, home to La Preneuse beach and its
+      19th-century Martello tower, and the gateway to the island's largest
+      national park.
+    seoDescription: >-
+      Black River (Rivière Noire), west Mauritius: big-game fishing, La Preneuse
+      beach and its Martello tower, and Black River Gorges National Park.
   fr:
     name: Rivière Noire
-    tagline: Accroche provisoire pour Rivière Noire.
+    tagline: Bateaux de pêche, tour anglaise et route des gorges
     intro: >-
-      Texte provisoire. Une introduction de deux ou trois phrases sur Rivière
-      Noire : son ambiance, à qui le lieu plaît et la meilleure période pour
-      venir.
+      Rivière Noire est le cœur actif de la côte ouest : le port d’attache des
+      bateaux de pêche au gros, la plage de La Preneuse et sa tour Martello du
+      XIXe siècle, et la porte d’entrée du plus grand parc national de l’île.
+    seoDescription: >-
+      Rivière Noire, ouest de l’île Maurice : pêche au gros, la plage de La
+      Preneuse et sa tour Martello, et le parc national des Gorges de Rivière
+      Noire.

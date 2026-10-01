@@ -1,0 +1,52 @@
+category: activities
+placeholder: false
+featured: false
+publishedAt: '2026-10-01'
+areas:
+  - tamarin
+  - black-river
+  - la-gaulette
+  - le-morne
+  - chamarel
+places:
+  - le-morne-brabant
+  - slave-route-monument
+  - black-river-gorges-national-park
+  - piton-de-la-petite-riviere-noire
+  - ile-aux-benitiers
+  - crystal-rock
+  - martello-tower-la-preneuse
+  - tamarin-salt-pans
+hero:
+  discriminant: true
+  value:
+    image: /images/guides/things-to-do-in-the-west/hero/image.jpg
+    alt:
+      en:
+        text: Le Morne Brabant seen from the sea
+      fr:
+        text: Le Morne Brabant vu depuis la mer
+    credit: Benoît Prieur · CC0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:Le_Morne_Brabant_depuis_l%27oc%C3%A9an.jpg
+placeholderTone: ocean
+content:
+  en:
+    title: 'Things to do in the west: mountains, lagoons and history'
+    excerpt: >-
+      Beyond the beach: hiking Le Morne and the island's highest peak, boat
+      trips across the lagoon, rare birds in the national park and the stories
+      of the coast.
+    seoDescription: >-
+      Things to do in west Mauritius: hike Le Morne Brabant, explore Black River
+      Gorges, sail to Île aux Bénitiers and discover the coast's history.
+  fr:
+    title: 'Que faire dans l’ouest : montagnes, lagons et histoire'
+    slug: que-faire-dans-l-ouest
+    excerpt: >-
+      Au-delà de la plage : gravir Le Morne et le plus haut sommet de l’île,
+      naviguer sur le lagon, observer des oiseaux rares dans le parc national et
+      découvrir l’histoire de la côte.
+    seoDescription: >-
+      Que faire dans l’ouest de l’île Maurice : le Morne Brabant, les Gorges de
+      Rivière Noire, l’île aux Bénitiers et l’histoire de la côte.

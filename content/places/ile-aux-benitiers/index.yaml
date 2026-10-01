@@ -1,0 +1,57 @@
+name: Île aux Bénitiers
+category: activity
+area: la-gaulette
+placeholder: false
+featured: false
+location:
+  lat: -20.4211
+  lng: 57.3435
+openingHours: []
+images:
+  - image: /images/places/ile-aux-benitiers/images/0/image.jpg
+    alt:
+      en:
+        text: >-
+          Driftwood on a beach of Île aux Bénitiers, with Le Morne in the
+          distance
+      fr:
+        text: >-
+          Bois flotté sur une plage de l’île aux Bénitiers, avec Le Morne au
+          loin
+    credit: Lukas von Daeniken from Schweiz · CC BY-SA 2.0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:%C3%8Ele_aux_B%C3%A9nitiers_(23538328606).jpg
+  - image: /images/places/ile-aux-benitiers/images/1/image.jpg
+    alt:
+      en:
+        text: Beach on Île aux Bénitiers looking towards Le Morne Brabant
+      fr:
+        text: Plage de l’île aux Bénitiers face au Morne Brabant
+    credit: Benoît Prieur · CC0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:Vue_d%27une_plage_de_l%27%C3%AEle_aux_B%C3%A9nitiers_et_Morne_Brabant.jpg
+  - image: /images/places/ile-aux-benitiers/images/2/image.jpg
+    alt:
+      en:
+        text: >-
+          Clear turquoise lagoon off La Gaulette, with Le Morne Brabant on the
+          horizon
+      fr:
+        text: Le lagon turquoise de La Gaulette, avec le Morne Brabant à l’horizon
+    credit: Lukas von Daeniken from Schweiz · CC BY-SA 2.0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:%C3%8Ele_aux_B%C3%A9nitiers_and_Le_Morne_(22937338593).jpg
+placeholderTone: lagoon
+content:
+  en:
+    name: Île aux Bénitiers
+    summary: >-
+      A low coral islet in the lagoon off La Gaulette, with white beaches facing
+      Le Morne Brabant — reached by boat.
+    hoursNote: Reached by boat from La Gaulette and nearby villages.
+  fr:
+    name: Île aux Bénitiers
+    summary: >-
+      Un îlot corallien plat dans le lagon de La Gaulette, aux plages blanches
+      face au Morne Brabant — accessible en bateau.
+    hoursNote: Accès en bateau depuis La Gaulette et les villages voisins.

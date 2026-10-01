@@ -1,0 +1,33 @@
+name: Le Morne public beach
+category: beach
+area: le-morne
+placeholder: false
+featured: false
+location:
+  lat: -20.4559
+  lng: 57.3114
+openingHours: []
+images:
+  - image: /images/places/le-morne-public-beach/images/0/image.jpg
+    alt:
+      en:
+        text: Palm trees and white sand at Le Morne beach
+      fr:
+        text: Cocotiers et sable blanc sur la plage du Morne
+    credit: dronepicr · CC BY 2.0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:Le_Morne_Beach_in_Mauritius_(53698123559).jpg
+placeholderTone: lagoon
+content:
+  en:
+    name: Le Morne public beach
+    summary: >-
+      Fine white sand and clear, shallow water on the west side of the Le Morne
+      peninsula, with the mountain rising behind you.
+    hoursNote: Public beach, open to everyone.
+  fr:
+    name: Plage publique du Morne
+    summary: >-
+      Un sable blanc et fin et une eau claire et peu profonde sur le côté ouest
+      de la péninsule du Morne, avec la montagne juste derrière.
+    hoursNote: Plage publique, ouverte à tous.

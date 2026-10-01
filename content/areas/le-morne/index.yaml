@@ -1,23 +1,45 @@
 name: Le Morne
 order: 5
-placeholder: true
+placeholder: false
 location:
-  lat: -20.456
-  lng: 57.313
+  lat: -20.455
+  lng: 57.322
 mapZoom: 13
 hero:
-  discriminant: false
+  discriminant: true
+  value:
+    image: /images/areas/le-morne/hero/image.jpg
+    alt:
+      en:
+        text: Aerial view of Le Morne Brabant and its lagoon in the morning
+      fr:
+        text: Vue aérienne du Morne Brabant et de son lagon le matin
+    credit: Gavish Barosee · CC BY-SA 4.0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:Le_Morne_mountain_morning_shadow.jpg
 placeholderTone: sunset
 content:
   en:
     name: Le Morne
-    tagline: Placeholder tagline for Le Morne.
+    tagline: The mountain, the lagoon and a place of memory
     intro: >-
-      Placeholder. A two- or three-sentence introduction to Le Morne: what it
-      feels like, who it suits and the best time to visit.
+      The basalt mass of Le Morne Brabant rises 556 metres above a turquoise
+      lagoon at the south-west tip of the island. A UNESCO World Heritage Site
+      and a symbol of the resistance to slavery, it is also home to some of the
+      finest beaches and kitesurfing waters in Mauritius.
+    seoDescription: >-
+      Le Morne, Mauritius: the UNESCO-listed mountain and its history, the
+      public beach, kitesurfing and the hike up Le Morne Brabant. What to know
+      before you go.
   fr:
     name: Le Morne
-    tagline: Accroche provisoire pour Le Morne.
+    tagline: La montagne, le lagon et un lieu de mémoire
     intro: >-
-      Texte provisoire. Une introduction de deux ou trois phrases sur Le Morne :
-      son ambiance, à qui le lieu plaît et la meilleure période pour venir.
+      La masse basaltique du Morne Brabant s’élève à 556 mètres au-dessus d’un
+      lagon turquoise, à la pointe sud-ouest de l’île. Inscrit au patrimoine
+      mondial de l’UNESCO et symbole de la résistance à l’esclavage, Le Morne
+      compte aussi parmi les plus belles plages et les meilleurs spots de
+      kitesurf de Maurice.
+    seoDescription: >-
+      Le Morne, île Maurice : la montagne classée à l’UNESCO et son histoire, la
+      plage publique, le kitesurf et l’ascension du Morne Brabant. Nos conseils.

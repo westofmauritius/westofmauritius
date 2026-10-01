@@ -1,0 +1,46 @@
+category: sunsets
+placeholder: false
+featured: false
+publishedAt: '2026-10-01'
+areas:
+  - flic-en-flac
+  - tamarin
+  - black-river
+  - le-morne
+places:
+  - tamarin-bay
+  - la-preneuse-beach
+  - flic-en-flac-public-beach
+  - le-morne-public-beach
+hero:
+  discriminant: true
+  value:
+    image: /images/guides/sunset-spots/hero/image.jpg
+    alt:
+      en:
+        text: Sunset over the sea at Flic en Flac beach
+      fr:
+        text: Coucher de soleil sur la mer à la plage de Flic en Flac
+    credit: dronepicr · CC BY 2.0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:Sunset_at_Flic_en_Flac_Beach_in_Mauritius_(53696897952).jpg
+placeholderTone: sunset
+content:
+  en:
+    title: Where to watch the sunset on the west coast
+    excerpt: >-
+      The west coast faces the open Indian Ocean, so every evening the sun goes
+      down over the sea. Our favourite places to watch it, and how to time it.
+    seoDescription: >-
+      The best sunset spots in west Mauritius — Tamarin Bay, La Preneuse, Flic
+      en Flac and Le Morne — plus tips on timing and the season.
+  fr:
+    title: Où voir le coucher du soleil sur la côte ouest
+    slug: ou-voir-le-coucher-du-soleil
+    excerpt: >-
+      La côte ouest fait face au grand large de l’océan Indien : chaque soir, le
+      soleil se couche sur la mer. Nos endroits préférés pour le regarder, et
+      comment bien choisir son moment.
+    seoDescription: >-
+      Les plus beaux couchers de soleil de l’ouest de l’île Maurice — baie de
+      Tamarin, La Preneuse, Flic en Flac et Le Morne — avec nos conseils.

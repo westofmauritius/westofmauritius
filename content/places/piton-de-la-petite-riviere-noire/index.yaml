@@ -1,0 +1,35 @@
+name: Piton de la Petite Rivière Noire
+category: activity
+area: black-river
+placeholder: false
+featured: false
+location:
+  lat: -20.4088
+  lng: 57.4077
+openingHours: []
+images:
+  - image: /images/places/piton-de-la-petite-riviere-noire/images/0/image.jpg
+    alt:
+      en:
+        text: The summit of Piton de la Petite Rivière Noire, with a Mauritian flag
+      fr:
+        text: >-
+          Le sommet du Piton de la Petite Rivière Noire, avec un drapeau
+          mauricien
+    credit: Aisler · CC BY-SA 4.0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:Peak_-_Piton_de_la_Petite_Rivi%C3%A8re_Noire_01.jpg
+placeholderTone: ocean
+content:
+  en:
+    name: Piton de la Petite Rivière Noire
+    summary: >-
+      At 828 metres, the highest summit in Mauritius — a rewarding hike with
+      views across the gorges to the west coast.
+    hoursNote: Open access. Start early and avoid the hike in wet weather.
+  fr:
+    name: Piton de la Petite Rivière Noire
+    summary: >-
+      Avec ses 828 mètres, le plus haut sommet de Maurice — une belle randonnée
+      avec vue sur les gorges et la côte ouest.
+    hoursNote: Accès libre. Partez tôt et évitez la randonnée par temps humide.

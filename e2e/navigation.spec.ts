@@ -20,11 +20,8 @@ test("the start page leads to an area and on to a place", async ({ page }) => {
     page.getByRole("heading", { level: 1, name: "Tamarin" }),
   ).toBeVisible();
 
-  await page
-    .getByRole("link", { name: "Example restaurant, Tamarin" })
-    .first()
-    .click();
-  await expect(page).toHaveURL(/\/en\/places\/example-restaurant-tamarin$/);
+  await page.getByRole("link", { name: "Tamarin Bay" }).first().click();
+  await expect(page).toHaveURL(/\/en\/places\/tamarin-bay$/);
   const crumbs = page.getByRole("navigation", { name: "Breadcrumb" });
   await expect(crumbs.getByRole("link", { name: "Tamarin" })).toBeVisible();
 });

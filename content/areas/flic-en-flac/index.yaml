@@ -1,24 +1,47 @@
 name: Flic en Flac
 order: 1
-placeholder: true
+placeholder: false
 location:
-  lat: -20.274
-  lng: 57.371
+  lat: -20.279
+  lng: 57.368
 mapZoom: 13
 hero:
-  discriminant: false
+  discriminant: true
+  value:
+    image: /images/areas/flic-en-flac/hero/image.jpg
+    alt:
+      en:
+        text: >-
+          Flic en Flac beach lined with filao trees, with the lagoon on the
+          right
+      fr:
+        text: La plage de Flic en Flac bordée de filaos, avec le lagon à droite
+    credit: dronepicr · CC BY 2.0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:Flic_en_Flac_Beach_in_Mauiritius_(53697781931).jpg
 placeholderTone: lagoon
 content:
   en:
     name: Flic en Flac
-    tagline: Placeholder tagline for Flic en Flac.
+    tagline: The long white beach of the west coast
     intro: >-
-      Placeholder. A two- or three-sentence introduction to Flic en Flac: what
-      it feels like, who it suits and the best time to visit.
+      One of the longest beaches on the island: white sand under filao trees, a
+      lagoon sheltered by the reef and the sun setting straight into the Indian
+      Ocean. Lively at weekends, when Mauritian families come to picnic, and
+      easy-going the rest of the week.
+    seoDescription: >-
+      Flic en Flac, west Mauritius: one of the island's longest beaches, a calm
+      lagoon, diving and sunsets. What it is like and what to know before you
+      go.
   fr:
     name: Flic en Flac
-    tagline: Accroche provisoire pour Flic en Flac.
+    tagline: La grande plage blanche de la côte ouest
     intro: >-
-      Texte provisoire. Une introduction de deux ou trois phrases sur Flic en
-      Flac : son ambiance, à qui le lieu plaît et la meilleure période pour
-      venir.
+      L’une des plus longues plages de l’île : du sable blanc sous les filaos,
+      un lagon abrité par le récif et le soleil qui se couche droit dans l’océan
+      Indien. Animée le week-end, quand les familles mauriciennes viennent
+      pique-niquer, paisible le reste de la semaine.
+    seoDescription: >-
+      Flic en Flac, ouest de l’île Maurice : l’une des plus longues plages de
+      l’île, un lagon calme, la plongée et les couchers de soleil. Ambiance et
+      conseils.

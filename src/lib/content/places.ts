@@ -31,7 +31,7 @@ function toPlace(
   const text = entry.content[locale];
   return {
     slug,
-    name: entry.name,
+    name: typeset(text.name || entry.name, locale),
     category: entry.category,
     areaSlug: entry.area,
     summary: typeset(text.summary, locale),

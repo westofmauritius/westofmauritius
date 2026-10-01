@@ -1,0 +1,45 @@
+name: Black River Gorges National Park
+category: activity
+area: black-river
+placeholder: false
+featured: false
+location:
+  lat: -20.4084
+  lng: 57.4262
+openingHours: []
+images:
+  - image: /images/places/black-river-gorges-national-park/images/0/image.jpg
+    alt:
+      en:
+        text: Twisted tree roots in the forest of Black River Gorges National Park
+      fr:
+        text: >-
+          Racines entrelacées dans la forêt du parc national des Gorges de
+          Rivière Noire
+    credit: Rod Waddington · CC BY-SA 2.0 · Wikimedia Commons
+    creditUrl: https://commons.wikimedia.org/wiki/File:Black_River_Gorge.jpg
+  - image: /images/places/black-river-gorges-national-park/images/1/image.jpg
+    alt:
+      en:
+        text: Forested ravines of Black River Gorges seen from the Gorges Viewpoint
+      fr:
+        text: >-
+          Les ravins boisés des Gorges de Rivière Noire vus depuis le point de
+          vue
+    credit: Lukas von Daeniken from Schweiz · CC BY-SA 2.0 · Wikimedia Commons
+    creditUrl: https://commons.wikimedia.org/wiki/File:Gorges_Viewpoint_(22937657943).jpg
+placeholderTone: ocean
+content:
+  en:
+    name: Black River Gorges National Park
+    summary: >-
+      The largest national park in Mauritius: 67 km² of native forest, ravines
+      and waterfalls, some 60 km of trails, and the island's rarest birds.
+    hoursNote: Free entry. Trails are best walked in the morning.
+  fr:
+    name: Parc national des Gorges de Rivière Noire
+    summary: >-
+      Le plus grand parc national de Maurice : 67 km² de forêt indigène, de
+      ravins et de cascades, quelque 60 km de sentiers et les oiseaux les plus
+      rares de l’île.
+    hoursNote: Entrée libre. Les sentiers se parcourent de préférence le matin.

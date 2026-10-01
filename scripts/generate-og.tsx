@@ -111,7 +111,7 @@ async function main() {
       })),
       ...places.map(({ slug, entry }) => ({
         path: `places/${slug}`,
-        title: entry.name,
+        title: entry.content[locale].name || entry.name,
         eyebrow: `${t.Categories[entry.category].one} · ${areaName(entry.area)}`,
         tone: entry.placeholderTone,
       })),

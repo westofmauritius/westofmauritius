@@ -343,6 +343,13 @@ export default config({
         }),
         placeholderTone,
         content: localized(() => ({
+          // Optional: many names stay the same (Le Morne Brabant), but some
+          // read better translated ("Le Morne public beach" / "Plage publique
+          // du Morne").
+          name: fields.text({
+            label: "Name in this language",
+            description: "Leave empty to use the name above.",
+          }),
           summary: fields.text({
             label: "Summary",
             description: "One or two sentences for cards and lists.",

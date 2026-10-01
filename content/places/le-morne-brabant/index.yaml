@@ -1,0 +1,50 @@
+name: Le Morne Brabant
+category: activity
+area: le-morne
+placeholder: false
+featured: false
+location:
+  lat: -20.4541
+  lng: 57.3213
+openingHours: []
+images:
+  - image: /images/places/le-morne-brabant/images/0/image.jpg
+    alt:
+      en:
+        text: Le Morne Brabant rising above the lagoon
+      fr:
+        text: Le Morne Brabant au-dessus du lagon
+    credit: Jolaus · CC0 · Wikimedia Commons
+    creditUrl: https://commons.wikimedia.org/wiki/File:Le_Morne_Brabant,_Maurizio.jpg
+  - image: /images/places/le-morne-brabant/images/1/image.jpg
+    alt:
+      en:
+        text: Le Morne Brabant seen from the sea
+      fr:
+        text: Le Morne Brabant vu depuis la mer
+    credit: Benoît Prieur · CC0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:Le_Morne_Brabant_depuis_l%27oc%C3%A9an.jpg
+  - image: /images/places/le-morne-brabant/images/2/image.jpg
+    alt:
+      en:
+        text: Aerial view of Le Morne Brabant and its lagoon in the morning
+      fr:
+        text: Vue aérienne du Morne Brabant et de son lagon le matin
+    credit: Gavish Barosee · CC BY-SA 4.0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:Le_Morne_mountain_morning_shadow.jpg
+placeholderTone: sunset
+content:
+  en:
+    name: Le Morne Brabant
+    summary: >-
+      A 556-metre basalt mountain at the south-west tip of the island, a refuge
+      for people escaping slavery and a UNESCO World Heritage Site.
+    hoursNote: 'Hiking access is regulated at times: check the current rules first.'
+  fr:
+    name: Le Morne Brabant
+    summary: >-
+      Une montagne de basalte de 556 mètres à la pointe sud-ouest de l’île,
+      refuge des esclaves marrons et site du patrimoine mondial de l’UNESCO.
+    hoursNote: 'L’accès à la randonnée est parfois réglementé : renseignez-vous avant.'

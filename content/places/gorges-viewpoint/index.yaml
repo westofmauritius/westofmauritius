@@ -1,0 +1,35 @@
+name: Gorges Viewpoint
+category: activity
+area: chamarel
+placeholder: false
+featured: false
+location:
+  lat: -20.423
+  lng: 57.4296
+address: Plaine Champagne
+openingHours: []
+images:
+  - image: /images/places/gorges-viewpoint/images/0/image.jpg
+    alt:
+      en:
+        text: Forested ravines of Black River Gorges seen from the Gorges Viewpoint
+      fr:
+        text: >-
+          Les ravins boisés des Gorges de Rivière Noire vus depuis le point de
+          vue
+    credit: Lukas von Daeniken from Schweiz · CC BY-SA 2.0 · Wikimedia Commons
+    creditUrl: https://commons.wikimedia.org/wiki/File:Gorges_Viewpoint_(22937657943).jpg
+placeholderTone: ocean
+content:
+  en:
+    name: Gorges Viewpoint
+    summary: >-
+      A lookout on the Plaine Champagne road over the forested ravines of Black
+      River Gorges, down to the sea on the west coast.
+    hoursNote: Open access, by the roadside.
+  fr:
+    name: Point de vue des Gorges
+    summary: >-
+      Un belvédère sur la route de Plaine Champagne, face aux ravins boisés des
+      Gorges de Rivière Noire et à la mer sur la côte ouest.
+    hoursNote: Accès libre, au bord de la route.

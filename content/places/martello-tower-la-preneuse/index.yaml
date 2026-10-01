@@ -1,0 +1,35 @@
+name: Martello tower, La Preneuse
+category: activity
+area: black-river
+placeholder: false
+featured: false
+location:
+  lat: -20.35466
+  lng: 57.36185
+address: La Preneuse
+openingHours: []
+images:
+  - image: /images/places/martello-tower-la-preneuse/images/0/image.jpg
+    alt:
+      en:
+        text: A cannon on the roof of the Martello tower at La Preneuse
+      fr:
+        text: Un canon sur le toit de la tour Martello de La Preneuse
+    credit: Macgoever · CC BY-SA 3.0 · Wikimedia Commons
+    creditUrl: https://commons.wikimedia.org/wiki/File:Canon_martello_tower_mauritius.jpg
+placeholderTone: sand
+content:
+  en:
+    name: Martello tower, La Preneuse
+    summary: >-
+      A round basalt fort built by the British in 1832–1833 to guard against a
+      French return — the best preserved of the island's Martello towers, now a
+      museum.
+    hoursNote: Entrance fee. Check opening times before you go.
+  fr:
+    name: Tour Martello de La Preneuse
+    summary: >-
+      Un fort rond en basalte construit par les Britanniques en 1832–1833 pour
+      parer à un retour français — la mieux conservée des tours Martello de
+      l’île, devenue musée.
+    hoursNote: Entrée payante. Vérifiez les horaires avant de venir.

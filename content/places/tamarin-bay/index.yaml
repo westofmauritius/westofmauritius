@@ -1,0 +1,48 @@
+name: Tamarin Bay
+category: sunset
+area: tamarin
+placeholder: false
+featured: false
+location:
+  lat: -20.3262
+  lng: 57.3772
+openingHours: []
+images:
+  - image: /images/places/tamarin-bay/images/0/image.jpg
+    alt:
+      en:
+        text: >-
+          Aerial view of Tamarin and its beach, with a mountain behind the
+          village
+      fr:
+        text: >-
+          Vue aérienne de Tamarin et de sa plage, avec une montagne derrière le
+          village
+    credit: Arne Müseler · CC BY-SA 3.0 de · Wikimedia Commons
+    creditUrl: https://commons.wikimedia.org/wiki/File:Mauritius_tamarin_beach.jpg
+  - image: /images/places/tamarin-bay/images/1/image.jpg
+    alt:
+      en:
+        text: A small boat in Tamarin Bay with the peaks of the west behind
+      fr:
+        text: >-
+          Un petit bateau dans la baie de Tamarin, avec les pics de l’ouest
+          derrière
+    credit: Vaughan McShane · CC BY-SA 2.0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:Tamarin_Bay_against_the_dramatic_volcanic_backdrop_of_western_Mauritius.jpg
+placeholderTone: sunset
+content:
+  en:
+    name: Tamarin Bay
+    summary: >-
+      A wide bay with a public beach, a famous surf break and the mountains of
+      the west behind it — at its best in the early morning and at sunset.
+    hoursNote: Public beach, open to everyone.
+  fr:
+    name: Baie de Tamarin
+    summary: >-
+      Une large baie avec sa plage publique, un spot de surf célèbre et les
+      montagnes de l’ouest en toile de fond — magnifique au petit matin et au
+      coucher du soleil.
+    hoursNote: Plage publique, ouverte à tous.

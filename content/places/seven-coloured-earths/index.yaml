@@ -1,0 +1,41 @@
+name: Seven Coloured Earths
+category: activity
+area: chamarel
+placeholder: false
+featured: false
+location:
+  lat: -20.4403
+  lng: 57.3733
+openingHours: []
+images:
+  - image: /images/places/seven-coloured-earths/images/0/image.jpg
+    alt:
+      en:
+        text: Striped dunes of coloured sand at the Seven Coloured Earths
+      fr:
+        text: Dunes de sable coloré striées à la Terre des Sept Couleurs
+    credit: Martin Falbisoner · CC BY-SA 4.0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:Mauritius_Seven_Colored_Earths_1.JPG
+  - image: /images/places/seven-coloured-earths/images/1/image.jpg
+    alt:
+      en:
+        text: The Seven Coloured Earths of Chamarel, with forest behind
+      fr:
+        text: La Terre des Sept Couleurs de Chamarel, avec la forêt derrière
+    credit: jokin.lacalle · CC BY 4.0 · Wikimedia Commons
+    creditUrl: https://commons.wikimedia.org/wiki/File:Chamarel,_Mauritius.jpg
+placeholderTone: sunset
+content:
+  en:
+    name: Seven Coloured Earths
+    summary: >-
+      Small dunes of sand in seven distinct colours, formed from weathered
+      volcanic rock — the best-known sight of Chamarel.
+    hoursNote: Entrance fee. Check opening times before you go.
+  fr:
+    name: Terre des Sept Couleurs
+    summary: >-
+      De petites dunes de sable de sept couleurs distinctes, nées de la roche
+      volcanique décomposée — le site le plus célèbre de Chamarel.
+    hoursNote: Entrée payante. Vérifiez les horaires avant de venir.

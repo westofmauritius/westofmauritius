@@ -11,7 +11,7 @@ const pages = [
   "/fr/lieux/example-restaurant-tamarin",
   "/en/guides",
   "/fr/guides/plages",
-  "/en/guides/beaches/example-guide-beaches",
+  "/en/guides/beaches/west-coast-beaches",
   "/en/live-in-the-west",
   "/fr/vivre-dans-l-ouest/pds",
   "/en/live-in-the-west/enquire",

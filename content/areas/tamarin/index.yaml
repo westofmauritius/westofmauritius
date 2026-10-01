@@ -1,23 +1,46 @@
 name: Tamarin
 order: 2
-placeholder: true
+placeholder: false
 location:
-  lat: -20.326
-  lng: 57.372
+  lat: -20.328
+  lng: 57.375
 mapZoom: 13
 hero:
-  discriminant: false
+  discriminant: true
+  value:
+    image: /images/areas/tamarin/hero/image.jpg
+    alt:
+      en:
+        text: A small boat in Tamarin Bay with the peaks of the west behind
+      fr:
+        text: >-
+          Un petit bateau dans la baie de Tamarin, avec les pics de l’ouest
+          derrière
+    credit: Vaughan McShane · CC BY-SA 2.0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:Tamarin_Bay_against_the_dramatic_volcanic_backdrop_of_western_Mauritius.jpg
 placeholderTone: sunset
 content:
   en:
     name: Tamarin
-    tagline: Placeholder tagline for Tamarin.
+    tagline: Surf, salt pans and dolphins at dawn
     intro: >-
-      Placeholder. A two- or three-sentence introduction to Tamarin: what it
-      feels like, who it suits and the best time to visit.
+      A village on a wide bay where the Tamarin river meets the sea, ringed by
+      mountains. The bay has a place in surfing history, the early mornings
+      belong to the dolphins, and the old salt pans by the road recall how the
+      coast once made its living.
+    seoDescription: >-
+      Tamarin, west Mauritius: a surf bay with history, dolphins in the early
+      morning and the old salt pans. What the village is like and what to know.
   fr:
     name: Tamarin
-    tagline: Accroche provisoire pour Tamarin.
+    tagline: Surf, salines et dauphins à l’aube
     intro: >-
-      Texte provisoire. Une introduction de deux ou trois phrases sur Tamarin :
-      son ambiance, à qui le lieu plaît et la meilleure période pour venir.
+      Un village posé sur une large baie, là où la rivière Tamarin rejoint la
+      mer, entouré de montagnes. La baie a sa place dans l’histoire du surf, le
+      petit matin appartient aux dauphins, et les anciennes salines au bord de
+      la route rappellent comment vivait la côte.
+    seoDescription: >-
+      Tamarin, ouest de l’île Maurice : une baie de surf mythique, des dauphins
+      au petit matin et les anciennes salines. L’ambiance du village et nos
+      conseils.

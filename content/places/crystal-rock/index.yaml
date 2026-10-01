@@ -1,0 +1,33 @@
+name: Crystal Rock
+category: activity
+area: la-gaulette
+placeholder: false
+featured: false
+location:
+  lat: -20.4143
+  lng: 57.3376
+openingHours: []
+images:
+  - image: /images/places/crystal-rock/images/0/image.jpg
+    alt:
+      en:
+        text: The Crystal Rock rising from the lagoon
+      fr:
+        text: Le Crystal Rock émergeant du lagon
+    credit: Benoît Prieur · CC0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:Le_corail_de_cristal_(Crystal_Coral_rock),_mars_2020_(1).jpg
+placeholderTone: lagoon
+content:
+  en:
+    name: Crystal Rock
+    summary: >-
+      A pale fossil coral rock rising from clear, shallow water in the lagoon —
+      one of the most photographed sights in Mauritius.
+    hoursNote: Reached by boat, usually with Île aux Bénitiers.
+  fr:
+    name: Crystal Rock
+    summary: >-
+      Un rocher de corail fossile clair qui émerge d’une eau limpide et peu
+      profonde dans le lagon — l’un des sites les plus photographiés de Maurice.
+    hoursNote: Accès en bateau, généralement avec l’île aux Bénitiers.

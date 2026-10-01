@@ -1,23 +1,43 @@
 name: Chamarel
 order: 6
-placeholder: true
+placeholder: false
 location:
-  lat: -20.427
-  lng: 57.388
+  lat: -20.43
+  lng: 57.385
 mapZoom: 13
 hero:
-  discriminant: false
+  discriminant: true
+  value:
+    image: /images/areas/chamarel/hero/image.jpg
+    alt:
+      en:
+        text: The Seven Coloured Earths of Chamarel, with forest behind
+      fr:
+        text: La Terre des Sept Couleurs de Chamarel, avec la forêt derrière
+    credit: jokin.lacalle · CC BY 4.0 · Wikimedia Commons
+    creditUrl: https://commons.wikimedia.org/wiki/File:Chamarel,_Mauritius.jpg
 placeholderTone: sand
 content:
   en:
     name: Chamarel
-    tagline: Placeholder tagline for Chamarel.
+    tagline: Coloured earths, waterfalls and cool green hills
     intro: >-
-      Placeholder. A two- or three-sentence introduction to Chamarel: what it
-      feels like, who it suits and the best time to visit.
+      A small village on a wooded plateau some 260 metres above the sea, six
+      kilometres inland. Chamarel is known for its Seven Coloured Earths and a
+      95-metre waterfall, for its cooler air, and for the views from the winding
+      road up from the coast.
+    seoDescription: >-
+      Chamarel, west Mauritius: the Seven Coloured Earths, the 95-metre Chamarel
+      Falls, viewpoints over Le Morne and the way into Black River Gorges.
   fr:
     name: Chamarel
-    tagline: Accroche provisoire pour Chamarel.
+    tagline: Terres colorées, cascades et collines fraîches
     intro: >-
-      Texte provisoire. Une introduction de deux ou trois phrases sur Chamarel :
-      son ambiance, à qui le lieu plaît et la meilleure période pour venir.
+      Un petit village sur un plateau boisé, à quelque 260 mètres d’altitude et
+      six kilomètres de la côte. Chamarel est connu pour sa Terre des Sept
+      Couleurs et sa cascade de 95 mètres, pour sa fraîcheur et pour les vues de
+      la route sinueuse qui y monte depuis la côte.
+    seoDescription: >-
+      Chamarel, ouest de l’île Maurice : la Terre des Sept Couleurs, la cascade
+      de 95 mètres, les belvédères sur Le Morne et l’accès aux Gorges de Rivière
+      Noire.

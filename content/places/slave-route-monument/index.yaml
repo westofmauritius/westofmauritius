@@ -1,0 +1,24 @@
+name: Slave Route Monument
+category: activity
+area: le-morne
+placeholder: false
+featured: false
+location:
+  lat: -20.4524
+  lng: 57.3144
+openingHours: []
+images: []
+placeholderTone: ocean
+content:
+  en:
+    name: Slave Route Monument
+    summary: >-
+      A memorial at the foot of Le Morne Brabant to the people who escaped
+      slavery and found refuge on the mountain.
+    hoursNote: 'Open access. A place of remembrance: please be respectful.'
+  fr:
+    name: Monument de la Route de l’esclave
+    summary: >-
+      Un mémorial au pied du Morne Brabant, dédié à ceux qui ont fui l’esclavage
+      et trouvé refuge sur la montagne.
+    hoursNote: 'Accès libre. Un lieu de mémoire : merci de le respecter.'

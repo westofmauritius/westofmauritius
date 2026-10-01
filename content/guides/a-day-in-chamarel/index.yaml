@@ -1,0 +1,47 @@
+category: activities
+placeholder: false
+featured: false
+publishedAt: '2026-10-01'
+areas:
+  - chamarel
+  - la-gaulette
+places:
+  - chamarel-viewpoint
+  - seven-coloured-earths
+  - chamarel-falls
+  - gorges-viewpoint
+hero:
+  discriminant: true
+  value:
+    image: /images/guides/a-day-in-chamarel/hero/image.jpg
+    alt:
+      en:
+        text: Chamarel Falls dropping over a basalt cliff into a forested gorge
+      fr:
+        text: >-
+          La cascade de Chamarel tombant d’une falaise de basalte dans une gorge
+          boisée
+    credit: dronepicr · CC BY 2.0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:Chamarel_Waterfall_in_Mauritius_(53698126454).jpg
+placeholderTone: sand
+content:
+  en:
+    title: A day in Chamarel and the hills
+    excerpt: >-
+      Leave the coast behind for a day: a viewpoint over the lagoon, the Seven
+      Coloured Earths, a 95-metre waterfall and the gorges of the national park.
+    seoDescription: >-
+      A day trip to Chamarel, west Mauritius: the viewpoint over Le Morne, the
+      Seven Coloured Earths, Chamarel Falls and the Gorges Viewpoint.
+  fr:
+    title: Une journée à Chamarel et dans les hauteurs
+    slug: une-journee-a-chamarel
+    excerpt: >-
+      Quittez la côte le temps d’une journée : un belvédère sur le lagon, la
+      Terre des Sept Couleurs, une cascade de 95 mètres et les gorges du parc
+      national.
+    seoDescription: >-
+      Une journée à Chamarel, ouest de l’île Maurice : le belvédère sur Le
+      Morne, la Terre des Sept Couleurs, la cascade et le point de vue des
+      Gorges.

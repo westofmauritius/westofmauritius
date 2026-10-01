@@ -1,0 +1,48 @@
+category: beaches
+placeholder: false
+featured: true
+publishedAt: '2026-10-01'
+areas:
+  - flic-en-flac
+  - tamarin
+  - black-river
+  - le-morne
+places:
+  - flic-en-flac-public-beach
+  - tamarin-bay
+  - la-preneuse-beach
+  - le-morne-public-beach
+  - ile-aux-benitiers
+hero:
+  discriminant: true
+  value:
+    image: /images/guides/west-coast-beaches/hero/image.jpg
+    alt:
+      en:
+        text: Palm trees and white sand at Le Morne beach
+      fr:
+        text: Cocotiers et sable blanc sur la plage du Morne
+    credit: dronepicr · CC BY 2.0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:Le_Morne_Beach_in_Mauritius_(53698123559).jpg
+placeholderTone: lagoon
+content:
+  en:
+    title: The beaches of the west coast
+    excerpt: >-
+      From the long, lively sands of Flic en Flac to the lagoon at the foot of
+      Le Morne: where to swim, what each beach is like, and how to get the best
+      out of them.
+    seoDescription: >-
+      The best beaches of west Mauritius: Flic en Flac, Tamarin, La Preneuse, Le
+      Morne and Île aux Bénitiers — what each is like and practical tips.
+  fr:
+    title: Les plages de la côte ouest
+    slug: plages-de-la-cote-ouest
+    excerpt: >-
+      Des longues plages animées de Flic en Flac au lagon du Morne : où se
+      baigner, l’ambiance de chaque plage et comment en profiter au mieux.
+    seoDescription: >-
+      Les plus belles plages de l’ouest de l’île Maurice : Flic en Flac,
+      Tamarin, La Preneuse, Le Morne et l’île aux Bénitiers — ambiance et
+      conseils.

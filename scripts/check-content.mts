@@ -5,14 +5,16 @@
  * Keystatic already validates each field when you save. This script checks
  * what a single form cannot: links between entries (a place pointing to a
  * deleted area), map positions far from the west coast, expired featured
- * placements and missing translations.
+ * placements, missing translations and characters that would make every
+ * visitor download an extra font file.
  *
  * Errors stop the build, so broken content never goes live.
  * Warnings are printed but do not stop the build.
  *
  * Run by hand with: npm run content:check
  */
-import { writeFileSync } from "node:fs";
+import { readdirSync, readFileSync, writeFileSync } from "node:fs";
+import { join } from "node:path";
 import { createReader } from "@keystatic/core/reader";
 import keystaticConfig from "../keystatic.config";
 
@@ -35,6 +37,36 @@ const westCoast = {
   lngMin: 57.28,
   lngMax: 57.47,
 };
+
+/**
+ * The site's fonts are split by alphabet, and browsers only download the
+ * Latin part. A single character outside it (say "ᵉ" in "XVIIIᵉ" — write
+ * "XVIIIe") makes the page load an extra ~90 kB font file.
+ */
+function isBasicLatin(char: string): boolean {
+  const code = char.codePointAt(0)!;
+  return (
+    code <= 0xff ||
+    (code >= 0x2000 && code <= 0x206f) || // dashes, quotes, ellipsis …
+    "œŒ€™→".includes(char)
+  );
+}
+
+function checkCharacters(dir: string) {
+  for (const entry of readdirSync(dir, { withFileTypes: true })) {
+    const path = join(dir, entry.name);
+    if (entry.isDirectory()) checkCharacters(path);
+    else if (/\.(ya?ml|mdoc)$/.test(entry.name)) {
+      const odd = [...new Set(readFileSync(path, "utf8"))].filter(
+        (c) => !isBasicLatin(c),
+      );
+      if (odd.length > 0)
+        warnings.push(
+          `${path}: "${odd.join(" ")}" is outside the Latin alphabet and loads an extra font file. Use a plain equivalent if there is one (e.g. XVIIIe, 1er).`,
+        );
+    }
+  }
+}
 
 function checkLocation(label: string, loc: { lat: number; lng: number }) {
   const { lat, lng } = loc;
@@ -154,6 +186,8 @@ async function main() {
       errors.push(`${label}: area "${entry.area}" does not exist.`);
     checkTranslations(label, entry.content);
   }
+
+  checkCharacters("content");
 
   const all = [...areas, ...places, ...guides, ...living];
   const placeholders = all.filter(({ entry }) => entry.placeholder).length;
