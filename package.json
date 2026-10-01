@@ -13,10 +13,12 @@
     "typecheck": "next typegen && tsc --noEmit",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "check": "npm run lint && npm run typecheck && npm run format:check",
+    "check": "npm run lint && npm run typecheck && npm run format:check && npm run test",
     "preview": "npm run build && opennextjs-cloudflare preview",
     "deploy": "npm run build && opennextjs-cloudflare deploy",
-    "content:check": "tsx scripts/check-content.mts"
+    "content:check": "tsx scripts/check-content.mts",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@keystar/ui": "^0.10.0",
@@ -33,8 +35,10 @@
     "react-stately": "^3.48.0"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.63.0",
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
+    "@types/node": "^22.20.4",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
@@ -44,6 +48,7 @@
     "tailwindcss": "^4",
     "tsx": "^4.23.15",
     "typescript": "^5",
+    "vitest": "^5.0.3",
     "wrangler": "^4.145.0"
   },
   "engines": {
