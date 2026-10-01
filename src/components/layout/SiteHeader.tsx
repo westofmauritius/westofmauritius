@@ -1,6 +1,7 @@
 import { Container } from "@/components/ui/Container";
 import { Wordmark } from "@/components/ui/Wordmark";
-import { Link } from "@/i18n/navigation";
+import { Link } from "@/i18n/Link";
+import type { Locale } from "@/i18n/routing";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { MobileNav } from "./MobileNav";
 import { NavLink } from "./NavLink";
@@ -14,6 +15,7 @@ type SiteHeaderProps = {
   menuLabel: string;
   closeLabel: string;
   languageLabel: string;
+  locale: Locale;
 };
 
 /** Sticky top bar: wordmark left, navigation right (menu button on phones). */
@@ -24,6 +26,7 @@ export function SiteHeader({
   menuLabel,
   closeLabel,
   languageLabel,
+  locale,
 }: SiteHeaderProps) {
   return (
     // The frosted background sits on a ::before layer, not the header itself:
@@ -46,14 +49,14 @@ export function SiteHeader({
               </li>
             ))}
           </ul>
-          <LanguageSwitcher label={languageLabel} />
+          <LanguageSwitcher label={languageLabel} locale={locale} />
         </nav>
 
         <MobileNav
           items={items}
           menuLabel={menuLabel}
           closeLabel={closeLabel}
-          footer={<LanguageSwitcher label={languageLabel} />}
+          footer={<LanguageSwitcher label={languageLabel} locale={locale} />}
         />
       </Container>
     </header>

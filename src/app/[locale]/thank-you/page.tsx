@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { ButtonLink } from "@/components/ui/Button";
+import { ButtonLink } from "@/components/ui/ButtonLink";
 import { Container } from "@/components/ui/Container";
 import { QueryMessage } from "@/components/ui/QueryMessage";
 import { resolveLocale } from "@/i18n/locale";
@@ -22,7 +22,7 @@ export default async function ThankYouPage({
   return (
     <Container size="prose" className="py-24 text-center">
       <h1 className="text-display-1">{t("title")}</h1>
-      <p className="mt-6 text-lg leading-relaxed text-ink-muted">
+      <p className="mt-6 lead text-ink-muted">
         <QueryMessage
           param="form"
           messages={{

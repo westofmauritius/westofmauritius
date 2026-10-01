@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { LivingCard } from "@/components/content/LivingCard";
-import { ButtonLink } from "@/components/ui/Button";
+import { ButtonLink } from "@/components/ui/ButtonLink";
 import { Container } from "@/components/ui/Container";
 import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { Link } from "@/i18n/navigation";
+import { Link } from "@/i18n/Link";
 import { resolveLocale } from "@/i18n/locale";
 import { getAreas } from "@/lib/content/areas";
 import { getLivingArticles } from "@/lib/content/living";
@@ -56,7 +56,7 @@ export default async function LiveInTheWestPage({
           <h1 className="max-w-3xl text-display-1 text-white">
             {t("Pages.live.title")}
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ocean-100">
+          <p className="mt-6 max-w-2xl lead text-ocean-100">
             {t("Pages.live.intro")}
           </p>
           <ButtonLink
@@ -159,7 +159,7 @@ export default async function LiveInTheWestPage({
       <section className="bg-sand-100 py-20 sm:py-24">
         <Container size="prose" className="text-center">
           <h2 className="text-display-2">{t("LivePage.enquireTitle")}</h2>
-          <p className="mt-5 text-lg leading-relaxed text-ink-muted">
+          <p className="mt-5 lead text-ink-muted">
             {t("LivePage.enquireText")}
           </p>
           <ButtonLink

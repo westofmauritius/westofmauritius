@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Badge } from "@/components/ui/Badge";
-import { Button, ButtonLink } from "@/components/ui/Button";
+import { Button } from "@/components/ui/Button";
+import { ButtonLink } from "@/components/ui/ButtonLink";
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { PlaceholderImage } from "@/components/ui/PlaceholderImage";

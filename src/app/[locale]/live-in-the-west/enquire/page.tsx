@@ -50,9 +50,7 @@ export default async function EnquirePage({ params }: Props) {
         <div className="lg:sticky lg:top-24 lg:self-start">
           <p className="mb-5 eyebrow text-coral-600">{t("LivePage.eyebrow")}</p>
           <h1 className="text-display-2">{t("Enquire.title")}</h1>
-          <p className="mt-6 text-lg leading-relaxed text-ink-muted">
-            {t("Enquire.intro")}
-          </p>
+          <p className="mt-6 lead text-ink-muted">{t("Enquire.intro")}</p>
         </div>
         <FormsProvider>
           <LeadForm

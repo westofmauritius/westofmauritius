@@ -209,7 +209,8 @@
     "featuredOnly": "Featured only",
     "reset": "Clear filters",
     "results": "{count} places",
-    "noResults": "No places match these filters."
+    "noResults": "No places match these filters.",
+    "resultsHeading": "Results"
   },
   "LivePage": {
     "eyebrow": "Live in the West",

@@ -5,12 +5,12 @@ import { GuideThemes } from "@/components/content/GuideThemes";
 import { PlaceCard } from "@/components/content/PlaceCard";
 import { HeroArt } from "@/components/home/HeroArt";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { ButtonLink } from "@/components/ui/Button";
+import { ButtonLink } from "@/components/ui/ButtonLink";
 import { Container } from "@/components/ui/Container";
 import { Photo } from "@/components/ui/Photo";
 import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { Link } from "@/i18n/navigation";
+import { Link } from "@/i18n/Link";
 import { resolveLocale } from "@/i18n/locale";
 import { getAreas } from "@/lib/content/areas";
 import { getGuides } from "@/lib/content/guides";
@@ -76,9 +76,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         <Container size="wide" className="pt-32 pb-14 sm:pb-20">
           <p className="mb-5 eyebrow text-coral-200">{t("eyebrow")}</p>
           <h1 className="max-w-4xl text-display-1 text-white">{t("title")}</h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-ocean-100">
-            {t("intro")}
-          </p>
+          <p className="mt-6 max-w-xl lead text-ocean-100">{t("intro")}</p>
           <div className="mt-9 flex flex-wrap gap-3">
             <ButtonLink href="/guides" variant="light">
               {t("ctaGuides")}
@@ -219,9 +217,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           <h2 className="max-w-3xl text-display-2 text-white">
             {t("liveTitle")}
           </h2>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ocean-100">
-            {t("liveText")}
-          </p>
+          <p className="mt-6 max-w-2xl lead text-ocean-100">{t("liveText")}</p>
           <div className="mt-10 flex flex-wrap gap-3">
             <ButtonLink href="/live-in-the-west" variant="light">
               {t("liveCta")}

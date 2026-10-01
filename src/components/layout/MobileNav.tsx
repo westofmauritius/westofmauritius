@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Link, usePathname } from "@/i18n/navigation";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { isActive } from "./NavLink";
 import type { NavItem } from "./nav";
 
 type MobileNavProps = {
@@ -82,9 +84,11 @@ export function MobileNav({
             {items.map((item) => (
               <li key={item.href}>
                 <Link
-                  href={item.href}
+                  href={item.path}
                   className="block py-4 font-display text-3xl"
-                  aria-current={pathname === item.href ? "page" : undefined}
+                  aria-current={
+                    isActive(pathname, item.path) ? "page" : undefined
+                  }
                   // Close the menu when a link is chosen; the header stays
                   // mounted across page changes, so it would otherwise stay open.
                   onClick={() => setOpen(false)}

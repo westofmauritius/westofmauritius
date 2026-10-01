@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
-import { FormsProvider } from "@/components/forms/FormsProvider";
 import { NewsletterForm } from "@/components/forms/NewsletterForm";
 import { consentTexts, currentConsent } from "@/lib/forms/consent";
 import { resolveLocale } from "@/i18n/locale";
-import { routing } from "@/i18n/routing";
+import { getPathname } from "@/i18n/navigation";
+import { routing, type StaticPathname } from "@/i18n/routing";
 import { fontVariables } from "@/lib/fonts";
 import { allowIndexing, brandName, siteUrl } from "@/lib/site";
 import { openGraphBase } from "@/lib/seo/open-graph";
@@ -48,79 +47,101 @@ export default async function LocaleLayout({
   const t = await getTranslations({ locale, namespace: "Nav" });
   const f = await getTranslations({ locale, namespace: "Footer" });
   const l = await getTranslations({ locale, namespace: "LanguageSwitcher" });
+  const forms = await getTranslations({ locale, namespace: "Forms" });
   const brand = brandName[locale];
+  /** A navigation entry with its public URL in this language (e.g. /fr/regions). */
+  const item = (label: string, href: StaticPathname) => ({
+    label,
+    href,
+    path: getPathname({ href, locale }),
+  });
 
   return (
     <html lang={locale} className={`${fontVariables} h-full`}>
       <body className="flex min-h-full flex-col">
-        {/* Gives client components the language. messages={null}: no
-            client component needs texts, so none are sent to the browser. */}
-        <NextIntlClientProvider messages={null}>
-          {/* First stop for keyboard users: jump past the header to the content. */}
-          <a
-            href="#main"
-            className="sr-only z-[60] rounded-full bg-ocean-900 px-5 py-3 text-sm text-white focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
-          >
-            {l("skipToContent")}
-          </a>
-          <SiteHeader
-            brandName={brand}
-            items={[
-              { label: t("areas"), href: "/areas" },
-              { label: t("guides"), href: "/guides" },
-              { label: t("places"), href: "/places" },
-              { label: t("live"), href: "/live-in-the-west" },
-              { label: t("about"), href: "/about" },
-            ]}
-            navLabel={t("mainNav")}
-            menuLabel={t("openMenu")}
-            closeLabel={t("closeMenu")}
-            languageLabel={l("label")}
-          />
-          <main
-            id="main"
-            tabIndex={-1}
-            className="flex flex-1 flex-col outline-none"
-          >
-            {children}
-          </main>
-          <SiteFooter
-            brandName={brand}
-            tagline={f("tagline")}
-            columns={[
-              {
-                title: f("explore"),
-                items: [
-                  { label: t("areas"), href: "/areas" },
-                  { label: t("guides"), href: "/guides" },
-                  { label: t("places"), href: "/places" },
-                ],
-              },
-              {
-                title: f("liveHere"),
-                items: [{ label: t("live"), href: "/live-in-the-west" }],
-              },
-              {
-                title: f("about"),
-                items: [
-                  { label: t("about"), href: "/about" },
-                  { label: t("contact"), href: "/contact" },
-                  { label: f("privacy"), href: "/privacy" },
-                  { label: f("cookies"), href: "/cookies" },
-                  { label: f("terms"), href: "/terms" },
-                ],
-              },
-            ]}
-            newsletter={
-              <FormsProvider>
-                <NewsletterForm
-                  consentText={consentTexts[currentConsent.newsletter][locale]}
-                />
-              </FormsProvider>
-            }
-            legal={`© ${new Date().getFullYear()} ${brand}. ${f("rights")}`}
-          />
-        </NextIntlClientProvider>
+        {/*
+          No NextIntlClientProvider for the whole site: header and footer get
+          finished URLs and texts from the server, so most pages ship no
+          translation library to the browser. Form pages add their own
+          (FormsProvider).
+        */}
+        {/* First stop for keyboard users: jump past the header to the content. */}
+        <a
+          href="#main"
+          className="sr-only z-[60] rounded-full bg-ocean-900 px-5 py-3 text-sm text-white focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
+        >
+          {l("skipToContent")}
+        </a>
+        <SiteHeader
+          brandName={brand}
+          items={[
+            item(t("areas"), "/areas"),
+            item(t("guides"), "/guides"),
+            item(t("places"), "/places"),
+            item(t("live"), "/live-in-the-west"),
+            item(t("about"), "/about"),
+          ]}
+          navLabel={t("mainNav")}
+          menuLabel={t("openMenu")}
+          closeLabel={t("closeMenu")}
+          languageLabel={l("label")}
+          locale={locale}
+        />
+        <main
+          id="main"
+          tabIndex={-1}
+          className="flex flex-1 flex-col outline-none"
+        >
+          {children}
+        </main>
+        <SiteFooter
+          brandName={brand}
+          tagline={f("tagline")}
+          columns={[
+            {
+              title: f("explore"),
+              items: [
+                item(t("areas"), "/areas"),
+                item(t("guides"), "/guides"),
+                item(t("places"), "/places"),
+              ],
+            },
+            {
+              title: f("liveHere"),
+              items: [item(t("live"), "/live-in-the-west")],
+            },
+            {
+              title: f("about"),
+              items: [
+                item(t("about"), "/about"),
+                item(t("contact"), "/contact"),
+                item(f("privacy"), "/privacy"),
+                item(f("cookies"), "/cookies"),
+                item(f("terms"), "/terms"),
+              ],
+            },
+          ]}
+          newsletter={
+            <NewsletterForm
+              locale={locale}
+              labels={{
+                title: forms("newsletter.title"),
+                text: forms("newsletter.text"),
+                email: forms("newsletter.email"),
+                required: forms("required"),
+                consent: consentTexts[currentConsent.newsletter][locale],
+                submit: forms("newsletter.submit"),
+                sending: forms("status.sending"),
+                successTitle: forms("newsletter.successTitle"),
+                successText: forms("newsletter.successText"),
+                errorEmail: forms("errors.email"),
+                errorConsent: forms("errors.consent"),
+                errorOther: forms("status.unavailable"),
+              }}
+            />
+          }
+          legal={`© ${new Date().getFullYear()} ${brand}. ${f("rights")}`}
+        />
         {/*
           Umami: cookie-free visitor statistics and conversion events
           (data-umami-event on links, track() in forms). Only loaded when

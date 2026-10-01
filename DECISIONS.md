@@ -181,3 +181,26 @@ to-do list, TODO_OLIVER.md, is in Swedish.)
 - **End-to-end tests run against a production build** with the in-memory
   store and throw-away admin credentials; each test uses its own fake IP so
   rate limits do not interfere.
+
+## Performance
+
+Measured with Lighthouse (mobile, median of three runs) on a production
+build: performance 95–98, accessibility, best practices and SEO 100 on the
+key pages. Pages marked as placeholders score lower on SEO on purpose
+(they are noindex until real content replaces them).
+
+- **No translation library in the browser on most pages.** Links are
+  resolved on the server (`src/i18n/Link.tsx`, which wraps `next/link`), the
+  menu and language switcher get ready-made paths, and the footer newsletter
+  form gets its texts as props. Only form pages load the translation
+  provider, and only with the form texts (`FormsProvider`).
+- **The language switcher reads the page's own hreflang tags** after load;
+  the server-rendered link is built from the routing table
+  (`src/lib/localized-paths.ts`), so it also works without JavaScript.
+- **One weight of EB Garamond (400, upright), preloaded**; Inter is a
+  variable font and is not preloaded because the headings are what is seen
+  first. Intro paragraphs use the serif at a larger size (`lead` utility),
+  which keeps the magazine feel without loading more font files.
+- **Next's `inlineCss` option was tried and dropped.** It made no measurable
+  difference to the scores but added ~800 kB (gzip) to the Cloudflare Worker,
+  which has a 3 MB limit on the free plan. The Worker is ~1.84 MB now.

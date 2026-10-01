@@ -45,9 +45,7 @@ export function textPage(key: TextPageKey, href: StaticPathname) {
         <Container size="prose" className="py-14 sm:py-20">
           <h1 className="text-display-1">{page.title}</h1>
           {page.intro && (
-            <p className="mt-6 text-xl leading-relaxed text-ink-muted">
-              {page.intro}
-            </p>
+            <p className="mt-6 lead text-ink-muted">{page.intro}</p>
           )}
           <Prose node={page.body} locale={locale} className="mt-12" />
           {page.updatedAt && (

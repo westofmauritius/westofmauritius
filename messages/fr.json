@@ -209,7 +209,8 @@
     "featuredOnly": "À la une uniquement",
     "reset": "Effacer les filtres",
     "results": "{count} adresses",
-    "noResults": "Aucune adresse ne correspond à ces filtres."
+    "noResults": "Aucune adresse ne correspond à ces filtres.",
+    "resultsHeading": "Résultats"
   },
   "LivePage": {
     "eyebrow": "Vivre dans l’Ouest",

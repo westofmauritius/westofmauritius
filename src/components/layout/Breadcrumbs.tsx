@@ -1,5 +1,5 @@
 import { JsonLd } from "@/components/seo/JsonLd";
-import { Link } from "@/i18n/navigation";
+import { Link } from "@/i18n/Link";
 import type { Locale } from "@/i18n/routing";
 import { absoluteUrl, type Href } from "@/lib/seo/urls";
 

@@ -17,7 +17,7 @@ export function Wordmark({ name, tone = "dark", className }: WordmarkProps) {
   return (
     <span
       className={cn(
-        "inline-flex items-center gap-2.5 font-display text-2xl leading-none font-medium tracking-[0.01em]",
+        "inline-flex items-center gap-2.5 font-display text-2xl leading-none font-normal tracking-[0.01em]",
         tone === "dark" ? "text-ocean-900" : "text-white",
         className,
       )}

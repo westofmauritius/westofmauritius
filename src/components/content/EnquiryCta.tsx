@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import { ButtonLink } from "@/components/ui/Button";
+import { ButtonLink } from "@/components/ui/ButtonLink";
 import { cn } from "@/lib/cn";
 
 type EnquiryCtaProps = {

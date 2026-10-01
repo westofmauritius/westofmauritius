@@ -1,6 +1,6 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
-import { Link } from "@/i18n/navigation";
+import { Link } from "@/i18n/Link";
 import type { Locale } from "@/i18n/routing";
 import { guideCategories, guideCategoryKeys } from "@/lib/guide-categories";
 

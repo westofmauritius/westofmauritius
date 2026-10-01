@@ -71,9 +71,7 @@ export function LeadForm({ areas, countries, consentText }: LeadFormProps) {
         <h2 ref={successRef} tabIndex={-1} className="text-display-3">
           {t("lead.successTitle")}
         </h2>
-        <p className="mt-4 text-lg leading-relaxed text-ink-muted">
-          {t("lead.successText")}
-        </p>
+        <p className="mt-4 lead text-ink-muted">{t("lead.successText")}</p>
       </div>
     );
   }

@@ -1,7 +1,8 @@
-import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/cn";
 
 type Variant = "primary" | "accent" | "outline" | "light" | "outlineLight";
+
+export type { Variant };
 
 const variants: Record<Variant, string> = {
   // Deep ocean: the default call to action.
@@ -22,19 +23,6 @@ const base =
 /** Button look for elements that are not ButtonLink/Button, e.g. external <a> links. */
 export function buttonClass(variant: Variant = "primary", className?: string) {
   return cn(base, variants[variant], className);
-}
-
-type ButtonLinkProps = React.ComponentProps<typeof Link> & {
-  variant?: Variant;
-};
-
-/** A link that looks like a button. Most "buttons" on a content site are links. */
-export function ButtonLink({
-  variant = "primary",
-  className,
-  ...props
-}: ButtonLinkProps) {
-  return <Link className={cn(base, variants[variant], className)} {...props} />;
 }
 
 type ButtonProps = React.ComponentProps<"button"> & { variant?: Variant };

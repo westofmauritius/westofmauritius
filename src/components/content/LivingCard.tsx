@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { Badge } from "@/components/ui/Badge";
-import { Link } from "@/i18n/navigation";
+import { Link } from "@/i18n/Link";
 import type { LivingArticle } from "@/lib/content/types";
 
 /** Quiet text card for a Live in the West article. */

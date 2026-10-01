@@ -24,6 +24,8 @@ type ExplorerLabels = {
   /** e.g. "{count} places" */
   results: string;
   noResults: string;
+  /** Hidden heading above the results, for screen-reader navigation. */
+  resultsHeading: string;
 };
 
 type PlaceExplorerProps = {
@@ -128,6 +130,7 @@ export function PlaceExplorer({ places, areas, categories, labels }: PlaceExplor
         </div>
       </form>
 
+      <h2 className="sr-only">{labels.resultsHeading}</h2>
       {/* Announced by screen readers whenever the number of results changes. */}
       <p id={id} role="status" className="mt-8 text-sm text-ink-muted">
         {labels.results.replace("{count}", String(results.length))}

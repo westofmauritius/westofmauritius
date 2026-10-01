@@ -33,9 +33,7 @@ export function SectionHeading({
       >
         {title}
       </Heading>
-      {intro && (
-        <p className="mt-4 text-lg leading-relaxed text-ink-muted">{intro}</p>
-      )}
+      {intro && <p className="mt-4 lead text-ink-muted">{intro}</p>}
     </div>
   );
 }

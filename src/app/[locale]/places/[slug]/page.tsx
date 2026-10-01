@@ -121,9 +121,7 @@ export default async function PlacePage({ params }: Props) {
             )}
           </div>
         )}
-        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-ink-muted">
-          {place.summary}
-        </p>
+        <p className="mt-6 max-w-2xl lead text-ink-muted">{place.summary}</p>
       </Container>
 
       <Container size="wide">

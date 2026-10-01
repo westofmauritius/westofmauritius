@@ -10,7 +10,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { Container } from "@/components/ui/Container";
 import { Photo } from "@/components/ui/Photo";
 import { PlaceholderNotice } from "@/components/ui/PlaceholderNotice";
-import { Link } from "@/i18n/navigation";
+import { Link } from "@/i18n/Link";
 import { resolveLocale } from "@/i18n/locale";
 import type { Locale } from "@/i18n/routing";
 import { getAreas } from "@/lib/content/areas";
@@ -154,9 +154,7 @@ export default async function GuidePage({ params }: Props) {
           <p className="mb-5 eyebrow text-coral-600">{categoryTitle}</p>
           <h1 className="text-display-1">{guide.title}</h1>
           {guide.excerpt && (
-            <p className="mt-6 text-xl leading-relaxed text-ink-muted">
-              {guide.excerpt}
-            </p>
+            <p className="mt-6 lead text-ink-muted">{guide.excerpt}</p>
           )}
           <p className="mt-6 text-sm text-ink-muted">
             {guide.publishedAt &&

@@ -1,6 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { Wordmark } from "@/components/ui/Wordmark";
-import { Link } from "@/i18n/navigation";
+import { Link } from "@/i18n/Link";
 import type { NavItem } from "./nav";
 
 type SiteFooterProps = {

@@ -7,11 +7,15 @@ import { EB_Garamond, Inter } from "next/font/google";
 /**
  * Classic serif for headings and the wordmark. Chosen over Cormorant
  * Garamond because its accents (î, ô, ê) read naturally in French.
- * A variable font: one file covers every weight.
+ * One static weight (400) keeps the file small: headings and the wordmark
+ * both use it.
  */
 export const garamond = EB_Garamond({
   subsets: ["latin"],
-  style: ["normal", "italic"],
+  weight: "400",
+  // Upright only: the italic file (48 kB) would be preloaded on every page
+  // for the odd quote. Browsers slant the upright font where italic is used.
+  style: ["normal"],
   variable: "--font-garamond",
   display: "swap",
 });
@@ -19,6 +23,9 @@ export const garamond = EB_Garamond({
 /** Clean sans-serif for body text and the interface. */
 export const inter = Inter({
   subsets: ["latin"],
+  // Not preloaded: the headline font (above) is what the first screen needs
+  // most; body text shows in the metric-matched fallback for a moment.
+  preload: false,
   variable: "--font-inter",
   display: "swap",
 });

@@ -88,6 +88,7 @@ export default async function PlacesPage({
             reset: t("PlacesPage.reset"),
             results: t.raw("PlacesPage.results") as string,
             noResults: t("PlacesPage.noResults"),
+            resultsHeading: t("PlacesPage.resultsHeading"),
           }}
         />
       </div>

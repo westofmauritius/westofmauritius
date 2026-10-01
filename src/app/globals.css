@@ -199,3 +199,12 @@
     @apply opacity-100;
   }
 }
+
+/*
+ * Lead paragraph (intros under headings), set in the serif like a printed
+ * magazine. Also keeps the first screen to one font: the headline font is
+ * preloaded, so intros appear without waiting for the body font.
+ */
+@utility lead {
+  @apply font-display text-[1.375rem] leading-[1.45] sm:text-2xl sm:leading-[1.45];
+}

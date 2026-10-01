@@ -110,9 +110,7 @@ export default async function LivingArticlePage({ params }: Props) {
           <p className="mb-5 eyebrow text-coral-600">{t("LivePage.eyebrow")}</p>
           <h1 className="text-display-1">{article.title}</h1>
           {article.excerpt && (
-            <p className="mt-6 text-xl leading-relaxed text-ink-muted">
-              {article.excerpt}
-            </p>
+            <p className="mt-6 lead text-ink-muted">{article.excerpt}</p>
           )}
           {article.updatedAt && (
             <p className="mt-4 text-sm text-ink-muted">

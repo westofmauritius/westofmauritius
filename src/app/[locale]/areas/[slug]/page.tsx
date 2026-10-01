@@ -11,7 +11,8 @@ import { Container } from "@/components/ui/Container";
 import { Photo } from "@/components/ui/Photo";
 import { PlaceholderNotice } from "@/components/ui/PlaceholderNotice";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { Link, getPathname } from "@/i18n/navigation";
+import { Link } from "@/i18n/Link";
+import { getPathname } from "@/i18n/navigation";
 import { resolveLocale } from "@/i18n/locale";
 import { routing } from "@/i18n/routing";
 import { getArea, getAreas } from "@/lib/content/areas";
@@ -112,9 +113,7 @@ export default async function AreaPage({ params }: Props) {
         <div>
           <p className="mb-4 eyebrow text-coral-600">{area.tagline}</p>
           <h1 className="text-display-1">{area.name}</h1>
-          <p className="mt-6 text-lg leading-relaxed text-ink-muted">
-            {area.intro}
-          </p>
+          <p className="mt-6 lead text-ink-muted">{area.intro}</p>
         </div>
         <Photo
           photo={area.hero}
