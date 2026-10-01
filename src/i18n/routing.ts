@@ -40,7 +40,10 @@ export const routing = defineRouting({
     "/areas": { en: "/areas", fr: "/regions" },
     "/areas/[slug]": { en: "/areas/[slug]", fr: "/regions/[slug]" },
     "/guides": "/guides",
+    // [category] and [slug] are themselves translated (e.g. "plages"), see
+    // src/lib/guide-categories.ts and the guide's "URL in this language".
     "/guides/[category]": "/guides/[category]",
+    "/guides/[category]/[slug]": "/guides/[category]/[slug]",
     "/places/[slug]": { en: "/places/[slug]", fr: "/lieux/[slug]" },
     "/live-in-the-west": { en: "/live-in-the-west", fr: "/vivre-dans-l-ouest" },
     "/live-in-the-west/[slug]": {

@@ -1,0 +1,25 @@
+category: beaches
+placeholder: true
+featured: false
+publishedAt: '2026-10-01'
+areas:
+  - flic-en-flac
+  - le-morne
+places:
+  - example-beach-flic-en-flac
+  - example-beach-le-morne
+hero:
+  discriminant: false
+placeholderTone: sand
+content:
+  en:
+    title: 'Example guide: west coast beaches'
+    excerpt: >-
+      Placeholder. A short introduction to the guide: what it covers and who it
+      is for.
+  fr:
+    title: 'Guide exemple : les plages de la côte ouest'
+    slug: exemple-guide-plages
+    excerpt: >-
+      Texte provisoire. Une courte introduction au guide : ce qu’il couvre et à
+      qui il s’adresse.

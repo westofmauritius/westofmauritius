@@ -55,8 +55,9 @@ function checkTranslations(
   content: Record<string, Record<string, unknown>>,
 ) {
   const locales = Object.keys(content);
+  // "slug" (URL in this language) is optional per language, so skip it.
   const keys = Object.keys(content[locales[0]]).filter(
-    (k) => typeof content[locales[0]][k] === "string",
+    (k) => k !== "slug" && typeof content[locales[0]][k] === "string",
   );
   for (const key of keys) {
     const filled = locales.filter(
@@ -108,6 +109,21 @@ async function main() {
       if (!placeSlugs.has(p))
         errors.push(`${label}: place "${p}" does not exist.`);
     checkTranslations(label, entry.content);
+  }
+
+  // Two guides in one category cannot share a URL in the same language.
+  const seenGuideUrls = new Map<string, string>();
+  for (const { slug, entry } of guides) {
+    for (const [locale, text] of Object.entries(entry.content)) {
+      const url = `${locale}/${entry.category}/${text.slug || slug}`;
+      const other = seenGuideUrls.get(url);
+      if (other) {
+        errors.push(
+          `Guides "${other}" and "${slug}" both use the URL "${text.slug || slug}" in ${locale}.`,
+        );
+      }
+      seenGuideUrls.set(url, slug);
+    }
   }
 
   for (const { slug, entry } of living) {

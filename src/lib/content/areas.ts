@@ -1,6 +1,7 @@
 import "server-only";
 import { cache } from "react";
 import type { Locale } from "@/i18n/routing";
+import { typeset } from "@/lib/typography";
 import { toOptionalPhoto } from "./photo";
 import { reader } from "./reader";
 import type { Area, WithBody } from "./types";
@@ -14,8 +15,8 @@ function toArea(slug: string, entry: AreaEntry, locale: Locale): Area {
   return {
     slug,
     name: text.name,
-    tagline: text.tagline,
-    intro: text.intro,
+    tagline: typeset(text.tagline, locale),
+    intro: typeset(text.intro, locale),
     seoDescription: text.seoDescription || text.intro,
     order: entry.order ?? 0,
     placeholder: entry.placeholder,

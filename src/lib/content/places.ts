@@ -1,6 +1,7 @@
 import "server-only";
 import { cache } from "react";
 import type { Locale } from "@/i18n/routing";
+import { typeset } from "@/lib/typography";
 import { toPhoto } from "./photo";
 import { reader } from "./reader";
 import type { Place, PlaceCategory, WithBody } from "./types";
@@ -33,8 +34,8 @@ function toPlace(
     name: entry.name,
     category: entry.category,
     areaSlug: entry.area,
-    summary: text.summary,
-    hoursNote: text.hoursNote,
+    summary: typeset(text.summary, locale),
+    hoursNote: typeset(text.hoursNote, locale),
     seoDescription: text.seoDescription || text.summary,
     placeholder: entry.placeholder,
     featured: isFeatured(entry, today),

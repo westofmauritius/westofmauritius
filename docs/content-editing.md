@@ -29,6 +29,12 @@ English and one for French.
   normally again (from the next build).
 - **Affiliate link** becomes the main button on the place page and is marked
   as a partner link.
+- **URL in this language** (guides): the address of the guide in that
+  language, e.g. `meilleures-plages` gives `/fr/guides/plages/meilleures-plages`.
+  Leave it empty to use the internal name. Two guides in the same category
+  cannot share a URL (the content check stops the build).
+- **French spacing**: type a normal space before `:` `;` `?` `!` in French;
+  the site turns it into the non-breaking space French typography needs.
 - **Map position**: in Google Maps, right-click the spot and click the
   coordinates to copy them (first number = latitude, second = longitude).
 - **Details last checked**: update it whenever you confirm opening hours or

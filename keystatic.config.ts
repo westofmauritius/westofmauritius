@@ -1,6 +1,7 @@
 import { collection, config, fields } from "@keystatic/core";
 import type { ComponentSchema } from "@keystatic/core";
 import { routing, type Locale } from "@/i18n/routing";
+import { guideCategoryKeys } from "@/lib/guide-categories";
 
 /**
  * Keystatic content model.
@@ -46,6 +47,24 @@ function localized<S extends Record<string, ComponentSchema>>(schema: () => S) {
   ) as Record<Locale, ReturnType<typeof fields.object<S>>>;
   return fields.object(perLocale, { label: "Text per language" });
 }
+
+/**
+ * The URL of an entry in one language, e.g. "meilleures-plages" in French.
+ * Optional: when empty, the internal name's URL is used.
+ */
+const localSlug = () =>
+  fields.text({
+    label: "URL in this language",
+    description:
+      "Lower-case words joined by hyphens, e.g. meilleures-plages. Leave empty to use the internal name.",
+    validation: {
+      pattern: {
+        regex: /^$|^[a-z0-9]+(?:-[a-z0-9]+)*$/,
+        message:
+          "Use lower-case letters, digits and hyphens only, e.g. meilleures-plages",
+      },
+    },
+  });
 
 const placeholder = fields.checkbox({
   label: "Placeholder",
@@ -310,13 +329,11 @@ export default config({
         }),
         category: fields.select({
           label: "Category",
-          options: [
-            { label: "Restaurants", value: "restaurants" },
-            { label: "Activities", value: "activities" },
-            { label: "Beaches", value: "beaches" },
-            { label: "Sunsets", value: "sunsets" },
-            { label: "Shopping", value: "shopping" },
-          ],
+          // The categories and their URLs are defined in src/lib/guide-categories.ts.
+          options: guideCategoryKeys.map((key) => ({
+            label: key[0].toUpperCase() + key.slice(1),
+            value: key,
+          })),
           defaultValue: "restaurants",
         }),
         placeholder,
@@ -347,6 +364,7 @@ export default config({
             label: "Title",
             validation: { isRequired: true },
           }),
+          slug: localSlug(),
           excerpt: fields.text({ label: "Intro", multiline: true }),
           body: fields.markdoc({ label: "Article" }),
           seoDescription: seoDescription(),
@@ -392,6 +410,7 @@ export default config({
             label: "Title",
             validation: { isRequired: true },
           }),
+          slug: localSlug(),
           excerpt: fields.text({ label: "Intro", multiline: true }),
           body: fields.markdoc({ label: "Article" }),
           seoDescription: seoDescription(),

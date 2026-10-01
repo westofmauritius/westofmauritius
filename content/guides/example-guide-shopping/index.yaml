@@ -1,0 +1,25 @@
+category: shopping
+placeholder: true
+featured: false
+publishedAt: '2026-10-01'
+areas:
+  - black-river
+  - la-gaulette
+places:
+  - example-shopping-spot-black-river
+  - example-shopping-spot-la-gaulette
+hero:
+  discriminant: false
+placeholderTone: ocean
+content:
+  en:
+    title: 'Example guide: shopping in the west'
+    excerpt: >-
+      Placeholder. A short introduction to the guide: what it covers and who it
+      is for.
+  fr:
+    title: 'Guide exemple : faire du shopping dans l’Ouest'
+    slug: exemple-guide-shopping
+    excerpt: >-
+      Texte provisoire. Une courte introduction au guide : ce qu’il couvre et à
+      qui il s’adresse.

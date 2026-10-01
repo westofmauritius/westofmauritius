@@ -126,6 +126,11 @@ runtime; `npm run deploy` builds and deploys from your machine.
 - Area pages: `src/app/[locale]/areas/[slug]`; place pages:
   `src/app/[locale]/places/[slug]`. Both are prerendered for every entry and
   language; unknown slugs are a 404.
+- Guides: `src/app/[locale]/guides/` (index, category, article). Category
+  URLs are translated in `src/lib/guide-categories.ts` (beaches ↔ plages);
+  article URLs per language come from the guide's "URL in this language".
+  The language switcher reads each page's hreflang tags, so it always links
+  to the right translated URL.
 - Maps (`src/components/map/`) use MapLibre with free OpenFreeMap tiles. The
   map code is only downloaded when a map scrolls into view.
   `scripts/copy-maplibre-worker.mjs` copies MapLibre's worker file into

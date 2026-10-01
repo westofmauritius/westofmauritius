@@ -1,4 +1,10 @@
-import type { Area, Place, PlaceCategory, Weekday } from "@/lib/content/types";
+import type {
+  Area,
+  Guide,
+  Place,
+  PlaceCategory,
+  Weekday,
+} from "@/lib/content/types";
 import { siteUrl } from "@/lib/site";
 
 /**
@@ -73,6 +79,40 @@ export function placeSchema(place: Place, areaName: string, url: string) {
         dayOfWeek: row.days.map((d) => schemaDay[d]),
         opens: row.opens,
         closes: row.closes,
+      })),
+    }),
+  };
+}
+
+export function articleSchema(
+  guide: Guide,
+  url: string,
+  options: {
+    locale: string;
+    brand: string;
+    mentions: { name: string; url: string }[];
+  },
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: guide.title,
+    description: guide.excerpt,
+    url,
+    mainEntityOfPage: url,
+    inLanguage: options.locale,
+    ...(guide.publishedAt && { datePublished: guide.publishedAt }),
+    ...((guide.updatedAt ?? guide.publishedAt) && {
+      dateModified: guide.updatedAt ?? guide.publishedAt,
+    }),
+    ...(guide.hero && { image: fullUrl(guide.hero.src) }),
+    author: { "@type": "Organization", name: options.brand, url: siteUrl },
+    publisher: { "@type": "Organization", name: options.brand, url: siteUrl },
+    ...(options.mentions.length > 0 && {
+      mentions: options.mentions.map((m) => ({
+        "@type": "Place",
+        name: m.name,
+        url: m.url,
       })),
     }),
   };

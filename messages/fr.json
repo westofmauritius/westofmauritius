@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "description": "Le guide de la côte ouest de l’île Maurice : restaurants, plages, couchers de soleil, activités et vie à Tamarin, Rivière Noire, Le Morne, Flic en Flac, La Gaulette et Chamarel."
+    "description": "Le guide de la côte ouest de l’île Maurice : restaurants, plages, couchers de soleil, activités et vie à Tamarin, Rivière Noire, Le Morne, Flic en Flac, La Gaulette et Chamarel."
   },
   "Nav": {
     "areas": "Régions",
@@ -41,7 +41,7 @@
     },
     "live": {
       "title": "Vivre dans l’Ouest",
-      "intro": "Acheter un bien à Maurice en tant qu’étranger ou Mauricien de la diaspora : dispositifs, quartiers et étapes."
+      "intro": "Acheter un bien à Maurice en tant qu’étranger ou Mauricien de la diaspora : dispositifs, quartiers et étapes."
     },
     "about": {
       "title": "À propos",
@@ -102,7 +102,7 @@
     "label": "À la une"
   },
   "Map": {
-    "label": "Carte : {name}",
+    "label": "Carte : {name}",
     "loading": "Chargement de la carte…",
     "touchHelp": "Utilisez deux doigts pour déplacer la carte",
     "desktopHelp": "Utilisez Ctrl + molette pour zoomer",
@@ -127,12 +127,53 @@
     "closed": "Fermé",
     "website": "Voir le site",
     "book": "Réserver ou en savoir plus",
-    "partnerLink": "Lien partenaire : nous pouvons percevoir une commission, sans frais pour vous.",
+    "partnerLink": "Lien partenaire : nous pouvons percevoir une commission, sans frais pour vous.",
     "phone": "Téléphone",
     "directions": "Itinéraire",
     "lastVerified": "Infos vérifiées le {date}.",
     "checkDetails": "Les infos peuvent changer — vérifiez auprès de l’établissement avant de venir.",
     "moreIn": "À découvrir aussi à {area}",
-    "photoBy": "Photo : {credit}"
+    "photoBy": "Photo : {credit}"
+  },
+  "GuideCategories": {
+    "restaurants": {
+      "title": "Restaurants",
+      "intro": "Où manger sur la côte ouest, de la paillote les pieds dans le sable au dîner au coucher du soleil."
+    },
+    "activities": {
+      "title": "Activités",
+      "intro": "Que faire sur terre et sur l’eau le long de la côte ouest."
+    },
+    "beaches": {
+      "title": "Plages",
+      "intro": "Les plages et lagons de la côte ouest, et ce que chacun offre de mieux."
+    },
+    "sunsets": {
+      "title": "Couchers de soleil",
+      "intro": "Les meilleurs endroits pour voir le soleil se coucher sur l’océan Indien."
+    },
+    "shopping": {
+      "title": "Shopping",
+      "intro": "Marchés, boutiques et centres commerciaux dans l’Ouest."
+    }
+  },
+  "GuidesPage": {
+    "eyebrow": "La côte ouest",
+    "categoriesTitle": "Par thème",
+    "latestTitle": "Derniers guides",
+    "noGuides": "Aucun guide n’a encore été publié."
+  },
+  "CategoryPage": {
+    "guidesTitle": "Guides",
+    "placesTitle": "Adresses : {category}",
+    "mapName": "{category} sur la côte ouest",
+    "noPlaces": "Aucune adresse n’a encore été ajoutée dans cette catégorie."
+  },
+  "GuidePage": {
+    "published": "Publié le {date}",
+    "updated": "Mis à jour le {date}",
+    "placesTitle": "Les adresses de ce guide",
+    "areasTitle": "Les régions de ce guide",
+    "moreTitle": "Autres guides : {category}"
   }
 }

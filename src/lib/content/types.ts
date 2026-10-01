@@ -1,5 +1,6 @@
 import type { Node as MarkdocNode } from "@markdoc/markdoc";
 import type { PlaceholderTone } from "@/components/ui/PlaceholderImage";
+import type { GuideCategory } from "@/lib/guide-categories";
 
 /**
  * The shapes pages work with. The loaders in this folder turn Keystatic's
@@ -56,6 +57,27 @@ export type Place = {
   openingHours: OpeningHours[];
   lastVerified: string | null;
   images: Photo[];
+  placeholderTone: PlaceholderTone;
+};
+
+export type Guide = {
+  /** Internal name; the same in every language. */
+  key: string;
+  /** URL part in the current language, e.g. "meilleures-plages". */
+  slug: string;
+  /** URL part per language, for links to the other language. */
+  slugs: Record<string, string>;
+  category: GuideCategory;
+  title: string;
+  excerpt: string;
+  seoDescription: string;
+  placeholder: boolean;
+  featured: boolean;
+  publishedAt: string | null;
+  updatedAt: string | null;
+  areaSlugs: string[];
+  placeSlugs: string[];
+  hero: Photo | null;
   placeholderTone: PlaceholderTone;
 };
 

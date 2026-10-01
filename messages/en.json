@@ -134,5 +134,46 @@
     "checkDetails": "Details can change — check with the venue before you go.",
     "moreIn": "More in {area}",
     "photoBy": "Photo: {credit}"
+  },
+  "GuideCategories": {
+    "restaurants": {
+      "title": "Restaurants",
+      "intro": "Where to eat on the west coast, from beach shacks to long dinners at sunset."
+    },
+    "activities": {
+      "title": "Activities",
+      "intro": "Things to do on land and water along the west coast."
+    },
+    "beaches": {
+      "title": "Beaches",
+      "intro": "The west coast's beaches and lagoons, and what each is best for."
+    },
+    "sunsets": {
+      "title": "Sunsets",
+      "intro": "The best places to watch the sun go down over the Indian Ocean."
+    },
+    "shopping": {
+      "title": "Shopping",
+      "intro": "Markets, shops and shopping centres in the west."
+    }
+  },
+  "GuidesPage": {
+    "eyebrow": "The west coast",
+    "categoriesTitle": "Browse by theme",
+    "latestTitle": "Latest guides",
+    "noGuides": "No guides have been published yet."
+  },
+  "CategoryPage": {
+    "guidesTitle": "Guides",
+    "placesTitle": "Places: {category}",
+    "mapName": "{category} on the west coast",
+    "noPlaces": "No places have been added in this category yet."
+  },
+  "GuidePage": {
+    "published": "Published {date}",
+    "updated": "Updated {date}",
+    "placesTitle": "Places in this guide",
+    "areasTitle": "Areas in this guide",
+    "moreTitle": "More {category} guides"
   }
 }

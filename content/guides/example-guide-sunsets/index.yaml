@@ -1,0 +1,25 @@
+category: sunsets
+placeholder: true
+featured: false
+publishedAt: '2026-10-01'
+areas:
+  - le-morne
+  - tamarin
+places:
+  - example-sunset-spot-le-morne
+  - example-sunset-spot-tamarin
+hero:
+  discriminant: false
+placeholderTone: sunset
+content:
+  en:
+    title: 'Example guide: where to watch the sunset'
+    excerpt: >-
+      Placeholder. A short introduction to the guide: what it covers and who it
+      is for.
+  fr:
+    title: 'Guide exemple : où admirer le coucher de soleil'
+    slug: exemple-guide-couchers-de-soleil
+    excerpt: >-
+      Texte provisoire. Une courte introduction au guide : ce qu’il couvre et à
+      qui il s’adresse.
