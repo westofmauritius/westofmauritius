@@ -22,7 +22,9 @@
     "liveHere": "Live here",
     "about": "About",
     "privacy": "Privacy",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "cookies": "Cookies",
+    "terms": "Terms of use"
   },
   "Home": {
     "eyebrow": "The west coast of Mauritius",
@@ -77,10 +79,6 @@
       "title": "Places",
       "intro": "Restaurants, beaches, sunset spots, activities and shopping across the west coast. Search, or filter by area and theme."
     }
-  },
-  "ComingSoon": {
-    "badge": "Coming soon",
-    "body": "This page is being built. Check back soon."
   },
   "NotFound": {
     "title": "Page not found",

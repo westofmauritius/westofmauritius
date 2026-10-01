@@ -154,7 +154,7 @@ export default async function PlacePage({ params }: Props) {
         size="wide"
         className="grid gap-12 py-14 lg:grid-cols-[7fr_5fr]"
       >
-        <Prose node={place.body} />
+        <Prose node={place.body} locale={locale} />
 
         {/* Practical details, beside the text on large screens. */}
         <aside className="space-y-8 lg:sticky lg:top-24 lg:self-start">

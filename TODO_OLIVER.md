@@ -71,3 +71,29 @@ förhandsadressen på workers.dev inte hamnar i Google. När
   bygg om.
 - Lägg till sajten i Google Search Console och skicka in
   `https://westmauritius.mu/sitemap.xml`.
+
+## 7. Statistik (Umami Cloud, gratis)
+
+1. Skapa ett konto på <https://cloud.umami.is> (gratisplanen räcker).
+2. Lägg till webbplatsen `westmauritius.mu` och kopiera dess **Website ID**.
+3. Cloudflare → Build variables: `NEXT_PUBLIC_UMAMI_WEBSITE_ID` = det ID:t,
+   och bygg om.
+
+Umami använder inga cookies, så ingen cookiebanner behövs. Konverteringar
+syns under "Events": `lead-submitted` (med budget, tidshorisont och
+källsida), `contact-submitted`, `newsletter-signup`, samt klick på
+`cta-enquire` och `cta-live-in-the-west` med position.
+
+## 8. Texter som bara du kan skriva
+
+I Keystatic → Site:
+
+- **About us**: sajtens historia och hur platser väljs ut.
+- **Privacy policy, Cookies, Terms of use**: utkasten är skrivna utifrån hur
+  sajten faktiskt fungerar. Fyll i allt inom hakparenteser (företagsnamn,
+  adress, e-post, lagringstider, garantier vid överföring utanför EU) och
+  låt en jurist granska. Bocka sedan ur "Placeholder" så att sidorna
+  indexeras.
+
+Allt övrigt platshållarinnehåll (orter, platser, guider, Bo i väst) är
+markerat med "Placeholder" i Keystatic och visas med en tydlig etikett.

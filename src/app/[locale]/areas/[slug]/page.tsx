@@ -131,7 +131,7 @@ export default async function AreaPage({ params }: Props) {
         size="wide"
         className="grid gap-12 py-10 lg:grid-cols-[7fr_5fr]"
       >
-        <Prose node={area.body} />
+        <Prose node={area.body} locale={locale} />
         <aside className="lg:sticky lg:top-24 lg:self-start">
           <SiteMap
             name={area.name}

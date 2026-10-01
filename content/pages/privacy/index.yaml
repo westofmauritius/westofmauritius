@@ -1,0 +1,11 @@
+placeholder: true
+updatedAt: '2026-10-01'
+content:
+  en:
+    title: Privacy policy
+    intro: What personal data we collect, why, who receives it, and your rights.
+  fr:
+    title: Politique de confidentialité
+    intro: >-
+      Quelles données personnelles nous collectons, pourquoi, qui les reçoit, et
+      vos droits.

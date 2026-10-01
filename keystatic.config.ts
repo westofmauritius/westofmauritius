@@ -136,6 +136,28 @@ const photo = (directory: string) =>
     creditUrl: fields.url({ label: "Credit link" }),
   });
 
+/** A simple page of text (About, privacy policy …), one block per language. */
+function textPage(label: string, path: `${string}/`) {
+  return singleton({
+    label,
+    path,
+    format: { data: "yaml" },
+    schema: {
+      placeholder,
+      updatedAt: fields.date({ label: "Last updated" }),
+      content: localized(() => ({
+        title: fields.text({
+          label: "Title",
+          validation: { isRequired: true },
+        }),
+        intro: fields.text({ label: "Intro", multiline: true }),
+        body: fields.markdoc({ label: "Text" }),
+        seoDescription: seoDescription(),
+      })),
+    },
+  });
+}
+
 // --- Options used by several collections --------------------------------------
 
 export const placeCategories = [
@@ -176,12 +198,16 @@ export default config({
   ui: {
     brand: { name: "West Mauritius" },
     navigation: {
-      Site: ["homepage"],
+      Site: ["homepage", "about", "privacy", "cookies", "terms"],
       Guide: ["areas", "places", "guides"],
       "Live in the West": ["living"],
     },
   },
   singletons: {
+    about: textPage("About us", "content/pages/about/"),
+    privacy: textPage("Privacy policy", "content/pages/privacy/"),
+    cookies: textPage("Cookies", "content/pages/cookies/"),
+    terms: textPage("Terms of use", "content/pages/terms/"),
     homepage: singleton({
       label: "Start page",
       path: "content/homepage/",

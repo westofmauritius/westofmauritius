@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { SiteFooter } from "@/components/layout/SiteFooter";
@@ -92,6 +93,8 @@ export default async function LocaleLayout({
                   { label: t("about"), href: "/about" },
                   { label: t("contact"), href: "/contact" },
                   { label: f("privacy"), href: "/privacy" },
+                  { label: f("cookies"), href: "/cookies" },
+                  { label: f("terms"), href: "/terms" },
                 ],
               },
             ]}
@@ -105,6 +108,19 @@ export default async function LocaleLayout({
             legal={`© ${new Date().getFullYear()} ${brand}. ${f("rights")}`}
           />
         </NextIntlClientProvider>
+        {/*
+          Umami: cookie-free visitor statistics and conversion events
+          (data-umami-event on links, track() in forms). Only loaded when
+          configured; honours the browser's Do Not Track setting.
+        */}
+        {process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID && (
+          <Script
+            src="https://cloud.umami.is/script.js"
+            data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
+            data-do-not-track="true"
+            strategy="afterInteractive"
+          />
+        )}
       </body>
     </html>
   );

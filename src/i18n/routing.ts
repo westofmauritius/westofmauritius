@@ -30,6 +30,11 @@ export const routing = defineRouting({
   // slugs. This turns off next-intl's duplicate HTTP `Link` header.
   alternateLinks: false,
 
+  // No language cookie: the language is always in the URL, and the first
+  // visit to "/" uses the browser's language. Without it, the public site
+  // sets no cookies at all, so no cookie banner is needed (DECISIONS.md).
+  localeCookie: false,
+
   /**
    * Internal route (the folder name in src/app/[locale]) → public URL per
    * language. Code always links to the internal route, e.g.

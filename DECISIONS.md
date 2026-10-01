@@ -154,3 +154,18 @@ to-do list, TODO_OLIVER.md, is in Swedish.)
   Static files get headers and long cache lifetimes from `public/_headers`.
 - **Icons generated once** from one SVG (favicon.ico with 16/32/48 px,
   Apple touch icon, maskable PWA icons); the web manifest uses them.
+
+## Privacy, analytics and text pages
+
+- **No cookie banner, because the public site sets no cookies.** next-intl's
+  language cookie is switched off (the language is in the URL), analytics
+  is cookie-free, and maps set none. The only cookie is the admin session,
+  which is strictly necessary.
+- **Umami Cloud (free) for analytics**: cookieless, GDPR-friendly, and it
+  supports custom events for conversion tracking (Cloudflare Web Analytics
+  does not). Loaded only when configured; honours Do Not Track.
+- **About and legal pages are Keystatic singletons** so the owner edits them
+  without code. Legal drafts describe what the site actually does and are
+  flagged as placeholders (noindex) until reviewed by a lawyer.
+- **French typography is applied to rendered long text too**, not only
+  titles.

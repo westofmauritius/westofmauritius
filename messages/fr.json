@@ -22,7 +22,9 @@
     "liveHere": "S’installer",
     "about": "À propos",
     "privacy": "Confidentialité",
-    "rights": "Tous droits réservés."
+    "rights": "Tous droits réservés.",
+    "cookies": "Cookies",
+    "terms": "Conditions d’utilisation"
   },
   "Home": {
     "eyebrow": "La côte ouest de l’île Maurice",
@@ -77,10 +79,6 @@
       "title": "Adresses",
       "intro": "Restaurants, plages, spots de coucher de soleil, activités et shopping sur toute la côte ouest. Cherchez, ou filtrez par région et par thème."
     }
-  },
-  "ComingSoon": {
-    "badge": "Bientôt",
-    "body": "Cette page est en cours de construction. Revenez bientôt."
   },
   "NotFound": {
     "title": "Page introuvable",

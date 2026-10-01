@@ -121,7 +121,7 @@ export default async function LivingArticlePage({ params }: Props) {
               })}
             </p>
           )}
-          <Prose node={article.body} className="mt-12" />
+          <Prose node={article.body} locale={locale} className="mt-12" />
         </div>
         <div className="lg:sticky lg:top-24 lg:self-start">
           <EnquiryCta

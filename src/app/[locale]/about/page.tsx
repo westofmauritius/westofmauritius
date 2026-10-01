@@ -1,6 +1,6 @@
-import { stubPage } from "@/lib/stub-page";
+import { textPage } from "@/lib/text-page";
 
-// Placeholder until this section is built (see the build plan in the README).
-const stub = stubPage("about", "/about");
-export const generateMetadata = stub.generateMetadata;
-export default stub.Page;
+// Text edited in Keystatic → Site → About.
+const page = textPage("about", "/about");
+export const generateMetadata = page.generateMetadata;
+export default page.Page;

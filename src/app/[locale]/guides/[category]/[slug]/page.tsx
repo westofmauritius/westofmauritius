@@ -192,7 +192,7 @@ export default async function GuidePage({ params }: Props) {
       </Container>
 
       <Container size="prose" className="py-14">
-        <Prose node={guide.body} />
+        <Prose node={guide.body} locale={locale} />
         <EnquiryCta position={`guide-${guide.key}`} className="mt-12" />
 
         {guideAreas.length > 0 && (
