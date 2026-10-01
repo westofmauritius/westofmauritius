@@ -1,15 +1,18 @@
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import { EB_Garamond, Inter } from "next/font/google";
 
 // next/font downloads these at build time and serves them from our own domain:
 // no request goes to Google from the visitor's browser (good for privacy and
 // speed), and fallback metrics are adjusted so text does not jump on load.
 
-/** Elegant serif for headings and the wordmark. */
-export const cormorant = Cormorant_Garamond({
+/**
+ * Classic serif for headings and the wordmark. Chosen over Cormorant
+ * Garamond because its accents (î, ô, ê) read naturally in French.
+ * A variable font: one file covers every weight.
+ */
+export const garamond = EB_Garamond({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
   style: ["normal", "italic"],
-  variable: "--font-cormorant",
+  variable: "--font-garamond",
   display: "swap",
 });
 
@@ -21,4 +24,4 @@ export const inter = Inter({
 });
 
 /** Class names to put on <html> so the CSS variables exist everywhere. */
-export const fontVariables = `${cormorant.variable} ${inter.variable}`;
+export const fontVariables = `${garamond.variable} ${inter.variable}`;

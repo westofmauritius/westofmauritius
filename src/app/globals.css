@@ -71,7 +71,7 @@
   --color-line: var(--color-sand-200);
 
   /* Fonts. The CSS variables are set by next/font in src/lib/fonts.ts. */
-  --font-display: var(--font-cormorant), "Times New Roman", serif;
+  --font-display: var(--font-garamond), "Times New Roman", serif;
   --font-sans: var(--font-inter), system-ui, sans-serif;
 
   /*
@@ -103,7 +103,7 @@
   h2,
   h3,
   h4 {
-    @apply font-display font-medium text-balance;
+    @apply font-display font-normal text-balance;
   }
 
   :focus-visible {

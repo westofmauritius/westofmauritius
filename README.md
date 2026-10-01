@@ -100,7 +100,7 @@ runtime; `npm run deploy` builds and deploys from your machine.
 ## Design system
 
 - Tokens (colours, fonts, type sizes) live in `src/app/globals.css`.
-- Fonts: Cormorant Garamond (headings, wordmark) and Inter (body), loaded in
+- Fonts: EB Garamond (headings, wordmark) and Inter (body), loaded in
   `src/lib/fonts.ts` and self-hosted by `next/font`.
 - Reusable pieces live in `src/components/ui` (wordmark, buttons, cards …) and
   `src/components/layout` (header, footer).

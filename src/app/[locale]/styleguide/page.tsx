@@ -98,7 +98,7 @@ export default async function StyleguidePage({
         <div className="space-y-8">
           <div>
             <p className="mb-2 text-xs text-ink-muted">
-              text-display-1 · Cormorant Garamond
+              text-display-1 · EB Garamond
             </p>
             <p className="font-display text-display-1">
               Where the sun sets on the lagoon
