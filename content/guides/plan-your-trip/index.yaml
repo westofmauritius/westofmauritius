@@ -1,0 +1,40 @@
+category: practical
+placeholder: false
+featured: false
+publishedAt: '2026-10-01'
+areas: []
+places: []
+hero:
+  discriminant: true
+  value:
+    image: /images/areas/flic-en-flac/hero/image.jpg
+    alt:
+      en:
+        text: >-
+          Flic en Flac beach lined with filao trees, with the lagoon on the
+          right
+      fr:
+        text: La plage de Flic en Flac bordée de filaos, avec le lagon à droite
+    credit: dronepicr · CC BY 2.0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:Flic_en_Flac_Beach_in_Mauiritius_(53697781931).jpg
+placeholderTone: sand
+content:
+  en:
+    title: Planning a trip to the west coast of Mauritius
+    excerpt: >-
+      When to come, how to get here and get around, money, language and the
+      practical details — everything to know before a stay on the west coast.
+    seoDescription: >-
+      Plan a trip to west Mauritius: best time to visit, the airport and getting
+      around, money, language, plugs, time zone and emergency numbers.
+  fr:
+    title: Préparer un séjour sur la côte ouest de l’île Maurice
+    slug: preparer-un-sejour-cote-ouest
+    excerpt: >-
+      Quand venir, comment arriver et se déplacer, argent, langues et questions
+      pratiques — tout ce qu’il faut savoir avant un séjour sur la côte ouest.
+    seoDescription: >-
+      Préparer un séjour dans l’ouest de l’île Maurice : meilleure période,
+      aéroport et transports, argent, langues, prises, fuseau horaire et
+      urgences.

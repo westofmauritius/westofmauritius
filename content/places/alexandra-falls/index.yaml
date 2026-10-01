@@ -1,0 +1,48 @@
+name: Alexandra Falls
+category: activity
+area: chamarel
+placeholder: false
+featured: false
+location:
+  lat: -20.4341
+  lng: 57.4573
+address: Plaine Champagne
+openingHours: []
+images:
+  - image: /images/places/alexandra-falls/images/0/image.jpg
+    alt:
+      en:
+        text: >-
+          Alexandra Falls dropping into native forest on the Plaine Champagne
+          plateau
+      fr:
+        text: >-
+          Les chutes d’Alexandra plongeant dans la forêt indigène du plateau de
+          Plaine Champagne
+    credit: Z thomas · CC BY-SA 4.0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:Alexandra_Falls_Mauritius_2019-09-28_4.jpg
+  - image: /images/places/alexandra-falls/images/1/image.jpg
+    alt:
+      en:
+        text: The forested valley below the Alexandra Falls viewpoint
+      fr:
+        text: La vallée boisée sous le point de vue des chutes d’Alexandra
+    credit: Z thomas · CC BY-SA 4.0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:Alexandra_Falls_Mauritius_2019-09-28.jpg
+placeholderTone: ocean
+content:
+  en:
+    name: Alexandra Falls
+    summary: >-
+      A viewpoint on the Plaine Champagne plateau, some 700 metres up, looking
+      across native forest to a waterfall and down towards the south coast.
+    hoursNote: Open access. A short walk from the car park.
+  fr:
+    name: Chutes d’Alexandra
+    summary: >-
+      Un point de vue sur le plateau de Plaine Champagne, à quelque 700 mètres
+      d’altitude, face à une cascade dans la forêt indigène et à la côte sud au
+      loin.
+    hoursNote: Accès libre. Courte marche depuis le parking.

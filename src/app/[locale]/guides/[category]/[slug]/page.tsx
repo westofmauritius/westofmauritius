@@ -79,9 +79,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: guide.seoDescription,
       ...(guide.publishedAt && { publishedTime: guide.publishedAt }),
       ...(guide.updatedAt && { modifiedTime: guide.updatedAt }),
-      ...(guide.hero && {
-        images: [{ url: guide.hero.src, alt: guide.hero.alt }],
-      }),
     },
     ...(guide.placeholder && { robots: { index: false } }),
   };

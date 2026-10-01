@@ -106,7 +106,10 @@ källsida), `contact-submitted`, `newsletter-signup`, samt klick på
 
 I Keystatic → Site:
 
-- **About us**: sajtens historia och hur platser väljs ut.
+- **About us**: sidan är nu riktig — den beskriver vad sajten täcker, hur
+  fakta kontrolleras, hur utvalda platser och partnerlänkar märks och vad som
+  händer med förfrågningar. Lägg gärna till din egen historia (vem som står
+  bakom sajten och varför).
 - **Privacy policy, Cookies, Terms of use**: utkasten är skrivna utifrån hur
   sajten faktiskt fungerar. Fyll i allt inom hakparenteser (företagsnamn,
   adress, e-post, lagringstider, garantier vid överföring utanför EU) och
@@ -115,8 +118,9 @@ I Keystatic → Site:
 
 ### Läs igenom det riktiga innehållet
 
-Orterna, 16 offentliga platser (stränder, natur, sevärdheter) och fyra
-guider (stränder, solnedgångar, saker att göra, en dag i Chamarel) har nu
+Orterna, 19 offentliga platser (stränder, natur, sevärdheter) och sju
+guider (stränder, solnedgångar, saker att göra, en dag i Chamarel, vandring,
+en dag i Le Morne och en praktisk reseguide) har nu
 riktiga texter på engelska och franska. Fakta är kontrollerade mot
 Wikipedia och koordinaterna mot OpenStreetMap, men läs igenom dem med dina
 egna ögon innan lansering — du känner västkusten bäst. Inga öppettider,

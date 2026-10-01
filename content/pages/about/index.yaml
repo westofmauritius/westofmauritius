@@ -1,9 +1,21 @@
-placeholder: true
+placeholder: false
 updatedAt: '2026-10-01'
 content:
   en:
-    title: About us
-    intro: Placeholder — the story of West Mauritius, written by the founder.
+    title: About West Mauritius
+    intro: >-
+      An independent guide to the west coast of Mauritius — its beaches,
+      mountains and villages, and what it takes to make a home there.
+    seoDescription: >-
+      About West Mauritius: an independent guide to the west coast of Mauritius,
+      how we write, how featured places and partner links are marked, and how to
+      reach us.
   fr:
-    title: À propos
-    intro: Texte provisoire — l’histoire d’Ouest Maurice, racontée par son fondateur.
+    title: À propos d’Ouest Maurice
+    intro: >-
+      Un guide indépendant de la côte ouest de l’île Maurice — ses plages, ses
+      montagnes et ses villages, et ce qu’il faut savoir pour s’y installer.
+    seoDescription: >-
+      À propos d’Ouest Maurice : un guide indépendant de la côte ouest de l’île
+      Maurice, notre façon d’écrire, les adresses à la une, les liens
+      partenaires et nous contacter.

@@ -1,0 +1,52 @@
+category: activities
+placeholder: false
+featured: false
+publishedAt: '2026-10-01'
+areas:
+  - black-river
+  - le-morne
+  - chamarel
+places:
+  - le-morne-brabant
+  - piton-de-la-petite-riviere-noire
+  - black-river-gorges-national-park
+  - gorges-viewpoint
+  - alexandra-falls
+hero:
+  discriminant: true
+  value:
+    image: /images/places/black-river-gorges-national-park/images/1/image.jpg
+    alt:
+      en:
+        text: Forested ravines of Black River Gorges seen from the Gorges Viewpoint
+      fr:
+        text: >-
+          Les ravins boisés des Gorges de Rivière Noire vus depuis le point de
+          vue
+    credit: Lukas von Daeniken from Schweiz · CC BY-SA 2.0 · Wikimedia Commons
+    creditUrl: https://commons.wikimedia.org/wiki/File:Gorges_Viewpoint_(22937657943).jpg
+placeholderTone: ocean
+content:
+  en:
+    title: 'Hiking in the west: Le Morne, the gorges and the island''s highest peak'
+    excerpt: >-
+      The west has the island's best walking: a UNESCO-listed mountain above the
+      lagoon, the native forest of Black River Gorges and the highest summit in
+      Mauritius.
+    seoDescription: >-
+      Hiking in west Mauritius: Le Morne Brabant, Black River Gorges National
+      Park and Piton de la Petite Rivière Noire — routes, seasons and safety
+      tips.
+  fr:
+    title: >-
+      Randonner dans l’ouest : Le Morne, les gorges et le plus haut sommet de
+      l’île
+    slug: randonner-dans-l-ouest
+    excerpt: >-
+      L’ouest offre les plus belles randonnées de l’île : une montagne classée à
+      l’UNESCO au-dessus du lagon, la forêt indigène des Gorges de Rivière Noire
+      et le plus haut sommet de Maurice.
+    seoDescription: >-
+      Randonner dans l’ouest de l’île Maurice : Morne Brabant, Gorges de Rivière
+      Noire et Piton de la Petite Rivière Noire — itinéraires, saisons et
+      sécurité.

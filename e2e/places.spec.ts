@@ -5,23 +5,25 @@ test("places can be searched and filtered, and filters live in the URL", async (
 }) => {
   await page.goto("/fr/lieux");
   const results = page.getByRole("status");
-  await expect(results).toHaveText("20 adresses");
+  await expect(results).toHaveText("23 adresses");
 
-  // Every word must match, in any order.
-  await page.getByLabel("Rechercher").fill("chamarel cascade");
+  // Every word must match, in any order; one result is singular in French.
+  await page.getByLabel("Rechercher").fill("tamarin salines");
   await expect(results).toHaveText("1 adresse");
-  await expect(page).toHaveURL(/\?q=chamarel/);
+  await expect(page).toHaveURL(/\?q=tamarin/);
 
   // Accents are ignored: "belvedere" finds "belvédère".
   await page.getByLabel("Rechercher").fill("belvedere");
-  await expect(results).toHaveText("2 adresses");
+  await expect(
+    page.getByRole("link", { name: /Belvédère de Chamarel/ }),
+  ).toBeVisible();
 
   await page.getByLabel("Rechercher").fill("");
   await page.getByLabel("Catégorie").selectOption("beach");
-  await expect(results).toHaveText("2 adresses");
+  await expect(results).toHaveText("4 adresses");
 
   await page.getByRole("button", { name: "Effacer les filtres" }).click();
-  await expect(results).toHaveText("20 adresses");
+  await expect(results).toHaveText("23 adresses");
 
   await page.goto("/en/places?area=le-morne&featured=1");
   await expect(page.getByRole("status")).toHaveText("0 places");

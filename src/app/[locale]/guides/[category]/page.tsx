@@ -4,10 +4,10 @@ import { notFound } from "next/navigation";
 import { GuideCard } from "@/components/content/GuideCard";
 import { PlaceCard } from "@/components/content/PlaceCard";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
+import { placeMarker } from "@/components/map/markers";
 import { SiteMap } from "@/components/map/SiteMap";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { getPathname } from "@/i18n/pathname";
 import { resolveLocale } from "@/i18n/locale";
 import type { Locale } from "@/i18n/routing";
 import { getAreas } from "@/lib/content/areas";
@@ -78,7 +78,9 @@ export default async function GuideCategoryPage({ params }: Props) {
   const [t, guides, places, areas] = await Promise.all([
     getTranslations({ locale }),
     getGuides(locale, { category: key }),
-    getPlaces(locale, { category: category.placeCategory }),
+    category.placeCategory
+      ? getPlaces(locale, { category: category.placeCategory })
+      : Promise.resolve(null),
     getAreas(locale),
   ]);
   const title = t(`GuideCategories.${key}.title`);
@@ -126,48 +128,40 @@ export default async function GuideCategoryPage({ params }: Props) {
         )}
       </Container>
 
-      <section className="border-t border-line bg-sand-50 py-16">
-        <Container size="wide">
-          <h2 className="text-display-3">
-            {t("CategoryPage.placesTitle", { category: title })}
-          </h2>
-          {places.length > 0 ? (
-            <>
-              <SiteMap
-                name={t("CategoryPage.mapName", { category: title })}
-                center={{ lat: -20.36, lng: 57.37 }}
-                zoom={11}
-                markers={places.map((place) => ({
-                  id: place.slug,
-                  lat: place.location.lat,
-                  lng: place.location.lng,
-                  label: place.name,
-                  href: getPathname({
-                    href: {
-                      pathname: "/places/[slug]",
-                      params: { slug: place.slug },
-                    },
-                    locale,
-                  }),
-                  highlight: place.featured,
-                }))}
-                className="mt-8 aspect-[4/5] sm:aspect-[16/9] lg:aspect-[21/9]"
-              />
-              <div className="mt-12 grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
-                {places.map((place) => (
-                  <PlaceCard
-                    key={place.slug}
-                    place={place}
-                    areaName={areaName(place.areaSlug)}
-                  />
-                ))}
-              </div>
-            </>
-          ) : (
-            <p className="mt-4 text-ink-muted">{t("CategoryPage.noPlaces")}</p>
-          )}
-        </Container>
-      </section>
+      {/* Themes without places (practical information) end with the guides. */}
+      {places && (
+        <section className="border-t border-line bg-sand-50 py-16">
+          <Container size="wide">
+            <h2 className="text-display-3">
+              {t("CategoryPage.placesTitle", { category: title })}
+            </h2>
+            {places.length > 0 ? (
+              <>
+                <SiteMap
+                  name={t("CategoryPage.mapName", { category: title })}
+                  center={{ lat: -20.36, lng: 57.37 }}
+                  zoom={11}
+                  markers={places.map((place) => placeMarker(place, locale))}
+                  className="mt-8 aspect-[4/5] sm:aspect-[16/9] lg:aspect-[21/9]"
+                />
+                <div className="mt-12 grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+                  {places.map((place) => (
+                    <PlaceCard
+                      key={place.slug}
+                      place={place}
+                      areaName={areaName(place.areaSlug)}
+                    />
+                  ))}
+                </div>
+              </>
+            ) : (
+              <p className="mt-4 text-ink-muted">
+                {t("CategoryPage.noPlaces")}
+              </p>
+            )}
+          </Container>
+        </section>
+      )}
     </>
   );
 }

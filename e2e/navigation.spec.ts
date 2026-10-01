@@ -53,3 +53,41 @@ test("structured data and hreflang are present", async ({ page }) => {
     .allTextContents();
   expect(jsonLd.join()).toContain("BreadcrumbList");
 });
+
+test("places describe themselves to search engines", async ({ page }) => {
+  await page.goto("/en/places/le-morne-brabant");
+  const jsonLd = (
+    await page.locator('script[type="application/ld+json"]').allTextContents()
+  ).join();
+  expect(jsonLd).toContain('"@type":"Mountain"');
+  await expect(page.locator('meta[property="og:image"]')).toHaveAttribute(
+    "content",
+    /\/og\/en\/places\/le-morne-brabant\.jpg$/,
+  );
+});
+
+test("the practical guide is one click from every page", async ({ page }) => {
+  await page.goto("/fr");
+  await page
+    .getByRole("contentinfo")
+    .getByRole("link", { name: "Préparer son voyage" })
+    .click();
+  await expect(page).toHaveURL(/\/fr\/guides\/preparer-son-voyage$/);
+  await page
+    .getByRole("link", { name: /Préparer un séjour/ })
+    .first()
+    .click();
+  await expect(
+    page.getByRole("heading", { level: 2, name: "Quand venir" }),
+  ).toBeVisible();
+});
+
+test("the guides have an RSS feed per language", async ({ request }) => {
+  const response = await request.get("/fr/feed.xml");
+  expect(response.headers()["content-type"]).toContain("application/rss+xml");
+  const xml = await response.text();
+  expect(xml).toContain("<language>fr</language>");
+  expect(xml).toContain("/fr/guides/plages/plages-de-la-cote-ouest");
+  // Placeholder guides are not announced.
+  expect(xml).not.toContain("exemple");
+});

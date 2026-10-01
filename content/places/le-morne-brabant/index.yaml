@@ -2,6 +2,7 @@ name: Le Morne Brabant
 category: activity
 area: le-morne
 placeholder: false
+kind: Mountain
 featured: false
 location:
   lat: -20.4541

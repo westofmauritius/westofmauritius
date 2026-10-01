@@ -25,7 +25,8 @@
     "privacy": "Confidentialité",
     "rights": "Tous droits réservés.",
     "cookies": "Cookies",
-    "terms": "Conditions d’utilisation"
+    "terms": "Conditions d’utilisation",
+    "planTrip": "Préparer son voyage"
   },
   "Home": {
     "eyebrow": "La côte ouest de l’île Maurice",
@@ -55,7 +56,7 @@
     },
     "guides": {
       "title": "Guides",
-      "intro": "Restaurants, activités, plages, couchers de soleil et shopping sur la côte ouest."
+      "intro": "Plages, couchers de soleil, randonnées, restaurants et boutiques — et tout le côté pratique d’un séjour sur la côte ouest."
     },
     "live": {
       "title": "Vivre dans l’Ouest",
@@ -179,6 +180,10 @@
     "shopping": {
       "title": "Shopping",
       "intro": "Marchés, boutiques et centres commerciaux dans l’Ouest."
+    },
+    "practical": {
+      "title": "Préparer son voyage",
+      "intro": "Saisons, transports, argent, langues et toutes les questions pratiques d’un séjour sur la côte ouest."
     }
   },
   "GuidesPage": {

@@ -48,7 +48,7 @@ export function SiteFooter({
             <p className="mb-4 eyebrow text-ocean-300">{column.title}</p>
             <ul className="space-y-3 text-sm">
               {column.items.map((item) => (
-                <li key={item.href}>
+                <li key={item.path}>
                   <Link
                     href={item.href}
                     className="transition-colors hover:text-white"

@@ -42,6 +42,8 @@ export type Place = {
   slug: string;
   name: string;
   category: PlaceCategory;
+  /** schema.org type when it should differ from the category's ("Mountain"). */
+  kind: string | null;
   areaSlug: string;
   summary: string;
   hoursNote: string;

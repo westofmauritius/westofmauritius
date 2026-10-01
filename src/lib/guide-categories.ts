@@ -3,12 +3,12 @@ import type { PlaceCategory } from "@/lib/content/types";
 import type { PlaceholderTone } from "@/components/ui/PlaceholderImage";
 
 /**
- * The five guide categories. Fixed in code (not editable in Keystatic)
+ * The guide categories. Fixed in code (not editable in Keystatic)
  * because each one is a page with its own translated URL:
  * /en/guides/beaches ↔ /fr/guides/plages.
  *
  * `placeCategory` links a guide category to the place category whose places
- * are listed on the category page. Labels and intros are in messages/*.json
+ * are listed on the category page (null: guides only, no places). Labels and intros are in messages/*.json
  * under "GuideCategories".
  */
 export const guideCategories = {
@@ -37,11 +37,17 @@ export const guideCategories = {
     placeCategory: "shopping",
     tone: "ocean",
   },
+  // Practical information for the trip: climate, getting there, money …
+  practical: {
+    slug: { en: "plan-your-trip", fr: "preparer-son-voyage" },
+    placeCategory: null,
+    tone: "sand",
+  },
 } as const satisfies Record<
   string,
   {
     slug: Record<Locale, string>;
-    placeCategory: PlaceCategory;
+    placeCategory: PlaceCategory | null;
     tone: PlaceholderTone;
   }
 >;

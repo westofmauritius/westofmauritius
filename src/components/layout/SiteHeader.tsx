@@ -44,7 +44,7 @@ export function SiteHeader({
         >
           <ul className="flex items-center gap-8 text-sm tracking-wide">
             {items.map((item) => (
-              <li key={item.href}>
+              <li key={item.path}>
                 <NavLink item={item} />
               </li>
             ))}

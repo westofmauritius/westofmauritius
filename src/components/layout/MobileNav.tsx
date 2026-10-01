@@ -82,7 +82,7 @@ export function MobileNav({
         >
           <ul className="divide-y divide-line border-y border-line">
             {items.map((item) => (
-              <li key={item.href}>
+              <li key={item.path}>
                 <Link
                   href={item.path}
                   className="block py-4 font-display text-3xl"

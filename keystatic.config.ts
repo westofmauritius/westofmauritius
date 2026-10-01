@@ -168,6 +168,19 @@ export const placeCategories = [
   { label: "Shopping", value: "shopping" },
 ] as const;
 
+/** schema.org types a place can have; "auto" derives it from the category. */
+export const placeKinds = [
+  { label: "From the category", value: "auto" },
+  { label: "Park or nature reserve", value: "Park" },
+  { label: "Mountain", value: "Mountain" },
+  {
+    label: "Monument or historic site",
+    value: "LandmarksOrHistoricalBuildings",
+  },
+  { label: "Museum", value: "Museum" },
+  { label: "Tourist attraction", value: "TouristAttraction" },
+] as const;
+
 const weekdays = [
   { label: "Monday", value: "mo" },
   { label: "Tuesday", value: "tu" },
@@ -298,6 +311,13 @@ export default config({
           validation: { isRequired: true },
         }),
         placeholder,
+        kind: fields.select({
+          label: "Kind (for search engines)",
+          description:
+            "What the place is, as search engines understand it. “From the category” suits most places.",
+          options: placeKinds,
+          defaultValue: "auto",
+        }),
         featured: fields.checkbox({
           label: "Featured",
           description:

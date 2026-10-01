@@ -2,6 +2,7 @@ name: Piton de la Petite Rivière Noire
 category: activity
 area: black-river
 placeholder: false
+kind: Mountain
 featured: false
 location:
   lat: -20.4088

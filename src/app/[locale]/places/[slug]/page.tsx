@@ -20,7 +20,6 @@ import { getAreas } from "@/lib/content/areas";
 import { getGuides } from "@/lib/content/guides";
 import { getPlace, getPlaces } from "@/lib/content/places";
 import { closedDays, formatDays } from "@/lib/opening-hours";
-import { optimizableImage } from "@/lib/image-sizes";
 import { localeAlternates } from "@/lib/seo/alternates";
 import { ogImage } from "@/lib/seo/og-images";
 import { openGraphBase } from "@/lib/seo/open-graph";
@@ -51,14 +50,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ),
     openGraph: {
       ...openGraphBase(locale),
+      // Drawn at build time from the main photo, with the title on it.
       images: ogImage(locale, place.name, "places", slug),
       title: place.name,
       description: place.seoDescription,
-      // Social networks need a photo (not an SVG); otherwise the generated image is used.
-      ...(place.images[0] &&
-        optimizableImage.test(place.images[0].src) && {
-          images: [{ url: place.images[0].src, alt: place.images[0].alt }],
-        }),
     },
     ...(place.placeholder && { robots: { index: false } }),
   };

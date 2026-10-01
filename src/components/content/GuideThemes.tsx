@@ -7,8 +7,8 @@ import { getGuides } from "@/lib/content/guides";
 import { guideCategories, guideCategoryKeys } from "@/lib/guide-categories";
 
 /**
- * The five guide themes as tall tiles. Scrolls sideways on phones (with
- * snap points), a row of five on large screens.
+ * The guide themes as tall tiles. Scrolls sideways on phones (with snap
+ * points), one row on large screens.
  *
  * Each tile borrows the main photo of a real (non-placeholder) guide in its
  * theme; themes without one keep the gradient.
@@ -23,7 +23,7 @@ export async function GuideThemes() {
     guides.find((g) => g.category === key && !g.placeholder && g.hero)?.hero ??
     null;
   return (
-    <ul className="-mx-4 flex snap-x snap-mandatory scroll-px-4 gap-4 overflow-x-auto px-4 pb-4 sm:mx-0 sm:grid sm:grid-cols-3 sm:overflow-visible sm:px-0 lg:grid-cols-5">
+    <ul className="-mx-4 flex snap-x snap-mandatory scroll-px-4 gap-4 overflow-x-auto px-4 pb-4 sm:mx-0 sm:grid sm:grid-cols-3 sm:overflow-visible sm:px-0 lg:grid-cols-6">
       {guideCategoryKeys.map((key) => (
         <li key={key} className="w-64 shrink-0 snap-start sm:w-auto">
           <Link

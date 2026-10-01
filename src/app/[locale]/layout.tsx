@@ -6,8 +6,9 @@ import { SiteHeader } from "@/components/layout/SiteHeader";
 import { NewsletterForm } from "@/components/forms/NewsletterForm";
 import { consentTexts, currentConsent } from "@/lib/forms/consent";
 import { resolveLocale } from "@/i18n/locale";
-import { getPathname } from "@/i18n/pathname";
-import { routing, type StaticPathname } from "@/i18n/routing";
+import { getPathname, type Href } from "@/i18n/pathname";
+import { routing } from "@/i18n/routing";
+import { guideCategories } from "@/lib/guide-categories";
 import { fontVariables } from "@/lib/fonts";
 import { allowIndexing, brandName, siteUrl } from "@/lib/site";
 import { openGraphBase } from "@/lib/seo/open-graph";
@@ -50,7 +51,7 @@ export default async function LocaleLayout({
   const forms = await getTranslations({ locale, namespace: "Forms" });
   const brand = brandName[locale];
   /** A navigation entry with its public URL in this language (e.g. /fr/regions). */
-  const item = (label: string, href: StaticPathname) => ({
+  const item = (label: string, href: Href) => ({
     label,
     href,
     path: getPathname({ href, locale }),
@@ -104,6 +105,10 @@ export default async function LocaleLayout({
                 item(t("areas"), "/areas"),
                 item(t("guides"), "/guides"),
                 item(t("places"), "/places"),
+                item(f("planTrip"), {
+                  pathname: "/guides/[category]",
+                  params: { category: guideCategories.practical.slug[locale] },
+                }),
               ],
             },
             {

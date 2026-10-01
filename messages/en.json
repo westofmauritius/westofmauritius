@@ -25,7 +25,8 @@
     "privacy": "Privacy",
     "rights": "All rights reserved.",
     "cookies": "Cookies",
-    "terms": "Terms of use"
+    "terms": "Terms of use",
+    "planTrip": "Plan your trip"
   },
   "Home": {
     "eyebrow": "The west coast of Mauritius",
@@ -55,7 +56,7 @@
     },
     "guides": {
       "title": "Guides",
-      "intro": "Restaurants, activities, beaches, sunsets and shopping on the west coast."
+      "intro": "Beaches, sunsets, walks, places to eat and shop — and everything practical for a stay on the west coast."
     },
     "live": {
       "title": "Live in the West",
@@ -179,6 +180,10 @@
     "shopping": {
       "title": "Shopping",
       "intro": "Markets, shops and shopping centres in the west."
+    },
+    "practical": {
+      "title": "Plan your trip",
+      "intro": "Seasons, getting there and around, money, language and the practical details of a stay on the west coast."
     }
   },
   "GuidesPage": {

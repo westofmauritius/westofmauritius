@@ -58,7 +58,7 @@ export function areaSchema(area: Area, url: string) {
 export function placeSchema(place: Place, areaName: string, url: string) {
   return {
     "@context": "https://schema.org",
-    "@type": schemaType[place.category],
+    "@type": place.kind ?? schemaType[place.category],
     name: place.name,
     description: place.summary,
     url,

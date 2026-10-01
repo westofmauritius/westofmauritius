@@ -2,6 +2,7 @@ name: Slave Route Monument
 category: activity
 area: le-morne
 placeholder: false
+kind: LandmarksOrHistoricalBuildings
 featured: false
 location:
   lat: -20.4524

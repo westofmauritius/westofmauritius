@@ -33,6 +33,7 @@ function toPlace(
     slug,
     name: typeset(text.name || entry.name, locale),
     category: entry.category,
+    kind: entry.kind === "auto" ? null : entry.kind,
     areaSlug: entry.area,
     summary: typeset(text.summary, locale),
     hoursNote: typeset(text.hoursNote, locale),

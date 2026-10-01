@@ -1,0 +1,25 @@
+name: Wolmar beach
+category: beach
+area: flic-en-flac
+placeholder: false
+featured: false
+location:
+  lat: -20.312
+  lng: 57.367
+address: Wolmar, Flic en Flac
+openingHours: []
+images: []
+placeholderTone: lagoon
+content:
+  en:
+    name: Wolmar beach
+    summary: >-
+      The southern, quieter end of the long Flic en Flac beach: soft sand, clear
+      water inside the reef and views towards Tamarin and Le Morne.
+    hoursNote: Public beach, open to everyone.
+  fr:
+    name: Plage de Wolmar
+    summary: >-
+      L’extrémité sud, plus calme, de la grande plage de Flic en Flac : sable
+      fin, eau claire dans le lagon et vue vers Tamarin et Le Morne.
+    hoursNote: Plage publique, ouverte à tous.

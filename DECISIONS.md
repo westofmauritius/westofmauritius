@@ -245,3 +245,20 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
   the same in both languages.
 - **An RSS feed per language** (`/en/feed.xml`, `/fr/feed.xml`) lists the
   guides, linked from every page's `<head>`.
+- **A sixth guide theme, "Plan your trip"** (`practical`; `/en/guides/plan-your-trip`,
+  `/fr/guides/preparer-son-voyage`): seasons, airport, entry, getting around,
+  money, language, plugs, time zone and emergency numbers. It has no places,
+  so its theme page lists guides only. Linked from the footer.
+- **More real content:** three more public places (La Prairie, Wolmar,
+  Alexandra Falls) and guides on hiking and a day at Le Morne.
+- **The About page is real**: it describes what the site covers, how facts
+  are checked, how featured places and partner links are marked, and what
+  happens to Live in the West enquiries — all things the site actually does.
+  The owner can add his own story.
+- **Sharing images use the page's main photo** (darkened top and bottom for
+  the brand and title) and are JPEGs; pages without a photo keep the
+  gradient.
+- **Places have an optional schema.org "kind"** (Park, Mountain, Museum,
+  monument …) so search engines get more than "TouristAttraction".
+- **Real content is listed before placeholder examples** everywhere (guides
+  and places).

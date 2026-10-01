@@ -2,6 +2,7 @@ name: Martello tower, La Preneuse
 category: activity
 area: black-river
 placeholder: false
+kind: Museum
 featured: false
 location:
   lat: -20.35466

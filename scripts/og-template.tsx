@@ -1,6 +1,7 @@
 /**
  * Layout of the social sharing images (1200 × 630): brand mark, a small
- * label and the page title on a gradient in the site's colours. Rendered by
+ * label and the page title, over the page's main photo when it has one,
+ * otherwise over a gradient in the site's colours. Rendered by
  * satori (HTML/CSS subset → SVG) in scripts/generate-og.tsx.
  */
 
@@ -19,11 +20,14 @@ export function OgTemplate({
   eyebrow,
   brand,
   tone = "sunset",
+  photo,
 }: {
   title: string;
   eyebrow?: string;
   brand: string;
   tone?: OgTone;
+  /** The page's main photo, already cropped to 1200 × 630, as a data URL. */
+  photo?: string;
 }) {
   // Long titles get a smaller size so they never overflow three lines.
   const titleSize = title.length > 60 ? 60 : title.length > 36 ? 72 : 86;
@@ -42,7 +46,16 @@ export function OgTemplate({
         position: "relative",
       }}
     >
-      {/* Darker lower part so the title always reads well. */}
+      {photo && (
+        // eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text -- satori, not a web page
+        <img
+          src={photo}
+          width={1200}
+          height={630}
+          style={{ position: "absolute", top: 0, left: 0 }}
+        />
+      )}
+      {/* Darker top and bottom so the brand and the title always read well. */}
       <div
         style={{
           position: "absolute",
@@ -50,8 +63,9 @@ export function OgTemplate({
           left: 0,
           width: 1200,
           height: 630,
-          backgroundImage:
-            "linear-gradient(180deg, rgba(10,28,42,0) 20%, rgba(10,28,42,0.78) 100%)",
+          backgroundImage: photo
+            ? "linear-gradient(180deg, rgba(10,28,42,0.55) 0%, rgba(10,28,42,0.1) 30%, rgba(10,28,42,0.35) 55%, rgba(10,28,42,0.88) 100%)"
+            : "linear-gradient(180deg, rgba(10,28,42,0) 20%, rgba(10,28,42,0.78) 100%)",
         }}
       />
       <div style={{ display: "flex", alignItems: "center", gap: 16 }}>

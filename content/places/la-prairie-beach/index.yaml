@@ -1,0 +1,25 @@
+name: La Prairie beach
+category: beach
+area: le-morne
+placeholder: false
+featured: false
+location:
+  lat: -20.484
+  lng: 57.3534
+address: La Prairie
+openingHours: []
+images: []
+placeholderTone: lagoon
+content:
+  en:
+    name: La Prairie beach
+    summary: >-
+      A long, quiet public beach between Le Morne village and Baie du Cap, with
+      a grassy shore, a shallow lagoon and the mountain behind.
+    hoursNote: Public beach, open to everyone.
+  fr:
+    name: Plage de La Prairie
+    summary: >-
+      Une longue plage publique tranquille entre le village du Morne et Baie du
+      Cap, avec un rivage herbeux, un lagon peu profond et la montagne derrière.
+    hoursNote: Plage publique, ouverte à tous.

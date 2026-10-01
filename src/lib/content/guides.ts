@@ -34,8 +34,9 @@ function toGuide(key: string, entry: GuideEntry, locale: Locale): Guide {
   };
 }
 
-/** Newest first. */
+/** Real guides before placeholder examples, then newest first. */
 function byDateDesc(a: Guide, b: Guide) {
+  if (a.placeholder !== b.placeholder) return a.placeholder ? 1 : -1;
   return (b.publishedAt ?? "").localeCompare(a.publishedAt ?? "");
 }
 
