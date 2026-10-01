@@ -1,25 +1,28 @@
-import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Wordmark } from "@/components/ui/Wordmark";
+import { Link } from "@/i18n/navigation";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 import { MobileNav } from "./MobileNav";
 import type { NavItem } from "./nav";
 
 type SiteHeaderProps = {
   brandName: string;
-  homeHref: string;
   items: NavItem[];
-  /** Translated labels for the mobile menu button (screen readers). */
-  menuLabel?: string;
-  closeLabel?: string;
+  /** Translated labels for screen readers. */
+  navLabel: string;
+  menuLabel: string;
+  closeLabel: string;
+  languageLabel: string;
 };
 
 /** Sticky top bar: wordmark left, navigation right (menu button on phones). */
 export function SiteHeader({
   brandName,
-  homeHref,
   items,
-  menuLabel = "Open menu",
-  closeLabel = "Close menu",
+  navLabel,
+  menuLabel,
+  closeLabel,
+  languageLabel,
 }: SiteHeaderProps) {
   return (
     // The frosted background sits on a ::before layer, not the header itself:
@@ -27,11 +30,14 @@ export function SiteHeader({
     // inside the 64px header instead of covering the screen.
     <header className="sticky top-0 z-50 border-b border-line before:absolute before:inset-0 before:-z-10 before:bg-white/90 before:backdrop-blur-md">
       <Container size="wide" className="flex h-16 items-center justify-between">
-        <Link href={homeHref} aria-label={brandName}>
+        <Link href="/" aria-label={brandName}>
           <Wordmark name={brandName} className="text-xl sm:text-2xl" />
         </Link>
 
-        <nav className="hidden md:block">
+        <nav
+          aria-label={navLabel}
+          className="hidden items-center gap-8 md:flex"
+        >
           <ul className="flex items-center gap-8 text-sm tracking-wide">
             {items.map((item) => (
               <li key={item.href}>
@@ -44,12 +50,14 @@ export function SiteHeader({
               </li>
             ))}
           </ul>
+          <LanguageSwitcher label={languageLabel} />
         </nav>
 
         <MobileNav
           items={items}
           menuLabel={menuLabel}
           closeLabel={closeLabel}
+          footer={<LanguageSwitcher label={languageLabel} />}
         />
       </Container>
     </header>

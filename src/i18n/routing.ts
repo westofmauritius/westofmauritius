@@ -1,0 +1,60 @@
+import { defineRouting } from "next-intl/routing";
+
+/**
+ * Languages and URLs.
+ *
+ * To add a language (e.g. German):
+ *   1. add "de" to `locales`
+ *   2. add a "de" path to every entry in `pathnames`
+ *   3. create messages/de.json and register it in src/i18n/request.ts
+ *   4. add the brand name in src/lib/site.ts
+ *
+ * The French domain (ouestmaurice.mu) is connected in the deployment step by
+ * adding a `domains` entry here, e.g.
+ *   domains: [
+ *     { domain: "westmauritius.mu", defaultLocale: "en", locales: ["en"] },
+ *     { domain: "ouestmaurice.mu", defaultLocale: "fr", locales: ["fr"] },
+ *   ]
+ * Because every link and hreflang tag is built from this file, nothing else
+ * in the code needs to change.
+ */
+export const routing = defineRouting({
+  locales: ["en", "fr"],
+  defaultLocale: "en",
+
+  // Every URL starts with the language: /en/…, /fr/…
+  localePrefix: "always",
+
+  // We write hreflang tags into the HTML ourselves (src/lib/seo/alternates.ts)
+  // because only the page knows the right URL for content with translated
+  // slugs. This turns off next-intl's duplicate HTTP `Link` header.
+  alternateLinks: false,
+
+  /**
+   * Internal route (the folder name in src/app/[locale]) → public URL per
+   * language. Code always links to the internal route, e.g.
+   * <Link href="/places/[slug]">, and the visitor sees /fr/lieux/… in French.
+   */
+  pathnames: {
+    "/": "/",
+    "/areas": { en: "/areas", fr: "/regions" },
+    "/areas/[slug]": { en: "/areas/[slug]", fr: "/regions/[slug]" },
+    "/guides": "/guides",
+    "/guides/[category]": "/guides/[category]",
+    "/places/[slug]": { en: "/places/[slug]", fr: "/lieux/[slug]" },
+    "/live-in-the-west": { en: "/live-in-the-west", fr: "/vivre-dans-l-ouest" },
+    "/live-in-the-west/[slug]": {
+      en: "/live-in-the-west/[slug]",
+      fr: "/vivre-dans-l-ouest/[slug]",
+    },
+    "/about": { en: "/about", fr: "/a-propos" },
+    "/contact": "/contact",
+    "/privacy": { en: "/privacy", fr: "/confidentialite" },
+    "/styleguide": "/styleguide",
+  },
+});
+
+export type Locale = (typeof routing.locales)[number];
+export type AppPathname = keyof typeof routing.pathnames;
+/** Routes without a [param], which can be linked to with a plain string. */
+export type StaticPathname = Exclude<AppPathname, `${string}[${string}`>;

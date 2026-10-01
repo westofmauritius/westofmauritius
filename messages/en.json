@@ -1,0 +1,71 @@
+{
+  "Metadata": {
+    "description": "A guide to the west coast of Mauritius: restaurants, beaches, sunsets, activities and living in Tamarin, Black River, Le Morne, Flic en Flac, La Gaulette and Chamarel."
+  },
+  "Nav": {
+    "areas": "Areas",
+    "guides": "Guides",
+    "live": "Live in the West",
+    "about": "About",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mainNav": "Main navigation"
+  },
+  "LanguageSwitcher": {
+    "label": "Language"
+  },
+  "Footer": {
+    "tagline": "A guide to the west coast of Mauritius, from Flic en Flac to Le Morne.",
+    "explore": "Explore",
+    "liveHere": "Live here",
+    "about": "About",
+    "privacy": "Privacy",
+    "rights": "All rights reserved."
+  },
+  "Home": {
+    "eyebrow": "The west coast of Mauritius",
+    "title": "Lagoons, mountains and the island’s finest sunsets",
+    "intro": "Where to eat, swim and watch the sun go down — and what it takes to make the west coast home.",
+    "ctaGuides": "Explore the guides",
+    "ctaLive": "Live in the West"
+  },
+  "Pages": {
+    "areas": {
+      "title": "Areas",
+      "intro": "Six places along the west coast, each with its own character."
+    },
+    "guides": {
+      "title": "Guides",
+      "intro": "Restaurants, activities, beaches, sunsets and shopping on the west coast."
+    },
+    "live": {
+      "title": "Live in the West",
+      "intro": "Buying property in Mauritius as a foreigner or returning Mauritian: schemes, areas and next steps."
+    },
+    "about": {
+      "title": "About",
+      "intro": "Who we are and why we write about the west coast."
+    },
+    "contact": {
+      "title": "Contact",
+      "intro": "Questions, tips or partnerships — we would love to hear from you."
+    },
+    "privacy": {
+      "title": "Privacy",
+      "intro": "How we handle your personal data."
+    },
+    "styleguide": {
+      "title": "Style guide"
+    }
+  },
+  "ComingSoon": {
+    "badge": "Coming soon",
+    "body": "This page is being built. Check back soon."
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "body": "The page you are looking for does not exist or has moved.",
+    "back": "Back to the start page"
+  }
+}

@@ -59,6 +59,22 @@ src/
   lib/              Non-UI code: content loading, SEO helpers, db, e-mail
 ```
 
+## Languages and URLs
+
+- Every page lives under `src/app/[locale]/` and is built once per language.
+- `src/i18n/routing.ts` lists the languages and maps internal routes to public
+  URLs, e.g. `/places/[slug]` → `/en/places/…` and `/fr/lieux/…`. It also
+  explains how to add a language and how to connect ouestmaurice.mu later.
+- Interface texts live in `messages/en.json` and `messages/fr.json`. The build
+  fails if a language file is missing a key that en.json has.
+- Always link with `Link` from `@/i18n/navigation`, never from `next/link`, and
+  give it the internal route (`href="/areas"`); it adds the language and the
+  translated path.
+- Use `localeAlternates()` from `src/lib/seo/alternates.ts` in each page's
+  metadata for the canonical URL and hreflang tags.
+- `src/proxy.ts` sends visitors from `/` to `/en` or `/fr` based on their
+  browser language or earlier choice.
+
 ## Design system
 
 - Tokens (colours, fonts, type sizes) live in `src/app/globals.css`.

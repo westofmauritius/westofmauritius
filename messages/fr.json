@@ -1,0 +1,71 @@
+{
+  "Metadata": {
+    "description": "Le guide de la côte ouest de l’île Maurice : restaurants, plages, couchers de soleil, activités et vie à Tamarin, Rivière Noire, Le Morne, Flic en Flac, La Gaulette et Chamarel."
+  },
+  "Nav": {
+    "areas": "Régions",
+    "guides": "Guides",
+    "live": "Vivre dans l’Ouest",
+    "about": "À propos",
+    "contact": "Contact",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "mainNav": "Navigation principale"
+  },
+  "LanguageSwitcher": {
+    "label": "Langue"
+  },
+  "Footer": {
+    "tagline": "Le guide de la côte ouest de l’île Maurice, de Flic en Flac au Morne.",
+    "explore": "Découvrir",
+    "liveHere": "S’installer",
+    "about": "À propos",
+    "privacy": "Confidentialité",
+    "rights": "Tous droits réservés."
+  },
+  "Home": {
+    "eyebrow": "La côte ouest de l’île Maurice",
+    "title": "Lagons, montagnes et les plus beaux couchers de soleil de l’île",
+    "intro": "Où manger, se baigner et regarder le soleil se coucher — et comment faire de la côte ouest son chez-soi.",
+    "ctaGuides": "Découvrir les guides",
+    "ctaLive": "Vivre dans l’Ouest"
+  },
+  "Pages": {
+    "areas": {
+      "title": "Régions",
+      "intro": "Six lieux le long de la côte ouest, chacun avec son caractère."
+    },
+    "guides": {
+      "title": "Guides",
+      "intro": "Restaurants, activités, plages, couchers de soleil et shopping sur la côte ouest."
+    },
+    "live": {
+      "title": "Vivre dans l’Ouest",
+      "intro": "Acheter un bien à Maurice en tant qu’étranger ou Mauricien de la diaspora : dispositifs, quartiers et étapes."
+    },
+    "about": {
+      "title": "À propos",
+      "intro": "Qui nous sommes et pourquoi nous écrivons sur la côte ouest."
+    },
+    "contact": {
+      "title": "Contact",
+      "intro": "Questions, conseils ou partenariats — écrivez-nous."
+    },
+    "privacy": {
+      "title": "Confidentialité",
+      "intro": "Comment nous traitons vos données personnelles."
+    },
+    "styleguide": {
+      "title": "Guide de style"
+    }
+  },
+  "ComingSoon": {
+    "badge": "Bientôt",
+    "body": "Cette page est en cours de construction. Revenez bientôt."
+  },
+  "NotFound": {
+    "title": "Page introuvable",
+    "body": "La page que vous cherchez n’existe pas ou a été déplacée.",
+    "back": "Retour à l’accueil"
+  }
+}

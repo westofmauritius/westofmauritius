@@ -1,14 +1,15 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { Link, usePathname } from "@/i18n/navigation";
 import type { NavItem } from "./nav";
 
 type MobileNavProps = {
   items: NavItem[];
   menuLabel: string;
   closeLabel: string;
+  /** Extra content at the bottom of the menu, e.g. the language switcher. */
+  footer?: React.ReactNode;
 };
 
 /**
@@ -16,7 +17,12 @@ type MobileNavProps = {
  * JavaScript (open/close state), so it is a small client component and the
  * rest of the header stays server-rendered.
  */
-export function MobileNav({ items, menuLabel, closeLabel }: MobileNavProps) {
+export function MobileNav({
+  items,
+  menuLabel,
+  closeLabel,
+  footer,
+}: MobileNavProps) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
@@ -72,6 +78,7 @@ export function MobileNav({ items, menuLabel, closeLabel }: MobileNavProps) {
               </li>
             ))}
           </ul>
+          {footer && <div className="mt-8">{footer}</div>}
         </nav>
       )}
     </div>

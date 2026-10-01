@@ -1,10 +1,11 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/cn";
 import { Badge } from "./Badge";
 import { PlaceholderImage, type PlaceholderTone } from "./PlaceholderImage";
 
 type CardProps = {
-  href: string;
+  /** Internal route, e.g. { pathname: "/places/[slug]", params: { slug } }. */
+  href: React.ComponentProps<typeof Link>["href"];
   title: string;
   /** Small label above the title, e.g. the area or category. */
   eyebrow?: string;
