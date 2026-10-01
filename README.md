@@ -67,13 +67,15 @@ Worker by [OpenNext](https://opennext.js.org/cloudflare)
 (`@opennextjs/cloudflare`); settings are in `wrangler.jsonc` and
 `open-next.config.ts`.
 
-Cloudflare dashboard → Workers → westofmauritius → Settings → Build:
+`npm run build` runs OpenNext, which runs the plain Next.js build
+(`npm run build:next`) and writes the Worker to `.open-next/`. So the
+Cloudflare defaults work as they are:
 
-| Setting         | Value                              |
-| --------------- | ---------------------------------- |
-| Build command   | `npx opennextjs-cloudflare build`  |
-| Deploy command  | `npx opennextjs-cloudflare deploy` |
-| Build variables | `NEXT_PUBLIC_SITE_URL=https://…`   |
+| Setting (Workers → westofmauritius → Settings → Build) | Value                            |
+| ------------------------------------------------------ | -------------------------------- |
+| Build command                                          | `npm run build`                  |
+| Deploy command                                         | `npx wrangler deploy`            |
+| Build variables                                        | `NEXT_PUBLIC_SITE_URL=https://…` |
 
 `NEXT_PUBLIC_*` values are baked in at build time, so they must be **build**
 variables, not runtime variables.
