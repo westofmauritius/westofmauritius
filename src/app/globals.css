@@ -211,3 +211,28 @@
 @utility lead {
   @apply font-display text-[1.375rem] leading-[1.45] sm:text-2xl sm:leading-[1.45];
 }
+
+/*
+ * Start page photo, "alive": a slow zoom towards the mountain and back
+ * (Ken Burns). Only transform is animated, so the browser does it on the
+ * GPU without repainting the page. Visitors who ask their device for less
+ * motion see a still photo (the reduced-motion rule above stops it).
+ */
+@keyframes hero-drift {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1) translate3d(0, -1.5%, 0);
+  }
+}
+
+@utility hero-drift {
+  transform-origin: 50% 35%;
+  /* Wide screens crop the top and bottom: keep the peak in view. */
+  & img {
+    object-position: 50% 28%;
+  }
+  animation: hero-drift 32s ease-in-out infinite alternate;
+  will-change: transform;
+}

@@ -60,31 +60,44 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         )}
       />
 
-      {/* Hero: full-bleed image with the headline over the darker lower part. */}
-      <section className="relative isolate flex min-h-[86svh] items-end overflow-hidden bg-ocean-900 text-white lg:min-h-[88vh]">
+      {/*
+        Hero. Phones: the photo fills the screen behind the headline. Large
+        screens: magazine split, text on deep blue on the left and the photo
+        on the right, fading into the blue. The photo is portrait, so this
+        shows all of it sharply instead of cropping and enlarging it.
+      */}
+      <section className="relative isolate flex min-h-[calc(100svh-4rem)] items-end overflow-hidden bg-ocean-950 text-white lg:min-h-[88vh] lg:items-center">
         {home.hero ? (
           // Wrapped: Photo's own figure is position: relative, so the
-          // absolute positioning has to live on a parent.
-          <div className="absolute inset-0 -z-10">
-            <Photo
-              photo={home.hero}
-              fallbackTone="sunset"
-              fallbackLabel=""
-              aspect=""
-              sizes="100vw"
-              priority
-              className="h-full w-full"
-            />
+          // absolute positioning has to live on a parent. hero-drift makes
+          // the photo slowly zoom in and out (see globals.css).
+          <div className="absolute inset-0 -z-10 overflow-hidden lg:left-[44%]">
+            <div className="h-full hero-drift">
+              <Photo
+                photo={home.hero}
+                fallbackTone="sunset"
+                fallbackLabel=""
+                aspect=""
+                sizes="(min-width: 1024px) 56vw, 100vw"
+                priority
+                className="h-full w-full"
+              />
+            </div>
           </div>
         ) : (
           <HeroArt className="absolute inset-0 -z-10 h-full w-full" />
         )}
-        {/* Darkens the photo under the headline so the white text stays legible. */}
-        <div className="absolute inset-0 -z-10 bg-linear-to-t from-ocean-950/90 via-ocean-950/55 to-ocean-950/10" />
+        {/* Keeps the white text legible: darker under the text on phones,
+            a fade from the blue into the photo on large screens. */}
+        <div className="absolute inset-0 -z-10 bg-linear-to-t from-ocean-950/90 via-ocean-950/40 to-transparent lg:left-[44%] lg:bg-linear-to-r lg:from-ocean-950 lg:via-ocean-950/25 lg:via-35% lg:to-transparent" />
         <Container size="wide" className="pt-32 pb-14 sm:pb-20">
           <p className="mb-5 eyebrow text-coral-200">{t("eyebrow")}</p>
-          <h1 className="max-w-4xl text-display-1 text-white">{t("title")}</h1>
-          <p className="mt-6 max-w-xl lead text-ocean-100">{t("intro")}</p>
+          <h1 className="max-w-4xl text-display-1 text-white lg:max-w-[34rem] xl:max-w-[38rem]">
+            {t("title")}
+          </h1>
+          <p className="mt-6 max-w-xl lead text-ocean-100 lg:max-w-[30rem]">
+            {t("intro")}
+          </p>
           <div className="mt-9 flex flex-wrap gap-3">
             <ButtonLink href="/guides" variant="light">
               {t("ctaGuides")}
