@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
-import { getPathname } from "@/i18n/navigation";
 import { routing, type Locale } from "@/i18n/routing";
-import { siteUrl } from "@/lib/site";
-
-type Href = Parameters<typeof getPathname>[0]["href"];
+import { absoluteUrl, type Href } from "./urls";
 
 /**
  * Canonical URL and hreflang tags for a page, for use in generateMetadata:
  *
- *   alternates: localeAlternates("/places/[slug]", locale, { slug })
+ *   alternates: localeAlternates({ pathname: "/places/[slug]", params: { slug } }, locale)
  *
  * Search engines use these to show each visitor the version in their
  * language, and to understand that /en/places/x and /fr/lieux/x are
@@ -19,10 +16,9 @@ export function localeAlternates(
   href: Href,
   locale: Locale,
 ): NonNullable<Metadata["alternates"]> {
-  const url = (l: Locale) => siteUrl + getPathname({ href, locale: l });
   const languages: Record<string, string> = {};
-  for (const l of routing.locales) languages[l] = url(l);
-  languages["x-default"] = url(routing.defaultLocale);
+  for (const l of routing.locales) languages[l] = absoluteUrl(href, l);
+  languages["x-default"] = absoluteUrl(href, routing.defaultLocale);
 
-  return { canonical: url(locale), languages };
+  return { canonical: absoluteUrl(href, locale), languages };
 }

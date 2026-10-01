@@ -7,3 +7,4 @@ AGENTS.md
 .wrangler
 # Written by Keystatic in its own format
 content
+public/vendor

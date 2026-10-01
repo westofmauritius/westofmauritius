@@ -118,5 +118,66 @@
 /* Small uppercase label above headings ("Guides", "Tamarin" …). Set the
    colour where it is used, since it differs on light and dark backgrounds. */
 @utility eyebrow {
-  @apply text-xs font-medium tracking-[0.22em] uppercase;
+  @apply font-sans text-xs font-medium tracking-[0.22em] uppercase;
+}
+
+/*
+ * Long-form text written in the editor (area and place descriptions,
+ * articles). Comfortable reading: ~65 characters per line, generous spacing.
+ */
+@layer components {
+  .prose-west {
+    @apply max-w-[65ch] text-lg leading-relaxed text-ink;
+  }
+  /* Markdoc wraps the text in an <article>, hence the second selector. */
+  .prose-west > * + *,
+  .prose-west > article > * + * {
+    @apply mt-5;
+  }
+  .prose-west h2 {
+    @apply mt-12 text-display-3;
+  }
+  .prose-west h3 {
+    @apply mt-8 text-2xl;
+  }
+  .prose-west a {
+    @apply text-lagoon-700 underline decoration-lagoon-300 underline-offset-4 hover:decoration-lagoon-700;
+  }
+  .prose-west strong {
+    @apply font-semibold;
+  }
+  .prose-west ul {
+    @apply list-disc pl-6;
+  }
+  .prose-west ol {
+    @apply list-decimal pl-6;
+  }
+  .prose-west li + li {
+    @apply mt-2;
+  }
+  .prose-west blockquote {
+    @apply border-l-2 border-coral-400 pl-5 font-display text-2xl italic;
+  }
+
+  /* Map markers (created by src/components/map/PlacesMap.tsx). */
+  .map-marker {
+    @apply relative flex flex-col items-center;
+  }
+  .map-marker-pin {
+    @apply block size-4 rounded-full border-2 border-white bg-ocean-700 shadow-md transition-transform;
+  }
+  .map-marker[data-highlight="true"] .map-marker-pin {
+    @apply size-5 bg-coral-500;
+  }
+  .map-marker:hover .map-marker-pin,
+  .map-marker:focus-visible .map-marker-pin {
+    @apply scale-125;
+  }
+  .map-marker-label {
+    @apply pointer-events-none absolute bottom-full mb-1.5 rounded-sm bg-white px-2 py-1 text-xs font-medium whitespace-nowrap text-ink opacity-0 shadow-md transition-opacity;
+  }
+  .map-marker:hover .map-marker-label,
+  .map-marker:focus-visible .map-marker-label {
+    @apply opacity-100;
+  }
 }

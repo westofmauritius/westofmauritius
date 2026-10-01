@@ -67,5 +67,72 @@
     "title": "Page introuvable",
     "body": "La page que vous cherchez n’existe pas ou a été déplacée.",
     "back": "Retour à l’accueil"
+  },
+  "Breadcrumbs": {
+    "label": "Fil d’Ariane",
+    "home": "Accueil"
+  },
+  "Categories": {
+    "restaurant": {
+      "one": "Restaurant",
+      "many": "Restaurants"
+    },
+    "activity": {
+      "one": "Activité",
+      "many": "Activités"
+    },
+    "beach": {
+      "one": "Plage",
+      "many": "Plages"
+    },
+    "sunset": {
+      "one": "Spot coucher de soleil",
+      "many": "Couchers de soleil"
+    },
+    "shopping": {
+      "one": "Shopping",
+      "many": "Shopping"
+    }
+  },
+  "Placeholder": {
+    "label": "Provisoire",
+    "notice": "Cette page utilise un contenu provisoire pour tester la mise en page. Ce ne sont pas de vraies informations, et elle est masquée aux moteurs de recherche."
+  },
+  "Featured": {
+    "label": "À la une"
+  },
+  "Map": {
+    "label": "Carte : {name}",
+    "loading": "Chargement de la carte…",
+    "touchHelp": "Utilisez deux doigts pour déplacer la carte",
+    "desktopHelp": "Utilisez Ctrl + molette pour zoomer",
+    "macHelp": "Utilisez ⌘ + molette pour zoomer"
+  },
+  "AreasPage": {
+    "eyebrow": "La côte ouest",
+    "mapLabel": "les régions de la côte ouest",
+    "explore": "Découvrir {name}"
+  },
+  "AreaPage": {
+    "placesTitle": "Adresses à {name}",
+    "placesIntro": "Où manger, se baigner et admirer le coucher de soleil à {name}.",
+    "noPlaces": "Aucune adresse n’a encore été ajoutée pour {name}.",
+    "otherAreas": "Les autres régions de la côte ouest"
+  },
+  "PlacePage": {
+    "details": "Infos pratiques",
+    "address": "Adresse",
+    "openingHours": "Horaires",
+    "hoursUnknown": "Horaires pas encore confirmés.",
+    "closed": "Fermé",
+    "website": "Voir le site",
+    "book": "Réserver ou en savoir plus",
+    "partnerLink": "Lien partenaire : nous pouvons percevoir une commission, sans frais pour vous.",
+    "phone": "Téléphone",
+    "directions": "Itinéraire",
+    "lastVerified": "Infos vérifiées le {date}.",
+    "checkDetails": "Les infos peuvent changer — vérifiez auprès de l’établissement avant de venir.",
+    "moreIn": "À découvrir aussi à {area}",
+    "photoBy": "Photo : {credit}"
   }
 }

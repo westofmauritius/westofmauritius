@@ -18,6 +18,7 @@ type CardProps = {
   featuredLabel?: string;
   /** Marks the card's content as invented layout text. */
   placeholder?: boolean;
+  placeholderLabel?: string;
   className?: string;
 };
 
@@ -36,6 +37,7 @@ export function Card({
   featured,
   featuredLabel = "Featured",
   placeholder,
+  placeholderLabel = "Placeholder",
   className,
 }: CardProps) {
   return (
@@ -53,7 +55,9 @@ export function Card({
         {(featured || placeholder) && (
           <div className="absolute top-3 left-3 flex gap-2">
             {featured && <Badge variant="featured">{featuredLabel}</Badge>}
-            {placeholder && <Badge variant="placeholder">Placeholder</Badge>}
+            {placeholder && (
+              <Badge variant="placeholder">{placeholderLabel}</Badge>
+            )}
           </div>
         )}
       </div>

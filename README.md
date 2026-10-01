@@ -68,7 +68,9 @@ Worker by [OpenNext](https://opennext.js.org/cloudflare)
 `open-next.config.ts`.
 
 `npm run build` runs OpenNext, which runs the plain Next.js build
-(`npm run build:next`) and writes the Worker to `.open-next/`. So the
+(`npm run build:next`) and writes the Worker to `.open-next/`, then copies
+the prerendered pages into the Worker's static files (`populateCache`), where
+the live site reads them. So the
 Cloudflare defaults work as they are:
 
 | Setting (Workers → westofmauritius → Settings → Build) | Value                            |
@@ -96,7 +98,7 @@ runtime; `npm run deploy` builds and deploys from your machine.
   translated path.
 - Use `localeAlternates()` from `src/lib/seo/alternates.ts` in each page's
   metadata for the canonical URL and hreflang tags.
-- `src/proxy.ts` sends visitors from `/` to `/en` or `/fr` based on their
+- `src/middleware.ts` sends visitors from `/` to `/en` or `/fr` based on their
   browser language or earlier choice.
 
 ## Design system
@@ -118,6 +120,18 @@ runtime; `npm run deploy` builds and deploys from your machine.
   links are broken.
 - How to edit, and how to enable editing on the live site:
   [docs/content-editing.md](docs/content-editing.md).
+
+## Pages, maps and SEO
+
+- Area pages: `src/app/[locale]/areas/[slug]`; place pages:
+  `src/app/[locale]/places/[slug]`. Both are prerendered for every entry and
+  language; unknown slugs are a 404.
+- Maps (`src/components/map/`) use MapLibre with free OpenFreeMap tiles. The
+  map code is only downloaded when a map scrolls into view.
+  `scripts/copy-maplibre-worker.mjs` copies MapLibre's worker file into
+  `public/vendor/` before dev and build (generated, not in git).
+- Structured data (schema.org) is built in `src/lib/seo/schema.ts`.
+  Placeholder entries get no structured data and are `noindex`.
 
 ## Content rules
 

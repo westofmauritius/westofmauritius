@@ -67,5 +67,72 @@
     "title": "Page not found",
     "body": "The page you are looking for does not exist or has moved.",
     "back": "Back to the start page"
+  },
+  "Breadcrumbs": {
+    "label": "Breadcrumb",
+    "home": "Home"
+  },
+  "Categories": {
+    "restaurant": {
+      "one": "Restaurant",
+      "many": "Restaurants"
+    },
+    "activity": {
+      "one": "Activity",
+      "many": "Activities"
+    },
+    "beach": {
+      "one": "Beach",
+      "many": "Beaches"
+    },
+    "sunset": {
+      "one": "Sunset spot",
+      "many": "Sunset spots"
+    },
+    "shopping": {
+      "one": "Shopping",
+      "many": "Shopping"
+    }
+  },
+  "Placeholder": {
+    "label": "Placeholder",
+    "notice": "This page uses placeholder content to test the design. It is not real information and is hidden from search engines."
+  },
+  "Featured": {
+    "label": "Featured"
+  },
+  "Map": {
+    "label": "Map of {name}",
+    "loading": "Loading map…",
+    "touchHelp": "Use two fingers to move the map",
+    "desktopHelp": "Use Ctrl + scroll to zoom the map",
+    "macHelp": "Use ⌘ + scroll to zoom the map"
+  },
+  "AreasPage": {
+    "eyebrow": "The west coast",
+    "mapLabel": "the west coast areas",
+    "explore": "Explore {name}"
+  },
+  "AreaPage": {
+    "placesTitle": "Places in {name}",
+    "placesIntro": "Where to eat, swim and watch the sunset in {name}.",
+    "noPlaces": "No places have been added for {name} yet.",
+    "otherAreas": "Other areas on the west coast"
+  },
+  "PlacePage": {
+    "details": "Details",
+    "address": "Address",
+    "openingHours": "Opening hours",
+    "hoursUnknown": "Opening hours not yet confirmed.",
+    "closed": "Closed",
+    "website": "Visit website",
+    "book": "Book or find out more",
+    "partnerLink": "Partner link: we may earn a commission, at no extra cost to you.",
+    "phone": "Phone",
+    "directions": "Get directions",
+    "lastVerified": "Details last checked {date}.",
+    "checkDetails": "Details can change — check with the venue before you go.",
+    "moreIn": "More in {area}",
+    "photoBy": "Photo: {credit}"
   }
 }
