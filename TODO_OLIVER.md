@@ -113,13 +113,27 @@ I Keystatic → Site:
   låt en jurist granska. Bocka sedan ur "Placeholder" så att sidorna
   indexeras.
 
-Allt övrigt platshållarinnehåll (orter, platser, guider, Bo i väst) är
-markerat med "Placeholder" i Keystatic och visas med en tydlig etikett.
+### Läs igenom det riktiga innehållet
 
-Byt ut dem i takt med att riktigt innehåll finns: skriv in fakta som du själv
-har kontrollerat (öppettider, adresser, koordinater), bocka ur "Placeholder"
-och lägg till egna foton eller foton med licens som verkligen visar
-Mauritius. Hitta aldrig på recensioner, betyg eller priser.
+Orterna, 16 offentliga platser (stränder, natur, sevärdheter) och fyra
+guider (stränder, solnedgångar, saker att göra, en dag i Chamarel) har nu
+riktiga texter på engelska och franska. Fakta är kontrollerade mot
+Wikipedia och koordinaterna mot OpenStreetMap, men läs igenom dem med dina
+egna ögon innan lansering — du känner västkusten bäst. Inga öppettider,
+priser eller omdömen är påhittade.
+
+Fotona kommer från Wikimedia Commons med fri licens (CC0, CC BY, CC BY-SA).
+Fotograf och licens visas på varje bild och länkar till källan. Ta inte
+bort de uppgifterna. Byt gärna till egna foton med tiden.
+
+### Det som fortfarande är platshållare
+
+- **Restauranger och butiker**: fyra påhittade exempel, tydligt märkta.
+  Lägg in riktiga ställen du kan stå för, och radera exemplen.
+- **Guiderna om restauranger och shopping**: skrivs när ovanstående finns.
+- **Bo i väst**: bara struktur, som vi bestämde.
+
+Hitta aldrig på recensioner, betyg eller priser.
 
 ## 9. Redigera innehåll direkt på sajten (valfritt)
 
@@ -138,4 +152,4 @@ redigera på den publicerade sajten behövs en GitHub-app. Stegen står i
 - [ ] Inloggning på `/admin` fungerar (punkt 5)
 - [ ] Domänen kopplad, sedan `NEXT_PUBLIC_ALLOW_INDEXING=true` (punkt 6)
 - [ ] Umami-ID satt (punkt 7)
-- [ ] Platshållarinnehåll ersatt eller avpublicerat (punkt 8)
+- [ ] Riktiga texter genomlästa, platshållare ersatta eller raderade (punkt 8)

@@ -1,9 +1,9 @@
 import NextLink from "next/link";
 import { getLocale } from "next-intl/server";
-import { getPathname } from "./navigation";
+import { getPathname, type Href } from "./pathname";
 import type { Locale } from "./routing";
 
-export type Href = Parameters<typeof getPathname>[0]["href"];
+export type { Href };
 
 type LinkProps = Omit<React.ComponentProps<typeof NextLink>, "href"> & {
   /** Internal route, e.g. "/areas" or { pathname: "/places/[slug]", params: { slug } }. */

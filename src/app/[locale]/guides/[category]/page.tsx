@@ -7,7 +7,7 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { SiteMap } from "@/components/map/SiteMap";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { getPathname } from "@/i18n/navigation";
+import { getPathname } from "@/i18n/pathname";
 import { resolveLocale } from "@/i18n/locale";
 import type { Locale } from "@/i18n/routing";
 import { getAreas } from "@/lib/content/areas";

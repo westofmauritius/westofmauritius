@@ -70,9 +70,12 @@
   --color-surface-alt: var(--color-sand-50);
   --color-line: var(--color-sand-200);
 
-  /* Fonts. The CSS variables are set by next/font in src/lib/fonts.ts. */
+  /* Fonts. --font-garamond is set by next/font in src/lib/fonts.ts; the sans
+     is the device's own interface font (no download). */
   --font-display: var(--font-garamond), "Times New Roman", serif;
-  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-sans:
+    system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    sans-serif;
 
   /*
    * Display sizes for headings. clamp() scales smoothly from phone to desktop

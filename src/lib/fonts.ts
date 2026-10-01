@@ -1,6 +1,6 @@
-import { EB_Garamond, Inter } from "next/font/google";
+import { EB_Garamond } from "next/font/google";
 
-// next/font downloads these at build time and serves them from our own domain:
+// next/font downloads this at build time and serves it from our own domain:
 // no request goes to Google from the visitor's browser (good for privacy and
 // speed), and fallback metrics are adjusted so text does not jump on load.
 
@@ -20,15 +20,11 @@ export const garamond = EB_Garamond({
   display: "swap",
 });
 
-/** Clean sans-serif for body text and the interface. */
-export const inter = Inter({
-  subsets: ["latin"],
-  // Not preloaded: the headline font (above) is what the first screen needs
-  // most; body text shows in the metric-matched fallback for a moment.
-  preload: false,
-  variable: "--font-inter",
-  display: "swap",
-});
+// Body text and the interface use the device's own sans-serif (San Francisco
+// on Apple devices, Segoe UI on Windows, Roboto on Android), set in
+// globals.css. It looks native everywhere, costs no download and cannot make
+// text jump when a font arrives. Inter was used before; dropping its 50 kB
+// file was the largest single speed gain left on photo pages.
 
 /** Class names to put on <html> so the CSS variables exist everywhere. */
-export const fontVariables = `${garamond.variable} ${inter.variable}`;
+export const fontVariables = garamond.variable;

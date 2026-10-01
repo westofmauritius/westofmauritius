@@ -140,7 +140,7 @@ export function NewsletterForm({
             className="block text-sm font-medium text-ocean-100"
           >
             {labels.email}{" "}
-            <span className="font-normal text-ocean-300">
+            <span className="font-normal text-ocean-200">
               ({labels.required})
             </span>
             <input

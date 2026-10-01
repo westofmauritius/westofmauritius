@@ -42,8 +42,9 @@ to-do list, TODO_OLIVER.md, is in Swedish.)
   with translated slugs.
 - **French typography:** a narrow no-break space is inserted automatically
   before `: ; ? !` in French titles and short texts.
-- **EB Garamond + Inter.** Cormorant Garamond was the first choice, but its
-  circumflexes clash with apostrophes in French ("l’île").
+- **EB Garamond for headings.** Cormorant Garamond was the first choice, but
+  its circumflexes clash with apostrophes in French ("l’île"). Body text
+  uses the device's own sans-serif (see Performance).
 
 ## Maps
 
@@ -75,14 +76,18 @@ to-do list, TODO_OLIVER.md, is in Swedish.)
 - **A places page with search and filters** (`/en/places`, `/fr/lieux`). All
   cards are rendered on the server (good for SEO, works without JavaScript);
   a small client component hides non-matching ones. Filters are stored in
-  the URL so results can be shared. No map on this page: the area and
-  category pages already have maps, and the list stays fast.
+  the URL so results can be shared. A map of every place sits below the
+  list; it only loads when scrolled into view.
 - **Gallery in a native `<dialog>`**: the browser provides focus trapping,
   Escape and focus return; we add arrow keys and previous/next buttons.
-- **Images resized at build time** with sharp into WebP at fixed widths
-  (`public/_img`, not in git) and served by a custom `next/image` loader.
-  Free, no per-request image service, and photos uploaded in full size
-  through Keystatic still load quickly on phones.
+- **Images resized at build time** with sharp into AVIF and WebP at fixed
+  widths (`public/_img`, not in git), served through `<picture>`
+  (`ResponsiveImage`): AVIF where supported (about a third smaller), WebP
+  otherwise. Free, no per-request image service, and photos uploaded in full
+  size through Keystatic still load quickly on phones. Encoding runs four
+  photos in parallel; a full rebuild takes about a minute and a half.
+- **Photo credits link to the source page** (Creative Commons licences
+  require attribution); in the gallery viewer too.
 - **Placeholder "photos" are SVGs labelled PLACEHOLDER PHOTO**, used only on
   one fictional place to exercise the gallery.
 
@@ -185,8 +190,10 @@ to-do list, TODO_OLIVER.md, is in Swedish.)
 ## Performance
 
 Measured with Lighthouse (mobile, median of three runs) on a production
-build: performance 95–98, accessibility, best practices and SEO 100 on the
-key pages. Pages marked as placeholders score lower on SEO on purpose
+build: performance 95–98 on text, area, place and guide pages, 92–94 on the
+start page (large photo) and 93 on the areas overview (the map loads at
+once); accessibility, best practices and SEO 100. What remains is mostly
+React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeholders score lower on SEO on purpose
 (they are noindex until real content replaces them).
 
 - **No translation library in the browser on most pages.** Links are
@@ -197,10 +204,44 @@ key pages. Pages marked as placeholders score lower on SEO on purpose
 - **The language switcher reads the page's own hreflang tags** after load;
   the server-rendered link is built from the routing table
   (`src/lib/localized-paths.ts`), so it also works without JavaScript.
-- **One weight of EB Garamond (400, upright), preloaded**; Inter is a
-  variable font and is not preloaded because the headings are what is seen
-  first. Intro paragraphs use the serif at a larger size (`lead` utility),
-  which keeps the magazine feel without loading more font files.
+- **One weight of EB Garamond (400, upright), preloaded**, and the device's
+  own sans-serif for body text instead of Inter: Inter's 50 kB file was the
+  largest remaining cost on photo pages, and a native font cannot shift the
+  layout when it loads. Intro paragraphs use the serif at a larger size
+  (`lead` utility), which keeps the magazine feel.
+- **Text stays inside the Latin character set** (the content check warns
+  otherwise): one "ᵉ" in "XVIIIᵉ" made French pages download an extra 86 kB
+  font file. French ordinals are written XVIIIe, 1er.
+- **Own `getPathname`** (`src/i18n/pathname.ts`) instead of next-intl's: the
+  latter lives in a module that also exports next-intl's browser Link, which
+  pulled ~14 kB of client code into every page.
+- **The main image of a page is preloaded from the `<head>`** with high
+  fetch priority; the gallery's full-size viewer image is only rendered when
+  the viewer opens (otherwise React preloaded the 400 kB original).
+- **Breadcrumbs never wrap**: the last item is cut with "…". A trail that
+  wrapped in the fallback font but not in the web font shifted the page.
 - **Next's `inlineCss` option was tried and dropped.** It made no measurable
   difference to the scores but added ~800 kB (gzip) to the Cloudflare Worker,
-  which has a 3 MB limit on the free plan. The Worker is ~1.84 MB now.
+  which has a 3 MB limit on the free plan. The Worker is ~1.86 MB now.
+
+## Real content (October 2026)
+
+- **Areas, public places and four guides are real content**, written from
+  well-established facts checked against Wikipedia (figures such as heights,
+  dates and areas) and OpenStreetMap (coordinates). Only public places and
+  natural sites were added: no businesses, no opening hours, prices,
+  ratings or reviews. Paid sites say "check opening times before you go".
+- **Restaurants and shops stay fictional placeholders** until the owner adds
+  real ones he can vouch for; the restaurant and shopping guides likewise.
+  Live in the West stays structure-only, as decided.
+- **Photos come from Wikimedia Commons** under CC0, CC BY or CC BY-SA, each
+  checked by eye to show the place it illustrates; photographer, licence and
+  a link to the source are stored with each photo and shown on the page.
+  The brief allowed Unsplash photos that truly show Mauritius; Commons has
+  far more verifiably located photos of these exact places, with clear
+  licences.
+- **Places have an optional name per language** ("Le Morne public beach" /
+  "Plage publique du Morne"); addresses are kept to place names, which read
+  the same in both languages.
+- **An RSS feed per language** (`/en/feed.xml`, `/fr/feed.xml`) lists the
+  guides, linked from every page's `<head>`.

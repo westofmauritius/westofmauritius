@@ -60,7 +60,7 @@ them. The admin pages need `ADMIN_PASSWORD` and `ADMIN_SESSION_SECRET` in
 | `npm run db:migrate`    | Create the database tables (needs `DATABASE_URL`)                |
 
 Before every build, `prebuild` also copies MapLibre's worker file to
-`public/vendor/` and resizes photos into `public/_img/`. Both folders, and
+`public/vendor/` and resizes photos into AVIF and WebP copies in `public/_img/`. Both folders, and
 the sharing images in `public/og/`, are generated and not in git.
 
 ## Folder structure
@@ -136,6 +136,9 @@ The free Workers plan allows a 3 MB (compressed) Worker; this one is about
   visible label, is `noindex`, has no structured data and stays out of the
   sitemap. Never invent reviews, ratings, prices, hours or facts about real
   businesses.
+- Photos: store photographer, licence and source link with every photo
+  (Keystatic fields "credit" and "credit link"); they are shown on the page.
+  Current photos are from Wikimedia Commons (CC0 / CC BY / CC BY-SA).
 - Places can be **featured** (discreet label) and have an **affiliate link**
   (`rel="sponsored"`, labelled for visitors).
 
@@ -156,6 +159,7 @@ The free Workers plan allows a 3 MB (compressed) Worker; this one is about
 
 - Search engines are blocked until `NEXT_PUBLIC_ALLOW_INDEXING=true` is set
   at launch (robots.txt and noindex on every page).
+- RSS feed of the guides per language: `/en/feed.xml`, `/fr/feed.xml`.
 - `sitemap.xml` (with hreflang), canonicals, unique titles and descriptions,
   structured data (`src/lib/seo/schema.ts`), sharing images per page.
 - WCAG 2.2 AA: checked with axe on every page type in the e2e tests.
@@ -165,6 +169,6 @@ The free Workers plan allows a 3 MB (compressed) Worker; this one is about
 ## Design system
 
 - Colours, fonts and type sizes are tokens in `src/app/globals.css`.
-- EB Garamond (headings, intros, wordmark) and Inter (body), self-hosted by
-  `next/font` (`src/lib/fonts.ts`).
+- EB Garamond (headings, intros, wordmark), self-hosted by `next/font`
+  (`src/lib/fonts.ts`); body text uses the device's own sans-serif.
 - Review all components at **`/en/styleguide`** (internal, not indexed).

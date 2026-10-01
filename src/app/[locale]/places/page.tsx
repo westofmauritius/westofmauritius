@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { PlaceCard } from "@/components/content/PlaceCard";
 import { PlaceExplorer } from "@/components/content/PlaceExplorer";
+import { placeMarker } from "@/components/map/markers";
+import { SiteMap } from "@/components/map/SiteMap";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { resolveLocale } from "@/i18n/locale";
@@ -59,6 +61,7 @@ export default async function PlacesPage({
       />
       <div className="mt-10">
         <PlaceExplorer
+          locale={locale}
           places={places.map((place) => ({
             slug: place.slug,
             name: place.name,
@@ -86,12 +89,28 @@ export default async function PlacesPage({
             anyCategory: t("PlacesPage.anyCategory"),
             featuredOnly: t("PlacesPage.featuredOnly"),
             reset: t("PlacesPage.reset"),
+            resultsOne: t.raw("PlacesPage.resultsOne") as string,
             results: t.raw("PlacesPage.results") as string,
             noResults: t("PlacesPage.noResults"),
             resultsHeading: t("PlacesPage.resultsHeading"),
           }}
         />
       </div>
+
+      {/* Every place at once: the quickest way to see what is near what. */}
+      <section className="mt-20 sm:mt-28">
+        <SectionHeading
+          title={t("PlacesPage.mapTitle")}
+          intro={t("PlacesPage.mapIntro")}
+        />
+        <SiteMap
+          name={t("PlacesPage.mapName")}
+          center={{ lat: -20.37, lng: 57.37 }}
+          zoom={10}
+          markers={places.map((place) => placeMarker(place, locale))}
+          className="mt-8 aspect-[4/5] sm:aspect-[16/9]"
+        />
+      </section>
     </Container>
   );
 }

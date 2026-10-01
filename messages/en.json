@@ -129,7 +129,8 @@
   "AreasPage": {
     "eyebrow": "The west coast",
     "mapLabel": "the west coast areas",
-    "explore": "Explore {name}"
+    "explore": "Explore {name}",
+    "listHeading": "All areas"
   },
   "AreaPage": {
     "placesTitle": "Places in {name}",
@@ -155,7 +156,8 @@
     "galleryOpen": "Open photo {n} of {total}",
     "galleryClose": "Close",
     "galleryPrevious": "Previous photo",
-    "galleryNext": "Next photo"
+    "galleryNext": "Next photo",
+    "inGuides": "In our guides"
   },
   "GuideCategories": {
     "restaurants": {
@@ -208,9 +210,13 @@
     "anyCategory": "All categories",
     "featuredOnly": "Featured only",
     "reset": "Clear filters",
+    "resultsOne": "{count} place",
     "results": "{count} places",
     "noResults": "No places match these filters.",
-    "resultsHeading": "Results"
+    "resultsHeading": "Results",
+    "mapTitle": "All places on the map",
+    "mapIntro": "Tap a marker to open the place.",
+    "mapName": "the west coast places"
   },
   "LivePage": {
     "eyebrow": "Live in the West",

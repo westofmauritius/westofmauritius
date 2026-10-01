@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { useRef, useState } from "react";
+import { ResponsiveImage } from "@/components/ui/ResponsiveImage";
 import { cn } from "@/lib/cn";
 import type { Photo } from "@/lib/content/types";
 
@@ -33,10 +33,15 @@ const fill = (text: string, values: Record<string, string | number>) =>
 export function PlaceGallery({ photos, labels }: PlaceGalleryProps) {
   const dialog = useRef<HTMLDialogElement>(null);
   const [current, setCurrent] = useState(0);
+  // The full-size photo is only rendered while the viewer is open: an <img>
+  // in the server HTML would make the browser (and React's preloading)
+  // download the large original on every visit.
+  const [isOpen, setIsOpen] = useState(false);
   const total = photos.length;
 
   const open = (index: number) => {
     setCurrent(index);
+    setIsOpen(true);
     dialog.current?.showModal();
   };
   const step = (delta: number) => setCurrent((i) => (i + delta + total) % total);
@@ -52,10 +57,9 @@ export function PlaceGallery({ photos, labels }: PlaceGalleryProps) {
         aria-label={fill(labels.open, { n: 1, total })}
         className="group relative block aspect-[4/3] w-full overflow-hidden rounded-sm bg-sand-100 sm:aspect-[16/9] lg:aspect-[21/9]"
       >
-        <Image
+        <ResponsiveImage
           src={main.src}
           alt={main.alt}
-          fill
           priority
           sizes="100vw"
           className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
@@ -77,10 +81,9 @@ export function PlaceGallery({ photos, labels }: PlaceGalleryProps) {
                 aria-label={fill(labels.open, { n: i + 2, total })}
                 className="group relative block aspect-[4/3] w-full overflow-hidden rounded-sm bg-sand-100"
               >
-                <Image
+                <ResponsiveImage
                   src={p.src}
                   alt={p.alt}
-                  fill
                   sizes="(min-width: 1024px) 16vw, (min-width: 640px) 25vw, 33vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-[1.05]"
                 />
@@ -91,6 +94,7 @@ export function PlaceGallery({ photos, labels }: PlaceGalleryProps) {
       )}
 
       <dialog
+        onClose={() => setIsOpen(false)}
         ref={dialog}
         aria-label={photo.alt}
         // Close when the dark backdrop (the dialog element itself) is clicked.
@@ -104,15 +108,30 @@ export function PlaceGallery({ photos, labels }: PlaceGalleryProps) {
         <div className="pointer-events-none flex h-full flex-col items-center justify-center gap-4 p-4 sm:p-10">
           <figure className="pointer-events-auto flex max-h-full w-full max-w-6xl flex-col items-center">
             {/* A plain <img>: the viewer shows the full photo at its own size. */}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={photo.src}
-              alt={photo.alt}
-              className="max-h-[78dvh] w-auto max-w-full rounded-sm object-contain"
-            />
+            {isOpen && (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={photo.src}
+                alt={photo.alt}
+                className="max-h-[78dvh] w-auto max-w-full rounded-sm object-contain"
+              />
+            )}
             <figcaption className="mt-3 text-center text-sm text-ocean-100">
               {photo.alt}
-              {photo.credit && ` · ${fill(labels.photoBy, { credit: photo.credit })}`}
+              {photo.credit && " · "}
+              {photo.credit &&
+                (photo.creditUrl ? (
+                  <a
+                    href={photo.creditUrl}
+                    rel="noopener"
+                    target="_blank"
+                    className="underline underline-offset-2 hover:text-white"
+                  >
+                    {fill(labels.photoBy, { credit: photo.credit })}
+                  </a>
+                ) : (
+                  fill(labels.photoBy, { credit: photo.credit })
+                ))}
               <span className="ml-3 text-ocean-300 tabular-nums">
                 {current + 1} / {total}
               </span>

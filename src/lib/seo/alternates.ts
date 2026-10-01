@@ -20,7 +20,8 @@ export type LocalizedHref = Href | ((locale: Locale) => Href);
  * everyone else (English).
  *
  * The language switcher also reads these tags to find the other language's
- * URL (see LanguageSwitcher.tsx).
+ * URL (see LanguageSwitcher.tsx); it only looks at tags with hreflang, so the
+ * feed link below does not confuse it.
  */
 export function localeAlternates(
   href: LocalizedHref,
@@ -32,5 +33,10 @@ export function localeAlternates(
   for (const l of routing.locales) languages[l] = url(l);
   languages["x-default"] = url(routing.defaultLocale);
 
-  return { canonical: url(locale), languages };
+  return {
+    canonical: url(locale),
+    languages,
+    // Lets feed readers find the guides' RSS feed from any page.
+    types: { "application/rss+xml": `${absoluteUrl("/", locale)}/feed.xml` },
+  };
 }

@@ -1,5 +1,5 @@
 import "server-only";
-import { getPathname } from "@/i18n/navigation";
+import { getPathname } from "@/i18n/pathname";
 import { routing, type Locale } from "@/i18n/routing";
 import type { FieldErrors, FormInput, Result } from "@/lib/forms/validation";
 import { looksLikeBot } from "@/lib/forms/validation";

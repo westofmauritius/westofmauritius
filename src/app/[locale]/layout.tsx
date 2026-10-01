@@ -6,7 +6,7 @@ import { SiteHeader } from "@/components/layout/SiteHeader";
 import { NewsletterForm } from "@/components/forms/NewsletterForm";
 import { consentTexts, currentConsent } from "@/lib/forms/consent";
 import { resolveLocale } from "@/i18n/locale";
-import { getPathname } from "@/i18n/navigation";
+import { getPathname } from "@/i18n/pathname";
 import { routing, type StaticPathname } from "@/i18n/routing";
 import { fontVariables } from "@/lib/fonts";
 import { allowIndexing, brandName, siteUrl } from "@/lib/site";

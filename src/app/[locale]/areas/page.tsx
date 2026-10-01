@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { Photo } from "@/components/ui/Photo";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { getPathname } from "@/i18n/navigation";
+import { getPathname } from "@/i18n/pathname";
 import { resolveLocale } from "@/i18n/locale";
 import { getAreas } from "@/lib/content/areas";
 import { localeAlternates } from "@/lib/seo/alternates";
@@ -69,6 +69,8 @@ export default async function AreasPage({
         className="mt-10 aspect-[4/5] sm:aspect-[16/9] lg:aspect-[21/9]"
       />
 
+      {/* Hidden heading: the cards' titles are h3s and need an h2 above them. */}
+      <h2 className="sr-only">{t("AreasPage.listHeading")}</h2>
       <div className="mt-14 grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
         {areas.map((area) => (
           <Card

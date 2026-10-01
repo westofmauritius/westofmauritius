@@ -5,6 +5,7 @@ import { EnquiryCta } from "@/components/content/EnquiryCta";
 import { PlaceCard } from "@/components/content/PlaceCard";
 import { Prose } from "@/components/content/Prose";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
+import { placeMarker } from "@/components/map/markers";
 import { SiteMap } from "@/components/map/SiteMap";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Container } from "@/components/ui/Container";
@@ -12,12 +13,11 @@ import { Photo } from "@/components/ui/Photo";
 import { PlaceholderNotice } from "@/components/ui/PlaceholderNotice";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Link } from "@/i18n/Link";
-import { getPathname } from "@/i18n/navigation";
 import { resolveLocale } from "@/i18n/locale";
 import { routing } from "@/i18n/routing";
 import { getArea, getAreas } from "@/lib/content/areas";
 import { getPlaces } from "@/lib/content/places";
-import type { Place, PlaceCategory } from "@/lib/content/types";
+import type { PlaceCategory } from "@/lib/content/types";
 import { localeAlternates } from "@/lib/seo/alternates";
 import { ogImage } from "@/lib/seo/og-images";
 import { openGraphBase } from "@/lib/seo/open-graph";
@@ -122,7 +122,11 @@ export default async function AreaPage({ params }: Props) {
           aspect="aspect-[4/3]"
           sizes="(min-width: 1024px) 58vw, 100vw"
           priority
-          credit={area.hero?.credit}
+          credit={
+            area.hero?.credit
+              ? t("PlacePage.photoBy", { credit: area.hero.credit })
+              : undefined
+          }
         />
       </Container>
 
@@ -191,18 +195,4 @@ export default async function AreaPage({ params }: Props) {
       </Container>
     </>
   );
-}
-
-function placeMarker(place: Place, locale: (typeof routing.locales)[number]) {
-  return {
-    id: place.slug,
-    lat: place.location.lat,
-    lng: place.location.lng,
-    label: place.name,
-    href: getPathname({
-      href: { pathname: "/places/[slug]", params: { slug: place.slug } },
-      locale,
-    }),
-    highlight: place.featured,
-  };
 }

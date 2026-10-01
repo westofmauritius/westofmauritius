@@ -1,8 +1,8 @@
-import { getPathname } from "@/i18n/navigation";
+import { getPathname, type Href } from "@/i18n/pathname";
 import type { Locale } from "@/i18n/routing";
 import { siteUrl } from "@/lib/site";
 
-export type Href = Parameters<typeof getPathname>[0]["href"];
+export type { Href } from "@/i18n/pathname";
 
 /** Full public URL of an internal route, e.g. https://westmauritius.mu/fr/lieux/x. */
 export function absoluteUrl(href: Href, locale: Locale): string {

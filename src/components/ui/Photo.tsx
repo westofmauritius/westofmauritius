@@ -1,7 +1,7 @@
-import Image from "next/image";
 import { cn } from "@/lib/cn";
 import type { Photo as PhotoData } from "@/lib/content/types";
 import { PlaceholderImage, type PlaceholderTone } from "./PlaceholderImage";
+import { ResponsiveImage } from "./ResponsiveImage";
 
 type PhotoProps = {
   photo: PhotoData | null;
@@ -14,6 +14,8 @@ type PhotoProps = {
   sizes: string;
   /** Load immediately (for the main image at the top of a page). */
   priority?: boolean;
+  /** Credit line, e.g. "Photo: Jane Doe · CC BY 2.0". Links to the photo's
+   * source page when it has one (Creative Commons licences ask for that). */
   credit?: string;
   className?: string;
 };
@@ -46,17 +48,27 @@ export function Photo({
     <figure
       className={cn("relative overflow-hidden bg-sand-100", aspect, className)}
     >
-      <Image
+      <ResponsiveImage
         src={photo.src}
         alt={photo.alt}
-        fill
         sizes={sizes}
         priority={priority}
         className="object-cover"
       />
       {credit && (
-        <figcaption className="absolute right-2 bottom-2 rounded-sm bg-black/35 px-2 py-0.5 text-[0.625rem] text-white">
-          {credit}
+        <figcaption className="absolute right-2 bottom-2 max-w-[calc(100%-1rem)] truncate rounded-sm bg-black/60 px-2 py-0.5 text-[0.6875rem] text-white">
+          {photo.creditUrl ? (
+            <a
+              href={photo.creditUrl}
+              rel="noopener"
+              target="_blank"
+              className="underline-offset-2 hover:underline"
+            >
+              {credit}
+            </a>
+          ) : (
+            credit
+          )}
         </figcaption>
       )}
     </figure>

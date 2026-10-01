@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { GuideCard } from "@/components/content/GuideCard";
 import { PlaceCard } from "@/components/content/PlaceCard";
 import { PlaceGallery } from "@/components/content/PlaceGallery";
 import { Prose } from "@/components/content/Prose";
@@ -12,10 +13,11 @@ import { buttonClass } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Photo } from "@/components/ui/Photo";
 import { PlaceholderNotice } from "@/components/ui/PlaceholderNotice";
-import { getPathname } from "@/i18n/navigation";
+import { getPathname } from "@/i18n/pathname";
 import { resolveLocale } from "@/i18n/locale";
 import { routing } from "@/i18n/routing";
 import { getAreas } from "@/lib/content/areas";
+import { getGuides } from "@/lib/content/guides";
 import { getPlace, getPlaces } from "@/lib/content/places";
 import { closedDays, formatDays } from "@/lib/opening-hours";
 import { optimizableImage } from "@/lib/image-sizes";
@@ -65,16 +67,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function PlacePage({ params }: Props) {
   const locale = await resolveLocale(params);
   const { slug } = await params;
-  const [place, areas, t] = await Promise.all([
+  const [place, areas, t, guides] = await Promise.all([
     getPlace(slug, locale),
     getAreas(locale),
     getTranslations({ locale }),
+    getGuides(locale),
   ]);
   if (!place) notFound();
 
   const area = areas.find((a) => a.slug === place.areaSlug)!;
   const nearby = (await getPlaces(locale, { area: area.slug }))
     .filter((p) => p.slug !== slug)
+    .slice(0, 3);
+  const inGuides = guides
+    .filter((g) => g.placeSlugs.includes(place.slug))
     .slice(0, 3);
   const href = { pathname: "/places/[slug]", params: { slug } } as const;
   const category = t(`Categories.${place.category}.one`);
@@ -165,7 +171,10 @@ export default async function PlacePage({ params }: Props) {
                 <div>
                   <dt className="font-medium">{t("PlacePage.address")}</dt>
                   <dd className="mt-1 text-ink-muted">
-                    {place.address}, {area.name}
+                    {/* Add the area unless the address already names it. */}
+                    {place.address.includes(area.name)
+                      ? place.address
+                      : `${place.address}, ${area.name}`}
                   </dd>
                 </div>
               )}
@@ -203,10 +212,18 @@ export default async function PlacePage({ params }: Props) {
                       </tbody>
                     </table>
                   ) : (
-                    t("PlacePage.hoursUnknown")
+                    // Without hours, a note such as "Public beach, open to
+                    // everyone" says more than "not yet confirmed".
+                    !place.hoursNote && t("PlacePage.hoursUnknown")
                   )}
                   {place.hoursNote && (
-                    <p className="mt-2 italic">{place.hoursNote}</p>
+                    <p
+                      className={
+                        place.openingHours.length > 0 ? "mt-2 italic" : ""
+                      }
+                    >
+                      {place.hoursNote}
+                    </p>
                   )}
                 </dd>
               </div>
@@ -291,6 +308,20 @@ export default async function PlacePage({ params }: Props) {
           />
         </aside>
       </Container>
+
+      {/* Guides that mention this place: the way back into longer reading. */}
+      {inGuides.length > 0 && (
+        <section className="border-t border-line py-16">
+          <Container size="wide">
+            <h2 className="text-display-3">{t("PlacePage.inGuides")}</h2>
+            <div className="mt-10 grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+              {inGuides.map((guide) => (
+                <GuideCard key={guide.key} guide={guide} />
+              ))}
+            </div>
+          </Container>
+        </section>
+      )}
 
       {nearby.length > 0 && (
         <section className="border-t border-line bg-sand-50 py-16">

@@ -1,5 +1,5 @@
 import "server-only";
-import { getPathname } from "@/i18n/navigation";
+import { getPathname } from "@/i18n/pathname";
 import type { Locale } from "@/i18n/routing";
 import type { ContactData, LeadData } from "@/lib/forms/validation";
 import { brandName, siteUrl } from "@/lib/site";

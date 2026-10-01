@@ -21,7 +21,8 @@ type ExplorerLabels = {
   anyCategory: string;
   featuredOnly: string;
   reset: string;
-  /** e.g. "{count} places" */
+  /** e.g. "{count} place" and "{count} places". */
+  resultsOne: string;
   results: string;
   noResults: string;
   /** Hidden heading above the results, for screen-reader navigation. */
@@ -29,6 +30,8 @@ type ExplorerLabels = {
 };
 
 type PlaceExplorerProps = {
+  /** For the plural rule ("1 place", and in French "0 adresse"). */
+  locale: string;
   /** Each place's searchable facts plus its card, rendered on the server. */
   places: (FilterablePlace & { card: React.ReactNode })[];
   areas: Option[];
@@ -44,7 +47,13 @@ type PlaceExplorerProps = {
  * prerendered: the server sends every card, and this component only decides
  * which ones to show. Without JavaScript, all places are listed.
  */
-export function PlaceExplorer({ places, areas, categories, labels }: PlaceExplorerProps) {
+export function PlaceExplorer({
+  locale,
+  places,
+  areas,
+  categories,
+  labels,
+}: PlaceExplorerProps) {
   const search = useSyncExternalStore(subscribeToUrl, () => window.location.search, () => "");
   const filters = parseFilters(search);
   const results = filterPlaces(places, filters);
@@ -133,7 +142,10 @@ export function PlaceExplorer({ places, areas, categories, labels }: PlaceExplor
       <h2 className="sr-only">{labels.resultsHeading}</h2>
       {/* Announced by screen readers whenever the number of results changes. */}
       <p id={id} role="status" className="mt-8 text-sm text-ink-muted">
-        {labels.results.replace("{count}", String(results.length))}
+        {(new Intl.PluralRules(locale).select(results.length) === "one"
+          ? labels.resultsOne
+          : labels.results
+        ).replace("{count}", String(results.length))}
       </p>
 
       {results.length > 0 ? (

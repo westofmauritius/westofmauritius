@@ -35,8 +35,9 @@ export async function generateMetadata({
 
 export default async function HomePage({ params }: PageProps<"/[locale]">) {
   const locale = await resolveLocale(params);
-  const [t, home, areas, places, guides] = await Promise.all([
+  const [t, tPlace, home, areas, places, guides] = await Promise.all([
     getTranslations({ locale, namespace: "Home" }),
+    getTranslations({ locale, namespace: "PlacePage" }),
     getHomepage(locale),
     getAreas(locale),
     getPlaces(locale),
@@ -44,8 +45,11 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
   ]);
   const areaName = (slug: string) =>
     areas.find((a) => a.slug === slug)?.name ?? slug;
-  // Featured places come first (getPlaces sorts them), topped up with others.
-  const highlights = places.slice(0, 6);
+  // Real places before placeholder examples; within each group featured
+  // places stay first (getPlaces sorts them). sort() is stable.
+  const highlights = [...places]
+    .sort((a, b) => Number(a.placeholder) - Number(b.placeholder))
+    .slice(0, 6);
 
   return (
     <>
@@ -60,19 +64,24 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       {/* Hero: full-bleed image with the headline over the darker lower part. */}
       <section className="relative isolate flex min-h-[86svh] items-end overflow-hidden bg-ocean-900 text-white lg:min-h-[88vh]">
         {home.hero ? (
-          <Photo
-            photo={home.hero}
-            fallbackTone="sunset"
-            fallbackLabel=""
-            aspect=""
-            sizes="100vw"
-            priority
-            className="absolute inset-0 -z-10 h-full w-full"
-          />
+          // Wrapped: Photo's own figure is position: relative, so the
+          // absolute positioning has to live on a parent.
+          <div className="absolute inset-0 -z-10">
+            <Photo
+              photo={home.hero}
+              fallbackTone="sunset"
+              fallbackLabel=""
+              aspect=""
+              sizes="100vw"
+              priority
+              className="h-full w-full"
+            />
+          </div>
         ) : (
           <HeroArt className="absolute inset-0 -z-10 h-full w-full" />
         )}
-        <div className="absolute inset-0 -z-10 bg-linear-to-t from-ocean-950/90 via-ocean-950/45 to-transparent sm:from-ocean-950/80 sm:via-ocean-950/25" />
+        {/* Darkens the photo under the headline so the white text stays legible. */}
+        <div className="absolute inset-0 -z-10 bg-linear-to-t from-ocean-950/90 via-ocean-950/55 to-ocean-950/10" />
         <Container size="wide" className="pt-32 pb-14 sm:pb-20">
           <p className="mb-5 eyebrow text-coral-200">{t("eyebrow")}</p>
           <h1 className="max-w-4xl text-display-1 text-white">{t("title")}</h1>
@@ -91,6 +100,23 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
             </ButtonLink>
           </div>
         </Container>
+        {/* Credit outside the image itself: the image sits under the gradient. */}
+        {home.hero?.credit && (
+          <p className="absolute right-3 bottom-3 max-w-[calc(100%-1.5rem)] truncate text-[0.6875rem] text-ocean-100">
+            {home.hero.creditUrl ? (
+              <a
+                href={home.hero.creditUrl}
+                rel="noopener"
+                target="_blank"
+                className="hover:underline"
+              >
+                {tPlace("photoBy", { credit: home.hero.credit })}
+              </a>
+            ) : (
+              tPlace("photoBy", { credit: home.hero.credit })
+            )}
+          </p>
+        )}
       </section>
 
       {/* Areas */}
@@ -134,7 +160,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                       className="transition-transform duration-700 ease-out group-hover:scale-[1.04]"
                     />
                   )}
-                  <span className="absolute inset-x-0 top-0 bg-linear-to-b from-ocean-950/60 to-transparent p-4 pb-12 font-display text-2xl text-white">
+                  <span className="absolute inset-x-0 top-0 bg-linear-to-b from-ocean-950/75 to-transparent p-4 pb-14 font-display text-2xl text-white">
                     {area.name}
                   </span>
                 </Link>

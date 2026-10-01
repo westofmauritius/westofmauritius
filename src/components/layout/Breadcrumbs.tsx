@@ -19,11 +19,19 @@ type BreadcrumbsProps = {
 export function Breadcrumbs({ items, locale, label }: BreadcrumbsProps) {
   return (
     <nav aria-label={label} className="text-xs tracking-wide text-ink-muted">
-      <ol className="flex flex-wrap items-center gap-x-2 gap-y-1">
+      {/* Always one line: the current page's name is cut with "…" when space
+          runs out (it is the page title just below anyway). A trail that
+          wrapped only until the web font loaded would push the page down. */}
+      <ol className="flex items-center gap-x-2 whitespace-nowrap">
         {items.map((item, i) => {
           const last = i === items.length - 1;
           return (
-            <li key={i} className="flex items-center gap-2">
+            <li
+              key={i}
+              className={
+                last ? "min-w-0 truncate" : "flex shrink-0 items-center gap-2"
+              }
+            >
               {last ? (
                 <span aria-current="page" className="text-ink">
                   {item.label}

@@ -129,7 +129,8 @@
   "AreasPage": {
     "eyebrow": "La côte ouest",
     "mapLabel": "les régions de la côte ouest",
-    "explore": "Découvrir {name}"
+    "explore": "Découvrir {name}",
+    "listHeading": "Toutes les régions"
   },
   "AreaPage": {
     "placesTitle": "Adresses à {name}",
@@ -155,7 +156,8 @@
     "galleryOpen": "Ouvrir la photo {n} sur {total}",
     "galleryClose": "Fermer",
     "galleryPrevious": "Photo précédente",
-    "galleryNext": "Photo suivante"
+    "galleryNext": "Photo suivante",
+    "inGuides": "Dans nos guides"
   },
   "GuideCategories": {
     "restaurants": {
@@ -208,9 +210,13 @@
     "anyCategory": "Toutes les catégories",
     "featuredOnly": "À la une uniquement",
     "reset": "Effacer les filtres",
+    "resultsOne": "{count} adresse",
     "results": "{count} adresses",
     "noResults": "Aucune adresse ne correspond à ces filtres.",
-    "resultsHeading": "Résultats"
+    "resultsHeading": "Résultats",
+    "mapTitle": "Toutes les adresses sur la carte",
+    "mapIntro": "Touchez un repère pour ouvrir la fiche.",
+    "mapName": "les adresses de la côte ouest"
   },
   "LivePage": {
     "eyebrow": "Vivre dans l’Ouest",
