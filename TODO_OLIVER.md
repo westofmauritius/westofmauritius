@@ -177,6 +177,11 @@ bort de uppgifterna. Byt gärna till egna foton med tiden.
 - **Restauranger och butiker**: fyra påhittade exempel, tydligt märkta.
   Lägg in riktiga ställen du kan stå för, och radera exemplen.
 - **Guiderna om restauranger och shopping**: skrivs när ovanstående finns.
+- **Köpguiderna är nu riktiga** (PDS, IRS, RES, Smart City, Hur köpet
+  går till, Köpa som mauritier utomlands, Pension på västkusten), skrivna
+  från EDB:s officiella sidor med källor. Läs igenom dem, och be gärna en
+  notarie eller EDB bekräfta beloppen innan du marknadsför dem. Franska
+  versionerna är fortfarande platshållare.
 - **Living in the West** (`/en/living-in-the-west`): frågesidor (kostnad
   att bo i Tamarin, pension på västkusten, bästa området att bo i),
   jämförelser (Tamarin vs Grand Baie, Tamarin vs Flic en Flac, väst vs norr)

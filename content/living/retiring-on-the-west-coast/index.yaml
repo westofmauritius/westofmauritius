@@ -1,7 +1,5 @@
 kind: question
 order: 2
-placeholder: true
-publishedAt: '2026-10-02'
 relatedAreas:
   - flic-en-flac
   - tamarin
@@ -9,46 +7,68 @@ relatedAreas:
   - la-gaulette
   - le-morne
   - chamarel
+placeholder: false
+publishedAt: '2026-10-02'
+updatedAt: '2026-10-02'
+sources:
+  - title: "Retired non citizen aged 50 and over"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/retire/retired-non-citizen-50-years/
+    checkedAt: '2026-10-02'
+  - title: "Permanent Residence Permit (PRP)"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/live/permanent-residence-permit-prp/
+    checkedAt: '2026-10-02'
+  - title: "Economic Development Board Act, as amended to August 2026"
+    publisher: "Government of Mauritius, published by the EDB"
+    url: https://edbmauritius.org/wp-content/uploads/2026/08/EDB-Act-2026.pdf
+    checkedAt: '2026-10-02'
+  - title: "Mauritius Premium Visa"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/live/mauritius-premium-visa/
+    checkedAt: '2026-10-02'
 content:
   en:
     title: "Retiring on the west coast of Mauritius"
     slug: retiring-on-the-west-coast
-    excerpt: "What retirees need to know about residence permits, healthcare, costs and the quietest villages by the sea."
-    shortAnswer: "[Placeholder: answer “Is the west coast of Mauritius a good place to retire?” in two or three sentences, before any detail.]"
+    excerpt: "The residence permit for retirees, what it costs, what you can buy, and which west coast village suits a quieter or a livelier retirement."
+    shortAnswer: "If you are 50 or older and can show an income of USD 2,000 a month (or USD 24,000 a year) transferred to Mauritius, you can apply for a ten year renewable residence permit as a retiree. After five years you can apply for a twenty year permanent residence permit. You can buy a home under the schemes for foreigners, and on the west coast you can choose between a long beach, a quiet fishing village or the cooler hills of Chamarel."
     table:
-      caption: "Retiring on the west coast at a glance"
+      caption: "Retiring in Mauritius at a glance"
       headers:
         - ""
-        - "What to know"
+        - "What the rules say"
       rows:
         - cells:
-            - "Residence permit for retirees"
-            - "[To be checked]"
+            - "Age"
+            - "50 or older"
         - cells:
-            - "Income or transfer required"
-            - "[To be checked]"
+            - "Income"
+            - "USD 2,000 a month or USD 24,000 a year transferred to a Mauritian bank"
         - cells:
-            - "Healthcare nearby"
-            - "[To be checked]"
+            - "Permit"
+            - "10 years, renewable"
         - cells:
-            - "Buying or renting a home"
-            - "[To be checked]"
+            - "Permit fee"
+            - "USD 1,000"
         - cells:
-            - "Tax on foreign pensions"
-            - "[To be checked]"
+            - "Permanent residence"
+            - "After 5 years, if you have transferred at least USD 200,000"
         - cells:
-            - "Monthly budget"
-            - "[To be checked]"
+            - "Working"
+            - "You may invest in a business but not be employed by it"
     faqs:
       - question: "Can foreigners retire in Mauritius?"
-        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+        answer: "Yes. People aged 50 or older can apply for a residence permit as a retired non citizen, valid for ten years and renewable, by showing they have USD 2,000 a month or USD 24,000 a year to transfer to Mauritius."
+      - question: "Can retirees buy property in Mauritius?"
+        answer: "Yes, under the IRS, RES, PDS or Smart City schemes, or an apartment in a building of at least ground plus two floors. A home of USD 375,000 or more comes with its own residence permit."
+      - question: "Do I have to travel to Mauritius to apply?"
+        answer: "No. The application starts online on the EDB's licensing platform, up to the approval in principle."
+      - question: "Is my pension taxed in Mauritius?"
+        answer: "You become tax resident after 183 days in a year (or 270 days over two years). Foreign income is taxable for residents; whether your pension is taxed depends on the tax treaty with your country and on whether the money is brought into Mauritius. Ask a tax adviser."
       - question: "Which west coast village is best for retirees?"
-        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
-      - question: "Is healthcare good on the west coast?"
-        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
-      - question: "Do retirees pay tax on their pension in Mauritius?"
-        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
-    seoDescription: "Retiring on the west coast of Mauritius: residence permits, healthcare, costs and the best villages, explained by a Mauritian."
+        answer: "It depends on what you want each day: one of the longest beaches on the island (Flic en Flac), a village with a sea view and surfers (Tamarin), a quiet village on the lagoon (La Gaulette) or cooler air in the hills (Chamarel)."
+    seoDescription: "Retiring on the west coast of Mauritius: the retiree residence permit (age 50, USD 2,000 a month), permanent residence, buying a home, and which village suits you."
   fr:
     title: "Prendre sa retraite sur la côte ouest de Maurice"
     slug: retraite-sur-la-cote-ouest

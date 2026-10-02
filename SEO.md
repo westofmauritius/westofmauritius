@@ -56,16 +56,16 @@ How to use this file:
 | `/en/living-in-the-west` (hub)                               | living on the west coast of Mauritius           | moving to Mauritius west coast           | High     | live (hub)  |
 | `/en/living-in-the-west/best-area-to-live-on-the-west-coast` | best place to live west coast Mauritius         | where do expats live in Mauritius west   | High     | placeholder |
 | `/en/living-in-the-west/cost-of-living-in-tamarin`           | cost of living Tamarin                          | rent in Tamarin Mauritius                | High     | placeholder |
-| `/en/living-in-the-west/retiring-on-the-west-coast`          | retire in Mauritius west coast                  | retiring in Mauritius                    | High     | placeholder |
+| `/en/living-in-the-west/retiring-on-the-west-coast`          | retire in Mauritius west coast                  | retiring in Mauritius                    | High     | live        |
 | `/en/living-in-the-west/tamarin-vs-grand-baie`               | Tamarin vs Grand Baie                           | west or north Mauritius to live          | High     | placeholder |
 | `/en/living-in-the-west/west-vs-north-coast-for-expats`      | west vs north coast Mauritius expats            | best coast to live in Mauritius          | High     | placeholder |
 | `/en/living-in-the-west/tamarin-vs-flic-en-flac`             | Tamarin vs Flic en Flac                         | Flic en Flac or Tamarin                  | Medium   | placeholder |
-| `/en/living-in-the-west/how-buying-works`                    | how to buy property in Mauritius as a foreigner | can foreigners buy property in Mauritius | High     | placeholder |
-| `/en/living-in-the-west/buying-from-abroad-as-a-mauritian`   | buying property in Mauritius from abroad        | Mauritian diaspora property              | Medium   | placeholder |
-| `/en/living-in-the-west/pds`                                 | PDS Mauritius                                   | Property Development Scheme              | High     | placeholder |
-| `/en/living-in-the-west/irs`                                 | IRS Mauritius                                   | Integrated Resort Scheme                 | Medium   | placeholder |
-| `/en/living-in-the-west/res`                                 | RES Mauritius                                   | Real Estate Scheme                       | Low      | placeholder |
-| `/en/living-in-the-west/smart-city`                          | Smart City Scheme Mauritius                     | smart city Mauritius property            | Medium   | placeholder |
+| `/en/living-in-the-west/how-buying-works`                    | how to buy property in Mauritius as a foreigner | can foreigners buy property in Mauritius | High     | live        |
+| `/en/living-in-the-west/buying-from-abroad-as-a-mauritian`   | buying property in Mauritius from abroad        | Mauritian diaspora property              | Medium   | live        |
+| `/en/living-in-the-west/pds`                                 | PDS Mauritius                                   | Property Development Scheme              | High     | live        |
+| `/en/living-in-the-west/irs`                                 | IRS Mauritius                                   | Integrated Resort Scheme                 | Medium   | live        |
+| `/en/living-in-the-west/res`                                 | RES Mauritius                                   | Real Estate Scheme                       | Low      | live        |
+| `/en/living-in-the-west/smart-city`                          | Smart City Scheme Mauritius                     | smart city Mauritius property            | Medium   | live        |
 | `/en/living-in-the-west/buying-property-in-tamarin`          | buying property in Tamarin as a foreigner       | villa for sale Tamarin                   | High     | placeholder |
 | `/en/living-in-the-west/buying-property-in-black-river`      | buying property in Black River Mauritius        | Black River villa for sale               | High     | placeholder |
 | `/en/living-in-the-west/buying-property-in-flic-en-flac`     | buying property in Flic en Flac                 | apartment Flic en Flac for sale          | Medium   | placeholder |

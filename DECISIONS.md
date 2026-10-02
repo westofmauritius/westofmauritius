@@ -458,3 +458,23 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
   community 98, about 98; accessibility, best practices and SEO 100 on all.
   Pages that are noindex on purpose (placeholders, French) score below 100
   on SEO by design.
+
+## Real buying content from official sources (October 2026)
+
+- Seven Living in the West pages are now real and indexable: PDS, IRS, RES,
+  Smart City, how buying works, buying from abroad as a Mauritian, and
+  retiring on the west coast.
+- Every rule and amount comes from the Economic Development Board's own
+  pages and documents on residency.mu, and the consolidated EDB Act as
+  amended in August 2026, all checked on 2 October 2026 and listed as
+  sources. Each page ends with a note to confirm details with the EDB, a
+  notary and the developer, since rules change.
+- West coast angle from the official lists, not opinion: 22 of the 77
+  projects on the EDB's November 2022 RES list are in Tamarin, Black River
+  or Chamarel, and two of the smart cities (Cap Tamarin, Medine) are on
+  this coast. No developer is named or recommended beyond what the
+  official lists state.
+- Official terms with hyphens ("non-citizen", "Ground + 2") are written
+  without them, in line with the site's style rule.
+- The French versions of these pages are still placeholders; they must be
+  translated before French is switched on.

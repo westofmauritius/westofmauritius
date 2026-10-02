@@ -1,10 +1,52 @@
 kind: scheme
 order: 4
-placeholder: true
+placeholder: false
+publishedAt: '2026-10-02'
+updatedAt: '2026-10-02'
+sources:
+  - title: "Smart City Scheme"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/acquire/smart-city-scheme/
+    checkedAt: '2026-10-02'
+  - title: "Summary of Smart City projects (2025)"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/wp-content/uploads/2021/06/List-Smart-City-projects-with-contact-details-2025.pdf
+    checkedAt: '2026-10-02'
+  - title: "Economic Development Board Act, as amended to August 2026"
+    publisher: "Government of Mauritius, published by the EDB"
+    url: https://edbmauritius.org/wp-content/uploads/2026/08/EDB-Act-2026.pdf
+    checkedAt: '2026-10-02'
 content:
   en:
-    title: Smart City Scheme
-    excerpt: Placeholder, to be written.
+    title: "Smart City Scheme"
+    excerpt: "Large new towns where people live, work and study in one place, two of them on the west coast: what foreigners can buy and when it comes with a residence permit."
+    shortAnswer: "Smart cities are large mixed developments approved by the Economic Development Board, combining homes, offices, schools and leisure. Foreigners can buy a townhouse, villa, apartment, penthouse or duplex in any of them, with a residence permit from USD 375,000. Two are on the west coast: Cap Tamarin in Tamarin and Medine Smart City, which the EDB lists under Flic en Flac."
+    table:
+      caption: "The Smart City Scheme at a glance"
+      headers:
+        - ""
+        - "What the rules say"
+      rows:
+        - cells:
+            - "What you can buy"
+            - "Townhouses, villas, apartments, penthouses and duplexes"
+        - cells:
+            - "Residence permit"
+            - "From USD 375,000"
+        - cells:
+            - "On the west coast"
+            - "Cap Tamarin (Tamarin) and Medine Smart City (listed under Flic en Flac)"
+        - cells:
+            - "Serviced plots for foreigners"
+            - "Offered until 30 June 2022, according to the EDB"
+    faqs:
+      - question: "Which smart cities are on the west coast?"
+        answer: "On the EDB's 2025 summary of smart city projects, Cap Tamarin is located in Tamarin and Medine Smart City in Flic en Flac. Medine's project is known as Uniciti."
+      - question: "Does buying in a smart city give residency?"
+        answer: "Yes, if the home costs USD 375,000 or more."
+      - question: "Can a foreigner buy a plot of land in a smart city?"
+        answer: "The EDB says permit holders could buy a serviced plot of up to 2,100 m² to build a house, but only if the purchase was made by 30 June 2022. Ask the developer what is possible today."
+    seoDescription: "Smart City Scheme Mauritius: what foreigners can buy, the residence permit from USD 375,000, and the two smart cities on the west coast, Cap Tamarin and Medine."
   fr:
     title: Smart City Scheme
     excerpt: Texte provisoire, à rédiger.

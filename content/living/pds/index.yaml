@@ -1,10 +1,66 @@
 kind: scheme
 order: 1
-placeholder: true
+placeholder: false
+publishedAt: '2026-10-02'
+updatedAt: '2026-10-02'
+sources:
+  - title: "Property Development Scheme (PDS)"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/acquire/property-development-scheme/
+    checkedAt: '2026-10-02'
+  - title: "Property Development Scheme guidelines"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/wp-content/uploads/2024/05/Guidelines-PDS.pdf
+    checkedAt: '2026-10-02'
+  - title: "Guidelines for buyers of residential property under the IRS, RES and PDS (November 2024)"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/wp-content/uploads/2021/06/Guidelines-for-IRS-RES-PDS.pdf
+    checkedAt: '2026-10-02'
+  - title: "Economic Development Board Act, as amended to August 2026"
+    publisher: "Government of Mauritius, published by the EDB"
+    url: https://edbmauritius.org/wp-content/uploads/2026/08/EDB-Act-2026.pdf
+    checkedAt: '2026-10-02'
 content:
   en:
-    title: PDS (Property Development Scheme)
-    excerpt: Placeholder, to be written.
+    title: "PDS (Property Development Scheme)"
+    excerpt: "The scheme behind most new villas and apartments that foreigners buy in Mauritius: who can buy, what it costs on top of the price, and how it leads to a residence permit."
+    shortAnswer: "The Property Development Scheme (PDS) lets foreigners buy homes in developments approved by the Economic Development Board. Buying for USD 375,000 or more gives you, your spouse and your children under 24 a residence permit for as long as you own the property. Budget 5% registration duty on top of the price."
+    table:
+      caption: "The PDS at a glance"
+      headers:
+        - ""
+        - "What the rules say"
+      rows:
+        - cells:
+            - "Who can buy"
+            - "Foreigners, Mauritians, members of the Mauritian diaspora, companies, sociétés, trusts and foundations"
+        - cells:
+            - "Minimum price"
+            - "None for the purchase itself"
+        - cells:
+            - "Residence permit"
+            - "From USD 375,000, for the owner, spouse and children under 24, while you own the home"
+        - cells:
+            - "Registration duty"
+            - "5% of the price, paid by the buyer"
+        - cells:
+            - "Paying off plan"
+            - "25% at signing, 10% after foundations, 35% when roofed, 25% on completion, 5% on handover"
+        - cells:
+            - "Renting out"
+            - "Through the developer or the manager it appoints"
+    faqs:
+      - question: "Can a foreigner buy property in Mauritius under the PDS?"
+        answer: "Yes. The PDS was designed for exactly that: a foreigner can buy a villa, apartment, penthouse or serviced plot in a project that holds a PDS certificate from the Economic Development Board."
+      - question: "How much do you need to spend to get residency?"
+        answer: "USD 375,000 or more, or the same amount in another freely convertible currency. Below that you can still buy, but the purchase does not come with a residence permit."
+      - question: "Who is covered by the residence permit?"
+        answer: "The owner, the spouse and children below the age of 24, for as long as the owner holds the property."
+      - question: "Can I work in Mauritius with a PDS residence permit?"
+        answer: "Yes. The EDB states that holders of a residence permit under the PDS do not need an occupation or work permit to invest and work in Mauritius."
+      - question: "What are the costs on top of the price?"
+        answer: "Registration duty of 5% of the price for the buyer, and a non refundable EDB processing fee of MUR 25,000 per application. Notary and legal fees come on top; ask your notary for a quote."
+    seoDescription: "PDS in Mauritius explained by a local: who can buy, the USD 375,000 residence permit, 5% registration duty, off plan payments and renting out, from official EDB sources."
   fr:
     title: PDS (Property Development Scheme)
     excerpt: Texte provisoire, à rédiger.

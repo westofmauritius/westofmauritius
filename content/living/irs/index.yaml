@@ -1,10 +1,56 @@
 kind: scheme
 order: 2
-placeholder: true
+placeholder: false
+publishedAt: '2026-10-02'
+updatedAt: '2026-10-02'
+sources:
+  - title: "Integrated Resort Scheme (IRS)"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/acquire/integrated-resort-scheme/
+    checkedAt: '2026-10-02'
+  - title: "Guidelines for buyers of residential property under the IRS, RES and PDS (November 2024)"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/wp-content/uploads/2021/06/Guidelines-for-IRS-RES-PDS.pdf
+    checkedAt: '2026-10-02'
 content:
   en:
-    title: IRS (Integrated Resort Scheme)
-    excerpt: Placeholder, to be written.
+    title: "IRS (Integrated Resort Scheme)"
+    excerpt: "Homes inside large resorts with golf courses, marinas or beach clubs: what foreigners can buy in existing IRS projects, the duty you pay and the residence permit that comes with it."
+    shortAnswer: "The Integrated Resort Scheme (IRS) covers large residential resorts with amenities such as golf courses, marinas and beach clubs. Foreigners can buy villas, apartments, penthouses and serviced plots in existing IRS projects. From USD 375,000 the purchase gives you and your dependants a residence permit. On a first purchase the registration duty is USD 70,000 or 5% of the price, whichever is lower."
+    table:
+      caption: "The IRS at a glance"
+      headers:
+        - ""
+        - "What the rules say"
+      rows:
+        - cells:
+            - "What you can buy"
+            - "Villas, townhouses, penthouses, apartments, duplexes and serviced plots of up to 5,276 m²"
+        - cells:
+            - "Residence permit"
+            - "From USD 375,000, for the owner and dependants"
+        - cells:
+            - "Registration duty, first purchase"
+            - "USD 70,000 or 5% of the price, whichever is lower"
+        - cells:
+            - "Registration duty, resale"
+            - "5% of the price, plus 5% land transfer tax for the seller"
+        - cells:
+            - "Serviced plot"
+            - "At least USD 350,000, house to be built within 5 years"
+        - cells:
+            - "Renting out"
+            - "Allowed, through the IRS company or its appointed manager"
+    faqs:
+      - question: "Can foreigners buy under the IRS?"
+        answer: "Yes, in existing IRS projects: villas, townhouses, penthouses, apartments, duplexes and serviced plots of land."
+      - question: "Does an IRS purchase give residency?"
+        answer: "Yes, if you buy for USD 375,000 or more. The owner and dependants receive a residence permit, and do not need an occupation or work permit to invest and work in Mauritius."
+      - question: "Can I rent out an IRS villa?"
+        answer: "Yes. The EDB says owners may rent their property, become tax resident in Mauritius and repatriate the money from renting or selling without restriction."
+      - question: "How much is the registration duty under the IRS?"
+        answer: "On a first purchase from the IRS company: USD 70,000 or 5% of the price, whichever is lower. On a resale the buyer pays 5% and the seller pays 5% land transfer tax."
+    seoDescription: "Integrated Resort Scheme (IRS) Mauritius: what foreigners can buy, the residence permit from USD 375,000, registration duty and renting out, from official EDB sources."
   fr:
     title: IRS (Integrated Resort Scheme)
     excerpt: Texte provisoire, à rédiger.

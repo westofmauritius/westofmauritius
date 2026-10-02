@@ -1,10 +1,71 @@
 kind: general
 order: 1
-placeholder: true
+placeholder: false
+publishedAt: '2026-10-02'
+updatedAt: '2026-10-02'
+sources:
+  - title: "Residential real estate in Mauritius"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/acquire/
+    checkedAt: '2026-10-02'
+  - title: "Guidelines for buyers of residential property under the IRS, RES and PDS (November 2024)"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/wp-content/uploads/2021/06/Guidelines-for-IRS-RES-PDS.pdf
+    checkedAt: '2026-10-02'
+  - title: "Ground plus two apartments"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/acquire/ground-2-appartments/
+    checkedAt: '2026-10-02'
+  - title: "Property Development Scheme (PDS)"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/acquire/property-development-scheme/
+    checkedAt: '2026-10-02'
+  - title: "Legislation for foreign residents"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/practical-information/legislation/
+    checkedAt: '2026-10-02'
 content:
   en:
-    title: How buying works
-    excerpt: Placeholder, to be written.
+    title: "How buying property in Mauritius works for foreigners"
+    excerpt: "The five ways a foreigner can buy a home in Mauritius, which ones come with a residence permit, and the steps from reservation to keys."
+    shortAnswer: "Foreigners can buy homes in Mauritius through approved schemes (IRS, RES, PDS and Smart City) or as an apartment in a building of at least ground plus two floors from MUR 6 million. A purchase of USD 375,000 or more comes with a residence permit. The developer or your representative applies to the Economic Development Board, you pay with money from abroad, and the sale is completed before a notary."
+    table:
+      caption: "Ways to buy as a foreigner"
+      headers:
+        - ""
+        - "What you can buy"
+        - "Residence permit"
+      rows:
+        - cells:
+            - "PDS"
+            - "Villas, apartments, penthouses and serviced plots in approved projects"
+            - "From USD 375,000"
+        - cells:
+            - "IRS"
+            - "Homes and serviced plots in existing resort projects"
+            - "From USD 375,000"
+        - cells:
+            - "RES"
+            - "Homes in existing smaller developments"
+            - "From USD 375,000"
+        - cells:
+            - "Smart City"
+            - "Homes in approved smart cities"
+            - "From USD 375,000"
+        - cells:
+            - "Ground plus two apartment"
+            - "An apartment in a building of at least two floors above ground, from MUR 6 million"
+            - "From USD 375,000"
+    faqs:
+      - question: "Can foreigners buy property in Mauritius?"
+        answer: "Yes, through the schemes approved by the Economic Development Board (IRS, RES, PDS and Smart City) or by buying an apartment of at least MUR 6 million in a building with at least two floors above the ground floor."
+      - question: "Does buying property give you residency in Mauritius?"
+        answer: "Yes, when the property costs USD 375,000 or more. The permit lasts for as long as you own the property."
+      - question: "Do I have to pay in foreign currency?"
+        answer: "Foreign buyers pay in US dollars or another freely convertible currency, with funds brought in from abroad through a bank. With a rupee loan from a Mauritian bank, the first USD 500,000 must still come in foreign currency."
+      - question: "How much are the taxes when buying?"
+        answer: "Under the PDS the buyer pays 5% registration duty. Under the IRS and RES a first purchase costs USD 70,000 or 5% of the price, whichever is lower. The EDB charges MUR 25,000 to process the application."
+    seoDescription: "How to buy property in Mauritius as a foreigner: the five legal routes, the USD 375,000 residence permit, costs and step by step process, from official EDB sources."
   fr:
     title: Comment acheter
     slug: comment-acheter
