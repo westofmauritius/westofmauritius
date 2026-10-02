@@ -9,6 +9,12 @@ type ResponsiveImageProps = {
   sizes: string;
   /** The main image at the top of a page: preload it and fetch it first. */
   priority?: boolean;
+  /**
+   * Widest file to offer. Cards and thumbnails never need more than 1280 px
+   * (a quarter of a large screen at 2x), and every extra width makes the
+   * page's HTML longer; the main images at the top of a page get them all.
+   */
+  maxWidth?: number;
   className?: string;
 };
 
@@ -26,9 +32,10 @@ export function ResponsiveImage({
   alt,
   sizes,
   priority,
+  maxWidth = priority ? Infinity : 1280,
   className,
 }: ResponsiveImageProps) {
-  const { props } = getImageProps({
+  const { props: raw } = getImageProps({
     src,
     alt,
     fill: true,
@@ -37,6 +44,7 @@ export function ResponsiveImage({
     loading: priority ? "eager" : "lazy",
     fetchPriority: priority ? "high" : undefined,
   });
+  const props = { ...raw, srcSet: capWidths(raw.srcSet, maxWidth) };
   const avif = optimizableImage.test(src)
     ? {
         src: props.src.replace(/\.webp$/, ".avif"),
@@ -67,4 +75,13 @@ export function ResponsiveImage({
       <img {...props} />
     </picture>
   );
+}
+
+/** Drops srcset candidates wider than `max` ("…-1920.webp 1920w"). */
+function capWidths(srcSet: string | undefined, max: number) {
+  if (!srcSet || max === Infinity) return srcSet;
+  const kept = srcSet
+    .split(", ")
+    .filter((candidate) => Number(candidate.match(/ (\d+)w$/)?.[1]) <= max);
+  return kept.length > 0 ? kept.join(", ") : srcSet;
 }

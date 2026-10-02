@@ -7,6 +7,8 @@ import { Container } from "@/components/ui/Container";
 import { resolveLocale } from "@/i18n/locale";
 import { localeAlternates } from "@/lib/seo/alternates";
 import { openGraphBase } from "@/lib/seo/open-graph";
+import { seoTitle } from "@/lib/seo/titles";
+import { brandName } from "@/lib/site";
 
 type Props = PageProps<"/[locale]/community">;
 
@@ -14,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const locale = await resolveLocale(params);
   const t = await getTranslations({ locale, namespace: "Pages.community" });
   return {
-    title: t("metaTitle"),
+    title: seoTitle(t("metaTitle"), brandName[locale]),
     description: t("intro"),
     alternates: localeAlternates("/community", locale),
     openGraph: {

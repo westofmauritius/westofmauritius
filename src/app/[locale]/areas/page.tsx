@@ -10,6 +10,8 @@ import { resolveLocale } from "@/i18n/locale";
 import { getAreas } from "@/lib/content/areas";
 import { localeAlternates } from "@/lib/seo/alternates";
 import { openGraphBase } from "@/lib/seo/open-graph";
+import { seoTitle } from "@/lib/seo/titles";
+import { brandName } from "@/lib/site";
 
 export async function generateMetadata({
   params,
@@ -17,13 +19,13 @@ export async function generateMetadata({
   const locale = await resolveLocale(params);
   const t = await getTranslations({ locale, namespace: "Pages.areas" });
   return {
-    title: t("title"),
-    description: t("intro"),
+    title: seoTitle(t("metaTitle"), brandName[locale]),
+    description: t("metaDescription"),
     alternates: localeAlternates("/areas", locale),
     openGraph: {
       ...openGraphBase(locale),
-      title: t("title"),
-      description: t("intro"),
+      title: t("metaTitle"),
+      description: t("metaDescription"),
     },
   };
 }

@@ -24,6 +24,8 @@ import { closedDays, formatDays } from "@/lib/opening-hours";
 import { localeAlternates } from "@/lib/seo/alternates";
 import { ogImage } from "@/lib/seo/og-images";
 import { openGraphBase } from "@/lib/seo/open-graph";
+import { seoTitle } from "@/lib/seo/titles";
+import { brandName } from "@/lib/site";
 import { placeSchema } from "@/lib/seo/schema";
 import { absoluteUrl } from "@/lib/seo/urls";
 
@@ -40,10 +42,18 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const locale = await resolveLocale(params);
   const { slug } = await params;
-  const place = await getPlace(slug, locale);
+  const [place, t] = await Promise.all([
+    getPlace(slug, locale),
+    getTranslations({ locale, namespace: "Metadata" }),
+  ]);
   if (!place) return {};
+  // "Le Morne Brabant, Mauritius: map and visitor guide", shortened to
+  // "…, Mauritius" when a long name would push it past what Google shows.
+  const long = t("placeTitle", { name: place.name });
+  const title =
+    long.length <= 60 ? long : t("placeTitleShort", { name: place.name });
   return {
-    title: place.name,
+    title: seoTitle(title, brandName[locale]),
     description: place.seoDescription,
     alternates: localeAlternates(
       { pathname: "/places/[slug]", params: { slug } },
@@ -53,7 +63,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ...openGraphBase(locale),
       // Drawn at build time from the main photo, with the title on it.
       images: ogImage(locale, place.name, "places", slug),
-      title: place.name,
+      title,
       description: place.seoDescription,
     },
     ...(place.placeholder && { robots: { index: false } }),

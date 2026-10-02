@@ -432,3 +432,29 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
   stored with each lead, subscriber and WhatsApp request, sent to Umami
   with the event, and summed in the admin under "Conversions by page".
 - Sources are cleaned on the server (letters, digits, `-`, `/` only).
+
+## Technical SEO and speed pass (October 2026)
+
+- **Titles**: " · West of Mauritius" is added only when the whole title
+  still fits in about 60 characters (`src/lib/seo/titles.ts`); long,
+  specific titles stand alone. Areas read "Tamarin, Mauritius: things to do
+  and living guide", places "Le Morne Brabant, Mauritius: map and visitor
+  guide", and the overview and theme pages have their own search titles
+  and 120 to 160 character descriptions.
+- **Never index drafts**: theme pages with only placeholder examples
+  (restaurants, shopping) are noindex and left out of the sitemap, and so
+  are the legal pages while they are drafts. The sitemap now carries
+  `lastmod` for overview pages (newest content date), areas, guides,
+  articles, places and text pages.
+- **Speed**: links in page content no longer prefetch whole pages as they
+  scroll into view (the header still does). On the start page that was
+  dozens of background requests; Lighthouse on a phone gained about 2 to 3
+  points and place pages went from 95 to 98. Image `srcset` lists stop at
+  1280 px except for the main photo at the top of a page, which cuts the
+  page's HTML. The start page photo is compressed a little harder (it sits
+  under a dark gradient on phones): 55 kB to 35 kB.
+- Lighthouse, mobile, median of three runs on this build: home 95, Tamarin
+  96, beaches guide 96, Living in the West 97, Le Morne Brabant 98,
+  community 98, about 98; accessibility, best practices and SEO 100 on all.
+  Pages that are noindex on purpose (placeholders, French) score below 100
+  on SEO by design.

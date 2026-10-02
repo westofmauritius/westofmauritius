@@ -21,6 +21,8 @@ import {
 import { localeAlternates } from "@/lib/seo/alternates";
 import { ogImage } from "@/lib/seo/og-images";
 import { openGraphBase } from "@/lib/seo/open-graph";
+import { seoTitle } from "@/lib/seo/titles";
+import { brandName } from "@/lib/site";
 
 type Props = PageProps<"/[locale]/guides/[category]">;
 
@@ -48,13 +50,20 @@ async function resolveCategory(params: Props["params"]) {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, key } = await resolveCategory(params);
-  const t = await getTranslations({
-    locale,
-    namespace: `GuideCategories.${key}`,
-  });
+  const placeCategory = guideCategories[key].placeCategory;
+  const [t, guides, places] = await Promise.all([
+    getTranslations({ locale, namespace: `GuideCategories.${key}` }),
+    getGuides(locale, { category: key }),
+    placeCategory ? getPlaces(locale, { category: placeCategory }) : [],
+  ]);
+  // A theme with only placeholder examples so far (restaurants, shopping)
+  // stays out of search engines until real guides or places exist.
+  const hasRealContent =
+    guides.some((g) => !g.placeholder) || places.some((p) => !p.placeholder);
   return {
-    title: t("title"),
-    description: t("intro"),
+    title: seoTitle(t("metaTitle"), brandName[locale]),
+    description: t("metaDescription"),
+    ...(!hasRealContent && { robots: { index: false } }),
     alternates: localeAlternates(
       (l) => ({
         pathname: "/guides/[category]",
@@ -65,8 +74,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       ...openGraphBase(locale),
       images: ogImage(locale, t("title"), "guides", key),
-      title: t("title"),
-      description: t("intro"),
+      title: t("metaTitle"),
+      description: t("metaDescription"),
     },
   };
 }

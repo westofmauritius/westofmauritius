@@ -25,7 +25,9 @@ import { localeAlternates } from "@/lib/seo/alternates";
 import { ogImage } from "@/lib/seo/og-images";
 import { openGraphBase } from "@/lib/seo/open-graph";
 import { areaSchema, faqSchema } from "@/lib/seo/schema";
+import { seoTitle } from "@/lib/seo/titles";
 import { absoluteUrl } from "@/lib/seo/urls";
+import { brandName } from "@/lib/site";
 
 type Props = PageProps<"/[locale]/areas/[slug]">;
 
@@ -40,10 +42,14 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const locale = await resolveLocale(params);
   const { slug } = await params;
-  const area = await getArea(slug, locale);
+  const [area, t] = await Promise.all([
+    getArea(slug, locale),
+    getTranslations({ locale, namespace: "Metadata" }),
+  ]);
   if (!area) return {};
+  const title = t("areaTitle", { name: area.name });
   return {
-    title: area.name,
+    title: seoTitle(title, brandName[locale]),
     description: area.seoDescription,
     alternates: localeAlternates(
       { pathname: "/areas/[slug]", params: { slug } },
@@ -52,7 +58,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       ...openGraphBase(locale),
       images: ogImage(locale, area.name, "areas", slug),
-      title: area.name,
+      title,
       description: area.seoDescription,
     },
     // Placeholder pages stay out of Google until real content is written.

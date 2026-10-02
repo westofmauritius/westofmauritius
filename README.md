@@ -8,6 +8,7 @@ its content is ready.
 
 - What still needs the owner before launch: [TODO_OLIVER.md](TODO_OLIVER.md)
 - Why things are built the way they are: [DECISIONS.md](DECISIONS.md)
+- Which page targets which search: [SEO.md](SEO.md)
 - How to edit content: [docs/content-editing.md](docs/content-editing.md)
 
 ## Stack
@@ -69,7 +70,7 @@ the sharing images in `public/og/`, are generated and not in git.
 
 ```
 content/              Site content, edited through Keystatic
-db/schema.sql         Database tables for leads, contact messages, newsletter
+db/schema.sql         Database tables: leads, contact messages, newsletter, WhatsApp group
 docs/                 Guides for editors
 e2e/                  Playwright end-to-end and accessibility tests
 messages/             Interface texts: en.json, fr.json
@@ -149,16 +150,23 @@ The free Workers plan allows a 3 MB (compressed) Worker; this one is about
 
 ## Forms and leads
 
-- The lead form (`/en/living-in-the-west/enquire`), contact form and newsletter
-  share one pipeline (`src/lib/server/forms.ts`): validation (same rules in
+- The lead form (`/en/living-in-the-west/enquire`), contact form, newsletter
+  and WhatsApp group form (`/en/community`) share one pipeline (`src/lib/server/forms.ts`): validation (same rules in
   the browser and on the server, `src/lib/forms/validation.ts`), honeypot,
   timing check, rate limit per hashed IP, database, e-mail to the owner.
 - Forms also work without JavaScript (normal post, then the thank-you page).
 - Consent texts are versioned (`src/lib/forms/consent.ts`); the version is
   stored with each submission.
 - Newsletter uses double opt-in, with an unsubscribe link from the first e-mail.
-- `/admin` lists leads, messages and subscribers with filters and CSV export.
-- Conversions are tracked as Umami events (`src/lib/analytics.ts`).
+- `/admin` lists leads, messages, subscribers and WhatsApp requests with
+  filters and CSV export, and counts conversions per page.
+- Every CTA and form sends a `source` (the page or block it sits on). It is
+  stored with each conversion and sent with the Umami event
+  (`src/lib/analytics.ts`).
+- Each area page has a "Living in X" section (`AreaLivingSection`); Living
+  in the West articles can be questions or comparisons with a short answer,
+  summary table, FAQ and sources. Author, byline and sources components
+  live in `src/components/author/` and `src/components/content/`.
 
 ## SEO, accessibility and security
 

@@ -13,6 +13,8 @@ import { getLivingArticles } from "@/lib/content/living";
 import type { LivingArticle } from "@/lib/content/types";
 import { localeAlternates } from "@/lib/seo/alternates";
 import { openGraphBase } from "@/lib/seo/open-graph";
+import { seoTitle } from "@/lib/seo/titles";
+import { brandName } from "@/lib/site";
 
 type Props = PageProps<"/[locale]/living-in-the-west">;
 
@@ -20,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const locale = await resolveLocale(params);
   const t = await getTranslations({ locale, namespace: "Pages.live" });
   return {
-    title: t("metaTitle"),
+    title: seoTitle(t("metaTitle"), brandName[locale]),
     description: t("intro"),
     alternates: localeAlternates("/living-in-the-west", locale),
     openGraph: {

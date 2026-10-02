@@ -22,6 +22,7 @@ import type { LivingArticle } from "@/lib/content/types";
 import { localeAlternates } from "@/lib/seo/alternates";
 import { ogImage } from "@/lib/seo/og-images";
 import { openGraphBase } from "@/lib/seo/open-graph";
+import { seoTitle } from "@/lib/seo/titles";
 import { faqSchema, livingArticleSchema } from "@/lib/seo/schema";
 import { absoluteUrl } from "@/lib/seo/urls";
 import { brandName } from "@/lib/site";
@@ -55,7 +56,7 @@ async function load(params: Props["params"]) {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, article } = await load(params);
   return {
-    title: article.title,
+    title: seoTitle(article.title, brandName[locale]),
     description: article.seoDescription,
     alternates: localeAlternates((l) => articleHref(article, l), locale),
     openGraph: {

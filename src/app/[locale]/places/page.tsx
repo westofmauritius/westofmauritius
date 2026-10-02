@@ -12,6 +12,8 @@ import { getPlaces } from "@/lib/content/places";
 import type { PlaceCategory } from "@/lib/content/types";
 import { localeAlternates } from "@/lib/seo/alternates";
 import { openGraphBase } from "@/lib/seo/open-graph";
+import { seoTitle } from "@/lib/seo/titles";
+import { brandName } from "@/lib/site";
 
 const categories: PlaceCategory[] = [
   "restaurant",
@@ -27,13 +29,13 @@ export async function generateMetadata({
   const locale = await resolveLocale(params);
   const t = await getTranslations({ locale, namespace: "Pages.places" });
   return {
-    title: t("title"),
-    description: t("intro"),
+    title: seoTitle(t("metaTitle"), brandName[locale]),
+    description: t("metaDescription"),
     alternates: localeAlternates("/places", locale),
     openGraph: {
       ...openGraphBase(locale),
-      title: t("title"),
-      description: t("intro"),
+      title: t("metaTitle"),
+      description: t("metaDescription"),
     },
   };
 }

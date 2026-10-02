@@ -21,8 +21,25 @@ type LinkProps = Omit<React.ComponentProps<typeof NextLink>, "href"> & {
  * JavaScript on every page smaller. (Client components inside forms use
  * next-intl's Link from ./navigation.)
  */
-export async function Link({ href, locale, hash, ...props }: LinkProps) {
+export async function Link({
+  href,
+  locale,
+  hash,
+  prefetch = false,
+  ...props
+}: LinkProps) {
   const target = locale ?? ((await getLocale()) as Locale);
   const path = getPathname({ href, locale: target });
-  return <NextLink href={hash ? `${path}#${hash}` : path} {...props} />;
+  // No prefetching by default: a page full of cards would otherwise fetch
+  // dozens of pages in the background as they scroll into view, costing
+  // phones data and processor time. Every page is a static file served
+  // from the edge, so a click still opens it quickly. The header keeps
+  // prefetching for the main sections (pass prefetch to opt in).
+  return (
+    <NextLink
+      href={hash ? `${path}#${hash}` : path}
+      prefetch={prefetch}
+      {...props}
+    />
+  );
 }

@@ -137,7 +137,9 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
             {areas.map((area) => (
               <li
                 key={area.slug}
-                className="w-56 shrink-0 snap-start md:w-auto"
+                // 192 px wide on phones: phones then load the 384 px file,
+                // which keeps these off the hero photo's bandwidth.
+                className="w-48 shrink-0 snap-start md:w-auto"
               >
                 <Link
                   href={{
@@ -152,7 +154,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                       fallbackTone={area.placeholderTone}
                       fallbackLabel={area.name}
                       aspect="aspect-[3/4]"
-                      sizes="(min-width: 1024px) 16vw, (min-width: 768px) 33vw, 224px"
+                      sizes="(min-width: 1024px) 16vw, (min-width: 768px) 33vw, 192px"
                       className="transition-transform duration-700 ease-out group-hover:scale-[1.04]"
                     />
                   ) : (

@@ -1,6 +1,9 @@
 {
   "Metadata": {
-    "description": "Le guide de la côte ouest de l’île Maurice : restaurants, plages, couchers de soleil, activités et vie à Tamarin, Rivière Noire, Le Morne, Flic en Flac, La Gaulette et Chamarel."
+    "description": "La côte ouest de l’île Maurice racontée par un Mauricien : plages, couchers de soleil, adresses et vie à Flic en Flac, Tamarin, Rivière Noire, La Gaulette, Le Morne et Chamarel.",
+    "areaTitle": "{name}, île Maurice : que faire et y vivre",
+    "placeTitle": "{name}, île Maurice : carte et visite",
+    "placeTitleShort": "{name}, île Maurice"
   },
   "Nav": {
     "areas": "Régions",
@@ -60,11 +63,15 @@
   "Pages": {
     "areas": {
       "title": "Régions",
-      "intro": "Six lieux le long de la côte ouest, chacun avec son caractère."
+      "intro": "Six lieux le long de la côte ouest, chacun avec son caractère.",
+      "metaTitle": "Les six villages de la côte ouest de Maurice",
+      "metaDescription": "Flic en Flac, Tamarin, Rivière Noire, La Gaulette, Le Morne et Chamarel : l’ambiance de chaque village de la côte ouest, pour un séjour ou pour y vivre."
     },
     "guides": {
       "title": "Guides",
-      "intro": "Plages, couchers de soleil, randonnées, restaurants et boutiques, et tout le côté pratique d’un séjour sur la côte ouest."
+      "intro": "Plages, couchers de soleil, randonnées, restaurants et boutiques, et tout le côté pratique d’un séjour sur la côte ouest.",
+      "metaTitle": "Guides de la côte ouest de Maurice",
+      "metaDescription": "Les guides de la côte ouest de Maurice par un Mauricien : plages, couchers de soleil, randonnées, excursions et infos pratiques, chaque fait vérifié."
     },
     "live": {
       "title": "Vivre dans l’Ouest",
@@ -88,7 +95,9 @@
     },
     "places": {
       "title": "Adresses",
-      "intro": "Restaurants, plages, spots de coucher de soleil, activités et shopping sur toute la côte ouest. Cherchez, ou filtrez par région et par thème."
+      "intro": "Restaurants, plages, spots de coucher de soleil, activités et shopping sur toute la côte ouest. Cherchez, ou filtrez par région et par thème.",
+      "metaTitle": "La côte ouest de Maurice sur une carte",
+      "metaDescription": "Plages, points de vue, cascades et sites de la côte ouest de Maurice sur une seule carte, de Flic en Flac au Morne. Recherche et filtres par secteur."
     },
     "community": {
       "title": "Rejoignez la communauté de la côte ouest",
@@ -179,27 +188,39 @@
   "GuideCategories": {
     "restaurants": {
       "title": "Restaurants",
-      "intro": "Où manger sur la côte ouest, de la paillote les pieds dans le sable au dîner au coucher du soleil."
+      "intro": "Où manger sur la côte ouest, de la paillote les pieds dans le sable au dîner au coucher du soleil.",
+      "metaTitle": "Où manger sur la côte ouest de Maurice",
+      "metaDescription": "Les restaurants de la côte ouest de Maurice, des paillotes de plage aux longs dîners au coucher du soleil, secteur par secteur. Sans classement payant."
     },
     "activities": {
       "title": "Activités",
-      "intro": "Que faire sur terre et sur l’eau le long de la côte ouest."
+      "intro": "Que faire sur terre et sur l’eau le long de la côte ouest.",
+      "metaTitle": "Que faire sur la côte ouest de Maurice",
+      "metaDescription": "Que faire sur la côte ouest de Maurice, sur terre et sur l’eau : randonnées, cascades, histoire et excursions, par un Mauricien."
     },
     "beaches": {
       "title": "Plages",
-      "intro": "Les plages et lagons de la côte ouest, et ce que chacun offre de mieux."
+      "intro": "Les plages et lagons de la côte ouest, et ce que chacun offre de mieux.",
+      "metaTitle": "Les plages de la côte ouest de Maurice",
+      "metaDescription": "Les plages et lagons de la côte ouest de Maurice, de Flic en Flac au Morne, et ce que chacun offre : baignade, snorkeling ou coucher de soleil."
     },
     "sunsets": {
       "title": "Couchers de soleil",
-      "intro": "Les meilleurs endroits pour voir le soleil se coucher sur l’océan Indien."
+      "intro": "Les meilleurs endroits pour voir le soleil se coucher sur l’océan Indien.",
+      "metaTitle": "Couchers de soleil sur la côte ouest de Maurice",
+      "metaDescription": "Les plus beaux endroits pour voir le soleil se coucher sur l’océan Indien, sur la côte ouest de Maurice, et comment bien choisir son heure."
     },
     "shopping": {
       "title": "Shopping",
-      "intro": "Marchés, boutiques et centres commerciaux dans l’Ouest."
+      "intro": "Marchés, boutiques et centres commerciaux dans l’Ouest.",
+      "metaTitle": "Shopping sur la côte ouest de Maurice",
+      "metaDescription": "Marchés, boutiques et centres commerciaux de la côte ouest de Maurice, des marchés de village aux courses du quotidien, secteur par secteur."
     },
     "practical": {
       "title": "Préparer son voyage",
-      "intro": "Saisons, transports, argent, langues et toutes les questions pratiques d’un séjour sur la côte ouest."
+      "intro": "Saisons, transports, argent, langues et toutes les questions pratiques d’un séjour sur la côte ouest.",
+      "metaTitle": "Préparer son voyage sur la côte ouest de Maurice",
+      "metaDescription": "Saisons, vols, déplacements, argent et langues : les infos pratiques pour un séjour sur la côte ouest de Maurice, par un Mauricien."
     }
   },
   "GuidesPage": {

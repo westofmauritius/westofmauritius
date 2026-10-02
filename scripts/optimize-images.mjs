@@ -18,12 +18,25 @@ import sharp from "sharp";
 const widths = [256, 384, 640, 828, 960, 1280, 1920, 2560];
 const photo = /\.(jpe?g|png|webp|avif)$/i;
 
+// The start page photo is the first thing every phone downloads, and on
+// phones it sits under a dark gradient that hides fine detail, so it is
+// compressed a little harder (about a fifth smaller).
+const underGradient = /[/\\]home[/\\]/;
+
 const formats = [
   // effort 2: AVIF encoding is slow at higher settings (minutes per photo)
   // for little gain; this keeps a full rebuild on Cloudflare to a minute or two.
-  { ext: "avif", encode: (img) => img.avif({ quality: 50, effort: 2 }) },
+  {
+    ext: "avif",
+    encode: (img, file) =>
+      img.avif({ quality: underGradient.test(file) ? 40 : 50, effort: 2 }),
+  },
   // effort 6: slower to build, noticeably smaller files for the same quality.
-  { ext: "webp", encode: (img) => img.webp({ quality: 74, effort: 6 }) },
+  {
+    ext: "webp",
+    encode: (img, file) =>
+      img.webp({ quality: underGradient.test(file) ? 66 : 74, effort: 6 }),
+  },
 ];
 
 const source = join("public", "images");
@@ -66,6 +79,7 @@ async function optimize(file) {
           sharp(file)
             .rotate() // respect the camera's orientation flag
             .resize({ width, withoutEnlargement: true }),
+          file,
         )
         .toFile(out);
       made++;

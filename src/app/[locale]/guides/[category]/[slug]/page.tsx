@@ -24,6 +24,7 @@ import { categoryFromSlug, guideCategories } from "@/lib/guide-categories";
 import { localeAlternates } from "@/lib/seo/alternates";
 import { ogImage } from "@/lib/seo/og-images";
 import { openGraphBase } from "@/lib/seo/open-graph";
+import { seoTitle } from "@/lib/seo/titles";
 import { articleSchema } from "@/lib/seo/schema";
 import { absoluteUrl } from "@/lib/seo/urls";
 import { brandName } from "@/lib/site";
@@ -71,7 +72,7 @@ async function load(params: Props["params"]) {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, guide } = await load(params);
   return {
-    title: guide.title,
+    title: seoTitle(guide.title, brandName[locale]),
     description: guide.seoDescription,
     alternates: localeAlternates((l) => guideHref(guide, l), locale),
     openGraph: {
