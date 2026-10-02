@@ -478,3 +478,16 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
   without them, in line with the site's style rule.
 - The French versions of these pages are still placeholders; they must be
   translated before French is switched on.
+
+## Sunset clock (October 2026)
+
+- "Sunset tonight in Tamarin: 18:08 · golden light from 17:39" on the start
+  page, every area page, beach and sunset place pages, and the sunset
+  guide. The site's promise is "the island's finest sunsets"; this makes it
+  useful today, with no invented data: the time is calculated.
+- Calculated in the browser with the US Naval Observatory sunrise equation
+  (`src/lib/sun.ts`), cross-checked against the full NOAA solar equations
+  (same minute). Golden light is when the sun is 6 degrees above the
+  horizon. Mauritius time is UTC+4 all year.
+- The line keeps its space before the time appears, so nothing moves, and
+  rolls over to tomorrow's sunset once tonight's has passed.

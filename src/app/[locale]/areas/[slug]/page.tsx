@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SunsetNow } from "@/components/sun/SunsetNow";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { AreaLivingSection } from "@/components/area/AreaLivingSection";
@@ -135,6 +136,12 @@ export default async function AreaPage({ params }: Props) {
             publishedAt={null}
             updatedAt={area.updatedAt}
             className="mt-8"
+          />
+          <SunsetNow
+            place={area.name}
+            location={area.location}
+            locale={locale}
+            className="mt-5 text-sm text-ink-muted"
           />
           <a
             href="#living"

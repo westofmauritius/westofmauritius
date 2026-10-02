@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SunsetNow } from "@/components/sun/SunsetNow";
 import { getTranslations } from "next-intl/server";
 import { GuideCard } from "@/components/content/GuideCard";
 import { GuideThemes } from "@/components/content/GuideThemes";
@@ -48,6 +49,8 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
     getAuthor(locale),
   ]);
   const c = await getTranslations({ locale, namespace: "Community" });
+  // The hero's sunset clock: Tamarin's bay sits mid coast.
+  const tamarin = areas.find((a) => a.slug === "tamarin");
   const areaName = (slug: string) =>
     areas.find((a) => a.slug === slug)?.name ?? slug;
   // Real places before placeholder examples; within each group featured
@@ -118,6 +121,14 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
               {t("ctaLive")}
             </ButtonLink>
           </div>
+          {tamarin && (
+            <SunsetNow
+              place={tamarin.name}
+              location={tamarin.location}
+              locale={locale}
+              className="mt-8 text-sm text-ocean-100"
+            />
+          )}
         </Container>
       </section>
 

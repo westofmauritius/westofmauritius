@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SunsetNow } from "@/components/sun/SunsetNow";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Byline } from "@/components/author/Byline";
@@ -165,6 +166,14 @@ export default async function GuidePage({ params }: Props) {
             align="center"
             className="mt-8"
           />
+          {guide.category === "sunsets" && guideAreas[0] && (
+            <SunsetNow
+              place={guideAreas[0].name}
+              location={guideAreas[0].location}
+              locale={locale}
+              className="mt-5 text-sm text-ink-muted"
+            />
+          )}
         </Container>
       </header>
 

@@ -482,5 +482,12 @@
     "homeTitle": "Les nouvelles de la côte ouest, par un Mauricien",
     "homeText": "Abonnez vous à la newsletter, ou demandez une invitation au groupe WhatsApp de la côte ouest.",
     "homeCta": "Rejoindre la communauté"
+  },
+  "Sunset": {
+    "tonight": "Coucher du soleil ce soir {place} : {time}",
+    "tomorrow": "Coucher du soleil demain {place} : {time}",
+    "golden": "lumière dorée dès {time}",
+    "tonightAt": "Coucher du soleil ce soir {place} : {time}",
+    "tomorrowAt": "Coucher du soleil demain {place} : {time}"
   }
 }

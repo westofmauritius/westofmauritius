@@ -482,5 +482,12 @@
     "homeTitle": "Insider updates from the west coast, written by a local",
     "homeText": "Join the newsletter, or ask for an invitation to the west coast WhatsApp group.",
     "homeCta": "Join the community"
+  },
+  "Sunset": {
+    "tonight": "Sunset tonight in {place}: {time}",
+    "tomorrow": "Sunset tomorrow in {place}: {time}",
+    "golden": "golden light from {time}",
+    "tonightAt": "Sunset tonight at {place}: {time}",
+    "tomorrowAt": "Sunset tomorrow at {place}: {time}"
   }
 }

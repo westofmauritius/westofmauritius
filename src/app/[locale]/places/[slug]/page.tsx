@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SunsetNow } from "@/components/sun/SunsetNow";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { GuideCard } from "@/components/content/GuideCard";
@@ -123,6 +124,16 @@ export default async function PlacePage({ params }: Props) {
           {category} · {area.name}
         </p>
         <h1 className="max-w-4xl text-display-1">{place.name}</h1>
+        {/* Where the sunset is the point of going: tonight's time. */}
+        {(place.category === "sunset" || place.category === "beach") && (
+          <SunsetNow
+            place={place.name}
+            location={place.location}
+            locale={locale}
+            spot
+            className="mt-4 text-sm text-ink-muted"
+          />
+        )}
         {(place.featured || place.placeholder) && (
           <div className="mt-5 flex gap-2">
             {place.featured && (

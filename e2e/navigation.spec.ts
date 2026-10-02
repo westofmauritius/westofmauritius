@@ -201,3 +201,10 @@ test("old Live in the West addresses redirect permanently", async ({
     "/en/living-in-the-west/buying-property-in-tamarin",
   );
 });
+
+test("area pages show tonight's sunset time", async ({ page }) => {
+  await page.goto("/en/areas/tamarin");
+  await expect(
+    page.getByText(/Sunset (tonight|tomorrow) in Tamarin: \d\d:\d\d/),
+  ).toBeVisible();
+});
