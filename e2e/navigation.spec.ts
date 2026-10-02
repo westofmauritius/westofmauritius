@@ -102,10 +102,14 @@ test("no dashes or hyphens in the visible text", async ({ page }) => {
     "/fr/guides/preparer-son-voyage/preparer-un-sejour-cote-ouest",
     "/en/places/martello-tower-la-preneuse",
     "/fr/vivre-dans-l-ouest/demande",
+    "/en/areas/chamarel",
+    "/en/living-in-the-west/tamarin-vs-grand-baie",
+    "/en/community",
   ]) {
     await page.goto(url);
     const text = await page.locator("body").innerText();
-    expect(text, url).not.toMatch(/[‒-―]|\p{L}-\p{L}/u);
+    // Also "95-metre": a hyphen between letters or digits.
+    expect(text, url).not.toMatch(/[‒-―]|[\p{L}\d]-[\p{L}\d]/u);
   }
 });
 

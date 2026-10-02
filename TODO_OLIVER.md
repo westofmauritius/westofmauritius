@@ -211,3 +211,8 @@ redigera på den publicerade sajten behövs en GitHub-app. Stegen står i
 - [ ] Avsändardomänen verifierad i Resend (punkt 3)
 - [ ] Umami-ID satt (punkt 7)
 - [ ] Riktiga texter genomlästa, platshållare ersatta eller raderade (punkt 8)
+- [ ] `npm run db:migrate` körd igen efter oktoberuppdateringen (WhatsApp-tabellen)
+- [ ] Författarsidan ifylld med bio och foto, "Placeholder" urbockad (punkt 8)
+- [ ] "Living in …" på orterna och frågesidorna ifyllda med källor (punkt 8)
+- [ ] WhatsApp-gruppen skapad när det finns intresse (punkt 7b)
+- [ ] Franska påslagen när texterna är klara (punkt 8b), inte före

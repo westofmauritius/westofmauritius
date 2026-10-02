@@ -14,7 +14,7 @@ export function clientIp(headers: Headers): string {
  * for spam limits, without storing anyone's IP address.
  */
 export async function hashIp(ip: string): Promise<string> {
-  const salt = process.env.IP_HASH_SALT ?? "west-mauritius-dev-salt";
+  const salt = process.env.IP_HASH_SALT ?? "west-of-mauritius-dev-salt";
   const bytes = await crypto.subtle.digest(
     "SHA-256",
     new TextEncoder().encode(`${salt}:${ip}`),
