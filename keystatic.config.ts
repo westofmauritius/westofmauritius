@@ -346,6 +346,86 @@ export default config({
           fields.checkbox({ label: "Has a main photo", defaultValue: false }),
           { true: photo("areas"), false: fields.empty() },
         ),
+        living: fields.object(
+          {
+            placeholder: fields.checkbox({
+              label: "Placeholder",
+              description:
+                "Tick while this section has unchecked or example text. It then shows a visible label and gives search engines no FAQ data.",
+              defaultValue: true,
+            }),
+            updatedAt: fields.date({ label: "Last updated" }),
+            costs: fields.array(
+              fields.object({
+                item: localized(() => ({
+                  text: fields.text({
+                    label: "What",
+                    description: "e.g. Two bedroom apartment, rent per month",
+                  }),
+                })),
+                amount: fields.text({
+                  label: "Typical cost",
+                  description:
+                    "e.g. Rs 40,000 to 60,000. Leave empty until you have a source.",
+                }),
+                checkedAt: fields.date({ label: "Checked on" }),
+                sourceTitle: fields.text({ label: "Source" }),
+                sourceUrl: fields.url({ label: "Source link" }),
+              }),
+              {
+                label: "Costs table",
+                description:
+                  "Every amount needs a date and a source. Never estimate.",
+                itemLabel: (props) =>
+                  props.fields.item.fields.en.fields.text.value || "Row",
+              },
+            ),
+            content: localized(() => ({
+              shortAnswer: fields.text({
+                label: "Short answer",
+                description:
+                  "Two or three sentences: is this a good place to live, and for whom?",
+                multiline: true,
+              }),
+              livingHere: fields.text({
+                label: "Living here",
+                description:
+                  "Daily life. Separate paragraphs with a blank line.",
+                multiline: true,
+              }),
+              pros: fields.array(fields.text({ label: "Pro" }), {
+                label: "Pros",
+                itemLabel: (props) => props.value || "Pro",
+              }),
+              cons: fields.array(fields.text({ label: "Con" }), {
+                label: "Cons",
+                itemLabel: (props) => props.value || "Con",
+              }),
+              schools: fields.text({ label: "Schools", multiline: true }),
+              healthcare: fields.text({
+                label: "Healthcare",
+                multiline: true,
+              }),
+              commuting: fields.text({ label: "Commuting", multiline: true }),
+              faqs: fields.array(
+                fields.object({
+                  question: fields.text({ label: "Question" }),
+                  answer: fields.text({ label: "Answer", multiline: true }),
+                }),
+                {
+                  label: "Questions and answers",
+                  itemLabel: (props) =>
+                    props.fields.question.value || "Question",
+                },
+              ),
+            })),
+          },
+          {
+            label: "Living here",
+            description:
+              "For people thinking of moving here. Shown below the travel text.",
+          },
+        ),
         placeholderTone,
         content: localized(() => ({
           name: fields.text({

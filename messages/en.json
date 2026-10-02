@@ -144,7 +144,8 @@
     "placesTitle": "Places in {name}",
     "placesIntro": "Where to eat, swim and watch the sunset in {name}.",
     "noPlaces": "No places have been added for {name} yet.",
-    "otherAreas": "Other areas on the west coast"
+    "otherAreas": "Other areas on the west coast",
+    "livingLink": "Living in {name}"
   },
   "PlacePage": {
     "details": "Details",
@@ -256,7 +257,11 @@
     "ctaText": "Tell us what you are looking for, and we will put you in touch with people who know the market.",
     "ctaButton": "Start your enquiry",
     "related": "More to read",
-    "updated": "Updated {date}"
+    "updated": "Updated {date}",
+    "moveTitle": "Thinking of moving here?",
+    "moveTitleArea": "Thinking of moving to {area}?",
+    "moveText": "Get a free personal shortlist: tell us what you need, and a local will suggest the areas and homes that fit.",
+    "moveButton": "Get my free shortlist"
   },
   "Forms": {
     "required": "required",
@@ -377,5 +382,27 @@
     "title": "Sources",
     "intro": "The facts on this page were checked against:",
     "checked": "checked {date}"
+  },
+  "AreaLiving": {
+    "eyebrow": "Living here",
+    "title": "Living in {name}",
+    "intro": "For anyone thinking of moving to {name}: daily life, costs, schools, healthcare and getting around.",
+    "placeholder": "This section is being written. Text in [square brackets] is a placeholder, and no figure is shown until it has been checked and sourced.",
+    "shortAnswer": "The short answer",
+    "livingHere": "Daily life",
+    "pros": "Why people like it",
+    "cons": "What to weigh up",
+    "costsTitle": "What it costs",
+    "costsCaption": "Typical costs in {name}, each with the date it was checked and its source.",
+    "costItem": "Item",
+    "costAmount": "Typical cost",
+    "costChecked": "Checked",
+    "costSource": "Source",
+    "notConfirmed": "Not confirmed yet",
+    "schools": "Schools",
+    "healthcare": "Healthcare",
+    "commuting": "Getting around",
+    "faqTitle": "Questions about living in {name}",
+    "updated": "Last updated {date}"
   }
 }

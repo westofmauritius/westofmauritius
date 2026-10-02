@@ -355,3 +355,27 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
   Every Article points at both, so search engines tie all articles to one
   named person. The author page adds a ProfilePage once it is not a
   placeholder.
+
+## Area pages: Living here (October 2026)
+
+- Every area page now has a "Living in X" section below the travel guide,
+  in the order a person deciding to move needs it: a short answer first,
+  daily life, pros and cons, a costs table, schools, healthcare and getting
+  around, questions and answers, then two next steps (a free personal
+  shortlist with the area filled in, or the newsletter).
+- These live on the area pages rather than separate "Living in X" pages, so
+  one strong page per place ranks for both "Tamarin" and "living in
+  Tamarin" instead of two pages competing (see SEO.md).
+- All of it is a clearly marked placeholder: no figures, prices, school
+  names, hospitals or drive times were invented. Cost rows exist with their
+  labels, show "Not confirmed yet" and only display an amount with a date
+  and a source. The questions are real questions people search for; the
+  answers are placeholders.
+- While a section is a placeholder it carries a visible notice, its text is
+  `data-nosnippet` and no FAQPage data is emitted. Once Oliver fills it in
+  and unticks "Placeholder", the FAQ becomes FAQPage structured data.
+- The accordion is native `<details>`: keyboard and screen reader friendly
+  and no JavaScript. The costs table turns into cards on phones instead of
+  scrolling sideways.
+- The area page itself now shows the byline and the sources its facts were
+  checked against.

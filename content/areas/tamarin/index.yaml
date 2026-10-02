@@ -1,6 +1,7 @@
 name: Tamarin
 order: 2
 placeholder: false
+updatedAt: '2026-10-01'
 sources:
   - title: 'Tamarin, Mauritius'
     publisher: Wikipedia
@@ -29,6 +30,113 @@ hero:
     creditUrl: >-
       https://commons.wikimedia.org/wiki/File:Tamarin_Bay_against_the_dramatic_volcanic_backdrop_of_western_Mauritius.jpg
 placeholderTone: sunset
+living:
+  placeholder: true
+  costs:
+    - item:
+        en:
+          text: "Two bedroom apartment, rent per month"
+        fr:
+          text: "Appartement deux chambres, loyer mensuel"
+      amount: ''
+      sourceTitle: ''
+    - item:
+        en:
+          text: "Three bedroom villa, rent per month"
+        fr:
+          text: "Villa trois chambres, loyer mensuel"
+      amount: ''
+      sourceTitle: ''
+    - item:
+        en:
+          text: "Apartment for sale, price per m²"
+        fr:
+          text: "Appartement à vendre, prix au m²"
+      amount: ''
+      sourceTitle: ''
+    - item:
+        en:
+          text: "Groceries for two, per month"
+        fr:
+          text: "Courses pour deux, par mois"
+      amount: ''
+      sourceTitle: ''
+    - item:
+        en:
+          text: "Electricity for a family home, per month"
+        fr:
+          text: "Électricité pour une maison familiale, par mois"
+      amount: ''
+      sourceTitle: ''
+    - item:
+        en:
+          text: "Fibre internet, per month"
+        fr:
+          text: "Internet fibre, par mois"
+      amount: ''
+      sourceTitle: ''
+    - item:
+        en:
+          text: "International school, fees per year"
+        fr:
+          text: "École internationale, frais annuels"
+      amount: ''
+      sourceTitle: ''
+  content:
+    en:
+      shortAnswer: "[Placeholder: two or three sentences answering “Is Tamarin a good place to live, and for whom?”]"
+      livingHere: "[Placeholder: what daily life in Tamarin is like: shops, the beach in the morning, the neighbours, the weekends.]\n\n[Placeholder: who lives here, and what changes between the seasons.]"
+      schools: "[Placeholder: schools near Tamarin that you can confirm, with links to their websites. Never list a school you have not checked.]"
+      healthcare: "[Placeholder: the nearest clinics, pharmacies and hospital, and how long it takes to reach them.]"
+      commuting: "[Placeholder: typical drive times from Tamarin to Port Louis, Ebène and the airport, at rush hour and off peak, and the bus links.]"
+      pros:
+        - "[Placeholder: a real advantage of living in Tamarin]"
+        - "[Placeholder: a real advantage of living in Tamarin]"
+        - "[Placeholder: a real advantage of living in Tamarin]"
+      cons:
+        - "[Placeholder: an honest drawback of living in Tamarin]"
+        - "[Placeholder: an honest drawback of living in Tamarin]"
+        - "[Placeholder: an honest drawback of living in Tamarin]"
+      faqs:
+        - question: "Is Tamarin a good place to live?"
+          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+        - question: "How much does it cost to live in Tamarin?"
+          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+        - question: "Are there good schools near Tamarin?"
+          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+        - question: "Where is the nearest hospital to Tamarin?"
+          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+        - question: "How long is the drive from Tamarin to Port Louis and Ebène?"
+          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+        - question: "Can foreigners buy property in Tamarin?"
+          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+    fr:
+      shortAnswer: "[Texte provisoire : deux ou trois phrases pour répondre à « Pourquoi vivre à Tamarin et pour qui ? »]"
+      livingHere: "[Texte provisoire : la vie quotidienne à Tamarin : commerces, plage le matin, voisinage, fins de semaine.]\n\n[Texte provisoire : qui vit ici, et ce qui change selon les saisons.]"
+      schools: "[Texte provisoire : les écoles proches de Tamarin que vous pouvez confirmer, avec un lien vers leur site. Ne citez jamais une école non vérifiée.]"
+      healthcare: "[Texte provisoire : les cliniques, pharmacies et l’hôpital les plus proches, et le temps pour s’y rendre.]"
+      commuting: "[Texte provisoire : les temps de trajet en voiture de Tamarin vers Port Louis, Ebène et l’aéroport, aux heures de pointe et en heures creuses, et les lignes de bus.]"
+      pros:
+        - "[Texte provisoire : un vrai avantage de vivre à Tamarin]"
+        - "[Texte provisoire : un vrai avantage de vivre à Tamarin]"
+        - "[Texte provisoire : un vrai avantage de vivre à Tamarin]"
+      cons:
+        - "[Texte provisoire : un inconvénient honnête de vivre à Tamarin]"
+        - "[Texte provisoire : un inconvénient honnête de vivre à Tamarin]"
+        - "[Texte provisoire : un inconvénient honnête de vivre à Tamarin]"
+      faqs:
+        - question: "Pourquoi vivre à Tamarin ?"
+          answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+        - question: "Combien coûte la vie à Tamarin ?"
+          answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+        - question: "Quelles sont les bonnes écoles près de Tamarin ?"
+          answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+        - question: "Où se trouve l’hôpital le plus proche de Tamarin ?"
+          answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+        - question: "Quel temps de trajet de Tamarin à Port Louis et Ebène ?"
+          answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+        - question: "Acheter un bien à Tamarin quand on est étranger ?"
+          answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
 content:
   en:
     name: Tamarin

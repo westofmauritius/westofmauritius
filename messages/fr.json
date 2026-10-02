@@ -144,7 +144,8 @@
     "placesTitle": "Adresses à {name}",
     "placesIntro": "Où manger, se baigner et admirer le coucher de soleil à {name}.",
     "noPlaces": "Aucune adresse n’a encore été ajoutée pour {name}.",
-    "otherAreas": "Les autres régions de la côte ouest"
+    "otherAreas": "Les autres régions de la côte ouest",
+    "livingLink": "Vivre {name}"
   },
   "PlacePage": {
     "details": "Infos pratiques",
@@ -256,7 +257,11 @@
     "ctaText": "Décrivez votre projet, nous vous mettrons en relation avec des personnes qui connaissent le marché.",
     "ctaButton": "Faire une demande",
     "related": "À lire aussi",
-    "updated": "Mis à jour le {date}"
+    "updated": "Mis à jour le {date}",
+    "moveTitle": "Envie de vous installer ici ?",
+    "moveTitleArea": "Envie de vous installer {area} ?",
+    "moveText": "Recevez une sélection personnelle gratuite : dites nous ce qu’il vous faut, et un Mauricien vous propose les quartiers et les biens qui correspondent.",
+    "moveButton": "Recevoir ma sélection gratuite"
   },
   "Forms": {
     "required": "obligatoire",
@@ -377,5 +382,27 @@
     "title": "Sources",
     "intro": "Les faits de cette page ont été vérifiés auprès de :",
     "checked": "vérifié le {date}"
+  },
+  "AreaLiving": {
+    "eyebrow": "Vivre ici",
+    "title": "Vivre {name}",
+    "intro": "Pour celles et ceux qui pensent s’installer {name} : vie quotidienne, coût de la vie, écoles, santé et déplacements.",
+    "placeholder": "Cette section est en cours d’écriture. Le texte entre [crochets] est provisoire, et aucun chiffre n’est affiché avant d’être vérifié et sourcé.",
+    "shortAnswer": "En bref",
+    "livingHere": "La vie au quotidien",
+    "pros": "Ce qu’on aime",
+    "cons": "Ce qu’il faut savoir",
+    "costsTitle": "Le coût de la vie",
+    "costsCaption": "Coûts courants {name}, chacun avec sa date de vérification et sa source.",
+    "costItem": "Poste",
+    "costAmount": "Coût courant",
+    "costChecked": "Vérifié le",
+    "costSource": "Source",
+    "notConfirmed": "Pas encore confirmé",
+    "schools": "Écoles",
+    "healthcare": "Santé",
+    "commuting": "Se déplacer",
+    "faqTitle": "Questions sur la vie {name}",
+    "updated": "Mis à jour le {date}"
   }
 }

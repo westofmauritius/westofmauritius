@@ -1,6 +1,7 @@
 name: La Gaulette
 order: 4
 placeholder: false
+updatedAt: '2026-10-01'
 sources:
   - title: 'Rivière Noire District'
     publisher: Wikipedia
@@ -25,6 +26,113 @@ hero:
     creditUrl: >-
       https://commons.wikimedia.org/wiki/File:%C3%8Ele_aux_B%C3%A9nitiers_and_Le_Morne_(22937338593).jpg
 placeholderTone: lagoon
+living:
+  placeholder: true
+  costs:
+    - item:
+        en:
+          text: "Two bedroom apartment, rent per month"
+        fr:
+          text: "Appartement deux chambres, loyer mensuel"
+      amount: ''
+      sourceTitle: ''
+    - item:
+        en:
+          text: "Three bedroom villa, rent per month"
+        fr:
+          text: "Villa trois chambres, loyer mensuel"
+      amount: ''
+      sourceTitle: ''
+    - item:
+        en:
+          text: "Apartment for sale, price per m²"
+        fr:
+          text: "Appartement à vendre, prix au m²"
+      amount: ''
+      sourceTitle: ''
+    - item:
+        en:
+          text: "Groceries for two, per month"
+        fr:
+          text: "Courses pour deux, par mois"
+      amount: ''
+      sourceTitle: ''
+    - item:
+        en:
+          text: "Electricity for a family home, per month"
+        fr:
+          text: "Électricité pour une maison familiale, par mois"
+      amount: ''
+      sourceTitle: ''
+    - item:
+        en:
+          text: "Fibre internet, per month"
+        fr:
+          text: "Internet fibre, par mois"
+      amount: ''
+      sourceTitle: ''
+    - item:
+        en:
+          text: "International school, fees per year"
+        fr:
+          text: "École internationale, frais annuels"
+      amount: ''
+      sourceTitle: ''
+  content:
+    en:
+      shortAnswer: "[Placeholder: two or three sentences answering “Is La Gaulette a good place to live, and for whom?”]"
+      livingHere: "[Placeholder: what daily life in La Gaulette is like: shops, the beach in the morning, the neighbours, the weekends.]\n\n[Placeholder: who lives here, and what changes between the seasons.]"
+      schools: "[Placeholder: schools near La Gaulette that you can confirm, with links to their websites. Never list a school you have not checked.]"
+      healthcare: "[Placeholder: the nearest clinics, pharmacies and hospital, and how long it takes to reach them.]"
+      commuting: "[Placeholder: typical drive times from La Gaulette to Port Louis, Ebène and the airport, at rush hour and off peak, and the bus links.]"
+      pros:
+        - "[Placeholder: a real advantage of living in La Gaulette]"
+        - "[Placeholder: a real advantage of living in La Gaulette]"
+        - "[Placeholder: a real advantage of living in La Gaulette]"
+      cons:
+        - "[Placeholder: an honest drawback of living in La Gaulette]"
+        - "[Placeholder: an honest drawback of living in La Gaulette]"
+        - "[Placeholder: an honest drawback of living in La Gaulette]"
+      faqs:
+        - question: "Is La Gaulette a good place to live?"
+          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+        - question: "How much does it cost to live in La Gaulette?"
+          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+        - question: "Are there good schools near La Gaulette?"
+          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+        - question: "Where is the nearest hospital to La Gaulette?"
+          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+        - question: "How long is the drive from La Gaulette to Port Louis and Ebène?"
+          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+        - question: "Can foreigners buy property in La Gaulette?"
+          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+    fr:
+      shortAnswer: "[Texte provisoire : deux ou trois phrases pour répondre à « Pourquoi vivre à La Gaulette et pour qui ? »]"
+      livingHere: "[Texte provisoire : la vie quotidienne à La Gaulette : commerces, plage le matin, voisinage, fins de semaine.]\n\n[Texte provisoire : qui vit ici, et ce qui change selon les saisons.]"
+      schools: "[Texte provisoire : les écoles proches de La Gaulette que vous pouvez confirmer, avec un lien vers leur site. Ne citez jamais une école non vérifiée.]"
+      healthcare: "[Texte provisoire : les cliniques, pharmacies et l’hôpital les plus proches, et le temps pour s’y rendre.]"
+      commuting: "[Texte provisoire : les temps de trajet en voiture de La Gaulette vers Port Louis, Ebène et l’aéroport, aux heures de pointe et en heures creuses, et les lignes de bus.]"
+      pros:
+        - "[Texte provisoire : un vrai avantage de vivre à La Gaulette]"
+        - "[Texte provisoire : un vrai avantage de vivre à La Gaulette]"
+        - "[Texte provisoire : un vrai avantage de vivre à La Gaulette]"
+      cons:
+        - "[Texte provisoire : un inconvénient honnête de vivre à La Gaulette]"
+        - "[Texte provisoire : un inconvénient honnête de vivre à La Gaulette]"
+        - "[Texte provisoire : un inconvénient honnête de vivre à La Gaulette]"
+      faqs:
+        - question: "Pourquoi vivre à La Gaulette ?"
+          answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+        - question: "Combien coûte la vie à La Gaulette ?"
+          answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+        - question: "Quelles sont les bonnes écoles près de La Gaulette ?"
+          answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+        - question: "Où se trouve l’hôpital le plus proche de La Gaulette ?"
+          answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+        - question: "Quel temps de trajet de La Gaulette à Port Louis et Ebène ?"
+          answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+        - question: "Acheter un bien à La Gaulette quand on est étranger ?"
+          answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
 content:
   en:
     name: La Gaulette

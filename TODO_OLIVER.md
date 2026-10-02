@@ -123,6 +123,21 @@ I Keystatic → Site:
   låt en jurist granska. Bocka sedan ur "Placeholder" så att sidorna
   indexeras.
 
+### "Living in …" på varje ortssida
+
+Varje ort (Keystatic → Areas → välj ort → "Living here") har nu en sektion
+för den som funderar på att flytta dit: kort svar, vardagsliv, för- och
+nackdelar, kostnadstabell, skolor, vård, pendling och vanliga frågor. Allt
+är platshållare. Fyll i med det du vet och kan belägga:
+
+- **Kostnader**: fyll bara i ett belopp när du har en källa. Ange datum
+  ("Checked on") och källa med länk på varje rad. Tomma rader visar "Not
+  confirmed yet".
+- **Skolor och vård**: nämn bara ställen du har kontrollerat, med länk.
+- **Frågorna** är riktiga sökfrågor. Skriv svaren, 2 till 3 meningar.
+- Bocka sedan ur "Placeholder" i sektionen. Då blir frågorna FAQ-data i
+  Google.
+
 ### Läs igenom det riktiga innehållet
 
 Orterna, 19 offentliga platser (stränder, natur, sevärdheter) och sju

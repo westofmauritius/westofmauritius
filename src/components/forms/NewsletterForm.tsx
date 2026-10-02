@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, type FormEvent } from "react";
+import { useEffect, useId, useRef, useState, type FormEvent } from "react";
 import { track } from "@/lib/analytics";
 
 export type NewsletterLabels = {
@@ -30,10 +30,15 @@ export type NewsletterLabels = {
 export function NewsletterForm({
   labels,
   locale,
+  source = "footer",
 }: {
   labels: NewsletterLabels;
   locale: string;
+  /** Where the form sits (e.g. "footer", "area-tamarin"), for statistics. */
+  source?: string;
 }) {
+  // Unique ids: the form can appear twice on a page (footer and in content).
+  const id = useId();
   const [state, setState] = useState<"idle" | "sending" | "success" | "error">(
     "idle",
   );
@@ -76,6 +81,7 @@ export function NewsletterForm({
           email,
           consent,
           locale,
+          source,
           website: form.get("website") ?? "",
           startedAt: String(startedAt.current),
         }),
@@ -85,7 +91,7 @@ export function NewsletterForm({
       };
       if (response.ok && body.ok) {
         setState("success");
-        track("newsletter-signup", { language: locale });
+        track("newsletter-signup", { language: locale, source });
       } else {
         setState("error");
       }
@@ -119,6 +125,7 @@ export function NewsletterForm({
           className="relative mt-5 space-y-4"
         >
           <input type="hidden" name="locale" value={locale} />
+          <input type="hidden" name="source" value={source} />
           {/* Honeypot: hidden from people, tempting for bots. */}
           <div
             aria-hidden="true"
@@ -136,7 +143,7 @@ export function NewsletterForm({
           </div>
 
           <label
-            htmlFor="newsletter-email"
+            htmlFor={`${id}-email`}
             className="block text-sm font-medium text-ocean-100"
           >
             {labels.email}{" "}
@@ -144,20 +151,18 @@ export function NewsletterForm({
               ({labels.required})
             </span>
             <input
-              id="newsletter-email"
+              id={`${id}-email`}
               type="email"
               name="email"
               autoComplete="email"
               required
               aria-invalid={errors.email ? true : undefined}
-              aria-describedby={
-                errors.email ? "newsletter-email-error" : undefined
-              }
+              aria-describedby={errors.email ? `${id}-email-error` : undefined}
               className={`${input} ${errors.email ? "border-coral-300" : "border-white/20"}`}
             />
             {errors.email && (
               <span
-                id="newsletter-email-error"
+                id={`${id}-email-error`}
                 className="mt-1.5 block text-sm text-coral-200"
               >
                 {errors.email}
@@ -167,17 +172,17 @@ export function NewsletterForm({
 
           <div>
             <label
-              htmlFor="newsletter-consent"
+              htmlFor={`${id}-consent`}
               className="flex cursor-pointer items-start gap-3 text-sm leading-relaxed text-ocean-100"
             >
               <input
-                id="newsletter-consent"
+                id={`${id}-consent`}
                 type="checkbox"
                 name="consent"
                 required
                 aria-invalid={errors.consent ? true : undefined}
                 aria-describedby={
-                  errors.consent ? "newsletter-consent-error" : undefined
+                  errors.consent ? `${id}-consent-error` : undefined
                 }
                 className="mt-0.5 size-5 shrink-0 accent-coral-500"
               />
@@ -185,7 +190,7 @@ export function NewsletterForm({
             </label>
             {errors.consent && (
               <span
-                id="newsletter-consent-error"
+                id={`${id}-consent-error`}
                 className="mt-1.5 ml-8 block text-sm text-coral-200"
               >
                 {errors.consent}

@@ -1,6 +1,7 @@
 name: Flic en Flac
 order: 1
 placeholder: false
+updatedAt: '2026-10-01'
 sources:
   - title: 'Flic en Flac'
     publisher: Wikipedia
@@ -25,6 +26,113 @@ hero:
     creditUrl: >-
       https://commons.wikimedia.org/wiki/File:Flic_en_Flac_Beach_in_Mauiritius_(53697781931).jpg
 placeholderTone: lagoon
+living:
+  placeholder: true
+  costs:
+    - item:
+        en:
+          text: "Two bedroom apartment, rent per month"
+        fr:
+          text: "Appartement deux chambres, loyer mensuel"
+      amount: ''
+      sourceTitle: ''
+    - item:
+        en:
+          text: "Three bedroom villa, rent per month"
+        fr:
+          text: "Villa trois chambres, loyer mensuel"
+      amount: ''
+      sourceTitle: ''
+    - item:
+        en:
+          text: "Apartment for sale, price per m²"
+        fr:
+          text: "Appartement à vendre, prix au m²"
+      amount: ''
+      sourceTitle: ''
+    - item:
+        en:
+          text: "Groceries for two, per month"
+        fr:
+          text: "Courses pour deux, par mois"
+      amount: ''
+      sourceTitle: ''
+    - item:
+        en:
+          text: "Electricity for a family home, per month"
+        fr:
+          text: "Électricité pour une maison familiale, par mois"
+      amount: ''
+      sourceTitle: ''
+    - item:
+        en:
+          text: "Fibre internet, per month"
+        fr:
+          text: "Internet fibre, par mois"
+      amount: ''
+      sourceTitle: ''
+    - item:
+        en:
+          text: "International school, fees per year"
+        fr:
+          text: "École internationale, frais annuels"
+      amount: ''
+      sourceTitle: ''
+  content:
+    en:
+      shortAnswer: "[Placeholder: two or three sentences answering “Is Flic en Flac a good place to live, and for whom?”]"
+      livingHere: "[Placeholder: what daily life in Flic en Flac is like: shops, the beach in the morning, the neighbours, the weekends.]\n\n[Placeholder: who lives here, and what changes between the seasons.]"
+      schools: "[Placeholder: schools near Flic en Flac that you can confirm, with links to their websites. Never list a school you have not checked.]"
+      healthcare: "[Placeholder: the nearest clinics, pharmacies and hospital, and how long it takes to reach them.]"
+      commuting: "[Placeholder: typical drive times from Flic en Flac to Port Louis, Ebène and the airport, at rush hour and off peak, and the bus links.]"
+      pros:
+        - "[Placeholder: a real advantage of living in Flic en Flac]"
+        - "[Placeholder: a real advantage of living in Flic en Flac]"
+        - "[Placeholder: a real advantage of living in Flic en Flac]"
+      cons:
+        - "[Placeholder: an honest drawback of living in Flic en Flac]"
+        - "[Placeholder: an honest drawback of living in Flic en Flac]"
+        - "[Placeholder: an honest drawback of living in Flic en Flac]"
+      faqs:
+        - question: "Is Flic en Flac a good place to live?"
+          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+        - question: "How much does it cost to live in Flic en Flac?"
+          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+        - question: "Are there good schools near Flic en Flac?"
+          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+        - question: "Where is the nearest hospital to Flic en Flac?"
+          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+        - question: "How long is the drive from Flic en Flac to Port Louis and Ebène?"
+          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+        - question: "Can foreigners buy property in Flic en Flac?"
+          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+    fr:
+      shortAnswer: "[Texte provisoire : deux ou trois phrases pour répondre à « Pourquoi vivre à Flic en Flac et pour qui ? »]"
+      livingHere: "[Texte provisoire : la vie quotidienne à Flic en Flac : commerces, plage le matin, voisinage, fins de semaine.]\n\n[Texte provisoire : qui vit ici, et ce qui change selon les saisons.]"
+      schools: "[Texte provisoire : les écoles proches de Flic en Flac que vous pouvez confirmer, avec un lien vers leur site. Ne citez jamais une école non vérifiée.]"
+      healthcare: "[Texte provisoire : les cliniques, pharmacies et l’hôpital les plus proches, et le temps pour s’y rendre.]"
+      commuting: "[Texte provisoire : les temps de trajet en voiture de Flic en Flac vers Port Louis, Ebène et l’aéroport, aux heures de pointe et en heures creuses, et les lignes de bus.]"
+      pros:
+        - "[Texte provisoire : un vrai avantage de vivre à Flic en Flac]"
+        - "[Texte provisoire : un vrai avantage de vivre à Flic en Flac]"
+        - "[Texte provisoire : un vrai avantage de vivre à Flic en Flac]"
+      cons:
+        - "[Texte provisoire : un inconvénient honnête de vivre à Flic en Flac]"
+        - "[Texte provisoire : un inconvénient honnête de vivre à Flic en Flac]"
+        - "[Texte provisoire : un inconvénient honnête de vivre à Flic en Flac]"
+      faqs:
+        - question: "Pourquoi vivre à Flic en Flac ?"
+          answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+        - question: "Combien coûte la vie à Flic en Flac ?"
+          answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+        - question: "Quelles sont les bonnes écoles près de Flic en Flac ?"
+          answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+        - question: "Où se trouve l’hôpital le plus proche de Flic en Flac ?"
+          answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+        - question: "Quel temps de trajet de Flic en Flac à Port Louis et Ebène ?"
+          answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+        - question: "Acheter un bien à Flic en Flac quand on est étranger ?"
+          answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
 content:
   en:
     name: Flic en Flac

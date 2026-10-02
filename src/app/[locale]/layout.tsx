@@ -3,8 +3,7 @@ import Script from "next/script";
 import { getTranslations } from "next-intl/server";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
-import { NewsletterForm } from "@/components/forms/NewsletterForm";
-import { consentTexts, currentConsent } from "@/lib/forms/consent";
+import { NewsletterSignup } from "@/components/forms/NewsletterSignup";
 import { resolveLocale } from "@/i18n/locale";
 import { isPublished } from "@/i18n/published";
 import { getPathname, type Href } from "@/i18n/pathname";
@@ -54,7 +53,6 @@ export default async function LocaleLayout({
   const t = await getTranslations({ locale, namespace: "Nav" });
   const f = await getTranslations({ locale, namespace: "Footer" });
   const l = await getTranslations({ locale, namespace: "LanguageSwitcher" });
-  const forms = await getTranslations({ locale, namespace: "Forms" });
   const brand = brandName[locale];
   /** A navigation entry with its public URL in this language (e.g. /fr/regions). */
   const item = (label: string, href: Href) => ({
@@ -134,25 +132,7 @@ export default async function LocaleLayout({
               ],
             },
           ]}
-          newsletter={
-            <NewsletterForm
-              locale={locale}
-              labels={{
-                title: forms("newsletter.title"),
-                text: forms("newsletter.text"),
-                email: forms("newsletter.email"),
-                required: forms("required"),
-                consent: consentTexts[currentConsent.newsletter][locale],
-                submit: forms("newsletter.submit"),
-                sending: forms("status.sending"),
-                successTitle: forms("newsletter.successTitle"),
-                successText: forms("newsletter.successText"),
-                errorEmail: forms("errors.email"),
-                errorConsent: forms("errors.consent"),
-                errorOther: forms("status.unavailable"),
-              }}
-            />
-          }
+          newsletter={<NewsletterSignup locale={locale} source="footer" />}
           legal={`© ${new Date().getFullYear()} ${brand}. ${f("rights")}`}
         />
         {/*

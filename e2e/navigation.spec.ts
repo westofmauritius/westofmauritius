@@ -137,3 +137,27 @@ test("guides name their author, dates and sources", async ({ page }) => {
   await byline.click();
   await expect(page.getByRole("heading", { level: 1 })).toHaveText("Oliver");
 });
+
+test("area pages answer living questions and lead to a shortlist", async ({
+  page,
+}) => {
+  await page.goto("/en/areas/tamarin");
+  const living = page.locator("#living");
+  await expect(
+    living.getByRole("heading", { name: "Living in Tamarin", exact: true }),
+  ).toBeVisible();
+  // FAQ accordion opens with the keyboard.
+  const question = living.getByText("Is Tamarin a good place to live?");
+  await question.focus();
+  await page.keyboard.press("Enter");
+  await expect(living.locator("details").first()).toHaveAttribute("open", "");
+  // The shortlist link carries the area and where it was clicked.
+  await expect(
+    living.getByRole("link", { name: "Get my free shortlist" }),
+  ).toHaveAttribute("href", /area=tamarin.*source=area-living-tamarin/);
+  // Placeholder answers never become FAQ data for search engines.
+  const jsonLd = (
+    await page.locator('script[type="application/ld+json"]').allTextContents()
+  ).join();
+  expect(jsonLd).not.toContain("FAQPage");
+});

@@ -234,3 +234,16 @@ export function profilePageSchema(
     mainEntity: personSchema(author, locale),
   };
 }
+
+/** Questions and answers on a page, for search results (real answers only). */
+export function faqSchema(items: { question: string; answer: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  };
+}

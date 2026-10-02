@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { EnquiryCta } from "@/components/content/EnquiryCta";
+import { AreaLivingSection } from "@/components/area/AreaLivingSection";
+import { Byline } from "@/components/author/Byline";
 import { PlaceCard } from "@/components/content/PlaceCard";
 import { Prose } from "@/components/content/Prose";
+import { Sources } from "@/components/content/Sources";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { placeMarker } from "@/components/map/markers";
 import { SiteMap } from "@/components/map/SiteMap";
@@ -21,7 +23,7 @@ import type { PlaceCategory } from "@/lib/content/types";
 import { localeAlternates } from "@/lib/seo/alternates";
 import { ogImage } from "@/lib/seo/og-images";
 import { openGraphBase } from "@/lib/seo/open-graph";
-import { areaSchema } from "@/lib/seo/schema";
+import { areaSchema, faqSchema } from "@/lib/seo/schema";
 import { absoluteUrl } from "@/lib/seo/urls";
 
 type Props = PageProps<"/[locale]/areas/[slug]">;
@@ -92,6 +94,12 @@ export default async function AreaPage({ params }: Props) {
       {!area.placeholder && (
         <JsonLd data={areaSchema(area, absoluteUrl(href, locale))} />
       )}
+      {/* FAQ data only once the answers are real. */}
+      {!area.placeholder &&
+        !area.living.placeholder &&
+        area.living.faqs.length > 0 && (
+          <JsonLd data={faqSchema(area.living.faqs)} />
+        )}
 
       <Container size="wide" className="pt-8">
         <Breadcrumbs
@@ -114,6 +122,18 @@ export default async function AreaPage({ params }: Props) {
           <p className="mb-4 eyebrow text-coral-600">{area.tagline}</p>
           <h1 className="text-display-1">{area.name}</h1>
           <p className="mt-6 lead text-ink-muted">{area.intro}</p>
+          <Byline
+            locale={locale}
+            publishedAt={null}
+            updatedAt={area.updatedAt}
+            className="mt-8"
+          />
+          <a
+            href="#living"
+            className="mt-6 inline-block text-sm font-medium text-lagoon-700 hover:underline"
+          >
+            {t("AreaPage.livingLink", { name: area.name })} ↓
+          </a>
         </div>
         <Photo
           photo={area.hero}
@@ -137,11 +157,6 @@ export default async function AreaPage({ params }: Props) {
             zoom={area.mapZoom}
             markers={places.map((place) => placeMarker(place, locale))}
             className="aspect-square"
-          />
-          <EnquiryCta
-            area={{ slug: area.slug, name: area.name }}
-            position={`area-${area.slug}`}
-            className="mt-6"
           />
         </aside>
       </Container>
@@ -171,7 +186,10 @@ export default async function AreaPage({ params }: Props) {
         </Container>
       </section>
 
+      <AreaLivingSection area={area} locale={locale} />
+
       <Container size="wide" className="py-16">
+        <Sources sources={area.sources} locale={locale} className="mb-16" />
         <h2 className="mb-6 eyebrow text-ink-muted">
           {t("AreaPage.otherAreas")}
         </h2>

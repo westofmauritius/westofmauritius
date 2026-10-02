@@ -32,6 +32,33 @@ export type Weekday = "mo" | "tu" | "we" | "th" | "fr" | "sa" | "su";
 
 export type OpeningHours = { days: Weekday[]; opens: string; closes: string };
 
+/** One row of an area's costs table. Amount empty = not confirmed yet. */
+export type CostRow = {
+  item: string;
+  amount: string;
+  checkedAt: string | null;
+  sourceTitle: string;
+  sourceUrl: string | null;
+};
+
+export type FaqItem = { question: string; answer: string };
+
+/** An area's "Living here" section, for people thinking of moving. */
+export type AreaLiving = {
+  placeholder: boolean;
+  updatedAt: string | null;
+  shortAnswer: string;
+  /** Paragraphs. */
+  livingHere: string[];
+  pros: string[];
+  cons: string[];
+  schools: string;
+  healthcare: string;
+  commuting: string;
+  faqs: FaqItem[];
+  costs: CostRow[];
+};
+
 export type Area = {
   slug: string;
   name: string;
@@ -42,6 +69,7 @@ export type Area = {
   placeholder: boolean;
   updatedAt: string | null;
   sources: Source[];
+  living: AreaLiving;
   location: LatLng;
   mapZoom: number;
   hero: Photo | null;
