@@ -314,3 +314,18 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
   preview never sends people to production.
 - **Consent texts were re-versioned** with the new name; the old versions
   were deleted, as the site was never live and nobody agreed to them.
+
+## English first, French hidden (October 2026)
+
+- French stays fully built (routes, messages, content fields) so nothing has
+  to be re-architected later, but it is hidden behind one build variable,
+  `NEXT_PUBLIC_FRENCH_PUBLISHED` (`src/i18n/published.ts`).
+- While hidden: no language switcher, `/` always opens `/en` (locale
+  detection off), French hreflang tags and sitemap entries are omitted, and
+  every French page is `noindex, nofollow` from the locale layout. French
+  translation gaps are no longer reported by the content check.
+- Why a build variable rather than deleting French: untranslated or
+  half-translated French pages must never be indexed, yet switching on later
+  should be a one-line change with no code edits.
+- French pages still render if someone types the URL; their canonical points
+  to themselves. That is harmless with noindex and keeps the switch trivial.

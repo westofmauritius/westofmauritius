@@ -2,6 +2,7 @@ import { Container } from "@/components/ui/Container";
 import { Wordmark } from "@/components/ui/Wordmark";
 import { Link } from "@/i18n/Link";
 import type { Locale } from "@/i18n/routing";
+import { publishedLocales } from "@/i18n/published";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { MobileNav } from "./MobileNav";
 import { NavLink } from "./NavLink";
@@ -49,14 +50,21 @@ export function SiteHeader({
               </li>
             ))}
           </ul>
-          <LanguageSwitcher label={languageLabel} locale={locale} />
+          {/* Only when there is more than one public language. */}
+          {publishedLocales.length > 1 && (
+            <LanguageSwitcher label={languageLabel} locale={locale} />
+          )}
         </nav>
 
         <MobileNav
           items={items}
           menuLabel={menuLabel}
           closeLabel={closeLabel}
-          footer={<LanguageSwitcher label={languageLabel} locale={locale} />}
+          footer={
+            publishedLocales.length > 1 ? (
+              <LanguageSwitcher label={languageLabel} locale={locale} />
+            ) : undefined
+          }
         />
       </Container>
     </header>

@@ -30,6 +30,10 @@ export const routing = defineRouting({
   // slugs. This turns off next-intl's duplicate HTTP `Link` header.
   alternateLinks: false,
 
+  // While French is hidden (src/i18n/published.ts), "/" always opens the
+  // English site; once published, the browser's language decides.
+  localeDetection: process.env.NEXT_PUBLIC_FRENCH_PUBLISHED === "true",
+
   // No language cookie: the language is always in the URL, and the first
   // visit to "/" uses the browser's language. Without it, the public site
   // sets no cookies at all, so no cookie banner is needed (DECISIONS.md).

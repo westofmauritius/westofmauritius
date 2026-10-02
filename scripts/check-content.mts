@@ -87,6 +87,8 @@ function checkTranslations(
   label: string,
   content: Record<string, Record<string, unknown>>,
 ) {
+  // While French is hidden (src/i18n/published.ts) its gaps are expected.
+  if (process.env.NEXT_PUBLIC_FRENCH_PUBLISHED !== "true") return;
   const locales = Object.keys(content);
   // "slug" (URL in this language) is optional per language, so skip it.
   const keys = Object.keys(content[locales[0]]).filter(

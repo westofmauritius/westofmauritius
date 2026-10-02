@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { publishedLocales } from "@/i18n/published";
 import { routing, type Locale } from "@/i18n/routing";
 import { absoluteUrl, type Href } from "./urls";
 
@@ -30,7 +31,8 @@ export function localeAlternates(
   const url = (l: Locale) =>
     absoluteUrl(typeof href === "function" ? href(l) : href, l);
   const languages: Record<string, string> = {};
-  for (const l of routing.locales) languages[l] = url(l);
+  // Only published languages get hreflang tags (French is hidden for now).
+  for (const l of publishedLocales) languages[l] = url(l);
   languages["x-default"] = url(routing.defaultLocale);
 
   return {

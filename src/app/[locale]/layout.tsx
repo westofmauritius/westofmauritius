@@ -6,6 +6,7 @@ import { SiteHeader } from "@/components/layout/SiteHeader";
 import { NewsletterForm } from "@/components/forms/NewsletterForm";
 import { consentTexts, currentConsent } from "@/lib/forms/consent";
 import { resolveLocale } from "@/i18n/locale";
+import { isPublished } from "@/i18n/published";
 import { getPathname, type Href } from "@/i18n/pathname";
 import { routing } from "@/i18n/routing";
 import { guideCategories } from "@/lib/guide-categories";
@@ -34,8 +35,11 @@ export async function generateMetadata({
     description: t("description"),
     openGraph: openGraphBase(locale),
     twitter: { card: "summary_large_image" },
-    // Kill switch only: preview hosts are blocked per request (worker.mjs).
-    ...(searchIndexing === "off" && {
+    // Hidden languages (French, until published) and the kill switch keep
+    // pages out of search engines; preview hosts are blocked per request
+    // (worker.mjs). Pages that set robots themselves are placeholders, which
+    // are noindex anyway.
+    ...((searchIndexing === "off" || !isPublished(locale)) && {
       robots: { index: false, follow: false },
     }),
   };

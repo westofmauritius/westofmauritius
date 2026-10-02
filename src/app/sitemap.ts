@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { publishedLocales } from "@/i18n/published";
 import { routing, type Locale } from "@/i18n/routing";
 import { getAreas } from "@/lib/content/areas";
 import { getGuides } from "@/lib/content/guides";
@@ -8,7 +9,7 @@ import { guideCategories, guideCategoryKeys } from "@/lib/guide-categories";
 import { absoluteUrl, type Href } from "@/lib/seo/urls";
 
 /**
- * sitemap.xml: every indexable page in every language, each listing its
+ * sitemap.xml: every indexable page in every published language, each listing its
  * translations (hreflang). Placeholder content and utility pages (thank-you,
  * newsletter status, style guide) are left out on purpose.
  */
@@ -22,9 +23,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority = 0.6,
   ) => {
     const languages = Object.fromEntries(
-      routing.locales.map((l) => [l, absoluteUrl(href(l), l)]),
+      publishedLocales.map((l) => [l, absoluteUrl(href(l), l)]),
     );
-    for (const locale of routing.locales) {
+    // Hidden languages (French, for now) stay out of the sitemap.
+    for (const locale of publishedLocales) {
       entries.push({
         url: absoluteUrl(href(locale), locale),
         ...(lastModified && { lastModified }),

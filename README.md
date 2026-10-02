@@ -126,8 +126,11 @@ The free Workers plan allows a 3 MB (compressed) Worker; this one is about
   ready-made paths as props (see `SiteHeader` → `MobileNav`).
 - Use `localeAlternates()` from `src/lib/seo/alternates.ts` in each page's
   metadata for the canonical URL and hreflang tags.
-- `src/middleware.ts` sends visitors from `/` to `/en` or `/fr` based on their
-  browser language.
+- `src/middleware.ts` sends visitors from `/` to `/en` (or, once French is
+  published, to the browser's language).
+- French is hidden until its content is ready: one build variable,
+  `NEXT_PUBLIC_FRENCH_PUBLISHED=true`, turns on the switcher, French
+  hreflang, French sitemap entries and indexing (`src/i18n/published.ts`).
 
 ## Content
 

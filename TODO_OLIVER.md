@@ -141,6 +141,13 @@ bort de uppgifterna. Byt gärna till egna foton med tiden.
 
 Hitta aldrig på recensioner, betyg eller priser.
 
+## 8b. Slå på franska (när de franska texterna är klara)
+
+Franska versionen finns redan men är dold: ingen språkväxlare, inga franska
+sidor i sitemap och franska sidor har `noindex`. När texterna är genomlästa:
+Cloudflare → Build variables → `NEXT_PUBLIC_FRENCH_PUBLISHED` = `true`, och
+bygg om. Allt annat slås på automatiskt.
+
 ## 9. Redigera innehåll direkt på sajten (valfritt)
 
 Lokalt fungerar Keystatic redan (`npm run dev` → `/keystatic`). För att
