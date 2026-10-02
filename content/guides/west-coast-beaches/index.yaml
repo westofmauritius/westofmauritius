@@ -1,5 +1,22 @@
 category: beaches
 placeholder: false
+sources:
+  - title: 'Flic en Flac'
+    publisher: Wikipedia
+    url: https://en.wikipedia.org/wiki/Flic-en-Flac
+    checkedAt: '2026-10-01'
+  - title: 'Tamarin, Mauritius'
+    publisher: Wikipedia
+    url: https://en.wikipedia.org/wiki/Tamarin,_Mauritius
+    checkedAt: '2026-10-01'
+  - title: 'Le Morne Brabant'
+    publisher: Wikipedia
+    url: https://en.wikipedia.org/wiki/Le_Morne_Brabant
+    checkedAt: '2026-10-01'
+  - title: 'Rivière Noire District'
+    publisher: Wikipedia
+    url: https://en.wikipedia.org/wiki/Rivière_Noire_District
+    checkedAt: '2026-10-01'
 featured: true
 publishedAt: '2026-10-01'
 areas:

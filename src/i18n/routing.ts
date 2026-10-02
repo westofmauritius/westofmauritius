@@ -65,6 +65,7 @@ export const routing = defineRouting({
       fr: "/vivre-dans-l-ouest/[slug]",
     },
     "/about": { en: "/about", fr: "/a-propos" },
+    "/about/oliver": { en: "/about/oliver", fr: "/a-propos/oliver" },
     "/contact": "/contact",
     "/privacy": { en: "/privacy", fr: "/confidentialite" },
     "/cookies": "/cookies",

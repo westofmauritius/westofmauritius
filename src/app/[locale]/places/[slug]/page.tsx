@@ -15,6 +15,7 @@ import { Photo } from "@/components/ui/Photo";
 import { PlaceholderNotice } from "@/components/ui/PlaceholderNotice";
 import { getPathname } from "@/i18n/pathname";
 import { resolveLocale } from "@/i18n/locale";
+import { longDate } from "@/lib/dates";
 import { routing } from "@/i18n/routing";
 import { getAreas } from "@/lib/content/areas";
 import { getGuides } from "@/lib/content/guides";
@@ -80,7 +81,7 @@ export default async function PlacePage({ params }: Props) {
   const href = { pathname: "/places/[slug]", params: { slug } } as const;
   const category = t(`Categories.${place.category}.one`);
   const closed = closedDays(place.openingHours);
-  const dateFormat = new Intl.DateTimeFormat(locale, { dateStyle: "long" });
+  const dateFormat = longDate(locale);
 
   return (
     <>
@@ -280,7 +281,7 @@ export default async function PlacePage({ params }: Props) {
             <p className="mt-6 text-xs text-ink-muted">
               {place.lastVerified &&
                 t("PlacePage.lastVerified", {
-                  date: dateFormat.format(new Date(place.lastVerified)),
+                  date: dateFormat(place.lastVerified),
                 }) + " "}
               {t("PlacePage.checkDetails")}
             </p>

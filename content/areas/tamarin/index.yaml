@@ -1,6 +1,15 @@
 name: Tamarin
 order: 2
 placeholder: false
+sources:
+  - title: 'Tamarin, Mauritius'
+    publisher: Wikipedia
+    url: https://en.wikipedia.org/wiki/Tamarin,_Mauritius
+    checkedAt: '2026-10-01'
+  - title: 'Rivière Noire District'
+    publisher: Wikipedia
+    url: https://en.wikipedia.org/wiki/Rivière_Noire_District
+    checkedAt: '2026-10-01'
 location:
   lat: -20.328
   lng: 57.375

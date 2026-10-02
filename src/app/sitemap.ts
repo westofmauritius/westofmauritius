@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { publishedLocales } from "@/i18n/published";
 import { routing, type Locale } from "@/i18n/routing";
 import { getAreas } from "@/lib/content/areas";
+import { getAuthor } from "@/lib/content/author";
 import { getGuides } from "@/lib/content/guides";
 import { getLivingArticles } from "@/lib/content/living";
 import { getPlaces } from "@/lib/content/places";
@@ -64,17 +65,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }
 
   const locale = routing.defaultLocale;
-  const [areas, places, guides, living] = await Promise.all([
+  const [areas, places, guides, living, author] = await Promise.all([
     getAreas(locale),
     getPlaces(locale),
     getGuides(locale),
     getLivingArticles(locale),
+    getAuthor(locale),
   ]);
+
+  // The author page joins once the bio is written.
+  if (!author.placeholder) add(() => "/about/oliver", null, 0.5);
 
   for (const area of areas.filter((a) => !a.placeholder)) {
     add(
       () => ({ pathname: "/areas/[slug]", params: { slug: area.slug } }),
-      null,
+      area.updatedAt,
       0.8,
     );
   }
@@ -104,7 +109,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         pathname: "/live-in-the-west/[slug]",
         params: { slug: article.slugs[l] },
       }),
-      article.updatedAt,
+      article.updatedAt ?? article.publishedAt,
       0.7,
     );
   }

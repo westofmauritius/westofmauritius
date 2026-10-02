@@ -2,6 +2,7 @@ import "server-only";
 import { cache } from "react";
 import { routing, type Locale } from "@/i18n/routing";
 import { typeset } from "@/lib/typography";
+import { toSources } from "./photo";
 import { reader } from "./reader";
 import type { LivingArticle, LivingKind, WithBody } from "./types";
 
@@ -23,7 +24,9 @@ function toArticle(key: string, entry: LivingEntry, locale: Locale): LivingArtic
     excerpt: typeset(text.excerpt, locale),
     seoDescription: text.seoDescription || text.excerpt,
     placeholder: entry.placeholder,
+    publishedAt: entry.publishedAt,
     updatedAt: entry.updatedAt,
+    sources: toSources(entry.sources),
   };
 }
 

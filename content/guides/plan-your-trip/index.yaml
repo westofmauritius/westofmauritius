@@ -1,5 +1,22 @@
 category: practical
 placeholder: false
+sources:
+  - title: 'Mauritius'
+    publisher: Wikipedia
+    url: https://en.wikipedia.org/wiki/Mauritius
+    checkedAt: '2026-10-01'
+  - title: 'Sir Seewoosagur Ramgoolam International Airport'
+    publisher: Wikipedia
+    url: https://en.wikipedia.org/wiki/Sir_Seewoosagur_Ramgoolam_International_Airport
+    checkedAt: '2026-10-01'
+  - title: 'Telephone numbers in Mauritius'
+    publisher: Wikipedia
+    url: https://en.wikipedia.org/wiki/Telephone_numbers_in_Mauritius
+    checkedAt: '2026-10-01'
+  - title: 'Mauritius Time'
+    publisher: Wikipedia
+    url: https://en.wikipedia.org/wiki/Mauritius_Time
+    checkedAt: '2026-10-01'
 featured: false
 publishedAt: '2026-10-01'
 areas: []

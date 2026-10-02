@@ -136,6 +136,35 @@ const photo = (directory: string) =>
     creditUrl: fields.url({ label: "Credit link" }),
   });
 
+/**
+ * Where the facts in an entry come from. Shown as a "Sources" list at the
+ * end of the page, so readers (and search engines) can check our work.
+ */
+const sources = () =>
+  fields.array(
+    fields.object({
+      title: fields.text({
+        label: "Title",
+        description: "The page or document, e.g. Le Morne Brabant.",
+        validation: { isRequired: true },
+      }),
+      publisher: fields.text({
+        label: "Publisher",
+        description: "e.g. Wikipedia, Statistics Mauritius, UNESCO.",
+      }),
+      url: fields.url({ label: "Link", validation: { isRequired: true } }),
+      checkedAt: fields.date({
+        label: "Checked on",
+        description: "When you last checked the facts against this source.",
+      }),
+    }),
+    {
+      label: "Sources",
+      description: "Add every source you checked facts against.",
+      itemLabel: (props) => props.fields.title.value || "Source",
+    },
+  );
+
 /** A simple page of text (About, privacy policy …), one block per language. */
 function textPage(label: string, path: `${string}/`) {
   return singleton({
@@ -211,7 +240,7 @@ export default config({
   ui: {
     brand: { name: "West of Mauritius" },
     navigation: {
-      Site: ["homepage", "about", "privacy", "cookies", "terms"],
+      Site: ["homepage", "about", "author", "privacy", "cookies", "terms"],
       Guide: ["areas", "places", "guides"],
       "Live in the West": ["living"],
     },
@@ -221,6 +250,52 @@ export default config({
     privacy: textPage("Privacy policy", "content/pages/privacy/"),
     cookies: textPage("Cookies", "content/pages/cookies/"),
     terms: textPage("Terms of use", "content/pages/terms/"),
+    author: singleton({
+      label: "Author (Oliver)",
+      path: "content/author/",
+      format: { data: "yaml" },
+      schema: {
+        placeholder: fields.checkbox({
+          label: "Placeholder",
+          description:
+            "Tick while the bio is not written yet. The author page is then hidden from search engines and the short bio is not shown elsewhere.",
+          defaultValue: true,
+        }),
+        name: fields.text({
+          label: "Name",
+          validation: { isRequired: true },
+        }),
+        photo: fields.conditional(
+          fields.checkbox({ label: "Has a portrait", defaultValue: false }),
+          { true: photo("author"), false: fields.empty() },
+        ),
+        links: fields.array(
+          fields.url({
+            label: "Profile link",
+            description: "e.g. your Instagram or LinkedIn page.",
+          }),
+          {
+            label: "Profile links",
+            description:
+              "Public profiles that are yours. Search engines use them to know who the author is.",
+            itemLabel: (props) => props.value || "Link",
+          },
+        ),
+        content: localized(() => ({
+          role: fields.text({
+            label: "One line under your name",
+            description: "e.g. Mauritian, founder and editor.",
+          }),
+          shortBio: fields.text({
+            label: "Short bio",
+            description: "Two or three sentences, shown on the start page.",
+            multiline: true,
+          }),
+          body: fields.markdoc({ label: "Your story" }),
+          seoDescription: seoDescription(),
+        })),
+      },
+    }),
     homepage: singleton({
       label: "Start page",
       path: "content/homepage/",
@@ -258,6 +333,8 @@ export default config({
           defaultValue: 1,
         }),
         placeholder,
+        updatedAt: fields.date({ label: "Last updated" }),
+        sources: sources(),
         location: location("Map centre"),
         mapZoom: fields.integer({
           label: "Map zoom",
@@ -418,6 +495,7 @@ export default config({
           defaultValue: { kind: "today" },
         }),
         updatedAt: fields.date({ label: "Last updated" }),
+        sources: sources(),
         areas: fields.multiRelationship({
           label: "Areas covered",
           collection: "areas",
@@ -476,7 +554,12 @@ export default config({
         }),
         order: fields.integer({ label: "Order", defaultValue: 1 }),
         placeholder,
+        publishedAt: fields.date({
+          label: "Published",
+          defaultValue: { kind: "today" },
+        }),
         updatedAt: fields.date({ label: "Last updated" }),
+        sources: sources(),
         content: localized(() => ({
           title: fields.text({
             label: "Title",

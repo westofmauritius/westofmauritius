@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { Byline } from "@/components/author/Byline";
 import { EnquiryCta } from "@/components/content/EnquiryCta";
 import { GuideCard } from "@/components/content/GuideCard";
 import { PlaceCard } from "@/components/content/PlaceCard";
 import { Prose } from "@/components/content/Prose";
+import { Sources } from "@/components/content/Sources";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Container } from "@/components/ui/Container";
@@ -14,6 +16,7 @@ import { Link } from "@/i18n/Link";
 import { resolveLocale } from "@/i18n/locale";
 import type { Locale } from "@/i18n/routing";
 import { getAreas } from "@/lib/content/areas";
+import { getAuthor } from "@/lib/content/author";
 import { getGuide, getGuides } from "@/lib/content/guides";
 import { getPlaces } from "@/lib/content/places";
 import type { Guide } from "@/lib/content/types";
@@ -86,11 +89,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function GuidePage({ params }: Props) {
   const { locale, guide } = await load(params);
-  const [t, allPlaces, areas, sameCategory] = await Promise.all([
+  const [t, allPlaces, areas, sameCategory, author] = await Promise.all([
     getTranslations({ locale }),
     getPlaces(locale),
     getAreas(locale),
     getGuides(locale, { category: guide.category }),
+    getAuthor(locale),
   ]);
 
   // Keep the order chosen in the editor.
@@ -104,7 +108,6 @@ export default async function GuidePage({ params }: Props) {
 
   const categoryTitle = t(`GuideCategories.${guide.category}.title`);
   const categorySlug = guideCategories[guide.category].slug[locale];
-  const dateFormat = new Intl.DateTimeFormat(locale, { dateStyle: "long" });
   const url = absoluteUrl(guideHref(guide, locale), locale);
 
   return (
@@ -115,6 +118,7 @@ export default async function GuidePage({ params }: Props) {
           data={articleSchema(guide, url, {
             locale,
             brand: brandName[locale],
+            author,
             mentions: places.map((p) => ({
               name: p.name,
               url: absoluteUrl(
@@ -153,20 +157,13 @@ export default async function GuidePage({ params }: Props) {
           {guide.excerpt && (
             <p className="mt-6 lead text-ink-muted">{guide.excerpt}</p>
           )}
-          <p className="mt-6 text-sm text-ink-muted">
-            {guide.publishedAt &&
-              t("GuidePage.published", {
-                date: dateFormat.format(new Date(guide.publishedAt)),
-              })}
-            {guide.updatedAt && (
-              <>
-                {" · "}
-                {t("GuidePage.updated", {
-                  date: dateFormat.format(new Date(guide.updatedAt)),
-                })}
-              </>
-            )}
-          </p>
+          <Byline
+            locale={locale}
+            publishedAt={guide.publishedAt}
+            updatedAt={guide.updatedAt}
+            align="center"
+            className="mt-8"
+          />
         </Container>
       </header>
 
@@ -183,6 +180,7 @@ export default async function GuidePage({ params }: Props) {
 
       <Container size="prose" className="py-14">
         <Prose node={guide.body} locale={locale} />
+        <Sources sources={guide.sources} locale={locale} className="mt-12" />
         <EnquiryCta position={`guide-${guide.key}`} className="mt-12" />
 
         {guideAreas.length > 0 && (

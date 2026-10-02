@@ -1,0 +1,24 @@
+placeholder: true
+name: Oliver
+photo:
+  discriminant: false
+links: []
+content:
+  en:
+    role: Mauritian, founder and editor
+    shortBio: >-
+      [Placeholder: two or three sentences in your own words. For example,
+      your connection to the west coast and why you started this guide.]
+    seoDescription: >-
+      Oliver is the Mauritian behind West of Mauritius, an independent guide
+      to the west coast of Mauritius for visitors and people moving there.
+  fr:
+    role: Mauricien, fondateur et rédacteur
+    shortBio: >-
+      [Texte provisoire : deux ou trois phrases avec vos propres mots, par
+      exemple votre lien avec la côte ouest et pourquoi vous avez créé ce
+      guide.]
+    seoDescription: >-
+      Oliver est le Mauricien derrière Ouest Maurice, un guide indépendant de
+      la côte ouest de l’île Maurice pour les visiteurs et les futurs
+      résidents.

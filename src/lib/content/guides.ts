@@ -3,7 +3,7 @@ import { cache } from "react";
 import { routing, type Locale } from "@/i18n/routing";
 import type { GuideCategory } from "@/lib/guide-categories";
 import { typeset } from "@/lib/typography";
-import { toOptionalPhoto } from "./photo";
+import { toOptionalPhoto, toSources } from "./photo";
 import { reader } from "./reader";
 import type { Guide, WithBody } from "./types";
 
@@ -27,6 +27,7 @@ function toGuide(key: string, entry: GuideEntry, locale: Locale): Guide {
     featured: entry.featured,
     publishedAt: entry.publishedAt,
     updatedAt: entry.updatedAt,
+    sources: toSources(entry.sources),
     areaSlugs: [...entry.areas],
     placeSlugs: [...entry.places],
     hero: toOptionalPhoto(entry.hero, locale),

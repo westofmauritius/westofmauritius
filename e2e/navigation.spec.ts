@@ -121,3 +121,19 @@ test("photo credits live on their own page, not on the photos", async ({
   await expect(page).toHaveURL(/\/en\/credits$/);
   await expect(page.getByText(/Licence: CC/).first()).toBeVisible();
 });
+
+test("guides name their author, dates and sources", async ({ page }) => {
+  await page.goto("/en/guides/activities/hiking-in-the-west");
+  const byline = page.getByRole("link", { name: "Oliver" }).first();
+  await expect(byline).toHaveAttribute("href", "/en/about/oliver");
+  await expect(page.getByText(/Last updated \d+ \w+ 20\d\d/)).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Sources" })).toBeVisible();
+  const jsonLd = (
+    await page.locator('script[type="application/ld+json"]').allTextContents()
+  ).join();
+  expect(jsonLd).toContain('"@type":"Person"');
+  expect(jsonLd).toContain("/#author");
+
+  await byline.click();
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Oliver");
+});

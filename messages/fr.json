@@ -18,7 +18,7 @@
     "skipToContent": "Aller au contenu"
   },
   "Footer": {
-    "tagline": "Le guide de la côte ouest de l’île Maurice, de Flic en Flac au Morne.",
+    "tagline": "La côte ouest de l’île Maurice racontée par un Mauricien, de Flic en Flac au Morne.",
     "explore": "Découvrir",
     "liveHere": "S’installer",
     "about": "À propos",
@@ -27,10 +27,11 @@
     "cookies": "Cookies",
     "terms": "Conditions d’utilisation",
     "planTrip": "Préparer son voyage",
-    "credits": "Crédits photo"
+    "credits": "Crédits photo",
+    "author": "À propos d’Oliver"
   },
   "Home": {
-    "eyebrow": "La côte ouest de l’île Maurice",
+    "eyebrow": "La côte ouest, racontée par un Mauricien",
     "title": "Lagons, montagnes et les plus beaux couchers de soleil de l’île",
     "intro": "Où manger, se baigner et regarder le soleil se coucher, et comment s’installer sur la côte ouest.",
     "ctaGuides": "Découvrir les guides",
@@ -48,7 +49,12 @@
     "liveCta": "Comment acheter",
     "liveEnquire": "Décrivez votre projet",
     "mapTitle": "Tout l’ouest sur une carte",
-    "allOnMap": "Chercher une adresse"
+    "allOnMap": "Chercher une adresse",
+    "localEyebrow": "Qui écrit ce guide",
+    "localTitle": "Écrit par un Mauricien, pas par une agence de voyages",
+    "localText": "Ouest Maurice est écrit par {name}, un Mauricien. Chaque fait est vérifié auprès de sources fiables, citées à la fin de chaque guide, et rien de payant n’apparaît sans être signalé.",
+    "localAuthor": "À propos de {name}",
+    "localHow": "Notre façon d’écrire"
   },
   "Pages": {
     "areas": {
@@ -358,5 +364,18 @@
     "licence": "Licence : {licence}",
     "source": "Voir l’original",
     "none": "Pas encore de photos."
+  },
+  "Author": {
+    "by": "Par <link>{name}</link>",
+    "published": "Publié le {date}",
+    "updated": "Mis à jour le {date}",
+    "pageEyebrow": "L’auteur",
+    "writes": "Les guides de {name}",
+    "contact": "Écrire à {name}"
+  },
+  "Sources": {
+    "title": "Sources",
+    "intro": "Les faits de cette page ont été vérifiés auprès de :",
+    "checked": "vérifié le {date}"
   }
 }

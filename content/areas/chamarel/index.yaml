@@ -1,6 +1,15 @@
 name: Chamarel
 order: 6
 placeholder: false
+sources:
+  - title: 'Chamarel'
+    publisher: Wikipedia
+    url: https://en.wikipedia.org/wiki/Chamarel
+    checkedAt: '2026-10-01'
+  - title: 'Seven Coloured Earths'
+    publisher: Wikipedia
+    url: https://en.wikipedia.org/wiki/Seven_Coloured_Earths
+    checkedAt: '2026-10-01'
 location:
   lat: -20.43
   lng: 57.385

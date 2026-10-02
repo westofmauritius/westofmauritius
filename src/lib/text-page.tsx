@@ -4,6 +4,7 @@ import { Prose } from "@/components/content/Prose";
 import { Container } from "@/components/ui/Container";
 import { PlaceholderNotice } from "@/components/ui/PlaceholderNotice";
 import { resolveLocale } from "@/i18n/locale";
+import { longDate } from "@/lib/dates";
 import type { StaticPathname } from "@/i18n/routing";
 import { getTextPage, type TextPageKey } from "@/lib/content/pages";
 import { localeAlternates } from "@/lib/seo/alternates";
@@ -38,7 +39,7 @@ export function textPage(key: TextPageKey, href: StaticPathname) {
       getTextPage(key, locale),
       getTranslations({ locale }),
     ]);
-    const date = new Intl.DateTimeFormat(locale, { dateStyle: "long" });
+    const date = longDate(locale);
     return (
       <>
         {page.placeholder && <PlaceholderNotice />}
@@ -51,7 +52,7 @@ export function textPage(key: TextPageKey, href: StaticPathname) {
           {page.updatedAt && (
             <p className="mt-16 border-t border-line pt-6 text-sm text-ink-muted">
               {t("LiveArticle.updated", {
-                date: date.format(new Date(page.updatedAt)),
+                date: date(page.updatedAt),
               })}
             </p>
           )}

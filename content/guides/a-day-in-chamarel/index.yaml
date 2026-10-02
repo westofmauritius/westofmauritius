@@ -1,5 +1,18 @@
 category: activities
 placeholder: false
+sources:
+  - title: 'Chamarel'
+    publisher: Wikipedia
+    url: https://en.wikipedia.org/wiki/Chamarel
+    checkedAt: '2026-10-01'
+  - title: 'Seven Coloured Earths'
+    publisher: Wikipedia
+    url: https://en.wikipedia.org/wiki/Seven_Coloured_Earths
+    checkedAt: '2026-10-01'
+  - title: 'Black River Gorges National Park'
+    publisher: Wikipedia
+    url: https://en.wikipedia.org/wiki/Black_River_Gorges_National_Park
+    checkedAt: '2026-10-01'
 featured: false
 publishedAt: '2026-10-01'
 areas:

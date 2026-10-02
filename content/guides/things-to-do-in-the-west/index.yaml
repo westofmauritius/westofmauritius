@@ -1,5 +1,30 @@
 category: activities
 placeholder: false
+sources:
+  - title: 'Le Morne Brabant'
+    publisher: Wikipedia
+    url: https://en.wikipedia.org/wiki/Le_Morne_Brabant
+    checkedAt: '2026-10-01'
+  - title: 'Black River Gorges National Park'
+    publisher: Wikipedia
+    url: https://en.wikipedia.org/wiki/Black_River_Gorges_National_Park
+    checkedAt: '2026-10-01'
+  - title: 'Piton de la Petite Rivière Noire'
+    publisher: Wikipedia
+    url: https://en.wikipedia.org/wiki/Piton_de_la_Petite_Rivière_Noire
+    checkedAt: '2026-10-01'
+  - title: 'Martello Tower at La Preneuse'
+    publisher: Wikipedia
+    url: https://en.wikipedia.org/wiki/Martello_Tower_at_La_Preneuse
+    checkedAt: '2026-10-01'
+  - title: 'Seven Coloured Earths'
+    publisher: Wikipedia
+    url: https://en.wikipedia.org/wiki/Seven_Coloured_Earths
+    checkedAt: '2026-10-01'
+  - title: 'Chamarel'
+    publisher: Wikipedia
+    url: https://en.wikipedia.org/wiki/Chamarel
+    checkedAt: '2026-10-01'
 featured: false
 publishedAt: '2026-10-01'
 areas:

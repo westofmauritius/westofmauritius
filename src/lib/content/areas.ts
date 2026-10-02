@@ -2,7 +2,7 @@ import "server-only";
 import { cache } from "react";
 import type { Locale } from "@/i18n/routing";
 import { typeset } from "@/lib/typography";
-import { toOptionalPhoto } from "./photo";
+import { toOptionalPhoto, toSources } from "./photo";
 import { reader } from "./reader";
 import type { Area, WithBody } from "./types";
 
@@ -20,6 +20,8 @@ function toArea(slug: string, entry: AreaEntry, locale: Locale): Area {
     seoDescription: text.seoDescription || text.intro,
     order: entry.order ?? 0,
     placeholder: entry.placeholder,
+    updatedAt: entry.updatedAt,
+    sources: toSources(entry.sources),
     location: { lat: entry.location.lat, lng: entry.location.lng },
     mapZoom: entry.mapZoom ?? 13,
     hero: toOptionalPhoto(entry.hero, locale),

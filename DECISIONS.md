@@ -329,3 +329,29 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
   should be a one-line change with no code edits.
 - French pages still render if someone types the URL; their canonical points
   to themselves. That is harmless with noindex and keeps the switch trivial.
+
+## Local voice: author, dates and sources (October 2026)
+
+- The site's edge over big travel sites is that a Mauritian writes it, so
+  that is made visible everywhere: the start page's first line and the
+  footer say "A Mauritian's guide to the west coast", a "Who writes this"
+  band introduces the author, and every guide and article carries a byline.
+- One author, one Keystatic singleton (Site → Author) rather than an
+  authors collection: there is one writer today, and a singleton keeps the
+  editor simple. If more writers join, turn it into a collection and add an
+  author field to guides.
+- The author page lives at `/en/about/oliver`. A name in the URL reads as a
+  real person to visitors and search engines. It starts as a placeholder
+  (noindex, short bio hidden on the start page) until Oliver writes it.
+- Byline: name (linked with `rel="author"`), one line of role, published
+  date and "Last updated" (falls back to the published date, so it always
+  shows). Dates are British style ("1 October 2026"), in Mauritius time.
+- Sources: a `sources` list (title, publisher, link, checked on) on guides,
+  areas and Live in the West articles, shown as a numbered list at the end
+  of the page and as `citation` in the Article data. Existing guides list
+  the Wikipedia and UNESCO pages their facts were checked against.
+- Structured data uses fixed ids: `/#organization` (publisher, with
+  `founder`) and `/#author` (Person, Mauritian, linked to the author page).
+  Every Article points at both, so search engines tie all articles to one
+  named person. The author page adds a ProfilePage once it is not a
+  placeholder.

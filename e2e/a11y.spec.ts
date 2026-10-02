@@ -17,6 +17,7 @@ const pages = [
   "/en/live-in-the-west/enquire",
   "/fr/contact",
   "/en/privacy",
+  "/en/about/oliver",
   "/fr/nexiste-pas",
 ];
 

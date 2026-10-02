@@ -1,6 +1,11 @@
 name: La Gaulette
 order: 4
 placeholder: false
+sources:
+  - title: 'Rivière Noire District'
+    publisher: Wikipedia
+    url: https://en.wikipedia.org/wiki/Rivière_Noire_District
+    checkedAt: '2026-10-01'
 location:
   lat: -20.427
   lng: 57.36

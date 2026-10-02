@@ -1,6 +1,11 @@
 name: Flic en Flac
 order: 1
 placeholder: false
+sources:
+  - title: 'Flic en Flac'
+    publisher: Wikipedia
+    url: https://en.wikipedia.org/wiki/Flic-en-Flac
+    checkedAt: '2026-10-01'
 location:
   lat: -20.279
   lng: 57.368

@@ -18,7 +18,7 @@
     "skipToContent": "Skip to content"
   },
   "Footer": {
-    "tagline": "A guide to the west coast of Mauritius, from Flic en Flac to Le Morne.",
+    "tagline": "A Mauritian’s guide to the west coast, from Flic en Flac to Le Morne.",
     "explore": "Explore",
     "liveHere": "Live here",
     "about": "About",
@@ -27,10 +27,11 @@
     "cookies": "Cookies",
     "terms": "Terms of use",
     "planTrip": "Plan your trip",
-    "credits": "Photo credits"
+    "credits": "Photo credits",
+    "author": "About Oliver"
   },
   "Home": {
-    "eyebrow": "The west coast of Mauritius",
+    "eyebrow": "A Mauritian’s guide to the west coast",
     "title": "Lagoons, mountains and the island’s finest sunsets",
     "intro": "Where to eat, swim and watch the sun go down, and what it takes to make the west coast home.",
     "ctaGuides": "Explore the guides",
@@ -48,7 +49,12 @@
     "liveCta": "How buying works",
     "liveEnquire": "Tell us what you are looking for",
     "mapTitle": "The west on one map",
-    "allOnMap": "Search all places"
+    "allOnMap": "Search all places",
+    "localEyebrow": "Who writes this",
+    "localTitle": "Written by a Mauritian, not a travel agency",
+    "localText": "West of Mauritius is written by {name}, a Mauritian. Every fact is checked against reliable sources and listed at the end of each guide, and nothing paid for appears without a label.",
+    "localAuthor": "About {name}",
+    "localHow": "How we write"
   },
   "Pages": {
     "areas": {
@@ -358,5 +364,18 @@
     "licence": "Licence: {licence}",
     "source": "View the original",
     "none": "No photos yet."
+  },
+  "Author": {
+    "by": "By <link>{name}</link>",
+    "published": "Published {date}",
+    "updated": "Last updated {date}",
+    "pageEyebrow": "About the author",
+    "writes": "Guides by {name}",
+    "contact": "Write to {name}"
+  },
+  "Sources": {
+    "title": "Sources",
+    "intro": "The facts on this page were checked against:",
+    "checked": "checked {date}"
   }
 }

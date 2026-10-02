@@ -6,7 +6,10 @@ import type {
   PlaceCategory,
   Weekday,
 } from "@/lib/content/types";
+import type { Locale } from "@/i18n/routing";
+import type { Author } from "@/lib/content/author";
 import { siteUrl } from "@/lib/site";
+import { absoluteUrl } from "./urls";
 
 /**
  * schema.org descriptions of our content for search engines. Only real
@@ -31,6 +34,28 @@ const schemaDay: Record<Weekday, string> = {
   sa: "https://schema.org/Saturday",
   su: "https://schema.org/Sunday",
 };
+
+/** Stable ids, so every page's structured data points at the same entities. */
+const organizationId = `${siteUrl}/#organization`;
+const authorId = `${siteUrl}/#author`;
+
+/** The site's author, as referenced from articles. */
+function authorRef(author: Author, locale: Locale) {
+  return {
+    "@type": "Person",
+    "@id": authorId,
+    name: author.name,
+    url: absoluteUrl("/about/oliver", locale),
+  };
+}
+
+const publisherRef = (brand: string) => ({
+  "@type": "Organization",
+  "@id": organizationId,
+  name: brand,
+  url: siteUrl,
+  logo: { "@type": "ImageObject", url: `${siteUrl}/icons/icon-512.png` },
+});
 
 const geo = (loc: { lat: number; lng: number }) => ({
   "@type": "GeoCoordinates",
@@ -89,8 +114,9 @@ export function articleSchema(
   guide: Guide,
   url: string,
   options: {
-    locale: string;
+    locale: Locale;
     brand: string;
+    author: Author;
     mentions: { name: string; url: string }[];
   },
 ) {
@@ -107,8 +133,11 @@ export function articleSchema(
       dateModified: guide.updatedAt ?? guide.publishedAt,
     }),
     ...(guide.hero && { image: fullUrl(guide.hero.src) }),
-    author: { "@type": "Organization", name: options.brand, url: siteUrl },
-    publisher: { "@type": "Organization", name: options.brand, url: siteUrl },
+    author: authorRef(options.author, options.locale),
+    publisher: publisherRef(options.brand),
+    ...(guide.sources.length > 0 && {
+      citation: guide.sources.map((s) => s.url),
+    }),
     ...(options.mentions.length > 0 && {
       mentions: options.mentions.map((m) => ({
         "@type": "Place",
@@ -122,18 +151,19 @@ export function articleSchema(
 /** Who publishes the site, and the site itself (start page only). */
 export function organizationSchema(
   brand: string,
-  locale: string,
+  locale: Locale,
   homeUrl: string,
+  author: Author,
 ) {
   return [
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "@id": `${siteUrl}/#organization`,
-      name: brand,
+      ...publisherRef(brand),
       url: homeUrl,
-      logo: `${siteUrl}/icon.svg`,
+      founder: { "@id": authorId },
+      areaServed: { "@type": "Place", name: "West coast of Mauritius" },
     },
+    personSchema(author, locale),
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
@@ -149,7 +179,7 @@ export function organizationSchema(
 export function livingArticleSchema(
   article: LivingArticle,
   url: string,
-  options: { locale: string; brand: string },
+  options: { locale: Locale; brand: string; author: Author },
 ) {
   return {
     "@context": "https://schema.org",
@@ -159,8 +189,48 @@ export function livingArticleSchema(
     url,
     mainEntityOfPage: url,
     inLanguage: options.locale,
-    ...(article.updatedAt && { dateModified: article.updatedAt }),
-    author: { "@type": "Organization", name: options.brand, url: siteUrl },
-    publisher: { "@type": "Organization", name: options.brand, url: siteUrl },
+    ...(article.publishedAt && { datePublished: article.publishedAt }),
+    ...((article.updatedAt ?? article.publishedAt) && {
+      dateModified: article.updatedAt ?? article.publishedAt,
+    }),
+    author: authorRef(options.author, options.locale),
+    publisher: publisherRef(options.brand),
+    ...(article.sources.length > 0 && {
+      citation: article.sources.map((s) => s.url),
+    }),
+  };
+}
+
+/**
+ * The author as a Person, linked to the organisation they founded. Articles
+ * point at the same "@id", so search engines connect every article to one
+ * author with one profile page.
+ */
+export function personSchema(author: Author, locale: Locale) {
+  return {
+    "@context": "https://schema.org",
+    ...authorRef(author, locale),
+    ...(author.role && { description: author.role }),
+    nationality: { "@type": "Country", name: "Mauritius" },
+    worksFor: { "@id": organizationId },
+    knowsAbout: ["West coast of Mauritius", "Living in Mauritius"],
+    ...(author.photo && { image: fullUrl(author.photo.src) }),
+    ...(author.links.length > 0 && { sameAs: author.links }),
+  };
+}
+
+/** The author page: a ProfilePage about the author. */
+export function profilePageSchema(
+  author: Author,
+  locale: Locale,
+  dateModified: string | null,
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    url: absoluteUrl("/about/oliver", locale),
+    inLanguage: locale,
+    ...(dateModified && { dateModified }),
+    mainEntity: personSchema(author, locale),
   };
 }

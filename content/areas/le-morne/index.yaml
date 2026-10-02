@@ -1,6 +1,15 @@
 name: Le Morne
 order: 5
 placeholder: false
+sources:
+  - title: 'Le Morne Brabant'
+    publisher: Wikipedia
+    url: https://en.wikipedia.org/wiki/Le_Morne_Brabant
+    checkedAt: '2026-10-01'
+  - title: 'Le Morne Cultural Landscape'
+    publisher: UNESCO World Heritage Centre
+    url: https://whc.unesco.org/en/list/1259
+    checkedAt: '2026-10-01'
 location:
   lat: -20.455
   lng: 57.322

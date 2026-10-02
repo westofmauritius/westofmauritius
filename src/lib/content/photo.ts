@@ -1,5 +1,5 @@
 import type { Locale } from "@/i18n/routing";
-import type { Photo } from "./types";
+import type { Photo, Source } from "./types";
 
 type RawPhoto = {
   image: string;
@@ -26,4 +26,23 @@ export function toOptionalPhoto(
   locale: Locale,
 ): Photo | null {
   return raw.discriminant ? toPhoto(raw.value, locale) : null;
+}
+
+/** Sources as stored by Keystatic, without empty rows. */
+export function toSources(
+  raw: readonly {
+    title: string;
+    publisher: string;
+    url: string | null;
+    checkedAt: string | null;
+  }[],
+): Source[] {
+  return raw
+    .filter((r) => r.title && r.url)
+    .map((r) => ({
+      title: r.title,
+      publisher: r.publisher,
+      url: r.url!,
+      checkedAt: r.checkedAt,
+    }));
 }

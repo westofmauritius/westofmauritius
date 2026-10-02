@@ -17,6 +17,14 @@ export type Photo = {
   creditUrl: string | null;
 };
 
+/** A source the facts in an entry were checked against. */
+export type Source = {
+  title: string;
+  publisher: string;
+  url: string;
+  checkedAt: string | null;
+};
+
 export type PlaceCategory =
   "restaurant" | "activity" | "beach" | "sunset" | "shopping";
 
@@ -32,6 +40,8 @@ export type Area = {
   seoDescription: string;
   order: number;
   placeholder: boolean;
+  updatedAt: string | null;
+  sources: Source[];
   location: LatLng;
   mapZoom: number;
   hero: Photo | null;
@@ -77,6 +87,7 @@ export type Guide = {
   featured: boolean;
   publishedAt: string | null;
   updatedAt: string | null;
+  sources: Source[];
   areaSlugs: string[];
   placeSlugs: string[];
   hero: Photo | null;
@@ -96,7 +107,9 @@ export type LivingArticle = {
   excerpt: string;
   seoDescription: string;
   placeholder: boolean;
+  publishedAt: string | null;
   updatedAt: string | null;
+  sources: Source[];
 };
 
 /** Detail pages also get the long text as a Markdoc tree, rendered in step 5. */

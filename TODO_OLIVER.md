@@ -108,6 +108,11 @@ källsida), `contact-submitted`, `newsletter-signup`, samt klick på
 
 I Keystatic → Site:
 
+- **Author (Oliver)**: sidan `/en/about/oliver` är förberedd men är en
+  platshållare. Fyll i "Short bio" (2 till 3 meningar, visas på startsidan),
+  "Your story", gärna ett porträttfoto och länkar till dina egna profiler
+  (Instagram, LinkedIn). Bocka sedan ur "Placeholder", så syns sidan i
+  Google och kortbion på startsidan.
 - **About us**: sidan är nu riktig — den beskriver vad sajten täcker, hur
   fakta kontrolleras, hur utvalda platser och partnerlänkar märks och vad som
   händer med förfrågningar. Lägg gärna till din egen historia (vem som står

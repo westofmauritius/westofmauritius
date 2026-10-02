@@ -19,6 +19,8 @@ import { getGuides } from "@/lib/content/guides";
 import { getHomepage } from "@/lib/content/homepage";
 import { getPlaces } from "@/lib/content/places";
 import { localeAlternates } from "@/lib/seo/alternates";
+import { AuthorAvatar } from "@/components/author/AuthorAvatar";
+import { getAuthor } from "@/lib/content/author";
 import { organizationSchema } from "@/lib/seo/schema";
 import { absoluteUrl } from "@/lib/seo/urls";
 import { brandName } from "@/lib/site";
@@ -37,12 +39,13 @@ export async function generateMetadata({
 
 export default async function HomePage({ params }: PageProps<"/[locale]">) {
   const locale = await resolveLocale(params);
-  const [t, home, areas, places, guides] = await Promise.all([
+  const [t, home, areas, places, guides, author] = await Promise.all([
     getTranslations({ locale, namespace: "Home" }),
     getHomepage(locale),
     getAreas(locale),
     getPlaces(locale),
     getGuides(locale),
+    getAuthor(locale),
   ]);
   const areaName = (slug: string) =>
     areas.find((a) => a.slug === slug)?.name ?? slug;
@@ -59,6 +62,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           brandName[locale],
           locale,
           absoluteUrl("/", locale),
+          author,
         )}
       />
 
@@ -164,6 +168,54 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
               </li>
             ))}
           </ul>
+        </Container>
+      </section>
+
+      {/* Who writes this: the site's edge is a local, named author. */}
+      <section className="border-t border-line py-20 sm:py-24">
+        <Container
+          size="wide"
+          className="grid items-center gap-10 lg:grid-cols-[5fr_7fr] lg:gap-20"
+        >
+          <div>
+            <p className="mb-5 eyebrow text-coral-600">{t("localEyebrow")}</p>
+            <h2 className="text-display-2">{t("localTitle")}</h2>
+          </div>
+          <div>
+            <p className="lead text-ink-muted">
+              {t("localText", { name: author.name })}
+            </p>
+            {/* The short bio only once it is written (not a placeholder). */}
+            {!author.placeholder && author.shortBio && (
+              <p className="mt-6 font-display text-xl italic">
+                {author.shortBio}
+              </p>
+            )}
+            <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
+              <Link
+                href="/about/oliver"
+                className="group inline-flex items-center gap-3"
+              >
+                <AuthorAvatar author={author} size={48} />
+                <span>
+                  <span className="block font-medium group-hover:underline">
+                    {t("localAuthor", { name: author.name })}
+                  </span>
+                  {author.role && (
+                    <span className="block text-sm text-ink-muted">
+                      {author.role}
+                    </span>
+                  )}
+                </span>
+              </Link>
+              <Link
+                href="/about"
+                className="text-sm font-medium text-lagoon-700 hover:underline"
+              >
+                {t("localHow")} →
+              </Link>
+            </div>
+          </div>
         </Container>
       </section>
 

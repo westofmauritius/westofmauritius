@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { Byline } from "@/components/author/Byline";
 import { EnquiryCta } from "@/components/content/EnquiryCta";
 import { LivingCard } from "@/components/content/LivingCard";
 import { Prose } from "@/components/content/Prose";
+import { Sources } from "@/components/content/Sources";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Container } from "@/components/ui/Container";
@@ -11,6 +13,7 @@ import { PlaceholderNotice } from "@/components/ui/PlaceholderNotice";
 import { resolveLocale } from "@/i18n/locale";
 import type { Locale } from "@/i18n/routing";
 import { getAreas } from "@/lib/content/areas";
+import { getAuthor } from "@/lib/content/author";
 import { getLivingArticle, getLivingArticles } from "@/lib/content/living";
 import type { LivingArticle } from "@/lib/content/types";
 import { localeAlternates } from "@/lib/seo/alternates";
@@ -65,14 +68,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function LivingArticlePage({ params }: Props) {
   const { locale, article } = await load(params);
-  const [t, all, areas] = await Promise.all([
+  const [t, all, areas, author] = await Promise.all([
     getTranslations({ locale }),
     getLivingArticles(locale, { kind: article.kind }),
     getAreas(locale),
+    getAuthor(locale),
   ]);
   const area = areas.find((a) => a.slug === article.areaSlug);
   const related = all.filter((a) => a.key !== article.key).slice(0, 3);
-  const dateFormat = new Intl.DateTimeFormat(locale, { dateStyle: "long" });
 
   return (
     <>
@@ -85,6 +88,7 @@ export default async function LivingArticlePage({ params }: Props) {
             {
               locale,
               brand: brandName[locale],
+              author,
             },
           )}
         />
@@ -112,14 +116,18 @@ export default async function LivingArticlePage({ params }: Props) {
           {article.excerpt && (
             <p className="mt-6 lead text-ink-muted">{article.excerpt}</p>
           )}
-          {article.updatedAt && (
-            <p className="mt-4 text-sm text-ink-muted">
-              {t("LiveArticle.updated", {
-                date: dateFormat.format(new Date(article.updatedAt)),
-              })}
-            </p>
-          )}
+          <Byline
+            locale={locale}
+            publishedAt={article.publishedAt}
+            updatedAt={article.updatedAt}
+            className="mt-8"
+          />
           <Prose node={article.body} locale={locale} className="mt-12" />
+          <Sources
+            sources={article.sources}
+            locale={locale}
+            className="mt-12"
+          />
         </div>
         <div className="lg:sticky lg:top-24 lg:self-start">
           <EnquiryCta
