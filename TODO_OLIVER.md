@@ -105,8 +105,9 @@ verifiera med en DNS-post i Cloudflare) och skicka in
 3. Cloudflare → Build variables: `NEXT_PUBLIC_UMAMI_WEBSITE_ID` = det ID:t,
    och bygg om.
 
-Fler händelser sedan oktober 2026: `whatsapp-interest` och
-`cta-community`. Alla formulär skickar med vilken sida de kom från
+Fler händelser sedan oktober 2026: `whatsapp-interest`,
+`cta-community`, `cta-quiz` och `quiz-complete` (vilken ort quizet
+föreslog). Alla formulär skickar med vilken sida de kom från
 ("source"). I adminsidan finns också **Conversions by page** som räknar
 förfrågningar, prenumeranter och WhatsApp-intresse per sida.
 

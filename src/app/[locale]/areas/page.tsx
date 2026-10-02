@@ -6,6 +6,7 @@ import { Container } from "@/components/ui/Container";
 import { Photo } from "@/components/ui/Photo";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { getPathname } from "@/i18n/pathname";
+import { Link } from "@/i18n/Link";
 import { resolveLocale } from "@/i18n/locale";
 import { getAreas } from "@/lib/content/areas";
 import { localeAlternates } from "@/lib/seo/alternates";
@@ -52,6 +53,16 @@ export default async function AreasPage({
         title={t("Pages.areas.title")}
         intro={t("Pages.areas.intro")}
       />
+      <p className="mt-6">
+        <Link
+          href="/living-in-the-west/find-your-area"
+          className="text-sm font-medium text-lagoon-700 hover:underline"
+          data-umami-event="cta-quiz"
+          data-umami-event-position="areas"
+        >
+          {t("Quiz.title")} {t("Quiz.cta")} →
+        </Link>
+      </p>
 
       <SiteMap
         name={t("AreasPage.mapLabel")}

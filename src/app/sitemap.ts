@@ -75,6 +75,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ["/living-in-the-west/enquire", 0.7, null],
     ["/contact", 0.4, null],
     ["/community", 0.5, null],
+    ["/living-in-the-west/find-your-area", 0.6, null],
     ["/credits", 0.1, null],
   ];
   for (const [href, priority, lastModified] of staticPages)

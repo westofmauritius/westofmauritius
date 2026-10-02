@@ -93,12 +93,14 @@ export default async function LivingInTheWestPage({ params }: Props) {
             >
               {t("LivePage.heroShortlist")}
             </ButtonLink>
-            <a
-              href="#areas"
-              className="inline-flex min-h-11 items-center justify-center rounded-full border border-white/40 px-6 text-sm font-medium tracking-wide text-white transition-colors hover:border-white"
+            <ButtonLink
+              href="/living-in-the-west/find-your-area"
+              variant="outlineLight"
+              data-umami-event="cta-quiz"
+              data-umami-event-position="living-hub-hero"
             >
-              {t("LivePage.heroAreas")} ↓
-            </a>
+              {t("Quiz.cta")}
+            </ButtonLink>
           </div>
         </Container>
       </section>

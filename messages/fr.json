@@ -489,5 +489,47 @@
     "golden": "lumière dorée dès {time}",
     "tonightAt": "Coucher du soleil ce soir {place} : {time}",
     "tomorrowAt": "Coucher du soleil demain {place} : {time}"
+  },
+  "Quiz": {
+    "eyebrow": "Vivre dans l’Ouest",
+    "title": "Quel village de la côte ouest est fait pour vous ?",
+    "metaTitle": "Quel village de la côte ouest vous correspond ? Le quiz",
+    "intro": "Trois questions sur votre façon de vivre, et nous vous indiquons le village de la côte ouest de Maurice qui vous correspond le mieux.",
+    "questions": {
+      "sea": {
+        "legend": "Qu’attendez vous de la mer ?",
+        "options": {
+          "beach": "Une longue plage à parcourir chaque jour",
+          "surf": "Des vagues : surf ou kitesurf",
+          "boats": "Les bateaux, la pêche et les îles",
+          "hills": "Je préfère les hauteurs et la fraîcheur"
+        }
+      },
+      "pace": {
+        "legend": "Quel rythme de vie ?",
+        "options": {
+          "lively": "Animé, avec du monde",
+          "village": "Un vrai village où l’on se connaît",
+          "nature": "Calme, proche de la nature"
+        }
+      },
+      "sunday": {
+        "legend": "Votre dimanche matin idéal ?",
+        "options": {
+          "hike": "Une randonnée dans le parc national",
+          "dolphins": "Les dauphins dans la baie à l’aube",
+          "picnic": "Un pique nique sur la plage",
+          "island": "Une sortie en bateau vers une île",
+          "mountain": "Le Morne à l’horizon"
+        }
+      }
+    },
+    "submit": "Voir mon village",
+    "missing": "Merci de répondre aux trois questions.",
+    "again": "Recommencer",
+    "match": "Votre village",
+    "living": "Vivre {name}",
+    "shortlist": "Recevoir ma sélection gratuite {name}",
+    "cta": "Faire le quiz"
   }
 }

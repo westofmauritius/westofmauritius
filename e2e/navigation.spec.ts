@@ -208,3 +208,23 @@ test("area pages show tonight's sunset time", async ({ page }) => {
     page.getByText(/Sunset (tonight|tomorrow) in Tamarin: \d\d:\d\d/),
   ).toBeVisible();
 });
+
+test("the village quiz recommends an area and leads to a shortlist", async ({
+  page,
+}) => {
+  await page.goto("/en/living-in-the-west/find-your-area");
+  await page.getByRole("button", { name: "Show my village" }).click();
+  await expect(
+    page.getByText("Please answer all three questions."),
+  ).toBeVisible();
+  await page.getByLabel("I prefer the hills and cooler air").check();
+  await page.getByLabel("Quiet, close to nature").check();
+  await page.getByLabel("A hike in the national park").check();
+  await page.getByRole("button", { name: "Show my village" }).click();
+  await expect(
+    page.getByRole("heading", { level: 2, name: "Chamarel" }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("link", { name: /Get my free shortlist for Chamarel/ }),
+  ).toHaveAttribute("href", /area=chamarel.*source=quiz/);
+});

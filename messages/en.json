@@ -489,5 +489,47 @@
     "golden": "golden light from {time}",
     "tonightAt": "Sunset tonight at {place}: {time}",
     "tomorrowAt": "Sunset tomorrow at {place}: {time}"
+  },
+  "Quiz": {
+    "eyebrow": "Living in the West",
+    "title": "Which west coast village is yours?",
+    "metaTitle": "Which west coast village suits you? A three question quiz",
+    "intro": "Three questions about how you want to live, and we point you to the village on the west coast of Mauritius that fits best. Every match is based on what each village is really like.",
+    "questions": {
+      "sea": {
+        "legend": "What do you want from the sea?",
+        "options": {
+          "beach": "A long beach to walk every day",
+          "surf": "Waves: surf or kitesurf",
+          "boats": "Boats, fishing and the islands",
+          "hills": "I prefer the hills and cooler air"
+        }
+      },
+      "pace": {
+        "legend": "What pace of life?",
+        "options": {
+          "lively": "Lively, with people around",
+          "village": "A real village where people know each other",
+          "nature": "Quiet, close to nature"
+        }
+      },
+      "sunday": {
+        "legend": "Your perfect Sunday morning?",
+        "options": {
+          "hike": "A hike in the national park",
+          "dolphins": "Dolphins in the bay at dawn",
+          "picnic": "A picnic on the beach",
+          "island": "A boat trip to an island",
+          "mountain": "Le Morne mountain on the horizon"
+        }
+      }
+    },
+    "submit": "Show my village",
+    "missing": "Please answer all three questions.",
+    "again": "Start again",
+    "match": "Your village",
+    "living": "Living in {name}",
+    "shortlist": "Get my free shortlist for {name}",
+    "cta": "Take the quiz"
   }
 }

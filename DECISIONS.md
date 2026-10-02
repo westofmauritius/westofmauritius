@@ -491,3 +491,17 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
   horizon. Mauritius time is UTC+4 all year.
 - The line keeps its space before the time appears, so nothing moves, and
   rolls over to tomorrow's sunset once tonight's has passed.
+
+## Village quiz (October 2026)
+
+- `/en/living-in-the-west/find-your-area`: three questions (the sea, the
+  pace of life, a Sunday morning) and a recommended village, with its photo,
+  its own intro, a link to its Living section and a free shortlist with
+  the area filled in (`source=quiz`).
+- Each answer points only to areas whose own pages back it up (surf →
+  Tamarin's breaks, kitesurfing → Le Morne, boats to the islands → La
+  Gaulette, cooler air → Chamarel); the mapping and its reasons are in
+  `src/lib/quiz.ts`, and a test checks that every village can win.
+- The result panels are rendered on the server; the browser only picks one,
+  so the page stays light. Linked from the Living in the West hero and the
+  areas overview. Events: `cta-quiz`, `quiz-complete` (with the area).

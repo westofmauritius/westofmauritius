@@ -63,6 +63,10 @@ export const routing = defineRouting({
       en: "/living-in-the-west/enquire",
       fr: "/vivre-dans-l-ouest/demande",
     },
+    "/living-in-the-west/find-your-area": {
+      en: "/living-in-the-west/find-your-area",
+      fr: "/vivre-dans-l-ouest/trouver-votre-secteur",
+    },
     "/living-in-the-west/[slug]": {
       en: "/living-in-the-west/[slug]",
       fr: "/vivre-dans-l-ouest/[slug]",

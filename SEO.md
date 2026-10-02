@@ -54,6 +54,7 @@ How to use this file:
 | Page                                                         | Main search                                     | Also targets                             | Priority | Status      |
 | ------------------------------------------------------------ | ----------------------------------------------- | ---------------------------------------- | -------- | ----------- |
 | `/en/living-in-the-west` (hub)                               | living on the west coast of Mauritius           | moving to Mauritius west coast           | High     | live (hub)  |
+| `/en/living-in-the-west/find-your-area`                      | which village west coast Mauritius              | where to live Mauritius quiz             | Medium   | live        |
 | `/en/living-in-the-west/best-area-to-live-on-the-west-coast` | best place to live west coast Mauritius         | where do expats live in Mauritius west   | High     | placeholder |
 | `/en/living-in-the-west/cost-of-living-in-tamarin`           | cost of living Tamarin                          | rent in Tamarin Mauritius                | High     | placeholder |
 | `/en/living-in-the-west/retiring-on-the-west-coast`          | retire in Mauritius west coast                  | retiring in Mauritius                    | High     | live        |
