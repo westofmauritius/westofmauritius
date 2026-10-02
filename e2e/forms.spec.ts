@@ -108,3 +108,40 @@ test("the form API rejects invalid data", async ({ request }) => {
   const body = await response.json();
   expect(body.errors).toMatchObject({ email: "email", consent: "consent" });
 });
+
+test("WhatsApp group: asks for consent, saves and shows in the admin by page", async ({
+  page,
+}) => {
+  await page.goto("/en/community");
+  const form = page.locator("#whatsapp-title").locator("..");
+  await waitLikeAHuman(page);
+  const name = `Whats Test ${Date.now()}`;
+  await form.getByRole("textbox", { name: /Your name/ }).fill(name);
+  await form.getByRole("textbox", { name: /WhatsApp number/ }).fill("12");
+  await form.getByRole("button", { name: "Ask for an invitation" }).click();
+  await expect(form.getByText(/Please enter a phone number/)).toBeVisible();
+  await expect(
+    form.getByText("Please choose one of the options."),
+  ).toBeVisible();
+
+  await form
+    .getByRole("textbox", { name: /WhatsApp number/ })
+    .fill("+230 5712 3456");
+  await form.getByLabel("Planning to move").check();
+  await form.getByRole("checkbox").check();
+  await form.getByRole("button", { name: "Ask for an invitation" }).click();
+  await expect(form.getByText("Thank you, you are on the list")).toBeVisible();
+
+  // Only one newsletter form on a page that has its own.
+  await expect(page.getByRole("button", { name: "Subscribe" })).toHaveCount(1);
+
+  await page.goto("/admin/login");
+  await page.getByLabel("Password").fill("e2e-test-password");
+  await page.getByRole("button", { name: "Log in" }).click();
+  await page.goto("/admin/whatsapp");
+  await expect(page.getByText(name)).toBeVisible();
+  await page.goto("/admin/conversions");
+  await expect(
+    page.getByRole("rowheader", { name: "community" }),
+  ).toBeVisible();
+});

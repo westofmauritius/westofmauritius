@@ -47,6 +47,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
     getGuides(locale),
     getAuthor(locale),
   ]);
+  const c = await getTranslations({ locale, namespace: "Community" });
   const areaName = (slug: string) =>
     areas.find((a) => a.slug === slug)?.name ?? slug;
   // Real places before placeholder examples; within each group featured
@@ -293,6 +294,33 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
             markers={places.map((place) => placeMarker(place, locale))}
             className="mt-10 aspect-[4/5] sm:aspect-[16/9] lg:aspect-[21/9]"
           />
+        </Container>
+      </section>
+
+      {/* Community: the newsletter offer and the WhatsApp group. The form
+          itself is in the footer just below, so this band points to it and
+          to the community page instead of repeating it. */}
+      <section className="border-t border-line py-20 sm:py-24">
+        <Container
+          size="wide"
+          className="grid items-center gap-8 lg:grid-cols-[7fr_5fr] lg:gap-16"
+        >
+          <div>
+            <p className="mb-5 eyebrow text-coral-600">{c("homeEyebrow")}</p>
+            <h2 className="max-w-2xl text-display-2">{c("homeTitle")}</h2>
+          </div>
+          <div>
+            <p className="lead text-ink-muted">{c("homeText")}</p>
+            <ButtonLink
+              href="/community"
+              variant="accent"
+              className="mt-8"
+              data-umami-event="cta-community"
+              data-umami-event-position="home-band"
+            >
+              {c("homeCta")}
+            </ButtonLink>
+          </div>
         </Container>
       </section>
 

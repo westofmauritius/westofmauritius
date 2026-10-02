@@ -236,3 +236,9 @@
   animation: hero-drift 32s ease-in-out infinite alternate;
   will-change: transform;
 }
+
+/* One newsletter form per page: when a page shows its own (area pages, the
+   community page), the footer's sign up band steps aside. */
+body:has([data-newsletter-inline]) [data-footer-newsletter] {
+  display: none;
+}

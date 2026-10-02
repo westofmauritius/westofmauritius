@@ -7,6 +7,8 @@ export const budgetLabel = (code: string) =>
   (messages.Forms.budgets as Record<string, string>)[code] ?? code;
 export const timeframeLabel = (code: string) =>
   (messages.Forms.timeframes as Record<string, string>)[code] ?? code;
+export const roleLabel = (code: string) =>
+  (messages.Forms.whatsapp.roles as Record<string, string>)[code] ?? code;
 export const topicLabel = (code: string) =>
   (messages.Forms.contact.topics as Record<string, string>)[code] ?? code;
 

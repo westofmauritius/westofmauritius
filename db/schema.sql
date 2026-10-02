@@ -1,7 +1,7 @@
 -- Database schema for West of Mauritius (Neon Postgres).
 -- Safe to run more than once: `npm run db:migrate`.
 
--- Property enquiries from the "Live in the West" form.
+-- Property enquiries from the "Living in the West" form.
 create table if not exists leads (
   id bigserial primary key,
   created_at timestamptz not null default now(),
@@ -51,6 +51,23 @@ create table if not exists newsletter_subscribers (
   unsubscribed_at timestamptz,
   ip_hash text not null default ''
 );
+-- Where on the site people signed up (added October 2026).
+alter table newsletter_subscribers add column if not exists source text not null default '';
+
+-- People who want to join the west coast WhatsApp group. One row per number.
+create table if not exists whatsapp_interest (
+  id bigserial primary key,
+  created_at timestamptz not null default now(),
+  locale text not null,
+  name text not null,
+  phone text not null unique,
+  -- "live-here", "moving" or "visiting" (src/lib/forms/options.ts).
+  role text not null,
+  consent_version text not null,
+  source text not null default '',
+  ip_hash text not null default ''
+);
+create index if not exists whatsapp_interest_created_at on whatsapp_interest (created_at desc);
 
 -- Recent form submissions and admin log-in attempts per (hashed) IP, used
 -- only for rate limiting. Rows older than a day are deleted automatically.

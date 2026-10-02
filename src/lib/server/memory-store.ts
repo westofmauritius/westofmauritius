@@ -1,9 +1,16 @@
-import type { ContactRow, LeadRow, Store, SubscriberRow } from "./types";
+import type {
+  ContactRow,
+  LeadRow,
+  Store,
+  SubscriberRow,
+  WhatsappRow,
+} from "./types";
 
 type MemoryData = {
   leads: LeadRow[];
   contacts: ContactRow[];
   subscribers: (SubscriberRow & { token: string; consentVersion: string })[];
+  whatsapp: WhatsappRow[];
   events: { kind: string; ipHash: string; at: number }[];
 };
 
@@ -13,8 +20,10 @@ const data = (g.__wmMemory ??= {
   leads: [],
   contacts: [],
   subscribers: [],
+  whatsapp: [],
   events: [],
 });
+data.whatsapp ??= [];
 
 const now = () => new Date().toISOString();
 
@@ -61,6 +70,7 @@ export const memoryStore: Store = {
       consentVersion: sub.consentVersion,
       confirmedAt: null,
       unsubscribedAt: null,
+      source: sub.source,
     });
     return { token: sub.token, alreadyConfirmed: false };
   },
@@ -106,7 +116,32 @@ export const memoryStore: Store = {
       locale: s.locale,
       confirmedAt: s.confirmedAt,
       unsubscribedAt: s.unsubscribedAt,
+      source: s.source,
     }));
+  },
+
+  async saveWhatsapp(entry) {
+    // The hashed IP is only for rate limits; it is not kept with the entry.
+    const row = {
+      locale: entry.locale,
+      name: entry.name,
+      phone: entry.phone,
+      role: entry.role,
+      source: entry.source,
+      consentVersion: entry.consentVersion,
+    };
+    const existing = data.whatsapp.find((w) => w.phone === entry.phone);
+    if (existing) Object.assign(existing, row);
+    else
+      data.whatsapp.unshift({
+        ...row,
+        id: data.whatsapp.length + 1,
+        createdAt: now(),
+      });
+  },
+
+  async listWhatsapp(limit = 5000) {
+    return data.whatsapp.slice(0, limit);
   },
 
   async hit(kind, ipHash, minutes) {

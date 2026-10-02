@@ -29,11 +29,13 @@ export default async function AdminNewsletterPage() {
         <table className="w-full text-left text-sm">
           <thead className="border-b border-line bg-sand-50 text-xs tracking-wide text-ink-muted uppercase">
             <tr>
-              {["Email", "Language", "Signed up", "Status"].map((h) => (
-                <th key={h} scope="col" className="px-4 py-3 font-medium">
-                  {h}
-                </th>
-              ))}
+              {["Email", "Language", "Signed up", "Source", "Status"].map(
+                (h) => (
+                  <th key={h} scope="col" className="px-4 py-3 font-medium">
+                    {h}
+                  </th>
+                ),
+              )}
             </tr>
           </thead>
           <tbody className="divide-y divide-line">
@@ -44,6 +46,7 @@ export default async function AdminNewsletterPage() {
                 <td className="px-4 py-3 text-ink-muted">
                   {date.format(new Date(s.createdAt))}
                 </td>
+                <td className="px-4 py-3 text-ink-muted">{s.source}</td>
                 <td className="px-4 py-3">
                   {s.unsubscribedAt
                     ? "Unsubscribed"

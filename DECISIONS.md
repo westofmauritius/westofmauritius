@@ -408,3 +408,27 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
   Living section (photo cards that jump to `#living`), comparisons, who it
   is for, buying, then the shortlist. Area pages link back to every article
   about them. The keyword plan is in SEO.md.
+
+## Community and leads (October 2026)
+
+- **Newsletter offer**: "Insider updates from the west coast, written by a
+  local". It is the footer band on every page, a block in each area's
+  Living section and on the community page. A page that shows its own form
+  hides the footer copy (CSS `:has()`), so no page ever has two.
+- **WhatsApp group interest** (`/en/community`): name, WhatsApp number,
+  whether they live here, are moving or visit often, and explicit consent
+  that names what happens (stored to be invited, number visible to group
+  members). Saved in `whatsapp_interest`, one row per number, with the
+  consent version and the page it came from. The page says the group is
+  starting, which is true: Oliver opens it when there are enough people.
+  Admin lists it with a wa.me link per person and a CSV export.
+- **Contextual CTAs**: guides, area pages and living articles for people
+  still deciding say "Thinking of moving to X? Get a free personal
+  shortlist", with the area filled in on the form whenever the page is
+  about one area. Buying articles keep "Thinking of buying?".
+- **Conversion tracking by page**: every CTA carries a `source` (e.g.
+  `area-living-tamarin`, `guide-sunset-spots`, `living-hub-hero`) into the
+  lead form; newsletter and WhatsApp forms send their own. Sources are
+  stored with each lead, subscriber and WhatsApp request, sent to Umami
+  with the event, and summed in the admin under "Conversions by page".
+- Sources are cleaned on the server (letters, digits, `-`, `/` only).

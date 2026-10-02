@@ -11,13 +11,14 @@ export async function POST(request: Request) {
     limit: 5,
     form: "newsletter",
     validate: validateNewsletter,
-    save: async (store, { email, locale }, { ipHash }) => {
+    save: async (store, { email, locale, source }, { ipHash }) => {
       const { token, alreadyConfirmed } = await store.saveSubscriber({
         email,
         locale,
         consentVersion: currentConsent.newsletter,
         token: randomToken(),
         ipHash,
+        source,
       });
       if (!alreadyConfirmed)
         await sendNewsletterConfirmation(email, token, locale);

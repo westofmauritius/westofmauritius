@@ -117,7 +117,10 @@ export default async function LocaleLayout({
             },
             {
               title: f("liveHere"),
-              items: [item(t("live"), "/living-in-the-west")],
+              items: [
+                item(t("live"), "/living-in-the-west"),
+                item(f("community"), "/community"),
+              ],
             },
             {
               title: f("about"),

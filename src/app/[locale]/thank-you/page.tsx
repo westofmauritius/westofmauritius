@@ -29,6 +29,7 @@ export default async function ThankYouPage({
             lead: t("lead"),
             contact: t("contact"),
             newsletter: t("newsletter"),
+            whatsapp: t("whatsapp"),
           }}
           fallback={t("contact")}
         />

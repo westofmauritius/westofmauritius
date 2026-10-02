@@ -1,5 +1,11 @@
 import { neon } from "@neondatabase/serverless";
-import type { ContactRow, LeadRow, Store, SubscriberRow } from "./types";
+import type {
+  ContactRow,
+  LeadRow,
+  Store,
+  SubscriberRow,
+  WhatsappRow,
+} from "./types";
 
 /**
  * Store backed by Neon Postgres, over HTTPS (works on Cloudflare Workers).
@@ -48,11 +54,18 @@ export function neonStore(url: string): Store {
       // A new address is inserted; an existing one keeps its token and is
       // re-activated if it had unsubscribed.
       const rows = (await sql.query(
-        `insert into newsletter_subscribers (email, locale, consent_version, token, ip_hash)
-         values ($1,$2,$3,$4,$5)
+        `insert into newsletter_subscribers (email, locale, consent_version, token, ip_hash, source)
+         values ($1,$2,$3,$4,$5,$6)
          on conflict (email) do update set unsubscribed_at = null
          returning token, confirmed_at`,
-        [sub.email, sub.locale, sub.consentVersion, sub.token, sub.ipHash],
+        [
+          sub.email,
+          sub.locale,
+          sub.consentVersion,
+          sub.token,
+          sub.ipHash,
+          sub.source,
+        ],
       )) as { token: string; confirmed_at: string | null }[];
       return {
         token: rows[0].token,
@@ -138,7 +151,7 @@ export function neonStore(url: string): Store {
 
     async listSubscribers(limit = 5000) {
       const rows = (await sql.query(
-        `select id, created_at, email, locale, confirmed_at, unsubscribed_at
+        `select id, created_at, email, locale, confirmed_at, unsubscribed_at, source
          from newsletter_subscribers order by created_at desc limit $1`,
         [limit],
       )) as Record<string, unknown>[];
@@ -149,6 +162,44 @@ export function neonStore(url: string): Store {
         locale: String(r.locale),
         confirmedAt: iso(r.confirmed_at),
         unsubscribedAt: iso(r.unsubscribed_at),
+        source: String(r.source ?? ""),
+      }));
+    },
+
+    async saveWhatsapp(entry) {
+      await sql.query(
+        `insert into whatsapp_interest (locale, name, phone, role, consent_version, source, ip_hash)
+         values ($1,$2,$3,$4,$5,$6,$7)
+         on conflict (phone) do update set name = excluded.name, role = excluded.role,
+           locale = excluded.locale, consent_version = excluded.consent_version,
+           source = excluded.source`,
+        [
+          entry.locale,
+          entry.name,
+          entry.phone,
+          entry.role,
+          entry.consentVersion,
+          entry.source,
+          entry.ipHash,
+        ],
+      );
+    },
+
+    async listWhatsapp(limit = 5000) {
+      const rows = (await sql.query(
+        `select id, created_at, locale, name, phone, role, consent_version, source
+         from whatsapp_interest order by created_at desc limit $1`,
+        [limit],
+      )) as Record<string, unknown>[];
+      return rows.map((r): WhatsappRow => ({
+        id: Number(r.id),
+        createdAt: iso(r.created_at)!,
+        locale: String(r.locale),
+        name: String(r.name),
+        phone: String(r.phone),
+        role: String(r.role),
+        consentVersion: String(r.consent_version),
+        source: String(r.source),
       }));
     },
 

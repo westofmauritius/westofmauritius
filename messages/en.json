@@ -28,7 +28,8 @@
     "terms": "Terms of use",
     "planTrip": "Plan your trip",
     "credits": "Photo credits",
-    "author": "About Oliver"
+    "author": "About Oliver",
+    "community": "Community"
   },
   "Home": {
     "eyebrow": "A Mauritian’s guide to the west coast",
@@ -88,6 +89,11 @@
     "places": {
       "title": "Places",
       "intro": "Restaurants, beaches, sunset spots, activities and shopping across the west coast. Search, or filter by area and theme."
+    },
+    "community": {
+      "title": "Join the west coast community",
+      "metaTitle": "West coast Mauritius community: newsletter and WhatsApp group",
+      "intro": "Insider updates from the west coast, written by a local, and a WhatsApp group for people who live here, are moving here or keep coming back."
     }
   },
   "NotFound": {
@@ -355,12 +361,26 @@
       "topicPlaceholder": "Choose a subject"
     },
     "newsletter": {
-      "title": "The west coast, in your inbox",
-      "text": "New guides, places and stories from the west of Mauritius. A few emails a month, no spam.",
+      "title": "Insider updates from the west coast, written by a local",
+      "text": "New guides and places, notes on living here and what is changing on the coast, from a Mauritian. A few emails a month, no spam.",
       "email": "Email address",
       "submit": "Subscribe",
       "successTitle": "Almost there",
       "successText": "Please check your inbox and click the link to confirm your subscription."
+    },
+    "whatsapp": {
+      "name": "Your name",
+      "phone": "WhatsApp number",
+      "phoneHint": "With the country code, e.g. +230 5712 3456.",
+      "role": "You are…",
+      "roles": {
+        "live-here": "Living here",
+        "moving": "Planning to move",
+        "visiting": "Visiting often"
+      },
+      "submit": "Ask for an invitation",
+      "successTitle": "Thank you, you are on the list",
+      "successText": "We will send you an invitation on WhatsApp when the group opens."
     }
   },
   "Enquire": {
@@ -372,7 +392,8 @@
     "lead": "Your enquiry has been sent. We will be in touch soon.",
     "contact": "Your message has been sent. We will reply as soon as we can.",
     "newsletter": "Please check your inbox and click the link to confirm your subscription.",
-    "back": "Back to the start page"
+    "back": "Back to the start page",
+    "whatsapp": "You are on the list. We will send you an invitation on WhatsApp when the group opens."
   },
   "NewsletterStatus": {
     "title": "Newsletter",
@@ -425,5 +446,20 @@
     "faqTitle": "Questions about living in {name}",
     "updated": "Last updated {date}",
     "reading": "More about living in {name}"
+  },
+  "Community": {
+    "eyebrow": "Community",
+    "newsletterTitle": "The newsletter",
+    "newsletterPoints": [
+      "New guides and places as soon as they are published",
+      "Notes on living and buying on the west coast",
+      "A few emails a month, and you can leave with one click"
+    ],
+    "whatsappTitle": "The WhatsApp group",
+    "whatsappText": "We are starting a WhatsApp group for the west coast: questions, tips and local news, shared by the people who know it. Leave your number and we will invite you when it opens.",
+    "homeEyebrow": "Community",
+    "homeTitle": "Insider updates from the west coast, written by a local",
+    "homeText": "Join the newsletter, or ask for an invitation to the west coast WhatsApp group.",
+    "homeCta": "Join the community"
   }
 }

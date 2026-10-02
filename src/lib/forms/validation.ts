@@ -1,5 +1,11 @@
 import { routing, type Locale } from "@/i18n/routing";
-import { budgets, contactTopics, countryCodes, timeframes } from "./options";
+import {
+  budgets,
+  communityRoles,
+  contactTopics,
+  countryCodes,
+  timeframes,
+} from "./options";
 
 /**
  * Form validation shared by the browser (instant feedback) and the server
@@ -103,7 +109,7 @@ export function validateLead(
     areas: [...new Set(list(input, "areas"))],
     message: text(input, "message"),
     newsletter: checked(input, "newsletter"),
-    source: text(input, "source").slice(0, 120),
+    source: sourceOf(input),
   };
   c.required("name", data.name, 120);
   c.email("email", data.email);
@@ -144,15 +150,50 @@ export function validateContact(input: FormInput): Result<ContactData> {
   return c.result(data);
 }
 
-export type NewsletterData = { locale: Locale; email: string };
+/** Where on the site a form was sent from, e.g. "area-tamarin". */
+const sourceOf = (input: FormInput) =>
+  text(input, "source")
+    .replace(/[^\w/-]/g, "")
+    .slice(0, 120);
+
+export type NewsletterData = { locale: Locale; email: string; source: string };
 
 export function validateNewsletter(input: FormInput): Result<NewsletterData> {
   const c = new Checker();
   const data: NewsletterData = {
     locale: localeOf(input),
     email: text(input, "email").toLowerCase(),
+    source: sourceOf(input),
   };
   c.email("email", data.email);
+  c.consent("consent", checked(input, "consent"));
+  return c.result(data);
+}
+
+export type WhatsappData = {
+  locale: Locale;
+  name: string;
+  phone: string;
+  role: string;
+  source: string;
+};
+
+/** Interest in the west coast WhatsApp group: name, number, how they relate. */
+export function validateWhatsapp(input: FormInput): Result<WhatsappData> {
+  const c = new Checker();
+  const data: WhatsappData = {
+    locale: localeOf(input),
+    name: text(input, "name"),
+    phone: text(input, "phone"),
+    role: text(input, "role"),
+    source: sourceOf(input),
+  };
+  c.required("name", data.name, 120);
+  c.required("phone", data.phone, 40);
+  // A number WhatsApp can use: digits with an optional leading +.
+  if (data.phone && !/^\+?[\d\s().-]{7,}$/.test(data.phone))
+    c.errors.phone = "invalid";
+  c.oneOf("role", data.role, communityRoles);
   c.consent("consent", checked(input, "consent"));
   return c.result(data);
 }

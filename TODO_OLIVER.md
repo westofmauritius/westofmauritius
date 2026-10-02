@@ -32,6 +32,12 @@ Cloudflare → westofmauritius → Settings → Build → Build variables →
 Utan databasen svarar formulären på den publicerade sajten "tillfälligt
 otillgängligt" i stället för att tappa leads.
 
+### Nya tabeller (oktober 2026)
+
+Kör `DATABASE_URL="postgres://…" npm run db:migrate` en gång till efter
+den här uppdateringen. Den lägger till tabellen för WhatsApp-gruppen och
+kolumnen "source" för nyhetsbrevet. Säker att köra flera gånger.
+
 ## 3. E-post (Resend, gratis upp till 3 000 mejl/månad)
 
 1. Skapa konto på <https://resend.com>, skapa en API-nyckel.
@@ -99,10 +105,24 @@ verifiera med en DNS-post i Cloudflare) och skicka in
 3. Cloudflare → Build variables: `NEXT_PUBLIC_UMAMI_WEBSITE_ID` = det ID:t,
    och bygg om.
 
+Fler händelser sedan oktober 2026: `whatsapp-interest` och
+`cta-community`. Alla formulär skickar med vilken sida de kom från
+("source"). I adminsidan finns också **Conversions by page** som räknar
+förfrågningar, prenumeranter och WhatsApp-intresse per sida.
+
 Umami använder inga cookies, så ingen cookiebanner behövs. Konverteringar
 syns under "Events": `lead-submitted` (med budget, tidshorisont och
 källsida), `contact-submitted`, `newsletter-signup`, samt klick på
 `cta-enquire` och `cta-living-in-the-west` med position.
+
+## 7b. WhatsApp-gruppen
+
+Sidan `/en/community` samlar intresseanmälningar till en WhatsApp-grupp för
+västkusten. Skapa gruppen (gärna som WhatsApp Community med
+administratörsgodkännande) när några har anmält sig. I adminsidan →
+"WhatsApp group" finns listan med en länk som öppnar en chatt med varje
+person. Bjud bara in dem som finns i listan; de har godkänt att andra
+medlemmar ser deras nummer. Ta bort personer som ber om det.
 
 ## 8. Texter som bara du kan skriva
 

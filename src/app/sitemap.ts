@@ -46,6 +46,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ["/living-in-the-west/enquire", 0.7],
     ["/about", 0.4],
     ["/contact", 0.4],
+    ["/community", 0.5],
     ["/privacy", 0.2],
     ["/cookies", 0.2],
     ["/terms", 0.2],

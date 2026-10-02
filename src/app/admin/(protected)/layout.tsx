@@ -10,6 +10,8 @@ const tabs = [
   { href: "/admin/leads", label: "Leads" },
   { href: "/admin/contacts", label: "Contact messages" },
   { href: "/admin/newsletter", label: "Newsletter" },
+  { href: "/admin/whatsapp", label: "WhatsApp group" },
+  { href: "/admin/conversions", label: "Conversions by page" },
 ];
 
 export default async function ProtectedAdminLayout({

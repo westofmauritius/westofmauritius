@@ -4,6 +4,7 @@ import {
   validateContact,
   validateLead,
   validateNewsletter,
+  validateWhatsapp,
 } from "./validation";
 
 const areas = ["tamarin", "le-morne"];
@@ -127,5 +128,41 @@ describe("looksLikeBot", () => {
     expect(
       looksLikeBot({ website: "", startedAt: String(now - 45_000) }, now),
     ).toBe(false);
+  });
+});
+
+describe("validateWhatsapp", () => {
+  const valid = {
+    name: "Ana",
+    phone: "+230 5712 3456",
+    role: "moving",
+    consent: "on",
+    source: "community-page",
+  };
+
+  it("accepts a complete signup and keeps where it came from", () => {
+    const result = validateWhatsapp(valid);
+    expect(result.ok && result.data.source).toBe("community-page");
+  });
+
+  it("needs a usable number, a known role and consent", () => {
+    const result = validateWhatsapp({
+      ...valid,
+      phone: "call me",
+      role: "tourist",
+      consent: "",
+    });
+    expect(result.ok).toBe(false);
+    if (!result.ok)
+      expect(result.errors).toEqual({
+        phone: "invalid",
+        role: "invalid",
+        consent: "consent",
+      });
+  });
+
+  it("strips anything odd from the source", () => {
+    const result = validateWhatsapp({ ...valid, source: "area<script>" });
+    expect(result.ok && result.data.source).toBe("areascript");
   });
 });

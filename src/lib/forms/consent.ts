@@ -19,6 +19,10 @@ export const consentTexts = {
     en: "I want to receive the West of Mauritius newsletter by email. I can unsubscribe at any time.",
     fr: "Je souhaite recevoir la newsletter d’Ouest Maurice par courriel. Je peux me désabonner à tout moment.",
   },
+  "whatsapp-2026-10": {
+    en: "I agree that West of Mauritius may store my name and WhatsApp number to invite me to its west coast WhatsApp group. Members of the group can see my number. I can leave the group or ask to be removed at any time.",
+    fr: "J’accepte qu’Ouest Maurice conserve mon nom et mon numéro WhatsApp pour m’inviter dans son groupe WhatsApp de la côte ouest. Les membres du groupe peuvent voir mon numéro. Je peux quitter le groupe ou demander à être retiré à tout moment.",
+  },
 } satisfies Record<string, Record<Locale, string>>;
 
 export type ConsentVersion = keyof typeof consentTexts;
@@ -26,4 +30,5 @@ export type ConsentVersion = keyof typeof consentTexts;
 export const currentConsent = {
   lead: "lead-2026-10b",
   newsletter: "newsletter-2026-10b",
+  whatsapp: "whatsapp-2026-10",
 } as const satisfies Record<string, ConsentVersion>;

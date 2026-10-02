@@ -24,7 +24,7 @@ export function SiteFooter({
   return (
     <footer className="mt-auto bg-ocean-900 text-ocean-100">
       {newsletter && (
-        <div className="border-b border-white/10">
+        <div data-footer-newsletter className="border-b border-white/10">
           <Container
             size="wide"
             className="max-w-2xl py-14 lg:max-w-7xl lg:[&>div]:max-w-xl"

@@ -1,4 +1,8 @@
-import type { ContactData, LeadData } from "@/lib/forms/validation";
+import type {
+  ContactData,
+  LeadData,
+  WhatsappData,
+} from "@/lib/forms/validation";
 
 /** Rows as stored and as shown in the admin. */
 export type LeadRow = Omit<LeadData, "locale"> & {
@@ -22,6 +26,14 @@ export type SubscriberRow = {
   locale: string;
   confirmedAt: string | null;
   unsubscribedAt: string | null;
+  source: string;
+};
+
+export type WhatsappRow = Omit<WhatsappData, "locale"> & {
+  id: number;
+  createdAt: string;
+  locale: string;
+  consentVersion: string;
 };
 
 export type LeadFilters = {
@@ -35,7 +47,8 @@ export type LeadFilters = {
   to?: string;
 };
 
-export type RateKind = "lead" | "contact" | "newsletter" | "admin-login";
+export type RateKind =
+  "lead" | "contact" | "newsletter" | "whatsapp" | "admin-login";
 
 /**
  * Everything the site stores. Two implementations: Neon Postgres in
@@ -54,7 +67,13 @@ export interface Store {
     consentVersion: string;
     token: string;
     ipHash: string;
+    source: string;
   }): Promise<{ token: string; alreadyConfirmed: boolean }>;
+  /** A new number is added; a known number updates its details. */
+  saveWhatsapp(
+    entry: WhatsappData & { consentVersion: string; ipHash: string },
+  ): Promise<void>;
+  listWhatsapp(limit?: number): Promise<WhatsappRow[]>;
   confirmSubscriber(token: string): Promise<boolean>;
   unsubscribe(token: string): Promise<boolean>;
   listLeads(filters: LeadFilters, limit?: number): Promise<LeadRow[]>;

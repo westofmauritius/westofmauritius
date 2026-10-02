@@ -20,6 +20,10 @@ export const timeframes = [
 ] as const;
 export type Timeframe = (typeof timeframes)[number];
 
+/** How someone relates to the west coast, for the WhatsApp group. */
+export const communityRoles = ["live-here", "moving", "visiting"] as const;
+export type CommunityRole = (typeof communityRoles)[number];
+
 export const contactTopics = ["general", "partnership", "feedback"] as const;
 export type ContactTopic = (typeof contactTopics)[number];
 

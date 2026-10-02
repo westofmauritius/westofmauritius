@@ -104,7 +104,9 @@ export function NewsletterForm({
     "mt-2 block min-h-12 w-full rounded-sm border bg-white/5 px-4 text-base text-white placeholder:text-ocean-300";
 
   return (
-    <div>
+    // A form inside the page hides the footer's copy (see globals.css), so
+    // nobody sees the same sign up twice on one page.
+    <div data-newsletter-inline={source === "footer" ? undefined : ""}>
       <p className="font-display text-2xl text-white">{labels.title}</p>
       <p className="mt-2 text-sm leading-relaxed text-ocean-200">
         {labels.text}

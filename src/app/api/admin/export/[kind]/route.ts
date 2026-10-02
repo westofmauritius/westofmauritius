@@ -3,12 +3,13 @@ import { isAdmin } from "@/lib/server/admin-auth";
 import {
   budgetLabel,
   leadFiltersFrom,
+  roleLabel,
   timeframeLabel,
   topicLabel,
 } from "@/lib/server/admin-data";
 import { getStore } from "@/lib/server/store";
 
-/** CSV downloads for the admin: leads (with the page's filters), contacts, newsletter. */
+/** CSV downloads for the admin: leads (with the page's filters), contacts, newsletter, WhatsApp. */
 export async function GET(
   request: Request,
   { params }: RouteContext<"/api/admin/export/[kind]">,
@@ -61,6 +62,18 @@ export async function GET(
       { header: "Email", value: (s) => s.email },
       { header: "Language", value: (s) => s.locale },
       { header: "Confirmed (UTC)", value: (s) => s.confirmedAt },
+      { header: "Source", value: (s) => s.source },
+    ]);
+  } else if (kind === "whatsapp") {
+    const entries = await store.listWhatsapp(100_000);
+    csv = toCsv(entries, [
+      { header: "Received (UTC)", value: (w) => w.createdAt },
+      { header: "Name", value: (w) => w.name },
+      { header: "WhatsApp", value: (w) => w.phone },
+      { header: "Role", value: (w) => roleLabel(w.role) },
+      { header: "Language", value: (w) => w.locale },
+      { header: "Source", value: (w) => w.source },
+      { header: "Consent version", value: (w) => w.consentVersion },
     ]);
   } else {
     return new Response("Not found", { status: 404 });
@@ -69,7 +82,7 @@ export async function GET(
   return new Response(csv, {
     headers: {
       "Content-Type": "text/csv; charset=utf-8",
-      "Content-Disposition": `attachment; filename="west-mauritius-${kind}-${today}.csv"`,
+      "Content-Disposition": `attachment; filename="west-of-mauritius-${kind}-${today}.csv"`,
       "Cache-Control": "no-store",
     },
   });

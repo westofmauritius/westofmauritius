@@ -181,7 +181,19 @@ export default async function GuidePage({ params }: Props) {
       <Container size="prose" className="py-14">
         <Prose node={guide.body} locale={locale} />
         <Sources sources={guide.sources} locale={locale} className="mt-12" />
-        <EnquiryCta position={`guide-${guide.key}`} className="mt-12" />
+        {/* Readers of a guide are often still deciding whether to move:
+            offer a shortlist, with the area filled in when the guide is
+            about one place. */}
+        <EnquiryCta
+          intent="move"
+          area={
+            guideAreas.length === 1
+              ? { slug: guideAreas[0].slug, name: guideAreas[0].name }
+              : undefined
+          }
+          position={`guide-${guide.key}`}
+          className="mt-12"
+        />
 
         {guideAreas.length > 0 && (
           <div className="mt-12 border-t border-line pt-8">

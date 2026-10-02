@@ -28,7 +28,8 @@
     "terms": "Conditions d’utilisation",
     "planTrip": "Préparer son voyage",
     "credits": "Crédits photo",
-    "author": "À propos d’Oliver"
+    "author": "À propos d’Oliver",
+    "community": "Communauté"
   },
   "Home": {
     "eyebrow": "La côte ouest, racontée par un Mauricien",
@@ -88,6 +89,11 @@
     "places": {
       "title": "Adresses",
       "intro": "Restaurants, plages, spots de coucher de soleil, activités et shopping sur toute la côte ouest. Cherchez, ou filtrez par région et par thème."
+    },
+    "community": {
+      "title": "Rejoignez la communauté de la côte ouest",
+      "metaTitle": "Communauté de la côte ouest de Maurice : newsletter et groupe WhatsApp",
+      "intro": "Les nouvelles de la côte ouest, par un Mauricien, et un groupe WhatsApp pour celles et ceux qui y vivent, s’y installent ou y reviennent sans cesse."
     }
   },
   "NotFound": {
@@ -355,12 +361,26 @@
       "topicPlaceholder": "Choisir un sujet"
     },
     "newsletter": {
-      "title": "La côte ouest dans votre boîte mail",
-      "text": "Nouveaux guides, adresses et histoires de l’ouest de l’île Maurice. Quelques messages par mois, sans spam.",
+      "title": "Les nouvelles de la côte ouest, par un Mauricien",
+      "text": "Nouveaux guides et adresses, la vie sur place et ce qui change sur la côte, par un Mauricien. Quelques courriels par mois, sans spam.",
       "email": "Adresse email",
       "submit": "S’abonner",
       "successTitle": "Presque terminé",
       "successText": "Vérifiez votre boîte mail et cliquez sur le lien pour confirmer votre inscription."
+    },
+    "whatsapp": {
+      "name": "Votre nom",
+      "phone": "Numéro WhatsApp",
+      "phoneHint": "Avec l’indicatif du pays, par exemple +230 5712 3456.",
+      "role": "Vous êtes…",
+      "roles": {
+        "live-here": "Résident",
+        "moving": "Futur résident",
+        "visiting": "Visiteur régulier"
+      },
+      "submit": "Demander une invitation",
+      "successTitle": "Merci, vous êtes sur la liste",
+      "successText": "Nous vous enverrons une invitation sur WhatsApp à l’ouverture du groupe."
     }
   },
   "Enquire": {
@@ -372,7 +392,8 @@
     "lead": "Votre demande a bien été envoyée. Nous reviendrons vers vous rapidement.",
     "contact": "Votre message a bien été envoyé. Nous vous répondrons dès que possible.",
     "newsletter": "Vérifiez votre boîte mail et cliquez sur le lien pour confirmer votre inscription.",
-    "back": "Retour à l’accueil"
+    "back": "Retour à l’accueil",
+    "whatsapp": "Vous êtes sur la liste. Nous vous enverrons une invitation sur WhatsApp à l’ouverture du groupe."
   },
   "NewsletterStatus": {
     "title": "Newsletter",
@@ -425,5 +446,20 @@
     "faqTitle": "Questions sur la vie {name}",
     "updated": "Mis à jour le {date}",
     "reading": "Pour aller plus loin sur la vie {name}"
+  },
+  "Community": {
+    "eyebrow": "Communauté",
+    "newsletterTitle": "La newsletter",
+    "newsletterPoints": [
+      "Les nouveaux guides et adresses dès leur publication",
+      "La vie et l’achat sur la côte ouest",
+      "Quelques courriels par mois, désabonnement en un clic"
+    ],
+    "whatsappTitle": "Le groupe WhatsApp",
+    "whatsappText": "Nous lançons un groupe WhatsApp pour la côte ouest : questions, bons plans et nouvelles locales, partagés par ceux qui la connaissent. Laissez votre numéro, nous vous inviterons à l’ouverture.",
+    "homeEyebrow": "Communauté",
+    "homeTitle": "Les nouvelles de la côte ouest, par un Mauricien",
+    "homeText": "Abonnez vous à la newsletter, ou demandez une invitation au groupe WhatsApp de la côte ouest.",
+    "homeCta": "Rejoindre la communauté"
   }
 }
