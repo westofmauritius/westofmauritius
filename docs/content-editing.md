@@ -65,7 +65,7 @@ build. No local setup needed.
 
 1. **Create a GitHub App** at GitHub → Settings → Developer settings →
    GitHub Apps → New GitHub App:
-   - Homepage URL: your site, e.g. `https://westmauritius.mu`
+   - Homepage URL: your site, e.g. `https://westofmauritius.mu`
    - Callback URL: `https://<your site>/api/keystatic/github/oauth/callback`
    - Webhook: untick "Active"
    - Repository permissions: **Contents: Read and write**,

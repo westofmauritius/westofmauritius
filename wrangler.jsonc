@@ -5,7 +5,9 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   // Must match the Worker's name in the Cloudflare dashboard.
   "name": "westofmauritius",
-  "main": ".open-next/worker.js",
+  // worker.mjs wraps the OpenNext Worker (.open-next/worker.js): host checks
+  // for search engines and redirects, see src/lib/hosts.ts.
+  "main": "worker.mjs",
   "compatibility_date": "2026-09-30",
   // nodejs_compat: Next.js needs Node.js APIs.
   // global_fetch_strictly_public: server-side fetch() can only reach the

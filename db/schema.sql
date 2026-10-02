@@ -1,4 +1,4 @@
--- Database schema for West Mauritius (Neon Postgres).
+-- Database schema for West of Mauritius (Neon Postgres).
 -- Safe to run more than once: `npm run db:migrate`.
 
 -- Property enquiries from the "Live in the West" form.

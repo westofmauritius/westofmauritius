@@ -10,7 +10,7 @@ import { getPathname, type Href } from "@/i18n/pathname";
 import { routing } from "@/i18n/routing";
 import { guideCategories } from "@/lib/guide-categories";
 import { fontVariables } from "@/lib/fonts";
-import { allowIndexing, brandName, siteUrl } from "@/lib/site";
+import { brandName, searchIndexing, siteUrl } from "@/lib/site";
 import { openGraphBase } from "@/lib/seo/open-graph";
 import "../globals.css";
 
@@ -34,8 +34,10 @@ export async function generateMetadata({
     description: t("description"),
     openGraph: openGraphBase(locale),
     twitter: { card: "summary_large_image" },
-    // Before launch (or on preview addresses) nothing is indexed; see allowIndexing.
-    ...(!allowIndexing && { robots: { index: false, follow: false } }),
+    // Kill switch only: preview hosts are blocked per request (worker.mjs).
+    ...(searchIndexing === "off" && {
+      robots: { index: false, follow: false },
+    }),
   };
 }
 

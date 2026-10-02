@@ -11,16 +11,13 @@ live.
 hamnar i `main` byggs och publiceras. Keystatic (punkt 9) sparar ändringar
 i `main`.
 
-## 1. Cloudflare: byggvariabel för adressen
+## 1. Adressen (SITE_URL) ✅ inget att göra just nu
 
-Cloudflare → Workers & Pages → westofmauritius → Settings → Build → Build
-variables:
-
-- `NEXT_PUBLIC_SITE_URL` = sajtens adress, t.ex.
-  `https://westofmauritius.<ditt-subdomän>.workers.dev` nu och
-  `https://westmauritius.mu` när domänen är kopplad.
-
-Utan den pekar kanoniska adresser, hreflang och sitemap på `localhost`.
+Produktionsadressen `https://westofmauritius.mu` är förinställd i koden
+(`src/lib/site.ts`). Den styr kanoniska adresser, sitemap, Open Graph,
+strukturerad data och länkar i mejl. Bara om adressen någon gång ändras:
+Cloudflare → westofmauritius → Settings → Build → Build variables →
+`SITE_URL` = den nya adressen, och bygg om.
 
 ## 2. Databas för leads (Neon, gratis)
 
@@ -38,11 +35,13 @@ otillgängligt" i stället för att tappa leads.
 ## 3. E-post (Resend, gratis upp till 3 000 mejl/månad)
 
 1. Skapa konto på <https://resend.com>, skapa en API-nyckel.
-2. Verifiera domänen `westmauritius.mu` i Resend (lägg in DNS-posterna de
-   visar hos din domänleverantör).
+2. Verifiera avsändardomänen `westofmauritius.mu` i Resend: Domains → Add
+   domain → lägg in DNS-posterna de visar (SPF, DKIM och gärna DMARC) i
+   Cloudflare → westofmauritius.mu → DNS. Vänta tills Resend visar
+   "Verified".
 3. Lägg till som Secrets i Cloudflare:
    - `RESEND_API_KEY`
-   - `EMAIL_FROM` = t.ex. `West of Mauritius <hello@westmauritius.mu>`
+   - `EMAIL_FROM` = `West of Mauritius <hello@westofmauritius.mu>`
    - `LEAD_NOTIFY_EMAIL` = adressen där du vill få nya leads
    - `IP_HASH_SALT` = en lång slumpmässig sträng (t.ex. från
      `openssl rand -hex 32`)
@@ -67,33 +66,36 @@ Logga sedan in på `https://<din-sajt>/admin`. Där ser och filtrerar du leads,
 kontaktmeddelanden och nyhetsbrevsprenumeranter, och exporterar till CSV.
 Utan dessa två inställningar är adminsidan avstängd.
 
-## 6. Koppla domänen och slå på indexering
+## 6. Domänen westofmauritius.mu i DNS
 
-1. Registrera `westmauritius.mu` (och gärna `ouestmaurice.mu`) om det inte
-   är gjort.
-2. Cloudflare → westofmauritius → Settings → Domains & Routes → Add →
-   Custom domain: `westmauritius.mu` (och `www.westmauritius.mu`). Domänen
-   behöver ligga som zon i ditt Cloudflare-konto.
-3. Ändra `NEXT_PUBLIC_SITE_URL` (punkt 1) till `https://westmauritius.mu`.
+1. Registrera `westofmauritius.mu` om det inte är gjort, och lägg den som zon
+   i ditt Cloudflare-konto (Add a site → följ instruktionerna för att byta
+   namnservrar hos registraren).
+2. Cloudflare → Workers & Pages → westofmauritius → Settings → Domains &
+   Routes → Add → Custom domain: `westofmauritius.mu`, och en till för
+   `www.westofmauritius.mu` (den skickas automatiskt vidare till adressen
+   utan www).
+3. Om du äger den gamla domänen `westmauritius.mu`: koppla den på samma sätt
+   som Custom domain. Sajten skickar då alla besök vidare (301) till
+   `westofmauritius.mu`, så gamla länkar fortsätter fungera.
+4. Avsändardomänen för mejl: se punkt 3 (Resend).
 
-Franskan ligger under `/fr/…` tills vidare. Hur den flyttas till
-`ouestmaurice.mu` står i `src/i18n/routing.ts`.
+### Indexering sköter sig själv
 
-### Indexering
+Sajten släpper bara in sökmotorer på `westofmauritius.mu`. Alla andra
+adresser (förhandsadressen på workers.dev) får automatiskt `noindex` och en
+robots.txt som stänger allt, oavsett hur bygget gjordes. Du behöver alltså
+inte ändra något vid lansering. Vill du stänga allt tillfälligt: Build
+variable `SEARCH_INDEXING` = `off`, och bygg om.
 
-Tills vidare blockerar sajten sökmotorer (robots.txt och `noindex`), så att
-förhandsadressen på workers.dev inte hamnar i Google. När
-`westmauritius.mu` är kopplad och `NEXT_PUBLIC_SITE_URL` pekar dit:
-
-- Cloudflare → Build variables: `NEXT_PUBLIC_ALLOW_INDEXING` = `true`, och
-  bygg om.
-- Lägg till sajten i Google Search Console och skicka in
-  `https://westmauritius.mu/sitemap.xml`.
+När domänen fungerar: lägg till den i Google Search Console (domänegendom,
+verifiera med en DNS-post i Cloudflare) och skicka in
+`https://westofmauritius.mu/sitemap.xml`.
 
 ## 7. Statistik (Umami Cloud, gratis)
 
 1. Skapa ett konto på <https://cloud.umami.is> (gratisplanen räcker).
-2. Lägg till webbplatsen `westmauritius.mu` och kopiera dess **Website ID**.
+2. Lägg till webbplatsen `westofmauritius.mu` och kopiera dess **Website ID**.
 3. Cloudflare → Build variables: `NEXT_PUBLIC_UMAMI_WEBSITE_ID` = det ID:t,
    och bygg om.
 
@@ -148,12 +150,12 @@ redigera på den publicerade sajten behövs en GitHub-app. Stegen står i
 ## Kontroll före lansering
 
 - [x] `main` byggs i Cloudflare (punkt 0)
-- [ ] `NEXT_PUBLIC_SITE_URL` satt (punkt 1)
 - [ ] Neon kopplad och `npm run db:migrate` körd (punkt 2)
 - [ ] Resend verifierad och secrets satta (punkt 3); skicka ett testlead
       och kontrollera att mejlet kommer fram
 - [ ] Samtyckestexter och juridiska sidor granskade (punkt 4 och 8)
 - [ ] Inloggning på `/admin` fungerar (punkt 5)
-- [ ] Domänen kopplad, sedan `NEXT_PUBLIC_ALLOW_INDEXING=true` (punkt 6)
+- [ ] `westofmauritius.mu` kopplad i Cloudflare, Search Console och sitemap (punkt 6)
+- [ ] Avsändardomänen verifierad i Resend (punkt 3)
 - [ ] Umami-ID satt (punkt 7)
 - [ ] Riktiga texter genomlästa, platshållare ersatta eller raderade (punkt 8)

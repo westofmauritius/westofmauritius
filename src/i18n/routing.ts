@@ -12,7 +12,7 @@ import { defineRouting } from "next-intl/routing";
  * The French domain (ouestmaurice.mu) is connected in the deployment step by
  * adding a `domains` entry here, e.g.
  *   domains: [
- *     { domain: "westmauritius.mu", defaultLocale: "en", locales: ["en"] },
+ *     { domain: "westofmauritius.mu", defaultLocale: "en", locales: ["en"] },
  *     { domain: "ouestmaurice.mu", defaultLocale: "fr", locales: ["fr"] },
  *   ]
  * Because every link and hreflang tag is built from this file, nothing else

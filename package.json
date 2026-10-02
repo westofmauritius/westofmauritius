@@ -1,12 +1,12 @@
 {
-  "name": "westmauritius",
+  "name": "westofmauritius",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "predev": "node scripts/copy-maplibre-worker.mjs && node scripts/optimize-images.mjs",
     "dev": "next dev",
     "prebuild": "node scripts/copy-maplibre-worker.mjs && node scripts/optimize-images.mjs && npm run content:check && npm run og:generate",
-    "build": "opennextjs-cloudflare build && opennextjs-cloudflare populateCache local",
+    "build": "opennextjs-cloudflare build && tsx scripts/write-site-config.mts && opennextjs-cloudflare populateCache local",
     "build:next": "next build",
     "start": "next start",
     "lint": "eslint",

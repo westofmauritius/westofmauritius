@@ -1,9 +1,10 @@
 # West of Mauritius
 
-Source code for **westmauritius.mu** (English) and, later, **ouestmaurice.mu**
-(French): a premium lifestyle and travel guide to the west coast of
-Mauritius — Tamarin, Black River, Le Morne, Flic en Flac, La Gaulette and
-Chamarel — with a "Live in the West" section that collects property leads.
+Source code for **westofmauritius.mu**: a Mauritian's guide to the west coast
+of Mauritius (Tamarin, Black River, Le Morne, Flic en Flac, La Gaulette and
+Chamarel), for visitors and for people moving there, with a property section
+that collects leads. English first; French is built in and switched off until
+its content is ready.
 
 - What still needs the owner before launch: [TODO_OLIVER.md](TODO_OLIVER.md)
 - Why things are built the way they are: [DECISIONS.md](DECISIONS.md)
@@ -158,8 +159,12 @@ The free Workers plan allows a 3 MB (compressed) Worker; this one is about
 
 ## SEO, accessibility and security
 
-- Search engines are blocked until `NEXT_PUBLIC_ALLOW_INDEXING=true` is set
-  at launch (robots.txt and noindex on every page).
+- `SITE_URL` (default `https://westofmauritius.mu`) is the single source
+  for canonical URLs, sitemap, Open Graph, structured data and e-mail links.
+- Only the `SITE_URL` host may be indexed: `worker.mjs` gives every other
+  host (workers.dev previews) `X-Robots-Tag: noindex` and a block-all
+  robots.txt, and redirects `www.` and the retired domain (see
+  `src/lib/hosts.ts`). `SEARCH_INDEXING=off` blocks everything.
 - RSS feed of the guides per language: `/en/feed.xml`, `/fr/feed.xml`.
 - `sitemap.xml` (with hreflang), canonicals, unique titles and descriptions,
   structured data (`src/lib/seo/schema.ts`), sharing images per page.

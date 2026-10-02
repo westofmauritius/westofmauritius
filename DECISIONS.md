@@ -138,9 +138,8 @@ to-do list, TODO_OLIVER.md, is in Swedish.)
 
 ## SEO files, sharing images and security
 
-- **Indexing is opt-in** (`NEXT_PUBLIC_ALLOW_INDEXING=true`). Until then
-  robots.txt disallows everything and pages carry `noindex`, so a preview
-  address (workers.dev) never competes with the real domain in Google.
+- **Indexing is decided per request, by host** (superseded the earlier
+  opt-in flag, see "Domain and indexing" below).
 - **sitemap.xml lists every indexable page in both languages with hreflang
   alternates**; placeholder content and utility pages are left out.
 - **Sharing images are drawn at build time** (`scripts/generate-og.tsx`,
@@ -291,3 +290,27 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
   traced from it, with the setting sun behind and a lagoon line below. It
   lives in one file (`src/lib/brand-mark.ts`) used by the header and footer,
   the sharing images and the icons (`npm run icons:generate`).
+
+## Domain and indexing (October 2026)
+
+- **Domain westofmauritius.mu, brand "West of Mauritius".** `SITE_URL` is
+  the only place the address is set, and it defaults to the production
+  domain: canonical URLs on any copy of the site (previews, local builds)
+  point at the real domain, which is what search engines should see.
+- **Indexing is decided per request, from the host**, in a thin Worker entry
+  (`worker.mjs`, logic in `src/lib/hosts.ts`, unit tested). The same build is
+  served on the production domain and on workers.dev, so a build-time flag
+  could not tell them apart and one mistaken variable would have exposed
+  (or hidden) the whole site. Now only the `SITE_URL` host is indexable;
+  every other host gets `X-Robots-Tag: noindex, nofollow` and a block-all
+  robots.txt. `SEARCH_INDEXING=off` is the emergency switch for everything.
+  Static files (images, scripts) are served by Cloudflare before the Worker
+  and are not blocked on previews; they are only reachable through pages
+  that are themselves noindex, so the risk is negligible.
+- **`www.` and the retired domain westmauritius.mu redirect (301)** to the
+  canonical host, keeping the path; this is the only place the old domain
+  appears in code.
+- **The no-JavaScript form redirect stays on the request's own host**, so a
+  preview never sends people to production.
+- **Consent texts were re-versioned** with the new name; the old versions
+  were deleted, as the site was never live and nobody agreed to them.

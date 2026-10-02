@@ -3,7 +3,6 @@ import { getPathname } from "@/i18n/pathname";
 import { routing, type Locale } from "@/i18n/routing";
 import type { FieldErrors, FormInput, Result } from "@/lib/forms/validation";
 import { looksLikeBot } from "@/lib/forms/validation";
-import { siteUrl } from "@/lib/site";
 import { clientIp, hashIp } from "./request";
 import { getStore } from "./store";
 import type { RateKind, Store } from "./types";
@@ -114,9 +113,11 @@ function formResponse(
       { status: statusCode[outcome.status] },
     );
   }
+  // Same host as the request, so a preview or local copy stays on itself.
+  const origin = new URL(request.url).origin;
   const target =
     outcome.status === "ok"
-      ? `${siteUrl}${getPathname({ href: "/thank-you", locale })}?form=${form}`
-      : (request.headers.get("referer") ?? `${siteUrl}/${locale}`);
+      ? `${origin}${getPathname({ href: "/thank-you", locale })}?form=${form}`
+      : (request.headers.get("referer") ?? `${origin}/${locale}`);
   return Response.redirect(target, 303);
 }

@@ -4,7 +4,7 @@ import { siteUrl } from "@/lib/site";
 
 export type { Href } from "@/i18n/pathname";
 
-/** Full public URL of an internal route, e.g. https://westmauritius.mu/fr/lieux/x. */
+/** Full public URL of an internal route, e.g. https://westofmauritius.mu/en/places/x. */
 export function absoluteUrl(href: Href, locale: Locale): string {
   return siteUrl + getPathname({ href, locale });
 }
