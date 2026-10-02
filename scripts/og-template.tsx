@@ -5,6 +5,8 @@
  * satori (HTML/CSS subset → SVG) in scripts/generate-og.tsx.
  */
 
+import { brandMark } from "../src/lib/brand-mark";
+
 export type OgTone = "lagoon" | "sunset" | "sand" | "ocean";
 
 const backgrounds: Record<OgTone, string> = {
@@ -69,39 +71,11 @@ export function OgTemplate({
         }}
       />
       <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: 4,
-          }}
-        >
-          <div
-            style={{
-              width: 40,
-              height: 20,
-              borderRadius: "20px 20px 0 0",
-              backgroundColor: "#ec5a3c",
-            }}
-          />
-          <div
-            style={{
-              width: 52,
-              height: 3,
-              borderRadius: 2,
-              backgroundColor: "white",
-            }}
-          />
-          <div
-            style={{
-              width: 28,
-              height: 3,
-              borderRadius: 2,
-              backgroundColor: "#79d6cf",
-            }}
-          />
-        </div>
+        <svg width={52} height={52} viewBox={brandMark.viewBox}>
+          <circle {...brandMark.sun} fill={brandMark.colors.sun} />
+          <path d={brandMark.mountain} fill="white" />
+          <rect {...brandMark.lagoon} fill={brandMark.colors.lagoonOnDark} />
+        </svg>
         <div style={{ fontFamily: "Garamond", fontSize: 38 }}>{brand}</div>
       </div>
       <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>

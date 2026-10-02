@@ -43,21 +43,22 @@ them. The admin pages need `ADMIN_PASSWORD` and `ADMIN_SESSION_SECRET` in
 
 ## Scripts
 
-| Command                 | What it does                                                     |
-| ----------------------- | ---------------------------------------------------------------- |
-| `npm run dev`           | Development server                                               |
-| `npm run build`         | Cloudflare build: Next.js build + OpenNext Worker (`.open-next`) |
-| `npm run build:next`    | Plain Next.js build (used by OpenNext and the e2e tests)         |
-| `npm run start`         | Serve the plain Next.js build on Node                            |
-| `npm run preview`       | Build and run the Worker locally in Cloudflare's runtime         |
-| `npm run deploy`        | Build and deploy to Cloudflare from your machine                 |
-| `npm run check`         | Lint + typecheck + format check + unit tests — run before commit |
-| `npm run test`          | Unit tests (Vitest)                                              |
-| `npm run test:e2e`      | Build, then end-to-end and accessibility tests (Playwright)      |
-| `npm run format`        | Fix formatting (Prettier, also sorts Tailwind classes)           |
-| `npm run content:check` | Check content links (also runs before every build)               |
-| `npm run og:generate`   | Draw the social sharing images (also runs before every build)    |
-| `npm run db:migrate`    | Create the database tables (needs `DATABASE_URL`)                |
+| Command                  | What it does                                                     |
+| ------------------------ | ---------------------------------------------------------------- |
+| `npm run dev`            | Development server                                               |
+| `npm run build`          | Cloudflare build: Next.js build + OpenNext Worker (`.open-next`) |
+| `npm run build:next`     | Plain Next.js build (used by OpenNext and the e2e tests)         |
+| `npm run start`          | Serve the plain Next.js build on Node                            |
+| `npm run preview`        | Build and run the Worker locally in Cloudflare's runtime         |
+| `npm run deploy`         | Build and deploy to Cloudflare from your machine                 |
+| `npm run check`          | Lint + typecheck + format check + unit tests — run before commit |
+| `npm run test`           | Unit tests (Vitest)                                              |
+| `npm run test:e2e`       | Build, then end-to-end and accessibility tests (Playwright)      |
+| `npm run format`         | Fix formatting (Prettier, also sorts Tailwind classes)           |
+| `npm run content:check`  | Check content links (also runs before every build)               |
+| `npm run og:generate`    | Draw the social sharing images (also runs before every build)    |
+| `npm run icons:generate` | Redraw the favicon and app icons from the logo mark              |
+| `npm run db:migrate`     | Create the database tables (needs `DATABASE_URL`)                |
 
 Before every build, `prebuild` also copies MapLibre's worker file to
 `public/vendor/` and resizes photos into AVIF and WebP copies in `public/_img/`. Both folders, and

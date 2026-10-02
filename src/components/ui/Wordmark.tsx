@@ -1,3 +1,4 @@
+import { brandMark } from "@/lib/brand-mark";
 import { cn } from "@/lib/cn";
 
 type WordmarkProps = {
@@ -9,9 +10,9 @@ type WordmarkProps = {
 };
 
 /**
- * Text logo: a small sun setting on the horizon, followed by the brand name in
- * the serif display font. Being text, it stays sharp at any size and needs no
- * image download. A designed logo can replace the SVG later.
+ * Logo: the Rempart mountain with the setting sun behind it (see
+ * src/lib/brand-mark.ts), followed by the brand name in the serif display
+ * font. Inline SVG and text: sharp at any size, no image download.
  */
 export function Wordmark({ name, tone = "dark", className }: WordmarkProps) {
   return (
@@ -23,27 +24,15 @@ export function Wordmark({ name, tone = "dark", className }: WordmarkProps) {
       )}
     >
       <svg
-        viewBox="0 0 24 24"
+        viewBox={brandMark.viewBox}
         aria-hidden="true"
-        className="size-[1.05em] shrink-0 translate-y-[-0.04em]"
+        className="size-[1.3em] shrink-0 translate-y-[-0.1em]"
       >
-        {/* Half sun above the horizon. */}
-        <path d="M4 15a8 8 0 0 1 16 0Z" className="fill-coral-500" />
-        {/* Horizon line, then a shorter reflection line in the lagoon. */}
+        {/* The setting sun behind the Rempart, then the lagoon below. */}
+        <circle {...brandMark.sun} className="fill-coral-500" />
+        <path d={brandMark.mountain} className="fill-current" />
         <rect
-          x="1"
-          y="16.5"
-          width="22"
-          height="1.6"
-          rx="0.8"
-          className="fill-current"
-        />
-        <rect
-          x="6"
-          y="20"
-          width="12"
-          height="1.6"
-          rx="0.8"
+          {...brandMark.lagoon}
           className={tone === "dark" ? "fill-lagoon-500" : "fill-lagoon-300"}
         />
       </svg>

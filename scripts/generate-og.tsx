@@ -68,7 +68,7 @@ const cache: Record<string, string> = existsSync(cacheFile)
   ? JSON.parse(readFileSync(cacheFile, "utf8"))
   : {};
 // Bump when the template changes, so every image is redrawn.
-const TEMPLATE_VERSION = "2";
+const TEMPLATE_VERSION = "3";
 
 async function render(job: Job, locale: Locale) {
   const props = {

@@ -287,3 +287,7 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
   on the start page and theme descriptions are gone. Card lists show two
   per row on phones and four on large screens, so more places fit on
   screen. The start page gained a map of every place.
+- **The logo mark is the Rempart**, the peak in the start page photo,
+  traced from it, with the setting sun behind and a lagoon line below. It
+  lives in one file (`src/lib/brand-mark.ts`) used by the header and footer,
+  the sharing images and the icons (`npm run icons:generate`).
