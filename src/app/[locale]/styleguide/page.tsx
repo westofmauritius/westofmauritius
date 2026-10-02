@@ -137,7 +137,7 @@ export default async function StyleguidePage({
       <Section title="Buttons and badges">
         <div className="flex flex-wrap items-center gap-3">
           <ButtonLink href="/guides">Explore the guides</ButtonLink>
-          <ButtonLink href="/live-in-the-west" variant="accent">
+          <ButtonLink href="/living-in-the-west" variant="accent">
             Get in touch about buying
           </ButtonLink>
           <ButtonLink href="/areas" variant="outline">

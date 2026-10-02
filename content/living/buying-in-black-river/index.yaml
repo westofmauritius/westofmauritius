@@ -2,11 +2,79 @@ kind: area
 area: black-river
 order: 3
 placeholder: true
+publishedAt: '2026-10-02'
+relatedAreas:
+  - black-river
 content:
   en:
-    title: Buying in Black River
-    excerpt: Placeholder, to be written.
+    title: "Buying property in Black River as a foreigner"
+    slug: buying-property-in-black-river
+    excerpt: "Which schemes let foreigners buy in Black River, what homes are on offer, the costs on top of the price and the steps from first visit to keys."
+    shortAnswer: "[Placeholder: answer “Can a foreigner buy property in Black River, and how?” in two or three sentences, before any detail.]"
+    table:
+      caption: "Buying in Black River at a glance"
+      headers:
+        - ""
+        - "What to know"
+      rows:
+        - cells:
+            - "Schemes open to foreigners"
+            - "[To be checked]"
+        - cells:
+            - "Types of homes"
+            - "[To be written]"
+        - cells:
+            - "Typical price range"
+            - "[To be checked]"
+        - cells:
+            - "Fees and taxes on top"
+            - "[To be checked]"
+        - cells:
+            - "Residence permit with purchase"
+            - "[To be checked]"
+    faqs:
+      - question: "Can foreigners buy property in Black River?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+      - question: "How much does a villa cost in Black River?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+      - question: "Which schemes allow foreigners to buy in Black River?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+      - question: "Does buying in Black River give you residency?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+    seoDescription: "Buying property in Black River, Mauritius, as a foreigner: the schemes that allow it, homes on offer, costs and steps, explained by a local."
   fr:
-    title: Acheter à Rivière Noire
-    slug: acheter-a-riviere-noire
-    excerpt: Texte provisoire, à rédiger.
+    title: "Acheter un bien à Rivière Noire quand on est étranger"
+    slug: acheter-un-bien-black-river
+    excerpt: "Les dispositifs ouverts aux étrangers à Rivière Noire, les biens proposés, les frais en plus du prix et les étapes jusqu’aux clés."
+    shortAnswer: "[Texte provisoire : répondez à « Un étranger peut il acheter à Rivière Noire, et comment ? » en deux ou trois phrases, avant tout détail.]"
+    table:
+      caption: "Acheter à Rivière Noire en bref"
+      headers:
+        - ""
+        - "À savoir"
+      rows:
+        - cells:
+            - "Dispositifs ouverts aux étrangers"
+            - "[À vérifier]"
+        - cells:
+            - "Types de biens"
+            - "[À rédiger]"
+        - cells:
+            - "Fourchette de prix"
+            - "[À vérifier]"
+        - cells:
+            - "Frais et taxes en plus"
+            - "[À vérifier]"
+        - cells:
+            - "Permis de résidence avec l’achat"
+            - "[À vérifier]"
+    faqs:
+      - question: "Un étranger peut il acheter à Rivière Noire ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+      - question: "Combien coûte une villa à Rivière Noire ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+      - question: "Quels dispositifs permettent d’acheter à Rivière Noire ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+      - question: "Acheter à Rivière Noire donne t il la résidence ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+    seoDescription: "Acheter un bien à Rivière Noire, île Maurice, quand on est étranger : dispositifs, biens, coûts et étapes, expliqués par un Mauricien."

@@ -161,3 +161,39 @@ test("area pages answer living questions and lead to a shortlist", async ({
   ).join();
   expect(jsonLd).not.toContain("FAQPage");
 });
+
+test("the Living in the West hub links every question, comparison and area", async ({
+  page,
+}) => {
+  await page.goto("/en/living-in-the-west");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+    "Living in the West",
+  );
+  await expect(
+    page.getByRole("link", { name: /Tamarin vs Grand Baie/ }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("link", { name: "Living in Tamarin" }),
+  ).toHaveAttribute("href", "/en/areas/tamarin#living");
+
+  // Question pages answer first, then detail, a table and sources.
+  await page.goto("/en/living-in-the-west/cost-of-living-in-tamarin");
+  await expect(page.getByText("The short answer")).toBeVisible();
+  await expect(page.getByRole("table")).toBeVisible();
+  await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
+    "content",
+    /noindex/,
+  );
+});
+
+test("old Live in the West addresses redirect permanently", async ({
+  request,
+}) => {
+  const response = await request.get("/en/live-in-the-west/buying-in-tamarin", {
+    maxRedirects: 0,
+  });
+  expect(response.status()).toBe(308);
+  expect(response.headers().location).toBe(
+    "/en/living-in-the-west/buying-property-in-tamarin",
+  );
+});

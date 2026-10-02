@@ -1,0 +1,118 @@
+kind: question
+order: 3
+placeholder: true
+publishedAt: '2026-10-02'
+relatedAreas:
+  - flic-en-flac
+  - tamarin
+  - black-river
+  - la-gaulette
+  - le-morne
+  - chamarel
+content:
+  en:
+    title: "Where is the best place to live on the west coast of Mauritius?"
+    slug: best-area-to-live-on-the-west-coast
+    excerpt: "Flic en Flac, Tamarin, Black River, La Gaulette, Le Morne or Chamarel: which suits families, retirees, surfers and remote workers."
+    shortAnswer: "[Placeholder: answer “Which area on the west coast is best to live in, and for whom?” in two or three sentences, before any detail.]"
+    table:
+      caption: "The six areas compared"
+      headers:
+        - ""
+        - "Best for"
+        - "Feel"
+        - "Typical rent"
+      rows:
+        - cells:
+            - "Flic en Flac"
+            - "[To be written]"
+            - "[To be written]"
+            - "[To be checked]"
+        - cells:
+            - "Tamarin"
+            - "[To be written]"
+            - "[To be written]"
+            - "[To be checked]"
+        - cells:
+            - "Black River"
+            - "[To be written]"
+            - "[To be written]"
+            - "[To be checked]"
+        - cells:
+            - "La Gaulette"
+            - "[To be written]"
+            - "[To be written]"
+            - "[To be checked]"
+        - cells:
+            - "Le Morne"
+            - "[To be written]"
+            - "[To be written]"
+            - "[To be checked]"
+        - cells:
+            - "Chamarel"
+            - "[To be written]"
+            - "[To be written]"
+            - "[To be checked]"
+    faqs:
+      - question: "Which west coast area is best for families?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+      - question: "Where do expats live on the west coast of Mauritius?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+      - question: "Which west coast village is the quietest?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+      - question: "Is the west coast of Mauritius a good place to live?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+    seoDescription: "The best place to live on the west coast of Mauritius, area by area: who each village suits, what it costs and how it feels, from a local."
+  fr:
+    title: "Où vivre sur la côte ouest de Maurice ?"
+    slug: ou-vivre-sur-la-cote-ouest
+    excerpt: "Flic en Flac, Tamarin, Rivière Noire, La Gaulette, Le Morne ou Chamarel : quel village pour les familles, les retraités, les surfeurs et le télétravail."
+    shortAnswer: "[Texte provisoire : répondez à « Quel secteur de la côte ouest choisir, et pour qui ? » en deux ou trois phrases, avant tout détail.]"
+    table:
+      caption: "Les six secteurs comparés"
+      headers:
+        - ""
+        - "Idéal pour"
+        - "Ambiance"
+        - "Loyer courant"
+      rows:
+        - cells:
+            - "Flic en Flac"
+            - "[À rédiger]"
+            - "[À rédiger]"
+            - "[À vérifier]"
+        - cells:
+            - "Tamarin"
+            - "[À rédiger]"
+            - "[À rédiger]"
+            - "[À vérifier]"
+        - cells:
+            - "Rivière Noire"
+            - "[À rédiger]"
+            - "[À rédiger]"
+            - "[À vérifier]"
+        - cells:
+            - "La Gaulette"
+            - "[À rédiger]"
+            - "[À rédiger]"
+            - "[À vérifier]"
+        - cells:
+            - "Le Morne"
+            - "[À rédiger]"
+            - "[À rédiger]"
+            - "[À vérifier]"
+        - cells:
+            - "Chamarel"
+            - "[À rédiger]"
+            - "[À rédiger]"
+            - "[À vérifier]"
+    faqs:
+      - question: "Quel secteur de la côte ouest pour une famille ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+      - question: "Où vivent les expatriés sur la côte ouest ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+      - question: "Quel est le village le plus calme de la côte ouest ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+      - question: "Fait il bon vivre sur la côte ouest de Maurice ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+    seoDescription: "Où vivre sur la côte ouest de Maurice, secteur par secteur : pour qui, à quel prix et dans quelle ambiance, par un Mauricien."

@@ -67,7 +67,8 @@
     },
     "live": {
       "title": "Vivre dans l’Ouest",
-      "intro": "Acheter un bien à Maurice en tant qu’étranger ou Mauricien de la diaspora : dispositifs, quartiers et étapes."
+      "metaTitle": "Vivre sur la côte ouest de Maurice : secteurs, coûts et achat",
+      "intro": "Vous pensez vous installer sur la côte ouest de Maurice, ou rentrer au pays ? Où vivre, combien ça coûte et comment acheter, expliqué par un Mauricien."
     },
     "about": {
       "title": "À propos",
@@ -233,7 +234,7 @@
     "mapName": "les adresses de la côte ouest"
   },
   "LivePage": {
-    "eyebrow": "Vivre dans l’Ouest",
+    "eyebrow": "S’installer dans l’Ouest, avec un Mauricien",
     "audienceTitle": "Pour qui",
     "audienceAbroad": "Venir de l’étranger",
     "audienceAbroadText": "Vous rêvez d’une vie au bord du lagon et voulez savoir comment un étranger peut acheter.",
@@ -243,13 +244,23 @@
     "audienceInvestText": "Vous voyez la côte ouest comme un lieu d’investissement, que vous y viviez ou non.",
     "schemesTitle": "Les façons d’acheter",
     "schemesIntro": "Les dispositifs sur lesquels les acheteurs étrangers posent le plus de questions.",
-    "areasTitle": "Acheter par région",
-    "areasIntro": "À quoi ressemble la vie dans chaque coin de la côte ouest.",
+    "areasTitle": "Acheter par secteur",
+    "areasIntro": "Dispositifs, biens proposés et étapes, secteur par secteur.",
     "generalTitle": "Avant d’acheter",
-    "enquireTitle": "Décrivez votre projet",
-    "enquireText": "Partagez votre projet et votre budget, nous vous mettrons en relation avec des personnes qui peuvent vous aider. Sans engagement.",
-    "enquireCta": "Faire une demande",
-    "readMore": "Lire"
+    "enquireTitle": "Recevez une sélection personnelle gratuite",
+    "enquireText": "Dites nous comment vous voulez vivre et votre budget. Un Mauricien vous propose les secteurs et les biens qui correspondent, sans engagement.",
+    "enquireCta": "Recevoir ma sélection gratuite",
+    "readMore": "Lire",
+    "heroShortlist": "Recevoir ma sélection gratuite",
+    "heroAreas": "Trouver votre secteur",
+    "questionsTitle": "Les grandes questions d’abord",
+    "questionsIntro": "Les questions les plus posées avant de s’installer sur la côte ouest.",
+    "areasLivingTitle": "Vivre dans chaque secteur",
+    "areasLivingIntro": "Vie quotidienne, coûts, écoles et déplacements, village par village.",
+    "compareTitle": "Comparer avant de choisir",
+    "compareIntro": "Côte à côte, pour voir les différences qui comptent pour vous.",
+    "buyingTitle": "Acheter un bien",
+    "buyingIntro": "Comment les étrangers et les Mauriciens de retour peuvent acheter sur la côte ouest."
   },
   "LiveArticle": {
     "ctaTitle": "Vous pensez acheter ?",
@@ -261,7 +272,16 @@
     "moveTitle": "Envie de vous installer ici ?",
     "moveTitleArea": "Envie de vous installer {area} ?",
     "moveText": "Recevez une sélection personnelle gratuite : dites nous ce qu’il vous faut, et un Mauricien vous propose les quartiers et les biens qui correspondent.",
-    "moveButton": "Recevoir ma sélection gratuite"
+    "moveButton": "Recevoir ma sélection gratuite",
+    "faqTitle": "Questions fréquentes",
+    "areasTitle": "Vivre dans ces secteurs",
+    "kinds": {
+      "scheme": "Dispositif d’achat",
+      "area": "Guide d’achat",
+      "general": "Acheter un bien",
+      "question": "Vivre dans l’Ouest",
+      "comparison": "Comparatif"
+    }
   },
   "Forms": {
     "required": "obligatoire",
@@ -403,6 +423,7 @@
     "healthcare": "Santé",
     "commuting": "Se déplacer",
     "faqTitle": "Questions sur la vie {name}",
-    "updated": "Mis à jour le {date}"
+    "updated": "Mis à jour le {date}",
+    "reading": "Pour aller plus loin sur la vie {name}"
   }
 }

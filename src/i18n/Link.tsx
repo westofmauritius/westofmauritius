@@ -10,6 +10,8 @@ type LinkProps = Omit<React.ComponentProps<typeof NextLink>, "href"> & {
   href: Href;
   /** Another language than the current page's. */
   locale?: Locale;
+  /** A section of the target page, e.g. "living" for #living. */
+  hash?: string;
 };
 
 /**
@@ -19,7 +21,8 @@ type LinkProps = Omit<React.ComponentProps<typeof NextLink>, "href"> & {
  * JavaScript on every page smaller. (Client components inside forms use
  * next-intl's Link from ./navigation.)
  */
-export async function Link({ href, locale, ...props }: LinkProps) {
+export async function Link({ href, locale, hash, ...props }: LinkProps) {
   const target = locale ?? ((await getLocale()) as Locale);
-  return <NextLink href={getPathname({ href, locale: target })} {...props} />;
+  const path = getPathname({ href, locale: target });
+  return <NextLink href={hash ? `${path}#${hash}` : path} {...props} />;
 }

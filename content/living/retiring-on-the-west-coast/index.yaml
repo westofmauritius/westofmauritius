@@ -1,0 +1,90 @@
+kind: question
+order: 2
+placeholder: true
+publishedAt: '2026-10-02'
+relatedAreas:
+  - flic-en-flac
+  - tamarin
+  - black-river
+  - la-gaulette
+  - le-morne
+  - chamarel
+content:
+  en:
+    title: "Retiring on the west coast of Mauritius"
+    slug: retiring-on-the-west-coast
+    excerpt: "What retirees need to know about residence permits, healthcare, costs and the quietest villages by the sea."
+    shortAnswer: "[Placeholder: answer “Is the west coast of Mauritius a good place to retire?” in two or three sentences, before any detail.]"
+    table:
+      caption: "Retiring on the west coast at a glance"
+      headers:
+        - ""
+        - "What to know"
+      rows:
+        - cells:
+            - "Residence permit for retirees"
+            - "[To be checked]"
+        - cells:
+            - "Income or transfer required"
+            - "[To be checked]"
+        - cells:
+            - "Healthcare nearby"
+            - "[To be checked]"
+        - cells:
+            - "Buying or renting a home"
+            - "[To be checked]"
+        - cells:
+            - "Tax on foreign pensions"
+            - "[To be checked]"
+        - cells:
+            - "Monthly budget"
+            - "[To be checked]"
+    faqs:
+      - question: "Can foreigners retire in Mauritius?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+      - question: "Which west coast village is best for retirees?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+      - question: "Is healthcare good on the west coast?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+      - question: "Do retirees pay tax on their pension in Mauritius?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+    seoDescription: "Retiring on the west coast of Mauritius: residence permits, healthcare, costs and the best villages, explained by a Mauritian."
+  fr:
+    title: "Prendre sa retraite sur la côte ouest de Maurice"
+    slug: retraite-sur-la-cote-ouest
+    excerpt: "Ce que les retraités doivent savoir : permis de résidence, santé, coûts et villages les plus calmes au bord de la mer."
+    shortAnswer: "[Texte provisoire : répondez à « La côte ouest est elle un bon endroit pour la retraite ? » en deux ou trois phrases, avant tout détail.]"
+    table:
+      caption: "La retraite sur la côte ouest en bref"
+      headers:
+        - ""
+        - "À savoir"
+      rows:
+        - cells:
+            - "Permis de résidence pour retraités"
+            - "[À vérifier]"
+        - cells:
+            - "Revenu ou transfert exigé"
+            - "[À vérifier]"
+        - cells:
+            - "Santé à proximité"
+            - "[À vérifier]"
+        - cells:
+            - "Acheter ou louer"
+            - "[À vérifier]"
+        - cells:
+            - "Impôt sur les pensions étrangères"
+            - "[À vérifier]"
+        - cells:
+            - "Budget mensuel"
+            - "[À vérifier]"
+    faqs:
+      - question: "Un étranger peut il prendre sa retraite à Maurice ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+      - question: "Quel village de la côte ouest pour la retraite ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+      - question: "La santé est elle bonne sur la côte ouest ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+      - question: "Les retraités paient ils un impôt sur leur pension à Maurice ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+    seoDescription: "Prendre sa retraite sur la côte ouest de Maurice : permis, santé, coûts et villages, expliqués par un Mauricien."

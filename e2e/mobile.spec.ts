@@ -18,7 +18,7 @@ test("no page scrolls sideways on a phone", async ({ page }) => {
   for (const path of [
     "/en",
     "/fr/lieux",
-    "/en/live-in-the-west/enquire",
+    "/en/living-in-the-west/enquire",
     "/fr/guides/plages",
   ]) {
     await page.goto(path);

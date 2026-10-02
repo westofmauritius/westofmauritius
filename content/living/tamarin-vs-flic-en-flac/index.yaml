@@ -1,0 +1,108 @@
+kind: comparison
+order: 2
+placeholder: true
+publishedAt: '2026-10-02'
+relatedAreas:
+  - tamarin
+  - flic-en-flac
+content:
+  en:
+    title: "Tamarin vs Flic en Flac: which is better to live in?"
+    slug: tamarin-vs-flic-en-flac
+    excerpt: "How Tamarin and Flic en Flac compare for daily life, beaches, costs, schools and the commute, side by side."
+    shortAnswer: "[Placeholder: answer “Should you live in Tamarin or Flic en Flac?” in two or three sentences, before any detail.]"
+    table:
+      caption: "Tamarin and Flic en Flac side by side"
+      headers:
+        - ""
+        - "Tamarin"
+        - "Flic en Flac"
+      rows:
+        - cells:
+            - "Atmosphere"
+            - "[To be written]"
+            - "[To be written]"
+        - cells:
+            - "Beaches and sea"
+            - "[To be written]"
+            - "[To be written]"
+        - cells:
+            - "Restaurants and nightlife"
+            - "[To be written]"
+            - "[To be written]"
+        - cells:
+            - "Schools nearby"
+            - "[To be written]"
+            - "[To be written]"
+        - cells:
+            - "Drive to Port Louis"
+            - "[To be checked]"
+            - "[To be checked]"
+        - cells:
+            - "Drive to the airport"
+            - "[To be checked]"
+            - "[To be checked]"
+        - cells:
+            - "Rent, two bedroom apartment"
+            - "[To be checked]"
+            - "[To be checked]"
+    faqs:
+      - question: "Is Tamarin or Flic en Flac better for families?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+      - question: "Which is cheaper, Tamarin or Flic en Flac?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+      - question: "Which has better beaches, Tamarin or Flic en Flac?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+      - question: "Which is closer to the airport, Tamarin or Flic en Flac?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+    seoDescription: "Tamarin vs Flic en Flac: two west coast villages compared for daily life, beaches, costs, schools and the commute, by a local."
+  fr:
+    title: "Tamarin ou Flic en Flac : où vivre ?"
+    slug: tamarin-ou-flic-en-flac
+    excerpt: "Tamarin et Flic en Flac comparés : vie quotidienne, plages, coûts, écoles et trajets."
+    shortAnswer: "[Texte provisoire : répondez à « Vivre Tamarin ou Flic en Flac ? » en deux ou trois phrases, avant tout détail.]"
+    table:
+      caption: "Tamarin et Flic en Flac côte à côte"
+      headers:
+        - ""
+        - "Tamarin"
+        - "Flic en Flac"
+      rows:
+        - cells:
+            - "Ambiance"
+            - "[À vérifier]"
+            - "[À vérifier]"
+        - cells:
+            - "Plages et mer"
+            - "[À vérifier]"
+            - "[À vérifier]"
+        - cells:
+            - "Restaurants et vie nocturne"
+            - "[À vérifier]"
+            - "[À vérifier]"
+        - cells:
+            - "Écoles à proximité"
+            - "[À vérifier]"
+            - "[À vérifier]"
+        - cells:
+            - "Trajet vers Port Louis"
+            - "[À vérifier]"
+            - "[À vérifier]"
+        - cells:
+            - "Trajet vers l’aéroport"
+            - "[À vérifier]"
+            - "[À vérifier]"
+        - cells:
+            - "Loyer, appartement deux chambres"
+            - "[À vérifier]"
+            - "[À vérifier]"
+    faqs:
+      - question: "Tamarin ou Flic en Flac pour une famille ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+      - question: "Lequel est le moins cher ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+      - question: "Lequel a les plus belles plages ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+      - question: "Lequel est le plus proche de l’aéroport ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+    seoDescription: "Tamarin ou Flic en Flac : deux villages de la côte ouest comparés pour la vie quotidienne, les plages, les coûts et les écoles."

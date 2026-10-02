@@ -162,7 +162,7 @@ async function main() {
   }
 
   // Live in the West: unique URL per language, and not one of the fixed
-  // pages that share the /live-in-the-west/… address space.
+  // pages that share the /living-in-the-west/… address space.
   const reservedLivingSlugs = new Set(["enquire", "demande"]);
   const seenLivingUrls = new Map<string, string>();
   for (const { slug, entry } of living) {

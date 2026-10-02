@@ -2,11 +2,79 @@ kind: area
 area: le-morne
 order: 5
 placeholder: true
+publishedAt: '2026-10-02'
+relatedAreas:
+  - le-morne
 content:
   en:
-    title: Buying in Le Morne
-    excerpt: Placeholder, to be written.
+    title: "Buying property in Le Morne as a foreigner"
+    slug: buying-property-in-le-morne
+    excerpt: "Which schemes let foreigners buy in Le Morne, what homes are on offer, the costs on top of the price and the steps from first visit to keys."
+    shortAnswer: "[Placeholder: answer “Can a foreigner buy property in Le Morne, and how?” in two or three sentences, before any detail.]"
+    table:
+      caption: "Buying in Le Morne at a glance"
+      headers:
+        - ""
+        - "What to know"
+      rows:
+        - cells:
+            - "Schemes open to foreigners"
+            - "[To be checked]"
+        - cells:
+            - "Types of homes"
+            - "[To be written]"
+        - cells:
+            - "Typical price range"
+            - "[To be checked]"
+        - cells:
+            - "Fees and taxes on top"
+            - "[To be checked]"
+        - cells:
+            - "Residence permit with purchase"
+            - "[To be checked]"
+    faqs:
+      - question: "Can foreigners buy property in Le Morne?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+      - question: "How much does a villa cost in Le Morne?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+      - question: "Which schemes allow foreigners to buy in Le Morne?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+      - question: "Does buying in Le Morne give you residency?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+    seoDescription: "Buying property in Le Morne, Mauritius, as a foreigner: the schemes that allow it, homes on offer, costs and steps, explained by a local."
   fr:
-    title: Acheter au Morne
-    slug: acheter-au-morne
-    excerpt: Texte provisoire, à rédiger.
+    title: "Acheter un bien au Morne quand on est étranger"
+    slug: acheter-un-bien-le-morne
+    excerpt: "Les dispositifs ouverts aux étrangers au Morne, les biens proposés, les frais en plus du prix et les étapes jusqu’aux clés."
+    shortAnswer: "[Texte provisoire : répondez à « Un étranger peut il acheter au Morne, et comment ? » en deux ou trois phrases, avant tout détail.]"
+    table:
+      caption: "Acheter au Morne en bref"
+      headers:
+        - ""
+        - "À savoir"
+      rows:
+        - cells:
+            - "Dispositifs ouverts aux étrangers"
+            - "[À vérifier]"
+        - cells:
+            - "Types de biens"
+            - "[À rédiger]"
+        - cells:
+            - "Fourchette de prix"
+            - "[À vérifier]"
+        - cells:
+            - "Frais et taxes en plus"
+            - "[À vérifier]"
+        - cells:
+            - "Permis de résidence avec l’achat"
+            - "[À vérifier]"
+    faqs:
+      - question: "Un étranger peut il acheter au Morne ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+      - question: "Combien coûte une villa au Morne ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+      - question: "Quels dispositifs permettent d’acheter au Morne ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+      - question: "Acheter au Morne donne t il la résidence ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+    seoDescription: "Acheter un bien au Morne, île Maurice, quand on est étranger : dispositifs, biens, coûts et étapes, expliqués par un Mauricien."

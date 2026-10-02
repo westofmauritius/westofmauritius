@@ -5,7 +5,8 @@ import { Faq } from "@/components/content/Faq";
 import { NewsletterSignup } from "@/components/forms/NewsletterSignup";
 import { Container } from "@/components/ui/Container";
 import type { Locale } from "@/i18n/routing";
-import type { Area } from "@/lib/content/types";
+import { Link } from "@/i18n/Link";
+import type { Area, LivingArticle } from "@/lib/content/types";
 import { longDate } from "@/lib/dates";
 import { inPlace } from "@/lib/place-names";
 
@@ -21,9 +22,12 @@ import { inPlace } from "@/lib/place-names";
 export async function AreaLivingSection({
   area,
   locale,
+  reading,
 }: {
   area: Area;
   locale: Locale;
+  /** Questions, comparisons and buying guides about this area. */
+  reading: LivingArticle[];
 }) {
   const t = await getTranslations({ locale, namespace: "AreaLiving" });
   const living = area.living;
@@ -146,6 +150,30 @@ export async function AreaLivingSection({
             <h3 className="text-display-3">{t("faqTitle", { name })}</h3>
             <Faq items={living.faqs} className="mt-8" />
           </div>
+        )}
+
+        {reading.length > 0 && (
+          <nav aria-labelledby="reading-title" className="mt-16 max-w-3xl">
+            <h3 id="reading-title" className="mb-4 eyebrow text-ink-muted">
+              {t("reading", { name })}
+            </h3>
+            <ul className="divide-y divide-line border-y border-line">
+              {reading.map((a) => (
+                <li key={a.key}>
+                  <Link
+                    href={{
+                      pathname: "/living-in-the-west/[slug]",
+                      params: { slug: a.slug },
+                    }}
+                    className="flex min-h-12 items-center justify-between gap-4 py-3 hover:text-coral-600"
+                  >
+                    {a.title}
+                    <span aria-hidden="true">→</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         )}
       </Container>
     </section>

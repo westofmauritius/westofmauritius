@@ -1,0 +1,120 @@
+kind: comparison
+order: 3
+placeholder: true
+publishedAt: '2026-10-02'
+relatedAreas:
+  - flic-en-flac
+  - tamarin
+  - black-river
+  - la-gaulette
+  - le-morne
+  - chamarel
+content:
+  en:
+    title: "West coast vs north coast: which is better for expats?"
+    slug: west-vs-north-coast-for-expats
+    excerpt: "How the west and north coasts compare for daily life, beaches, costs, schools and the commute, side by side."
+    shortAnswer: "[Placeholder: answer “Should you live on the west coast or the north coast?” in two or three sentences, before any detail.]"
+    table:
+      caption: "West and north coasts side by side"
+      headers:
+        - ""
+        - "West coast"
+        - "North coast"
+      rows:
+        - cells:
+            - "Atmosphere"
+            - "[To be written]"
+            - "[To be written]"
+        - cells:
+            - "Beaches and sea"
+            - "[To be written]"
+            - "[To be written]"
+        - cells:
+            - "Restaurants and nightlife"
+            - "[To be written]"
+            - "[To be written]"
+        - cells:
+            - "Schools nearby"
+            - "[To be written]"
+            - "[To be written]"
+        - cells:
+            - "Drive to Port Louis"
+            - "[To be checked]"
+            - "[To be checked]"
+        - cells:
+            - "Drive to the airport"
+            - "[To be checked]"
+            - "[To be checked]"
+        - cells:
+            - "Rent, two bedroom apartment"
+            - "[To be checked]"
+            - "[To be checked]"
+        - cells:
+            - "Expat community"
+            - "[To be written]"
+            - "[To be written]"
+        - cells:
+            - "Weather"
+            - "[To be written]"
+            - "[To be written]"
+    faqs:
+      - question: "Is the west or the north coast better for families?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+      - question: "Which is cheaper, the west or the north coast?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+      - question: "Which has better beaches, the west or the north coast?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+      - question: "Which is closer to the airport, the west or the north coast?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+    seoDescription: "West vs north coast of Mauritius for expats: weather, beaches, schools, costs and community compared by a Mauritian who knows both."
+  fr:
+    title: "La côte ouest ou la côte nord : où vivre ?"
+    slug: west-ou-north-coast-for-expats
+    excerpt: "La côte ouest et la côte nord comparées : vie quotidienne, plages, coûts, écoles et trajets."
+    shortAnswer: "[Texte provisoire : répondez à « Vivre sur la côte ouest ou sur la côte nord ? » en deux ou trois phrases, avant tout détail.]"
+    table:
+      caption: "La côte ouest et la côte nord côte à côte"
+      headers:
+        - ""
+        - "Côte ouest"
+        - "Côte nord"
+      rows:
+        - cells:
+            - "Ambiance"
+            - "[À vérifier]"
+            - "[À vérifier]"
+        - cells:
+            - "Plages et mer"
+            - "[À vérifier]"
+            - "[À vérifier]"
+        - cells:
+            - "Restaurants et vie nocturne"
+            - "[À vérifier]"
+            - "[À vérifier]"
+        - cells:
+            - "Écoles à proximité"
+            - "[À vérifier]"
+            - "[À vérifier]"
+        - cells:
+            - "Trajet vers Port Louis"
+            - "[À vérifier]"
+            - "[À vérifier]"
+        - cells:
+            - "Trajet vers l’aéroport"
+            - "[À vérifier]"
+            - "[À vérifier]"
+        - cells:
+            - "Loyer, appartement deux chambres"
+            - "[À vérifier]"
+            - "[À vérifier]"
+    faqs:
+      - question: "La côte ouest ou la côte nord pour une famille ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+      - question: "Lequel est le moins cher ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+      - question: "Lequel a les plus belles plages ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+      - question: "Lequel est le plus proche de l’aéroport ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+    seoDescription: "Côte ouest ou côte nord de Maurice pour les expatriés : météo, plages, écoles, coûts et vie sociale comparés."

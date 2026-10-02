@@ -1,0 +1,107 @@
+kind: comparison
+order: 1
+placeholder: true
+publishedAt: '2026-10-02'
+relatedAreas:
+  - tamarin
+content:
+  en:
+    title: "Tamarin vs Grand Baie: which is better to live in?"
+    slug: tamarin-vs-grand-baie
+    excerpt: "How Tamarin and Grand Baie compare for daily life, beaches, costs, schools and the commute, side by side."
+    shortAnswer: "[Placeholder: answer “Should you live in Tamarin or Grand Baie?” in two or three sentences, before any detail.]"
+    table:
+      caption: "Tamarin and Grand Baie side by side"
+      headers:
+        - ""
+        - "Tamarin"
+        - "Grand Baie"
+      rows:
+        - cells:
+            - "Atmosphere"
+            - "[To be written]"
+            - "[To be written]"
+        - cells:
+            - "Beaches and sea"
+            - "[To be written]"
+            - "[To be written]"
+        - cells:
+            - "Restaurants and nightlife"
+            - "[To be written]"
+            - "[To be written]"
+        - cells:
+            - "Schools nearby"
+            - "[To be written]"
+            - "[To be written]"
+        - cells:
+            - "Drive to Port Louis"
+            - "[To be checked]"
+            - "[To be checked]"
+        - cells:
+            - "Drive to the airport"
+            - "[To be checked]"
+            - "[To be checked]"
+        - cells:
+            - "Rent, two bedroom apartment"
+            - "[To be checked]"
+            - "[To be checked]"
+    faqs:
+      - question: "Is Tamarin or Grand Baie better for families?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+      - question: "Which is cheaper, Tamarin or Grand Baie?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+      - question: "Which has better beaches, Tamarin or Grand Baie?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+      - question: "Which is closer to the airport, Tamarin or Grand Baie?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+    seoDescription: "Tamarin vs Grand Baie: west or north? Daily life, beaches, costs, schools and commute compared side by side by a Mauritian."
+  fr:
+    title: "Tamarin ou Grand Baie : où vivre ?"
+    slug: tamarin-ou-grand-baie
+    excerpt: "Tamarin et Grand Baie comparés : vie quotidienne, plages, coûts, écoles et trajets."
+    shortAnswer: "[Texte provisoire : répondez à « Vivre Tamarin ou Grand Baie ? » en deux ou trois phrases, avant tout détail.]"
+    table:
+      caption: "Tamarin et Grand Baie côte à côte"
+      headers:
+        - ""
+        - "Tamarin"
+        - "Grand Baie"
+      rows:
+        - cells:
+            - "Ambiance"
+            - "[À vérifier]"
+            - "[À vérifier]"
+        - cells:
+            - "Plages et mer"
+            - "[À vérifier]"
+            - "[À vérifier]"
+        - cells:
+            - "Restaurants et vie nocturne"
+            - "[À vérifier]"
+            - "[À vérifier]"
+        - cells:
+            - "Écoles à proximité"
+            - "[À vérifier]"
+            - "[À vérifier]"
+        - cells:
+            - "Trajet vers Port Louis"
+            - "[À vérifier]"
+            - "[À vérifier]"
+        - cells:
+            - "Trajet vers l’aéroport"
+            - "[À vérifier]"
+            - "[À vérifier]"
+        - cells:
+            - "Loyer, appartement deux chambres"
+            - "[À vérifier]"
+            - "[À vérifier]"
+    faqs:
+      - question: "Tamarin ou Grand Baie pour une famille ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+      - question: "Lequel est le moins cher ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+      - question: "Lequel a les plus belles plages ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+      - question: "Lequel est le plus proche de l’aéroport ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+    seoDescription: "Tamarin ou Grand Baie : l’ouest ou le nord ? Vie quotidienne, plages, coûts, écoles et trajets comparés par un Mauricien."

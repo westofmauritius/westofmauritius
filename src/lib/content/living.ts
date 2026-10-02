@@ -19,6 +19,7 @@ function toArticle(key: string, entry: LivingEntry, locale: Locale): LivingArtic
     slugs,
     kind: entry.kind,
     areaSlug: entry.area,
+    relatedAreaSlugs: [...entry.relatedAreas],
     order: entry.order ?? 0,
     title: typeset(text.title, locale),
     excerpt: typeset(text.excerpt, locale),
@@ -27,10 +28,27 @@ function toArticle(key: string, entry: LivingEntry, locale: Locale): LivingArtic
     publishedAt: entry.publishedAt,
     updatedAt: entry.updatedAt,
     sources: toSources(entry.sources),
+    shortAnswer: typeset(text.shortAnswer, locale),
+    table:
+      text.table.rows.length > 0
+        ? {
+            caption: typeset(text.table.caption, locale),
+            headers: [...text.table.headers],
+            rows: text.table.rows.map((r) =>
+              r.cells.map((c) => typeset(c, locale)),
+            ),
+          }
+        : null,
+    faqs: text.faqs
+      .filter((f) => f.question)
+      .map((f) => ({
+        question: typeset(f.question, locale),
+        answer: typeset(f.answer, locale),
+      })),
   };
 }
 
-/** Live in the West articles in their chosen order, optionally one kind. */
+/** Living in the West articles in their chosen order, optionally one kind. */
 export const getLivingArticles = cache(
   async (locale: Locale, filter: { kind?: LivingKind } = {}): Promise<LivingArticle[]> => {
     const entries = await reader.collections.living.all();

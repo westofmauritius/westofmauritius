@@ -60,7 +60,7 @@ export async function EnquiryCta({
       </p>
       <ButtonLink
         href={{
-          pathname: "/live-in-the-west/enquire",
+          pathname: "/living-in-the-west/enquire",
           query: { ...(area && { area: area.slug }), source: position },
         }}
         variant="light"

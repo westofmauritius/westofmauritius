@@ -1,18 +1,18 @@
 # Editing content
 
-All places, areas, guides and "Live in the West" articles are edited in
+All places, areas, guides and "Living in the West" articles are edited in
 **Keystatic**, a visual editor at `/keystatic`. Every save writes plain files
 into `content/` (and photos into `public/images/`), so content is versioned in
 git like the code. You never need to touch code to add or change content.
 
 ## What is where
 
-| In the editor    | Files             | Shown on (from step …)      |
-| ---------------- | ----------------- | --------------------------- |
-| Areas            | `content/areas/`  | Area pages (5)              |
-| Places           | `content/places/` | Place pages, area pages (5) |
-| Guides           | `content/guides/` | Guide pages (6)             |
-| Live in the West | `content/living/` | Live in the West (8)        |
+| In the editor      | Files             | Shown on (from step …)      |
+| ------------------ | ----------------- | --------------------------- |
+| Areas              | `content/areas/`  | Area pages (5)              |
+| Places             | `content/places/` | Place pages, area pages (5) |
+| Guides             | `content/guides/` | Guide pages (6)             |
+| Living in the West | `content/living/` | Living in the West          |
 
 Each entry has fields that are the same in every language (map position,
 links, photos, "Featured") and a **Text per language** block with one part for

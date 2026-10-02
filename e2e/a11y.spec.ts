@@ -12,12 +12,13 @@ const pages = [
   "/en/guides",
   "/fr/guides/plages",
   "/en/guides/beaches/west-coast-beaches",
-  "/en/live-in-the-west",
+  "/en/living-in-the-west",
   "/fr/vivre-dans-l-ouest/pds",
-  "/en/live-in-the-west/enquire",
+  "/en/living-in-the-west/enquire",
   "/fr/contact",
   "/en/privacy",
   "/en/about/oliver",
+  "/en/living-in-the-west/tamarin-vs-grand-baie",
   "/fr/nexiste-pas",
 ];
 

@@ -109,9 +109,9 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
               {t("ctaGuides")}
             </ButtonLink>
             <ButtonLink
-              href="/live-in-the-west"
+              href="/living-in-the-west"
               variant="outlineLight"
-              data-umami-event="cta-live-in-the-west"
+              data-umami-event="cta-living-in-the-west"
               data-umami-event-position="home-hero"
             >
               {t("ctaLive")}
@@ -296,7 +296,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         </Container>
       </section>
 
-      {/* Live in the West: the entry to the property section */}
+      {/* Living in the West: the entry to the property section */}
       <section className="relative isolate overflow-hidden bg-ocean-900 py-24 text-white sm:py-32">
         <div
           aria-hidden="true"
@@ -313,11 +313,11 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           </h2>
           <p className="mt-6 max-w-2xl lead text-ocean-100">{t("liveText")}</p>
           <div className="mt-10 flex flex-wrap gap-3">
-            <ButtonLink href="/live-in-the-west" variant="light">
+            <ButtonLink href="/living-in-the-west" variant="light">
               {t("liveCta")}
             </ButtonLink>
             <ButtonLink
-              href="/live-in-the-west"
+              href="/living-in-the-west"
               variant="outlineLight"
               data-umami-event="cta-enquire"
               data-umami-event-position="home-band"

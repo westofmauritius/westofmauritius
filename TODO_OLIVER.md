@@ -102,7 +102,7 @@ verifiera med en DNS-post i Cloudflare) och skicka in
 Umami använder inga cookies, så ingen cookiebanner behövs. Konverteringar
 syns under "Events": `lead-submitted` (med budget, tidshorisont och
 källsida), `contact-submitted`, `newsletter-signup`, samt klick på
-`cta-enquire` och `cta-live-in-the-west` med position.
+`cta-enquire` och `cta-living-in-the-west` med position.
 
 ## 8. Texter som bara du kan skriva
 
@@ -157,7 +157,12 @@ bort de uppgifterna. Byt gärna till egna foton med tiden.
 - **Restauranger och butiker**: fyra påhittade exempel, tydligt märkta.
   Lägg in riktiga ställen du kan stå för, och radera exemplen.
 - **Guiderna om restauranger och shopping**: skrivs när ovanstående finns.
-- **Bo i väst**: bara struktur, som vi bestämde.
+- **Living in the West** (`/en/living-in-the-west`): frågesidor (kostnad
+  att bo i Tamarin, pension på västkusten, bästa området att bo i),
+  jämförelser (Tamarin vs Grand Baie, Tamarin vs Flic en Flac, väst vs norr)
+  och köpguiderna per ort. Rubriker, frågor och tabellrader finns; svaren
+  och alla siffror är dina att skriva, med källa. Ordning efter
+  sökpotential och fler sidförslag finns i SEO.md.
 
 Hitta aldrig på recensioner, betyg eller priser.
 

@@ -84,7 +84,7 @@ export default async function LocaleLayout({
             item(t("guides"), "/guides"),
             item(t("places"), "/places"),
             item(t("about"), "/about"),
-            { ...item(t("live"), "/live-in-the-west"), highlight: true },
+            { ...item(t("live"), "/living-in-the-west"), highlight: true },
           ]}
           navLabel={t("mainNav")}
           menuLabel={t("openMenu")}
@@ -117,7 +117,7 @@ export default async function LocaleLayout({
             },
             {
               title: f("liveHere"),
-              items: [item(t("live"), "/live-in-the-west")],
+              items: [item(t("live"), "/living-in-the-west")],
             },
             {
               title: f("about"),

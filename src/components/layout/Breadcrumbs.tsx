@@ -10,15 +10,26 @@ type BreadcrumbsProps = {
   items: Crumb[];
   locale: Locale;
   label: string;
+  /** "light" for use on the dark blue page headers. */
+  tone?: "dark" | "light";
 };
 
 /**
  * "Home / Areas / Tamarin" trail. Also tells Google the page's place in the
  * site (BreadcrumbList), which it can show in search results.
  */
-export function Breadcrumbs({ items, locale, label }: BreadcrumbsProps) {
+export function Breadcrumbs({
+  items,
+  locale,
+  label,
+  tone = "dark",
+}: BreadcrumbsProps) {
+  const light = tone === "light";
   return (
-    <nav aria-label={label} className="text-xs tracking-wide text-ink-muted">
+    <nav
+      aria-label={label}
+      className={`text-xs tracking-wide ${light ? "text-ocean-200" : "text-ink-muted"}`}
+    >
       {/* Always one line: the current page's name is cut with "…" when space
           runs out (it is the page title just below anyway). A trail that
           wrapped only until the web font loaded would push the page down. */}
@@ -33,14 +44,21 @@ export function Breadcrumbs({ items, locale, label }: BreadcrumbsProps) {
               }
             >
               {last ? (
-                <span aria-current="page" className="text-ink">
+                <span
+                  aria-current="page"
+                  className={light ? "text-white" : "text-ink"}
+                >
                   {item.label}
                 </span>
               ) : (
                 <>
                   <Link
                     href={item.href}
-                    className="hover:text-ink hover:underline"
+                    className={
+                      light
+                        ? "hover:text-white hover:underline"
+                        : "hover:text-ink hover:underline"
+                    }
                   >
                     {item.label}
                   </Link>

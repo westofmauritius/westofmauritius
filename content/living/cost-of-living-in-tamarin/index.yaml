@@ -1,0 +1,123 @@
+kind: question
+order: 1
+placeholder: true
+publishedAt: '2026-10-02'
+relatedAreas:
+  - tamarin
+content:
+  en:
+    title: "How much does it cost to live in Tamarin?"
+    slug: cost-of-living-in-tamarin
+    excerpt: "Rent, groceries, utilities, transport and school fees in Tamarin, with the date and source of every figure."
+    shortAnswer: "[Placeholder: answer “How much does it cost to live in Tamarin?” in two or three sentences, before any detail.]"
+    table:
+      caption: "Monthly costs in Tamarin"
+      headers:
+        - ""
+        - "Single person"
+        - "Couple"
+        - "Family of four"
+      rows:
+        - cells:
+            - "Rent"
+            - "[To be checked]"
+            - "[To be checked]"
+            - "[To be checked]"
+        - cells:
+            - "Groceries"
+            - "[To be checked]"
+            - "[To be checked]"
+            - "[To be checked]"
+        - cells:
+            - "Electricity and water"
+            - "[To be checked]"
+            - "[To be checked]"
+            - "[To be checked]"
+        - cells:
+            - "Internet and phone"
+            - "[To be checked]"
+            - "[To be checked]"
+            - "[To be checked]"
+        - cells:
+            - "Transport"
+            - "[To be checked]"
+            - "[To be checked]"
+            - "[To be checked]"
+        - cells:
+            - "School fees"
+            - "[To be checked]"
+            - "[To be checked]"
+            - "[To be checked]"
+        - cells:
+            - "Total"
+            - "[To be checked]"
+            - "[To be checked]"
+            - "[To be checked]"
+    faqs:
+      - question: "Is Tamarin expensive to live in?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+      - question: "How much is rent in Tamarin?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+      - question: "How much do you need to live comfortably in Tamarin?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+      - question: "Is Tamarin cheaper than Grand Baie?"
+        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+    seoDescription: "The real cost of living in Tamarin, Mauritius: rent, groceries, utilities and schools, each figure dated and sourced by a local."
+  fr:
+    title: "Combien coûte la vie à Tamarin ?"
+    slug: cout-de-la-vie-a-tamarin
+    excerpt: "Loyers, courses, factures, transport et frais de scolarité à Tamarin, chaque chiffre daté et sourcé."
+    shortAnswer: "[Texte provisoire : répondez à « Combien coûte la vie à Tamarin ? » en deux ou trois phrases, avant tout détail.]"
+    table:
+      caption: "Dépenses mensuelles à Tamarin"
+      headers:
+        - ""
+        - "Personne seule"
+        - "Couple"
+        - "Famille de quatre"
+      rows:
+        - cells:
+            - "Loyer"
+            - "[À vérifier]"
+            - "[À vérifier]"
+            - "[À vérifier]"
+        - cells:
+            - "Courses"
+            - "[À vérifier]"
+            - "[À vérifier]"
+            - "[À vérifier]"
+        - cells:
+            - "Électricité et eau"
+            - "[À vérifier]"
+            - "[À vérifier]"
+            - "[À vérifier]"
+        - cells:
+            - "Internet et téléphone"
+            - "[À vérifier]"
+            - "[À vérifier]"
+            - "[À vérifier]"
+        - cells:
+            - "Transport"
+            - "[À vérifier]"
+            - "[À vérifier]"
+            - "[À vérifier]"
+        - cells:
+            - "Scolarité"
+            - "[À vérifier]"
+            - "[À vérifier]"
+            - "[À vérifier]"
+        - cells:
+            - "Total"
+            - "[À vérifier]"
+            - "[À vérifier]"
+            - "[À vérifier]"
+    faqs:
+      - question: "La vie est elle chère à Tamarin ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+      - question: "Quel est le loyer à Tamarin ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+      - question: "De combien a t on besoin pour bien vivre à Tamarin ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+      - question: "Tamarin est il moins cher que Grand Baie ?"
+        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+    seoDescription: "Le vrai coût de la vie à Tamarin, île Maurice : loyers, courses, factures et écoles, chaque chiffre daté et sourcé."

@@ -42,8 +42,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ["/areas", 0.8],
     ["/guides", 0.8],
     ["/places", 0.8],
-    ["/live-in-the-west", 0.9],
-    ["/live-in-the-west/enquire", 0.7],
+    ["/living-in-the-west", 0.9],
+    ["/living-in-the-west/enquire", 0.7],
     ["/about", 0.4],
     ["/contact", 0.4],
     ["/privacy", 0.2],
@@ -106,7 +106,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   for (const article of living.filter((a) => !a.placeholder)) {
     add(
       (l) => ({
-        pathname: "/live-in-the-west/[slug]",
+        pathname: "/living-in-the-west/[slug]",
         params: { slug: article.slugs[l] },
       }),
       article.updatedAt ?? article.publishedAt,

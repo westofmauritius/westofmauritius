@@ -10,7 +10,7 @@ import { consentTexts, currentConsent } from "@/lib/forms/consent";
 import { countryOptions } from "@/lib/forms/options";
 import { localeAlternates } from "@/lib/seo/alternates";
 
-type Props = PageProps<"/[locale]/live-in-the-west/enquire">;
+type Props = PageProps<"/[locale]/living-in-the-west/enquire">;
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const locale = await resolveLocale(params);
@@ -18,11 +18,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: t("title"),
     description: t("intro"),
-    alternates: localeAlternates("/live-in-the-west/enquire", locale),
+    alternates: localeAlternates("/living-in-the-west/enquire", locale),
   };
 }
 
-/** The lead form: the page every "Live in the West" path leads to. */
+/** The lead form: the page every "Living in the West" path leads to. */
 export default async function EnquirePage({ params }: Props) {
   const locale = await resolveLocale(params);
   const [t, areas] = await Promise.all([
@@ -38,8 +38,8 @@ export default async function EnquirePage({ params }: Props) {
           label={t("Breadcrumbs.label")}
           items={[
             { label: t("Breadcrumbs.home"), href: "/" },
-            { label: t("Pages.live.title"), href: "/live-in-the-west" },
-            { label: t("Enquire.title"), href: "/live-in-the-west/enquire" },
+            { label: t("Pages.live.title"), href: "/living-in-the-west" },
+            { label: t("Enquire.title"), href: "/living-in-the-west/enquire" },
           ]}
         />
       </Container>

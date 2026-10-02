@@ -379,3 +379,32 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
   scrolling sideways.
 - The area page itself now shows the byline and the sources its facts were
   checked against.
+
+## Living in the West: questions, comparisons and the hub (October 2026)
+
+- The property section is now **Living in the West** at
+  `/en/living-in-the-west`. It covers the whole decision (where to live,
+  costs, retiring, comparisons) and buying, not just buying. Old
+  `/en/live-in-the-west/…` addresses redirect permanently.
+- Two new article types in the same collection: **question** ("How much
+  does it cost to live in Tamarin?") and **comparison** ("Tamarin vs Grand
+  Baie"). Every article can now have a short answer, a summary table, an
+  FAQ and sources, and names the areas it is about.
+- One template for all of them, in the order searchers want: short answer,
+  byline with dates, the detail, the summary table, questions, sources,
+  then related reading. The CTA asks people still deciding for a free
+  shortlist, and buyers for an enquiry.
+- Area buying guides got keyword titles and URLs: "Buying property in
+  Tamarin as a foreigner" at `/en/living-in-the-west/buying-property-in-tamarin`.
+- Pages created: cost of living in Tamarin, retiring on the west coast,
+  best area to live on the west coast, Tamarin vs Grand Baie, Tamarin vs
+  Flic en Flac, west vs north coast for expats. All are structured
+  placeholders (noindex, outside the sitemap): headings, real search
+  questions and table rows exist, while every answer and figure waits for
+  Oliver.
+- No separate "Living in Black River" page: that search is the area page's
+  job (see SEO.md on competing pages).
+- The hub orders blocks the way people decide: big questions, each area's
+  Living section (photo cards that jump to `#living`), comparisons, who it
+  is for, buying, then the shortlist. Area pages link back to every article
+  about them. The keyword plan is in SEO.md.

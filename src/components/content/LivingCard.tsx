@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/Badge";
 import { Link } from "@/i18n/Link";
 import type { LivingArticle } from "@/lib/content/types";
 
-/** Quiet text card for a Live in the West article. */
+/** Quiet text card for a Living in the West article. */
 export async function LivingCard({ article }: { article: LivingArticle }) {
   const t = await getTranslations();
   return (
@@ -15,7 +15,7 @@ export async function LivingCard({ article }: { article: LivingArticle }) {
       )}
       <h3 className="text-2xl leading-tight">
         <Link
-          href={{ pathname: "/live-in-the-west/[slug]", params: { slug: article.slug } }}
+          href={{ pathname: "/living-in-the-west/[slug]", params: { slug: article.slug } }}
           className="after:absolute after:inset-0 group-hover:underline group-hover:decoration-1 group-hover:underline-offset-4"
         >
           {article.title}

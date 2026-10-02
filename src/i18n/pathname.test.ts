@@ -11,7 +11,7 @@ describe("getPathname", () => {
     expect(getPathname({ href: "/areas", locale: "en" })).toBe("/en/areas");
     expect(getPathname({ href: "/areas", locale: "fr" })).toBe("/fr/regions");
     expect(
-      getPathname({ href: "/live-in-the-west/enquire", locale: "fr" }),
+      getPathname({ href: "/living-in-the-west/enquire", locale: "fr" }),
     ).toBe("/fr/vivre-dans-l-ouest/demande");
   });
 
@@ -37,11 +37,11 @@ describe("getPathname", () => {
     expect(
       getPathname({
         href: {
-          pathname: "/live-in-the-west/enquire",
+          pathname: "/living-in-the-west/enquire",
           query: { area: "tamarin", source: "area-page" },
         },
         locale: "en",
       }),
-    ).toBe("/en/live-in-the-west/enquire?area=tamarin&source=area-page");
+    ).toBe("/en/living-in-the-west/enquire?area=tamarin&source=area-page");
   });
 });

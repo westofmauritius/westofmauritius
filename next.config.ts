@@ -25,6 +25,32 @@ const nextConfig: NextConfig = {
   // pack ~700 kB of font files into the Worker.
   outputFileTracingExcludes: { "*": ["./src/assets/fonts/**"] },
 
+  // Old addresses keep working (301): the property section was renamed from
+  // "Live in the West" to "Living in the West", and the area buying guides
+  // got keyword URLs ("buying-property-in-tamarin").
+  async redirects() {
+    const buyingAreas = [
+      "black-river",
+      "chamarel",
+      "flic-en-flac",
+      "la-gaulette",
+      "le-morne",
+      "tamarin",
+    ];
+    return [
+      ...buyingAreas.map((area) => ({
+        source: `/en/live-in-the-west/buying-in-${area}`,
+        destination: `/en/living-in-the-west/buying-property-in-${area}`,
+        permanent: true,
+      })),
+      {
+        source: "/en/live-in-the-west/:path*",
+        destination: "/en/living-in-the-west/:path*",
+        permanent: true,
+      },
+    ];
+  },
+
   async headers() {
     return [
       { source: "/:path*", headers: securityHeaders },

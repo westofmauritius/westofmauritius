@@ -149,7 +149,7 @@ The free Workers plan allows a 3 MB (compressed) Worker; this one is about
 
 ## Forms and leads
 
-- The lead form (`/en/live-in-the-west/enquire`), contact form and newsletter
+- The lead form (`/en/living-in-the-west/enquire`), contact form and newsletter
   share one pipeline (`src/lib/server/forms.ts`): validation (same rules in
   the browser and on the server, `src/lib/forms/validation.ts`), honeypot,
   timing check, rate limit per hashed IP, database, e-mail to the owner.

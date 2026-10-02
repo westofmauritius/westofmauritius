@@ -242,7 +242,7 @@ export default config({
     navigation: {
       Site: ["homepage", "about", "author", "privacy", "cookies", "terms"],
       Guide: ["areas", "places", "guides"],
-      "Live in the West": ["living"],
+      "Living in the West": ["living"],
     },
   },
   singletons: {
@@ -603,7 +603,7 @@ export default config({
     }),
 
     living: collection({
-      label: "Live in the West articles",
+      label: "Living in the West articles",
       path: "content/living/*/",
       format: { data: "yaml" },
       slugField: "slug",
@@ -624,12 +624,26 @@ export default config({
             },
             { label: "Area guide for buyers", value: "area" },
             { label: "Buying process / general", value: "general" },
+            {
+              label: "Question (e.g. Cost of living in Tamarin)",
+              value: "question",
+            },
+            {
+              label: "Comparison (e.g. Tamarin or Grand Baie)",
+              value: "comparison",
+            },
           ],
           defaultValue: "scheme",
         }),
         area: fields.relationship({
           label: "Area",
           description: "Only for area guides.",
+          collection: "areas",
+        }),
+        relatedAreas: fields.multiRelationship({
+          label: "Areas this article is about",
+          description:
+            "Links the article from these area pages, and the area pages from it.",
           collection: "areas",
         }),
         order: fields.integer({ label: "Order", defaultValue: 1 }),
@@ -647,7 +661,51 @@ export default config({
           }),
           slug: localSlug(),
           excerpt: fields.text({ label: "Intro", multiline: true }),
+          shortAnswer: fields.text({
+            label: "Short answer",
+            description:
+              "The answer in two or three sentences, shown first. Search engines often quote it.",
+            multiline: true,
+          }),
           body: fields.markdoc({ label: "Article" }),
+          table: fields.object(
+            {
+              caption: fields.text({ label: "Table title" }),
+              headers: fields.array(fields.text({ label: "Heading" }), {
+                label: "Column headings",
+                description:
+                  "e.g. (empty), Tamarin, Grand Baie. The first column holds the row names.",
+                itemLabel: (props) => props.value || "Heading",
+              }),
+              rows: fields.array(
+                fields.object({
+                  cells: fields.array(fields.text({ label: "Cell" }), {
+                    label: "Cells",
+                    itemLabel: (props) => props.value || "Cell",
+                  }),
+                }),
+                {
+                  label: "Rows",
+                  itemLabel: (props) =>
+                    props.fields.cells.elements[0]?.value || "Row",
+                },
+              ),
+            },
+            {
+              label: "Summary table",
+              description: "Optional. Every figure needs a source below.",
+            },
+          ),
+          faqs: fields.array(
+            fields.object({
+              question: fields.text({ label: "Question" }),
+              answer: fields.text({ label: "Answer", multiline: true }),
+            }),
+            {
+              label: "Questions and answers",
+              itemLabel: (props) => props.fields.question.value || "Question",
+            },
+          ),
           seoDescription: seoDescription(),
         })),
       },

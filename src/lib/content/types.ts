@@ -122,7 +122,19 @@ export type Guide = {
   placeholderTone: PlaceholderTone;
 };
 
-export type LivingKind = "scheme" | "area" | "general";
+export type LivingKind =
+  | "scheme"
+  | "area"
+  | "general"
+  | "question"
+  | "comparison";
+
+/** A small summary table: headings, then rows whose first cell names the row. */
+export type SummaryTable = {
+  caption: string;
+  headers: string[];
+  rows: string[][];
+};
 
 export type LivingArticle = {
   key: string;
@@ -130,6 +142,8 @@ export type LivingArticle = {
   slugs: Record<string, string>;
   kind: LivingKind;
   areaSlug: string | null;
+  /** Areas the article is about (comparisons name two or more). */
+  relatedAreaSlugs: string[];
   order: number;
   title: string;
   excerpt: string;
@@ -138,6 +152,9 @@ export type LivingArticle = {
   publishedAt: string | null;
   updatedAt: string | null;
   sources: Source[];
+  shortAnswer: string;
+  table: SummaryTable | null;
+  faqs: FaqItem[];
 };
 
 /** Detail pages also get the long text as a Markdoc tree, rendered in step 5. */

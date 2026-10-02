@@ -6,7 +6,7 @@ describe("translatePath", () => {
     expect(translatePath("/en", "en", "fr")).toBe("/fr");
     expect(translatePath("/en/about", "en", "fr")).toBe("/fr/a-propos");
     expect(translatePath("/fr/vivre-dans-l-ouest/demande", "fr", "en")).toBe(
-      "/en/live-in-the-west/enquire",
+      "/en/living-in-the-west/enquire",
     );
   });
 

@@ -4,7 +4,7 @@ import index from "@/lib/generated/content-index.json";
 import { notifyNewLead, sendLeadReceipt } from "@/lib/server/emails";
 import { handleForm } from "@/lib/server/forms";
 
-/** Property enquiries from /live-in-the-west/enquire. */
+/** Property enquiries from /living-in-the-west/enquire. */
 export async function POST(request: Request) {
   return handleForm(request, {
     kind: "lead",

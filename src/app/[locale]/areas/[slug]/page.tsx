@@ -18,6 +18,7 @@ import { Link } from "@/i18n/Link";
 import { resolveLocale } from "@/i18n/locale";
 import { routing } from "@/i18n/routing";
 import { getArea, getAreas } from "@/lib/content/areas";
+import { getLivingArticles } from "@/lib/content/living";
 import { getPlaces } from "@/lib/content/places";
 import type { PlaceCategory } from "@/lib/content/types";
 import { localeAlternates } from "@/lib/seo/alternates";
@@ -71,11 +72,12 @@ const categoryOrder: PlaceCategory[] = [
 export default async function AreaPage({ params }: Props) {
   const locale = await resolveLocale(params);
   const { slug } = await params;
-  const [area, areas, places, t] = await Promise.all([
+  const [area, areas, places, t, articles] = await Promise.all([
     getArea(slug, locale),
     getAreas(locale),
     getPlaces(locale, { area: slug }),
     getTranslations({ locale }),
+    getLivingArticles(locale),
   ]);
   if (!area) notFound();
 
@@ -186,7 +188,22 @@ export default async function AreaPage({ params }: Props) {
         </Container>
       </section>
 
-      <AreaLivingSection area={area} locale={locale} />
+      <AreaLivingSection
+        area={area}
+        locale={locale}
+        // Articles naming this area, the most specific first: articles about
+        // only this area, then comparisons, then coast wide questions.
+        reading={articles
+          .filter(
+            (a) =>
+              a.relatedAreaSlugs.includes(slug) &&
+              a.kind !== "scheme" &&
+              a.kind !== "general",
+          )
+          .sort(
+            (a, b) => a.relatedAreaSlugs.length - b.relatedAreaSlugs.length,
+          )}
+      />
 
       <Container size="wide" className="py-16">
         <Sources sources={area.sources} locale={locale} className="mb-16" />

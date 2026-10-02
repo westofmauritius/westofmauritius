@@ -55,13 +55,16 @@ export const routing = defineRouting({
     "/guides/[category]/[slug]": "/guides/[category]/[slug]",
     "/places": { en: "/places", fr: "/lieux" },
     "/places/[slug]": { en: "/places/[slug]", fr: "/lieux/[slug]" },
-    "/live-in-the-west": { en: "/live-in-the-west", fr: "/vivre-dans-l-ouest" },
-    "/live-in-the-west/enquire": {
-      en: "/live-in-the-west/enquire",
+    "/living-in-the-west": {
+      en: "/living-in-the-west",
+      fr: "/vivre-dans-l-ouest",
+    },
+    "/living-in-the-west/enquire": {
+      en: "/living-in-the-west/enquire",
       fr: "/vivre-dans-l-ouest/demande",
     },
-    "/live-in-the-west/[slug]": {
-      en: "/live-in-the-west/[slug]",
+    "/living-in-the-west/[slug]": {
+      en: "/living-in-the-west/[slug]",
       fr: "/vivre-dans-l-ouest/[slug]",
     },
     "/about": { en: "/about", fr: "/a-propos" },
