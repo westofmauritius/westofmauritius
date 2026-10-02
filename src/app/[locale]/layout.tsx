@@ -79,8 +79,8 @@ export default async function LocaleLayout({
             item(t("areas"), "/areas"),
             item(t("guides"), "/guides"),
             item(t("places"), "/places"),
-            item(t("live"), "/live-in-the-west"),
             item(t("about"), "/about"),
+            { ...item(t("live"), "/live-in-the-west"), highlight: true },
           ]}
           navLabel={t("mainNav")}
           menuLabel={t("openMenu")}

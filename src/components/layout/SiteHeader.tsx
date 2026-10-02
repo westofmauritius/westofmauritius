@@ -40,9 +40,9 @@ export function SiteHeader({
 
         <nav
           aria-label={navLabel}
-          className="hidden items-center gap-8 md:flex"
+          className="hidden items-center gap-8 lg:flex"
         >
-          <ul className="flex items-center gap-8 text-sm tracking-wide">
+          <ul className="flex items-center gap-7 text-[0.9375rem]">
             {items.map((item) => (
               <li key={item.path}>
                 <NavLink item={item} />

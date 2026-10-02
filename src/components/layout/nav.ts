@@ -5,4 +5,10 @@ import type { Href } from "@/i18n/pathname";
  * components); `path` is the finished public URL in the current language,
  * resolved on the server so browser-side code needs no routing library.
  */
-export type NavItem = { label: string; href: Href; path: string };
+export type NavItem = {
+  label: string;
+  href: Href;
+  path: string;
+  /** Shown as a button: the entry to the property enquiries. */
+  highlight?: boolean;
+};

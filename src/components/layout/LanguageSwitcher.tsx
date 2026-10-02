@@ -26,7 +26,7 @@ export function LanguageSwitcher({
   return (
     <ul
       aria-label={label}
-      className="flex items-center gap-1 text-xs font-medium tracking-[0.14em]"
+      className="flex items-center gap-0.5 rounded-full bg-sand-100 p-1 text-xs font-semibold tracking-[0.12em]"
     >
       {routing.locales.map((l) => (
         <li key={l}>
@@ -70,8 +70,10 @@ function LanguageLink({
       title={languageNames[target].full}
       aria-current={active ? "true" : undefined}
       className={cn(
-        "flex min-h-11 min-w-11 items-center justify-center rounded-full px-2 transition-colors",
-        active ? "text-ink" : "text-ink-muted hover:text-ink",
+        "flex min-h-9 min-w-11 items-center justify-center rounded-full px-2 transition-colors",
+        active
+          ? "bg-white text-ink shadow-sm"
+          : "text-ocean-700 hover:text-ink",
       )}
     >
       <span aria-hidden="true">{languageNames[target].short}</span>
