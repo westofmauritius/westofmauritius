@@ -187,10 +187,10 @@
   },
   "GuideCategories": {
     "restaurants": {
-      "title": "Restaurants",
-      "intro": "Où manger sur la côte ouest, de la paillote les pieds dans le sable au dîner au coucher du soleil.",
-      "metaTitle": "Où manger sur la côte ouest de Maurice",
-      "metaDescription": "Les restaurants de la côte ouest de Maurice, des paillotes de plage aux longs dîners au coucher du soleil, secteur par secteur. Sans classement payant."
+      "title": "Cuisine",
+      "intro": "La cuisine mauricienne sur la côte ouest : quoi manger, d’où viennent les plats et combien ils coûtent.",
+      "metaTitle": "La cuisine mauricienne sur la côte ouest",
+      "metaDescription": "Que manger sur la côte ouest de Maurice : street food, caris, rougailles, fruits de mer et rhum, l’origine de chaque plat et son prix."
     },
     "activities": {
       "title": "Activités",

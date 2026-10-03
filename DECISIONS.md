@@ -541,3 +541,14 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
 - Where an official source has nothing for a village (no RES project in La
   Gaulette or Le Morne, no village level prices), the page says so instead
   of filling the gap.
+
+## Food and shopping, no example content left (October 2026)
+
+- The fictional example restaurants, shops and guides are deleted. The
+  "Restaurants" theme is now "Food" (URL unchanged) with a real guide to
+  Mauritian food from Wikipedia and the EDB's prices, naming dishes, not
+  businesses. The shopping guide names the three shopping centres
+  OpenStreetMap shows on our coast, with no hours or opinions.
+- The places explorer only offers categories that have places.
+- Restaurants we recommend will only be added once Olivier has eaten
+  there.

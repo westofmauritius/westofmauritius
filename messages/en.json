@@ -187,10 +187,10 @@
   },
   "GuideCategories": {
     "restaurants": {
-      "title": "Restaurants",
-      "intro": "Where to eat on the west coast, from beach shacks to long dinners at sunset.",
-      "metaTitle": "Where to eat on the west coast of Mauritius",
-      "metaDescription": "Restaurants on the west coast of Mauritius, from beach shacks to long dinners at sunset, area by area. Every listing checked, no paid rankings."
+      "title": "Food",
+      "intro": "Mauritian food on the west coast: what to eat, where the dishes come from and what they cost.",
+      "metaTitle": "Mauritian food on the west coast: what to eat",
+      "metaDescription": "What to eat on the west coast of Mauritius, from a Mauritian: street food, curries, rougaille, seafood and rum, where each dish comes from and what it costs."
     },
     "activities": {
       "title": "Activities",

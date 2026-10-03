@@ -1,0 +1,40 @@
+category: shopping
+placeholder: false
+featured: false
+publishedAt: '2026-10-03'
+sources:
+  - title: "Shops and shopping centres on the west coast"
+    publisher: "OpenStreetMap"
+    url: https://www.openstreetmap.org/
+    checkedAt: '2026-10-03'
+  - title: "Cost of living in Mauritius"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/cost-of-living/
+    checkedAt: '2026-10-03'
+areas:
+  - flic-en-flac
+  - tamarin
+  - black-river
+places: []
+hero:
+  discriminant: true
+  value:
+    image: /images/places/tamarin-bay/images/1/image.jpg
+    alt:
+      en:
+        text: "A small boat in Tamarin Bay with the peaks of the west behind"
+      fr:
+        text: "Un petit bateau dans la baie de Tamarin, avec les pics de l’ouest"
+    credit: "Vaughan McShane · CC BY-SA 2.0 · Wikimedia Commons"
+    creditUrl: https://commons.wikimedia.org/wiki/File:Tamarin_Bay_against_the_dramatic_volcanic_backdrop_of_western_Mauritius.jpg
+placeholderTone: sunset
+content:
+  en:
+    title: "Shopping on the west coast: shopping centres, markets and everyday prices"
+    slug: shopping-on-the-west-coast
+    excerpt: "Where to do your shopping between Flic en Flac and Black River: the shopping centres, the markets and what groceries cost."
+    seoDescription: "Shopping on the west coast of Mauritius: the shopping centres at Cascavelle, Tamarin and La Preneuse, markets, and indicative grocery prices from the EDB."
+  fr:
+    title: "Faire ses courses sur la côte ouest"
+    slug: courses-cote-ouest
+    excerpt: "[Texte provisoire : traduction à venir.]"

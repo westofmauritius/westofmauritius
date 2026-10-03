@@ -8,7 +8,7 @@ const pages = [
   "/en/areas",
   "/fr/regions/tamarin",
   "/en/places",
-  "/fr/lieux/example-restaurant-tamarin",
+  "/fr/lieux/tamarin-bay",
   "/en/guides",
   "/fr/guides/plages",
   "/en/guides/beaches/west-coast-beaches",

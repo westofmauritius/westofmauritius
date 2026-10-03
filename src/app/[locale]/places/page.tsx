@@ -78,10 +78,13 @@ export default async function PlacesPage({
             ),
           }))}
           areas={areas.map((a) => ({ value: a.slug, label: a.name }))}
-          categories={categories.map((c) => ({
-            value: c,
-            label: t(`Categories.${c}.many`),
-          }))}
+          // Only categories that have places, so no filter leads nowhere.
+          categories={categories
+            .filter((c) => places.some((p) => p.category === c))
+            .map((c) => ({
+              value: c,
+              label: t(`Categories.${c}.many`),
+            }))}
           labels={{
             search: t("PlacesPage.search"),
             searchPlaceholder: t("PlacesPage.searchPlaceholder"),

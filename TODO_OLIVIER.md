@@ -175,20 +175,16 @@ bort de uppgifterna. Byt gärna till egna foton med tiden.
 
 ### Det som fortfarande är platshållare
 
-- **Restauranger och butiker**: fyra påhittade exempel, tydligt märkta.
-  Lägg in riktiga ställen du kan stå för, och radera exemplen.
-- **Guiderna om restauranger och shopping**: skrivs när ovanstående finns.
-- **Köpguiderna är nu riktiga** (PDS, IRS, RES, Smart City, Hur köpet
-  går till, Köpa som mauritier utomlands, Pension på västkusten), skrivna
-  från EDB:s officiella sidor med källor. Läs igenom dem, och be gärna en
-  notarie eller EDB bekräfta beloppen innan du marknadsför dem. Franska
-  versionerna är fortfarande platshållare.
-- **Living in the West** (`/en/living-in-the-west`): frågesidor (kostnad
-  att bo i Tamarin, pension på västkusten, bästa området att bo i),
-  jämförelser (Tamarin vs Grand Baie, Tamarin vs Flic en Flac, väst vs norr)
-  och köpguiderna per ort. Rubriker, frågor och tabellrader finns; svaren
-  och alla siffror är dina att skriva, med källa. Ordning efter
-  sökpotential och fler sidförslag finns i SEO.md.
+Ingenting på den engelska sajten är längre platshållare. Det som återstår
+är sådant bara du kan göra:
+
+- **Restauranger och butiker**: de påhittade exemplen är borttagna. Det
+  finns nu en riktig matguide (vad man äter, utan att nämna ställen) och en
+  shoppingguide (köpcentrumen enligt OpenStreetMap). Lägg till riktiga
+  restauranger du själv har ätit på, som platser i Keystatic.
+- **Franska**: all ny text sedan oktober finns bara på engelska. Bygget
+  stoppar om franskan slås på innan texterna är översatta.
+- **Juridiska sidor**: fyll i företagsuppgifter och låt en jurist granska.
 
 Hitta aldrig på recensioner, betyg eller priser.
 
