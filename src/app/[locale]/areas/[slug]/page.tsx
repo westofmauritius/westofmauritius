@@ -1,3 +1,4 @@
+import { Eyebrow } from "@/components/ui/Eyebrow";
 import type { Metadata } from "next";
 import { SunsetNow } from "@/components/sun/SunsetNow";
 import { getTranslations } from "next-intl/server";
@@ -128,8 +129,13 @@ export default async function AreaPage({ params }: Props) {
         className="grid gap-10 py-10 lg:grid-cols-[5fr_7fr] lg:items-end"
       >
         <div>
-          <p className="mb-4 eyebrow text-coral-600">{area.tagline}</p>
-          <h1 className="text-display-1">{area.name}</h1>
+          <Eyebrow icon="pin" className="mb-5">
+            {t("Region.label")}
+          </Eyebrow>
+          <h1 className="type-h1">{area.name}</h1>
+          <p className="mt-3 type-h4 serif-italic text-ink-muted">
+            {area.tagline}
+          </p>
           <p className="mt-6 lead text-ink-muted">{area.intro}</p>
           <Byline
             locale={locale}
@@ -141,11 +147,11 @@ export default async function AreaPage({ params }: Props) {
             place={area.name}
             location={area.location}
             locale={locale}
-            className="mt-5 text-sm text-ink-muted"
+            className="mt-5 text-small text-ink-muted"
           />
           <a
             href="#living"
-            className="mt-6 inline-block text-sm font-medium text-lagoon-700 hover:underline"
+            className="mt-6 inline-block text-small font-medium text-lagoon-700 hover:underline"
           >
             {t("AreaPage.livingLink", { name: area.name })} ↓
           </a>
@@ -188,7 +194,7 @@ export default async function AreaPage({ params }: Props) {
           />
           {byCategory.map(({ category, places }) => (
             <div key={category} className="mt-14">
-              <h3 className="mb-6 eyebrow text-ink-muted">
+              <h3 className="mb-6 eyebrow">
                 {t(`Categories.${category}.many`)}
               </h3>
               <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4">
@@ -220,10 +226,8 @@ export default async function AreaPage({ params }: Props) {
 
       <Container size="wide" className="py-16">
         <Sources sources={area.sources} locale={locale} className="mb-16" />
-        <h2 className="mb-6 eyebrow text-ink-muted">
-          {t("AreaPage.otherAreas")}
-        </h2>
-        <ul className="flex flex-wrap gap-x-8 gap-y-3 font-display text-2xl">
+        <h2 className="mb-6 eyebrow">{t("AreaPage.otherAreas")}</h2>
+        <ul className="flex flex-wrap gap-x-8 gap-y-3 type-h4">
           {otherAreas.map((a) => (
             <li key={a.slug}>
               <Link

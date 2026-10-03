@@ -52,10 +52,8 @@ export default async function CommunityPage({ params }: Props) {
 
       <Container size="wide" className="py-14 sm:py-20">
         <div className="max-w-3xl">
-          <p className="mb-5 eyebrow text-coral-600">
-            {t("Community.eyebrow")}
-          </p>
-          <h1 className="text-display-1">{t("Pages.community.title")}</h1>
+          <p className="mb-5 eyebrow">{t("Community.eyebrow")}</p>
+          <h1 className="type-h1">{t("Pages.community.title")}</h1>
           <p className="mt-6 lead text-ink-muted">
             {t("Pages.community.intro")}
           </p>
@@ -66,11 +64,14 @@ export default async function CommunityPage({ params }: Props) {
             aria-labelledby="newsletter-title"
             className="rounded-sm bg-ocean-900 p-7 text-white sm:p-10"
           >
-            <h2 id="newsletter-title" className="mb-6 eyebrow text-coral-200">
+            <h2
+              id="newsletter-title"
+              className="mb-6 eyebrow text-accent-on-dark"
+            >
               {t("Community.newsletterTitle")}
             </h2>
             <NewsletterSignup locale={locale} source="community" />
-            <ul className="mt-8 space-y-2 border-t border-white/15 pt-6 text-sm text-ocean-100">
+            <ul className="mt-8 space-y-2 border-t border-white/15 pt-6 text-small text-ocean-100">
               {points.map((point) => (
                 <li key={point} className="flex gap-3">
                   <span aria-hidden="true" className="text-coral-200">
@@ -86,7 +87,7 @@ export default async function CommunityPage({ params }: Props) {
             aria-labelledby="whatsapp-title"
             className="rounded-sm bg-sand-100 p-7 sm:p-10"
           >
-            <h2 id="whatsapp-title" className="text-display-3">
+            <h2 id="whatsapp-title" className="type-h3">
               {t("Community.whatsappTitle")}
             </h2>
             <p className="mt-4 leading-relaxed text-ink-muted">

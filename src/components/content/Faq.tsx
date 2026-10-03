@@ -17,7 +17,7 @@ export function Faq({
     <div className={cn("divide-y divide-line border-y border-line", className)}>
       {items.map((item) => (
         <details key={item.question} className="group">
-          <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-6 py-4 font-display text-xl leading-snug [&::-webkit-details-marker]:hidden">
+          <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-6 py-4 type-h4 [&::-webkit-details-marker]:hidden">
             {item.question}
             <span
               aria-hidden="true"

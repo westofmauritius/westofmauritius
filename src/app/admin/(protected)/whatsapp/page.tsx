@@ -12,7 +12,7 @@ export default async function AdminWhatsappPage() {
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <h1 className="text-4xl">WhatsApp group</h1>
-          <p className="mt-2 text-sm text-ink-muted">
+          <p className="mt-2 text-small text-ink-muted">
             {entries.length} people asked for an invitation. Each agreed that
             group members can see their number.
           </p>
@@ -20,13 +20,13 @@ export default async function AdminWhatsappPage() {
         <a
           download
           href="/api/admin/export/whatsapp"
-          className="inline-flex min-h-11 items-center rounded-full bg-ocean-900 px-5 text-sm font-medium text-white"
+          className="inline-flex min-h-11 items-center rounded-full bg-ocean-900 px-5 text-small font-medium text-white"
         >
           Export (CSV)
         </a>
       </div>
       <div className="mt-8 overflow-x-auto rounded-sm bg-white ring-1 ring-line">
-        <table className="w-full text-left text-sm">
+        <table className="w-full text-left text-small">
           <thead className="border-b border-line bg-sand-50 text-xs tracking-wide text-ink-muted uppercase">
             <tr>
               {[

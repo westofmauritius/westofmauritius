@@ -27,11 +27,11 @@ export async function Sources({
       aria-labelledby="sources-title"
       className={cn("border-t border-line pt-8", className)}
     >
-      <h2 id="sources-title" className="eyebrow text-ink-muted">
+      <h2 id="sources-title" className="eyebrow">
         {t("title")}
       </h2>
-      <p className="mt-3 text-sm text-ink-muted">{t("intro")}</p>
-      <ol className="mt-4 list-decimal space-y-2 pl-5 text-sm marker:text-ink-muted">
+      <p className="mt-3 text-small text-ink-muted">{t("intro")}</p>
+      <ol className="mt-4 list-decimal space-y-2 pl-5 text-small marker:text-ink-muted">
         {sources.map((source) => (
           <li key={source.url}>
             <a

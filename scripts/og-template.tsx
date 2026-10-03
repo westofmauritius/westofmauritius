@@ -44,7 +44,7 @@ export function OgTemplate({
         padding: "64px 72px",
         backgroundImage: backgrounds[tone],
         color: "white",
-        fontFamily: "Inter",
+        fontFamily: "Figtree",
         position: "relative",
       }}
     >
@@ -76,7 +76,7 @@ export function OgTemplate({
           <path d={brandMark.mountain} fill="white" />
           <rect {...brandMark.lagoon} fill={brandMark.colors.lagoonOnDark} />
         </svg>
-        <div style={{ fontFamily: "Garamond", fontSize: 38 }}>{brand}</div>
+        <div style={{ fontFamily: "Newsreader", fontSize: 38 }}>{brand}</div>
       </div>
       <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
         {eyebrow && (
@@ -93,7 +93,7 @@ export function OgTemplate({
         )}
         <div
           style={{
-            fontFamily: "Garamond",
+            fontFamily: "Newsreader",
             fontSize: titleSize,
             lineHeight: 1.05,
             maxWidth: 1000,

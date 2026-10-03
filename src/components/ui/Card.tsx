@@ -62,11 +62,11 @@ export function Card({
       </div>
       <div className="pt-3 sm:pt-4">
         {eyebrow && (
-          <p className="mb-1.5 eyebrow text-[0.625rem] text-ink-muted sm:mb-2 sm:text-xs">
+          <p className="mb-1.5 font-sans text-[0.6875rem] font-medium tracking-[0.16em] text-accent uppercase sm:mb-2 sm:text-eyebrow sm:tracking-[0.2em]">
             {eyebrow}
           </p>
         )}
-        <h3 className="text-lg leading-snug sm:text-2xl sm:leading-tight">
+        <h3 className="text-[1.1875rem] leading-snug sm:text-2xl sm:leading-tight">
           {/* The ::after makes the whole card clickable while keeping one link. */}
           <Link
             href={href}

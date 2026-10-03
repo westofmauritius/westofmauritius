@@ -125,9 +125,7 @@ export default async function GuideCategoryPage({ params }: Props) {
 
         {guides.length > 0 && (
           <section className="mt-14">
-            <h2 className="mb-6 eyebrow text-ink-muted">
-              {t("CategoryPage.guidesTitle")}
-            </h2>
+            <h2 className="mb-6 eyebrow">{t("CategoryPage.guidesTitle")}</h2>
             <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4">
               {guides.map((guide) => (
                 <GuideCard key={guide.key} guide={guide} />
@@ -141,7 +139,7 @@ export default async function GuideCategoryPage({ params }: Props) {
       {places && (
         <section className="border-t border-line bg-sand-50 py-16">
           <Container size="wide">
-            <h2 className="text-display-3">
+            <h2 className="type-h3">
               {t("CategoryPage.placesTitle", { category: title })}
             </h2>
             {places.length > 0 ? (

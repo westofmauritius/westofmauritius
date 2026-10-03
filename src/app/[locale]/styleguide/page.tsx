@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/Button";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
+import { Eyebrow } from "@/components/ui/Eyebrow";
+import { Headline } from "@/components/ui/Headline";
 import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Wordmark } from "@/components/ui/Wordmark";
@@ -36,7 +38,7 @@ function Section({
 }) {
   return (
     <section className="border-t border-line py-14">
-      <p className="mb-8 eyebrow text-coral-600">{title}</p>
+      <p className="mb-8 eyebrow">{title}</p>
       {children}
     </section>
   );
@@ -96,40 +98,52 @@ export default async function StyleguidePage({
       </Section>
 
       <Section title="Typography">
-        <div className="space-y-8">
+        {/* The type scale (docs/typography.md): Newsreader for headlines,
+            Figtree for text, as on the Hiriketiya site. */}
+        <div className="space-y-10">
           <div>
             <p className="mb-2 text-xs text-ink-muted">
-              text-display-1 · EB Garamond
+              Eyebrow with pin · type-display with accent · Newsreader
             </p>
-            <p className="font-display text-display-1">
-              Where the sun sets on the lagoon
-            </p>
+            <Eyebrow icon="pin" className="mb-5">
+              Tamarin · West coast · Mauritius
+            </Eyebrow>
+            <Headline as="p" size="display">
+              The *best* coast.
+            </Headline>
           </div>
-          <div>
-            <p className="mb-2 text-xs text-ink-muted">text-display-2</p>
-            <p className="font-display text-display-2">
-              Le Morne and the southwest
-            </p>
-          </div>
-          <div>
-            <p className="mb-2 text-xs text-ink-muted">
-              text-display-3 · italic
-            </p>
-            <p className="font-display text-display-3 italic">
-              A slower pace on the west coast
-            </p>
-          </div>
+          {(["h1", "h2", "h3", "h4"] as const).map((size) => (
+            <div key={size}>
+              <p className="mb-2 text-xs text-ink-muted">type-{size}</p>
+              <Headline as="p" size={size}>
+                Where the sun sets on the *lagoon*
+              </Headline>
+            </div>
+          ))}
           <div className="max-w-2xl">
-            <p className="mb-2 text-xs text-ink-muted">Body · Inter</p>
-            <p className="text-lg leading-relaxed">
+            <p className="mb-2 text-xs text-ink-muted">lead · Figtree</p>
+            <p className="lead text-ink-muted">
               Lead paragraph. Placeholder text: this is where an introduction to
               an area or a guide will go, written in a calm, editorial voice.
             </p>
-            <p className="mt-4 leading-relaxed text-ink-muted">
+            <p className="mt-6 mb-2 text-xs text-ink-muted">text-body</p>
+            <p>
               Body text. Placeholder text used to check line length, spacing and
-              colour. Comfortable reading needs about 60–75 characters per line,
-              which is why long text sits in the narrow “prose” container.
+              colour. Comfortable reading needs about 60 to 75 characters per
+              line, which is why long text sits in the narrow prose container.
             </p>
+            <p className="mt-6 mb-2 text-xs text-ink-muted">text-small</p>
+            <p className="text-small text-ink-muted">
+              Small text for captions, bylines and notes.
+            </p>
+          </div>
+          <div className="rounded-sm bg-ocean-900 p-8">
+            <Eyebrow icon="pin" tone="dark" className="mb-4">
+              On a dark background
+            </Eyebrow>
+            <Headline as="p" size="h2" tone="dark" className="text-white">
+              Dreaming of a home by the *lagoon*?
+            </Headline>
           </div>
         </div>
       </Section>

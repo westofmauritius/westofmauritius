@@ -67,7 +67,7 @@ export default async function CreditsPage({ params }: Props) {
 
   return (
     <Container size="wide" className="py-14 sm:py-20">
-      <h1 className="text-display-1">{t("title")}</h1>
+      <h1 className="type-h1">{t("title")}</h1>
       <p className="mt-6 max-w-2xl lead text-ink-muted">{t("intro")}</p>
       {photos.length === 0 ? (
         <p className="mt-12">{t("none")}</p>
@@ -76,7 +76,7 @@ export default async function CreditsPage({ params }: Props) {
           {photos.map((photo) => {
             const [name, licence] = photo.credit.split(" · ");
             return (
-              <li key={photo.src} className="text-sm">
+              <li key={photo.src} className="text-small">
                 <Photo
                   photo={photo}
                   fallbackTone="sand"

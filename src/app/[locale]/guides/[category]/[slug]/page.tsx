@@ -154,8 +154,8 @@ export default async function GuidePage({ params }: Props) {
       {/* Article header: centred, like a magazine feature. */}
       <header className="py-12 text-center sm:py-16">
         <Container size="prose">
-          <p className="mb-5 eyebrow text-coral-600">{categoryTitle}</p>
-          <h1 className="text-display-1">{guide.title}</h1>
+          <p className="mb-5 eyebrow">{categoryTitle}</p>
+          <h1 className="type-h1">{guide.title}</h1>
           {guide.excerpt && (
             <p className="mt-6 lead text-ink-muted">{guide.excerpt}</p>
           )}
@@ -171,7 +171,7 @@ export default async function GuidePage({ params }: Props) {
               place={guideAreas[0].name}
               location={guideAreas[0].location}
               locale={locale}
-              className="mt-5 text-sm text-ink-muted"
+              className="mt-5 text-small text-ink-muted"
             />
           )}
         </Container>
@@ -207,9 +207,7 @@ export default async function GuidePage({ params }: Props) {
 
         {guideAreas.length > 0 && (
           <div className="mt-12 border-t border-line pt-8">
-            <h2 className="mb-4 eyebrow text-ink-muted">
-              {t("GuidePage.areasTitle")}
-            </h2>
+            <h2 className="mb-4 eyebrow">{t("GuidePage.areasTitle")}</h2>
             <ul className="flex flex-wrap gap-2">
               {guideAreas.map((area) => (
                 <li key={area.slug}>
@@ -218,7 +216,7 @@ export default async function GuidePage({ params }: Props) {
                       pathname: "/areas/[slug]",
                       params: { slug: area.slug },
                     }}
-                    className="inline-block rounded-full border border-line px-4 py-2 text-sm hover:border-ocean-900"
+                    className="inline-block rounded-full border border-line px-4 py-2 text-small hover:border-ocean-900"
                   >
                     {area.name}
                   </Link>
@@ -232,7 +230,7 @@ export default async function GuidePage({ params }: Props) {
       {places.length > 0 && (
         <section className="border-t border-line bg-sand-50 py-16">
           <Container size="wide">
-            <h2 className="text-display-3">{t("GuidePage.placesTitle")}</h2>
+            <h2 className="type-h3">{t("GuidePage.placesTitle")}</h2>
             <div className="mt-10 grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4">
               {places.map((place) => (
                 <PlaceCard
@@ -249,7 +247,7 @@ export default async function GuidePage({ params }: Props) {
       {more.length > 0 && (
         <section className="py-16">
           <Container size="wide">
-            <h2 className="text-display-3">
+            <h2 className="type-h3">
               {t("GuidePage.moreTitle", { category: categoryTitle })}
             </h2>
             <div className="mt-10 grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4">

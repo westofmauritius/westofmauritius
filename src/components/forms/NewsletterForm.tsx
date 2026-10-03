@@ -107,8 +107,8 @@ export function NewsletterForm({
     // A form inside the page hides the footer's copy (see globals.css), so
     // nobody sees the same sign up twice on one page.
     <div data-newsletter-inline={source === "footer" ? undefined : ""}>
-      <p className="font-display text-2xl text-white">{labels.title}</p>
-      <p className="mt-2 text-sm leading-relaxed text-ocean-200">
+      <p className="type-h4 text-white">{labels.title}</p>
+      <p className="mt-2 text-small leading-relaxed text-ocean-200">
         {labels.text}
       </p>
       {state === "success" ? (
@@ -116,7 +116,7 @@ export function NewsletterForm({
           <p ref={successRef} tabIndex={-1} className="font-medium text-white">
             {labels.successTitle}
           </p>
-          <p className="mt-1 text-sm text-ocean-200">{labels.successText}</p>
+          <p className="mt-1 text-small text-ocean-200">{labels.successText}</p>
         </div>
       ) : (
         <form
@@ -146,7 +146,7 @@ export function NewsletterForm({
 
           <label
             htmlFor={`${id}-email`}
-            className="block text-sm font-medium text-ocean-100"
+            className="block text-small font-medium text-ocean-100"
           >
             {labels.email}{" "}
             <span className="font-normal text-ocean-200">
@@ -165,7 +165,7 @@ export function NewsletterForm({
             {errors.email && (
               <span
                 id={`${id}-email-error`}
-                className="mt-1.5 block text-sm text-coral-200"
+                className="mt-1.5 block text-small text-coral-200"
               >
                 {errors.email}
               </span>
@@ -175,7 +175,7 @@ export function NewsletterForm({
           <div>
             <label
               htmlFor={`${id}-consent`}
-              className="flex cursor-pointer items-start gap-3 text-sm leading-relaxed text-ocean-100"
+              className="flex cursor-pointer items-start gap-3 text-small leading-relaxed text-ocean-100"
             >
               <input
                 id={`${id}-consent`}
@@ -193,7 +193,7 @@ export function NewsletterForm({
             {errors.consent && (
               <span
                 id={`${id}-consent-error`}
-                className="mt-1.5 ml-8 block text-sm text-coral-200"
+                className="mt-1.5 ml-8 block text-small text-coral-200"
               >
                 {errors.consent}
               </span>
@@ -201,7 +201,7 @@ export function NewsletterForm({
           </div>
 
           {state === "error" && (
-            <p role="alert" className="text-sm text-coral-200">
+            <p role="alert" className="text-small text-coral-200">
               {labels.errorOther}
             </p>
           )}
@@ -209,7 +209,7 @@ export function NewsletterForm({
           <button
             type="submit"
             disabled={state === "sending"}
-            className="inline-flex min-h-11 items-center justify-center rounded-full bg-white/95 px-6 text-sm font-medium tracking-wide text-ocean-900 transition-colors hover:bg-white disabled:opacity-50"
+            className="inline-flex min-h-11 items-center justify-center rounded-full bg-white/95 px-6 text-small font-medium tracking-wide text-ocean-900 transition-colors hover:bg-white disabled:opacity-50"
           >
             {state === "sending" ? labels.sending : labels.submit}
           </button>

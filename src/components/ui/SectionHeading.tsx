@@ -1,4 +1,6 @@
 import { cn } from "@/lib/cn";
+import { Eyebrow } from "./Eyebrow";
+import { Headline } from "./Headline";
 
 type SectionHeadingProps = {
   eyebrow?: string;
@@ -27,13 +29,16 @@ export function SectionHeading({
         className,
       )}
     >
-      {eyebrow && <p className="mb-3 eyebrow text-ink-muted">{eyebrow}</p>}
-      <Heading
-        className={Heading === "h1" ? "text-display-1" : "text-display-2"}
-      >
+      {eyebrow && (
+        <Eyebrow className={cn("mb-4", align === "center" && "justify-center")}>
+          {eyebrow}
+        </Eyebrow>
+      )}
+      {/* "*word*" in the title is set in italic in the accent colour. */}
+      <Headline as={Heading} size={Heading === "h1" ? "h1" : "h2"}>
         {title}
-      </Heading>
-      {intro && <p className="mt-4 lead text-ink-muted">{intro}</p>}
+      </Headline>
+      {intro && <p className="mt-5 lead text-ink-muted">{intro}</p>}
     </div>
   );
 }

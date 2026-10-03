@@ -39,14 +39,14 @@ export function SiteFooter({
       >
         <div className="max-w-xs">
           <Wordmark name={brandName} tone="light" />
-          <p className="mt-4 text-sm leading-relaxed text-ocean-200">
+          <p className="mt-4 text-small leading-relaxed text-ocean-200">
             {tagline}
           </p>
         </div>
         {columns.map((column) => (
           <div key={column.title}>
-            <p className="mb-4 eyebrow text-ocean-300">{column.title}</p>
-            <ul className="space-y-3 text-sm">
+            <p className="mb-4 eyebrow text-accent-on-dark">{column.title}</p>
+            <ul className="space-y-3 text-small">
               {column.items.map((item) => (
                 <li key={item.path}>
                   <Link

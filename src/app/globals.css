@@ -6,7 +6,7 @@
  * Every colour, font and type size in the design is defined here. Tailwind v4
  * turns each `--color-*` into utilities (`bg-lagoon-500`, `text-ocean-900`,
  * `border-sand-200` …), `--font-*` into `font-display` / `font-sans`, and
- * `--text-*` into `text-display-1` etc. Change a value here and it changes
+ * `--text-*` into `text-h1` etc. Change a value here and it changes
  * everywhere.
  *
  * Contrast notes (WCAG AA needs 4.5:1 for body text):
@@ -70,24 +70,53 @@
   --color-surface-alt: var(--color-sand-50);
   --color-line: var(--color-sand-200);
 
-  /* Fonts. --font-garamond is set by next/font in src/lib/fonts.ts; the sans
-     is the device's own interface font (no download). */
-  --font-display: var(--font-garamond), "Times New Roman", serif;
+  /* Accent: the eyebrow line and the italic key word in headlines.
+     coral-600 passes WCAG AA for small text on white and sand-50 (5.0 and
+     4.7); on dark sections and photos the lighter coral-300 does (7.8 on
+     ocean-900, 9.1 on ocean-950). See docs/typography.md. */
+  --color-accent: var(--color-coral-600);
+  --color-accent-on-dark: var(--color-coral-300);
+
+  /* Fonts, set by next/font in src/lib/fonts.ts: Newsreader for headlines,
+     Figtree for text. The system fonts after them only show while the web
+     fonts load (next/font adjusts their metrics so nothing jumps). */
+  --font-display: var(--font-serif), "Times New Roman", serif;
   --font-sans:
-    system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-    sans-serif;
+    var(--font-sans-loaded), system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
 
   /*
-   * Display sizes for headings. clamp() scales smoothly from phone to desktop
-   * without breakpoints: clamp(min, preferred, max).
+   * Type scale. Each step is a design token (font size, line height and
+   * letter spacing); the type-* utilities below add the font and weight.
+   * Headline sizes use clamp(min, preferred, max) so they grow smoothly from
+   * phone to desktop without breakpoints.
    */
-  --text-display-1: clamp(2.75rem, 1.9rem + 4.2vw, 5.5rem);
-  --text-display-1--line-height: 1.02;
-  --text-display-1--letter-spacing: -0.01em;
-  --text-display-2: clamp(2.1rem, 1.6rem + 2.4vw, 3.75rem);
-  --text-display-2--line-height: 1.08;
-  --text-display-3: clamp(1.6rem, 1.35rem + 1.2vw, 2.4rem);
-  --text-display-3--line-height: 1.15;
+  --text-eyebrow: 0.75rem;
+  --text-eyebrow--line-height: 1.4;
+  --text-eyebrow--letter-spacing: 0.24em;
+  --text-display: clamp(3.4rem, 1.7rem + 7.2vw, 7.5rem);
+  --text-display--line-height: 0.98;
+  --text-display--letter-spacing: -0.02em;
+  --text-h1: clamp(2.75rem, 1.9rem + 3.9vw, 5.25rem);
+  --text-h1--line-height: 1;
+  --text-h1--letter-spacing: -0.018em;
+  --text-h2: clamp(2.1rem, 1.6rem + 2.2vw, 3.6rem);
+  --text-h2--line-height: 1.05;
+  --text-h2--letter-spacing: -0.012em;
+  --text-h3: clamp(1.55rem, 1.35rem + 0.95vw, 2.25rem);
+  --text-h3--line-height: 1.12;
+  --text-h3--letter-spacing: -0.008em;
+  --text-h4: clamp(1.25rem, 1.17rem + 0.35vw, 1.5rem);
+  --text-h4--line-height: 1.25;
+  --text-lead: clamp(1.125rem, 1.04rem + 0.4vw, 1.3125rem);
+  --text-lead--line-height: 1.65;
+  --text-body: 1.0625rem;
+  --text-body--line-height: 1.75;
+  --text-small: 0.875rem;
+  --text-small--line-height: 1.6;
+  --text-button: 0.9375rem;
+  --text-button--line-height: 1.25;
+  --text-button--letter-spacing: 0.01em;
 }
 
 @layer base {
@@ -97,7 +126,7 @@
   }
 
   body {
-    @apply bg-surface font-sans text-ink;
+    @apply bg-surface font-sans text-body text-ink;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
@@ -106,7 +135,7 @@
   h2,
   h3,
   h4 {
-    @apply font-display font-normal text-balance;
+    @apply font-display font-medium text-balance;
   }
 
   :focus-visible {
@@ -139,7 +168,36 @@
 /* Small uppercase label above headings ("Guides", "Tamarin" …). Set the
    colour where it is used, since it differs on light and dark backgrounds. */
 @utility eyebrow {
-  @apply font-sans text-xs font-medium tracking-[0.22em] uppercase;
+  @apply font-sans text-eyebrow font-medium text-accent uppercase;
+}
+
+/*
+ * Headline styles: the serif at one step of the type scale. Use them on
+ * any element (an h2 can look like a display headline). The <Headline>
+ * component (src/components/ui/Headline.tsx) picks one by size.
+ */
+@utility type-display {
+  @apply font-display text-display font-medium text-balance;
+}
+@utility type-h1 {
+  @apply font-display text-h1 font-medium text-balance;
+}
+@utility type-h2 {
+  @apply font-display text-h2 font-medium text-balance;
+}
+@utility type-h3 {
+  @apply font-display text-h3 font-medium text-balance;
+}
+@utility type-h4 {
+  @apply font-display text-h4 font-medium;
+}
+/* Serif italic (the accent word in headlines, taglines, quotes). */
+@utility serif-italic {
+  font-family: var(--font-serif-italic), var(--font-display);
+  font-style: italic;
+}
+@utility type-button {
+  @apply font-sans text-button font-medium;
 }
 
 /*
@@ -148,7 +206,7 @@
  */
 @layer components {
   .prose-west {
-    @apply max-w-[65ch] text-lg leading-relaxed text-ink;
+    @apply max-w-[65ch] text-[1.125rem] leading-[1.8] text-ink;
   }
   /* Markdoc wraps the text in an <article>, hence the second selector. */
   .prose-west > * + *,
@@ -156,10 +214,10 @@
     @apply mt-5;
   }
   .prose-west h2 {
-    @apply mt-12 text-display-3;
+    @apply mt-14 type-h3;
   }
   .prose-west h3 {
-    @apply mt-8 text-2xl;
+    @apply mt-10 type-h4;
   }
   .prose-west a {
     @apply text-lagoon-700 underline decoration-lagoon-300 underline-offset-4 hover:decoration-lagoon-700;
@@ -177,7 +235,7 @@
     @apply mt-2;
   }
   .prose-west blockquote {
-    @apply border-l-2 border-coral-400 pl-5 font-display text-2xl italic;
+    @apply border-l-2 border-coral-400 pl-5 type-h4 serif-italic;
   }
 
   /* Map markers (created by src/components/map/PlacesMap.tsx). */
@@ -203,13 +261,9 @@
   }
 }
 
-/*
- * Lead paragraph (intros under headings), set in the serif like a printed
- * magazine. Also keeps the first screen to one font: the headline font is
- * preloaded, so intros appear without waiting for the body font.
- */
+/* Lead paragraph (intros under headings): the airy sans, one size up. */
 @utility lead {
-  @apply font-display text-[1.375rem] leading-[1.45] sm:text-2xl sm:leading-[1.45];
+  @apply font-sans text-lead;
 }
 
 /*

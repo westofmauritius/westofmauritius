@@ -1,3 +1,4 @@
+import { Eyebrow } from "@/components/ui/Eyebrow";
 import type { Metadata } from "next";
 import { SunsetNow } from "@/components/sun/SunsetNow";
 import { getTranslations } from "next-intl/server";
@@ -120,10 +121,11 @@ export default async function PlacePage({ params }: Props) {
       </Container>
 
       <Container size="wide" className="py-10">
-        <p className="mb-4 eyebrow text-coral-600">
-          {category} · {area.name}
-        </p>
-        <h1 className="max-w-4xl text-display-1">{place.name}</h1>
+        <Eyebrow icon="pin" className="mb-5">
+          {area.name} · {t("Region.label")}
+        </Eyebrow>
+        <h1 className="max-w-4xl type-h1">{place.name}</h1>
+        <p className="mt-3 type-h4 serif-italic text-ink-muted">{category}</p>
         {/* Where the sunset is the point of going: tonight's time. */}
         {(place.category === "sunset" || place.category === "beach") && (
           <SunsetNow
@@ -131,7 +133,7 @@ export default async function PlacePage({ params }: Props) {
             location={place.location}
             locale={locale}
             spot
-            className="mt-4 text-sm text-ink-muted"
+            className="mt-4 text-small text-ink-muted"
           />
         )}
         {(place.featured || place.placeholder) && (
@@ -178,10 +180,8 @@ export default async function PlacePage({ params }: Props) {
         {/* Practical details, beside the text on large screens. */}
         <aside className="space-y-8 lg:sticky lg:top-24 lg:self-start">
           <div className="rounded-sm bg-sand-50 p-6 ring-1 ring-line">
-            <h2 className="mb-6 eyebrow text-ink-muted">
-              {t("PlacePage.details")}
-            </h2>
-            <dl className="space-y-6 text-sm">
+            <h2 className="mb-6 eyebrow">{t("PlacePage.details")}</h2>
+            <dl className="space-y-6 text-small">
               {place.address && (
                 <div>
                   <dt className="font-medium">{t("PlacePage.address")}</dt>
@@ -337,7 +337,7 @@ export default async function PlacePage({ params }: Props) {
       {inGuides.length > 0 && (
         <section className="border-t border-line py-16">
           <Container size="wide">
-            <h2 className="text-display-3">{t("PlacePage.inGuides")}</h2>
+            <h2 className="type-h3">{t("PlacePage.inGuides")}</h2>
             <div className="mt-10 grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4">
               {inGuides.map((guide) => (
                 <GuideCard key={guide.key} guide={guide} />
@@ -350,7 +350,7 @@ export default async function PlacePage({ params }: Props) {
       {nearby.length > 0 && (
         <section className="border-t border-line bg-sand-50 py-16">
           <Container size="wide">
-            <h2 className="text-display-3">
+            <h2 className="type-h3">
               {t("PlacePage.moreIn", { area: area.name })}
             </h2>
             <div className="mt-10 grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4">

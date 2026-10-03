@@ -24,10 +24,10 @@ export function AreaPhotoStrip({ areas }: { areas: Area[] }) {
               sizes="(min-width: 1024px) 20rem, 50vw"
              
             />
-            <p className="mt-2 font-display text-xl text-ink group-hover:text-lagoon-700">
+            <p className="mt-2 type-h4 text-ink group-hover:text-lagoon-700">
               {area.name}
             </p>
-            <p className="text-sm text-ink-muted">{area.tagline}</p>
+            <p className="text-small text-ink-muted">{area.tagline}</p>
           </Link>
         </li>
       ))}

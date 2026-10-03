@@ -22,9 +22,9 @@ export function SummaryTable({
       role="region"
       aria-label={table.caption || undefined}
     >
-      <table className="w-full min-w-[32rem] text-left text-sm">
+      <table className="w-full min-w-[32rem] text-left text-small">
         {table.caption && (
-          <caption className="mb-4 text-left font-display text-2xl">
+          <caption className="mb-4 text-left type-h4">
             {table.caption}
           </caption>
         )}

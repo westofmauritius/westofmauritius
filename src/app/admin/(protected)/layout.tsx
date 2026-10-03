@@ -25,7 +25,7 @@ export default async function ProtectedAdminLayout({
           <div className="flex items-center gap-6">
             <Wordmark name="West of Mauritius" className="text-lg" />
             <nav aria-label="Admin">
-              <ul className="flex flex-wrap gap-4 text-sm">
+              <ul className="flex flex-wrap gap-4 text-small">
                 {tabs.map((tab) => (
                   <li key={tab.href}>
                     <Link
@@ -42,7 +42,7 @@ export default async function ProtectedAdminLayout({
           <form action="/api/admin/logout" method="post">
             <button
               type="submit"
-              className="text-sm text-ink-muted underline hover:text-ink"
+              className="text-small text-ink-muted underline hover:text-ink"
             >
               Log out
             </button>

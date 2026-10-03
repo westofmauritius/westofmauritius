@@ -1,30 +1,63 @@
-import { EB_Garamond } from "next/font/google";
+import localFont from "next/font/local";
 
-// next/font downloads this at build time and serves it from our own domain:
-// no request goes to Google from the visitor's browser (good for privacy and
-// speed), and fallback metrics are adjusted so text does not jump on load.
+/*
+ * The site's two typefaces, self hosted through next/font:
+ * the files live in src/assets/fonts/web/ (built by scripts/subset-fonts.py,
+ * which keeps only the characters English and French need), next/font
+ * serves them from our own domain with `font-display: swap`, preloads the
+ * ones the first screen needs and generates a fallback font with matching metrics, so text does not
+ * move when the real font arrives.
+ *
+ * To switch typefaces, change the sources in scripts/subset-fonts.py, run
+ * it, and keep the file names below. Nothing else in the site names a font:
+ * everything uses the --font-serif and --font-sans variables.
+ */
 
 /**
- * Classic serif for headings and the wordmark. Chosen over Cormorant
- * Garamond because its accents (î, ô, ê) read naturally in French.
- * One static weight (400) keeps the file small: headings and the wordmark
- * both use it.
+ * Newsreader, the headline serif of the Hiriketiya site: headlines and the
+ * wordmark. One weight (500) at the display optical size, cut static by the
+ * subset script.
  */
-export const garamond = EB_Garamond({
-  subsets: ["latin"],
-  weight: "400",
-  // Upright only: the italic file (48 kB) would be preloaded on every page
-  // for the odd quote. Browsers slant the upright font where italic is used.
-  style: ["normal"],
-  variable: "--font-garamond",
+export const serif = localFont({
+  src: "../assets/fonts/web/serif-roman.woff2",
+  weight: "500",
+  style: "normal",
+  variable: "--font-serif",
   display: "swap",
+  adjustFontFallback: "Times New Roman",
 });
 
-// Body text and the interface use the device's own sans-serif (San Francisco
-// on Apple devices, Segoe UI on Windows, Roboto on Android), set in
-// globals.css. It looks native everywhere, costs no download and cannot make
-// text jump when a font arrives. Inter was used before; dropping its 50 kB
-// file was the largest single speed gain left on photo pages.
+/**
+ * Newsreader italic, for the one key word in a headline ("The *best*
+ * coast.") and short serif asides. A real italic: a slanted roman looks fake
+ * at display sizes. Kept as its own family and not preloaded, so it is only
+ * downloaded on pages that use it and never competes with the main photo
+ * or the text on the first screen (measured: preloading it cost up to half
+ * a second of Largest Contentful Paint on mobile).
+ */
+export const serifItalic = localFont({
+  src: "../assets/fonts/web/serif-italic.woff2",
+  weight: "500",
+  style: "italic",
+  variable: "--font-serif-italic",
+  display: "swap",
+  preload: false,
+  adjustFontFallback: "Times New Roman",
+});
+
+/**
+ * Figtree, the Hiriketiya site's sans: body text and the interface
+ * (navigation, buttons, forms, eyebrows). One variable file covers the
+ * three weights used: 400, 500 and 600.
+ */
+export const sans = localFont({
+  src: "../assets/fonts/web/sans.woff2",
+  weight: "400 600",
+  style: "normal",
+  variable: "--font-sans-loaded",
+  display: "swap",
+  adjustFontFallback: "Arial",
+});
 
 /** Class names to put on <html> so the CSS variables exist everywhere. */
-export const fontVariables = garamond.variable;
+export const fontVariables = `${serif.variable} ${serifItalic.variable} ${sans.variable}`;

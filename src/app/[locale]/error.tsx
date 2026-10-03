@@ -39,15 +39,15 @@ export default function ErrorPage({
 
   return (
     <Container className="py-24">
-      <p className="mb-4 eyebrow text-coral-600">Error</p>
-      <h1 className="text-display-2">{t.title}</h1>
+      <p className="mb-4 eyebrow">Error</p>
+      <h1 className="type-h2">{t.title}</h1>
       <p className="mt-6 max-w-xl text-lg text-ink-muted">{t.body}</p>
       <div className="mt-10 flex flex-wrap gap-3">
         <Button onClick={reset}>{t.retry}</Button>
         {/* A full page load, in case the app itself is in a broken state. */}
         <a
           href={`/${locale === "fr" ? "fr" : "en"}`}
-          className="inline-flex min-h-11 items-center rounded-full border border-ocean-900/25 px-6 text-sm font-medium"
+          className="inline-flex min-h-11 items-center rounded-full border border-ocean-900/25 px-6 text-small font-medium"
         >
           {t.home}
         </a>

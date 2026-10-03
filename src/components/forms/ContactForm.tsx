@@ -36,7 +36,7 @@ export function ContactForm() {
   if (state === "success") {
     return (
       <div role="status" className="rounded-sm bg-sand-50 p-8 ring-1 ring-line">
-        <h2 ref={successRef} tabIndex={-1} className="text-display-3">
+        <h2 ref={successRef} tabIndex={-1} className="type-h3">
           {t("contact.successTitle")}
         </h2>
         <p className="mt-4 text-lg text-ink-muted">
@@ -108,7 +108,7 @@ export function ContactForm() {
         required
         errors={errors}
       />
-      <p className="text-sm text-ink-muted">
+      <p className="text-small text-ink-muted">
         <PrivacyLink>{t("contact.privacy")}</PrivacyLink>
       </p>
       <SubmissionMessage state={state} />

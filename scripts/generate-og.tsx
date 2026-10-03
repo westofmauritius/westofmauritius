@@ -42,13 +42,13 @@ const typeset = (text: string, locale: Locale) =>
 
 const fonts = [
   {
-    name: "Garamond",
-    data: readFileSync("src/assets/fonts/EBGaramond-Medium.ttf"),
+    name: "Newsreader",
+    data: readFileSync("src/assets/fonts/Newsreader-Medium.ttf"),
     weight: 500 as const,
   },
   {
-    name: "Inter",
-    data: readFileSync("src/assets/fonts/Inter-Medium.ttf"),
+    name: "Figtree",
+    data: readFileSync("src/assets/fonts/Figtree-Medium.ttf"),
     weight: 500 as const,
   },
 ];
@@ -132,7 +132,8 @@ async function main() {
     const jobs: Job[] = [
       {
         path: "default",
-        title: t.Home.title,
+        // Without the "*word*" accent markers the site's headline uses.
+        title: t.Home.title.replace(/\*([^*]+)\*/g, "$1"),
         eyebrow: t.Home.eyebrow,
         photo: hero(home.hero),
       },

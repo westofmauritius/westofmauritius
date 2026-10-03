@@ -17,7 +17,7 @@ export default async function AdminContactsPage() {
         <a
           download
           href="/api/admin/export/contacts"
-          className="inline-flex min-h-11 items-center rounded-full bg-ocean-900 px-5 text-sm font-medium text-white"
+          className="inline-flex min-h-11 items-center rounded-full bg-ocean-900 px-5 text-small font-medium text-white"
         >
           Export CSV
         </a>
@@ -25,7 +25,7 @@ export default async function AdminContactsPage() {
       <ul className="mt-8 space-y-4">
         {messages.map((m) => (
           <li key={m.id} className="rounded-sm bg-white p-5 ring-1 ring-line">
-            <p className="text-sm">
+            <p className="text-small">
               <strong>{m.name}</strong> ·{" "}
               <a
                 href={`mailto:${m.email}`}
@@ -38,7 +38,7 @@ export default async function AdminContactsPage() {
                 {dateTime.format(new Date(m.createdAt))}
               </span>
             </p>
-            <p className="mt-3 text-sm whitespace-pre-wrap text-ink-muted">
+            <p className="mt-3 text-small whitespace-pre-wrap text-ink-muted">
               {m.message}
             </p>
           </li>

@@ -56,7 +56,7 @@ export default async function AreasPage({
       <p className="mt-6">
         <Link
           href="/living-in-the-west/find-your-area"
-          className="text-sm font-medium text-lagoon-700 hover:underline"
+          className="text-small font-medium text-lagoon-700 hover:underline"
           data-umami-event="cta-quiz"
           data-umami-event-position="areas"
         >

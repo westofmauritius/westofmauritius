@@ -37,7 +37,7 @@ type BaseProps = {
 function LabelText({ label, required }: { label: string; required?: boolean }) {
   const t = useTranslations("Forms");
   return (
-    <span className="text-sm font-medium">
+    <span className="text-small font-medium">
       {label}{" "}
       <span className="font-normal text-ink-muted">
         ({required ? t("required") : t("optional")})
@@ -58,14 +58,17 @@ function Described({
   return (
     <>
       {hint && (
-        <span id={`${id}-hint`} className="mt-1.5 block text-sm text-ink-muted">
+        <span
+          id={`${id}-hint`}
+          className="mt-1.5 block text-small text-ink-muted"
+        >
           {hint}
         </span>
       )}
       {error && (
         <span
           id={`${id}-error`}
-          className="mt-1.5 block text-sm font-medium text-coral-700"
+          className="mt-1.5 block text-small font-medium text-coral-700"
         >
           {error}
         </span>
@@ -201,7 +204,7 @@ export function ChoiceGroup(
           <label
             key={o.value}
             className={cn(
-              "flex min-h-12 cursor-pointer items-center gap-3 rounded-sm border bg-white px-4 py-2 text-sm transition-colors has-checked:border-ocean-900 has-checked:bg-sand-50 has-focus-visible:outline-2 has-focus-visible:outline-coral-500",
+              "flex min-h-12 cursor-pointer items-center gap-3 rounded-sm border bg-white px-4 py-2 text-small transition-colors has-checked:border-ocean-900 has-checked:bg-sand-50 has-focus-visible:outline-2 has-focus-visible:outline-coral-500",
               error ? "border-coral-600" : "border-line",
             )}
           >
@@ -236,7 +239,7 @@ export function CheckboxField(
     <div>
       <label
         htmlFor={id}
-        className="flex cursor-pointer items-start gap-3 text-sm leading-relaxed"
+        className="flex cursor-pointer items-start gap-3 text-small leading-relaxed"
       >
         <input
           id={id}
@@ -252,7 +255,7 @@ export function CheckboxField(
       {error && (
         <span
           id={`${id}-error`}
-          className="mt-1.5 ml-8 block text-sm font-medium text-coral-700"
+          className="mt-1.5 ml-8 block text-small font-medium text-coral-700"
         >
           {error}
         </span>
@@ -299,7 +302,7 @@ export function ErrorSummary({
       ref={summaryRef}
       tabIndex={-1}
       role="alert"
-      className="rounded-sm border border-coral-400 bg-coral-50 p-5 text-sm text-coral-700"
+      className="rounded-sm border border-coral-400 bg-coral-50 p-5 text-small text-coral-700"
     >
       <p className="font-semibold">
         {names.length === 1
@@ -337,7 +340,7 @@ export function SubmissionMessage({ state }: { state: SubmissionState }) {
   return (
     <p
       role="alert"
-      className="rounded-sm bg-coral-50 p-4 text-sm text-coral-700"
+      className="rounded-sm bg-coral-50 p-4 text-small text-coral-700"
     >
       {text}
     </p>

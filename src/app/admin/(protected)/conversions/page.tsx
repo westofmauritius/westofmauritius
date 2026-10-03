@@ -20,14 +20,14 @@ export default async function AdminConversionsPage() {
   return (
     <>
       <h1 className="text-4xl">Conversions by page</h1>
-      <p className="mt-2 max-w-2xl text-sm text-ink-muted">
+      <p className="mt-2 max-w-2xl text-small text-ink-muted">
         Where each enquiry, newsletter sign up and WhatsApp request started.
         Sources name the page or block, e.g. <code>area-tamarin</code> (area
         page), <code>area-living-tamarin</code> (its Living section),{" "}
         <code>guide-…</code>, <code>living-…</code>, <code>footer</code>.
       </p>
       <div className="mt-8 overflow-x-auto rounded-sm bg-white ring-1 ring-line">
-        <table className="w-full text-left text-sm">
+        <table className="w-full text-left text-small">
           <thead className="border-b border-line bg-sand-50 text-xs tracking-wide text-ink-muted uppercase">
             <tr>
               {["Source", "Enquiries", "Newsletter", "WhatsApp", "Total"].map(
@@ -54,7 +54,9 @@ export default async function AdminConversionsPage() {
           </tbody>
         </table>
         {rows.length === 0 && (
-          <p className="px-4 py-6 text-sm text-ink-muted">No sign ups yet.</p>
+          <p className="px-4 py-6 text-small text-ink-muted">
+            No sign ups yet.
+          </p>
         )}
       </div>
     </>

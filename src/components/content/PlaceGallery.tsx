@@ -109,7 +109,7 @@ export function PlaceGallery({ photos, labels }: PlaceGalleryProps) {
                 className="max-h-[78dvh] w-auto max-w-full rounded-sm object-contain"
               />
             )}
-            <figcaption className="mt-3 text-center text-sm text-ocean-100">
+            <figcaption className="mt-3 text-center text-small text-ocean-100">
               {photo.alt}
               <span className="ml-3 text-ocean-300 tabular-nums">
                 {current + 1} / {total}

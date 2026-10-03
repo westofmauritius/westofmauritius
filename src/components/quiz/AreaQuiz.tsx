@@ -56,7 +56,7 @@ export function AreaQuiz({
       <form ref={formRef} onSubmit={onSubmit} noValidate className="space-y-10">
         {questions.map((question, i) => (
           <fieldset key={question.id}>
-            <legend className="font-display text-2xl leading-snug">
+            <legend className="type-h4">
               <span className="mr-3 text-coral-600">{i + 1}.</span>
               {question.legend}
             </legend>
@@ -84,13 +84,13 @@ export function AreaQuiz({
         ))}
 
         {missing && (
-          <p role="alert" className="text-sm text-coral-700">
+          <p role="alert" className="text-small text-coral-700">
             {labels.missing}
           </p>
         )}
         <button
           type="submit"
-          className="inline-flex min-h-12 items-center justify-center rounded-full bg-coral-600 px-8 text-sm font-medium tracking-wide text-white transition-colors hover:bg-coral-700"
+          className="inline-flex min-h-12 items-center justify-center rounded-full bg-coral-600 px-8 text-small font-medium tracking-wide text-white transition-colors hover:bg-coral-700"
         >
           {labels.submit}
         </button>
@@ -111,7 +111,7 @@ export function AreaQuiz({
                 setAnswers({});
                 formRef.current?.scrollIntoView({ behavior: "smooth" });
               }}
-              className="mt-6 text-sm font-medium text-lagoon-700 underline underline-offset-4"
+              className="mt-6 text-small font-medium text-lagoon-700 underline underline-offset-4"
             >
               {labels.again}
             </button>

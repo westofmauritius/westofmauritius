@@ -107,7 +107,7 @@ export function WhatsappForm({
   if (state === "success") {
     return (
       <div role="status">
-        <p ref={successRef} tabIndex={-1} className="font-display text-2xl">
+        <p ref={successRef} tabIndex={-1} className="type-h4">
           {labels.successTitle}
         </p>
         <p className="mt-2 text-ink-muted">{labels.successText}</p>
@@ -121,7 +121,7 @@ export function WhatsappForm({
     errors[key] && (
       <span
         id={`${id}-${key}-error`}
-        className="mt-1.5 block text-sm text-coral-700"
+        className="mt-1.5 block text-small text-coral-700"
       >
         {errors[key]}
       </span>
@@ -150,7 +150,7 @@ export function WhatsappForm({
         </label>
       </div>
 
-      <label htmlFor={`${id}-name`} className="block text-sm font-medium">
+      <label htmlFor={`${id}-name`} className="block text-small font-medium">
         {labels.name}{" "}
         <span className="font-normal text-ink-muted">({labels.required})</span>
         <input
@@ -165,7 +165,7 @@ export function WhatsappForm({
         {error("name")}
       </label>
 
-      <label htmlFor={`${id}-phone`} className="block text-sm font-medium">
+      <label htmlFor={`${id}-phone`} className="block text-small font-medium">
         {labels.phone}{" "}
         <span className="font-normal text-ink-muted">({labels.required})</span>
         <span
@@ -189,7 +189,7 @@ export function WhatsappForm({
       </label>
 
       <fieldset aria-describedby={describedBy("role")}>
-        <legend className="text-sm font-medium">
+        <legend className="text-small font-medium">
           {labels.role}{" "}
           <span className="font-normal text-ink-muted">
             ({labels.required})
@@ -199,7 +199,7 @@ export function WhatsappForm({
           {labels.roles.map((r) => (
             <label
               key={r.value}
-              className="flex min-h-12 cursor-pointer items-center gap-3 rounded-sm border border-line bg-white px-4 text-sm has-[:checked]:border-ocean-900 has-[:checked]:ring-1 has-[:checked]:ring-ocean-900"
+              className="flex min-h-12 cursor-pointer items-center gap-3 rounded-sm border border-line bg-white px-4 text-small has-[:checked]:border-ocean-900 has-[:checked]:ring-1 has-[:checked]:ring-ocean-900"
             >
               <input
                 type="radio"
@@ -218,7 +218,7 @@ export function WhatsappForm({
       <div>
         <label
           htmlFor={`${id}-consent`}
-          className="flex cursor-pointer items-start gap-3 text-sm leading-relaxed"
+          className="flex cursor-pointer items-start gap-3 text-small leading-relaxed"
         >
           <input
             id={`${id}-consent`}
@@ -234,7 +234,7 @@ export function WhatsappForm({
         {errors.consent && (
           <span
             id={`${id}-consent-error`}
-            className="mt-1.5 ml-8 block text-sm text-coral-700"
+            className="mt-1.5 ml-8 block text-small text-coral-700"
           >
             {errors.consent}
           </span>
@@ -242,7 +242,7 @@ export function WhatsappForm({
       </div>
 
       {state === "error" && (
-        <p role="alert" className="text-sm text-coral-700">
+        <p role="alert" className="text-small text-coral-700">
           {labels.errorOther}
         </p>
       )}
@@ -250,7 +250,7 @@ export function WhatsappForm({
       <button
         type="submit"
         disabled={state === "sending"}
-        className="inline-flex min-h-12 items-center justify-center rounded-full bg-ocean-900 px-7 text-sm font-medium tracking-wide text-white transition-colors hover:bg-ocean-800 disabled:opacity-50"
+        className="inline-flex min-h-12 items-center justify-center rounded-full bg-ocean-900 px-7 text-small font-medium tracking-wide text-white transition-colors hover:bg-ocean-800 disabled:opacity-50"
       >
         {state === "sending" ? labels.sending : labels.submit}
       </button>

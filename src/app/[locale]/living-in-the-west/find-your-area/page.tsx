@@ -63,8 +63,8 @@ export default async function FindYourAreaPage({ params }: Props) {
           sizes="(min-width: 1024px) 40vw, 100vw"
         />
         <div>
-          <p className="mb-3 eyebrow text-coral-600">{t("Quiz.match")}</p>
-          <h2 className="text-display-2">{area.name}</h2>
+          <p className="mb-3 eyebrow">{t("Quiz.match")}</p>
+          <h2 className="type-h2">{area.name}</h2>
           <p className="mt-4 leading-relaxed text-ink-muted">{area.intro}</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink
@@ -81,7 +81,7 @@ export default async function FindYourAreaPage({ params }: Props) {
             <Link
               href={{ pathname: "/areas/[slug]", params: { slug: area.slug } }}
               hash="living"
-              className="inline-flex min-h-11 items-center px-2 text-sm font-medium text-lagoon-700 hover:underline"
+              className="inline-flex min-h-11 items-center px-2 text-small font-medium text-lagoon-700 hover:underline"
             >
               {t("Quiz.living", { name: inPlace(area.name, locale) })} →
             </Link>
@@ -108,8 +108,8 @@ export default async function FindYourAreaPage({ params }: Props) {
         />
       </Container>
       <Container size="prose" className="py-14 sm:py-20">
-        <p className="mb-5 eyebrow text-coral-600">{t("Quiz.eyebrow")}</p>
-        <h1 className="text-display-1">{t("Quiz.title")}</h1>
+        <p className="mb-5 eyebrow">{t("Quiz.eyebrow")}</p>
+        <h1 className="type-h1">{t("Quiz.title")}</h1>
         <p className="mt-6 lead text-ink-muted">{t("Quiz.intro")}</p>
         <div className="mt-14">
           <AreaQuiz

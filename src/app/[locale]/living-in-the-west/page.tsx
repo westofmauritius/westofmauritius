@@ -74,8 +74,10 @@ export default async function LivingInTheWestPage({ params }: Props) {
           />
         </Container>
         <Container size="wide" className="py-16 sm:py-24">
-          <p className="mb-5 eyebrow text-coral-200">{t("LivePage.eyebrow")}</p>
-          <h1 className="max-w-3xl text-display-1 text-white">
+          <p className="mb-5 eyebrow text-accent-on-dark">
+            {t("LivePage.eyebrow")}
+          </p>
+          <h1 className="max-w-3xl type-h1 text-white">
             {t("Pages.live.title")}
           </h1>
           <p className="mt-6 max-w-2xl lead text-ocean-100">
@@ -144,7 +146,7 @@ export default async function LivingInTheWestPage({ params }: Props) {
                       className="transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                     />
                   </div>
-                  <p className="mt-3 font-display text-xl group-hover:underline sm:text-2xl">
+                  <p className="mt-3 type-h4 group-hover:underline sm:text-2xl">
                     {t("AreaPage.livingLink", { name: area.name })}
                   </p>
                 </Link>
@@ -163,9 +165,7 @@ export default async function LivingInTheWestPage({ params }: Props) {
       )}
 
       <Container size="wide" className="border-t border-line py-16 sm:py-20">
-        <h2 className="mb-8 eyebrow text-ink-muted">
-          {t("LivePage.audienceTitle")}
-        </h2>
+        <h2 className="mb-8 eyebrow">{t("LivePage.audienceTitle")}</h2>
         <ul className="grid gap-10 md:grid-cols-3">
           {audiences.map((key) => (
             <li key={key} className="border-t border-line pt-6">
@@ -202,7 +202,7 @@ export default async function LivingInTheWestPage({ params }: Props) {
                       pathname: "/living-in-the-west/[slug]",
                       params: { slug: a.slug },
                     }}
-                    className="font-display text-xl hover:text-coral-600"
+                    className="type-h4 hover:text-coral-600"
                   >
                     {a.title}
                   </Link>
@@ -217,7 +217,7 @@ export default async function LivingInTheWestPage({ params }: Props) {
           the shortlist: one clear next step. */}
       <section className="bg-sand-100 py-20 sm:py-24">
         <Container size="prose" className="text-center">
-          <h2 className="text-display-2">{t("LivePage.enquireTitle")}</h2>
+          <h2 className="type-h2">{t("LivePage.enquireTitle")}</h2>
           <p className="mt-5 lead text-ink-muted">
             {t("LivePage.enquireText")}
           </p>

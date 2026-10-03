@@ -70,7 +70,7 @@ export function textPage(
 
     const header = (
       <div>
-        <h1 className="text-display-1">{page.title}</h1>
+        <h1 className="type-h1">{page.title}</h1>
         {page.intro && (
           <p className="mt-6 max-w-2xl lead text-ink-muted">{page.intro}</p>
         )}
@@ -109,7 +109,7 @@ export function textPage(
           <div>
             <Prose node={page.body} locale={locale} />
             {page.updatedAt && (
-              <p className="mt-16 border-t border-line pt-6 text-sm text-ink-muted">
+              <p className="mt-16 border-t border-line pt-6 text-small text-ink-muted">
                 {t("LiveArticle.updated", { date: date(page.updatedAt) })}
               </p>
             )}
@@ -120,15 +120,13 @@ export function textPage(
               <AreaPhotoStrip areas={aside} />
             ) : (
               <div className="rounded-sm bg-sand-50 p-6 ring-1 ring-line">
-                <p className="font-display text-2xl">
-                  {t("TextPage.asideTitle")}
-                </p>
-                <p className="mt-2 text-sm text-ink-muted">
+                <p className="type-h4">{t("TextPage.asideTitle")}</p>
+                <p className="mt-2 text-small text-ink-muted">
                   {t("TextPage.asideText")}
                 </p>
                 <Link
                   href="/contact"
-                  className="mt-4 inline-block text-sm font-medium text-lagoon-700 hover:underline"
+                  className="mt-4 inline-block text-small font-medium text-lagoon-700 hover:underline"
                 >
                   {t("TextPage.asideLink")} →
                 </Link>

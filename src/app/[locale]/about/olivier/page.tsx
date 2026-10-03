@@ -94,10 +94,8 @@ export default async function AuthorPage({ params }: Props) {
           <header className="flex flex-col items-start gap-8 sm:flex-row sm:items-center">
             <AuthorAvatar author={author} size={128} />
             <div>
-              <p className="mb-3 eyebrow text-coral-600">
-                {t("Author.pageEyebrow")}
-              </p>
-              <h1 className="text-display-1">{author.name}</h1>
+              <p className="mb-3 eyebrow">{t("Author.pageEyebrow")}</p>
+              <h1 className="type-h1">{author.name}</h1>
               {author.role && (
                 <p className="mt-3 lead text-ink-muted">{author.role}</p>
               )}
@@ -106,7 +104,7 @@ export default async function AuthorPage({ params }: Props) {
 
           <Prose node={author.body} locale={locale} className="mt-12" />
 
-          <p className="mt-12 border-t border-line pt-6 text-sm">
+          <p className="mt-12 border-t border-line pt-6 text-small">
             <Link
               href="/contact"
               className="font-medium text-lagoon-700 hover:underline"
@@ -137,7 +135,7 @@ export default async function AuthorPage({ params }: Props) {
       {written.length > 0 && (
         <section className="border-t border-line bg-sand-50 py-16">
           <Container size="wide">
-            <h2 className="text-display-3">
+            <h2 className="type-h3">
               {t("Author.writes", { name: author.name })}
             </h2>
             <div className="mt-10 grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4">

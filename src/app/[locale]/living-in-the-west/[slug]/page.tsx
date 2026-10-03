@@ -130,10 +130,10 @@ export default async function LivingArticlePage({ params }: Props) {
         className="grid gap-12 py-12 lg:grid-cols-[8fr_4fr] lg:gap-16"
       >
         <div className="min-w-0">
-          <p className="mb-5 eyebrow text-coral-600">
+          <p className="mb-5 eyebrow">
             {t(`LiveArticle.kinds.${article.kind}`)}
           </p>
-          <h1 className="text-display-1">{article.title}</h1>
+          <h1 className="type-h1">{article.title}</h1>
           {article.excerpt && (
             <p className="mt-6 lead text-ink-muted">{article.excerpt}</p>
           )}
@@ -147,12 +147,8 @@ export default async function LivingArticlePage({ params }: Props) {
           {/* The answer first: people (and search engines) want it before the detail. */}
           {article.shortAnswer && (
             <div className="mt-10 border-l-4 border-lagoon-500 bg-lagoon-50 px-6 py-6 sm:px-8">
-              <h2 className="eyebrow text-lagoon-800">
-                {t("AreaLiving.shortAnswer")}
-              </h2>
-              <p className="mt-3 font-display text-2xl leading-snug">
-                {article.shortAnswer}
-              </p>
+              <h2 className="eyebrow">{t("AreaLiving.shortAnswer")}</h2>
+              <p className="mt-3 type-h4">{article.shortAnswer}</p>
             </div>
           )}
 
@@ -164,7 +160,7 @@ export default async function LivingArticlePage({ params }: Props) {
 
           {article.faqs.length > 0 && (
             <section aria-labelledby="faq-title" className="mt-16">
-              <h2 id="faq-title" className="text-display-3">
+              <h2 id="faq-title" className="type-h3">
                 {t("LiveArticle.faqTitle")}
               </h2>
               <Faq items={article.faqs} className="mt-6" />
@@ -186,7 +182,7 @@ export default async function LivingArticlePage({ params }: Props) {
           />
           {aboutAreas.length > 0 && (
             <nav aria-labelledby="areas-title">
-              <h2 id="areas-title" className="mb-4 eyebrow text-ink-muted">
+              <h2 id="areas-title" className="mb-4 eyebrow">
                 {t("LiveArticle.areasTitle")}
               </h2>
               <ul className="flex flex-wrap gap-2">
@@ -197,7 +193,7 @@ export default async function LivingArticlePage({ params }: Props) {
                         pathname: "/areas/[slug]",
                         params: { slug: a.slug },
                       }}
-                      className="inline-block rounded-full border border-line px-4 py-2 text-sm hover:border-ocean-900"
+                      className="inline-block rounded-full border border-line px-4 py-2 text-small hover:border-ocean-900"
                     >
                       {t("AreaPage.livingLink", { name: a.name })}
                     </Link>
@@ -212,7 +208,7 @@ export default async function LivingArticlePage({ params }: Props) {
       {related.length > 0 && (
         <section className="border-t border-line bg-sand-50 py-16">
           <Container size="wide">
-            <h2 className="text-display-3">{t("LiveArticle.related")}</h2>
+            <h2 className="type-h3">{t("LiveArticle.related")}</h2>
             <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {related.map((a) => (
                 <li key={a.key}>

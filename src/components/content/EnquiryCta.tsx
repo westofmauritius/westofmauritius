@@ -49,10 +49,10 @@ export async function EnquiryCta({
         className,
       )}
     >
-      <p className="font-display text-2xl leading-tight">{title}</p>
+      <p className="type-h4">{title}</p>
       <p
         className={cn(
-          "mt-3 text-sm leading-relaxed",
+          "mt-3 text-small leading-relaxed",
           tone === "coral" ? "text-white" : "text-ocean-100",
         )}
       >

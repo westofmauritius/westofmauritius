@@ -37,7 +37,7 @@ export async function Byline({
   return (
     <div
       className={cn(
-        "flex items-center gap-3 text-left text-sm",
+        "flex items-center gap-3 text-left text-small",
         align === "center" && "justify-center",
         className,
       )}

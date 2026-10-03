@@ -201,6 +201,8 @@ The free Workers plan allows a 3 MB (compressed) Worker; this one is about
 ## Design system
 
 - Colours, fonts and type sizes are tokens in `src/app/globals.css`.
-- EB Garamond (headings, intros, wordmark), self-hosted by `next/font`
-  (`src/lib/fonts.ts`); body text uses the device's own sans-serif.
+- Newsreader (headlines, wordmark) and Figtree (text and interface), the
+  Hiriketiya site's typefaces, self hosted by `next/font`
+  (`src/lib/fonts.ts`). Type scale, `<Headline>` and `<Eyebrow>`:
+  `docs/typography.md`.
 - Review all components at **`/en/styleguide`** (internal, not indexed).

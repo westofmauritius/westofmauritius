@@ -73,7 +73,7 @@ export default async function LocaleLayout({
         {/* First stop for keyboard users: jump past the header to the content. */}
         <a
           href="#main"
-          className="sr-only z-[60] rounded-full bg-ocean-900 px-5 py-3 text-sm text-white focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
+          className="sr-only z-[60] rounded-full bg-ocean-900 px-5 py-3 text-small text-white focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
         >
           {l("skipToContent")}
         </a>

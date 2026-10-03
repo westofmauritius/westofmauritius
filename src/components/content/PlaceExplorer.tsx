@@ -77,7 +77,7 @@ export function PlaceExplorer({
         onSubmit={(e) => e.preventDefault()}
         className="grid gap-4 rounded-sm bg-sand-50 p-5 ring-1 ring-line sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_auto] lg:items-end"
       >
-        <label className="block text-sm font-medium sm:col-span-2 lg:col-span-1">
+        <label className="block text-small font-medium sm:col-span-2 lg:col-span-1">
           {labels.search}
           <input
             type="search"
@@ -87,7 +87,7 @@ export function PlaceExplorer({
             className={fieldClass}
           />
         </label>
-        <label className="block text-sm font-medium">
+        <label className="block text-small font-medium">
           {labels.area}
           <select
             value={filters.area}
@@ -102,7 +102,7 @@ export function PlaceExplorer({
             ))}
           </select>
         </label>
-        <label className="block text-sm font-medium">
+        <label className="block text-small font-medium">
           {labels.category}
           <select
             value={filters.category}
@@ -118,7 +118,7 @@ export function PlaceExplorer({
           </select>
         </label>
         <div className="flex min-h-11 flex-wrap items-center gap-x-6 gap-y-2 sm:col-span-2 lg:col-span-1">
-          <label className="flex min-h-11 cursor-pointer items-center gap-2 text-sm">
+          <label className="flex min-h-11 cursor-pointer items-center gap-2 text-small">
             <input
               type="checkbox"
               checked={filters.featured}
@@ -131,7 +131,7 @@ export function PlaceExplorer({
             <button
               type="button"
               onClick={() => update(emptyFilters)}
-              className="min-h-11 text-sm font-medium text-lagoon-700 underline underline-offset-4"
+              className="min-h-11 text-small font-medium text-lagoon-700 underline underline-offset-4"
             >
               {labels.reset}
             </button>
@@ -141,7 +141,7 @@ export function PlaceExplorer({
 
       <h2 className="sr-only">{labels.resultsHeading}</h2>
       {/* Announced by screen readers whenever the number of results changes. */}
-      <p id={id} role="status" className="mt-8 text-sm text-ink-muted">
+      <p id={id} role="status" className="mt-8 text-small text-ink-muted">
         {(new Intl.PluralRules(locale).select(results.length) === "one"
           ? labels.resultsOne
           : labels.results
@@ -155,7 +155,7 @@ export function PlaceExplorer({
           ))}
         </ul>
       ) : (
-        <p className="mt-10 font-display text-2xl">{labels.noResults}</p>
+        <p className="mt-10 type-h4">{labels.noResults}</p>
       )}
     </div>
   );

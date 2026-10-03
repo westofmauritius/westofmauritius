@@ -18,7 +18,7 @@ const variants: Record<Variant, string> = {
 };
 
 const base =
-  "inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-6 text-sm font-medium tracking-wide transition-colors";
+  "inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-6 type-button transition-colors";
 
 /** Button look for elements that are not ButtonLink/Button, e.g. external <a> links. */
 export function buttonClass(variant: Variant = "primary", className?: string) {

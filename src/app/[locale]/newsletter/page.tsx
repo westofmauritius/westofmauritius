@@ -22,7 +22,7 @@ export default async function NewsletterPage({
   const back = await getTranslations({ locale, namespace: "ThankYou" });
   return (
     <Container size="prose" className="py-24 text-center">
-      <h1 className="text-display-1">{t("title")}</h1>
+      <h1 className="type-h1">{t("title")}</h1>
       <p className="mt-6 lead text-ink-muted">
         <QueryMessage
           param="status"

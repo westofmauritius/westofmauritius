@@ -53,7 +53,7 @@ export async function GuideThemes() {
                 />
               )}
               {/* Dark fade behind the title keeps white text readable on light images. */}
-              <span className="absolute inset-x-0 top-0 bg-linear-to-b from-ocean-950/70 to-transparent p-5 pb-14 font-display text-3xl text-white">
+              <span className="absolute inset-x-0 top-0 bg-linear-to-b from-ocean-950/70 to-transparent p-5 pb-14 type-h3 text-white">
                 {t(`${key}.title`)}
               </span>
             </div>

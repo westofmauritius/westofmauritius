@@ -23,7 +23,7 @@ export default async function AdminLoginPage({
         <Wordmark name="West of Mauritius" className="text-xl" />
         <h1 className="mt-8 text-3xl">Admin</h1>
         {!adminConfigured() ? (
-          <p className="mt-4 text-sm leading-relaxed text-ink-muted">
+          <p className="mt-4 text-small leading-relaxed text-ink-muted">
             Admin is switched off. Set <code>ADMIN_PASSWORD</code> and{" "}
             <code>ADMIN_SESSION_SECRET</code> (at least 32 characters) as
             secrets in Cloudflare to switch it on.
@@ -37,12 +37,12 @@ export default async function AdminLoginPage({
             {message && (
               <p
                 role="alert"
-                className="rounded-sm bg-coral-50 p-3 text-sm text-coral-700"
+                className="rounded-sm bg-coral-50 p-3 text-small text-coral-700"
               >
                 {message}
               </p>
             )}
-            <label className="block text-sm font-medium">
+            <label className="block text-small font-medium">
               Password
               <input
                 type="password"
@@ -55,7 +55,7 @@ export default async function AdminLoginPage({
             </label>
             <button
               type="submit"
-              className="min-h-12 w-full rounded-full bg-ocean-900 text-sm font-medium text-white hover:bg-ocean-700"
+              className="min-h-12 w-full rounded-full bg-ocean-900 text-small font-medium text-white hover:bg-ocean-700"
             >
               Log in
             </button>

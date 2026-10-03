@@ -31,7 +31,7 @@ export function MapFrame({ className, loadingText, ...map }: MapFrameProps) {
         className,
       )}
     >
-      <p className="absolute inset-0 flex items-center justify-center text-sm text-ink-muted">
+      <p className="absolute inset-0 flex items-center justify-center text-small text-ink-muted">
         {loadingText}
       </p>
       <PlacesMap {...map} />

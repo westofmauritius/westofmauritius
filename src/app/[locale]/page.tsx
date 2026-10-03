@@ -12,6 +12,8 @@ import { ButtonLink } from "@/components/ui/ButtonLink";
 import { Container } from "@/components/ui/Container";
 import { Photo } from "@/components/ui/Photo";
 import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
+import { Eyebrow } from "@/components/ui/Eyebrow";
+import { Headline } from "@/components/ui/Headline";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Link } from "@/i18n/Link";
 import { resolveLocale } from "@/i18n/locale";
@@ -49,6 +51,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
     getAuthor(locale),
   ]);
   const c = await getTranslations({ locale, namespace: "Community" });
+  const r = await getTranslations({ locale, namespace: "Region" });
   // The hero's sunset clock: Tamarin's bay sits mid coast.
   const tamarin = areas.find((a) => a.slug === "tamarin");
   const areaName = (slug: string) =>
@@ -88,7 +91,10 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                 fallbackTone="sunset"
                 fallbackLabel=""
                 aspect=""
-                sizes="(min-width: 1024px) 56vw, 100vw"
+                // On phones the photo is a backdrop under a dark scrim, so a
+                // slightly smaller file looks the same and lets the first
+                // screen (fonts and photo) arrive sooner on slow networks.
+                sizes="(min-width: 1024px) 56vw, 80vw"
                 priority
                 className="h-full w-full"
               />
@@ -99,12 +105,25 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         )}
         {/* Keeps the white text legible: darker under the text on phones,
             a fade from the blue into the photo on large screens. */}
-        <div className="absolute inset-0 -z-10 bg-linear-to-t from-ocean-950/90 via-ocean-950/40 to-transparent lg:left-[44%] lg:bg-linear-to-r lg:from-ocean-950 lg:via-ocean-950/25 lg:via-35% lg:to-transparent" />
-        <Container size="wide" className="pt-32 pb-14 sm:pb-20">
-          <p className="mb-5 eyebrow text-coral-200">{t("eyebrow")}</p>
-          <h1 className="max-w-4xl text-display-1 text-white lg:max-w-[34rem] xl:max-w-[38rem]">
+        <div className="absolute inset-0 -z-10 bg-linear-to-t from-ocean-950/95 from-35% via-ocean-950/80 via-60% to-ocean-950/15 lg:left-[44%] lg:bg-linear-to-r lg:from-ocean-950 lg:from-0% lg:via-ocean-950/25 lg:via-35% lg:to-transparent" />
+        {/* On phones the text sits on the photo: a scrim on the text block
+            itself (fading out in its top padding) keeps the small accent
+            eyebrow above 4.5:1 however tall the screen is. */}
+        <Container
+          size="wide"
+          className="pt-32 pb-14 max-lg:bg-linear-to-t max-lg:from-ocean-950/75 max-lg:via-ocean-950/70 max-lg:via-80% max-lg:to-transparent sm:pb-20"
+        >
+          <Eyebrow icon="pin" tone="dark" className="mb-6">
+            {r("label")}
+          </Eyebrow>
+          <Headline
+            as="h1"
+            size="display"
+            tone="dark"
+            className="max-w-4xl text-white lg:max-w-[34rem] xl:max-w-[38rem]"
+          >
             {t("title")}
-          </h1>
+          </Headline>
           <p className="mt-6 max-w-xl lead text-ocean-100 lg:max-w-[30rem]">
             {t("intro")}
           </p>
@@ -126,7 +145,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
               place={tamarin.name}
               location={tamarin.location}
               locale={locale}
-              className="mt-8 text-sm text-ocean-100"
+              className="mt-8 text-small text-ocean-100"
             />
           )}
         </Container>
@@ -141,7 +160,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
             <SectionHeading title={t("areasTitle")} />
             <Link
               href="/areas"
-              className="text-sm font-medium text-lagoon-700 hover:underline"
+              className="text-small font-medium text-lagoon-700 hover:underline"
             >
               {t("allAreas")} →
             </Link>
@@ -178,10 +197,8 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                     />
                   )}
                   <span className="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-ocean-950/85 via-ocean-950/20 to-transparent p-4 text-white">
-                    <span className="font-display text-2xl leading-tight">
-                      {area.name}
-                    </span>
-                    <span className="mt-1 line-clamp-3 text-sm leading-snug text-white/90">
+                    <span className="type-h4">{area.name}</span>
+                    <span className="mt-1 line-clamp-3 text-small leading-snug text-white/90">
                       {area.tagline}
                     </span>
                   </span>
@@ -199,8 +216,8 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           className="grid items-center gap-10 lg:grid-cols-[5fr_7fr] lg:gap-20"
         >
           <div>
-            <p className="mb-5 eyebrow text-coral-600">{t("localEyebrow")}</p>
-            <h2 className="text-display-2">{t("localTitle")}</h2>
+            <p className="mb-5 eyebrow">{t("localEyebrow")}</p>
+            <Headline>{t("localTitle")}</Headline>
           </div>
           <div>
             <p className="lead text-ink-muted">
@@ -208,9 +225,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
             </p>
             {/* The short bio only once it is written (not a placeholder). */}
             {!author.placeholder && author.shortBio && (
-              <p className="mt-6 font-display text-xl italic">
-                {author.shortBio}
-              </p>
+              <p className="mt-6 type-h4 serif-italic">{author.shortBio}</p>
             )}
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
               <Link
@@ -223,7 +238,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                     {t("localAuthor", { name: author.name })}
                   </span>
                   {author.role && (
-                    <span className="block text-sm text-ink-muted">
+                    <span className="block text-small text-ink-muted">
                       {author.role}
                     </span>
                   )}
@@ -231,7 +246,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
               </Link>
               <Link
                 href="/about"
-                className="text-sm font-medium text-lagoon-700 hover:underline"
+                className="text-small font-medium text-lagoon-700 hover:underline"
               >
                 {t("localHow")} →
               </Link>
@@ -248,7 +263,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
               <SectionHeading title={t("featuredTitle")} />
               <Link
                 href="/places"
-                className="text-sm font-medium text-lagoon-700 hover:underline"
+                className="text-small font-medium text-lagoon-700 hover:underline"
               >
                 {t("allPlaces")} →
               </Link>
@@ -277,10 +292,10 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           {guides.length > 0 && (
             <div className="mt-20">
               <div className="flex flex-wrap items-end justify-between gap-6">
-                <h2 className="text-display-3">{t("latestTitle")}</h2>
+                <h2 className="type-h3">{t("latestTitle")}</h2>
                 <Link
                   href="/guides"
-                  className="text-sm font-medium text-lagoon-700 hover:underline"
+                  className="text-small font-medium text-lagoon-700 hover:underline"
                 >
                   {t("allGuides")} →
                 </Link>
@@ -302,7 +317,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
             <SectionHeading title={t("mapTitle")} />
             <Link
               href="/places"
-              className="text-sm font-medium text-lagoon-700 hover:underline"
+              className="text-small font-medium text-lagoon-700 hover:underline"
             >
               {t("allOnMap")} →
             </Link>
@@ -326,8 +341,8 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           className="grid items-center gap-8 lg:grid-cols-[7fr_5fr] lg:gap-16"
         >
           <div>
-            <p className="mb-5 eyebrow text-coral-600">{c("homeEyebrow")}</p>
-            <h2 className="max-w-2xl text-display-2">{c("homeTitle")}</h2>
+            <p className="mb-5 eyebrow">{c("homeEyebrow")}</p>
+            <h2 className="max-w-2xl type-h2">{c("homeTitle")}</h2>
           </div>
           <div>
             <p className="lead text-ink-muted">{c("homeText")}</p>
@@ -355,10 +370,10 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           className="absolute -bottom-48 -left-32 -z-10 size-[30rem] rounded-full bg-lagoon-500/20 blur-3xl"
         />
         <Container size="wide" className="max-w-3xl lg:max-w-6xl">
-          <p className="mb-5 eyebrow text-coral-200">{t("liveEyebrow")}</p>
-          <h2 className="max-w-3xl text-display-2 text-white">
+          <p className="mb-5 eyebrow text-accent-on-dark">{t("liveEyebrow")}</p>
+          <Headline tone="dark" className="max-w-3xl text-white">
             {t("liveTitle")}
-          </h2>
+          </Headline>
           <p className="mt-6 max-w-2xl lead text-ocean-100">{t("liveText")}</p>
           <div className="mt-10 flex flex-wrap gap-3">
             <ButtonLink href="/living-in-the-west" variant="light">

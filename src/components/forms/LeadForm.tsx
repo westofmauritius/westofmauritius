@@ -68,7 +68,7 @@ export function LeadForm({ areas, countries, consentText }: LeadFormProps) {
         role="status"
         className="rounded-sm bg-sand-50 p-8 ring-1 ring-line sm:p-12"
       >
-        <h2 ref={successRef} tabIndex={-1} className="text-display-3">
+        <h2 ref={successRef} tabIndex={-1} className="type-h3">
           {t("lead.successTitle")}
         </h2>
         <p className="mt-4 lead text-ink-muted">{t("lead.successText")}</p>
@@ -108,9 +108,7 @@ export function LeadForm({ areas, countries, consentText }: LeadFormProps) {
       />
 
       <fieldset className="space-y-6">
-        <legend className="mb-6 font-display text-2xl">
-          {t("lead.aboutYou")}
-        </legend>
+        <legend className="mb-6 type-h4">{t("lead.aboutYou")}</legend>
         <div className="grid gap-6 sm:grid-cols-2">
           <TextField
             form={FORM}
@@ -151,9 +149,7 @@ export function LeadForm({ areas, countries, consentText }: LeadFormProps) {
       </fieldset>
 
       <fieldset className="space-y-8">
-        <legend className="mb-6 font-display text-2xl">
-          {t("lead.yourPlans")}
-        </legend>
+        <legend className="mb-6 type-h4">{t("lead.yourPlans")}</legend>
         <ChoiceGroup
           form={FORM}
           type="radio"
@@ -197,9 +193,7 @@ export function LeadForm({ areas, countries, consentText }: LeadFormProps) {
       </fieldset>
 
       <fieldset className="space-y-6">
-        <legend className="mb-6 font-display text-2xl">
-          {t("lead.anythingElse")}
-        </legend>
+        <legend className="mb-6 type-h4">{t("lead.anythingElse")}</legend>
         <TextArea
           form={FORM}
           name="message"

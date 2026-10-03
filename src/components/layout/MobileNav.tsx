@@ -85,7 +85,7 @@ export function MobileNav({
               <li key={item.path}>
                 <Link
                   href={item.path}
-                  className="block py-4 font-display text-3xl"
+                  className="block py-4 type-h3"
                   aria-current={
                     isActive(pathname, item.path) ? "page" : undefined
                   }

@@ -43,18 +43,18 @@ export async function AreaLivingSection({
     >
       <Container size="wide">
         <div className="max-w-3xl">
-          <p className="mb-4 eyebrow text-coral-600">{t("eyebrow")}</p>
-          <h2 id="living-title" className="text-display-2">
+          <p className="mb-4 eyebrow">{t("eyebrow")}</p>
+          <h2 id="living-title" className="type-h2">
             {t("title", { name })}
           </h2>
           <p className="mt-5 lead text-ink-muted">{t("intro", { name })}</p>
           {living.updatedAt && (
-            <p className="mt-3 text-sm text-ink-muted">
+            <p className="mt-3 text-small text-ink-muted">
               {t("updated", { date: date(living.updatedAt) })}
             </p>
           )}
           {living.placeholder && (
-            <p className="mt-6 rounded-sm border border-dashed border-coral-400 bg-coral-50 px-4 py-3 text-sm text-coral-700">
+            <p className="mt-6 rounded-sm border border-dashed border-coral-400 bg-coral-50 px-4 py-3 text-small text-coral-700">
               {t("placeholder")}
             </p>
           )}
@@ -62,10 +62,8 @@ export async function AreaLivingSection({
 
         {living.shortAnswer && (
           <div className="mt-12 max-w-3xl border-l-4 border-lagoon-500 bg-lagoon-50 px-6 py-6 sm:px-8">
-            <h3 className="eyebrow text-lagoon-800">{t("shortAnswer")}</h3>
-            <p className="mt-3 font-display text-2xl leading-snug">
-              {living.shortAnswer}
-            </p>
+            <h3 className="eyebrow">{t("shortAnswer")}</h3>
+            <p className="mt-3 type-h4">{living.shortAnswer}</p>
           </div>
         )}
 
@@ -73,7 +71,7 @@ export async function AreaLivingSection({
           <div className="min-w-0 space-y-14">
             {living.livingHere.length > 0 && (
               <div>
-                <h3 className="text-display-3">{t("livingHere")}</h3>
+                <h3 className="type-h3">{t("livingHere")}</h3>
                 <div className="mt-5 space-y-4 leading-relaxed">
                   {living.livingHere.map((p, i) => (
                     <p key={i}>{p}</p>
@@ -101,7 +99,7 @@ export async function AreaLivingSection({
 
             {living.costs.length > 0 && (
               <div>
-                <h3 className="text-display-3">{t("costsTitle")}</h3>
+                <h3 className="type-h3">{t("costsTitle")}</h3>
                 <div className="mt-5">
                   <CostsTable
                     rows={living.costs}
@@ -123,8 +121,8 @@ export async function AreaLivingSection({
                 .filter(([, text]) => text)
                 .map(([key, text]) => (
                   <div key={key} className="border-t border-ink/20 pt-4">
-                    <dt className="font-display text-xl">{t(key)}</dt>
-                    <dd className="mt-2 text-sm leading-relaxed text-ink-muted">
+                    <dt className="type-h4">{t(key)}</dt>
+                    <dd className="mt-2 text-small leading-relaxed text-ink-muted">
                       {text}
                     </dd>
                   </div>
@@ -147,14 +145,14 @@ export async function AreaLivingSection({
 
         {living.faqs.length > 0 && (
           <div className="mt-20 max-w-3xl">
-            <h3 className="text-display-3">{t("faqTitle", { name })}</h3>
+            <h3 className="type-h3">{t("faqTitle", { name })}</h3>
             <Faq items={living.faqs} className="mt-8" />
           </div>
         )}
 
         {reading.length > 0 && (
           <nav aria-labelledby="reading-title" className="mt-16 max-w-3xl">
-            <h3 id="reading-title" className="mb-4 eyebrow text-ink-muted">
+            <h3 id="reading-title" className="mb-4 eyebrow">
               {t("reading", { name })}
             </h3>
             <ul className="divide-y divide-line border-y border-line">
@@ -194,13 +192,13 @@ function ProsCons({
   if (items.length === 0) return null;
   return (
     <div>
-      <h3 className="font-display text-2xl">{title}</h3>
+      <h3 className="type-h4">{title}</h3>
       <ul className="mt-4 space-y-3">
         {items.map((item, i) => (
           <li key={i} className="flex gap-3 leading-relaxed">
             <span
               aria-hidden="true"
-              className={`mt-0.5 inline-flex size-6 shrink-0 items-center justify-center rounded-full text-sm font-semibold ${markClass}`}
+              className={`mt-0.5 inline-flex size-6 shrink-0 items-center justify-center rounded-full text-small font-semibold ${markClass}`}
             >
               {mark}
             </span>

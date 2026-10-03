@@ -22,7 +22,7 @@ export async function LivingCard({ article }: { article: LivingArticle }) {
         </Link>
       </h3>
       {article.excerpt && <p className="mt-3 leading-relaxed text-ink-muted">{article.excerpt}</p>}
-      <span aria-hidden="true" className="mt-auto pt-6 text-sm font-medium text-lagoon-700">
+      <span aria-hidden="true" className="mt-auto pt-6 text-small font-medium text-lagoon-700">
         {t("LivePage.readMore")} →
       </span>
     </article>

@@ -1,5 +1,10 @@
-Fonts used to draw the Open Graph (social sharing) images at build time
-(`src/lib/og.tsx`). The site itself loads its fonts through `next/font`.
+Fonts, all under the SIL Open Font License 1.1, built from the Google Fonts
+sources by `scripts/subset-fonts.py`:
 
-- EB Garamond Medium — SIL Open Font License 1.1 (`OFL.txt`)
-- Inter Medium — SIL Open Font License 1.1 (`OFL-Inter.txt`)
+- `web/` — the site's own subsets, loaded through `next/font/local`
+  (`src/lib/fonts.ts`): Newsreader 500 roman and italic, Figtree 400 to 600.
+- `Newsreader-Medium.ttf`, `Figtree-Medium.ttf` — static copies used to draw
+  the social sharing images at build time (`scripts/generate-og.tsx`).
+
+Licences: `OFL-Newsreader.txt`, `OFL-Figtree.txt`. See also
+`docs/typography.md`.

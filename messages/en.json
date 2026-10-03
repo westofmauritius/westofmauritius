@@ -36,11 +36,11 @@
   },
   "Home": {
     "eyebrow": "A Mauritian’s guide to the west coast",
-    "title": "Lagoons and mountains and the island’s finest sunsets",
+    "title": "The *best* coast.",
     "intro": "Where to eat swim and watch the sun go down and what it takes to make the west coast home.",
     "ctaGuides": "Explore the guides",
     "ctaLive": "Living in the West",
-    "areasTitle": "Six places on one coast",
+    "areasTitle": "Six places on *one* coast",
     "allAreas": "All areas",
     "featuredTitle": "Places to know",
     "allPlaces": "Browse all places",
@@ -48,14 +48,14 @@
     "latestTitle": "Latest guides",
     "allGuides": "All guides",
     "liveEyebrow": "Living in the West",
-    "liveTitle": "Dreaming of a home by the lagoon?",
+    "liveTitle": "Dreaming of a home by the *lagoon*?",
     "liveText": "Whether you are moving from abroad or coming home we explain how buying property on the west coast works and put you in touch with people who can help.",
     "liveCta": "How buying works",
     "liveEnquire": "Tell us what you are looking for",
     "mapTitle": "The west on one map",
     "allOnMap": "Search all places",
     "localEyebrow": "From a local",
-    "localTitle": "The west coast through Mauritian eyes",
+    "localTitle": "The west coast through *Mauritian* eyes",
     "localText": "Where to swim when to catch the sunset which village suits you and what it really takes to make a home here.",
     "localAuthor": "About {name}",
     "localHow": "About this guide"
@@ -536,5 +536,9 @@
     "asideTitle": "Questions about this page?",
     "asideText": "Write to us and we will gladly explain anything that is not clear.",
     "asideLink": "Contact us"
+  },
+  "Region": {
+    "label": "West coast · Mauritius",
+    "country": "Mauritius"
   }
 }

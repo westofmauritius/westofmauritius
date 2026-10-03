@@ -14,7 +14,7 @@ const dateTime = new Intl.DateTimeFormat("en-GB", {
 });
 
 const field =
-  "mt-1 block min-h-10 w-full rounded-sm border border-line bg-white px-3 text-sm";
+  "mt-1 block min-h-10 w-full rounded-sm border border-line bg-white px-3 text-small";
 
 /** All leads, newest first, with filters and CSV export of the filtered list. */
 export default async function AdminLeadsPage({
@@ -33,7 +33,7 @@ export default async function AdminLeadsPage({
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <h1 className="text-4xl">Leads</h1>
-          <p className="mt-2 text-sm text-ink-muted">
+          <p className="mt-2 text-small text-ink-muted">
             {leads.length} {leads.length === 1 ? "lead" : "leads"}
             {query ? " matching the filters" : ""}
             {store?.kind === "memory" && " · in-memory store (development)"}
@@ -43,14 +43,14 @@ export default async function AdminLeadsPage({
         <a
           download
           href={`/api/admin/export/leads${query ? `?${query}` : ""}`}
-          className="inline-flex min-h-11 items-center rounded-full bg-ocean-900 px-5 text-sm font-medium text-white hover:bg-ocean-700"
+          className="inline-flex min-h-11 items-center rounded-full bg-ocean-900 px-5 text-small font-medium text-white hover:bg-ocean-700"
         >
           Export CSV
         </a>
       </div>
 
       {!store && (
-        <p className="mt-6 rounded-sm bg-coral-50 p-4 text-sm text-coral-700">
+        <p className="mt-6 rounded-sm bg-coral-50 p-4 text-small text-coral-700">
           No database configured (DATABASE_URL). See Going live in README.md.
         </p>
       )}
@@ -134,13 +134,13 @@ export default async function AdminLeadsPage({
         <div className="flex items-end gap-3 sm:col-span-3 lg:col-span-7">
           <button
             type="submit"
-            className="min-h-10 rounded-full bg-ocean-900 px-5 text-sm font-medium text-white"
+            className="min-h-10 rounded-full bg-ocean-900 px-5 text-small font-medium text-white"
           >
             Filter
           </button>
           <Link
             href="/admin/leads"
-            className="text-sm text-ink-muted underline"
+            className="text-small text-ink-muted underline"
           >
             Clear
           </Link>
@@ -148,7 +148,7 @@ export default async function AdminLeadsPage({
       </form>
 
       <div className="mt-8 overflow-x-auto rounded-sm bg-white ring-1 ring-line">
-        <table className="w-full min-w-[64rem] text-left text-sm">
+        <table className="w-full min-w-[64rem] text-left text-small">
           <thead className="border-b border-line bg-sand-50 text-xs tracking-wide text-ink-muted uppercase">
             <tr>
               {[

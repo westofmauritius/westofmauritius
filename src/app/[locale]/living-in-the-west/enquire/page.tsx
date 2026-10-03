@@ -48,8 +48,8 @@ export default async function EnquirePage({ params }: Props) {
         className="grid gap-12 py-12 lg:grid-cols-[4fr_7fr] lg:gap-20 lg:py-16"
       >
         <div className="lg:sticky lg:top-24 lg:self-start">
-          <p className="mb-5 eyebrow text-coral-600">{t("LivePage.eyebrow")}</p>
-          <h1 className="text-display-2">{t("Enquire.title")}</h1>
+          <p className="mb-5 eyebrow">{t("LivePage.eyebrow")}</p>
+          <h1 className="type-h2">{t("Enquire.title")}</h1>
           <p className="mt-6 lead text-ink-muted">{t("Enquire.intro")}</p>
         </div>
         <FormsProvider>

@@ -20,7 +20,7 @@ export async function CostsTable({
   const t = await getTranslations({ locale, namespace: "AreaLiving" });
   const date = longDate(locale);
   return (
-    <table className="w-full text-left text-sm">
+    <table className="w-full text-left text-small">
       <caption className="mb-4 text-left text-ink-muted">{caption}</caption>
       <thead className="sr-only sm:not-sr-only">
         <tr className="border-b border-ink/20 text-xs tracking-wide text-ink-muted uppercase">

@@ -572,3 +572,42 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
 - French stays hidden behind `NEXT_PUBLIC_FRENCH_PUBLISHED`; the content
   check now passes with it switched on, so French can go live with that
   one setting.
+
+## Typography from the Hiriketiya site (October 2026)
+
+- **Newsreader for headlines, Figtree for text.** The brief gave the font
+  names as placeholders; they were identified from the owner's screenshot
+  of the Hiriketiya hero by rendering candidates at the same size.
+  Newsreader 500 at its display optical size matched the line widths and
+  the italic "f" almost exactly; Figtree matched the body and the eyebrow.
+  This replaces EB Garamond and the device font.
+- **Self hosted, own subsets.** `scripts/subset-fonts.py` keeps only the
+  characters English and French need and pins the variable axes: about 50 kB
+  for all three files. `next/font/local` preloads them with `font-display: swap` and size
+  matched fallbacks: CLS stays 0.
+- **The italic is its own family with letters only.** It only ever sets the
+  accent word of a headline, so it drops digits and symbols (15 kB instead
+  of 22 kB).
+- **Type scale as tokens** (`eyebrow`, `display`, `h1` to `h4`, `lead`,
+  `body`, `small`, `button`) with `type-*` utilities, plus `<Headline>`
+  ("_word_" in italic, accent colour) and `<Eyebrow>` (optional pin). The
+  scale is applied everywhere through those; lead paragraphs moved from the
+  serif to the sans for the airy Hiriketiya look.
+- **Accent = coral 600 on light, coral 300 on dark**, both checked against
+  WCAG 2.2 AA, including on the homepage photo (a scrim on the text block on
+  phones). Details in `docs/typography.md`.
+- **Homepage hero: "The _best_ coast."** (the owner's example). Breaks as
+  "The best / coast." on small phones and large screens, one line between.
+- **Areas and places get the location eyebrow** ("Tamarin · West coast ·
+  Mauritius" with a pin); the area tagline and the place category move under
+  the name in the serif italic.
+- **Performance.** Preloading all three font files cost the homepage
+  about half a second of Largest Contentful Paint on mobile (its photo
+  shared the first half second with them). Final setup: the roman serif and
+  the sans are preloaded; the italic is not (pages without an accent word
+  never download it), and on phones the hero photo is served one size
+  smaller (it sits under a dark scrim, so it looks the same). Mobile
+  Lighthouse on the same machine: homepage 94 to 98 before (seven runs),
+  94 and 96 now; Tamarin 97 to 98 before and now; the guides and areas
+  indexes were already 93 to 96 before and still are. Local runs vary by
+  about 2 points; check PageSpeed Insights on the live site.
