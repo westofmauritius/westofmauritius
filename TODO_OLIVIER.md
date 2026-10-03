@@ -1,4 +1,4 @@
-# Att göra för Oliver
+# Att göra för Olivier
 
 Det här kan bara du göra (konton, nycklar, domäner, juridik). Allt i koden är
 förberett: när en inställning saknas faller sajten tillbaka på ett säkert läge
@@ -129,11 +129,11 @@ medlemmar ser deras nummer. Ta bort personer som ber om det.
 
 I Keystatic → Site:
 
-- **Author (Oliver)**: sidan `/en/about/oliver` är förberedd men är en
-  platshållare. Fyll i "Short bio" (2 till 3 meningar, visas på startsidan),
-  "Your story", gärna ett porträttfoto och länkar till dina egna profiler
-  (Instagram, LinkedIn). Bocka sedan ur "Placeholder", så syns sidan i
-  Google och kortbion på startsidan.
+- **Author (Olivier)**: sidan `/en/about/olivier` är nu riktig och syns i
+  Google, med en kort bio som bara säger det vi vet (att du är mauritier
+  och står bakom sajten) och hur sajten arbetar. Gör den personlig: lägg
+  till ett porträtt, din egen historia (var du kommer ifrån, din koppling
+  till västkusten) och länkar till dina profiler.
 - **About us**: sidan är nu riktig — den beskriver vad sajten täcker, hur
   fakta kontrolleras, hur utvalda platser och partnerlänkar märks och vad som
   händer med förfrågningar. Lägg gärna till din egen historia (vem som står

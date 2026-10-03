@@ -251,7 +251,7 @@ export default config({
     cookies: textPage("Cookies", "content/pages/cookies/"),
     terms: textPage("Terms of use", "content/pages/terms/"),
     author: singleton({
-      label: "Author (Oliver)",
+      label: "Author (Olivier)",
       path: "content/author/",
       format: { data: "yaml" },
       schema: {

@@ -82,7 +82,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     add(() => href, lastModified, priority);
 
   // Text pages only once they are no longer drafts (legal pages wait for
-  // Oliver's details and a lawyer's review).
+  // Olivier's details and a lawyer's review).
   const textHref = {
     about: "/about",
     privacy: "/privacy",
@@ -114,7 +114,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }
 
   // The author page joins once the bio is written.
-  if (!author.placeholder) add(() => "/about/oliver", null, 0.5);
+  if (!author.placeholder) add(() => "/about/olivier", null, 0.5);
 
   for (const area of areas.filter((a) => !a.placeholder)) {
     add(

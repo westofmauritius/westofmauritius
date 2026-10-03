@@ -43,6 +43,17 @@ const nextConfig: NextConfig = {
         destination: `/en/living-in-the-west/buying-property-in-${area}`,
         permanent: true,
       })),
+      // The author's name is spelled Olivier.
+      {
+        source: "/en/about/oliver",
+        destination: "/en/about/olivier",
+        permanent: true,
+      },
+      {
+        source: "/fr/a-propos/oliver",
+        destination: "/fr/a-propos/olivier",
+        permanent: true,
+      },
       {
         source: "/en/live-in-the-west/:path*",
         destination: "/en/living-in-the-west/:path*",

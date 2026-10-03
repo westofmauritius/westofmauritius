@@ -1,5 +1,5 @@
-placeholder: true
-name: Oliver
+placeholder: false
+name: Olivier
 photo:
   discriminant: false
 links: []
@@ -7,18 +7,20 @@ content:
   en:
     role: Mauritian, founder and editor
     shortBio: >-
-      [Placeholder: two or three sentences in your own words. For example,
-      your connection to the west coast and why you started this guide.]
+      I'm Olivier, a Mauritian, and I write West of Mauritius so that visitors
+      and people moving here get the west coast as it really is: every fact
+      checked, every source shown, nothing paid for hidden.
     seoDescription: >-
-      Oliver is the Mauritian behind West of Mauritius, an independent guide
-      to the west coast of Mauritius for visitors and people moving there.
+      Olivier is the Mauritian founder and editor of West of Mauritius, an
+      independent guide to the west coast of Mauritius for visitors and
+      people moving there.
   fr:
     role: Mauricien, fondateur et rédacteur
     shortBio: >-
-      [Texte provisoire : deux ou trois phrases avec vos propres mots, par
-      exemple votre lien avec la côte ouest et pourquoi vous avez créé ce
-      guide.]
+      Je m’appelle Olivier, je suis Mauricien, et j’écris Ouest Maurice pour
+      que visiteurs et futurs résidents découvrent la côte ouest telle
+      qu’elle est : chaque fait vérifié, chaque source citée, rien de payant
+      caché.
     seoDescription: >-
-      Oliver est le Mauricien derrière Ouest Maurice, un guide indépendant de
-      la côte ouest de l’île Maurice pour les visiteurs et les futurs
-      résidents.
+      Olivier est le Mauricien fondateur et rédacteur d’Ouest Maurice, un
+      guide indépendant de la côte ouest de l’île Maurice.

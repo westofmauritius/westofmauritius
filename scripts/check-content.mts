@@ -1,3 +1,4 @@
+import { execSync } from "node:child_process";
 /**
  * Content check — runs automatically before every build (`prebuild` in
  * package.json), locally and on Cloudflare.
@@ -191,12 +192,23 @@ async function main() {
 
   checkCharacters("content");
 
+  // Once French is public, no French placeholder text may go live with it.
+  if (process.env.NEXT_PUBLIC_FRENCH_PUBLISHED === "true") {
+    const files = execSync(
+      "grep -rlE 'Texte provisoire|\\[À (rédiger|vérifier)\\]' content || true",
+    )
+      .toString()
+      .trim();
+    for (const file of files ? files.split("\n") : [])
+      errors.push(`${file}: French text is still a placeholder.`);
+  }
+
   const all = [...areas, ...places, ...guides, ...living];
   const placeholders = all.filter(({ entry }) => entry.placeholder).length;
 
   console.log(
     `Content: ${areas.length} areas, ${places.length} places, ${guides.length} guides, ` +
-      `${living.length} Live in the West articles (${placeholders} marked as placeholder).`,
+      `${living.length} Living in the West articles (${placeholders} marked as placeholder).`,
   );
   for (const w of warnings) console.warn(`  warning: ${w}`);
   for (const e of errors) console.error(`  ERROR: ${e}`);

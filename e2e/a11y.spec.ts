@@ -17,7 +17,7 @@ const pages = [
   "/en/living-in-the-west/enquire",
   "/fr/contact",
   "/en/privacy",
-  "/en/about/oliver",
+  "/en/about/olivier",
   "/en/living-in-the-west/tamarin-vs-grand-baie",
   "/en/living-in-the-west/find-your-area",
   "/fr/nexiste-pas",

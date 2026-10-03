@@ -1,8 +1,20 @@
 name: Le Morne
 order: 5
 placeholder: false
-updatedAt: '2026-10-01'
+updatedAt: '2026-10-03'
 sources:
+  - title: "Driving distances and times"
+    publisher: "OpenStreetMap (OSRM routing)"
+    url: https://map.project-osrm.org/
+    checkedAt: '2026-10-03'
+  - title: "Healthcare and private clinics"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/practical-information/health/
+    checkedAt: '2026-10-03'
+  - title: "International schools"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/practical-information/education/
+    checkedAt: '2026-10-03'
   - title: 'Le Morne Brabant'
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Le_Morne_Brabant
@@ -29,85 +41,100 @@ hero:
       https://commons.wikimedia.org/wiki/File:Le_Morne_mountain_morning_shadow.jpg
 placeholderTone: sunset
 living:
-  placeholder: true
+  placeholder: false
+  updatedAt: '2026-10-03'
   costs:
     - item:
         en:
-          text: "Two bedroom apartment, rent per month"
+          text: "House, 2 to 4 bedrooms (100 to 200 m²), rent per month"
         fr:
-          text: "Appartement deux chambres, loyer mensuel"
-      amount: ''
-      sourceTitle: ''
+          text: "Maison, 2 à 4 chambres (100 à 200 m²), loyer mensuel"
+      amount: "USD 500 to 1,000"
+      checkedAt: '2026-10-02'
+      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Three bedroom villa, rent per month"
+          text: "Villa with garden and pool, 3 to 6 bedrooms, rent per month"
         fr:
-          text: "Villa trois chambres, loyer mensuel"
-      amount: ''
-      sourceTitle: ''
+          text: "Villa avec jardin et piscine, 3 à 6 chambres, loyer mensuel"
+      amount: "USD 1,200 to 2,400"
+      checkedAt: '2026-10-02'
+      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Apartment for sale, price per m²"
+          text: "Electricity, household, per month"
         fr:
-          text: "Appartement à vendre, prix au m²"
-      amount: ''
-      sourceTitle: ''
+          text: "Électricité, foyer, par mois"
+      amount: "USD 20 to 100"
+      checkedAt: '2026-10-02'
+      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Groceries for two, per month"
+          text: "Water, family of 3 to 4, per month"
         fr:
-          text: "Courses pour deux, par mois"
-      amount: ''
-      sourceTitle: ''
+          text: "Eau, famille de 3 à 4, par mois"
+      amount: "USD 3 to 6"
+      checkedAt: '2026-10-02'
+      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Electricity for a family home, per month"
+          text: "Internet (20 Mbps), per month"
         fr:
-          text: "Électricité pour une maison familiale, par mois"
-      amount: ''
-      sourceTitle: ''
+          text: "Internet (20 Mbps), par mois"
+      amount: "USD 30"
+      checkedAt: '2026-10-02'
+      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Fibre internet, per month"
+          text: "Meal for two, moderately priced restaurant"
         fr:
-          text: "Internet fibre, par mois"
-      amount: ''
-      sourceTitle: ''
+          text: "Repas pour deux, restaurant moyen de gamme"
+      amount: "From USD 30"
+      checkedAt: '2026-10-02'
+      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "International school, fees per year"
+          text: "Petrol, per litre"
         fr:
-          text: "École internationale, frais annuels"
-      amount: ''
-      sourceTitle: ''
+          text: "Essence, par litre"
+      amount: "USD 1.45"
+      checkedAt: '2026-10-02'
+      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceUrl: https://residency.mu/cost-of-living/
   content:
     en:
-      shortAnswer: "[Placeholder: two or three sentences answering “Is Le Morne a good place to live, and for whom?”]"
-      livingHere: "[Placeholder: what daily life in Le Morne is like: shops, the beach in the morning, the neighbours, the weekends.]\n\n[Placeholder: who lives here, and what changes between the seasons.]"
-      schools: "[Placeholder: schools near Le Morne that you can confirm, with links to their websites. Never list a school you have not checked.]"
-      healthcare: "[Placeholder: the nearest clinics, pharmacies and hospital, and how long it takes to reach them.]"
-      commuting: "[Placeholder: typical drive times from Le Morne to Port Louis, Ebène and the airport, at rush hour and off peak, and the bus links.]"
+      shortAnswer: "Le Morne suits people who want some of the finest beaches and kitesurfing waters in Mauritius, below a UNESCO listed mountain. It is the most remote of our coastal areas: Port Louis is about 48 km away and the nearest clinic about 28 km."
+      livingHere: "Le Morne is a peninsula almost entirely surrounded by a lagoon, dominated by the basalt mass of Le Morne Brabant. Life here is about the water: swimming off the public beach, and kitesurfing on the lagoon when the winter trade winds blow.\n\nIt is also a place of memory. The mountain is a symbol of the resistance to slavery, and the Le Morne Cultural Landscape is a UNESCO World Heritage Site."
+      schools: "No school on the Economic Development Board's list of international schools is on the Le Morne peninsula. The nearest are the international primary schools in Tamarin, about 20 km away. Public primary and secondary schools are free, and teach mainly in English."
+      healthcare: "The Economic Development Board lists two private clinics on this coast: Clinique de l'Occident on the Royal Road in Flic en Flac (about 30 km, roughly 35 minutes with no traffic) and Artemis Cascavelle Hospital in Cascavelle (about 28 km, roughly 32 minutes with no traffic). The nearest public regional hospital is Victoria Hospital in Quatre Bornes (about 36 km, roughly 42 minutes with no traffic). The SAMU emergency service covers the whole island: dial 114 for an ambulance. Pharmacies are found throughout the island."
+      commuting: "By car, Port Louis is about 48 km, roughly 53 minutes with no traffic, Ebène about 40 km, roughly 46 minutes with no traffic and the international airport about 55 km, roughly 62 minutes with no traffic. Rush hour traffic towards Port Louis and Ebène can add a lot to these times. Tamarin is about 20 km north."
       pros:
-        - "[Placeholder: a real advantage of living in Le Morne]"
-        - "[Placeholder: a real advantage of living in Le Morne]"
-        - "[Placeholder: a real advantage of living in Le Morne]"
+        - "Some of the finest beaches on the island"
+        - "World class kitesurfing on the lagoon"
+        - "A UNESCO listed landscape, with hiking on Le Morne Brabant"
       cons:
-        - "[Placeholder: an honest drawback of living in Le Morne]"
-        - "[Placeholder: an honest drawback of living in Le Morne]"
-        - "[Placeholder: an honest drawback of living in Le Morne]"
+        - "The most remote of our coastal areas: about 48 km to Port Louis"
+        - "The nearest clinic is about 28 km away"
+        - "Few everyday services nearby"
       faqs:
         - question: "Is Le Morne a good place to live?"
-          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+          answer: "For beaches, kitesurfing and nature, few places compare. It is remote, though: about 48 km from Port Louis and 28 km from the nearest clinic, so it suits people who do not commute daily."
         - question: "How much does it cost to live in Le Morne?"
-          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+          answer: "The Economic Development Board's indicative figures for Mauritius are USD 500 to 1,000 a month for a 2 to 4 bedroom house and USD 1,200 to 2,400 for a villa with a garden and pool. Ask local agents for current rents on the peninsula."
         - question: "Are there good schools near Le Morne?"
-          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+          answer: "There is no international school on the EDB's list on the peninsula. The nearest are the primary schools in Tamarin, about 20 km away."
         - question: "Where is the nearest hospital to Le Morne?"
-          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+          answer: "Artemis Cascavelle Hospital is about 28 km away and Clinique de l'Occident in Flic en Flac about 30 km. Victoria Hospital in Quatre Bornes is about 36 km."
         - question: "How long is the drive from Le Morne to Port Louis and Ebène?"
-          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+          answer: "About 48 km to Port Louis and 40 km to Ebène, roughly 53 and 46 minutes with no traffic, according to OpenStreetMap routing."
         - question: "Can foreigners buy property in Le Morne?"
-          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+          answer: "Yes, through the schemes for foreign buyers or an apartment of at least MUR 6 million in a building with at least two floors above ground. See our guide to buying property in Le Morne."
     fr:
       shortAnswer: "[Texte provisoire : deux ou trois phrases pour répondre à « Pourquoi vivre au Morne et pour qui ? »]"
       livingHere: "[Texte provisoire : la vie quotidienne au Morne : commerces, plage le matin, voisinage, fins de semaine.]\n\n[Texte provisoire : qui vit ici, et ce qui change selon les saisons.]"

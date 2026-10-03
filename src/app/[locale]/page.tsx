@@ -207,7 +207,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
             )}
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
               <Link
-                href="/about/oliver"
+                href="/about/olivier"
                 className="group inline-flex items-center gap-3"
               >
                 <AuthorAvatar author={author} size={48} />

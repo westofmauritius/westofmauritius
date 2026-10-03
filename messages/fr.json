@@ -31,7 +31,7 @@
     "terms": "Conditions d’utilisation",
     "planTrip": "Préparer son voyage",
     "credits": "Crédits photo",
-    "author": "À propos d’Oliver",
+    "author": "À propos d’Olivier",
     "community": "Communauté"
   },
   "Home": {
@@ -455,7 +455,7 @@
     "pros": "Ce qu’on aime",
     "cons": "Ce qu’il faut savoir",
     "costsTitle": "Le coût de la vie",
-    "costsCaption": "Coûts courants {name}, chacun avec sa date de vérification et sa source.",
+    "costsCaption": "Coûts indicatifs pour l’ensemble de Maurice, publiés par l’Economic Development Board. Ils ne sont pas propres {name} : demandez les prix actuels aux agents locaux.",
     "costItem": "Poste",
     "costAmount": "Coût courant",
     "costChecked": "Vérifié le",

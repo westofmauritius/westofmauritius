@@ -128,8 +128,8 @@ test("photo credits live on their own page, not on the photos", async ({
 
 test("guides name their author, dates and sources", async ({ page }) => {
   await page.goto("/en/guides/activities/hiking-in-the-west");
-  const byline = page.getByRole("link", { name: "Oliver" }).first();
-  await expect(byline).toHaveAttribute("href", "/en/about/oliver");
+  const byline = page.getByRole("link", { name: "Olivier" }).first();
+  await expect(byline).toHaveAttribute("href", "/en/about/olivier");
   await expect(page.getByText(/Last updated \d+ \w+ 20\d\d/)).toBeVisible();
   await expect(page.getByRole("heading", { name: "Sources" })).toBeVisible();
   const jsonLd = (
@@ -139,7 +139,7 @@ test("guides name their author, dates and sources", async ({ page }) => {
   expect(jsonLd).toContain("/#author");
 
   await byline.click();
-  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Oliver");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Olivier");
 });
 
 test("area pages answer living questions and lead to a shortlist", async ({
@@ -159,11 +159,11 @@ test("area pages answer living questions and lead to a shortlist", async ({
   await expect(
     living.getByRole("link", { name: "Get my free shortlist" }),
   ).toHaveAttribute("href", /area=tamarin.*source=area-living-tamarin/);
-  // Placeholder answers never become FAQ data for search engines.
+  // Real answers become FAQ data for search engines.
   const jsonLd = (
     await page.locator('script[type="application/ld+json"]').allTextContents()
   ).join();
-  expect(jsonLd).not.toContain("FAQPage");
+  expect(jsonLd).toContain("FAQPage");
 });
 
 test("the Living in the West hub links every question, comparison and area", async ({

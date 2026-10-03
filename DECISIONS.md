@@ -3,7 +3,7 @@
 A log of the technical and design decisions behind the site, newest last.
 Each entry says what was decided and why, so later changes can be made with
 the original reasoning in view. (Technical docs are in English; the owner's
-to-do list, TODO_OLIVER.md, is in Swedish.)
+to-do list, TODO_OLIVIER.md, is in Swedish.)
 
 ## Platform
 
@@ -340,9 +340,9 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
   authors collection: there is one writer today, and a singleton keeps the
   editor simple. If more writers join, turn it into a collection and add an
   author field to guides.
-- The author page lives at `/en/about/oliver`. A name in the URL reads as a
+- The author page lives at `/en/about/olivier`. A name in the URL reads as a
   real person to visitors and search engines. It starts as a placeholder
-  (noindex, short bio hidden on the start page) until Oliver writes it.
+  (noindex, short bio hidden on the start page) until Olivier writes it.
 - Byline: name (linked with `rel="author"`), one line of role, published
   date and "Last updated" (falls back to the published date, so it always
   shows). Dates are British style ("1 October 2026"), in Mauritius time.
@@ -372,7 +372,7 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
   and a source. The questions are real questions people search for; the
   answers are placeholders.
 - While a section is a placeholder it carries a visible notice, its text is
-  `data-nosnippet` and no FAQPage data is emitted. Once Oliver fills it in
+  `data-nosnippet` and no FAQPage data is emitted. Once Olivier fills it in
   and unticks "Placeholder", the FAQ becomes FAQPage structured data.
 - The accordion is native `<details>`: keyboard and screen reader friendly
   and no JavaScript. The costs table turns into cards on phones instead of
@@ -401,7 +401,7 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
   Flic en Flac, west vs north coast for expats. All are structured
   placeholders (noindex, outside the sitemap): headings, real search
   questions and table rows exist, while every answer and figure waits for
-  Oliver.
+  Olivier.
 - No separate "Living in Black River" page: that search is the area page's
   job (see SEO.md on competing pages).
 - The hub orders blocks the way people decide: big questions, each area's
@@ -420,7 +420,7 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
   that names what happens (stored to be invited, number visible to group
   members). Saved in `whatsapp_interest`, one row per number, with the
   consent version and the page it came from. The page says the group is
-  starting, which is true: Oliver opens it when there are enough people.
+  starting, which is true: Olivier opens it when there are enough people.
   Admin lists it with a wa.me link per person and a CSV export.
 - **Contextual CTAs**: guides, area pages and living articles for people
   still deciding say "Thinking of moving to X? Get a free personal
@@ -505,3 +505,24 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
 - The result panels are rendered on the server; the browser only picks one,
   so the page stays light. Linked from the Living in the West hero and the
   areas overview. Events: `cta-quiz`, `quiz-complete` (with the area).
+
+## Olivier, and the Living sections written (October 2026)
+
+- The author's name is Olivier. The author page moved to
+  `/en/about/olivier` (old address redirects) and is no longer a
+  placeholder: the bio says only what is known (Mauritian, founder and
+  editor) and how the site works. A portrait and a personal story are for
+  Olivier to add.
+- The six "Living in X" sections are written and indexable, with FAQ data:
+  - Short answers, daily life, pros and cons come from the facts already on
+    each area page.
+  - Costs are the Economic Development Board's indicative figures for
+    Mauritius as a whole, labelled as island wide (no village level
+    figures exist from an official source).
+  - Schools and clinics are only those on the EDB's official lists, with
+    their stated addresses; villages with none listed say so and give the
+    distance to the nearest.
+  - Drive times are OpenStreetMap routing (OSRM) without traffic, stated as
+    such.
+- A content check now fails the build if French is switched on while any
+  French text is still a placeholder.

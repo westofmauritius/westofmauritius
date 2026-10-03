@@ -31,7 +31,7 @@
     "terms": "Terms of use",
     "planTrip": "Plan your trip",
     "credits": "Photo credits",
-    "author": "About Oliver",
+    "author": "About Olivier",
     "community": "Community"
   },
   "Home": {
@@ -455,7 +455,7 @@
     "pros": "Why people like it",
     "cons": "What to weigh up",
     "costsTitle": "What it costs",
-    "costsCaption": "Typical costs in {name}, each with the date it was checked and its source.",
+    "costsCaption": "Indicative costs for Mauritius as a whole, published by the Economic Development Board. They are not specific to {name}: ask local agents for current prices.",
     "costItem": "Item",
     "costAmount": "Typical cost",
     "costChecked": "Checked",

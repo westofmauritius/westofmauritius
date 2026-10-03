@@ -126,7 +126,7 @@ export default async function LocaleLayout({
               title: f("about"),
               items: [
                 item(t("about"), "/about"),
-                item(f("author"), "/about/oliver"),
+                item(f("author"), "/about/olivier"),
                 item(t("contact"), "/contact"),
                 item(f("privacy"), "/privacy"),
                 item(f("cookies"), "/cookies"),

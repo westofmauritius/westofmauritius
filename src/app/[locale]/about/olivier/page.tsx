@@ -15,7 +15,7 @@ import { localeAlternates } from "@/lib/seo/alternates";
 import { openGraphBase } from "@/lib/seo/open-graph";
 import { profilePageSchema } from "@/lib/seo/schema";
 
-type Props = PageProps<"/[locale]/about/oliver">;
+type Props = PageProps<"/[locale]/about/olivier">;
 
 /**
  * The author page (Keystatic → Site → Author). Bylines on every guide link
@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title,
     description: author.seoDescription,
-    alternates: localeAlternates("/about/oliver", locale),
+    alternates: localeAlternates("/about/olivier", locale),
     openGraph: {
       ...openGraphBase(locale),
       type: "profile",
@@ -72,7 +72,7 @@ export default async function AuthorPage({ params }: Props) {
           items={[
             { label: t("Breadcrumbs.home"), href: "/" },
             { label: t("Nav.about"), href: "/about" },
-            { label: author.name, href: "/about/oliver" },
+            { label: author.name, href: "/about/olivier" },
           ]}
         />
       </Container>

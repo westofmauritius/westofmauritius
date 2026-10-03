@@ -45,7 +45,7 @@ function authorRef(author: Author, locale: Locale) {
     "@type": "Person",
     "@id": authorId,
     name: author.name,
-    url: absoluteUrl("/about/oliver", locale),
+    url: absoluteUrl("/about/olivier", locale),
   };
 }
 
@@ -228,7 +228,7 @@ export function profilePageSchema(
   return {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
-    url: absoluteUrl("/about/oliver", locale),
+    url: absoluteUrl("/about/olivier", locale),
     inLanguage: locale,
     ...(dateModified && { dateModified }),
     mainEntity: personSchema(author, locale),

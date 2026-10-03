@@ -15,7 +15,7 @@ type BylineProps = {
 };
 
 /**
- * "By Oliver, Mauritian … Published … · Last updated …" under an article
+ * "By Olivier, Mauritian … Published … · Last updated …" under an article
  * title. Who wrote a page, and how fresh it is, are the first things readers
  * and search engines look for when deciding whether to trust it.
  */
@@ -49,7 +49,7 @@ export async function Byline({
             name: author.name,
             link: (chunks) => (
               <Link
-                href="/about/oliver"
+                href="/about/olivier"
                 rel="author"
                 className="font-medium text-ink underline decoration-line underline-offset-4 hover:decoration-ink"
               >

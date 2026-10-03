@@ -1,8 +1,20 @@
 name: Chamarel
 order: 6
 placeholder: false
-updatedAt: '2026-10-01'
+updatedAt: '2026-10-03'
 sources:
+  - title: "Driving distances and times"
+    publisher: "OpenStreetMap (OSRM routing)"
+    url: https://map.project-osrm.org/
+    checkedAt: '2026-10-03'
+  - title: "Healthcare and private clinics"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/practical-information/health/
+    checkedAt: '2026-10-03'
+  - title: "International schools"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/practical-information/education/
+    checkedAt: '2026-10-03'
   - title: 'Chamarel'
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Chamarel
@@ -28,85 +40,100 @@ hero:
     creditUrl: https://commons.wikimedia.org/wiki/File:Chamarel,_Mauritius.jpg
 placeholderTone: sand
 living:
-  placeholder: true
+  placeholder: false
+  updatedAt: '2026-10-03'
   costs:
     - item:
         en:
-          text: "Two bedroom apartment, rent per month"
+          text: "House, 2 to 4 bedrooms (100 to 200 m²), rent per month"
         fr:
-          text: "Appartement deux chambres, loyer mensuel"
-      amount: ''
-      sourceTitle: ''
+          text: "Maison, 2 à 4 chambres (100 à 200 m²), loyer mensuel"
+      amount: "USD 500 to 1,000"
+      checkedAt: '2026-10-02'
+      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Three bedroom villa, rent per month"
+          text: "Villa with garden and pool, 3 to 6 bedrooms, rent per month"
         fr:
-          text: "Villa trois chambres, loyer mensuel"
-      amount: ''
-      sourceTitle: ''
+          text: "Villa avec jardin et piscine, 3 à 6 chambres, loyer mensuel"
+      amount: "USD 1,200 to 2,400"
+      checkedAt: '2026-10-02'
+      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Apartment for sale, price per m²"
+          text: "Electricity, household, per month"
         fr:
-          text: "Appartement à vendre, prix au m²"
-      amount: ''
-      sourceTitle: ''
+          text: "Électricité, foyer, par mois"
+      amount: "USD 20 to 100"
+      checkedAt: '2026-10-02'
+      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Groceries for two, per month"
+          text: "Water, family of 3 to 4, per month"
         fr:
-          text: "Courses pour deux, par mois"
-      amount: ''
-      sourceTitle: ''
+          text: "Eau, famille de 3 à 4, par mois"
+      amount: "USD 3 to 6"
+      checkedAt: '2026-10-02'
+      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Electricity for a family home, per month"
+          text: "Internet (20 Mbps), per month"
         fr:
-          text: "Électricité pour une maison familiale, par mois"
-      amount: ''
-      sourceTitle: ''
+          text: "Internet (20 Mbps), par mois"
+      amount: "USD 30"
+      checkedAt: '2026-10-02'
+      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Fibre internet, per month"
+          text: "Meal for two, moderately priced restaurant"
         fr:
-          text: "Internet fibre, par mois"
-      amount: ''
-      sourceTitle: ''
+          text: "Repas pour deux, restaurant moyen de gamme"
+      amount: "From USD 30"
+      checkedAt: '2026-10-02'
+      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "International school, fees per year"
+          text: "Petrol, per litre"
         fr:
-          text: "École internationale, frais annuels"
-      amount: ''
-      sourceTitle: ''
+          text: "Essence, par litre"
+      amount: "USD 1.45"
+      checkedAt: '2026-10-02'
+      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceUrl: https://residency.mu/cost-of-living/
   content:
     en:
-      shortAnswer: "[Placeholder: two or three sentences answering “Is Chamarel a good place to live, and for whom?”]"
-      livingHere: "[Placeholder: what daily life in Chamarel is like: shops, the beach in the morning, the neighbours, the weekends.]\n\n[Placeholder: who lives here, and what changes between the seasons.]"
-      schools: "[Placeholder: schools near Chamarel that you can confirm, with links to their websites. Never list a school you have not checked.]"
-      healthcare: "[Placeholder: the nearest clinics, pharmacies and hospital, and how long it takes to reach them.]"
-      commuting: "[Placeholder: typical drive times from Chamarel to Port Louis, Ebène and the airport, at rush hour and off peak, and the bus links.]"
+      shortAnswer: "Chamarel suits people who want cooler air, green hills and quiet: a small village on a plateau about 260 metres above the sea, next to the national park. Everything else means a drive down a winding road: Port Louis is about 45 km away."
+      livingHere: "Chamarel is a small, quiet village on a plateau of forest, sugar cane and small farms where coffee and bananas grow. It is noticeably cooler and wetter than the coast.\n\nThe Seven Coloured Earths and Chamarel Falls draw visitors by day, the national park begins above the village, and the coast is a short, winding drive down to Case Noyale."
+      schools: "No school on the Economic Development Board's list of international schools is in Chamarel. The nearest are the international primary schools in Tamarin, about 17 km away by road. Public primary and secondary schools are free, and teach mainly in English."
+      healthcare: "The Economic Development Board lists two private clinics on this coast: Clinique de l'Occident on the Royal Road in Flic en Flac (about 28 km, roughly 36 minutes with no traffic) and Artemis Cascavelle Hospital in Cascavelle (about 25 km, roughly 33 minutes with no traffic). The nearest public regional hospital is Victoria Hospital in Quatre Bornes (about 33 km, roughly 40 minutes with no traffic). The SAMU emergency service covers the whole island: dial 114 for an ambulance. Pharmacies are found throughout the island."
+      commuting: "By car, Port Louis is about 45 km, roughly 54 minutes with no traffic, Ebène about 37 km, roughly 46 minutes with no traffic and the international airport about 44 km, roughly 48 minutes with no traffic. Rush hour traffic towards Port Louis and Ebène can add a lot to these times. The coast at Case Noyale is a short drive down the hill; Tamarin is about 17 km away."
       pros:
-        - "[Placeholder: a real advantage of living in Chamarel]"
-        - "[Placeholder: a real advantage of living in Chamarel]"
-        - "[Placeholder: a real advantage of living in Chamarel]"
+        - "Cooler air than the coast"
+        - "Forest, farms and the national park around you"
+        - "A quiet village, with the views of the Case Noyale road"
       cons:
-        - "[Placeholder: an honest drawback of living in Chamarel]"
-        - "[Placeholder: an honest drawback of living in Chamarel]"
-        - "[Placeholder: an honest drawback of living in Chamarel]"
+        - "A narrow, winding road down to the coast"
+        - "More rain than on the coast"
+        - "About 45 km to Port Louis and 25 km to the nearest clinic"
       faqs:
         - question: "Is Chamarel a good place to live?"
-          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+          answer: "For people who prefer cool air, forest and quiet to the beach, yes. It is a small village about 260 metres up, next to the national park. Daily commuting is harder: Port Louis is about 45 km away by a winding road."
         - question: "How much does it cost to live in Chamarel?"
-          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+          answer: "The Economic Development Board's indicative figures for Mauritius are USD 500 to 1,000 a month for a 2 to 4 bedroom house and USD 1,200 to 2,400 for a villa with a garden and pool. Ask local agents for current rents in Chamarel."
         - question: "Are there good schools near Chamarel?"
-          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+          answer: "There is no international school on the EDB's list in Chamarel. The nearest are the primary schools in Tamarin, about 17 km away by road."
         - question: "Where is the nearest hospital to Chamarel?"
-          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+          answer: "Artemis Cascavelle Hospital is about 25 km away and Clinique de l'Occident in Flic en Flac about 28 km. Victoria Hospital in Quatre Bornes is about 33 km."
         - question: "How long is the drive from Chamarel to Port Louis and Ebène?"
-          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+          answer: "About 45 km to Port Louis and 37 km to Ebène, roughly 54 and 46 minutes with no traffic, according to OpenStreetMap routing. The road down from the plateau is narrow and winding."
         - question: "Can foreigners buy property in Chamarel?"
-          answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+          answer: "Yes. One of the projects on the EDB's 2022 list of Real Estate Scheme projects is in Chamarel. See our guide to buying property in Chamarel."
     fr:
       shortAnswer: "[Texte provisoire : deux ou trois phrases pour répondre à « Pourquoi vivre à Chamarel et pour qui ? »]"
       livingHere: "[Texte provisoire : la vie quotidienne à Chamarel : commerces, plage le matin, voisinage, fins de semaine.]\n\n[Texte provisoire : qui vit ici, et ce qui change selon les saisons.]"

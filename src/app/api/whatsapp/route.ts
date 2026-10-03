@@ -4,7 +4,7 @@ import { handleForm } from "@/lib/server/forms";
 
 /**
  * Interest in the west coast WhatsApp group. Stored with the consent wording
- * the person agreed to; Oliver invites people from the admin list.
+ * the person agreed to; Olivier invites people from the admin list.
  */
 export async function POST(request: Request) {
   return handleForm(request, {
