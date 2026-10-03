@@ -204,10 +204,14 @@ export function neonStore(url: string): Store {
     },
 
     async hit(kind, ipHash, minutes) {
-      // Record the event, tidy up old ones, and count recent ones in one round trip.
+      // Record the event, tidy up old ones, and count recent ones in one round
+      // trip. The same query enforces the retention periods promised in the
+      // privacy policy: enquiries 24 months, contact messages 12 months.
       const rows = (await sql.query(
         `with ins as (insert into rate_events (kind, ip_hash) values ($1, $2)),
-              del as (delete from rate_events where created_at < now() - interval '1 day')
+              del as (delete from rate_events where created_at < now() - interval '1 day'),
+              old_leads as (delete from leads where created_at < now() - interval '24 months'),
+              old_contacts as (delete from contact_messages where created_at < now() - interval '12 months')
          select count(*)::int + 1 as n from rate_events
          where kind = $1 and ip_hash = $2 and created_at > now() - ($3 || ' minutes')::interval`,
         [kind, ipHash, String(minutes)],

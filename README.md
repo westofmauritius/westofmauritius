@@ -6,7 +6,6 @@ Chamarel), for visitors and for people moving there, with a property section
 that collects leads. English first; French is built in and switched off until
 its content is ready.
 
-- What still needs the owner before launch: [TODO_OLIVIER.md](TODO_OLIVIER.md)
 - Why things are built the way they are: [DECISIONS.md](DECISIONS.md)
 - Which page targets which search: [SEO.md](SEO.md)
 - How to edit content: [docs/content-editing.md](docs/content-editing.md)
@@ -106,8 +105,24 @@ Worker's static files; only the forms, admin and API run code per request.
 
 Environment variables are listed in [.env.example](.env.example), split
 into **build variables** (`NEXT_PUBLIC_*`, baked in at build time) and
-**runtime secrets** (database, e-mail, admin). TODO_OLIVIER.md walks through
-setting each one.
+**runtime secrets** (database, e-mail, admin).
+
+### Going live
+
+Set these once in Cloudflare (Workers → westofmauritius → Settings):
+
+| What           | Where            | Value                                                               |
+| -------------- | ---------------- | ------------------------------------------------------------------- |
+| Forms database | Secret           | `DATABASE_URL` from neon.tech, then run `npm run db:migrate`        |
+| E-mail         | Secrets          | `RESEND_API_KEY`, `EMAIL_FROM`, `LEAD_NOTIFY_EMAIL`, `IP_HASH_SALT` |
+| Admin login    | Secrets          | `ADMIN_PASSWORD`, `ADMIN_SESSION_SECRET`                            |
+| Statistics     | Build variable   | `NEXT_PUBLIC_UMAMI_WEBSITE_ID` from cloud.umami.is                  |
+| Domain         | Domains & Routes | Custom domains `westofmauritius.mu` and `www.westofmauritius.mu`    |
+| E-mail domain  | Resend → Domains | Verify `westofmauritius.mu` (SPF, DKIM, DMARC records in DNS)       |
+
+Without a database the forms say they are temporarily unavailable rather
+than losing submissions. Search engines may only index the
+`westofmauritius.mu` host; previews are blocked automatically.
 
 The free Workers plan allows a 3 MB (compressed) Worker; this one is about
 1.8 MB. Check with `npx wrangler deploy --dry-run` after adding dependencies

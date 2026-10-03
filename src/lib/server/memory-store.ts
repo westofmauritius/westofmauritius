@@ -147,6 +147,11 @@ export const memoryStore: Store = {
   async hit(kind, ipHash, minutes) {
     const at = Date.now();
     data.events = data.events.filter((e) => at - e.at < 24 * 60 * 60 * 1000);
+    // Retention periods from the privacy policy (24 and 12 months).
+    const ago = (months: number) =>
+      new Date(at - months * 30.44 * 86_400_000).toISOString();
+    data.leads = data.leads.filter((l) => l.createdAt >= ago(24));
+    data.contacts = data.contacts.filter((c) => c.createdAt >= ago(12));
     data.events.push({ kind, ipHash, at });
     return data.events.filter(
       (e) =>

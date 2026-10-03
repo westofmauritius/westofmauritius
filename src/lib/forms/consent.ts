@@ -8,7 +8,7 @@ import type { Locale } from "@/i18n/routing";
  * The lead consent names the sharing with developers and agents explicitly:
  * leads are passed on, so GDPR and the Mauritius Data Protection Act 2017
  * require specific, informed consent for that. Have a lawyer review the
- * wording before launch (see TODO_OLIVIER.md).
+ * wording before launch.
  */
 export const consentTexts = {
   "lead-2026-10b": {

@@ -51,7 +51,7 @@ export default async function AdminLeadsPage({
 
       {!store && (
         <p className="mt-6 rounded-sm bg-coral-50 p-4 text-sm text-coral-700">
-          No database configured (DATABASE_URL). See TODO_OLIVIER.md.
+          No database configured (DATABASE_URL). See Going live in README.md.
         </p>
       )}
 

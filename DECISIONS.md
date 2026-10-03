@@ -2,8 +2,7 @@
 
 A log of the technical and design decisions behind the site, newest last.
 Each entry says what was decided and why, so later changes can be made with
-the original reasoning in view. (Technical docs are in English; the owner's
-to-do list, TODO_OLIVIER.md, is in Swedish.)
+the original reasoning in view.
 
 ## Platform
 
@@ -552,3 +551,14 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
 - The places explorer only offers categories that have places.
 - Restaurants we recommend will only be added once Olivier has eaten
   there.
+
+## Legal pages final, owner to-do removed (October 2026)
+
+- Privacy, cookies and terms are no longer drafts: they name Olivier as
+  publisher, use hello@westofmauritius.mu, cover the WhatsApp group and
+  state retention periods. Mauritian law applies.
+- The retention periods are enforced in code: every form submission also
+  deletes enquiries older than 24 months and contact messages older than
+  12 months.
+- TODO_OLIVIER.md is deleted at the owner's request; the few one time
+  settings for going live are in the README.

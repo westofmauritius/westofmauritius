@@ -13,7 +13,7 @@ How to use this file:
   potential), not measured volume. Check it against Google Search Console
   (once live) and Google Keyword Planner, and update the table.
 - **Status**: live = real content, indexable. Placeholder = structure only,
-  noindex until written (see TODO_OLIVIER.md).
+  noindex until written.
 
 ## Angle in every title and description
 
