@@ -132,8 +132,10 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         </Container>
       </section>
 
-      {/* Areas */}
-      <section className="py-20 sm:py-28">
+      {/* Areas: straight after the hero, so it starts close to it. Each card
+          carries the village's tagline, so the section says something even
+          before anyone clicks. */}
+      <section className="pt-12 pb-12 sm:pt-16 sm:pb-16">
         <Container size="wide">
           <div className="flex flex-wrap items-end justify-between gap-6">
             <SectionHeading title={t("areasTitle")} />
@@ -144,7 +146,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
               {t("allAreas")} →
             </Link>
           </div>
-          <ul className="-mx-4 mt-12 flex snap-x snap-mandatory scroll-px-4 gap-4 overflow-x-auto px-4 pb-4 md:mx-0 md:grid md:grid-cols-3 md:overflow-visible md:px-0 lg:grid-cols-6">
+          <ul className="-mx-4 mt-8 flex snap-x snap-mandatory scroll-px-4 gap-4 overflow-x-auto px-4 pb-4 md:mx-0 md:grid md:grid-cols-3 md:overflow-visible md:px-0 lg:grid-cols-6">
             {areas.map((area) => (
               <li
                 key={area.slug}
@@ -175,8 +177,13 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                       className="transition-transform duration-700 ease-out group-hover:scale-[1.04]"
                     />
                   )}
-                  <span className="absolute inset-x-0 top-0 bg-linear-to-b from-ocean-950/75 to-transparent p-4 pb-14 font-display text-2xl text-white">
-                    {area.name}
+                  <span className="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-ocean-950/85 via-ocean-950/20 to-transparent p-4 text-white">
+                    <span className="font-display text-2xl leading-tight">
+                      {area.name}
+                    </span>
+                    <span className="mt-1 line-clamp-3 text-sm leading-snug text-white/90">
+                      {area.tagline}
+                    </span>
                   </span>
                 </Link>
               </li>
@@ -186,7 +193,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       </section>
 
       {/* Who writes this: the site's edge is a local, named author. */}
-      <section className="border-t border-line py-20 sm:py-24">
+      <section className="border-t border-line py-14 sm:py-20">
         <Container
           size="wide"
           className="grid items-center gap-10 lg:grid-cols-[5fr_7fr] lg:gap-20"
@@ -235,7 +242,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
 
       {/* Places worth knowing */}
       {highlights.length > 0 && (
-        <section className="border-t border-line bg-sand-50 py-20 sm:py-28">
+        <section className="border-t border-line bg-sand-50 py-14 sm:py-20">
           <Container size="wide">
             <div className="flex flex-wrap items-end justify-between gap-6">
               <SectionHeading title={t("featuredTitle")} />
@@ -260,7 +267,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       )}
 
       {/* Guide themes and the latest guides */}
-      <section className="py-20 sm:py-28">
+      <section className="py-14 sm:py-20">
         <Container size="wide">
           <SectionHeading title={t("themesTitle")} />
           <div className="mt-10">
@@ -289,7 +296,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       </section>
 
       {/* Every place on one map: the quickest way to see the coast at a glance. */}
-      <section className="border-t border-line bg-sand-50 py-20 sm:py-28">
+      <section className="border-t border-line bg-sand-50 py-14 sm:py-20">
         <Container size="wide">
           <div className="flex flex-wrap items-end justify-between gap-6">
             <SectionHeading title={t("mapTitle")} />
@@ -313,7 +320,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       {/* Community: the newsletter offer and the WhatsApp group. The form
           itself is in the footer just below, so this band points to it and
           to the community page instead of repeating it. */}
-      <section className="border-t border-line py-20 sm:py-24">
+      <section className="border-t border-line py-14 sm:py-20">
         <Container
           size="wide"
           className="grid items-center gap-8 lg:grid-cols-[7fr_5fr] lg:gap-16"
