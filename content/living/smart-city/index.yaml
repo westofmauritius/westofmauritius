@@ -48,5 +48,32 @@ content:
         answer: "The EDB says permit holders could buy a serviced plot of up to 2,100 m² to build a house, but only if the purchase was made by 30 June 2022. Ask the developer what is possible today."
     seoDescription: "Smart City Scheme Mauritius: what foreigners can buy, the residence permit from USD 375,000, and the two smart cities on the west coast, Cap Tamarin and Medine."
   fr:
-    title: Smart City Scheme
-    excerpt: Texte provisoire, à rédiger.
+    title: "Smart City Scheme"
+    excerpt: "De grandes villes nouvelles où l’on vit, travaille et étudie au même endroit, dont deux sur la côte ouest : ce que les étrangers peuvent acheter et quand cela donne la résidence."
+    shortAnswer: "Les smart cities sont de grands projets mixtes agréés par l’Economic Development Board, qui réunissent logements, bureaux, écoles et loisirs. Les étrangers peuvent y acheter une maison de ville, une villa, un appartement, un penthouse ou un duplex, avec un permis de résidence dès 375 000 USD. Deux sont sur la côte ouest : Cap Tamarin à Tamarin et Medine Smart City, que l’EDB situe à Flic en Flac."
+    table:
+      caption: "Le Smart City Scheme en bref"
+      headers:
+        - ""
+        - "Ce que disent les règles"
+      rows:
+        - cells:
+            - "Ce que l’on peut acheter"
+            - "Maisons de ville, villas, appartements, penthouses et duplex"
+        - cells:
+            - "Permis de résidence"
+            - "Dès 375 000 USD"
+        - cells:
+            - "Sur la côte ouest"
+            - "Cap Tamarin (Tamarin) et Medine Smart City (Flic en Flac)"
+        - cells:
+            - "Terrains pour étrangers"
+            - "Proposés jusqu’au 30 juin 2022, selon l’EDB"
+    faqs:
+      - question: "Quelles smart cities sur la côte ouest ?"
+        answer: "Selon le récapitulatif 2025 de l’EDB, Cap Tamarin est à Tamarin et Medine Smart City à Flic en Flac. Le projet de Médine est connu sous le nom d’Uniciti."
+      - question: "Acheter dans une smart city donne la résidence ?"
+        answer: "Oui, si le logement coûte 375 000 USD ou plus."
+      - question: "Un étranger peut acheter un terrain dans une smart city ?"
+        answer: "Selon l’EDB, les titulaires d’un permis pouvaient acheter un terrain viabilisé jusqu’à 2 100 m², mais seulement jusqu’au 30 juin 2022. Demandez au promoteur ce qui est possible aujourd’hui."
+    seoDescription: "Le Smart City Scheme à Maurice : ce que les étrangers peuvent acheter, la résidence dès 375 000 USD, et les deux smart cities de la côte ouest, Cap Tamarin et Médine."

@@ -562,3 +562,13 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
   12 months.
 - TODO_OLIVIER.md is deleted at the owner's request; the few one time
   settings for going live are in the README.
+
+## French complete (October 2026)
+
+- Every page now has a French version: the buying guides, question and
+  comparison pages, area Living sections, food and shopping guides and the
+  legal pages were translated, following the same no hyphen style rule
+  (questions avoid inversions such as "peut il" with a hyphen).
+- French stays hidden behind `NEXT_PUBLIC_FRENCH_PUBLISHED`; the content
+  check now passes with it switched on, so French can go live with that
+  one setting.

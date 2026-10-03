@@ -62,5 +62,42 @@ content:
         answer: "Registration duty of 5% of the price for the buyer, and a non refundable EDB processing fee of MUR 25,000 per application. Notary and legal fees come on top; ask your notary for a quote."
     seoDescription: "PDS in Mauritius explained by a local: who can buy, the USD 375,000 residence permit, 5% registration duty, off plan payments and renting out, from official EDB sources."
   fr:
-    title: PDS (Property Development Scheme)
-    excerpt: Texte provisoire, à rédiger.
+    title: "PDS (Property Development Scheme)"
+    excerpt: "Le dispositif derrière la plupart des villas et appartements neufs achetés par des étrangers à Maurice : qui peut acheter, les frais en plus du prix, et la résidence qui va avec."
+    shortAnswer: "Le Property Development Scheme (PDS) permet aux étrangers d’acheter un logement dans des projets agréés par l’Economic Development Board. Un achat de 375 000 USD ou plus donne un permis de résidence à l’acheteur, à son conjoint et à ses enfants de moins de 24 ans, tant qu’il reste propriétaire. Prévoyez 5 % de droits d’enregistrement en plus du prix."
+    table:
+      caption: "Le PDS en bref"
+      headers:
+        - ""
+        - "Ce que disent les règles"
+      rows:
+        - cells:
+            - "Qui peut acheter"
+            - "Étrangers, Mauriciens, membres de la diaspora mauricienne, sociétés, sociétés civiles, trusts et fondations"
+        - cells:
+            - "Prix minimum"
+            - "Aucun pour l’achat lui même"
+        - cells:
+            - "Permis de résidence"
+            - "À partir de 375 000 USD, pour le propriétaire, son conjoint et ses enfants de moins de 24 ans"
+        - cells:
+            - "Droits d’enregistrement"
+            - "5 % du prix, à la charge de l’acheteur"
+        - cells:
+            - "Achat sur plan"
+            - "25 % à la signature, 10 % après les fondations, 35 % hors d’eau, 25 % à l’achèvement, 5 % à la livraison"
+        - cells:
+            - "Location"
+            - "Par le promoteur ou le gestionnaire qu’il désigne"
+    faqs:
+      - question: "Un étranger peut acheter sous le PDS ?"
+        answer: "Oui. Le PDS a été conçu pour cela : un étranger peut acheter une villa, un appartement, un penthouse ou un terrain viabilisé dans un projet titulaire d’un certificat PDS de l’Economic Development Board."
+      - question: "Quel budget pour obtenir la résidence ?"
+        answer: "375 000 USD ou plus, ou l’équivalent dans une autre devise convertible. En dessous, l’achat reste possible mais ne donne pas de permis de résidence."
+      - question: "Qui est couvert par le permis de résidence ?"
+        answer: "Le propriétaire, son conjoint et ses enfants de moins de 24 ans, tant que le propriétaire détient le bien."
+      - question: "Peut on travailler à Maurice avec un permis PDS ?"
+        answer: "Oui. Selon l’EDB, les titulaires d’un permis de résidence PDS n’ont pas besoin de permis de travail ou d’occupation pour investir et travailler à Maurice."
+      - question: "Quels frais en plus du prix ?"
+        answer: "5 % de droits d’enregistrement pour l’acheteur et des frais de dossier non remboursables de 25 000 MUR à l’EDB, plus les frais de notaire."
+    seoDescription: "Le PDS à Maurice expliqué par un Mauricien : qui peut acheter, le permis de résidence dès 375 000 USD, 5 % de droits d’enregistrement, paiements sur plan et location."

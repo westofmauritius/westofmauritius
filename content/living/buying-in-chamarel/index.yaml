@@ -71,8 +71,8 @@ content:
   fr:
     title: "Acheter un bien à Chamarel quand on est étranger"
     slug: acheter-un-bien-chamarel
-    excerpt: "Les dispositifs ouverts aux étrangers à Chamarel, les biens proposés, les frais en plus du prix et les étapes jusqu’aux clés."
-    shortAnswer: "[Texte provisoire : répondez à « Un étranger peut il acheter à Chamarel, et comment ? » en deux ou trois phrases, avant tout détail.]"
+    excerpt: "Comment un étranger peut acheter un logement à Chamarel, ce que montrent les listes officielles, les frais en plus du prix et la vie sur place."
+    shortAnswer: "Les étrangers peuvent acheter à Chamarel par le PDS, l’IRS, le RES ou le Smart City Scheme, ou un appartement d’au moins 6 millions MUR dans un immeuble d’au moins deux étages. Dès 375 000 USD, l’achat donne un permis de résidence. Un projet de la liste des projets RES de l’EDB de novembre 2022 est à Chamarel."
     table:
       caption: "Acheter à Chamarel en bref"
       headers:
@@ -80,27 +80,27 @@ content:
         - "À savoir"
       rows:
         - cells:
-            - "Dispositifs ouverts aux étrangers"
-            - "[À vérifier]"
+            - "Façons d’acheter pour un étranger"
+            - "PDS, IRS, RES, Smart City, ou appartement en immeuble dès 6 millions MUR"
         - cells:
-            - "Types de biens"
-            - "[À rédiger]"
+            - "Permis de résidence"
+            - "Dès 375 000 USD, tant que vous êtes propriétaire"
         - cells:
-            - "Fourchette de prix"
-            - "[À vérifier]"
+            - "Projets RES sur la liste 2022 de l’EDB"
+            - "1"
         - cells:
-            - "Frais et taxes en plus"
-            - "[À vérifier]"
+            - "Droits d’enregistrement"
+            - "5 % sous le PDS ; sous l’IRS et le RES, 70 000 USD ou 5 % pour un premier achat, le plus bas des deux"
         - cells:
-            - "Permis de résidence avec l’achat"
-            - "[À vérifier]"
+            - "Trajet vers Port Louis"
+            - "Environ 45 km"
     faqs:
-      - question: "Un étranger peut il acheter à Chamarel ?"
-        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
-      - question: "Combien coûte une villa à Chamarel ?"
-        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
-      - question: "Quels dispositifs permettent d’acheter à Chamarel ?"
-        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
-      - question: "Acheter à Chamarel donne t il la résidence ?"
-        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
-    seoDescription: "Acheter un bien à Chamarel, île Maurice, quand on est étranger : dispositifs, biens, coûts et étapes, expliqués par un Mauricien."
+      - question: "Un étranger peut acheter un bien à Chamarel ?"
+        answer: "Oui, par les dispositifs agréés par l’Economic Development Board (PDS, IRS, RES et Smart City), ou en achetant un appartement d’au moins 6 millions MUR dans un immeuble d’au moins deux étages au dessus du rez de chaussée."
+      - question: "Acheter à Chamarel donne la résidence ?"
+        answer: "Oui, si le logement coûte 375 000 USD ou plus. Le permis dure tant que vous êtes propriétaire."
+      - question: "Y a t il des projets pour étrangers à Chamarel ?"
+        answer: "Un projet de la liste des projets RES de l’EDB de novembre 2022 est à Chamarel. Il n’y a pas de smart city à Chamarel ; la plus proche est Cap Tamarin."
+      - question: "Quels frais en plus du prix à Chamarel ?"
+        answer: "Les droits d’enregistrement (5 % sous le PDS ; sous l’IRS et le RES, 70 000 USD ou 5 % pour un premier achat, le plus bas des deux), les frais de dossier de 25 000 MUR de l’EDB et les frais de notaire."
+    seoDescription: "Acheter un bien à Chamarel, île Maurice, quand on est étranger : voies légales, résidence dès 375 000 USD, listes officielles et frais."

@@ -73,8 +73,8 @@ content:
   fr:
     title: "Tamarin ou Flic en Flac : où vivre ?"
     slug: tamarin-ou-flic-en-flac
-    excerpt: "Tamarin et Flic en Flac comparés : vie quotidienne, plages, coûts, écoles et trajets."
-    shortAnswer: "[Texte provisoire : répondez à « Vivre Tamarin ou Flic en Flac ? » en deux ou trois phrases, avant tout détail.]"
+    excerpt: "Deux villages de la côte ouest à douze kilomètres l’un de l’autre, comparés : plages, écoles, santé, trajets et ambiance."
+    shortAnswer: "Choisissez Flic en Flac pour une longue plage et le trajet le plus court vers Port Louis et Ebène ; choisissez Tamarin pour l’esprit village, le surf et deux écoles primaires internationales au village. Ils ne sont qu’à environ 12 km l’un de l’autre."
     table:
       caption: "Tamarin et Flic en Flac côte à côte"
       headers:
@@ -84,39 +84,39 @@ content:
       rows:
         - cells:
             - "Ambiance"
-            - "[À vérifier]"
-            - "[À vérifier]"
+            - "Un vrai village sur une baie"
+            - "Une longue plage, animée le week end"
         - cells:
-            - "Plages et mer"
-            - "[À vérifier]"
-            - "[À vérifier]"
+            - "La mer"
+            - "Spots de surf et dauphins dans la baie"
+            - "Un lagon calme derrière le récif"
         - cells:
-            - "Restaurants et vie nocturne"
-            - "[À vérifier]"
-            - "[À vérifier]"
+            - "Écoles internationales (liste EDB)"
+            - "Deux écoles primaires au village"
+            - "Primaire à Cascavelle, secondaire à Médine"
         - cells:
-            - "Écoles à proximité"
-            - "[À vérifier]"
-            - "[À vérifier]"
+            - "Clinique privée la plus proche"
+            - "Artemis Cascavelle, environ 9 km"
+            - "Clinique de l’Occident, au village"
         - cells:
             - "Trajet vers Port Louis"
-            - "[À vérifier]"
-            - "[À vérifier]"
+            - "Environ 29 km"
+            - "Environ 25 km"
+        - cells:
+            - "Trajet vers Ebène"
+            - "Environ 21 km"
+            - "Environ 17 km"
         - cells:
             - "Trajet vers l’aéroport"
-            - "[À vérifier]"
-            - "[À vérifier]"
-        - cells:
-            - "Loyer, appartement deux chambres"
-            - "[À vérifier]"
-            - "[À vérifier]"
+            - "Environ 51 km"
+            - "Environ 47 km"
     faqs:
       - question: "Tamarin ou Flic en Flac pour une famille ?"
-        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
-      - question: "Lequel est le moins cher ?"
-        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
-      - question: "Lequel a les plus belles plages ?"
-        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
-      - question: "Lequel est le plus proche de l’aéroport ?"
-        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
-    seoDescription: "Tamarin ou Flic en Flac : deux villages de la côte ouest comparés pour la vie quotidienne, les plages, les coûts et les écoles."
+        answer: "Les deux conviennent. Tamarin compte deux écoles primaires internationales de la liste de l’EDB au village ; Flic en Flac est proche de Westcoast International Primary School à Cascavelle et de l’école secondaire à Médine."
+      - question: "Lequel est le plus proche de Port Louis ?"
+        answer: "Flic en Flac, à environ 25 km contre environ 29 km depuis Tamarin, selon OpenStreetMap."
+      - question: "Lequel a la plus belle plage ?"
+        answer: "Pour une longue plage et un lagon calme, Flic en Flac. La baie de Tamarin est surtout connue pour son surf et ses dauphins."
+      - question: "Quelle distance entre Tamarin et Flic en Flac ?"
+        answer: "Environ 12 km par la route côtière, un quart d’heure en voiture."
+    seoDescription: "Tamarin ou Flic en Flac : plages, écoles, cliniques et temps de trajet comparés pour s’installer sur la côte ouest de Maurice."

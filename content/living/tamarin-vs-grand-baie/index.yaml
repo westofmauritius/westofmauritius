@@ -84,8 +84,8 @@ content:
   fr:
     title: "Tamarin ou Grand Baie : où vivre ?"
     slug: tamarin-ou-grand-baie
-    excerpt: "Tamarin et Grand Baie comparés : vie quotidienne, plages, coûts, écoles et trajets."
-    shortAnswer: "[Texte provisoire : répondez à « Vivre Tamarin ou Grand Baie ? » en deux ou trois phrases, avant tout détail.]"
+    excerpt: "L’ouest ou le nord ? Tamarin et Grand Baie comparés : ambiance, écoles, cliniques, biens pour acheteurs étrangers et temps de trajet."
+    shortAnswer: "Grand Baie est la localité la plus grande et la plus animée, dans le nord, avec un centre commercial et le trajet le plus court vers Port Louis. Tamarin est un plus petit village de la côte ouest, avec surf, dauphins, deux écoles primaires internationales et le soleil qui se couche sur la mer. Les deux comptent beaucoup de projets ouverts aux acheteurs étrangers."
     table:
       caption: "Tamarin et Grand Baie côte à côte"
       headers:
@@ -94,40 +94,40 @@ content:
         - "Grand Baie"
       rows:
         - cells:
-            - "Ambiance"
-            - "[À vérifier]"
-            - "[À vérifier]"
+            - "Côte"
+            - "Ouest, district de Rivière Noire"
+            - "Nord, surtout dans le district de Rivière du Rempart"
         - cells:
-            - "Plages et mer"
-            - "[À vérifier]"
-            - "[À vérifier]"
+            - "Écoles internationales (liste EDB)"
+            - "Écoles primaires Paul et Virginie et Telfair"
+            - "Saint Exupéry International School"
         - cells:
-            - "Restaurants et vie nocturne"
-            - "[À vérifier]"
-            - "[À vérifier]"
+            - "Clinique privée (liste EDB)"
+            - "Artemis Cascavelle, environ 9 km"
+            - "Clinique de Grand Baie, au village"
         - cells:
-            - "Écoles à proximité"
-            - "[À vérifier]"
-            - "[À vérifier]"
+            - "Projets RES sur la liste 2022 de l’EDB"
+            - "15"
+            - "14"
         - cells:
             - "Trajet vers Port Louis"
-            - "[À vérifier]"
-            - "[À vérifier]"
+            - "Environ 29 km"
+            - "Environ 27 km"
+        - cells:
+            - "Trajet vers Ebène"
+            - "Environ 21 km"
+            - "Environ 42 km"
         - cells:
             - "Trajet vers l’aéroport"
-            - "[À vérifier]"
-            - "[À vérifier]"
-        - cells:
-            - "Loyer, appartement deux chambres"
-            - "[À vérifier]"
-            - "[À vérifier]"
+            - "Environ 51 km"
+            - "Environ 71 km"
     faqs:
       - question: "Tamarin ou Grand Baie pour une famille ?"
-        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
-      - question: "Lequel est le moins cher ?"
-        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
-      - question: "Lequel a les plus belles plages ?"
-        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
+        answer: "Les deux ont des écoles internationales sur la liste de l’EDB : les écoles primaires Paul et Virginie et Telfair à Tamarin, Saint Exupéry International School à Grand Baie. Grand Baie a une clinique privée au village ; depuis Tamarin, la plus proche est à environ 9 km."
       - question: "Lequel est le plus proche de l’aéroport ?"
-        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
-    seoDescription: "Tamarin ou Grand Baie : l’ouest ou le nord ? Vie quotidienne, plages, coûts, écoles et trajets comparés par un Mauricien."
+        answer: "Tamarin : environ 51 km contre environ 71 km depuis Grand Baie, selon OpenStreetMap."
+      - question: "Lequel est le plus proche de Port Louis et d’Ebène ?"
+        answer: "Port Louis est un peu plus proche depuis Grand Baie (environ 27 km contre 29), Ebène plus proche depuis Tamarin (environ 21 km contre 42)."
+      - question: "Un étranger peut acheter dans les deux ?"
+        answer: "Oui. La liste 2022 des projets RES de l’EDB en compte 15 à Tamarin et 14 à Grand Baie, et d’autres dispositifs existent dans les deux secteurs."
+    seoDescription: "Tamarin ou Grand Baie : côte ouest ou nord de Maurice ? Écoles, cliniques, biens pour étrangers et temps de trajet comparés d’après des sources officielles."

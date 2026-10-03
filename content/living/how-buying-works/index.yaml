@@ -67,6 +67,44 @@ content:
         answer: "Under the PDS the buyer pays 5% registration duty. Under the IRS and RES a first purchase costs USD 70,000 or 5% of the price, whichever is lower. The EDB charges MUR 25,000 to process the application."
     seoDescription: "How to buy property in Mauritius as a foreigner: the five legal routes, the USD 375,000 residence permit, costs and step by step process, from official EDB sources."
   fr:
-    title: Comment acheter
+    title: "Acheter un bien à Maurice quand on est étranger"
     slug: comment-acheter
-    excerpt: Texte provisoire, à rédiger.
+    excerpt: "Les cinq façons pour un étranger d’acheter un logement à Maurice, celles qui donnent la résidence, et les étapes de la réservation aux clés."
+    shortAnswer: "Les étrangers peuvent acheter à Maurice par les dispositifs agréés (IRS, RES, PDS et Smart City) ou un appartement d’au moins 6 millions MUR dans un immeuble d’au moins deux étages au dessus du rez de chaussée. Un achat de 375 000 USD ou plus donne un permis de résidence. Le promoteur ou votre représentant dépose la demande à l’Economic Development Board, vous payez avec des fonds venus de l’étranger, et la vente se signe chez un notaire."
+    table:
+      caption: "Les façons d’acheter pour un étranger"
+      headers:
+        - ""
+        - "Ce que l’on peut acheter"
+        - "Permis de résidence"
+      rows:
+        - cells:
+            - "PDS"
+            - "Villas, appartements, penthouses et terrains dans des projets agréés"
+            - "Dès 375 000 USD"
+        - cells:
+            - "IRS"
+            - "Logements et terrains dans les domaines existants"
+            - "Dès 375 000 USD"
+        - cells:
+            - "RES"
+            - "Logements dans les petits ensembles existants"
+            - "Dès 375 000 USD"
+        - cells:
+            - "Smart City"
+            - "Logements dans les smart cities agréées"
+            - "Dès 375 000 USD"
+        - cells:
+            - "Appartement en immeuble de deux étages et plus"
+            - "Un appartement dès 6 millions MUR"
+            - "Dès 375 000 USD"
+    faqs:
+      - question: "Les étrangers peuvent acheter à Maurice ?"
+        answer: "Oui, par les dispositifs gérés par l’Economic Development Board (IRS, RES, PDS et Smart City), ou en achetant un appartement d’au moins 6 millions MUR dans un immeuble d’au moins deux étages au dessus du rez de chaussée."
+      - question: "Acheter donne la résidence à Maurice ?"
+        answer: "Oui, dès 375 000 USD. Le permis dure tant que vous êtes propriétaire."
+      - question: "Faut il payer en devises ?"
+        answer: "Les acheteurs étrangers paient en dollars ou dans une autre devise convertible, avec des fonds venus de l’étranger par une banque. Avec un prêt en roupies, les premiers 500 000 USD doivent venir en devises."
+      - question: "Combien coûtent les taxes à l’achat ?"
+        answer: "Sous le PDS, l’acheteur paie 5 % de droits d’enregistrement. Sous l’IRS et le RES, un premier achat coûte 70 000 USD ou 5 % du prix, le plus bas des deux. L’EDB facture 25 000 MUR de frais de dossier."
+    seoDescription: "Acheter un bien à Maurice quand on est étranger : les cinq voies légales, la résidence dès 375 000 USD, les frais et les étapes, d’après les sources officielles de l’EDB."

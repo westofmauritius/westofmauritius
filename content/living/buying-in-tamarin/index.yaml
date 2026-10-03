@@ -71,8 +71,8 @@ content:
   fr:
     title: "Acheter un bien à Tamarin quand on est étranger"
     slug: acheter-un-bien-tamarin
-    excerpt: "Les dispositifs ouverts aux étrangers à Tamarin, les biens proposés, les frais en plus du prix et les étapes jusqu’aux clés."
-    shortAnswer: "[Texte provisoire : répondez à « Un étranger peut il acheter à Tamarin, et comment ? » en deux ou trois phrases, avant tout détail.]"
+    excerpt: "Comment un étranger peut acheter un logement à Tamarin, ce que montrent les listes officielles, les frais en plus du prix et la vie sur place."
+    shortAnswer: "Les étrangers peuvent acheter à Tamarin par le PDS, l’IRS, le RES ou le Smart City Scheme, ou un appartement d’au moins 6 millions MUR dans un immeuble d’au moins deux étages. Dès 375 000 USD, l’achat donne un permis de résidence. 15 des 77 projets de la liste des projets RES de l’EDB de novembre 2022 sont à Tamarin, dont à La Mivoie et Plantation Marguery, plus que dans tout autre village de la liste."
     table:
       caption: "Acheter à Tamarin en bref"
       headers:
@@ -80,27 +80,27 @@ content:
         - "À savoir"
       rows:
         - cells:
-            - "Dispositifs ouverts aux étrangers"
-            - "[À vérifier]"
+            - "Façons d’acheter pour un étranger"
+            - "PDS, IRS, RES, Smart City, ou appartement en immeuble dès 6 millions MUR"
         - cells:
-            - "Types de biens"
-            - "[À rédiger]"
+            - "Permis de résidence"
+            - "Dès 375 000 USD, tant que vous êtes propriétaire"
         - cells:
-            - "Fourchette de prix"
-            - "[À vérifier]"
+            - "Projets RES sur la liste 2022 de l’EDB"
+            - "15"
         - cells:
-            - "Frais et taxes en plus"
-            - "[À vérifier]"
+            - "Droits d’enregistrement"
+            - "5 % sous le PDS ; sous l’IRS et le RES, 70 000 USD ou 5 % pour un premier achat, le plus bas des deux"
         - cells:
-            - "Permis de résidence avec l’achat"
-            - "[À vérifier]"
+            - "Trajet vers Port Louis"
+            - "Environ 29 km"
     faqs:
-      - question: "Un étranger peut il acheter à Tamarin ?"
-        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
-      - question: "Combien coûte une villa à Tamarin ?"
-        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
-      - question: "Quels dispositifs permettent d’acheter à Tamarin ?"
-        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
-      - question: "Acheter à Tamarin donne t il la résidence ?"
-        answer: "[Texte provisoire : une réponse claire en deux ou trois phrases, avec une source pour chaque chiffre.]"
-    seoDescription: "Acheter un bien à Tamarin, île Maurice, quand on est étranger : dispositifs, biens, coûts et étapes, expliqués par un Mauricien."
+      - question: "Un étranger peut acheter un bien à Tamarin ?"
+        answer: "Oui, par les dispositifs agréés par l’Economic Development Board (PDS, IRS, RES et Smart City), ou en achetant un appartement d’au moins 6 millions MUR dans un immeuble d’au moins deux étages au dessus du rez de chaussée."
+      - question: "Acheter à Tamarin donne la résidence ?"
+        answer: "Oui, si le logement coûte 375 000 USD ou plus. Le permis dure tant que vous êtes propriétaire."
+      - question: "Y a t il des projets pour étrangers à Tamarin ?"
+        answer: "15 des 77 projets de la liste des projets RES de l’EDB de novembre 2022 sont à Tamarin, dont à La Mivoie et Plantation Marguery, plus que dans tout autre village de la liste. La smart city Cap Tamarin est à Tamarin, avec des zones résidentielles, commerciales, éducatives et de loisirs autour d’un parc."
+      - question: "Quels frais en plus du prix à Tamarin ?"
+        answer: "Les droits d’enregistrement (5 % sous le PDS ; sous l’IRS et le RES, 70 000 USD ou 5 % pour un premier achat, le plus bas des deux), les frais de dossier de 25 000 MUR de l’EDB et les frais de notaire."
+    seoDescription: "Acheter un bien à Tamarin, île Maurice, quand on est étranger : voies légales, résidence dès 375 000 USD, listes officielles et frais."

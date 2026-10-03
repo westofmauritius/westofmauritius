@@ -55,6 +55,36 @@ content:
         answer: "Before you return to Mauritius, or no more than 180 days after you start your first job or register your first business here."
     seoDescription: "Buying property in Mauritius from abroad as a Mauritian: what differs from foreigners, paying in rupees, PDS plots and the Mauritian Diaspora Scheme. From EDB sources."
   fr:
-    title: Acheter depuis l’étranger quand on est Mauricien
+    title: "Acheter depuis l’étranger quand on est Mauricien"
     slug: acheter-depuis-l-etranger
-    excerpt: Texte provisoire, à rédiger.
+    excerpt: "Rentrer au pays, ou acheter un pied à terre en vivant à l’étranger : ce qui change pour un citoyen mauricien, et ce qu’offre le Mauritian Diaspora Scheme."
+    shortAnswer: "En tant que citoyen mauricien, vous n’êtes pas limité aux dispositifs pour étrangers, et dans ces dispositifs vous pouvez payer en roupies ou en devises. Pour un terrain viabilisé dans un projet PDS, vous avez dix ans pour construire, contre cinq pour un étranger. Si vous rentrez pour travailler ou créer une entreprise, regardez le Mauritian Diaspora Scheme, à demander avant votre retour ou dans les 180 jours après votre premier emploi."
+    table:
+      caption: "Les citoyens mauriciens et les dispositifs"
+      headers:
+        - ""
+        - "Citoyens mauriciens"
+        - "Étrangers"
+      rows:
+        - cells:
+            - "Où acheter"
+            - "Partout, y compris dans les dispositifs"
+            - "Seulement par les dispositifs ou un appartement en immeuble"
+        - cells:
+            - "Devise dans les dispositifs"
+            - "Roupies ou devises"
+            - "Devises venues de l’étranger"
+        - cells:
+            - "Terrain dans un projet PDS"
+            - "Construire en 10 ans"
+            - "Construire en 5 ans, un seul terrain"
+    faqs:
+      - question: "Un Mauricien vivant à l’étranger doit passer par le PDS ou l’IRS ?"
+        answer: "Non. Les dispositifs existent parce que la loi limite les achats des étrangers. En tant que citoyen, vous pouvez acheter en dehors, et aussi à l’intérieur."
+      - question: "Un Mauricien peut payer un bien PDS en roupies ?"
+        answer: "Oui. Les lignes directrices de l’EDB précisent qu’un citoyen peut acheter dans les dispositifs et payer en roupies ou dans une devise convertible."
+      - question: "Qu’est ce que le Mauritian Diaspora Scheme ?"
+        answer: "Un dispositif du gouvernement pour faire revenir les membres de la diaspora mauricienne travailler ou créer une entreprise. La demande se fait auprès de l’EDB, comme professionnel, indépendant ou jeune professionnel."
+      - question: "Quand demander le Diaspora Scheme ?"
+        answer: "Avant votre retour à Maurice, ou au plus tard 180 jours après votre premier emploi ou l’enregistrement de votre première entreprise."
+    seoDescription: "Acheter à Maurice depuis l’étranger quand on est Mauricien : ce qui change par rapport aux étrangers, payer en roupies, les terrains PDS et le Mauritian Diaspora Scheme."
