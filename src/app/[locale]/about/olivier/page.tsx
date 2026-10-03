@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { AuthorAvatar } from "@/components/author/AuthorAvatar";
 import { GuideCard } from "@/components/content/GuideCard";
+import { AreaPhotoStrip } from "@/components/content/AreaPhotoStrip";
 import { Prose } from "@/components/content/Prose";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -9,6 +10,7 @@ import { Container } from "@/components/ui/Container";
 import { PlaceholderNotice } from "@/components/ui/PlaceholderNotice";
 import { Link } from "@/i18n/Link";
 import { resolveLocale } from "@/i18n/locale";
+import { getAreas } from "@/lib/content/areas";
 import { getAuthor } from "@/lib/content/author";
 import { getGuides } from "@/lib/content/guides";
 import { localeAlternates } from "@/lib/seo/alternates";
@@ -46,9 +48,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function AuthorPage({ params }: Props) {
   const locale = await resolveLocale(params);
-  const [author, guides, t] = await Promise.all([
+  const [author, guides, areas, t] = await Promise.all([
     getAuthor(locale),
     getGuides(locale),
+    getAreas(locale),
     getTranslations({ locale }),
   ]);
   const written = guides.filter((g) => !g.placeholder);
@@ -57,6 +60,10 @@ export default async function AuthorPage({ params }: Props) {
     .filter((d): d is string => Boolean(d))
     .sort()
     .at(-1);
+  // Pictures of the coast beside the bio, so the page shows what it is about.
+  const photoAreas = ["black-river", "la-gaulette", "flic-en-flac"]
+    .map((slug) => areas.find((a) => a.slug === slug))
+    .filter((a) => a !== undefined);
 
   return (
     <>
@@ -77,44 +84,54 @@ export default async function AuthorPage({ params }: Props) {
         />
       </Container>
 
-      <Container size="prose" className="py-14 sm:py-20">
-        <header className="flex flex-col items-start gap-8 sm:flex-row sm:items-center">
-          <AuthorAvatar author={author} size={128} />
-          <div>
-            <p className="mb-3 eyebrow text-coral-600">
-              {t("Author.pageEyebrow")}
-            </p>
-            <h1 className="text-display-1">{author.name}</h1>
-            {author.role && (
-              <p className="mt-3 lead text-ink-muted">{author.role}</p>
+      {/* Text on the left of the wide grid and photos beside it, like the
+          About page, instead of a narrow centred column. */}
+      <Container
+        size="wide"
+        className="grid gap-14 py-14 sm:py-20 lg:grid-cols-[minmax(0,42rem)_20rem] lg:justify-between"
+      >
+        <div>
+          <header className="flex flex-col items-start gap-8 sm:flex-row sm:items-center">
+            <AuthorAvatar author={author} size={128} />
+            <div>
+              <p className="mb-3 eyebrow text-coral-600">
+                {t("Author.pageEyebrow")}
+              </p>
+              <h1 className="text-display-1">{author.name}</h1>
+              {author.role && (
+                <p className="mt-3 lead text-ink-muted">{author.role}</p>
+              )}
+            </div>
+          </header>
+
+          <Prose node={author.body} locale={locale} className="mt-12" />
+
+          <p className="mt-12 border-t border-line pt-6 text-sm">
+            <Link
+              href="/contact"
+              className="font-medium text-lagoon-700 hover:underline"
+            >
+              {t("Author.contact", { name: author.name })} →
+            </Link>
+            {author.links.length > 0 && (
+              <span className="mt-3 flex flex-wrap gap-x-4 gap-y-2">
+                {author.links.map((url) => (
+                  <a
+                    key={url}
+                    href={url}
+                    rel="me"
+                    className="text-ink-muted underline underline-offset-4 hover:text-ink"
+                  >
+                    {new URL(url).hostname.replace(/^www\./, "")}
+                  </a>
+                ))}
+              </span>
             )}
-          </div>
-        </header>
-
-        <Prose node={author.body} locale={locale} className="mt-12" />
-
-        <p className="mt-12 border-t border-line pt-6 text-sm">
-          <Link
-            href="/contact"
-            className="font-medium text-lagoon-700 hover:underline"
-          >
-            {t("Author.contact", { name: author.name })} →
-          </Link>
-          {author.links.length > 0 && (
-            <span className="mt-3 flex flex-wrap gap-x-4 gap-y-2">
-              {author.links.map((url) => (
-                <a
-                  key={url}
-                  href={url}
-                  rel="me"
-                  className="text-ink-muted underline underline-offset-4 hover:text-ink"
-                >
-                  {new URL(url).hostname.replace(/^www\./, "")}
-                </a>
-              ))}
-            </span>
-          )}
-        </p>
+          </p>
+        </div>
+        <aside className="lg:sticky lg:top-28 lg:self-start">
+          <AreaPhotoStrip areas={photoAreas} />
+        </aside>
       </Container>
 
       {written.length > 0 && (

@@ -531,5 +531,10 @@
     "living": "Living in {name}",
     "shortlist": "Get my free shortlist for {name}",
     "cta": "Take the quiz"
+  },
+  "TextPage": {
+    "asideTitle": "Questions about this page?",
+    "asideText": "Write to us and we will gladly explain anything that is not clear.",
+    "asideLink": "Contact us"
   }
 }

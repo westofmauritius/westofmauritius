@@ -1,15 +1,14 @@
 placeholder: false
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-03'
 content:
   en:
     title: About West of Mauritius
     intro: >-
-      An independent guide to the west coast of Mauritius: its beaches,
-      mountains and villages, and what it takes to make a home there.
+      A guide to the west coast of Mauritius. Its beaches and mountains and
+      villages and what it takes to make a home there.
     seoDescription: >-
-      About West of Mauritius: an independent guide to the west coast of
-      Mauritius, how we write, how featured places and partner links are marked,
-      and how to reach us.
+      About West of Mauritius: who writes it and how it is made. A guide to the
+      west coast of Mauritius by Olivier who is Mauritian.
   fr:
     title: À propos d’Ouest Maurice
     intro: >-

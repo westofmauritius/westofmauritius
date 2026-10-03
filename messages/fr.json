@@ -531,5 +531,10 @@
     "living": "Vivre {name}",
     "shortlist": "Recevoir ma sélection gratuite {name}",
     "cta": "Faire le quiz"
+  },
+  "TextPage": {
+    "asideTitle": "Une question sur cette page ?",
+    "asideText": "Écrivez nous et nous vous expliquerons volontiers ce qui n’est pas clair.",
+    "asideLink": "Nous contacter"
   }
 }
