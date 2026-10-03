@@ -1,27 +1,27 @@
 category: activities
 placeholder: false
 sources:
-  - title: 'Le Morne Brabant'
+  - title: Le Morne Brabant
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Le_Morne_Brabant
     checkedAt: '2026-10-01'
-  - title: 'Black River Gorges National Park'
+  - title: Black River Gorges National Park
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Black_River_Gorges_National_Park
     checkedAt: '2026-10-01'
-  - title: 'Piton de la Petite Rivière Noire'
+  - title: Piton de la Petite Rivière Noire
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Piton_de_la_Petite_Rivière_Noire
     checkedAt: '2026-10-01'
-  - title: 'Martello Tower at La Preneuse'
+  - title: Martello Tower at La Preneuse
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Martello_Tower_at_La_Preneuse
     checkedAt: '2026-10-01'
-  - title: 'Seven Coloured Earths'
+  - title: Seven Coloured Earths
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Seven_Coloured_Earths
     checkedAt: '2026-10-01'
-  - title: 'Chamarel'
+  - title: Chamarel
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Chamarel
     checkedAt: '2026-10-01'
@@ -57,14 +57,14 @@ hero:
 placeholderTone: ocean
 content:
   en:
-    title: 'Things to do in the west: mountains, lagoons and history'
+    title: 'Things to do in the west: mountains and lagoons and history'
     excerpt: >-
-      Beyond the beach: hiking Le Morne and the island's highest peak, boat
-      trips across the lagoon, rare birds in the national park and the stories
-      of the coast.
+      Beyond the beach: hiking Le Morne and the island's highest peak. Boat
+      trips across the lagoon and rare birds in the national park and the
+      stories of the coast.
     seoDescription: >-
-      Things to do in west Mauritius: hike Le Morne Brabant, explore Black River
-      Gorges, sail to Île aux Bénitiers and discover the coast's history.
+      Things to do in west Mauritius: hike Le Morne Brabant and explore Black
+      River Gorges. Sail to Île aux Bénitiers and discover the coast's history.
   fr:
     title: 'Que faire dans l’ouest : montagnes, lagons et histoire'
     slug: que-faire-dans-l-ouest

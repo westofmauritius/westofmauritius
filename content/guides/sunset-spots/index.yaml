@@ -1,15 +1,15 @@
 category: sunsets
 placeholder: false
 sources:
-  - title: 'Flic en Flac'
+  - title: Flic en Flac
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Flic-en-Flac
     checkedAt: '2026-10-01'
-  - title: 'Tamarin, Mauritius'
+  - title: Tamarin (Mauritius)
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Tamarin,_Mauritius
     checkedAt: '2026-10-01'
-  - title: 'Le Morne Brabant'
+  - title: Le Morne Brabant
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Le_Morne_Brabant
     checkedAt: '2026-10-01'
@@ -42,11 +42,11 @@ content:
   en:
     title: Where to watch the sunset on the west coast
     excerpt: >-
-      The west coast faces the open Indian Ocean, so every evening the sun goes
-      down over the sea. Our favourite places to watch it, and how to time it.
+      The west coast faces the open Indian Ocean so every evening the sun goes
+      down over the sea. Our favourite places to watch it and how to time it.
     seoDescription: >-
-      The best sunset spots in west Mauritius: Tamarin Bay, La Preneuse, Flic en
-      Flac and Le Morne, plus tips on timing and the season.
+      The best sunset spots in west Mauritius: Tamarin Bay and La Preneuse and
+      Flic en Flac and Le Morne plus tips on timing and the season.
   fr:
     title: Où voir le coucher du soleil sur la côte ouest
     slug: ou-voir-le-coucher-du-soleil

@@ -12,7 +12,7 @@ images:
     alt:
       en:
         text: >-
-          Driftwood on a beach of Île aux Bénitiers, with Le Morne in the
+          Driftwood on a beach of Île aux Bénitiers with Le Morne in the
           distance
       fr:
         text: >-
@@ -34,7 +34,7 @@ images:
     alt:
       en:
         text: >-
-          Clear turquoise lagoon off La Gaulette, with Le Morne Brabant on the
+          Clear turquoise lagoon off La Gaulette with Le Morne Brabant on the
           horizon
       fr:
         text: Le lagon turquoise de La Gaulette, avec le Morne Brabant à l’horizon
@@ -46,8 +46,8 @@ content:
   en:
     name: Île aux Bénitiers
     summary: >-
-      A low coral islet in the lagoon off La Gaulette, with white beaches facing
-      Le Morne Brabant, reached by boat.
+      A low coral islet in the lagoon off La Gaulette with white beaches facing
+      Le Morne Brabant. You reach it by boat.
     hoursNote: Reached by boat from La Gaulette and nearby villages.
   fr:
     name: Île aux Bénitiers

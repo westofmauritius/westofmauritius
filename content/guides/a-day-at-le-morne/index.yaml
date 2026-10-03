@@ -1,11 +1,11 @@
 category: activities
 placeholder: false
 sources:
-  - title: 'Le Morne Brabant'
+  - title: Le Morne Brabant
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Le_Morne_Brabant
     checkedAt: '2026-10-01'
-  - title: 'Le Morne Cultural Landscape'
+  - title: Le Morne Cultural Landscape
     publisher: UNESCO World Heritage Centre
     url: https://whc.unesco.org/en/list/1259
     checkedAt: '2026-10-01'
@@ -37,11 +37,12 @@ content:
   en:
     title: A day at Le Morne
     excerpt: >-
-      History, a world famous lagoon and two very different beaches: how to
+      History and a world famous lagoon and two very different beaches: how to
       spend a day at the southwest tip of Mauritius.
     seoDescription: >-
-      A day at Le Morne, Mauritius: the Slave Route Monument, Le Morne public
-      beach, La Prairie, the lagoon and boat trips to Île aux Bénitiers.
+      A day at Le Morne in Mauritius: the Slave Route Monument and Le Morne
+      public beach and La Prairie with the lagoon and boat trips to Île aux
+      Bénitiers.
   fr:
     title: Une journée au Morne
     slug: une-journee-au-morne

@@ -13,7 +13,7 @@ images:
     alt:
       en:
         text: >-
-          Flic en Flac beach and its lagoon from the air, with the mountains of
+          Flic en Flac beach and its lagoon from the air with the mountains of
           the west behind
       fr:
         text: >-
@@ -24,7 +24,7 @@ images:
   - image: /images/places/wolmar-beach/images/1/image.jpg
     alt:
       en:
-        text: The sand at Flic en Flac under a big sky, looking south
+        text: The sand at Flic en Flac under a big sky looking south
       fr:
         text: Le sable de Flic en Flac sous un grand ciel, vers le sud
     credit: Benoît Prieur · CC0 · Wikimedia Commons
@@ -35,9 +35,9 @@ content:
   en:
     name: Wolmar beach
     summary: >-
-      The southern, quieter end of the long Flic en Flac beach: soft sand, clear
-      water inside the reef and views towards Tamarin and Le Morne.
-    hoursNote: Public beach, open to everyone.
+      The southern and quieter end of the long Flic en Flac beach: soft sand and
+      clear water inside the reef with views towards Tamarin and Le Morne.
+    hoursNote: Public beach and open to everyone.
   fr:
     name: Plage de Wolmar
     summary: >-

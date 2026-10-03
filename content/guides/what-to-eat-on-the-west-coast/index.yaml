@@ -3,12 +3,12 @@ placeholder: false
 featured: false
 publishedAt: '2026-10-03'
 sources:
-  - title: "Mauritian cuisine"
-    publisher: "Wikipedia"
+  - title: Mauritian cuisine
+    publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Mauritian_cuisine
     checkedAt: '2026-10-03'
-  - title: "Cost of living in Mauritius"
-    publisher: "Economic Development Board"
+  - title: Cost of living in Mauritius
+    publisher: Economic Development Board
     url: https://residency.mu/cost-of-living/
     checkedAt: '2026-10-03'
 areas:
@@ -22,20 +22,34 @@ hero:
     image: /images/guides/what-to-eat/hero/image.jpg
     alt:
       en:
-        text: "Grilled squid and vegetables with a tomato salsa, served in Mauritius"
+        text: Grilled squid and vegetables with a tomato salsa served in Mauritius
       fr:
-        text: "Calamars grillés et légumes avec une salsa de tomates, à Maurice"
-    credit: "Giorgio Minguzzi · CC BY-SA 2.0 · Wikimedia Commons"
-    creditUrl: https://commons.wikimedia.org/wiki/File:Fish_-_La_Pirogue_-_Mauritius_Island.jpg
+        text: Calamars grillés et légumes avec une salsa de tomates, à Maurice
+    credit: Giorgio Minguzzi · CC BY-SA 2.0 · Wikimedia Commons
+    creditUrl: >-
+      https://commons.wikimedia.org/wiki/File:Fish_-_La_Pirogue_-_Mauritius_Island.jpg
 placeholderTone: sunset
 content:
   en:
-    title: "What to eat on the west coast: a Mauritian's guide to local food"
+    title: 'What to eat on the west coast: a Mauritian''s guide to local food'
     slug: what-to-eat
-    excerpt: "Rougaille, vindaye, dalpuri, fried noodles and smoked marlin: the dishes to try on the west coast, where they come from and what they cost."
-    seoDescription: "What to eat in Mauritius, from a Mauritian: rougaille, vindaye, dalpuri, fried noodles, seafood and rum, where the dishes come from and what street food costs."
+    excerpt: >-
+      Rougaille and vindaye and dalpuri and fried noodles and smoked marlin: the
+      dishes to try on the west coast with where they come from and what they
+      cost.
+    seoDescription: >-
+      What to eat in Mauritius from a Mauritian: rougaille and vindaye and
+      dalpuri with fried noodles and seafood and rum. Where dishes come from and
+      what street food costs.
   fr:
-    title: "Que manger sur la côte ouest : la cuisine mauricienne racontée par un Mauricien"
+    title: >-
+      Que manger sur la côte ouest : la cuisine mauricienne racontée par un
+      Mauricien
     slug: que-manger
-    excerpt: "Rougaille, vindaye, dalpuri, mines frits et marlin fumé : les plats à goûter sur la côte ouest, leur origine et leur prix."
-    seoDescription: "Que manger à Maurice, par un Mauricien : rougaille, vindaye, dalpuri, nouilles frites, fruits de mer et rhum, l’origine des plats et le prix de la cuisine de rue."
+    excerpt: >-
+      Rougaille, vindaye, dalpuri, mines frits et marlin fumé : les plats à
+      goûter sur la côte ouest, leur origine et leur prix.
+    seoDescription: >-
+      Que manger à Maurice, par un Mauricien : rougaille, vindaye, dalpuri,
+      nouilles frites, fruits de mer et rhum, l’origine des plats et le prix de
+      la cuisine de rue.

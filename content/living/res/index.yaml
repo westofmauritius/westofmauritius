@@ -4,82 +4,130 @@ placeholder: false
 publishedAt: '2026-10-02'
 updatedAt: '2026-10-02'
 sources:
-  - title: "Real Estate Scheme (RES)"
-    publisher: "Economic Development Board"
+  - title: Real Estate Scheme (RES)
+    publisher: Economic Development Board
     url: https://residency.mu/acquire/real-estate-scheme/
     checkedAt: '2026-10-02'
-  - title: "Projects under the Real Estate Scheme (November 2022)"
-    publisher: "Economic Development Board"
-    url: https://residency.mu/wp-content/uploads/2021/06/List-of-Approved-RES-Projects_Nov22.pdf
+  - title: Projects under the Real Estate Scheme (November 2022)
+    publisher: Economic Development Board
+    url: >-
+      https://residency.mu/wp-content/uploads/2021/06/List-of-Approved-RES-Projects_Nov22.pdf
     checkedAt: '2026-10-02'
-  - title: "Guidelines for buyers of residential property under the IRS, RES and PDS (November 2024)"
-    publisher: "Economic Development Board"
-    url: https://residency.mu/wp-content/uploads/2021/06/Guidelines-for-IRS-RES-PDS.pdf
+  - title: >-
+      Guidelines for buyers of residential property under the IRS and RES and PDS
+      (November 2024)
+    publisher: Economic Development Board
+    url: >-
+      https://residency.mu/wp-content/uploads/2021/06/Guidelines-for-IRS-RES-PDS.pdf
     checkedAt: '2026-10-02'
 content:
   en:
-    title: "RES (Real Estate Scheme)"
-    excerpt: "Smaller, exclusive developments of villas and apartments, many of them around Tamarin and Black River: what foreigners can buy, the duty and the residence permit."
-    shortAnswer: "The Real Estate Scheme (RES) covers smaller residential developments of villas, penthouses, duplexes and apartments. Foreigners can buy in existing RES projects, and a purchase of USD 375,000 or more gives the buyer and dependants a residence permit. Many RES projects are on the west coast: 22 of the 77 on the EDB's November 2022 list are in Tamarin, Black River or Chamarel."
+    title: RES (Real Estate Scheme)
+    excerpt: >-
+      Smaller exclusive developments of villas and apartments with many of them
+      around Tamarin and Black River: what foreigners can buy and the duty and
+      the residence permit.
+    shortAnswer: >-
+      The Real Estate Scheme (RES) covers smaller residential developments of
+      villas and penthouses and duplexes and apartments. Foreigners can buy in
+      existing RES projects and a purchase of USD 375 000 or more gives the
+      buyer and dependants a residence permit. Many RES projects are on the west
+      coast: 22 of the 77 on the EDB's November 2022 list are in Tamarin or
+      Black River or Chamarel.
     table:
-      caption: "The RES at a glance"
+      caption: The RES at a glance
       headers:
-        - ""
-        - "What the rules say"
+        - ''
+        - What the rules say
       rows:
         - cells:
-            - "What you can buy"
-            - "Villas, penthouses, duplexes and apartments in existing RES projects"
+            - What you can buy
+            - >-
+              Villas and penthouses and duplexes and apartments in existing RES
+              projects
         - cells:
-            - "Residence permit"
-            - "From USD 375,000, for the owner and dependants"
+            - Residence permit
+            - "From USD 375\_000 for the owner and dependants"
         - cells:
-            - "Registration duty, first purchase"
-            - "USD 70,000 or 5% of the price, whichever is lower"
+            - Registration duty on a first purchase
+            - USD 70 000 or 5% of the price (whichever is lower)
         - cells:
-            - "Registration duty, resale"
-            - "5% of the price, plus 5% land transfer tax for the seller"
+            - Registration duty on a resale
+            - 5% of the price plus 5% land transfer tax for the seller
         - cells:
-            - "On the west coast"
-            - "22 of the 77 projects on the EDB's 2022 list"
+            - On the west coast
+            - 22 of the 77 projects on the EDB's 2022 list
     faqs:
-      - question: "What is the difference between the RES and the IRS?"
-        answer: "Both let foreigners buy homes with a residence permit from USD 375,000, and the duty rules are the same. RES projects are smaller residential developments, while IRS projects are large resorts with amenities such as golf courses and marinas."
-      - question: "Are there RES projects in Tamarin and Black River?"
-        answer: "Yes. Of the 77 projects on the EDB's list of Real Estate Scheme projects dated November 2022, 15 are in Tamarin (including La Mivoie and Plantation Marguery), 6 in Black River (including La Preneuse and Cascavelle) and 1 in Chamarel."
-      - question: "Can I rent out an RES property?"
-        answer: "Yes. The EDB says owners may rent their property, become tax resident and repatriate the money from renting or selling without restriction."
-    seoDescription: "Real Estate Scheme (RES) Mauritius: residence permit from USD 375,000, duty rules, and why so many RES projects are in Tamarin and Black River. From EDB sources."
+      - question: What is the difference between the RES and the IRS?
+        answer: "Both let foreigners buy homes with a residence permit from USD 375\_000 and the duty rules are the same. RES projects are smaller residential developments while IRS projects are large resorts with amenities such as golf courses and marinas."
+      - question: Are there RES projects in Tamarin and Black River?
+        answer: >-
+          Yes. Of the 77 projects on the EDB's list of Real Estate Scheme
+          projects dated November 2022 there are 15 in Tamarin (including La
+          Mivoie and Plantation Marguery) and 6 in Black River (including La
+          Preneuse and Cascavelle) and 1 in Chamarel.
+      - question: Can I rent out an RES property?
+        answer: >-
+          Yes. The EDB says owners may rent their property and become tax
+          resident and repatriate the money from renting or selling without
+          restriction.
+    seoDescription: >-
+      Real Estate Scheme (RES) Mauritius: the residence permit from USD 375 000
+      and the duty rules and why so many RES projects are in Tamarin and Black
+      River.
   fr:
-    title: "RES (Real Estate Scheme)"
-    excerpt: "Des projets plus petits et exclusifs de villas et d’appartements, dont beaucoup autour de Tamarin et Rivière Noire : ce que les étrangers peuvent acheter, les droits et la résidence."
-    shortAnswer: "Le Real Estate Scheme (RES) couvre de petits projets résidentiels de villas, penthouses, duplex et appartements. Les étrangers peuvent acheter dans les projets existants, et un achat de 375 000 USD ou plus donne un permis de résidence. Beaucoup de projets RES sont sur la côte ouest : 22 des 77 de la liste de l’EDB de novembre 2022 sont à Tamarin, Rivière Noire ou Chamarel."
+    title: RES (Real Estate Scheme)
+    excerpt: >-
+      Des projets plus petits et exclusifs de villas et d’appartements, dont
+      beaucoup autour de Tamarin et Rivière Noire : ce que les étrangers peuvent
+      acheter, les droits et la résidence.
+    shortAnswer: >-
+      Le Real Estate Scheme (RES) couvre de petits projets résidentiels de
+      villas, penthouses, duplex et appartements. Les étrangers peuvent acheter
+      dans les projets existants, et un achat de 375 000 USD ou plus donne un
+      permis de résidence. Beaucoup de projets RES sont sur la côte ouest : 22
+      des 77 de la liste de l’EDB de novembre 2022 sont à Tamarin, Rivière Noire
+      ou Chamarel.
     table:
-      caption: "Le RES en bref"
+      caption: Le RES en bref
       headers:
-        - ""
-        - "Ce que disent les règles"
+        - ''
+        - Ce que disent les règles
       rows:
         - cells:
-            - "Ce que l’on peut acheter"
-            - "Villas, penthouses, duplex et appartements dans les projets RES existants"
+            - Ce que l’on peut acheter
+            - >-
+              Villas, penthouses, duplex et appartements dans les projets RES
+              existants
         - cells:
-            - "Permis de résidence"
-            - "Dès 375 000 USD, pour le propriétaire et sa famille"
+            - Permis de résidence
+            - Dès 375 000 USD, pour le propriétaire et sa famille
         - cells:
-            - "Droits, premier achat"
-            - "70 000 USD ou 5 % du prix, le plus bas des deux"
+            - Droits, premier achat
+            - 70 000 USD ou 5 % du prix, le plus bas des deux
         - cells:
-            - "Droits, revente"
-            - "5 % du prix, plus 5 % de taxe de transfert pour le vendeur"
+            - Droits, revente
+            - 5 % du prix, plus 5 % de taxe de transfert pour le vendeur
         - cells:
-            - "Sur la côte ouest"
-            - "22 des 77 projets de la liste 2022 de l’EDB"
+            - Sur la côte ouest
+            - 22 des 77 projets de la liste 2022 de l’EDB
     faqs:
-      - question: "Quelle différence entre le RES et l’IRS ?"
-        answer: "Les deux permettent aux étrangers d’acheter avec un permis de résidence dès 375 000 USD, avec les mêmes droits. Les projets RES sont de petits ensembles résidentiels, les projets IRS de grands domaines avec golf ou marina."
-      - question: "Y a t il des projets RES à Tamarin et Rivière Noire ?"
-        answer: "Oui. Sur les 77 projets de la liste RES de l’EDB datée de novembre 2022, 15 sont à Tamarin (dont La Mivoie et Plantation Marguery), 6 à Rivière Noire (dont La Preneuse et Cascavelle) et 1 à Chamarel."
-      - question: "Peut on louer un bien RES ?"
-        answer: "Oui. Selon l’EDB, les propriétaires peuvent louer, devenir résidents fiscaux et rapatrier librement l’argent d’une location ou d’une vente."
-    seoDescription: "Le Real Estate Scheme (RES) à Maurice : résidence dès 375 000 USD, droits d’enregistrement, et pourquoi tant de projets RES sont à Tamarin et Rivière Noire."
+      - question: Quelle différence entre le RES et l’IRS ?
+        answer: >-
+          Les deux permettent aux étrangers d’acheter avec un permis de
+          résidence dès 375 000 USD, avec les mêmes droits. Les projets RES sont
+          de petits ensembles résidentiels, les projets IRS de grands domaines
+          avec golf ou marina.
+      - question: Y a t il des projets RES à Tamarin et Rivière Noire ?
+        answer: >-
+          Oui. Sur les 77 projets de la liste RES de l’EDB datée de novembre
+          2022, 15 sont à Tamarin (dont La Mivoie et Plantation Marguery), 6 à
+          Rivière Noire (dont La Preneuse et Cascavelle) et 1 à Chamarel.
+      - question: Peut on louer un bien RES ?
+        answer: >-
+          Oui. Selon l’EDB, les propriétaires peuvent louer, devenir résidents
+          fiscaux et rapatrier librement l’argent d’une location ou d’une vente.
+    seoDescription: >-
+      Le Real Estate Scheme (RES) à Maurice : résidence dès 375 000 USD, droits
+      d’enregistrement, et pourquoi tant de projets RES sont à Tamarin et
+      Rivière Noire.

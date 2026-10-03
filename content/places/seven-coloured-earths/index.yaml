@@ -20,7 +20,7 @@ images:
   - image: /images/places/seven-coloured-earths/images/1/image.jpg
     alt:
       en:
-        text: The Seven Coloured Earths of Chamarel, with forest behind
+        text: The Seven Coloured Earths of Chamarel with forest behind
       fr:
         text: La Terre des Sept Couleurs de Chamarel, avec la forêt derrière
     credit: jokin.lacalle · CC BY 4.0 · Wikimedia Commons
@@ -30,8 +30,8 @@ content:
   en:
     name: Seven Coloured Earths
     summary: >-
-      Small dunes of sand in seven distinct colours, formed from weathered
-      volcanic rock, the best known sight of Chamarel.
+      Small dunes of sand in seven distinct colours formed from weathered
+      volcanic rock. They are the best known sight of Chamarel.
     hoursNote: Entrance fee. Check opening times before you go.
   fr:
     name: Terre des Sept Couleurs

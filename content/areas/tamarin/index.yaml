@@ -3,23 +3,23 @@ order: 2
 placeholder: false
 updatedAt: '2026-10-03'
 sources:
-  - title: "Driving distances and times"
-    publisher: "OpenStreetMap (OSRM routing)"
+  - title: Driving distances and times
+    publisher: OpenStreetMap (OSRM routing)
     url: https://map.project-osrm.org/
     checkedAt: '2026-10-03'
-  - title: "Healthcare and private clinics"
-    publisher: "Economic Development Board"
+  - title: Healthcare and private clinics
+    publisher: Economic Development Board
     url: https://residency.mu/practical-information/health/
     checkedAt: '2026-10-03'
-  - title: "International schools"
-    publisher: "Economic Development Board"
+  - title: International schools
+    publisher: Economic Development Board
     url: https://residency.mu/practical-information/education/
     checkedAt: '2026-10-03'
-  - title: 'Tamarin, Mauritius'
+  - title: Tamarin (Mauritius)
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Tamarin,_Mauritius
     checkedAt: '2026-10-01'
-  - title: 'Rivière Noire District'
+  - title: Rivière Noire District
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Rivière_Noire_District
     checkedAt: '2026-10-01'
@@ -48,134 +48,246 @@ living:
   costs:
     - item:
         en:
-          text: "House, 2 to 4 bedrooms (100 to 200 m²), rent per month"
+          text: House with 2 to 4 bedrooms (100 to 200 m²) rent per month
         fr:
-          text: "Maison, 2 à 4 chambres (100 à 200 m²), loyer mensuel"
-      amount: "USD 500 to 1,000"
+          text: Maison, 2 à 4 chambres (100 à 200 m²), loyer mensuel
+      amount: USD 500 to 1 000
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Villa with garden and pool, 3 to 6 bedrooms, rent per month"
+          text: 'Villa with garden and pool and 3 to 6 bedrooms: rent per month'
         fr:
-          text: "Villa avec jardin et piscine, 3 à 6 chambres, loyer mensuel"
-      amount: "USD 1,200 to 2,400"
+          text: Villa avec jardin et piscine, 3 à 6 chambres, loyer mensuel
+      amount: USD 1 200 to 2 400
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Electricity, household, per month"
+          text: Household electricity per month
         fr:
-          text: "Électricité, foyer, par mois"
-      amount: "USD 20 to 100"
+          text: Électricité, foyer, par mois
+      amount: USD 20 to 100
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Water, family of 3 to 4, per month"
+          text: Water for a family of 3 to 4 per month
         fr:
-          text: "Eau, famille de 3 à 4, par mois"
-      amount: "USD 3 to 6"
+          text: Eau, famille de 3 à 4, par mois
+      amount: USD 3 to 6
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Internet (20 Mbps), per month"
+          text: Internet (20 Mbps) per month
         fr:
-          text: "Internet (20 Mbps), par mois"
-      amount: "USD 30"
+          text: Internet (20 Mbps), par mois
+      amount: USD 30
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Meal for two, moderately priced restaurant"
+          text: Meal for two in a moderately priced restaurant
         fr:
-          text: "Repas pour deux, restaurant moyen de gamme"
-      amount: "From USD 30"
+          text: Repas pour deux, restaurant moyen de gamme
+      amount: From USD 30
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Petrol, per litre"
+          text: Petrol per litre
         fr:
-          text: "Essence, par litre"
-      amount: "USD 1.45"
+          text: Essence, par litre
+      amount: USD 1.45
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
   content:
     en:
-      shortAnswer: "Tamarin suits families and active people. Two international primary schools on the EDB's list are in the village, the bay has surf and dolphins, and Port Louis is about 29 km away. It feels like a village people live in rather than a resort."
-      livingHere: "Tamarin is a lived in village around a wide bay ringed by mountains: Mauritian families, people from abroad who live here all year and a tight surf community share the same streets.\n\nMornings start early here, with surfers in the water and dolphins often in the bay before they head back out to sea. In the late afternoon the light on the mountains is at its best."
-      schools: "The Economic Development Board's list of international schools includes two primary schools in Tamarin: Paul et Virginie Primary School on the Royal Road, and Telfair International Primary School at Morcellement Saltpans. For secondary school, Westcoast International Secondary School is at the Medine Education Village in Pierrefonds, near Flic en Flac. Public primary and secondary schools are free, and teach mainly in English."
-      healthcare: "The Economic Development Board lists two private clinics on this coast: Clinique de l'Occident on the Royal Road in Flic en Flac (about 12 km, roughly 13 minutes with no traffic) and Artemis Cascavelle Hospital in Cascavelle (about 9 km, roughly 11 minutes with no traffic). The nearest public regional hospital is Victoria Hospital in Quatre Bornes (about 17 km, roughly 20 minutes with no traffic). The SAMU emergency service covers the whole island: dial 114 for an ambulance. Pharmacies are found throughout the island."
-      commuting: "By car, Port Louis is about 29 km, roughly 32 minutes with no traffic, Ebène about 21 km, roughly 25 minutes with no traffic and the international airport about 51 km, roughly 47 minutes with no traffic. Rush hour traffic towards Port Louis and Ebène can add a lot to these times. Flic en Flac is about 12 km north along the coast."
+      shortAnswer: >-
+        Tamarin suits families and active people. Two international primary
+        schools on the EDB's list are in the village. The bay has surf and
+        dolphins and Port Louis is about 29 km away. It feels like a village
+        people live in rather than a resort.
+      livingHere: >-
+        Tamarin is a lived in village around a wide bay ringed by mountains.
+        Mauritian families and people from abroad who live here all year and a
+        tight surf community share the same streets.
+
+
+        Mornings start early here with surfers in the water and dolphins often
+        in the bay before they head back out to sea. In the late afternoon the
+        light on the mountains is at its best.
+      schools: >-
+        The Economic Development Board's list of international schools includes
+        two primary schools in Tamarin: Paul et Virginie Primary School on the
+        Royal Road and Telfair International Primary School at Morcellement
+        Saltpans. For secondary school Westcoast International Secondary School
+        is at the Medine Education Village in Pierrefonds near Flic en Flac.
+        Public primary and secondary schools are free and teach mainly in
+        English.
+      healthcare: >-
+        The Economic Development Board lists two private clinics on this coast.
+        Clinique de l'Occident on the Royal Road in Flic en Flac is about 12 km
+        away (around 13 minutes without traffic). Artemis Cascavelle Hospital in
+        Cascavelle is about 9 km away (around 11 minutes). The nearest public
+        regional hospital is Victoria Hospital in Quatre Bornes at about 17 km
+        (around 20 minutes). The SAMU emergency service covers the whole island:
+        dial 114 for an ambulance. Pharmacies are found all over the island.
+      commuting: >-
+        By car Port Louis is about 29 km away (around 32 minutes without
+        traffic). Ebène is about 21 km (around 25 minutes) and the international
+        airport about 51 km (around 47 minutes). Rush hour traffic towards Port
+        Louis and Ebène can add a lot to these times. Flic en Flac is about 12
+        km north along the coast.
       pros:
-        - "Two international primary schools in the village"
-        - "Surf, dolphins and the bay on your doorstep"
-        - "A village atmosphere, with Black River and the national park next door"
+        - Two international primary schools in the village
+        - Surf and dolphins and the bay on your doorstep
+        - A village atmosphere with Black River and the national park next door
       cons:
-        - "Further from Port Louis and Ebène than Flic en Flac"
-        - "The water in the bay can be less clear after heavy rain, where the river meets the sea"
-        - "The surf breaks have a strong local lineup: for experienced surfers only"
+        - Further from Port Louis and Ebène than Flic en Flac
+        - >-
+          The water in the bay can be less clear after heavy rain where the
+          river meets the sea
+        - >-
+          The surf breaks have a strong local lineup: for experienced surfers
+          only
       faqs:
-        - question: "Is Tamarin a good place to live?"
-          answer: "For families and people who love the sea, yes: two international primary schools on the EDB's list are in the village, the bay has surf and dolphins, and it feels like a real village rather than a resort. Port Louis is about 29 km away."
-        - question: "How much does it cost to live in Tamarin?"
-          answer: "The Economic Development Board's indicative figures for Mauritius are USD 500 to 1,000 a month to rent a 2 to 4 bedroom house, and USD 1,200 to 2,400 for a villa with a garden and pool. See our page on the cost of living in Tamarin for more."
-        - question: "Are there good schools near Tamarin?"
-          answer: "Two international primary schools on the EDB's list are in Tamarin: Paul et Virginie Primary School and Telfair International Primary School. Westcoast International Secondary School is at Medine, near Flic en Flac."
-        - question: "Where is the nearest hospital to Tamarin?"
-          answer: "Artemis Cascavelle Hospital, a private hospital, is about 9 km away, and Clinique de l'Occident in Flic en Flac about 12 km. The nearest public regional hospital is Victoria Hospital in Quatre Bornes, about 17 km."
-        - question: "How long is the drive from Tamarin to Port Louis and Ebène?"
-          answer: "About 29 km to Port Louis and 21 km to Ebène, roughly 32 and 25 minutes with no traffic, according to OpenStreetMap routing. Rush hour can add a lot."
-        - question: "Can foreigners buy property in Tamarin?"
-          answer: "Yes. Tamarin has many developments approved for foreign buyers: 15 of the 77 projects on the EDB's 2022 list of Real Estate Scheme projects are in Tamarin, and the Cap Tamarin smart city is here. See our guide to buying property in Tamarin."
+        - question: Is Tamarin a good place to live?
+          answer: >-
+            For families and people who love the sea yes. Two international
+            primary schools on the EDB's list are in the village and the bay has
+            surf and dolphins. It feels like a real village rather than a
+            resort. Port Louis is about 29 km away.
+        - question: How much does it cost to live in Tamarin?
+          answer: "The Economic Development Board's indicative figures for Mauritius are USD 500 to 1\_000 a month to rent a 2 to 4 bedroom house and USD 1\_200 to 2\_400 for a villa with a garden and pool. See our page on the cost of living in Tamarin for more."
+        - question: Are there good schools near Tamarin?
+          answer: >-
+            Two international primary schools on the EDB's list are in Tamarin:
+            Paul et Virginie Primary School and Telfair International Primary
+            School. Westcoast International Secondary School is at Medine near
+            Flic en Flac.
+        - question: Where is the nearest hospital to Tamarin?
+          answer: >-
+            The private Artemis Cascavelle Hospital is about 9 km away and
+            Clinique de l'Occident in Flic en Flac about 12 km. The nearest
+            public regional hospital is Victoria Hospital in Quatre Bornes at
+            about 17 km.
+        - question: How long is the drive from Tamarin to Port Louis and Ebène?
+          answer: >-
+            About 29 km to Port Louis and 21 km to Ebène. That is roughly 32 and
+            25 minutes with no traffic according to OpenStreetMap routing. Rush
+            hour can add a lot.
+        - question: Can foreigners buy property in Tamarin?
+          answer: >-
+            Yes. Tamarin has many developments approved for foreign buyers: 15
+            of the 77 projects on the EDB's 2022 list of Real Estate Scheme
+            projects are in Tamarin and the Cap Tamarin smart city is here. See
+            our guide to buying property in Tamarin.
     fr:
-      shortAnswer: "Tamarin convient aux familles et aux sportifs. Deux écoles primaires internationales de la liste de l’EDB sont au village, la baie offre surf et dauphins, et Port Louis est à environ 29 km. C’est un village habité plutôt qu’une station balnéaire."
-      livingHere: "Tamarin est un vrai village autour d’une large baie entourée de montagnes : familles mauriciennes, résidents venus de l’étranger et une communauté de surfeurs partagent les mêmes rues.\n\nLes journées commencent tôt, avec les surfeurs à l’eau et souvent des dauphins dans la baie avant qu’ils ne repartent au large. En fin d’après midi, la lumière sur les montagnes est à son plus beau."
-      schools: "La liste des écoles internationales de l’Economic Development Board comprend deux écoles primaires à Tamarin : Paul et Virginie Primary School, sur la Royal Road, et Telfair International Primary School, au Morcellement Saltpans. Pour le secondaire, Westcoast International Secondary School est au Medine Education Village à Pierrefonds, près de Flic en Flac. Les écoles publiques primaires et secondaires sont gratuites et enseignent surtout en anglais."
-      healthcare: "L’Economic Development Board liste deux cliniques privées sur cette côte : la Clinique de l’Occident, sur la Royal Road à Flic en Flac (environ 12 km, soit 13 minutes sans circulation), et l’hôpital Artemis Cascavelle, à Cascavelle (environ 9 km, soit 11 minutes sans circulation). L’hôpital public régional le plus proche est l’hôpital Victoria à Quatre Bornes (environ 17 km, soit 20 minutes sans circulation). Le SAMU couvre toute l’île : composez le 114 pour une ambulance. On trouve des pharmacies partout."
-      commuting: "En voiture, Port Louis est à environ 29 km, soit 32 minutes sans circulation, Ebène à environ 21 km, soit 25 minutes sans circulation et l’aéroport international à environ 51 km, soit 47 minutes sans circulation. Aux heures de pointe, les trajets vers Port Louis et Ebène peuvent être bien plus longs. Flic en Flac est à environ 12 km au nord par la côte."
+      shortAnswer: >-
+        Tamarin convient aux familles et aux sportifs. Deux écoles primaires
+        internationales de la liste de l’EDB sont au village, la baie offre surf
+        et dauphins, et Port Louis est à environ 29 km. C’est un village habité
+        plutôt qu’une station balnéaire.
+      livingHere: >-
+        Tamarin est un vrai village autour d’une large baie entourée de
+        montagnes : familles mauriciennes, résidents venus de l’étranger et une
+        communauté de surfeurs partagent les mêmes rues.
+
+
+        Les journées commencent tôt, avec les surfeurs à l’eau et souvent des
+        dauphins dans la baie avant qu’ils ne repartent au large. En fin d’après
+        midi, la lumière sur les montagnes est à son plus beau.
+      schools: >-
+        La liste des écoles internationales de l’Economic Development Board
+        comprend deux écoles primaires à Tamarin : Paul et Virginie Primary
+        School, sur la Royal Road, et Telfair International Primary School, au
+        Morcellement Saltpans. Pour le secondaire, Westcoast International
+        Secondary School est au Medine Education Village à Pierrefonds, près de
+        Flic en Flac. Les écoles publiques primaires et secondaires sont
+        gratuites et enseignent surtout en anglais.
+      healthcare: >-
+        L’Economic Development Board liste deux cliniques privées sur cette côte
+        : la Clinique de l’Occident, sur la Royal Road à Flic en Flac (environ
+        12 km, soit 13 minutes sans circulation), et l’hôpital Artemis
+        Cascavelle, à Cascavelle (environ 9 km, soit 11 minutes sans
+        circulation). L’hôpital public régional le plus proche est l’hôpital
+        Victoria à Quatre Bornes (environ 17 km, soit 20 minutes sans
+        circulation). Le SAMU couvre toute l’île : composez le 114 pour une
+        ambulance. On trouve des pharmacies partout.
+      commuting: >-
+        En voiture, Port Louis est à environ 29 km, soit 32 minutes sans
+        circulation, Ebène à environ 21 km, soit 25 minutes sans circulation et
+        l’aéroport international à environ 51 km, soit 47 minutes sans
+        circulation. Aux heures de pointe, les trajets vers Port Louis et Ebène
+        peuvent être bien plus longs. Flic en Flac est à environ 12 km au nord
+        par la côte.
       pros:
-        - "Deux écoles primaires internationales au village"
-        - "Le surf, les dauphins et la baie à votre porte"
-        - "Une ambiance de village, avec Rivière Noire et le parc national à côté"
+        - Deux écoles primaires internationales au village
+        - Le surf, les dauphins et la baie à votre porte
+        - Une ambiance de village, avec Rivière Noire et le parc national à côté
       cons:
-        - "Plus loin de Port Louis et d’Ebène que Flic en Flac"
-        - "L’eau de la baie peut être moins claire après de fortes pluies, là où la rivière rejoint la mer"
-        - "Les vagues ont leurs habitués : réservées aux surfeurs confirmés"
+        - Plus loin de Port Louis et d’Ebène que Flic en Flac
+        - >-
+          L’eau de la baie peut être moins claire après de fortes pluies, là où
+          la rivière rejoint la mer
+        - 'Les vagues ont leurs habitués : réservées aux surfeurs confirmés'
       faqs:
-        - question: "Fait il bon vivre à Tamarin ?"
-          answer: "Pour les familles et les amoureux de la mer, oui : deux écoles primaires internationales de la liste de l’EDB sont au village, la baie offre surf et dauphins, et c’est un vrai village plutôt qu’une station. Port Louis est à environ 29 km."
-        - question: "Combien coûte la vie à Tamarin ?"
-          answer: "Les chiffres indicatifs de l’Economic Development Board pour Maurice : 500 à 1 000 USD par mois pour une maison de 2 à 4 chambres, 1 200 à 2 400 USD pour une villa avec jardin et piscine. Voyez notre page sur le coût de la vie à Tamarin."
-        - question: "Quelles écoles près de Tamarin ?"
-          answer: "Deux écoles primaires internationales de la liste de l’EDB sont à Tamarin : Paul et Virginie Primary School et Telfair International Primary School. Westcoast International Secondary School est à Médine, près de Flic en Flac."
-        - question: "Où est l’hôpital le plus proche de Tamarin ?"
-          answer: "L’hôpital privé Artemis Cascavelle est à environ 9 km, et la Clinique de l’Occident à Flic en Flac à environ 12 km. L’hôpital public régional le plus proche est l’hôpital Victoria à Quatre Bornes, à environ 17 km."
-        - question: "Combien de temps de Tamarin à Port Louis et Ebène ?"
-          answer: "Environ 29 km jusqu’à Port Louis et 21 km jusqu’à Ebène, soit environ 32 et 25 minutes sans circulation, selon OpenStreetMap."
-        - question: "Un étranger peut acheter un bien à Tamarin ?"
-          answer: "Oui. Tamarin compte de nombreux projets agréés pour les acheteurs étrangers : 15 des 77 projets de la liste RES 2022 de l’EDB sont à Tamarin, et la smart city Cap Tamarin s’y trouve. Voyez notre guide pour acheter un bien à Tamarin."
+        - question: Fait il bon vivre à Tamarin ?
+          answer: >-
+            Pour les familles et les amoureux de la mer, oui : deux écoles
+            primaires internationales de la liste de l’EDB sont au village, la
+            baie offre surf et dauphins, et c’est un vrai village plutôt qu’une
+            station. Port Louis est à environ 29 km.
+        - question: Combien coûte la vie à Tamarin ?
+          answer: >-
+            Les chiffres indicatifs de l’Economic Development Board pour Maurice
+            : 500 à 1 000 USD par mois pour une maison de 2 à 4 chambres, 1 200
+            à 2 400 USD pour une villa avec jardin et piscine. Voyez notre page
+            sur le coût de la vie à Tamarin.
+        - question: Quelles écoles près de Tamarin ?
+          answer: >-
+            Deux écoles primaires internationales de la liste de l’EDB sont à
+            Tamarin : Paul et Virginie Primary School et Telfair International
+            Primary School. Westcoast International Secondary School est à
+            Médine, près de Flic en Flac.
+        - question: Où est l’hôpital le plus proche de Tamarin ?
+          answer: >-
+            L’hôpital privé Artemis Cascavelle est à environ 9 km, et la
+            Clinique de l’Occident à Flic en Flac à environ 12 km. L’hôpital
+            public régional le plus proche est l’hôpital Victoria à Quatre
+            Bornes, à environ 17 km.
+        - question: Combien de temps de Tamarin à Port Louis et Ebène ?
+          answer: >-
+            Environ 29 km jusqu’à Port Louis et 21 km jusqu’à Ebène, soit
+            environ 32 et 25 minutes sans circulation, selon OpenStreetMap.
+        - question: Un étranger peut acheter un bien à Tamarin ?
+          answer: >-
+            Oui. Tamarin compte de nombreux projets agréés pour les acheteurs
+            étrangers : 15 des 77 projets de la liste RES 2022 de l’EDB sont à
+            Tamarin, et la smart city Cap Tamarin s’y trouve. Voyez notre guide
+            pour acheter un bien à Tamarin.
 content:
   en:
     name: Tamarin
-    tagline: Surf, salt pans and dolphins at dawn
+    tagline: Surf and salt pans and dolphins at dawn
     intro: >-
-      A village on a wide bay where the Tamarin river meets the sea, ringed by
-      mountains. The bay has a place in surfing history, the early mornings
-      belong to the dolphins, and the old salt pans by the road recall how the
-      coast once made its living.
+      A village on a wide bay ringed by mountains where the Tamarin river meets
+      the sea. The bay has a place in surfing history and the early mornings
+      belong to the dolphins. The old salt pans by the road recall how the coast
+      once made its living.
     seoDescription: >-
-      Tamarin, west Mauritius: a surf bay with history, dolphins in the early
-      morning and the old salt pans. What the village is like and what to know.
+      Tamarin in west Mauritius: a surf bay with history and dolphins in the
+      early morning and the old salt pans. What the village is like and what to
+      know.
   fr:
     name: Tamarin
     tagline: Surf, salines et dauphins à l’aube

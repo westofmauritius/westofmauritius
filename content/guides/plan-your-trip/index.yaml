@@ -1,19 +1,20 @@
 category: practical
 placeholder: false
 sources:
-  - title: 'Mauritius'
+  - title: Mauritius
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Mauritius
     checkedAt: '2026-10-01'
-  - title: 'Sir Seewoosagur Ramgoolam International Airport'
+  - title: Sir Seewoosagur Ramgoolam International Airport
     publisher: Wikipedia
-    url: https://en.wikipedia.org/wiki/Sir_Seewoosagur_Ramgoolam_International_Airport
+    url: >-
+      https://en.wikipedia.org/wiki/Sir_Seewoosagur_Ramgoolam_International_Airport
     checkedAt: '2026-10-01'
-  - title: 'Telephone numbers in Mauritius'
+  - title: Telephone numbers in Mauritius
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Telephone_numbers_in_Mauritius
     checkedAt: '2026-10-01'
-  - title: 'Mauritius Time'
+  - title: Mauritius Time
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Mauritius_Time
     checkedAt: '2026-10-01'
@@ -27,9 +28,7 @@ hero:
     image: /images/areas/flic-en-flac/hero/image.jpg
     alt:
       en:
-        text: >-
-          Flic en Flac beach lined with filao trees, with the lagoon on the
-          right
+        text: Flic en Flac beach lined with filao trees with the lagoon on the right
       fr:
         text: La plage de Flic en Flac bordée de filaos, avec le lagon à droite
     credit: dronepicr · CC BY 2.0 · Wikimedia Commons
@@ -40,11 +39,12 @@ content:
   en:
     title: Planning a trip to the west coast of Mauritius
     excerpt: >-
-      When to come, how to get here and get around, money, language and the
-      practical details: everything to know before a stay on the west coast.
+      When to come and how to get here and get around. Money and language and
+      the practical details: everything to know before a stay on the west coast.
     seoDescription: >-
-      Plan a trip to west Mauritius: best time to visit, the airport and getting
-      around, money, language, plugs, time zone and emergency numbers.
+      Plan a trip to west Mauritius: the best time to visit and the airport and
+      getting around. Money and language and plugs and the time zone and
+      emergency numbers.
   fr:
     title: Préparer un séjour sur la côte ouest de l’île Maurice
     slug: preparer-un-sejour-cote-ouest

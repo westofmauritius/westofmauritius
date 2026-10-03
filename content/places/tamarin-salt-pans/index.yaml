@@ -12,7 +12,7 @@ images:
   - image: /images/places/tamarin-salt-pans/images/0/image.jpg
     alt:
       en:
-        text: The Tamarin salt pans seen from above, a patchwork of shallow basins
+        text: The Tamarin salt pans seen from above as a patchwork of shallow basins
       fr:
         text: Les salines de Tamarin vues du ciel, un damier de bassins peu profonds
     credit: Arne Müseler · CC BY-SA 3.0 de · Wikimedia Commons
@@ -22,8 +22,9 @@ content:
   en:
     name: Tamarin salt pans
     summary: >-
-      Shallow basins where seawater was left to evaporate in the sun, for a long
-      time the island's main source of salt, and a piece of coastal heritage.
+      Shallow basins where seawater was left to evaporate in the sun. For a long
+      time they were the island's main source of salt and they are a piece of
+      coastal heritage.
     hoursNote: Visible from the road. Ask before entering the basins.
   fr:
     name: Salines de Tamarin

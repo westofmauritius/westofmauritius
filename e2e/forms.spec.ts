@@ -130,7 +130,7 @@ test("WhatsApp group: asks for consent, saves and shows in the admin by page", a
   await form.getByLabel("Planning to move").check();
   await form.getByRole("checkbox").check();
   await form.getByRole("button", { name: "Ask for an invitation" }).click();
-  await expect(form.getByText("Thank you, you are on the list")).toBeVisible();
+  await expect(form.getByText("Thank you! You are on the list")).toBeVisible();
 
   // Only one newsletter form on a page that has its own.
   await expect(page.getByRole("button", { name: "Subscribe" })).toHaveCount(1);

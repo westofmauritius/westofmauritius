@@ -41,7 +41,7 @@ export async function Sources({
               {source.title}
             </a>
             {source.publisher && (
-              <span className="text-ink-muted">, {source.publisher}</span>
+              <span className="text-ink-muted"> · {source.publisher}</span>
             )}
             {source.checkedAt && (
               <span className="text-ink-muted">

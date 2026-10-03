@@ -110,6 +110,8 @@ test("no dashes or hyphens in the visible text", async ({ page }) => {
     const text = await page.locator("body").innerText();
     // Also "95-metre": a hyphen between letters or digits.
     expect(text, url).not.toMatch(/[‒-―]|[\p{L}\d]-[\p{L}\d]/u);
+    // No commas either, in English for now (French is still hidden).
+    if (url.startsWith("/en")) expect(text, url).not.toContain(",");
   }
 });
 
@@ -216,7 +218,7 @@ test("the village quiz recommends an area and leads to a shortlist", async ({
     page.getByText("Please answer all three questions."),
   ).toBeVisible();
   await page.getByLabel("I prefer the hills and cooler air").check();
-  await page.getByLabel("Quiet, close to nature").check();
+  await page.getByLabel("Quiet and close to nature").check();
   await page.getByLabel("A hike in the national park").check();
   await page.getByRole("button", { name: "Show my village" }).click();
   await expect(

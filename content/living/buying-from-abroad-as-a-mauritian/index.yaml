@@ -4,87 +4,138 @@ placeholder: false
 publishedAt: '2026-10-02'
 updatedAt: '2026-10-02'
 sources:
-  - title: "Mauritian Diaspora Scheme"
-    publisher: "Economic Development Board"
+  - title: Mauritian Diaspora Scheme
+    publisher: Economic Development Board
     url: https://residency.mu/work/mauritian-diaspora/
     checkedAt: '2026-10-02'
-  - title: "Guidelines for buyers of residential property under the IRS, RES and PDS (November 2024)"
-    publisher: "Economic Development Board"
-    url: https://residency.mu/wp-content/uploads/2021/06/Guidelines-for-IRS-RES-PDS.pdf
+  - title: >-
+      Guidelines for buyers of residential property under the IRS and RES and PDS
+      (November 2024)
+    publisher: Economic Development Board
+    url: >-
+      https://residency.mu/wp-content/uploads/2021/06/Guidelines-for-IRS-RES-PDS.pdf
     checkedAt: '2026-10-02'
-  - title: "Property Development Scheme guidelines"
-    publisher: "Economic Development Board"
+  - title: Property Development Scheme guidelines
+    publisher: Economic Development Board
     url: https://residency.mu/wp-content/uploads/2024/05/Guidelines-PDS.pdf
     checkedAt: '2026-10-02'
-  - title: "Legislation for foreign residents"
-    publisher: "Economic Development Board"
+  - title: Legislation for foreign residents
+    publisher: Economic Development Board
     url: https://residency.mu/practical-information/legislation/
     checkedAt: '2026-10-02'
 content:
   en:
-    title: "Buying from abroad as a Mauritian"
-    excerpt: "Coming home, or buying a place for the holidays while you live abroad: what is different for Mauritian citizens, and what the Mauritian Diaspora Scheme offers."
-    shortAnswer: "As a Mauritian citizen you are not limited to the schemes for foreigners, and inside those schemes you may pay in rupees or in foreign currency. If you buy a serviced plot in a PDS project you have ten years to build, against five for foreigners. If you are moving back to work or start a business, look at the Mauritian Diaspora Scheme, which you must apply for before you return or within 180 days of starting work."
+    title: Buying from abroad as a Mauritian
+    excerpt: >-
+      Coming home or buying a place for the holidays while you live abroad: what
+      is different for Mauritian citizens and what the Mauritian Diaspora Scheme
+      offers.
+    shortAnswer: >-
+      As a Mauritian citizen you are not limited to the schemes for foreigners
+      and inside those schemes you may pay in rupees or in foreign currency. If
+      you buy a serviced plot in a PDS project you have ten years to build
+      against five for foreigners. If you are moving back to work or start a
+      business look at the Mauritian Diaspora Scheme which you must apply for
+      before you return or within 180 days of starting work.
     table:
-      caption: "Mauritian citizens and the schemes"
+      caption: Mauritian citizens and the schemes
       headers:
-        - ""
-        - "For Mauritian citizens"
-        - "For foreigners"
+        - ''
+        - For Mauritian citizens
+        - For foreigners
       rows:
         - cells:
-            - "Where you can buy"
-            - "Anywhere, including inside the schemes"
-            - "Only through the schemes or ground plus two apartments"
+            - Where you can buy
+            - Anywhere including inside the schemes
+            - Only through the schemes or ground plus two apartments
         - cells:
-            - "Currency inside the schemes"
-            - "Rupees or foreign currency"
-            - "Foreign currency from abroad"
+            - Currency inside the schemes
+            - Rupees or foreign currency
+            - Foreign currency from abroad
         - cells:
-            - "Serviced plot in a PDS project"
-            - "Build within 10 years"
-            - "Build within 5 years, one plot only"
+            - Serviced plot in a PDS project
+            - Build within 10 years
+            - Build within 5 years and one plot only
     faqs:
-      - question: "Do Mauritians living abroad need to use the PDS or IRS?"
-        answer: "No. The schemes exist because Mauritian law restricts property purchases by foreigners. As a citizen you can buy outside them, and you may also buy inside them."
-      - question: "Can a Mauritian pay in rupees for a PDS home?"
-        answer: "Yes. The EDB guidelines say a citizen can buy a residential property under the schemes and pay in Mauritian rupees or any freely convertible foreign currency."
-      - question: "What is the Mauritian Diaspora Scheme?"
-        answer: "A government scheme to bring members of the Mauritian diaspora back to work or set up a business. You apply to the Economic Development Board as a professional, a self employed person or a young professional."
-      - question: "When do I apply for the Diaspora Scheme?"
-        answer: "Before you return to Mauritius, or no more than 180 days after you start your first job or register your first business here."
-    seoDescription: "Buying property in Mauritius from abroad as a Mauritian: what differs from foreigners, paying in rupees, PDS plots and the Mauritian Diaspora Scheme. From EDB sources."
+      - question: Do Mauritians living abroad need to use the PDS or IRS?
+        answer: >-
+          No. The schemes exist because Mauritian law restricts property
+          purchases by foreigners. As a citizen you can buy outside them and you
+          may also buy inside them.
+      - question: Can a Mauritian pay in rupees for a PDS home?
+        answer: >-
+          Yes. The EDB guidelines say a citizen can buy a residential property
+          under the schemes and pay in Mauritian rupees or any freely
+          convertible foreign currency.
+      - question: What is the Mauritian Diaspora Scheme?
+        answer: >-
+          A government scheme to bring members of the Mauritian diaspora back to
+          work or set up a business. You apply to the Economic Development Board
+          as a professional or a self employed person or a young professional.
+      - question: When do I apply for the Diaspora Scheme?
+        answer: >-
+          Before you return to Mauritius or no more than 180 days after you
+          start your first job or register your first business here.
+    seoDescription: >-
+      Buying property in Mauritius from abroad as a Mauritian: what differs from
+      foreigners and paying in rupees with PDS plots and the Mauritian Diaspora
+      Scheme.
   fr:
-    title: "Acheter depuis l’étranger quand on est Mauricien"
+    title: Acheter depuis l’étranger quand on est Mauricien
     slug: acheter-depuis-l-etranger
-    excerpt: "Rentrer au pays, ou acheter un pied à terre en vivant à l’étranger : ce qui change pour un citoyen mauricien, et ce qu’offre le Mauritian Diaspora Scheme."
-    shortAnswer: "En tant que citoyen mauricien, vous n’êtes pas limité aux dispositifs pour étrangers, et dans ces dispositifs vous pouvez payer en roupies ou en devises. Pour un terrain viabilisé dans un projet PDS, vous avez dix ans pour construire, contre cinq pour un étranger. Si vous rentrez pour travailler ou créer une entreprise, regardez le Mauritian Diaspora Scheme, à demander avant votre retour ou dans les 180 jours après votre premier emploi."
+    excerpt: >-
+      Rentrer au pays, ou acheter un pied à terre en vivant à l’étranger : ce
+      qui change pour un citoyen mauricien, et ce qu’offre le Mauritian Diaspora
+      Scheme.
+    shortAnswer: >-
+      En tant que citoyen mauricien, vous n’êtes pas limité aux dispositifs pour
+      étrangers, et dans ces dispositifs vous pouvez payer en roupies ou en
+      devises. Pour un terrain viabilisé dans un projet PDS, vous avez dix ans
+      pour construire, contre cinq pour un étranger. Si vous rentrez pour
+      travailler ou créer une entreprise, regardez le Mauritian Diaspora Scheme,
+      à demander avant votre retour ou dans les 180 jours après votre premier
+      emploi.
     table:
-      caption: "Les citoyens mauriciens et les dispositifs"
+      caption: Les citoyens mauriciens et les dispositifs
       headers:
-        - ""
-        - "Citoyens mauriciens"
-        - "Étrangers"
+        - ''
+        - Citoyens mauriciens
+        - Étrangers
       rows:
         - cells:
-            - "Où acheter"
-            - "Partout, y compris dans les dispositifs"
-            - "Seulement par les dispositifs ou un appartement en immeuble"
+            - Où acheter
+            - Partout, y compris dans les dispositifs
+            - Seulement par les dispositifs ou un appartement en immeuble
         - cells:
-            - "Devise dans les dispositifs"
-            - "Roupies ou devises"
-            - "Devises venues de l’étranger"
+            - Devise dans les dispositifs
+            - Roupies ou devises
+            - Devises venues de l’étranger
         - cells:
-            - "Terrain dans un projet PDS"
-            - "Construire en 10 ans"
-            - "Construire en 5 ans, un seul terrain"
+            - Terrain dans un projet PDS
+            - Construire en 10 ans
+            - Construire en 5 ans, un seul terrain
     faqs:
-      - question: "Un Mauricien vivant à l’étranger doit passer par le PDS ou l’IRS ?"
-        answer: "Non. Les dispositifs existent parce que la loi limite les achats des étrangers. En tant que citoyen, vous pouvez acheter en dehors, et aussi à l’intérieur."
-      - question: "Un Mauricien peut payer un bien PDS en roupies ?"
-        answer: "Oui. Les lignes directrices de l’EDB précisent qu’un citoyen peut acheter dans les dispositifs et payer en roupies ou dans une devise convertible."
-      - question: "Qu’est ce que le Mauritian Diaspora Scheme ?"
-        answer: "Un dispositif du gouvernement pour faire revenir les membres de la diaspora mauricienne travailler ou créer une entreprise. La demande se fait auprès de l’EDB, comme professionnel, indépendant ou jeune professionnel."
-      - question: "Quand demander le Diaspora Scheme ?"
-        answer: "Avant votre retour à Maurice, ou au plus tard 180 jours après votre premier emploi ou l’enregistrement de votre première entreprise."
-    seoDescription: "Acheter à Maurice depuis l’étranger quand on est Mauricien : ce qui change par rapport aux étrangers, payer en roupies, les terrains PDS et le Mauritian Diaspora Scheme."
+      - question: Un Mauricien vivant à l’étranger doit passer par le PDS ou l’IRS ?
+        answer: >-
+          Non. Les dispositifs existent parce que la loi limite les achats des
+          étrangers. En tant que citoyen, vous pouvez acheter en dehors, et
+          aussi à l’intérieur.
+      - question: Un Mauricien peut payer un bien PDS en roupies ?
+        answer: >-
+          Oui. Les lignes directrices de l’EDB précisent qu’un citoyen peut
+          acheter dans les dispositifs et payer en roupies ou dans une devise
+          convertible.
+      - question: Qu’est ce que le Mauritian Diaspora Scheme ?
+        answer: >-
+          Un dispositif du gouvernement pour faire revenir les membres de la
+          diaspora mauricienne travailler ou créer une entreprise. La demande se
+          fait auprès de l’EDB, comme professionnel, indépendant ou jeune
+          professionnel.
+      - question: Quand demander le Diaspora Scheme ?
+        answer: >-
+          Avant votre retour à Maurice, ou au plus tard 180 jours après votre
+          premier emploi ou l’enregistrement de votre première entreprise.
+    seoDescription: >-
+      Acheter à Maurice depuis l’étranger quand on est Mauricien : ce qui change
+      par rapport aux étrangers, payer en roupies, les terrains PDS et le
+      Mauritian Diaspora Scheme.

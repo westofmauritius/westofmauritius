@@ -6,110 +6,155 @@ placeholder: false
 publishedAt: '2026-10-03'
 updatedAt: '2026-10-03'
 sources:
-  - title: "Cost of living in Mauritius"
-    publisher: "Economic Development Board"
+  - title: Cost of living in Mauritius
+    publisher: Economic Development Board
     url: https://residency.mu/cost-of-living/
     checkedAt: '2026-10-03'
-  - title: "International schools"
-    publisher: "Economic Development Board"
+  - title: International schools
+    publisher: Economic Development Board
     url: https://residency.mu/practical-information/education/
     checkedAt: '2026-10-03'
-  - title: "Healthcare and private clinics"
-    publisher: "Economic Development Board"
+  - title: Healthcare and private clinics
+    publisher: Economic Development Board
     url: https://residency.mu/practical-information/health/
     checkedAt: '2026-10-03'
-  - title: "Driving distances and times"
-    publisher: "OpenStreetMap (OSRM routing)"
+  - title: Driving distances and times
+    publisher: OpenStreetMap (OSRM routing)
     url: https://map.project-osrm.org/
     checkedAt: '2026-10-03'
 content:
   en:
-    title: "How much does it cost to live in Tamarin?"
+    title: How much does it cost to live in Tamarin?
     slug: cost-of-living-in-tamarin
-    excerpt: "Rent, utilities, groceries, transport and schools in Tamarin, using the official indicative figures for Mauritius."
-    shortAnswer: "There are no official figures for Tamarin alone. The Economic Development Board's indicative figures for Mauritius put rent at USD 500 to 1,000 a month for a 2 to 4 bedroom house and USD 1,200 to 2,400 for a villa with a garden and pool. Electricity, water and internet add roughly USD 55 to 135 a month. Families should add international school fees, which the schools give on request."
+    excerpt: >-
+      Rent and utilities and groceries and transport and schools in Tamarin
+      using the official indicative figures for Mauritius.
+    shortAnswer: >-
+      There are no official figures for Tamarin alone. The Economic Development
+      Board's indicative figures for Mauritius put rent at USD 500 to 1 000 a
+      month for a 2 to 4 bedroom house and USD 1 200 to 2 400 for a villa with a
+      garden and pool. Electricity and water and internet add roughly USD 55 to
+      135 a month. Families should add international school fees which the
+      schools give on request.
     table:
-      caption: "Indicative monthly costs (Mauritius)"
+      caption: Indicative monthly costs (Mauritius)
       headers:
-        - ""
-        - "Indicative cost"
+        - ''
+        - Indicative cost
       rows:
         - cells:
-            - "House, 2 to 4 bedrooms, rent"
-            - "USD 500 to 1,000 a month"
+            - 'House with 2 to 4 bedrooms: rent'
+            - "USD 500 to 1\_000 a month"
         - cells:
-            - "Villa with garden and pool, 3 to 6 bedrooms, rent"
-            - "USD 1,200 to 2,400 a month"
+            - 'Villa with garden and pool and 3 to 6 bedrooms: rent'
+            - "USD 1\_200 to 2\_400 a month"
         - cells:
-            - "Electricity"
-            - "USD 20 to 100 a month"
+            - Electricity
+            - USD 20 to 100 a month
         - cells:
-            - "Water, family of 3 to 4"
-            - "USD 3 to 6 a month"
+            - Water for a family of 3 to 4
+            - USD 3 to 6 a month
         - cells:
-            - "Internet, 20 Mbps"
-            - "USD 30 a month"
+            - Internet at 20 Mbps
+            - USD 30 a month
         - cells:
-            - "Meal for two, moderately priced restaurant"
-            - "From USD 30"
+            - Meal for two in a moderately priced restaurant
+            - From USD 30
         - cells:
-            - "Bus ticket, one way"
-            - "USD 1.00"
+            - Bus ticket one way
+            - USD 1.00
         - cells:
-            - "Petrol"
-            - "USD 1.45 a litre"
+            - Petrol
+            - USD 1.45 a litre
     faqs:
-      - question: "Is Tamarin expensive to live in?"
-        answer: "No official figures exist for Tamarin alone. The EDB's indicative figures for Mauritius give rents from USD 500 a month for a 2 to 4 bedroom house to USD 2,400 for a large villa with a pool; ask local agents where Tamarin sits in that range today."
-      - question: "How much is rent in Tamarin?"
-        answer: "Use the EDB's indicative figures as a starting point: USD 500 to 1,000 a month for a house with 2 to 4 bedrooms, and USD 1,200 to 2,400 for a villa with a garden and pool. Some landlords also ask for a deposit and an agency fee."
-      - question: "How much are utilities in Tamarin?"
-        answer: "According to the EDB: electricity USD 20 to 100 a month depending on use, water USD 3 to 6 for a family of three to four, and internet around USD 30 for a 20 Mbps connection."
-      - question: "Do I need a car in Tamarin?"
-        answer: "It makes life much easier. Buses are cheap (about USD 1 a ticket, says the EDB), but schools, clinics and shops are spread along the coast. Note that buying a car in Mauritius comes with 100% excise duty."
-    seoDescription: "Cost of living in Tamarin, Mauritius: rent, utilities, groceries and transport from the official EDB figures, plus schools and healthcare nearby."
+      - question: Is Tamarin expensive to live in?
+        answer: "No official figures exist for Tamarin alone. The EDB's indicative figures for Mauritius give rents from USD 500 a month for a 2 to 4 bedroom house to USD 2\_400 for a large villa with a pool; ask local agents where Tamarin sits in that range today."
+      - question: How much is rent in Tamarin?
+        answer: "Use the EDB's indicative figures as a starting point: USD 500 to 1\_000 a month for a house with 2 to 4 bedrooms and USD 1\_200 to 2\_400 for a villa with a garden and pool. Some landlords also ask for a deposit and an agency fee."
+      - question: How much are utilities in Tamarin?
+        answer: >-
+          According to the EDB electricity costs USD 20 to 100 a month depending
+          on use. Water is USD 3 to 6 for a family of three to four and internet
+          around USD 30 for a 20 Mbps connection.
+      - question: Do I need a car in Tamarin?
+        answer: >-
+          It makes life much easier. Buses are cheap (about USD 1 a ticket says
+          the EDB) but schools and clinics and shops are spread along the coast.
+          Note that buying a car in Mauritius comes with 100% excise duty.
+    seoDescription: >-
+      Cost of living in Tamarin in Mauritius: rent and utilities and groceries
+      and transport from the official EDB figures plus schools and healthcare
+      nearby.
   fr:
-    title: "Combien coûte la vie à Tamarin ?"
+    title: Combien coûte la vie à Tamarin ?
     slug: cout-de-la-vie-a-tamarin
-    excerpt: "Loyers, factures, courses, transport et écoles à Tamarin, d’après les chiffres indicatifs officiels pour Maurice."
-    shortAnswer: "Il n’existe pas de chiffres officiels pour Tamarin seul. Les chiffres indicatifs de l’Economic Development Board pour Maurice donnent un loyer de 500 à 1 000 USD par mois pour une maison de 2 à 4 chambres et de 1 200 à 2 400 USD pour une villa avec jardin et piscine. L’électricité, l’eau et internet ajoutent environ 55 à 135 USD par mois. Les familles doivent ajouter les frais des écoles internationales, que les écoles communiquent sur demande."
+    excerpt: >-
+      Loyers, factures, courses, transport et écoles à Tamarin, d’après les
+      chiffres indicatifs officiels pour Maurice.
+    shortAnswer: >-
+      Il n’existe pas de chiffres officiels pour Tamarin seul. Les chiffres
+      indicatifs de l’Economic Development Board pour Maurice donnent un loyer
+      de 500 à 1 000 USD par mois pour une maison de 2 à 4 chambres et de 1 200
+      à 2 400 USD pour une villa avec jardin et piscine. L’électricité, l’eau et
+      internet ajoutent environ 55 à 135 USD par mois. Les familles doivent
+      ajouter les frais des écoles internationales, que les écoles communiquent
+      sur demande.
     table:
-      caption: "Coûts mensuels indicatifs (Maurice)"
+      caption: Coûts mensuels indicatifs (Maurice)
       headers:
-        - ""
-        - "Coût indicatif"
+        - ''
+        - Coût indicatif
       rows:
         - cells:
-            - "Maison, 2 à 4 chambres, loyer"
-            - "500 à 1 000 USD par mois"
+            - Maison, 2 à 4 chambres, loyer
+            - 500 à 1 000 USD par mois
         - cells:
-            - "Villa avec jardin et piscine, 3 à 6 chambres, loyer"
-            - "1 200 à 2 400 USD par mois"
+            - Villa avec jardin et piscine, 3 à 6 chambres, loyer
+            - 1 200 à 2 400 USD par mois
         - cells:
-            - "Électricité"
-            - "20 à 100 USD par mois"
+            - Électricité
+            - 20 à 100 USD par mois
         - cells:
-            - "Eau, famille de 3 à 4"
-            - "3 à 6 USD par mois"
+            - Eau, famille de 3 à 4
+            - 3 à 6 USD par mois
         - cells:
-            - "Internet, 20 Mbps"
-            - "30 USD par mois"
+            - Internet, 20 Mbps
+            - 30 USD par mois
         - cells:
-            - "Repas pour deux, restaurant moyen de gamme"
-            - "Dès 30 USD"
+            - Repas pour deux, restaurant moyen de gamme
+            - Dès 30 USD
         - cells:
-            - "Ticket de bus, aller simple"
-            - "1,00 USD"
+            - Ticket de bus, aller simple
+            - 1,00 USD
         - cells:
-            - "Essence"
-            - "1,45 USD le litre"
+            - Essence
+            - 1,45 USD le litre
     faqs:
-      - question: "La vie est chère à Tamarin ?"
-        answer: "Il n’existe pas de chiffres officiels pour Tamarin seul. Selon les chiffres indicatifs de l’EDB pour Maurice, les loyers vont de 500 USD par mois pour une maison de 2 à 4 chambres à 2 400 USD pour une grande villa avec piscine ; demandez aux agents locaux où se situe Tamarin aujourd’hui."
-      - question: "Quel loyer à Tamarin ?"
-        answer: "Partez des chiffres indicatifs de l’EDB : 500 à 1 000 USD par mois pour une maison de 2 à 4 chambres, 1 200 à 2 400 USD pour une villa avec jardin et piscine. Certains bailleurs demandent aussi un dépôt et des frais d’agence."
-      - question: "Combien coûtent les factures à Tamarin ?"
-        answer: "Selon l’EDB : électricité 20 à 100 USD par mois selon la consommation, eau 3 à 6 USD pour une famille de trois ou quatre, internet environ 30 USD pour 20 Mbps."
-      - question: "Faut il une voiture à Tamarin ?"
-        answer: "C’est bien plus pratique. Le bus coûte environ 1 USD le ticket selon l’EDB, mais écoles, cliniques et commerces sont répartis le long de la côte. L’achat d’une voiture à Maurice est soumis à 100 % de droits d’accise."
-    seoDescription: "Le coût de la vie à Tamarin, île Maurice : loyers, factures, courses et transport d’après les chiffres officiels de l’EDB, avec les écoles et la santé à proximité."
+      - question: La vie est chère à Tamarin ?
+        answer: >-
+          Il n’existe pas de chiffres officiels pour Tamarin seul. Selon les
+          chiffres indicatifs de l’EDB pour Maurice, les loyers vont de 500 USD
+          par mois pour une maison de 2 à 4 chambres à 2 400 USD pour une grande
+          villa avec piscine ; demandez aux agents locaux où se situe Tamarin
+          aujourd’hui.
+      - question: Quel loyer à Tamarin ?
+        answer: >-
+          Partez des chiffres indicatifs de l’EDB : 500 à 1 000 USD par mois
+          pour une maison de 2 à 4 chambres, 1 200 à 2 400 USD pour une villa
+          avec jardin et piscine. Certains bailleurs demandent aussi un dépôt et
+          des frais d’agence.
+      - question: Combien coûtent les factures à Tamarin ?
+        answer: >-
+          Selon l’EDB : électricité 20 à 100 USD par mois selon la consommation,
+          eau 3 à 6 USD pour une famille de trois ou quatre, internet environ 30
+          USD pour 20 Mbps.
+      - question: Faut il une voiture à Tamarin ?
+        answer: >-
+          C’est bien plus pratique. Le bus coûte environ 1 USD le ticket selon
+          l’EDB, mais écoles, cliniques et commerces sont répartis le long de la
+          côte. L’achat d’une voiture à Maurice est soumis à 100 % de droits
+          d’accise.
+    seoDescription: >-
+      Le coût de la vie à Tamarin, île Maurice : loyers, factures, courses et
+      transport d’après les chiffres officiels de l’EDB, avec les écoles et la
+      santé à proximité.

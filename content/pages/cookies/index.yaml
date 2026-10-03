@@ -4,8 +4,13 @@ content:
   en:
     title: Cookies
     intro: The public site uses no cookies.
-    seoDescription: "West of Mauritius sets no cookies for visitors: no advertising, no tracking, cookie free statistics. Here is how the site works without them."
+    seoDescription: >-
+      West of Mauritius sets no cookies for visitors. There is no advertising
+      and no tracking and the statistics are cookie free. Here is how the site
+      works without them.
   fr:
     title: Cookies
     intro: Le site public n’utilise aucun cookie.
-    seoDescription: "Ouest Maurice ne dépose aucun cookie chez les visiteurs : ni publicité, ni suivi, des statistiques sans cookies. Voici comment le site s’en passe."
+    seoDescription: >-
+      Ouest Maurice ne dépose aucun cookie chez les visiteurs : ni publicité, ni
+      suivi, des statistiques sans cookies. Voici comment le site s’en passe.

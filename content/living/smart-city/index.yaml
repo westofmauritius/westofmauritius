@@ -4,76 +4,112 @@ placeholder: false
 publishedAt: '2026-10-02'
 updatedAt: '2026-10-02'
 sources:
-  - title: "Smart City Scheme"
-    publisher: "Economic Development Board"
+  - title: Smart City Scheme
+    publisher: Economic Development Board
     url: https://residency.mu/acquire/smart-city-scheme/
     checkedAt: '2026-10-02'
-  - title: "Summary of Smart City projects (2025)"
-    publisher: "Economic Development Board"
-    url: https://residency.mu/wp-content/uploads/2021/06/List-Smart-City-projects-with-contact-details-2025.pdf
+  - title: Summary of Smart City projects (2025)
+    publisher: Economic Development Board
+    url: >-
+      https://residency.mu/wp-content/uploads/2021/06/List-Smart-City-projects-with-contact-details-2025.pdf
     checkedAt: '2026-10-02'
-  - title: "Economic Development Board Act, as amended to August 2026"
-    publisher: "Government of Mauritius, published by the EDB"
+  - title: Economic Development Board Act as amended to August 2026
+    publisher: Government of Mauritius (published by the EDB)
     url: https://edbmauritius.org/wp-content/uploads/2026/08/EDB-Act-2026.pdf
     checkedAt: '2026-10-02'
 content:
   en:
-    title: "Smart City Scheme"
-    excerpt: "Large new towns where people live, work and study in one place, two of them on the west coast: what foreigners can buy and when it comes with a residence permit."
-    shortAnswer: "Smart cities are large mixed developments approved by the Economic Development Board, combining homes, offices, schools and leisure. Foreigners can buy a townhouse, villa, apartment, penthouse or duplex in any of them, with a residence permit from USD 375,000. Two are on the west coast: Cap Tamarin in Tamarin and Medine Smart City, which the EDB lists under Flic en Flac."
+    title: Smart City Scheme
+    excerpt: >-
+      Large new towns where people live and work and study in one place with two
+      of them on the west coast: what foreigners can buy and when it comes with
+      a residence permit.
+    shortAnswer: >-
+      Smart cities are large mixed developments approved by the Economic
+      Development Board that combine homes and offices and schools and leisure.
+      Foreigners can buy a townhouse or villa or apartment or penthouse or
+      duplex in any of them with a residence permit from USD 375 000. Two are on
+      the west coast: Cap Tamarin in Tamarin and Medine Smart City which the EDB
+      lists under Flic en Flac.
     table:
-      caption: "The Smart City Scheme at a glance"
+      caption: The Smart City Scheme at a glance
       headers:
-        - ""
-        - "What the rules say"
+        - ''
+        - What the rules say
       rows:
         - cells:
-            - "What you can buy"
-            - "Townhouses, villas, apartments, penthouses and duplexes"
+            - What you can buy
+            - Townhouses and villas and apartments and penthouses and duplexes
         - cells:
-            - "Residence permit"
-            - "From USD 375,000"
+            - Residence permit
+            - "From USD 375\_000"
         - cells:
-            - "On the west coast"
-            - "Cap Tamarin (Tamarin) and Medine Smart City (listed under Flic en Flac)"
+            - On the west coast
+            - >-
+              Cap Tamarin (Tamarin) and Medine Smart City (listed under Flic en
+              Flac)
         - cells:
-            - "Serviced plots for foreigners"
-            - "Offered until 30 June 2022, according to the EDB"
+            - Serviced plots for foreigners
+            - Offered until 30 June 2022 according to the EDB
     faqs:
-      - question: "Which smart cities are on the west coast?"
-        answer: "On the EDB's 2025 summary of smart city projects, Cap Tamarin is located in Tamarin and Medine Smart City in Flic en Flac. Medine's project is known as Uniciti."
-      - question: "Does buying in a smart city give residency?"
-        answer: "Yes, if the home costs USD 375,000 or more."
-      - question: "Can a foreigner buy a plot of land in a smart city?"
-        answer: "The EDB says permit holders could buy a serviced plot of up to 2,100 m² to build a house, but only if the purchase was made by 30 June 2022. Ask the developer what is possible today."
-    seoDescription: "Smart City Scheme Mauritius: what foreigners can buy, the residence permit from USD 375,000, and the two smart cities on the west coast, Cap Tamarin and Medine."
+      - question: Which smart cities are on the west coast?
+        answer: >-
+          On the EDB's 2025 summary of smart city projects Cap Tamarin is
+          located in Tamarin and Medine Smart City in Flic en Flac. Medine's
+          project is known as Uniciti.
+      - question: Does buying in a smart city give residency?
+        answer: "Yes if the home costs USD 375\_000 or more."
+      - question: Can a foreigner buy a plot of land in a smart city?
+        answer: "The EDB says permit holders could buy a serviced plot of up to 2\_100 m² to build a house but only if the purchase was made by 30 June 2022. Ask the developer what is possible today."
+    seoDescription: >-
+      Smart City Scheme Mauritius: what foreigners can buy and the residence
+      permit from USD 375 000. Plus the two smart cities on the west coast: Cap
+      Tamarin and Medine.
   fr:
-    title: "Smart City Scheme"
-    excerpt: "De grandes villes nouvelles où l’on vit, travaille et étudie au même endroit, dont deux sur la côte ouest : ce que les étrangers peuvent acheter et quand cela donne la résidence."
-    shortAnswer: "Les smart cities sont de grands projets mixtes agréés par l’Economic Development Board, qui réunissent logements, bureaux, écoles et loisirs. Les étrangers peuvent y acheter une maison de ville, une villa, un appartement, un penthouse ou un duplex, avec un permis de résidence dès 375 000 USD. Deux sont sur la côte ouest : Cap Tamarin à Tamarin et Medine Smart City, que l’EDB situe à Flic en Flac."
+    title: Smart City Scheme
+    excerpt: >-
+      De grandes villes nouvelles où l’on vit, travaille et étudie au même
+      endroit, dont deux sur la côte ouest : ce que les étrangers peuvent
+      acheter et quand cela donne la résidence.
+    shortAnswer: >-
+      Les smart cities sont de grands projets mixtes agréés par l’Economic
+      Development Board, qui réunissent logements, bureaux, écoles et loisirs.
+      Les étrangers peuvent y acheter une maison de ville, une villa, un
+      appartement, un penthouse ou un duplex, avec un permis de résidence dès
+      375 000 USD. Deux sont sur la côte ouest : Cap Tamarin à Tamarin et Medine
+      Smart City, que l’EDB situe à Flic en Flac.
     table:
-      caption: "Le Smart City Scheme en bref"
+      caption: Le Smart City Scheme en bref
       headers:
-        - ""
-        - "Ce que disent les règles"
+        - ''
+        - Ce que disent les règles
       rows:
         - cells:
-            - "Ce que l’on peut acheter"
-            - "Maisons de ville, villas, appartements, penthouses et duplex"
+            - Ce que l’on peut acheter
+            - Maisons de ville, villas, appartements, penthouses et duplex
         - cells:
-            - "Permis de résidence"
-            - "Dès 375 000 USD"
+            - Permis de résidence
+            - Dès 375 000 USD
         - cells:
-            - "Sur la côte ouest"
-            - "Cap Tamarin (Tamarin) et Medine Smart City (Flic en Flac)"
+            - Sur la côte ouest
+            - Cap Tamarin (Tamarin) et Medine Smart City (Flic en Flac)
         - cells:
-            - "Terrains pour étrangers"
-            - "Proposés jusqu’au 30 juin 2022, selon l’EDB"
+            - Terrains pour étrangers
+            - Proposés jusqu’au 30 juin 2022, selon l’EDB
     faqs:
-      - question: "Quelles smart cities sur la côte ouest ?"
-        answer: "Selon le récapitulatif 2025 de l’EDB, Cap Tamarin est à Tamarin et Medine Smart City à Flic en Flac. Le projet de Médine est connu sous le nom d’Uniciti."
-      - question: "Acheter dans une smart city donne la résidence ?"
-        answer: "Oui, si le logement coûte 375 000 USD ou plus."
-      - question: "Un étranger peut acheter un terrain dans une smart city ?"
-        answer: "Selon l’EDB, les titulaires d’un permis pouvaient acheter un terrain viabilisé jusqu’à 2 100 m², mais seulement jusqu’au 30 juin 2022. Demandez au promoteur ce qui est possible aujourd’hui."
-    seoDescription: "Le Smart City Scheme à Maurice : ce que les étrangers peuvent acheter, la résidence dès 375 000 USD, et les deux smart cities de la côte ouest, Cap Tamarin et Médine."
+      - question: Quelles smart cities sur la côte ouest ?
+        answer: >-
+          Selon le récapitulatif 2025 de l’EDB, Cap Tamarin est à Tamarin et
+          Medine Smart City à Flic en Flac. Le projet de Médine est connu sous
+          le nom d’Uniciti.
+      - question: Acheter dans une smart city donne la résidence ?
+        answer: Oui, si le logement coûte 375 000 USD ou plus.
+      - question: Un étranger peut acheter un terrain dans une smart city ?
+        answer: >-
+          Selon l’EDB, les titulaires d’un permis pouvaient acheter un terrain
+          viabilisé jusqu’à 2 100 m², mais seulement jusqu’au 30 juin 2022.
+          Demandez au promoteur ce qui est possible aujourd’hui.
+    seoDescription: >-
+      Le Smart City Scheme à Maurice : ce que les étrangers peuvent acheter, la
+      résidence dès 375 000 USD, et les deux smart cities de la côte ouest, Cap
+      Tamarin et Médine.

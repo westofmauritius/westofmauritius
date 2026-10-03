@@ -3,19 +3,19 @@ order: 3
 placeholder: false
 updatedAt: '2026-10-03'
 sources:
-  - title: "Driving distances and times"
-    publisher: "OpenStreetMap (OSRM routing)"
+  - title: Driving distances and times
+    publisher: OpenStreetMap (OSRM routing)
     url: https://map.project-osrm.org/
     checkedAt: '2026-10-03'
-  - title: "Healthcare and private clinics"
-    publisher: "Economic Development Board"
+  - title: Healthcare and private clinics
+    publisher: Economic Development Board
     url: https://residency.mu/practical-information/health/
     checkedAt: '2026-10-03'
-  - title: "International schools"
-    publisher: "Economic Development Board"
+  - title: International schools
+    publisher: Economic Development Board
     url: https://residency.mu/practical-information/education/
     checkedAt: '2026-10-03'
-  - title: 'Rivière Noire District'
+  - title: Rivière Noire District
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Rivière_Noire_District
     checkedAt: '2026-10-01'
@@ -43,134 +43,231 @@ living:
   costs:
     - item:
         en:
-          text: "House, 2 to 4 bedrooms (100 to 200 m²), rent per month"
+          text: House with 2 to 4 bedrooms (100 to 200 m²) rent per month
         fr:
-          text: "Maison, 2 à 4 chambres (100 à 200 m²), loyer mensuel"
-      amount: "USD 500 to 1,000"
+          text: Maison, 2 à 4 chambres (100 à 200 m²), loyer mensuel
+      amount: USD 500 to 1 000
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Villa with garden and pool, 3 to 6 bedrooms, rent per month"
+          text: 'Villa with garden and pool and 3 to 6 bedrooms: rent per month'
         fr:
-          text: "Villa avec jardin et piscine, 3 à 6 chambres, loyer mensuel"
-      amount: "USD 1,200 to 2,400"
+          text: Villa avec jardin et piscine, 3 à 6 chambres, loyer mensuel
+      amount: USD 1 200 to 2 400
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Electricity, household, per month"
+          text: Household electricity per month
         fr:
-          text: "Électricité, foyer, par mois"
-      amount: "USD 20 to 100"
+          text: Électricité, foyer, par mois
+      amount: USD 20 to 100
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Water, family of 3 to 4, per month"
+          text: Water for a family of 3 to 4 per month
         fr:
-          text: "Eau, famille de 3 à 4, par mois"
-      amount: "USD 3 to 6"
+          text: Eau, famille de 3 à 4, par mois
+      amount: USD 3 to 6
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Internet (20 Mbps), per month"
+          text: Internet (20 Mbps) per month
         fr:
-          text: "Internet (20 Mbps), par mois"
-      amount: "USD 30"
+          text: Internet (20 Mbps), par mois
+      amount: USD 30
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Meal for two, moderately priced restaurant"
+          text: Meal for two in a moderately priced restaurant
         fr:
-          text: "Repas pour deux, restaurant moyen de gamme"
-      amount: "From USD 30"
+          text: Repas pour deux, restaurant moyen de gamme
+      amount: From USD 30
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Petrol, per litre"
+          text: Petrol per litre
         fr:
-          text: "Essence, par litre"
-      amount: "USD 1.45"
+          text: Essence, par litre
+      amount: USD 1.45
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
   content:
     en:
-      shortAnswer: "Black River suits people who want the sea and the mountains at once: the island's main big game fishing harbour, La Preneuse beach, and the largest national park on the doorstep. Artemis Cascavelle Hospital is about 13 km away and Tamarin's schools just up the road."
-      livingHere: "Black River is the working heart of the west coast: fishing boats head out beyond the reef, and La Preneuse beach, with its Martello tower, is a local favourite at sunset.\n\nInland rise the forests and ravines of the Black River Gorges National Park, with some 60 km of trails, so hikes and early morning birdwatching are part of everyday life here."
-      schools: "No school on the Economic Development Board's list of international schools is in Black River itself, but the two international primary schools in Tamarin, Paul et Virginie and Telfair, are about 4 km away. Westcoast International Primary School is at Cascavelle and the secondary school at Medine, near Flic en Flac. Public primary and secondary schools are free, and teach mainly in English."
-      healthcare: "The Economic Development Board lists two private clinics on this coast: Clinique de l'Occident on the Royal Road in Flic en Flac (about 15 km, roughly 18 minutes with no traffic) and Artemis Cascavelle Hospital in Cascavelle (about 13 km, roughly 15 minutes with no traffic). The nearest public regional hospital is Victoria Hospital in Quatre Bornes (about 21 km, roughly 25 minutes with no traffic). The SAMU emergency service covers the whole island: dial 114 for an ambulance. Pharmacies are found throughout the island."
-      commuting: "By car, Port Louis is about 33 km, roughly 37 minutes with no traffic, Ebène about 25 km, roughly 30 minutes with no traffic and the international airport about 55 km, roughly 52 minutes with no traffic. Rush hour traffic towards Port Louis and Ebène can add a lot to these times. Tamarin is about 4 km north."
+      shortAnswer: >-
+        Black River suits people who want the sea and the mountains at once. It
+        has the island's main big game fishing harbour and La Preneuse beach and
+        the largest national park right on the doorstep. Artemis Cascavelle
+        Hospital is about 13 km away and Tamarin's schools are just up the road.
+      livingHere: >-
+        Black River is the working heart of the west coast. Fishing boats head
+        out beyond the reef and La Preneuse beach with its Martello tower is a
+        local favourite at sunset.
+
+
+        Inland rise the forests and ravines of the Black River Gorges National
+        Park with some 60 km of trails. Hikes and early morning birdwatching are
+        part of everyday life here.
+      schools: >-
+        No school on the Economic Development Board's list of international
+        schools is in Black River itself. The two international primary schools
+        in Tamarin (Paul et Virginie and Telfair) are about 4 km away. Westcoast
+        International Primary School is at Cascavelle and the secondary school
+        at Medine near Flic en Flac. Public primary and secondary schools are
+        free and teach mainly in English.
+      healthcare: >-
+        The Economic Development Board lists two private clinics on this coast.
+        Clinique de l'Occident on the Royal Road in Flic en Flac is about 15 km
+        away (around 18 minutes without traffic). Artemis Cascavelle Hospital in
+        Cascavelle is about 13 km away (around 15 minutes). The nearest public
+        regional hospital is Victoria Hospital in Quatre Bornes at about 21 km
+        (around 25 minutes). The SAMU emergency service covers the whole island:
+        dial 114 for an ambulance. Pharmacies are found all over the island.
+      commuting: >-
+        By car Port Louis is about 33 km away (around 37 minutes without
+        traffic). Ebène is about 25 km (around 30 minutes) and the international
+        airport about 55 km (around 52 minutes). Rush hour traffic towards Port
+        Louis and Ebène can add a lot to these times. Tamarin is about 4 km
+        north.
       pros:
-        - "The national park and its trails right behind the village"
-        - "Big game fishing and boat life"
-        - "Tamarin's schools a few minutes away"
+        - The national park and its trails right behind the village
+        - Big game fishing and boat life
+        - Tamarin's schools a few minutes away
       cons:
-        - "About 33 km from Port Louis, so a longer commute"
-        - "The uplands can be wet even when the coast is dry"
-        - "Fewer services in the village itself than in Flic en Flac"
+        - About 33 km from Port Louis so a longer commute
+        - The uplands can be wet even when the coast is dry
+        - Fewer services in the village itself than in Flic en Flac
       faqs:
-        - question: "Is Black River a good place to live?"
-          answer: "Yes, if you want nature on your doorstep: the national park, the sea and boat life, with Tamarin's schools a few minutes away. The trade off is a longer drive to Port Louis and Ebène."
-        - question: "How much does it cost to live in Black River?"
-          answer: "The Economic Development Board's indicative figures for Mauritius are USD 500 to 1,000 a month for a 2 to 4 bedroom house and USD 1,200 to 2,400 for a villa with a garden and pool. Ask local agents for current rents in Black River."
-        - question: "Are there good schools near Black River?"
-          answer: "The nearest international schools on the EDB's list are the two primary schools in Tamarin, about 4 km away, and the Westcoast International schools at Cascavelle and Medine."
-        - question: "Where is the nearest hospital to Black River?"
-          answer: "Artemis Cascavelle Hospital is about 13 km away and Clinique de l'Occident in Flic en Flac about 15 km. The nearest public regional hospital is Victoria Hospital in Quatre Bornes, about 21 km."
-        - question: "How long is the drive from Black River to Port Louis and Ebène?"
-          answer: "About 33 km to Port Louis and 25 km to Ebène, roughly 37 and 30 minutes with no traffic, according to OpenStreetMap routing."
-        - question: "Can foreigners buy property in Black River?"
-          answer: "Yes. Six of the 77 projects on the EDB's 2022 list of Real Estate Scheme projects are in Black River, including at La Preneuse and Cascavelle. See our guide to buying property in Black River."
+        - question: Is Black River a good place to live?
+          answer: >-
+            Yes if you want nature on your doorstep: the national park the sea
+            and boat life with Tamarin's schools a few minutes away. The trade
+            off is a longer drive to Port Louis and Ebène.
+        - question: How much does it cost to live in Black River?
+          answer: "The Economic Development Board's indicative figures for Mauritius are USD 500 to 1\_000 a month for a 2 to 4 bedroom house and USD 1\_200 to 2\_400 for a villa with a garden and pool. Ask local agents for current rents in Black River."
+        - question: Are there good schools near Black River?
+          answer: >-
+            The nearest international schools on the EDB's list are the two
+            primary schools in Tamarin about 4 km away and the Westcoast
+            International schools at Cascavelle and Medine.
+        - question: Where is the nearest hospital to Black River?
+          answer: >-
+            Artemis Cascavelle Hospital is about 13 km away and Clinique de
+            l'Occident in Flic en Flac about 15 km. The nearest public regional
+            hospital is Victoria Hospital in Quatre Bornes at about 21 km.
+        - question: How long is the drive from Black River to Port Louis and Ebène?
+          answer: >-
+            About 33 km to Port Louis and 25 km to Ebène. That is roughly 37 and
+            30 minutes with no traffic according to OpenStreetMap routing.
+        - question: Can foreigners buy property in Black River?
+          answer: >-
+            Yes. Six of the 77 projects on the EDB's 2022 list of Real Estate
+            Scheme projects are in Black River including at La Preneuse and
+            Cascavelle. See our guide to buying property in Black River.
     fr:
-      shortAnswer: "Rivière Noire convient à celles et ceux qui veulent la mer et la montagne à la fois : le principal port de pêche au gros de l’île, la plage de La Preneuse et le plus grand parc national à la porte. L’hôpital Artemis Cascavelle est à environ 13 km et les écoles de Tamarin juste à côté."
-      livingHere: "Rivière Noire est le cœur actif de la côte ouest : les bateaux de pêche partent au delà du récif, et la plage de La Preneuse, avec sa tour Martello, est un lieu prisé au coucher du soleil.\n\nÀ l’intérieur s’élèvent les forêts et les ravins du parc national des Gorges de Rivière Noire, avec quelque 60 km de sentiers : randonnées et observation des oiseaux au petit matin font partie du quotidien."
-      schools: "Aucune école de la liste des écoles internationales de l’Economic Development Board n’est à Rivière Noire même, mais les deux écoles primaires internationales de Tamarin, Paul et Virginie et Telfair, sont à environ 4 km. Westcoast International Primary School est à Cascavelle et l’école secondaire à Médine, près de Flic en Flac. Les écoles publiques primaires et secondaires sont gratuites et enseignent surtout en anglais."
-      healthcare: "L’Economic Development Board liste deux cliniques privées sur cette côte : la Clinique de l’Occident, sur la Royal Road à Flic en Flac (environ 15 km, soit 18 minutes sans circulation), et l’hôpital Artemis Cascavelle, à Cascavelle (environ 13 km, soit 15 minutes sans circulation). L’hôpital public régional le plus proche est l’hôpital Victoria à Quatre Bornes (environ 21 km, soit 25 minutes sans circulation). Le SAMU couvre toute l’île : composez le 114 pour une ambulance. On trouve des pharmacies partout."
-      commuting: "En voiture, Port Louis est à environ 33 km, soit 37 minutes sans circulation, Ebène à environ 25 km, soit 30 minutes sans circulation et l’aéroport international à environ 55 km, soit 52 minutes sans circulation. Aux heures de pointe, les trajets vers Port Louis et Ebène peuvent être bien plus longs. Tamarin est à environ 4 km au nord."
+      shortAnswer: >-
+        Rivière Noire convient à celles et ceux qui veulent la mer et la
+        montagne à la fois : le principal port de pêche au gros de l’île, la
+        plage de La Preneuse et le plus grand parc national à la porte.
+        L’hôpital Artemis Cascavelle est à environ 13 km et les écoles de
+        Tamarin juste à côté.
+      livingHere: >-
+        Rivière Noire est le cœur actif de la côte ouest : les bateaux de pêche
+        partent au delà du récif, et la plage de La Preneuse, avec sa tour
+        Martello, est un lieu prisé au coucher du soleil.
+
+
+        À l’intérieur s’élèvent les forêts et les ravins du parc national des
+        Gorges de Rivière Noire, avec quelque 60 km de sentiers : randonnées et
+        observation des oiseaux au petit matin font partie du quotidien.
+      schools: >-
+        Aucune école de la liste des écoles internationales de l’Economic
+        Development Board n’est à Rivière Noire même, mais les deux écoles
+        primaires internationales de Tamarin, Paul et Virginie et Telfair, sont
+        à environ 4 km. Westcoast International Primary School est à Cascavelle
+        et l’école secondaire à Médine, près de Flic en Flac. Les écoles
+        publiques primaires et secondaires sont gratuites et enseignent surtout
+        en anglais.
+      healthcare: >-
+        L’Economic Development Board liste deux cliniques privées sur cette côte
+        : la Clinique de l’Occident, sur la Royal Road à Flic en Flac (environ
+        15 km, soit 18 minutes sans circulation), et l’hôpital Artemis
+        Cascavelle, à Cascavelle (environ 13 km, soit 15 minutes sans
+        circulation). L’hôpital public régional le plus proche est l’hôpital
+        Victoria à Quatre Bornes (environ 21 km, soit 25 minutes sans
+        circulation). Le SAMU couvre toute l’île : composez le 114 pour une
+        ambulance. On trouve des pharmacies partout.
+      commuting: >-
+        En voiture, Port Louis est à environ 33 km, soit 37 minutes sans
+        circulation, Ebène à environ 25 km, soit 30 minutes sans circulation et
+        l’aéroport international à environ 55 km, soit 52 minutes sans
+        circulation. Aux heures de pointe, les trajets vers Port Louis et Ebène
+        peuvent être bien plus longs. Tamarin est à environ 4 km au nord.
       pros:
-        - "Le parc national et ses sentiers juste derrière le village"
-        - "La pêche au gros et la vie des bateaux"
-        - "Les écoles de Tamarin à quelques minutes"
+        - Le parc national et ses sentiers juste derrière le village
+        - La pêche au gros et la vie des bateaux
+        - Les écoles de Tamarin à quelques minutes
       cons:
-        - "Environ 33 km de Port Louis, donc des trajets plus longs"
-        - "Les hauteurs peuvent être humides même quand la côte est sèche"
-        - "Moins de services au village qu’à Flic en Flac"
+        - Environ 33 km de Port Louis, donc des trajets plus longs
+        - Les hauteurs peuvent être humides même quand la côte est sèche
+        - Moins de services au village qu’à Flic en Flac
       faqs:
-        - question: "Fait il bon vivre à Rivière Noire ?"
-          answer: "Oui, si vous voulez la nature à votre porte : le parc national, la mer et les bateaux, avec les écoles de Tamarin à quelques minutes. La contrepartie : un trajet plus long vers Port Louis et Ebène."
-        - question: "Combien coûte la vie à Rivière Noire ?"
-          answer: "Les chiffres indicatifs de l’Economic Development Board pour Maurice : 500 à 1 000 USD par mois pour une maison de 2 à 4 chambres, 1 200 à 2 400 USD pour une villa avec jardin et piscine. Demandez aux agents locaux les loyers actuels à Rivière Noire."
-        - question: "Quelles écoles près de Rivière Noire ?"
-          answer: "Les écoles internationales les plus proches sur la liste de l’EDB sont les deux écoles primaires de Tamarin, à environ 4 km, et les écoles Westcoast International à Cascavelle et Médine."
-        - question: "Où est l’hôpital le plus proche de Rivière Noire ?"
-          answer: "L’hôpital Artemis Cascavelle est à environ 13 km et la Clinique de l’Occident à Flic en Flac à environ 15 km. L’hôpital public régional le plus proche est l’hôpital Victoria à Quatre Bornes, à environ 21 km."
-        - question: "Combien de temps de Rivière Noire à Port Louis et Ebène ?"
-          answer: "Environ 33 km jusqu’à Port Louis et 25 km jusqu’à Ebène, soit environ 37 et 30 minutes sans circulation, selon OpenStreetMap."
-        - question: "Un étranger peut acheter un bien à Rivière Noire ?"
-          answer: "Oui. Six des 77 projets de la liste RES 2022 de l’EDB sont à Rivière Noire, dont à La Preneuse et Cascavelle. Voyez notre guide pour acheter un bien à Rivière Noire."
+        - question: Fait il bon vivre à Rivière Noire ?
+          answer: >-
+            Oui, si vous voulez la nature à votre porte : le parc national, la
+            mer et les bateaux, avec les écoles de Tamarin à quelques minutes.
+            La contrepartie : un trajet plus long vers Port Louis et Ebène.
+        - question: Combien coûte la vie à Rivière Noire ?
+          answer: >-
+            Les chiffres indicatifs de l’Economic Development Board pour Maurice
+            : 500 à 1 000 USD par mois pour une maison de 2 à 4 chambres, 1 200
+            à 2 400 USD pour une villa avec jardin et piscine. Demandez aux
+            agents locaux les loyers actuels à Rivière Noire.
+        - question: Quelles écoles près de Rivière Noire ?
+          answer: >-
+            Les écoles internationales les plus proches sur la liste de l’EDB
+            sont les deux écoles primaires de Tamarin, à environ 4 km, et les
+            écoles Westcoast International à Cascavelle et Médine.
+        - question: Où est l’hôpital le plus proche de Rivière Noire ?
+          answer: >-
+            L’hôpital Artemis Cascavelle est à environ 13 km et la Clinique de
+            l’Occident à Flic en Flac à environ 15 km. L’hôpital public régional
+            le plus proche est l’hôpital Victoria à Quatre Bornes, à environ 21
+            km.
+        - question: Combien de temps de Rivière Noire à Port Louis et Ebène ?
+          answer: >-
+            Environ 33 km jusqu’à Port Louis et 25 km jusqu’à Ebène, soit
+            environ 37 et 30 minutes sans circulation, selon OpenStreetMap.
+        - question: Un étranger peut acheter un bien à Rivière Noire ?
+          answer: >-
+            Oui. Six des 77 projets de la liste RES 2022 de l’EDB sont à Rivière
+            Noire, dont à La Preneuse et Cascavelle. Voyez notre guide pour
+            acheter un bien à Rivière Noire.
 content:
   en:
     name: Black River
-    tagline: Fishing boats, a British tower and the way to the gorges
+    tagline: Fishing boats and a British tower on the way to the gorges
     intro: >-
-      Black River, or Rivière Noire in French, is the working heart of the west
-      coast: the base for big game fishing boats, home to La Preneuse beach and
-      its Martello tower from the 19th century, and the gateway to the island's
-      largest national park.
+      Black River (Rivière Noire in French) is the working heart of the west
+      coast. It is the base for big game fishing boats and home to La Preneuse
+      beach and its 19th century Martello tower. It is also the gateway to the
+      island's largest national park.
     seoDescription: >-
-      Black River (Rivière Noire), west Mauritius: big game fishing, La Preneuse
-      beach and its Martello tower, and Black River Gorges National Park.
+      Black River (Rivière Noire) in west Mauritius: big game fishing and La
+      Preneuse beach with its Martello tower beside Black River Gorges National
+      Park.
   fr:
     name: Rivière Noire
     tagline: Bateaux de pêche, tour anglaise et route des gorges

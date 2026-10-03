@@ -3,23 +3,23 @@ order: 5
 placeholder: false
 updatedAt: '2026-10-03'
 sources:
-  - title: "Driving distances and times"
-    publisher: "OpenStreetMap (OSRM routing)"
+  - title: Driving distances and times
+    publisher: OpenStreetMap (OSRM routing)
     url: https://map.project-osrm.org/
     checkedAt: '2026-10-03'
-  - title: "Healthcare and private clinics"
-    publisher: "Economic Development Board"
+  - title: Healthcare and private clinics
+    publisher: Economic Development Board
     url: https://residency.mu/practical-information/health/
     checkedAt: '2026-10-03'
-  - title: "International schools"
-    publisher: "Economic Development Board"
+  - title: International schools
+    publisher: Economic Development Board
     url: https://residency.mu/practical-information/education/
     checkedAt: '2026-10-03'
-  - title: 'Le Morne Brabant'
+  - title: Le Morne Brabant
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Le_Morne_Brabant
     checkedAt: '2026-10-01'
-  - title: 'Le Morne Cultural Landscape'
+  - title: Le Morne Cultural Landscape
     publisher: UNESCO World Heritage Centre
     url: https://whc.unesco.org/en/list/1259
     checkedAt: '2026-10-01'
@@ -46,135 +46,227 @@ living:
   costs:
     - item:
         en:
-          text: "House, 2 to 4 bedrooms (100 to 200 m²), rent per month"
+          text: House with 2 to 4 bedrooms (100 to 200 m²) rent per month
         fr:
-          text: "Maison, 2 à 4 chambres (100 à 200 m²), loyer mensuel"
-      amount: "USD 500 to 1,000"
+          text: Maison, 2 à 4 chambres (100 à 200 m²), loyer mensuel
+      amount: USD 500 to 1 000
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Villa with garden and pool, 3 to 6 bedrooms, rent per month"
+          text: 'Villa with garden and pool and 3 to 6 bedrooms: rent per month'
         fr:
-          text: "Villa avec jardin et piscine, 3 à 6 chambres, loyer mensuel"
-      amount: "USD 1,200 to 2,400"
+          text: Villa avec jardin et piscine, 3 à 6 chambres, loyer mensuel
+      amount: USD 1 200 to 2 400
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Electricity, household, per month"
+          text: Household electricity per month
         fr:
-          text: "Électricité, foyer, par mois"
-      amount: "USD 20 to 100"
+          text: Électricité, foyer, par mois
+      amount: USD 20 to 100
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Water, family of 3 to 4, per month"
+          text: Water for a family of 3 to 4 per month
         fr:
-          text: "Eau, famille de 3 à 4, par mois"
-      amount: "USD 3 to 6"
+          text: Eau, famille de 3 à 4, par mois
+      amount: USD 3 to 6
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Internet (20 Mbps), per month"
+          text: Internet (20 Mbps) per month
         fr:
-          text: "Internet (20 Mbps), par mois"
-      amount: "USD 30"
+          text: Internet (20 Mbps), par mois
+      amount: USD 30
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Meal for two, moderately priced restaurant"
+          text: Meal for two in a moderately priced restaurant
         fr:
-          text: "Repas pour deux, restaurant moyen de gamme"
-      amount: "From USD 30"
+          text: Repas pour deux, restaurant moyen de gamme
+      amount: From USD 30
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Petrol, per litre"
+          text: Petrol per litre
         fr:
-          text: "Essence, par litre"
-      amount: "USD 1.45"
+          text: Essence, par litre
+      amount: USD 1.45
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
   content:
     en:
-      shortAnswer: "Le Morne suits people who want some of the finest beaches and kitesurfing waters in Mauritius, below a UNESCO listed mountain. It is the most remote of our coastal areas: Port Louis is about 48 km away and the nearest clinic about 28 km."
-      livingHere: "Le Morne is a peninsula almost entirely surrounded by a lagoon, dominated by the basalt mass of Le Morne Brabant. Life here is about the water: swimming off the public beach, and kitesurfing on the lagoon when the winter trade winds blow.\n\nIt is also a place of memory. The mountain is a symbol of the resistance to slavery, and the Le Morne Cultural Landscape is a UNESCO World Heritage Site."
-      schools: "No school on the Economic Development Board's list of international schools is on the Le Morne peninsula. The nearest are the international primary schools in Tamarin, about 20 km away. Public primary and secondary schools are free, and teach mainly in English."
-      healthcare: "The Economic Development Board lists two private clinics on this coast: Clinique de l'Occident on the Royal Road in Flic en Flac (about 30 km, roughly 35 minutes with no traffic) and Artemis Cascavelle Hospital in Cascavelle (about 28 km, roughly 32 minutes with no traffic). The nearest public regional hospital is Victoria Hospital in Quatre Bornes (about 36 km, roughly 42 minutes with no traffic). The SAMU emergency service covers the whole island: dial 114 for an ambulance. Pharmacies are found throughout the island."
-      commuting: "By car, Port Louis is about 48 km, roughly 53 minutes with no traffic, Ebène about 40 km, roughly 46 minutes with no traffic and the international airport about 55 km, roughly 62 minutes with no traffic. Rush hour traffic towards Port Louis and Ebène can add a lot to these times. Tamarin is about 20 km north."
+      shortAnswer: >-
+        Le Morne suits people who want some of the finest beaches and
+        kitesurfing waters in Mauritius below a UNESCO listed mountain. It is
+        the most remote of our coastal areas: Port Louis is about 48 km away and
+        the nearest clinic about 28 km.
+      livingHere: >-
+        Le Morne is a peninsula almost entirely surrounded by a lagoon and
+        dominated by the basalt mass of Le Morne Brabant. Life here is about the
+        water: swimming off the public beach and kitesurfing on the lagoon when
+        the winter trade winds blow.
+
+
+        It is also a place of memory. The mountain is a symbol of the resistance
+        to slavery and the Le Morne Cultural Landscape is a UNESCO World
+        Heritage Site.
+      schools: >-
+        No school on the Economic Development Board's list of international
+        schools is on the Le Morne peninsula. The nearest are the international
+        primary schools in Tamarin about 20 km away. Public primary and
+        secondary schools are free and teach mainly in English.
+      healthcare: >-
+        The Economic Development Board lists two private clinics on this coast.
+        Clinique de l'Occident on the Royal Road in Flic en Flac is about 30 km
+        away (around 35 minutes without traffic). Artemis Cascavelle Hospital in
+        Cascavelle is about 28 km away (around 32 minutes). The nearest public
+        regional hospital is Victoria Hospital in Quatre Bornes at about 36 km
+        (around 42 minutes). The SAMU emergency service covers the whole island:
+        dial 114 for an ambulance. Pharmacies are found all over the island.
+      commuting: >-
+        By car Port Louis is about 48 km away (around 53 minutes without
+        traffic). Ebène is about 40 km (around 46 minutes) and the international
+        airport about 55 km (around 62 minutes). Rush hour traffic towards Port
+        Louis and Ebène can add a lot to these times. Tamarin is about 20 km
+        north.
       pros:
-        - "Some of the finest beaches on the island"
-        - "World class kitesurfing on the lagoon"
-        - "A UNESCO listed landscape, with hiking on Le Morne Brabant"
+        - Some of the finest beaches on the island
+        - World class kitesurfing on the lagoon
+        - A UNESCO listed landscape with hiking on Le Morne Brabant
       cons:
-        - "The most remote of our coastal areas: about 48 km to Port Louis"
-        - "The nearest clinic is about 28 km away"
-        - "Few everyday services nearby"
+        - 'The most remote of our coastal areas: about 48 km to Port Louis'
+        - The nearest clinic is about 28 km away
+        - Few everyday services nearby
       faqs:
-        - question: "Is Le Morne a good place to live?"
-          answer: "For beaches, kitesurfing and nature, few places compare. It is remote, though: about 48 km from Port Louis and 28 km from the nearest clinic, so it suits people who do not commute daily."
-        - question: "How much does it cost to live in Le Morne?"
-          answer: "The Economic Development Board's indicative figures for Mauritius are USD 500 to 1,000 a month for a 2 to 4 bedroom house and USD 1,200 to 2,400 for a villa with a garden and pool. Ask local agents for current rents on the peninsula."
-        - question: "Are there good schools near Le Morne?"
-          answer: "There is no international school on the EDB's list on the peninsula. The nearest are the primary schools in Tamarin, about 20 km away."
-        - question: "Where is the nearest hospital to Le Morne?"
-          answer: "Artemis Cascavelle Hospital is about 28 km away and Clinique de l'Occident in Flic en Flac about 30 km. Victoria Hospital in Quatre Bornes is about 36 km."
-        - question: "How long is the drive from Le Morne to Port Louis and Ebène?"
-          answer: "About 48 km to Port Louis and 40 km to Ebène, roughly 53 and 46 minutes with no traffic, according to OpenStreetMap routing."
-        - question: "Can foreigners buy property in Le Morne?"
-          answer: "Yes, through the schemes for foreign buyers or an apartment of at least MUR 6 million in a building with at least two floors above ground. See our guide to buying property in Le Morne."
+        - question: Is Le Morne a good place to live?
+          answer: >-
+            Few places compare for beaches and kitesurfing and nature. It is
+            remote though: about 48 km from Port Louis and 28 km from the
+            nearest clinic. It suits people who do not commute daily.
+        - question: How much does it cost to live in Le Morne?
+          answer: "The Economic Development Board's indicative figures for Mauritius are USD 500 to 1\_000 a month for a 2 to 4 bedroom house and USD 1\_200 to 2\_400 for a villa with a garden and pool. Ask local agents for current rents on the peninsula."
+        - question: Are there good schools near Le Morne?
+          answer: >-
+            There is no international school on the EDB's list on the peninsula.
+            The nearest are the primary schools in Tamarin about 20 km away.
+        - question: Where is the nearest hospital to Le Morne?
+          answer: >-
+            Artemis Cascavelle Hospital is about 28 km away and Clinique de
+            l'Occident in Flic en Flac about 30 km. Victoria Hospital in Quatre
+            Bornes is about 36 km.
+        - question: How long is the drive from Le Morne to Port Louis and Ebène?
+          answer: >-
+            About 48 km to Port Louis and 40 km to Ebène. That is roughly 53 and
+            46 minutes with no traffic according to OpenStreetMap routing.
+        - question: Can foreigners buy property in Le Morne?
+          answer: >-
+            Yes through the schemes for foreign buyers or an apartment of at
+            least MUR 6 million in a building with at least two floors above
+            ground. See our guide to buying property in Le Morne.
     fr:
-      shortAnswer: "Le Morne convient à celles et ceux qui veulent certaines des plus belles plages et des meilleurs spots de kitesurf de Maurice, au pied d’une montagne classée par l’UNESCO. C’est le plus isolé de nos secteurs côtiers : Port Louis est à environ 48 km et la clinique la plus proche à environ 28 km."
-      livingHere: "Le Morne est une presqu’île presque entièrement entourée d’un lagon, dominée par la masse basaltique du Morne Brabant. La vie y tourne autour de l’eau : baignade à la plage publique, et kitesurf sur le lagon quand soufflent les alizés d’hiver.\n\nC’est aussi un lieu de mémoire. La montagne est un symbole de la résistance à l’esclavage, et le paysage culturel du Morne est inscrit au patrimoine mondial de l’UNESCO."
-      schools: "Aucune école de la liste des écoles internationales de l’Economic Development Board n’est sur la presqu’île du Morne. Les plus proches sont les écoles primaires internationales de Tamarin, à environ 20 km. Les écoles publiques primaires et secondaires sont gratuites et enseignent surtout en anglais."
-      healthcare: "L’Economic Development Board liste deux cliniques privées sur cette côte : la Clinique de l’Occident, sur la Royal Road à Flic en Flac (environ 30 km, soit 35 minutes sans circulation), et l’hôpital Artemis Cascavelle, à Cascavelle (environ 28 km, soit 32 minutes sans circulation). L’hôpital public régional le plus proche est l’hôpital Victoria à Quatre Bornes (environ 36 km, soit 42 minutes sans circulation). Le SAMU couvre toute l’île : composez le 114 pour une ambulance. On trouve des pharmacies partout."
-      commuting: "En voiture, Port Louis est à environ 48 km, soit 53 minutes sans circulation, Ebène à environ 40 km, soit 46 minutes sans circulation et l’aéroport international à environ 55 km, soit 62 minutes sans circulation. Aux heures de pointe, les trajets vers Port Louis et Ebène peuvent être bien plus longs. Tamarin est à environ 20 km au nord."
+      shortAnswer: >-
+        Le Morne convient à celles et ceux qui veulent certaines des plus belles
+        plages et des meilleurs spots de kitesurf de Maurice, au pied d’une
+        montagne classée par l’UNESCO. C’est le plus isolé de nos secteurs
+        côtiers : Port Louis est à environ 48 km et la clinique la plus proche à
+        environ 28 km.
+      livingHere: >-
+        Le Morne est une presqu’île presque entièrement entourée d’un lagon,
+        dominée par la masse basaltique du Morne Brabant. La vie y tourne autour
+        de l’eau : baignade à la plage publique, et kitesurf sur le lagon quand
+        soufflent les alizés d’hiver.
+
+
+        C’est aussi un lieu de mémoire. La montagne est un symbole de la
+        résistance à l’esclavage, et le paysage culturel du Morne est inscrit au
+        patrimoine mondial de l’UNESCO.
+      schools: >-
+        Aucune école de la liste des écoles internationales de l’Economic
+        Development Board n’est sur la presqu’île du Morne. Les plus proches
+        sont les écoles primaires internationales de Tamarin, à environ 20 km.
+        Les écoles publiques primaires et secondaires sont gratuites et
+        enseignent surtout en anglais.
+      healthcare: >-
+        L’Economic Development Board liste deux cliniques privées sur cette côte
+        : la Clinique de l’Occident, sur la Royal Road à Flic en Flac (environ
+        30 km, soit 35 minutes sans circulation), et l’hôpital Artemis
+        Cascavelle, à Cascavelle (environ 28 km, soit 32 minutes sans
+        circulation). L’hôpital public régional le plus proche est l’hôpital
+        Victoria à Quatre Bornes (environ 36 km, soit 42 minutes sans
+        circulation). Le SAMU couvre toute l’île : composez le 114 pour une
+        ambulance. On trouve des pharmacies partout.
+      commuting: >-
+        En voiture, Port Louis est à environ 48 km, soit 53 minutes sans
+        circulation, Ebène à environ 40 km, soit 46 minutes sans circulation et
+        l’aéroport international à environ 55 km, soit 62 minutes sans
+        circulation. Aux heures de pointe, les trajets vers Port Louis et Ebène
+        peuvent être bien plus longs. Tamarin est à environ 20 km au nord.
       pros:
-        - "Certaines des plus belles plages de l’île"
-        - "Un kitesurf de classe mondiale sur le lagon"
-        - "Un paysage classé par l’UNESCO, avec la randonnée du Morne Brabant"
+        - Certaines des plus belles plages de l’île
+        - Un kitesurf de classe mondiale sur le lagon
+        - Un paysage classé par l’UNESCO, avec la randonnée du Morne Brabant
       cons:
-        - "Le plus isolé de nos secteurs côtiers : environ 48 km de Port Louis"
-        - "La clinique la plus proche est à environ 28 km"
-        - "Peu de services du quotidien à proximité"
+        - 'Le plus isolé de nos secteurs côtiers : environ 48 km de Port Louis'
+        - La clinique la plus proche est à environ 28 km
+        - Peu de services du quotidien à proximité
       faqs:
-        - question: "Fait il bon vivre au Morne ?"
-          answer: "Pour les plages, le kitesurf et la nature, peu d’endroits l’égalent. Mais c’est isolé : environ 48 km de Port Louis et 28 km de la clinique la plus proche ; il convient mieux à celles et ceux qui ne font pas de trajets quotidiens."
-        - question: "Combien coûte la vie au Morne ?"
-          answer: "Les chiffres indicatifs de l’Economic Development Board pour Maurice : 500 à 1 000 USD par mois pour une maison de 2 à 4 chambres, 1 200 à 2 400 USD pour une villa avec jardin et piscine. Demandez aux agents locaux les loyers actuels au Morne."
-        - question: "Quelles écoles près du Morne ?"
-          answer: "Il n’y a pas d’école internationale de la liste de l’EDB sur la presqu’île. Les plus proches sont les écoles primaires de Tamarin, à environ 20 km."
-        - question: "Où est l’hôpital le plus proche du Morne ?"
-          answer: "L’hôpital Artemis Cascavelle est à environ 28 km et la Clinique de l’Occident à Flic en Flac à environ 30 km. L’hôpital Victoria à Quatre Bornes est à environ 36 km."
-        - question: "Combien de temps du Morne à Port Louis et Ebène ?"
-          answer: "Environ 48 km jusqu’à Port Louis et 40 km jusqu’à Ebène, soit environ 53 et 46 minutes sans circulation, selon OpenStreetMap."
-        - question: "Un étranger peut acheter un bien au Morne ?"
-          answer: "Oui, par les dispositifs pour acheteurs étrangers ou un appartement d’au moins 6 millions MUR dans un immeuble d’au moins deux étages. Voyez notre guide pour acheter un bien au Morne."
+        - question: Fait il bon vivre au Morne ?
+          answer: >-
+            Pour les plages, le kitesurf et la nature, peu d’endroits l’égalent.
+            Mais c’est isolé : environ 48 km de Port Louis et 28 km de la
+            clinique la plus proche ; il convient mieux à celles et ceux qui ne
+            font pas de trajets quotidiens.
+        - question: Combien coûte la vie au Morne ?
+          answer: >-
+            Les chiffres indicatifs de l’Economic Development Board pour Maurice
+            : 500 à 1 000 USD par mois pour une maison de 2 à 4 chambres, 1 200
+            à 2 400 USD pour une villa avec jardin et piscine. Demandez aux
+            agents locaux les loyers actuels au Morne.
+        - question: Quelles écoles près du Morne ?
+          answer: >-
+            Il n’y a pas d’école internationale de la liste de l’EDB sur la
+            presqu’île. Les plus proches sont les écoles primaires de Tamarin, à
+            environ 20 km.
+        - question: Où est l’hôpital le plus proche du Morne ?
+          answer: >-
+            L’hôpital Artemis Cascavelle est à environ 28 km et la Clinique de
+            l’Occident à Flic en Flac à environ 30 km. L’hôpital Victoria à
+            Quatre Bornes est à environ 36 km.
+        - question: Combien de temps du Morne à Port Louis et Ebène ?
+          answer: >-
+            Environ 48 km jusqu’à Port Louis et 40 km jusqu’à Ebène, soit
+            environ 53 et 46 minutes sans circulation, selon OpenStreetMap.
+        - question: Un étranger peut acheter un bien au Morne ?
+          answer: >-
+            Oui, par les dispositifs pour acheteurs étrangers ou un appartement
+            d’au moins 6 millions MUR dans un immeuble d’au moins deux étages.
+            Voyez notre guide pour acheter un bien au Morne.
 content:
   en:
     name: Le Morne
-    tagline: The mountain, the lagoon and a place of memory
+    tagline: The mountain and the lagoon and a place of memory
     intro: >-
       The basalt mass of Le Morne Brabant rises 556 metres above a turquoise
-      lagoon at the southwest tip of the island. A UNESCO World Heritage Site
-      and a symbol of the resistance to slavery, it is also home to some of the
-      finest beaches and kitesurfing waters in Mauritius.
+      lagoon at the southwest tip of the island. It is a UNESCO World Heritage
+      Site and a symbol of the resistance to slavery. It is also home to some of
+      the finest beaches and kitesurfing waters in Mauritius.
     seoDescription: >-
-      Le Morne, Mauritius: the UNESCO World Heritage mountain and its history,
-      the public beach, kitesurfing and the hike up Le Morne Brabant. What to
-      know before you go.
+      Le Morne in Mauritius: the UNESCO World Heritage mountain and its history
+      with the public beach and kitesurfing and the hike up Le Morne Brabant.
   fr:
     name: Le Morne
     tagline: La montagne, le lagon et un lieu de mémoire

@@ -3,23 +3,23 @@ order: 6
 placeholder: false
 updatedAt: '2026-10-03'
 sources:
-  - title: "Driving distances and times"
-    publisher: "OpenStreetMap (OSRM routing)"
+  - title: Driving distances and times
+    publisher: OpenStreetMap (OSRM routing)
     url: https://map.project-osrm.org/
     checkedAt: '2026-10-03'
-  - title: "Healthcare and private clinics"
-    publisher: "Economic Development Board"
+  - title: Healthcare and private clinics
+    publisher: Economic Development Board
     url: https://residency.mu/practical-information/health/
     checkedAt: '2026-10-03'
-  - title: "International schools"
-    publisher: "Economic Development Board"
+  - title: International schools
+    publisher: Economic Development Board
     url: https://residency.mu/practical-information/education/
     checkedAt: '2026-10-03'
-  - title: 'Chamarel'
+  - title: Chamarel
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Chamarel
     checkedAt: '2026-10-01'
-  - title: 'Seven Coloured Earths'
+  - title: Seven Coloured Earths
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Seven_Coloured_Earths
     checkedAt: '2026-10-01'
@@ -33,7 +33,7 @@ hero:
     image: /images/areas/chamarel/hero/image.jpg
     alt:
       en:
-        text: The Seven Coloured Earths of Chamarel, with forest behind
+        text: The Seven Coloured Earths of Chamarel with forest behind
       fr:
         text: La Terre des Sept Couleurs de Chamarel, avec la forêt derrière
     credit: jokin.lacalle · CC BY 4.0 · Wikimedia Commons
@@ -45,134 +45,229 @@ living:
   costs:
     - item:
         en:
-          text: "House, 2 to 4 bedrooms (100 to 200 m²), rent per month"
+          text: House with 2 to 4 bedrooms (100 to 200 m²) rent per month
         fr:
-          text: "Maison, 2 à 4 chambres (100 à 200 m²), loyer mensuel"
-      amount: "USD 500 to 1,000"
+          text: Maison, 2 à 4 chambres (100 à 200 m²), loyer mensuel
+      amount: USD 500 to 1 000
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Villa with garden and pool, 3 to 6 bedrooms, rent per month"
+          text: 'Villa with garden and pool and 3 to 6 bedrooms: rent per month'
         fr:
-          text: "Villa avec jardin et piscine, 3 à 6 chambres, loyer mensuel"
-      amount: "USD 1,200 to 2,400"
+          text: Villa avec jardin et piscine, 3 à 6 chambres, loyer mensuel
+      amount: USD 1 200 to 2 400
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Electricity, household, per month"
+          text: Household electricity per month
         fr:
-          text: "Électricité, foyer, par mois"
-      amount: "USD 20 to 100"
+          text: Électricité, foyer, par mois
+      amount: USD 20 to 100
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Water, family of 3 to 4, per month"
+          text: Water for a family of 3 to 4 per month
         fr:
-          text: "Eau, famille de 3 à 4, par mois"
-      amount: "USD 3 to 6"
+          text: Eau, famille de 3 à 4, par mois
+      amount: USD 3 to 6
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Internet (20 Mbps), per month"
+          text: Internet (20 Mbps) per month
         fr:
-          text: "Internet (20 Mbps), par mois"
-      amount: "USD 30"
+          text: Internet (20 Mbps), par mois
+      amount: USD 30
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Meal for two, moderately priced restaurant"
+          text: Meal for two in a moderately priced restaurant
         fr:
-          text: "Repas pour deux, restaurant moyen de gamme"
-      amount: "From USD 30"
+          text: Repas pour deux, restaurant moyen de gamme
+      amount: From USD 30
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Petrol, per litre"
+          text: Petrol per litre
         fr:
-          text: "Essence, par litre"
-      amount: "USD 1.45"
+          text: Essence, par litre
+      amount: USD 1.45
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
   content:
     en:
-      shortAnswer: "Chamarel suits people who want cooler air, green hills and quiet: a small village on a plateau about 260 metres above the sea, next to the national park. Everything else means a drive down a winding road: Port Louis is about 45 km away."
-      livingHere: "Chamarel is a small, quiet village on a plateau of forest, sugar cane and small farms where coffee and bananas grow. It is noticeably cooler and wetter than the coast.\n\nThe Seven Coloured Earths and Chamarel Falls draw visitors by day, the national park begins above the village, and the coast is a short, winding drive down to Case Noyale."
-      schools: "No school on the Economic Development Board's list of international schools is in Chamarel. The nearest are the international primary schools in Tamarin, about 17 km away by road. Public primary and secondary schools are free, and teach mainly in English."
-      healthcare: "The Economic Development Board lists two private clinics on this coast: Clinique de l'Occident on the Royal Road in Flic en Flac (about 28 km, roughly 36 minutes with no traffic) and Artemis Cascavelle Hospital in Cascavelle (about 25 km, roughly 33 minutes with no traffic). The nearest public regional hospital is Victoria Hospital in Quatre Bornes (about 33 km, roughly 40 minutes with no traffic). The SAMU emergency service covers the whole island: dial 114 for an ambulance. Pharmacies are found throughout the island."
-      commuting: "By car, Port Louis is about 45 km, roughly 54 minutes with no traffic, Ebène about 37 km, roughly 46 minutes with no traffic and the international airport about 44 km, roughly 48 minutes with no traffic. Rush hour traffic towards Port Louis and Ebène can add a lot to these times. The coast at Case Noyale is a short drive down the hill; Tamarin is about 17 km away."
+      shortAnswer: >-
+        Chamarel suits people who want cooler air and green hills and quiet. It
+        is a small village on a plateau about 260 metres above the sea next to
+        the national park. Everything else means a drive down a winding road:
+        Port Louis is about 45 km away.
+      livingHere: >-
+        Chamarel is a small quiet village on a plateau of forest and sugar cane
+        and small farms where coffee and bananas grow. It is noticeably cooler
+        and wetter than the coast.
+
+
+        The Seven Coloured Earths and Chamarel Falls draw visitors by day. The
+        national park begins above the village and the coast is a short winding
+        drive down to Case Noyale.
+      schools: >-
+        No school on the Economic Development Board's list of international
+        schools is in Chamarel. The nearest are the international primary
+        schools in Tamarin about 17 km away by road. Public primary and
+        secondary schools are free and teach mainly in English.
+      healthcare: >-
+        The Economic Development Board lists two private clinics on this coast.
+        Clinique de l'Occident on the Royal Road in Flic en Flac is about 28 km
+        away (around 36 minutes without traffic). Artemis Cascavelle Hospital in
+        Cascavelle is about 25 km away (around 33 minutes). The nearest public
+        regional hospital is Victoria Hospital in Quatre Bornes at about 33 km
+        (around 40 minutes). The SAMU emergency service covers the whole island:
+        dial 114 for an ambulance. Pharmacies are found all over the island.
+      commuting: >-
+        By car Port Louis is about 45 km away (around 54 minutes without
+        traffic). Ebène is about 37 km (around 46 minutes) and the international
+        airport about 44 km (around 48 minutes). Rush hour traffic towards Port
+        Louis and Ebène can add a lot to these times. The coast at Case Noyale
+        is a short drive down the hill. Tamarin is about 17 km away.
       pros:
-        - "Cooler air than the coast"
-        - "Forest, farms and the national park around you"
-        - "A quiet village, with the views of the Case Noyale road"
+        - Cooler air than the coast
+        - Forest and farms and the national park all around you
+        - A quiet village with the views of the Case Noyale road
       cons:
-        - "A narrow, winding road down to the coast"
-        - "More rain than on the coast"
-        - "About 45 km to Port Louis and 25 km to the nearest clinic"
+        - A narrow winding road down to the coast
+        - More rain than on the coast
+        - About 45 km to Port Louis and 25 km to the nearest clinic
       faqs:
-        - question: "Is Chamarel a good place to live?"
-          answer: "For people who prefer cool air, forest and quiet to the beach, yes. It is a small village about 260 metres up, next to the national park. Daily commuting is harder: Port Louis is about 45 km away by a winding road."
-        - question: "How much does it cost to live in Chamarel?"
-          answer: "The Economic Development Board's indicative figures for Mauritius are USD 500 to 1,000 a month for a 2 to 4 bedroom house and USD 1,200 to 2,400 for a villa with a garden and pool. Ask local agents for current rents in Chamarel."
-        - question: "Are there good schools near Chamarel?"
-          answer: "There is no international school on the EDB's list in Chamarel. The nearest are the primary schools in Tamarin, about 17 km away by road."
-        - question: "Where is the nearest hospital to Chamarel?"
-          answer: "Artemis Cascavelle Hospital is about 25 km away and Clinique de l'Occident in Flic en Flac about 28 km. Victoria Hospital in Quatre Bornes is about 33 km."
-        - question: "How long is the drive from Chamarel to Port Louis and Ebène?"
-          answer: "About 45 km to Port Louis and 37 km to Ebène, roughly 54 and 46 minutes with no traffic, according to OpenStreetMap routing. The road down from the plateau is narrow and winding."
-        - question: "Can foreigners buy property in Chamarel?"
-          answer: "Yes. One of the projects on the EDB's 2022 list of Real Estate Scheme projects is in Chamarel. See our guide to buying property in Chamarel."
+        - question: Is Chamarel a good place to live?
+          answer: >-
+            Yes for people who prefer cool air and forest and quiet to the
+            beach. It is a small village about 260 metres up next to the
+            national park. Daily commuting is harder: Port Louis is about 45 km
+            away by a winding road.
+        - question: How much does it cost to live in Chamarel?
+          answer: "The Economic Development Board's indicative figures for Mauritius are USD 500 to 1\_000 a month for a 2 to 4 bedroom house and USD 1\_200 to 2\_400 for a villa with a garden and pool. Ask local agents for current rents in Chamarel."
+        - question: Are there good schools near Chamarel?
+          answer: >-
+            There is no international school on the EDB's list in Chamarel. The
+            nearest are the primary schools in Tamarin about 17 km away by road.
+        - question: Where is the nearest hospital to Chamarel?
+          answer: >-
+            Artemis Cascavelle Hospital is about 25 km away and Clinique de
+            l'Occident in Flic en Flac about 28 km. Victoria Hospital in Quatre
+            Bornes is about 33 km.
+        - question: How long is the drive from Chamarel to Port Louis and Ebène?
+          answer: >-
+            About 45 km to Port Louis and 37 km to Ebène. That is roughly 54 and
+            46 minutes with no traffic according to OpenStreetMap routing. The
+            road down from the plateau is narrow and winding.
+        - question: Can foreigners buy property in Chamarel?
+          answer: >-
+            Yes. One of the projects on the EDB's 2022 list of Real Estate
+            Scheme projects is in Chamarel. See our guide to buying property in
+            Chamarel.
     fr:
-      shortAnswer: "Chamarel convient à celles et ceux qui préfèrent la fraîcheur, les collines vertes et le calme : un petit village sur un plateau à environ 260 mètres au dessus de la mer, à côté du parc national. Pour tout le reste, il faut descendre une route sinueuse : Port Louis est à environ 45 km."
-      livingHere: "Chamarel est un petit village tranquille sur un plateau de forêts, de cannes à sucre et de petites exploitations où poussent café et bananes. Il fait nettement plus frais et plus humide que sur la côte.\n\nLa Terre des Sept Couleurs et la cascade de Chamarel attirent les visiteurs en journée, le parc national commence au dessus du village, et la côte est à une courte descente sinueuse jusqu’à Case Noyale."
-      schools: "Aucune école de la liste des écoles internationales de l’Economic Development Board n’est à Chamarel. Les plus proches sont les écoles primaires internationales de Tamarin, à environ 17 km par la route. Les écoles publiques primaires et secondaires sont gratuites et enseignent surtout en anglais."
-      healthcare: "L’Economic Development Board liste deux cliniques privées sur cette côte : la Clinique de l’Occident, sur la Royal Road à Flic en Flac (environ 28 km, soit 36 minutes sans circulation), et l’hôpital Artemis Cascavelle, à Cascavelle (environ 25 km, soit 33 minutes sans circulation). L’hôpital public régional le plus proche est l’hôpital Victoria à Quatre Bornes (environ 33 km, soit 40 minutes sans circulation). Le SAMU couvre toute l’île : composez le 114 pour une ambulance. On trouve des pharmacies partout."
-      commuting: "En voiture, Port Louis est à environ 45 km, soit 54 minutes sans circulation, Ebène à environ 37 km, soit 46 minutes sans circulation et l’aéroport international à environ 44 km, soit 48 minutes sans circulation. Aux heures de pointe, les trajets vers Port Louis et Ebène peuvent être bien plus longs. La côte à Case Noyale est à une courte descente ; Tamarin est à environ 17 km."
+      shortAnswer: >-
+        Chamarel convient à celles et ceux qui préfèrent la fraîcheur, les
+        collines vertes et le calme : un petit village sur un plateau à environ
+        260 mètres au dessus de la mer, à côté du parc national. Pour tout le
+        reste, il faut descendre une route sinueuse : Port Louis est à environ
+        45 km.
+      livingHere: >-
+        Chamarel est un petit village tranquille sur un plateau de forêts, de
+        cannes à sucre et de petites exploitations où poussent café et bananes.
+        Il fait nettement plus frais et plus humide que sur la côte.
+
+
+        La Terre des Sept Couleurs et la cascade de Chamarel attirent les
+        visiteurs en journée, le parc national commence au dessus du village, et
+        la côte est à une courte descente sinueuse jusqu’à Case Noyale.
+      schools: >-
+        Aucune école de la liste des écoles internationales de l’Economic
+        Development Board n’est à Chamarel. Les plus proches sont les écoles
+        primaires internationales de Tamarin, à environ 17 km par la route. Les
+        écoles publiques primaires et secondaires sont gratuites et enseignent
+        surtout en anglais.
+      healthcare: >-
+        L’Economic Development Board liste deux cliniques privées sur cette côte
+        : la Clinique de l’Occident, sur la Royal Road à Flic en Flac (environ
+        28 km, soit 36 minutes sans circulation), et l’hôpital Artemis
+        Cascavelle, à Cascavelle (environ 25 km, soit 33 minutes sans
+        circulation). L’hôpital public régional le plus proche est l’hôpital
+        Victoria à Quatre Bornes (environ 33 km, soit 40 minutes sans
+        circulation). Le SAMU couvre toute l’île : composez le 114 pour une
+        ambulance. On trouve des pharmacies partout.
+      commuting: >-
+        En voiture, Port Louis est à environ 45 km, soit 54 minutes sans
+        circulation, Ebène à environ 37 km, soit 46 minutes sans circulation et
+        l’aéroport international à environ 44 km, soit 48 minutes sans
+        circulation. Aux heures de pointe, les trajets vers Port Louis et Ebène
+        peuvent être bien plus longs. La côte à Case Noyale est à une courte
+        descente ; Tamarin est à environ 17 km.
       pros:
-        - "Un air plus frais que sur la côte"
-        - "Forêts, champs et parc national autour de vous"
-        - "Un village calme, avec les vues de la route de Case Noyale"
+        - Un air plus frais que sur la côte
+        - Forêts, champs et parc national autour de vous
+        - Un village calme, avec les vues de la route de Case Noyale
       cons:
-        - "Une route étroite et sinueuse jusqu’à la côte"
-        - "Plus de pluie que sur la côte"
-        - "Environ 45 km de Port Louis et 25 km de la clinique la plus proche"
+        - Une route étroite et sinueuse jusqu’à la côte
+        - Plus de pluie que sur la côte
+        - Environ 45 km de Port Louis et 25 km de la clinique la plus proche
       faqs:
-        - question: "Fait il bon vivre à Chamarel ?"
-          answer: "Pour celles et ceux qui préfèrent la fraîcheur, la forêt et le calme à la plage, oui. C’est un petit village à environ 260 mètres d’altitude, à côté du parc national. Les trajets quotidiens sont plus difficiles : Port Louis est à environ 45 km par une route sinueuse."
-        - question: "Combien coûte la vie à Chamarel ?"
-          answer: "Les chiffres indicatifs de l’Economic Development Board pour Maurice : 500 à 1 000 USD par mois pour une maison de 2 à 4 chambres, 1 200 à 2 400 USD pour une villa avec jardin et piscine. Demandez aux agents locaux les loyers actuels à Chamarel."
-        - question: "Quelles écoles près de Chamarel ?"
-          answer: "Il n’y a pas d’école internationale de la liste de l’EDB à Chamarel. Les plus proches sont les écoles primaires de Tamarin, à environ 17 km par la route."
-        - question: "Où est l’hôpital le plus proche de Chamarel ?"
-          answer: "L’hôpital Artemis Cascavelle est à environ 25 km et la Clinique de l’Occident à Flic en Flac à environ 28 km. L’hôpital Victoria à Quatre Bornes est à environ 33 km."
-        - question: "Combien de temps de Chamarel à Port Louis et Ebène ?"
-          answer: "Environ 45 km jusqu’à Port Louis et 37 km jusqu’à Ebène, soit environ 54 et 46 minutes sans circulation, selon OpenStreetMap."
-        - question: "Un étranger peut acheter un bien à Chamarel ?"
-          answer: "Oui. Un des projets de la liste RES 2022 de l’EDB est à Chamarel. Voyez notre guide pour acheter un bien à Chamarel."
+        - question: Fait il bon vivre à Chamarel ?
+          answer: >-
+            Pour celles et ceux qui préfèrent la fraîcheur, la forêt et le calme
+            à la plage, oui. C’est un petit village à environ 260 mètres
+            d’altitude, à côté du parc national. Les trajets quotidiens sont
+            plus difficiles : Port Louis est à environ 45 km par une route
+            sinueuse.
+        - question: Combien coûte la vie à Chamarel ?
+          answer: >-
+            Les chiffres indicatifs de l’Economic Development Board pour Maurice
+            : 500 à 1 000 USD par mois pour une maison de 2 à 4 chambres, 1 200
+            à 2 400 USD pour une villa avec jardin et piscine. Demandez aux
+            agents locaux les loyers actuels à Chamarel.
+        - question: Quelles écoles près de Chamarel ?
+          answer: >-
+            Il n’y a pas d’école internationale de la liste de l’EDB à Chamarel.
+            Les plus proches sont les écoles primaires de Tamarin, à environ 17
+            km par la route.
+        - question: Où est l’hôpital le plus proche de Chamarel ?
+          answer: >-
+            L’hôpital Artemis Cascavelle est à environ 25 km et la Clinique de
+            l’Occident à Flic en Flac à environ 28 km. L’hôpital Victoria à
+            Quatre Bornes est à environ 33 km.
+        - question: Combien de temps de Chamarel à Port Louis et Ebène ?
+          answer: >-
+            Environ 45 km jusqu’à Port Louis et 37 km jusqu’à Ebène, soit
+            environ 54 et 46 minutes sans circulation, selon OpenStreetMap.
+        - question: Un étranger peut acheter un bien à Chamarel ?
+          answer: >-
+            Oui. Un des projets de la liste RES 2022 de l’EDB est à Chamarel.
+            Voyez notre guide pour acheter un bien à Chamarel.
 content:
   en:
     name: Chamarel
-    tagline: Coloured earths, waterfalls and cool green hills
+    tagline: Coloured earths and waterfalls in cool green hills
     intro: >-
-      A small village on a wooded plateau some 260 metres above the sea, six
+      A small village on a wooded plateau some 260 metres above the sea and six
       kilometres inland. Chamarel is known for its Seven Coloured Earths and a
-      95 metre waterfall, for its cooler air, and for the views from the winding
-      road up from the coast.
+      95 metre waterfall. People also come for its cooler air and the views from
+      the winding road up from the coast.
     seoDescription: >-
-      Chamarel, west Mauritius: the Seven Coloured Earths, the 95 metre Chamarel
-      Falls, viewpoints over Le Morne and the way into Black River Gorges.
+      Chamarel in west Mauritius: the Seven Coloured Earths and the 95 metre
+      Chamarel Falls with viewpoints over Le Morne on the way into Black River
+      Gorges.
   fr:
     name: Chamarel
     tagline: Terres colorées, cascades et collines fraîches

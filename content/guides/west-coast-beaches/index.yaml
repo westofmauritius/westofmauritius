@@ -1,19 +1,19 @@
 category: beaches
 placeholder: false
 sources:
-  - title: 'Flic en Flac'
+  - title: Flic en Flac
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Flic-en-Flac
     checkedAt: '2026-10-01'
-  - title: 'Tamarin, Mauritius'
+  - title: Tamarin (Mauritius)
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Tamarin,_Mauritius
     checkedAt: '2026-10-01'
-  - title: 'Le Morne Brabant'
+  - title: Le Morne Brabant
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Le_Morne_Brabant
     checkedAt: '2026-10-01'
-  - title: 'Rivière Noire District'
+  - title: Rivière Noire District
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Rivière_Noire_District
     checkedAt: '2026-10-01'
@@ -47,12 +47,13 @@ content:
   en:
     title: The beaches of the west coast
     excerpt: >-
-      From the long, lively sands of Flic en Flac to the lagoon at the foot of
-      Le Morne: where to swim, what each beach is like, and how to get the best
+      From the long lively sands of Flic en Flac to the lagoon at the foot of Le
+      Morne: where to swim and what each beach is like and how to get the best
       out of them.
     seoDescription: >-
-      The best beaches of west Mauritius: Flic en Flac, Tamarin, La Preneuse, Le
-      Morne and Île aux Bénitiers: what each is like and practical tips.
+      The best beaches of west Mauritius from Flic en Flac and Tamarin to La
+      Preneuse and Le Morne and Île aux Bénitiers: what each is like with
+      practical tips.
   fr:
     title: Les plages de la côte ouest
     slug: plages-de-la-cote-ouest

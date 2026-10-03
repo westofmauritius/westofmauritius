@@ -30,9 +30,7 @@ images:
   - image: /images/places/flic-en-flac-public-beach/images/2/image.jpg
     alt:
       en:
-        text: >-
-          Flic en Flac beach lined with filao trees, with the lagoon on the
-          right
+        text: Flic en Flac beach lined with filao trees with the lagoon on the right
       fr:
         text: La plage de Flic en Flac bordée de filaos, avec le lagon à droite
     credit: dronepicr · CC BY 2.0 · Wikimedia Commons
@@ -44,8 +42,8 @@ content:
     name: Flic en Flac public beach
     summary: >-
       The heart of one of the island's longest beaches: white sand under filao
-      trees, a calm lagoon and sunsets over the open ocean.
-    hoursNote: Public beach, open to everyone.
+      trees and a calm lagoon and sunsets over the open ocean.
+    hoursNote: Public beach and open to everyone.
   fr:
     name: Plage publique de Flic en Flac
     summary: >-

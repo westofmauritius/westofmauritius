@@ -1,15 +1,15 @@
 category: activities
 placeholder: false
 sources:
-  - title: 'Black River Gorges National Park'
+  - title: Black River Gorges National Park
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Black_River_Gorges_National_Park
     checkedAt: '2026-10-01'
-  - title: 'Piton de la Petite Rivière Noire'
+  - title: Piton de la Petite Rivière Noire
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Piton_de_la_Petite_Rivière_Noire
     checkedAt: '2026-10-01'
-  - title: 'Le Morne Brabant'
+  - title: Le Morne Brabant
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Le_Morne_Brabant
     checkedAt: '2026-10-01'
@@ -41,15 +41,15 @@ hero:
 placeholderTone: ocean
 content:
   en:
-    title: 'Hiking in the west: Le Morne, the gorges and the island''s highest peak'
+    title: 'Hiking in the west: Le Morne and the gorges and the island''s highest peak'
     excerpt: >-
-      The west has the island's best walking: a mountain on the UNESCO World
-      Heritage List above the lagoon, the native forest of Black River Gorges
-      and the highest summit in Mauritius.
+      The west has the island's best walking. There is a mountain on the UNESCO
+      World Heritage List above the lagoon and the native forest of Black River
+      Gorges and the highest summit in Mauritius.
     seoDescription: >-
-      Hiking in west Mauritius: Le Morne Brabant, Black River Gorges National
-      Park and Piton de la Petite Rivière Noire, with routes, seasons and safety
-      tips.
+      Hiking in west Mauritius: Le Morne Brabant and Black River Gorges National
+      Park and Piton de la Petite Rivière Noire with routes and seasons and
+      safety tips.
   fr:
     title: >-
       Randonner dans l’ouest : Le Morne, les gorges et le plus haut sommet de

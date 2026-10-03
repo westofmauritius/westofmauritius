@@ -3,19 +3,19 @@ order: 1
 placeholder: false
 updatedAt: '2026-10-03'
 sources:
-  - title: "Driving distances and times"
-    publisher: "OpenStreetMap (OSRM routing)"
+  - title: Driving distances and times
+    publisher: OpenStreetMap (OSRM routing)
     url: https://map.project-osrm.org/
     checkedAt: '2026-10-03'
-  - title: "Healthcare and private clinics"
-    publisher: "Economic Development Board"
+  - title: Healthcare and private clinics
+    publisher: Economic Development Board
     url: https://residency.mu/practical-information/health/
     checkedAt: '2026-10-03'
-  - title: "International schools"
-    publisher: "Economic Development Board"
+  - title: International schools
+    publisher: Economic Development Board
     url: https://residency.mu/practical-information/education/
     checkedAt: '2026-10-03'
-  - title: 'Flic en Flac'
+  - title: Flic en Flac
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Flic-en-Flac
     checkedAt: '2026-10-01'
@@ -29,9 +29,7 @@ hero:
     image: /images/areas/flic-en-flac/hero/image.jpg
     alt:
       en:
-        text: >-
-          Flic en Flac beach lined with filao trees, with the lagoon on the
-          right
+        text: Flic en Flac beach lined with filao trees with the lagoon on the right
       fr:
         text: La plage de Flic en Flac bordée de filaos, avec le lagon à droite
     credit: dronepicr · CC BY 2.0 · Wikimedia Commons
@@ -44,135 +42,243 @@ living:
   costs:
     - item:
         en:
-          text: "House, 2 to 4 bedrooms (100 to 200 m²), rent per month"
+          text: House with 2 to 4 bedrooms (100 to 200 m²) rent per month
         fr:
-          text: "Maison, 2 à 4 chambres (100 à 200 m²), loyer mensuel"
-      amount: "USD 500 to 1,000"
+          text: Maison, 2 à 4 chambres (100 à 200 m²), loyer mensuel
+      amount: USD 500 to 1 000
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Villa with garden and pool, 3 to 6 bedrooms, rent per month"
+          text: 'Villa with garden and pool and 3 to 6 bedrooms: rent per month'
         fr:
-          text: "Villa avec jardin et piscine, 3 à 6 chambres, loyer mensuel"
-      amount: "USD 1,200 to 2,400"
+          text: Villa avec jardin et piscine, 3 à 6 chambres, loyer mensuel
+      amount: USD 1 200 to 2 400
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Electricity, household, per month"
+          text: Household electricity per month
         fr:
-          text: "Électricité, foyer, par mois"
-      amount: "USD 20 to 100"
+          text: Électricité, foyer, par mois
+      amount: USD 20 to 100
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Water, family of 3 to 4, per month"
+          text: Water for a family of 3 to 4 per month
         fr:
-          text: "Eau, famille de 3 à 4, par mois"
-      amount: "USD 3 to 6"
+          text: Eau, famille de 3 à 4, par mois
+      amount: USD 3 to 6
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Internet (20 Mbps), per month"
+          text: Internet (20 Mbps) per month
         fr:
-          text: "Internet (20 Mbps), par mois"
-      amount: "USD 30"
+          text: Internet (20 Mbps), par mois
+      amount: USD 30
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Meal for two, moderately priced restaurant"
+          text: Meal for two in a moderately priced restaurant
         fr:
-          text: "Repas pour deux, restaurant moyen de gamme"
-      amount: "From USD 30"
+          text: Repas pour deux, restaurant moyen de gamme
+      amount: From USD 30
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
     - item:
         en:
-          text: "Petrol, per litre"
+          text: Petrol per litre
         fr:
-          text: "Essence, par litre"
-      amount: "USD 1.45"
+          text: Essence, par litre
+      amount: USD 1.45
       checkedAt: '2026-10-02'
-      sourceTitle: "Economic Development Board, cost of living (Mauritius)"
+      sourceTitle: Economic Development Board cost of living (Mauritius)
       sourceUrl: https://residency.mu/cost-of-living/
   content:
     en:
-      shortAnswer: "Flic en Flac suits people who want a long beach on their doorstep and services close at hand. It is the nearest of our six areas to Port Louis and Ebène, a private clinic is in the village and international schools are a short drive away. Expect busy beaches at weekends."
-      livingHere: "Life in Flic en Flac revolves around the beach: kilometres of sand shaded by filao trees, a lagoon kept calm by the reef, and sunsets straight over the sea, since the beach faces due west.\n\nThe village is busiest at weekends and on public holidays, when Mauritian families come with picnics and music. During the week it is relaxed, and the stretch south towards Wolmar is quieter still."
-      schools: "The Economic Development Board's list of international schools includes Westcoast International Primary School on the Flic en Flac Road at Cascavelle, and Westcoast International Secondary School at the Medine Education Village in Pierrefonds, nearby. Middlesex University has a branch campus on the coastal road in Flic en Flac. Public primary and secondary schools are free, and teach mainly in English."
-      healthcare: "The Economic Development Board lists two private clinics on this coast: Clinique de l'Occident on the Royal Road in Flic en Flac (about 0 km, roughly 1 minutes with no traffic) and Artemis Cascavelle Hospital in Cascavelle (about 5 km, roughly 7 minutes with no traffic). The nearest public regional hospital is Victoria Hospital in Quatre Bornes (about 14 km, roughly 17 minutes with no traffic). The SAMU emergency service covers the whole island: dial 114 for an ambulance. Pharmacies are found throughout the island."
-      commuting: "By car, Port Louis is about 25 km, roughly 29 minutes with no traffic, Ebène about 17 km, roughly 22 minutes with no traffic and the international airport about 47 km, roughly 44 minutes with no traffic. Rush hour traffic towards Port Louis and Ebène can add a lot to these times. Buses serve the village."
+      shortAnswer: >-
+        Flic en Flac suits people who want a long beach on their doorstep and
+        services close at hand. It is the nearest of our six areas to Port Louis
+        and Ebène. A private clinic is in the village and international schools
+        are a short drive away. Expect busy beaches at weekends.
+      livingHere: >-
+        Life in Flic en Flac revolves around the beach. Kilometres of sand are
+        shaded by filao trees and the lagoon is kept calm by the reef. The beach
+        faces due west so the sun sets straight over the sea.
+
+
+        The village is busiest at weekends and on public holidays when Mauritian
+        families come with picnics and music. During the week it is relaxed and
+        the stretch south towards Wolmar is quieter still.
+      schools: >-
+        The Economic Development Board's list of international schools includes
+        Westcoast International Primary School on the Flic en Flac Road at
+        Cascavelle. Westcoast International Secondary School is nearby at the
+        Medine Education Village in Pierrefonds. Middlesex University has a
+        branch campus on the coastal road in Flic en Flac. Public primary and
+        secondary schools are free and teach mainly in English.
+      healthcare: >-
+        The Economic Development Board lists two private clinics on this coast.
+        Clinique de l'Occident is right in the village on the Royal Road.
+        Artemis Cascavelle Hospital in Cascavelle is about 5 km away (around 7
+        minutes). The nearest public regional hospital is Victoria Hospital in
+        Quatre Bornes at about 14 km (around 17 minutes). The SAMU emergency
+        service covers the whole island: dial 114 for an ambulance. Pharmacies
+        are found all over the island.
+      commuting: >-
+        By car Port Louis is about 25 km away (around 29 minutes without
+        traffic). Ebène is about 17 km (around 22 minutes) and the international
+        airport about 47 km (around 44 minutes). Rush hour traffic towards Port
+        Louis and Ebène can add a lot to these times. Buses serve the village.
       pros:
-        - "One of the longest beaches on the island, with a calm lagoon"
-        - "The closest of our areas to Port Louis and Ebène"
-        - "A private clinic in the village, and international schools and a university campus nearby"
+        - One of the longest beaches on the island with a calm lagoon
+        - The closest of our areas to Port Louis and Ebène
+        - >-
+          A private clinic in the village and international schools and a
+          university campus nearby
       cons:
-        - "Crowded public beach at weekends and on holidays"
-        - "Rush hour traffic if you commute to Port Louis or Ebène"
-        - "A car makes life much easier, even if buses serve the village"
+        - Crowded public beach at weekends and on holidays
+        - Rush hour traffic if you commute to Port Louis or Ebène
+        - A car makes life much easier even if buses serve the village
       faqs:
-        - question: "Is Flic en Flac a good place to live?"
-          answer: "Yes, if you want a long beach and services nearby: it is the closest of the west coast villages we cover to Port Louis and Ebène, with a private clinic in the village and international schools a short drive away. The trade off is a busy beach at weekends."
-        - question: "How much does it cost to live in Flic en Flac?"
-          answer: "The Economic Development Board gives indicative figures for Mauritius as a whole: USD 500 to 1,000 a month to rent a 2 to 4 bedroom house, and USD 1,200 to 2,400 for a villa with a garden and pool. Ask local agents for current rents in Flic en Flac."
-        - question: "Are there international schools near Flic en Flac?"
-          answer: "Yes. Westcoast International Primary School is at Cascavelle, on the Flic en Flac Road, and Westcoast International Secondary School is at the Medine Education Village in Pierrefonds, both on the EDB's list of international schools."
-        - question: "Where is the nearest hospital to Flic en Flac?"
-          answer: "Clinique de l'Occident, a private clinic, is on the Royal Road in Flic en Flac, and Artemis Cascavelle Hospital is about 5 km away. The nearest public regional hospital is Victoria Hospital in Quatre Bornes, about 14 km away."
-        - question: "How long is the drive from Flic en Flac to Port Louis and Ebène?"
-          answer: "About 25 km to Port Louis and 17 km to Ebène, roughly half an hour and 20 minutes with no traffic, according to OpenStreetMap routing. Allow much longer at rush hour."
-        - question: "Can foreigners buy property in Flic en Flac?"
-          answer: "Yes, through the schemes for foreign buyers, or as an apartment of at least MUR 6 million in a building with at least two floors above ground. See our guide to buying property in Flic en Flac."
+        - question: Is Flic en Flac a good place to live?
+          answer: >-
+            Yes if you want a long beach and services nearby: it is the closest
+            of the west coast villages we cover to Port Louis and Ebène with a
+            private clinic in the village and international schools a short
+            drive away. The trade off is a busy beach at weekends.
+        - question: How much does it cost to live in Flic en Flac?
+          answer: "The Economic Development Board gives indicative figures for Mauritius as a whole: USD 500 to 1\_000 a month to rent a 2 to 4 bedroom house and USD 1\_200 to 2\_400 for a villa with a garden and pool. Ask local agents for current rents in Flic en Flac."
+        - question: Are there international schools near Flic en Flac?
+          answer: >-
+            Yes. Westcoast International Primary School is at Cascavelle on the
+            Flic en Flac Road and Westcoast International Secondary School is at
+            the Medine Education Village in Pierrefonds. Both are on the EDB's
+            list of international schools.
+        - question: Where is the nearest hospital to Flic en Flac?
+          answer: >-
+            Clinique de l'Occident is a private clinic on the Royal Road in Flic
+            en Flac and Artemis Cascavelle Hospital is about 5 km away. The
+            nearest public regional hospital is Victoria Hospital in Quatre
+            Bornes about 14 km away.
+        - question: How long is the drive from Flic en Flac to Port Louis and Ebène?
+          answer: >-
+            About 25 km to Port Louis and 17 km to Ebène. That is roughly half
+            an hour and 20 minutes with no traffic according to OpenStreetMap
+            routing. Allow much longer at rush hour.
+        - question: Can foreigners buy property in Flic en Flac?
+          answer: >-
+            Yes through the schemes for foreign buyers or as an apartment of at
+            least MUR 6 million in a building with at least two floors above
+            ground. See our guide to buying property in Flic en Flac.
     fr:
-      shortAnswer: "Flic en Flac convient à celles et ceux qui veulent une longue plage à leur porte et des services tout près. C’est le plus proche de nos six secteurs de Port Louis et d’Ebène, une clinique privée est au village et des écoles internationales sont à quelques minutes. Attendez vous à des plages animées le week end."
-      livingHere: "À Flic en Flac, la vie tourne autour de la plage : des kilomètres de sable à l’ombre des filaos, un lagon calmé par le récif, et des couchers de soleil droit sur la mer, la plage étant orientée plein ouest.\n\nLe village est le plus animé le week end et les jours fériés, quand les familles mauriciennes viennent avec pique nique et musique. En semaine il est tranquille, et la portion vers Wolmar l’est encore plus."
-      schools: "La liste des écoles internationales de l’Economic Development Board comprend Westcoast International Primary School, sur la route de Flic en Flac à Cascavelle, et Westcoast International Secondary School, au Medine Education Village à Pierrefonds, tout près. Middlesex University a un campus sur la route côtière de Flic en Flac. Les écoles publiques primaires et secondaires sont gratuites et enseignent surtout en anglais."
-      healthcare: "L’Economic Development Board liste deux cliniques privées sur cette côte : la Clinique de l’Occident, sur la Royal Road à Flic en Flac (environ 0 km, soit 1 minutes sans circulation), et l’hôpital Artemis Cascavelle, à Cascavelle (environ 5 km, soit 7 minutes sans circulation). L’hôpital public régional le plus proche est l’hôpital Victoria à Quatre Bornes (environ 14 km, soit 17 minutes sans circulation). Le SAMU couvre toute l’île : composez le 114 pour une ambulance. On trouve des pharmacies partout."
-      commuting: "En voiture, Port Louis est à environ 25 km, soit 29 minutes sans circulation, Ebène à environ 17 km, soit 22 minutes sans circulation et l’aéroport international à environ 47 km, soit 44 minutes sans circulation. Aux heures de pointe, les trajets vers Port Louis et Ebène peuvent être bien plus longs. Des bus desservent le village."
+      shortAnswer: >-
+        Flic en Flac convient à celles et ceux qui veulent une longue plage à
+        leur porte et des services tout près. C’est le plus proche de nos six
+        secteurs de Port Louis et d’Ebène, une clinique privée est au village et
+        des écoles internationales sont à quelques minutes. Attendez vous à des
+        plages animées le week end.
+      livingHere: >-
+        À Flic en Flac, la vie tourne autour de la plage : des kilomètres de
+        sable à l’ombre des filaos, un lagon calmé par le récif, et des couchers
+        de soleil droit sur la mer, la plage étant orientée plein ouest.
+
+
+        Le village est le plus animé le week end et les jours fériés, quand les
+        familles mauriciennes viennent avec pique nique et musique. En semaine
+        il est tranquille, et la portion vers Wolmar l’est encore plus.
+      schools: >-
+        La liste des écoles internationales de l’Economic Development Board
+        comprend Westcoast International Primary School, sur la route de Flic en
+        Flac à Cascavelle, et Westcoast International Secondary School, au
+        Medine Education Village à Pierrefonds, tout près. Middlesex University
+        a un campus sur la route côtière de Flic en Flac. Les écoles publiques
+        primaires et secondaires sont gratuites et enseignent surtout en
+        anglais.
+      healthcare: >-
+        L’Economic Development Board liste deux cliniques privées sur cette côte
+        : la Clinique de l’Occident, sur la Royal Road à Flic en Flac (environ 0
+        km, soit 1 minutes sans circulation), et l’hôpital Artemis Cascavelle, à
+        Cascavelle (environ 5 km, soit 7 minutes sans circulation). L’hôpital
+        public régional le plus proche est l’hôpital Victoria à Quatre Bornes
+        (environ 14 km, soit 17 minutes sans circulation). Le SAMU couvre toute
+        l’île : composez le 114 pour une ambulance. On trouve des pharmacies
+        partout.
+      commuting: >-
+        En voiture, Port Louis est à environ 25 km, soit 29 minutes sans
+        circulation, Ebène à environ 17 km, soit 22 minutes sans circulation et
+        l’aéroport international à environ 47 km, soit 44 minutes sans
+        circulation. Aux heures de pointe, les trajets vers Port Louis et Ebène
+        peuvent être bien plus longs. Des bus desservent le village.
       pros:
-        - "L’une des plus longues plages de l’île, avec un lagon calme"
-        - "Le secteur le plus proche de Port Louis et d’Ebène"
-        - "Une clinique privée au village, des écoles internationales et un campus universitaire à proximité"
+        - L’une des plus longues plages de l’île, avec un lagon calme
+        - Le secteur le plus proche de Port Louis et d’Ebène
+        - >-
+          Une clinique privée au village, des écoles internationales et un
+          campus universitaire à proximité
       cons:
-        - "Plage publique bondée le week end et les jours fériés"
-        - "Circulation aux heures de pointe vers Port Louis ou Ebène"
-        - "Une voiture facilite beaucoup la vie, même si des bus desservent le village"
+        - Plage publique bondée le week end et les jours fériés
+        - Circulation aux heures de pointe vers Port Louis ou Ebène
+        - >-
+          Une voiture facilite beaucoup la vie, même si des bus desservent le
+          village
       faqs:
-        - question: "Fait il bon vivre à Flic en Flac ?"
-          answer: "Oui, si vous voulez une longue plage et des services à proximité : c’est le village de la côte ouest le plus proche de Port Louis et d’Ebène, avec une clinique privée au village et des écoles internationales à quelques minutes. La contrepartie : une plage animée le week end."
-        - question: "Combien coûte la vie à Flic en Flac ?"
-          answer: "Les chiffres indicatifs de l’Economic Development Board pour Maurice : 500 à 1 000 USD par mois pour une maison de 2 à 4 chambres, 1 200 à 2 400 USD pour une villa avec jardin et piscine. Demandez aux agents locaux les loyers actuels à Flic en Flac."
-        - question: "Quelles écoles près de Flic en Flac ?"
-          answer: "Westcoast International Primary School est à Cascavelle, sur la route de Flic en Flac, et Westcoast International Secondary School au Medine Education Village à Pierrefonds, toutes deux sur la liste de l’EDB."
-        - question: "Où est l’hôpital le plus proche de Flic en Flac ?"
-          answer: "La Clinique de l’Occident, clinique privée, est sur la Royal Road à Flic en Flac, et l’hôpital Artemis Cascavelle à environ 5 km. L’hôpital public régional le plus proche est l’hôpital Victoria à Quatre Bornes, à environ 14 km."
-        - question: "Combien de temps de Flic en Flac à Port Louis et Ebène ?"
-          answer: "Environ 25 km jusqu’à Port Louis et 17 km jusqu’à Ebène, soit environ 29 et 22 minutes sans circulation, selon OpenStreetMap."
-        - question: "Un étranger peut acheter un bien à Flic en Flac ?"
-          answer: "Oui, par les dispositifs pour acheteurs étrangers ou un appartement d’au moins 6 millions MUR dans un immeuble d’au moins deux étages. Voyez notre guide pour acheter un bien à Flic en Flac."
+        - question: Fait il bon vivre à Flic en Flac ?
+          answer: >-
+            Oui, si vous voulez une longue plage et des services à proximité :
+            c’est le village de la côte ouest le plus proche de Port Louis et
+            d’Ebène, avec une clinique privée au village et des écoles
+            internationales à quelques minutes. La contrepartie : une plage
+            animée le week end.
+        - question: Combien coûte la vie à Flic en Flac ?
+          answer: >-
+            Les chiffres indicatifs de l’Economic Development Board pour Maurice
+            : 500 à 1 000 USD par mois pour une maison de 2 à 4 chambres, 1 200
+            à 2 400 USD pour une villa avec jardin et piscine. Demandez aux
+            agents locaux les loyers actuels à Flic en Flac.
+        - question: Quelles écoles près de Flic en Flac ?
+          answer: >-
+            Westcoast International Primary School est à Cascavelle, sur la
+            route de Flic en Flac, et Westcoast International Secondary School
+            au Medine Education Village à Pierrefonds, toutes deux sur la liste
+            de l’EDB.
+        - question: Où est l’hôpital le plus proche de Flic en Flac ?
+          answer: >-
+            La Clinique de l’Occident, clinique privée, est sur la Royal Road à
+            Flic en Flac, et l’hôpital Artemis Cascavelle à environ 5 km.
+            L’hôpital public régional le plus proche est l’hôpital Victoria à
+            Quatre Bornes, à environ 14 km.
+        - question: Combien de temps de Flic en Flac à Port Louis et Ebène ?
+          answer: >-
+            Environ 25 km jusqu’à Port Louis et 17 km jusqu’à Ebène, soit
+            environ 29 et 22 minutes sans circulation, selon OpenStreetMap.
+        - question: Un étranger peut acheter un bien à Flic en Flac ?
+          answer: >-
+            Oui, par les dispositifs pour acheteurs étrangers ou un appartement
+            d’au moins 6 millions MUR dans un immeuble d’au moins deux étages.
+            Voyez notre guide pour acheter un bien à Flic en Flac.
 content:
   en:
     name: Flic en Flac
     tagline: The long white beach of the west coast
     intro: >-
-      One of the longest beaches on the island: white sand under filao trees, a
-      lagoon sheltered by the reef and the sun setting straight into the Indian
-      Ocean. Lively at weekends, when Mauritian families come to picnic, and
-      relaxed the rest of the week.
+      One of the longest beaches on the island. White sand under filao trees and
+      a lagoon sheltered by the reef with the sun setting straight into the
+      Indian Ocean. Lively at weekends when Mauritian families come to picnic
+      and relaxed the rest of the week.
     seoDescription: >-
-      Flic en Flac, west Mauritius: one of the island's longest beaches, a calm
-      lagoon, diving and sunsets. What it is like and what to know before you
-      go.
+      Flic en Flac in west Mauritius: one of the island's longest beaches with a
+      calm lagoon and diving and sunsets. What it is like and what to know
+      before you go.
   fr:
     name: Flic en Flac
     tagline: La grande plage blanche de la côte ouest

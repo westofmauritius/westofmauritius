@@ -15,6 +15,11 @@ export const consentTexts = {
     en: "I agree that West of Mauritius may store my details and share them with selected property developers and estate agents on the west coast of Mauritius, so they can contact me about my enquiry. I can withdraw my consent at any time.",
     fr: "J’accepte qu’Ouest Maurice conserve mes coordonnées et les transmette à des promoteurs immobiliers et agents immobiliers sélectionnés de la côte ouest de l’île Maurice, afin qu’ils me contactent au sujet de ma demande. Je peux retirer mon consentement à tout moment.",
   },
+  // Same wording as 10b without the comma (the site uses no commas).
+  "lead-2026-10c": {
+    en: "I agree that West of Mauritius may store my details and share them with selected property developers and estate agents on the west coast of Mauritius so they can contact me about my enquiry. I can withdraw my consent at any time.",
+    fr: "J’accepte qu’Ouest Maurice conserve mes coordonnées et les transmette à des promoteurs immobiliers et agents immobiliers sélectionnés de la côte ouest de l’île Maurice afin qu’ils me contactent au sujet de ma demande. Je peux retirer mon consentement à tout moment.",
+  },
   "newsletter-2026-10b": {
     en: "I want to receive the West of Mauritius newsletter by email. I can unsubscribe at any time.",
     fr: "Je souhaite recevoir la newsletter d’Ouest Maurice par courriel. Je peux me désabonner à tout moment.",
@@ -28,7 +33,7 @@ export const consentTexts = {
 export type ConsentVersion = keyof typeof consentTexts;
 
 export const currentConsent = {
-  lead: "lead-2026-10b",
+  lead: "lead-2026-10c",
   newsletter: "newsletter-2026-10b",
   whatsapp: "whatsapp-2026-10",
 } as const satisfies Record<string, ConsentVersion>;

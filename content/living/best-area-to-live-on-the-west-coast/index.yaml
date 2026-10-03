@@ -11,122 +11,168 @@ placeholder: false
 publishedAt: '2026-10-03'
 updatedAt: '2026-10-03'
 sources:
-  - title: "International schools"
-    publisher: "Economic Development Board"
+  - title: International schools
+    publisher: Economic Development Board
     url: https://residency.mu/practical-information/education/
     checkedAt: '2026-10-03'
-  - title: "Healthcare and private clinics"
-    publisher: "Economic Development Board"
+  - title: Healthcare and private clinics
+    publisher: Economic Development Board
     url: https://residency.mu/practical-information/health/
     checkedAt: '2026-10-03'
-  - title: "Driving distances and times"
-    publisher: "OpenStreetMap (OSRM routing)"
+  - title: Driving distances and times
+    publisher: OpenStreetMap (OSRM routing)
     url: https://map.project-osrm.org/
     checkedAt: '2026-10-03'
 content:
   en:
-    title: "Where is the best place to live on the west coast of Mauritius?"
+    title: Where is the best place to live on the west coast of Mauritius?
     slug: best-area-to-live-on-the-west-coast
-    excerpt: "Flic en Flac, Tamarin, Black River, La Gaulette, Le Morne or Chamarel: which suits families, commuters, retirees, kitesurfers and nature lovers."
-    shortAnswer: "It depends on how you live. For families, Tamarin has two international primary schools in the village. For commuters, Flic en Flac is the closest to Port Louis and Ebène. For a quiet life by the lagoon, La Gaulette; for beaches and kitesurfing, Le Morne; for nature, Black River; for cool air and hills, Chamarel."
+    excerpt: >-
+      Flic en Flac or Tamarin or Black River? La Gaulette or Le Morne or
+      Chamarel? Which suits families and commuters and retirees and kitesurfers
+      and nature lovers.
+    shortAnswer: >-
+      It depends on how you live. For families Tamarin has two international
+      primary schools in the village. For commuters Flic en Flac is the closest
+      to Port Louis and Ebène. For a quiet life by the lagoon choose La
+      Gaulette. For beaches and kitesurfing choose Le Morne. For nature choose
+      Black River and for cool air and hills choose Chamarel.
     table:
-      caption: "The six areas compared"
+      caption: The six areas compared
       headers:
-        - ""
-        - "Best for"
-        - "Drive to Port Louis"
-        - "International schools (EDB list)"
+        - ''
+        - Best for
+        - Drive to Port Louis
+        - International schools (EDB list)
       rows:
         - cells:
-            - "Flic en Flac"
-            - "Beach life with services close by"
-            - "About 25 km"
-            - "Primary at Cascavelle, secondary at Medine nearby"
+            - Flic en Flac
+            - Beach life with services close by
+            - About 25 km
+            - Primary at Cascavelle and secondary at Medine nearby
         - cells:
-            - "Tamarin"
-            - "Families and surfers"
-            - "About 29 km"
-            - "Two primary schools in the village"
+            - Tamarin
+            - Families and surfers
+            - About 29 km
+            - Two primary schools in the village
         - cells:
-            - "Black River"
-            - "Nature, hiking and boats"
-            - "About 33 km"
-            - "Tamarin's schools about 4 km away"
+            - Black River
+            - Nature and hiking and boats
+            - About 33 km
+            - Tamarin's schools about 4 km away
         - cells:
-            - "La Gaulette"
-            - "Quiet village life on the lagoon"
-            - "About 41 km"
-            - "None in the village"
+            - La Gaulette
+            - Quiet village life on the lagoon
+            - About 41 km
+            - None in the village
         - cells:
-            - "Le Morne"
-            - "Beaches and kitesurfing"
-            - "About 48 km"
-            - "None on the peninsula"
+            - Le Morne
+            - Beaches and kitesurfing
+            - About 48 km
+            - None on the peninsula
         - cells:
-            - "Chamarel"
-            - "Cool hills and quiet"
-            - "About 45 km"
-            - "None in the village"
+            - Chamarel
+            - Cool hills and quiet
+            - About 45 km
+            - None in the village
     faqs:
-      - question: "Which west coast area is best for families?"
-        answer: "Tamarin: two international primary schools on the Economic Development Board's list are in the village, and the Westcoast International schools are at Cascavelle and Medine nearby. Flic en Flac is the other strong choice, closer to Port Louis."
-      - question: "Which area is best if I commute to Port Louis or Ebène?"
-        answer: "Flic en Flac, about 25 km from Port Louis and 17 km from Ebène, the closest of the six. Tamarin and Black River come next."
-      - question: "Which west coast village is the quietest?"
-        answer: "La Gaulette and Chamarel are the smallest and slowest paced of our six areas; Le Morne is the most remote on the coast."
-      - question: "Is the west coast of Mauritius a good place to live?"
-        answer: "For many people, yes: it is the driest and sunniest side of the island, sheltered from the trade winds, with the sun setting over the sea, the national park inland, and schools, clinics and a university campus around Flic en Flac and Tamarin."
-    seoDescription: "The best place to live on the west coast of Mauritius, area by area: who each village suits, drive times and schools, from a Mauritian with official sources."
+      - question: Which west coast area is best for families?
+        answer: >-
+          Tamarin: two international primary schools on the Economic Development
+          Board's list are in the village and the Westcoast International
+          schools are at Cascavelle and Medine nearby. Flic en Flac is the other
+          strong choice and it is closer to Port Louis.
+      - question: Which area is best if I commute to Port Louis or Ebène?
+        answer: >-
+          Flic en Flac is the closest of the six at about 25 km from Port Louis
+          and 17 km from Ebène. Tamarin and Black River come next.
+      - question: Which west coast village is the quietest?
+        answer: >-
+          La Gaulette and Chamarel are the smallest and slowest paced of our six
+          areas; Le Morne is the most remote on the coast.
+      - question: Is the west coast of Mauritius a good place to live?
+        answer: >-
+          For many people yes. It is the driest and sunniest side of the island
+          and sheltered from the trade winds with the sun setting over the sea.
+          The national park is inland and there are schools and clinics and a
+          university campus around Flic en Flac and Tamarin.
+    seoDescription: >-
+      The best place to live on the west coast of Mauritius area by area: who
+      each village suits with drive times and schools. From a Mauritian with
+      official sources.
   fr:
-    title: "Où vivre sur la côte ouest de Maurice ?"
+    title: Où vivre sur la côte ouest de Maurice ?
     slug: ou-vivre-sur-la-cote-ouest
-    excerpt: "Flic en Flac, Tamarin, Rivière Noire, La Gaulette, Le Morne ou Chamarel : quel village pour les familles, les actifs, les retraités, les kitesurfeurs et les amoureux de nature."
-    shortAnswer: "Tout dépend de votre façon de vivre. Pour les familles, Tamarin compte deux écoles primaires internationales au village. Pour ceux qui travaillent à Port Louis ou Ebène, Flic en Flac est le plus proche. Pour une vie calme au bord du lagon, La Gaulette ; pour les plages et le kitesurf, Le Morne ; pour la nature, Rivière Noire ; pour la fraîcheur des hauteurs, Chamarel."
+    excerpt: >-
+      Flic en Flac, Tamarin, Rivière Noire, La Gaulette, Le Morne ou Chamarel :
+      quel village pour les familles, les actifs, les retraités, les
+      kitesurfeurs et les amoureux de nature.
+    shortAnswer: >-
+      Tout dépend de votre façon de vivre. Pour les familles, Tamarin compte
+      deux écoles primaires internationales au village. Pour ceux qui
+      travaillent à Port Louis ou Ebène, Flic en Flac est le plus proche. Pour
+      une vie calme au bord du lagon, La Gaulette ; pour les plages et le
+      kitesurf, Le Morne ; pour la nature, Rivière Noire ; pour la fraîcheur des
+      hauteurs, Chamarel.
     table:
-      caption: "Les six secteurs comparés"
+      caption: Les six secteurs comparés
       headers:
-        - ""
-        - "Idéal pour"
-        - "Trajet vers Port Louis"
-        - "Écoles internationales (liste EDB)"
+        - ''
+        - Idéal pour
+        - Trajet vers Port Louis
+        - Écoles internationales (liste EDB)
       rows:
         - cells:
-            - "Flic en Flac"
-            - "La plage avec les services à proximité"
-            - "Environ 25 km"
-            - "Primaire à Cascavelle, secondaire à Médine"
+            - Flic en Flac
+            - La plage avec les services à proximité
+            - Environ 25 km
+            - Primaire à Cascavelle, secondaire à Médine
         - cells:
-            - "Tamarin"
-            - "Familles et surfeurs"
-            - "Environ 29 km"
-            - "Deux écoles primaires au village"
+            - Tamarin
+            - Familles et surfeurs
+            - Environ 29 km
+            - Deux écoles primaires au village
         - cells:
-            - "Rivière Noire"
-            - "Nature, randonnée et bateaux"
-            - "Environ 33 km"
-            - "Écoles de Tamarin à environ 4 km"
+            - Rivière Noire
+            - Nature, randonnée et bateaux
+            - Environ 33 km
+            - Écoles de Tamarin à environ 4 km
         - cells:
-            - "La Gaulette"
-            - "Vie de village calme sur le lagon"
-            - "Environ 41 km"
-            - "Aucune au village"
+            - La Gaulette
+            - Vie de village calme sur le lagon
+            - Environ 41 km
+            - Aucune au village
         - cells:
-            - "Le Morne"
-            - "Plages et kitesurf"
-            - "Environ 48 km"
-            - "Aucune sur la presqu’île"
+            - Le Morne
+            - Plages et kitesurf
+            - Environ 48 km
+            - Aucune sur la presqu’île
         - cells:
-            - "Chamarel"
-            - "Hauteurs fraîches et calme"
-            - "Environ 45 km"
-            - "Aucune au village"
+            - Chamarel
+            - Hauteurs fraîches et calme
+            - Environ 45 km
+            - Aucune au village
     faqs:
-      - question: "Quel secteur de la côte ouest pour une famille ?"
-        answer: "Tamarin : deux écoles primaires internationales de la liste de l’Economic Development Board sont au village, et les écoles Westcoast International sont à Cascavelle et Médine, tout près. Flic en Flac est l’autre bon choix, plus proche de Port Louis."
-      - question: "Quel secteur pour travailler à Port Louis ou Ebène ?"
-        answer: "Flic en Flac, à environ 25 km de Port Louis et 17 km d’Ebène, le plus proche des six. Viennent ensuite Tamarin et Rivière Noire."
-      - question: "Quel est le village le plus calme de la côte ouest ?"
-        answer: "La Gaulette et Chamarel sont les plus petits et les plus paisibles de nos six secteurs ; Le Morne est le plus isolé de la côte."
-      - question: "Fait il bon vivre sur la côte ouest de Maurice ?"
-        answer: "Pour beaucoup, oui : c’est le côté le plus sec et le plus ensoleillé de l’île, à l’abri des alizés, avec le soleil qui se couche sur la mer, le parc national à l’intérieur, et des écoles, cliniques et un campus universitaire autour de Flic en Flac et Tamarin."
-    seoDescription: "Où vivre sur la côte ouest de Maurice, secteur par secteur : pour qui, temps de trajet et écoles, par un Mauricien, avec des sources officielles."
+      - question: Quel secteur de la côte ouest pour une famille ?
+        answer: >-
+          Tamarin : deux écoles primaires internationales de la liste de
+          l’Economic Development Board sont au village, et les écoles Westcoast
+          International sont à Cascavelle et Médine, tout près. Flic en Flac est
+          l’autre bon choix, plus proche de Port Louis.
+      - question: Quel secteur pour travailler à Port Louis ou Ebène ?
+        answer: >-
+          Flic en Flac, à environ 25 km de Port Louis et 17 km d’Ebène, le plus
+          proche des six. Viennent ensuite Tamarin et Rivière Noire.
+      - question: Quel est le village le plus calme de la côte ouest ?
+        answer: >-
+          La Gaulette et Chamarel sont les plus petits et les plus paisibles de
+          nos six secteurs ; Le Morne est le plus isolé de la côte.
+      - question: Fait il bon vivre sur la côte ouest de Maurice ?
+        answer: >-
+          Pour beaucoup, oui : c’est le côté le plus sec et le plus ensoleillé
+          de l’île, à l’abri des alizés, avec le soleil qui se couche sur la
+          mer, le parc national à l’intérieur, et des écoles, cliniques et un
+          campus universitaire autour de Flic en Flac et Tamarin.
+    seoDescription: >-
+      Où vivre sur la côte ouest de Maurice, secteur par secteur : pour qui,
+      temps de trajet et écoles, par un Mauricien, avec des sources officielles.

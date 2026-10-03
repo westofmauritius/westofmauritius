@@ -12,7 +12,7 @@ images:
     alt:
       en:
         text: >-
-          Aerial view of Tamarin and its beach, with a mountain behind the
+          Aerial view of Tamarin and its beach with a mountain behind the
           village
       fr:
         text: >-
@@ -36,9 +36,10 @@ content:
   en:
     name: Tamarin Bay
     summary: >-
-      A wide bay with a public beach, a famous surf break and the mountains of
-      the west behind it, at its best in the early morning and at sunset.
-    hoursNote: Public beach, open to everyone.
+      A wide bay with a public beach and a famous surf break and the mountains
+      of the west behind it. It is at its best in the early morning and at
+      sunset.
+    hoursNote: Public beach and open to everyone.
   fr:
     name: Baie de Tamarin
     summary: >-

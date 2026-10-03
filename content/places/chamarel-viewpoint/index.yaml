@@ -12,7 +12,7 @@ images:
   - image: /images/places/chamarel-viewpoint/images/0/image.jpg
     alt:
       en:
-        text: Île aux Bénitiers in the lagoon, seen from the Chamarel viewpoint
+        text: Île aux Bénitiers in the lagoon seen from the Chamarel viewpoint
       fr:
         text: L’île aux Bénitiers dans le lagon, vue depuis le belvédère de Chamarel
     credit: Benoît Prieur · CC0 · Wikimedia Commons
@@ -23,9 +23,9 @@ content:
   en:
     name: Chamarel viewpoint
     summary: >-
-      A roadside lookout on the climb from Case Noyale to Chamarel, with a
-      sweeping view over the lagoon, Île aux Bénitiers and Le Morne.
-    hoursNote: Open access, by the roadside.
+      A roadside lookout on the climb from Case Noyale to Chamarel with a
+      sweeping view over the lagoon and Île aux Bénitiers and Le Morne.
+    hoursNote: Open access by the roadside.
   fr:
     name: Belvédère de Chamarel
     summary: >-

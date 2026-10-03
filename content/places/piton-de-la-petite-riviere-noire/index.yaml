@@ -12,7 +12,7 @@ images:
   - image: /images/places/piton-de-la-petite-riviere-noire/images/0/image.jpg
     alt:
       en:
-        text: The summit of Piton de la Petite Rivière Noire, with a Mauritian flag
+        text: The summit of Piton de la Petite Rivière Noire with a Mauritian flag
       fr:
         text: >-
           Le sommet du Piton de la Petite Rivière Noire, avec un drapeau
@@ -25,8 +25,8 @@ content:
   en:
     name: Piton de la Petite Rivière Noire
     summary: >-
-      At 828 metres, the highest summit in Mauritius: a rewarding hike with
-      views across the gorges to the west coast.
+      At 828 metres the highest summit in Mauritius: a rewarding hike with views
+      across the gorges to the west coast.
     hoursNote: Open access. Start early and avoid the hike in wet weather.
   fr:
     name: Piton de la Petite Rivière Noire

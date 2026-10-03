@@ -11,116 +11,171 @@ placeholder: false
 publishedAt: '2026-10-03'
 updatedAt: '2026-10-03'
 sources:
-  - title: "Geography of Mauritius (climate)"
-    publisher: "Wikipedia"
+  - title: Geography of Mauritius (climate)
+    publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Geography_of_Mauritius
     checkedAt: '2026-10-03'
-  - title: "International schools"
-    publisher: "Economic Development Board"
+  - title: International schools
+    publisher: Economic Development Board
     url: https://residency.mu/practical-information/education/
     checkedAt: '2026-10-03'
-  - title: "Healthcare and private clinics"
-    publisher: "Economic Development Board"
+  - title: Healthcare and private clinics
+    publisher: Economic Development Board
     url: https://residency.mu/practical-information/health/
     checkedAt: '2026-10-03'
-  - title: "Projects under the Real Estate Scheme (November 2022)"
-    publisher: "Economic Development Board"
-    url: https://residency.mu/wp-content/uploads/2021/06/List-of-Approved-RES-Projects_Nov22.pdf
+  - title: Projects under the Real Estate Scheme (November 2022)
+    publisher: Economic Development Board
+    url: >-
+      https://residency.mu/wp-content/uploads/2021/06/List-of-Approved-RES-Projects_Nov22.pdf
     checkedAt: '2026-10-03'
-  - title: "Summary of Smart City projects (2025)"
-    publisher: "Economic Development Board"
-    url: https://residency.mu/wp-content/uploads/2021/06/List-Smart-City-projects-with-contact-details-2025.pdf
+  - title: Summary of Smart City projects (2025)
+    publisher: Economic Development Board
+    url: >-
+      https://residency.mu/wp-content/uploads/2021/06/List-Smart-City-projects-with-contact-details-2025.pdf
     checkedAt: '2026-10-03'
 content:
   en:
-    title: "West coast vs north coast: which is better for expats?"
+    title: 'West coast vs north coast: which is better for expats?'
     slug: west-vs-north-coast-for-expats
-    excerpt: "How the west and north coasts of Mauritius compare for people moving here: weather, schools, healthcare, property and getting around."
-    shortAnswer: "The north has more of everything on the official lists: more international schools, more private clinics and more developments for foreign buyers. The west is the driest and sunniest side of the island, with sunsets over the sea, the national park and kitesurfing at Le Morne, and a smaller choice of schools around Tamarin and Flic en Flac."
+    excerpt: >-
+      How the west and north coasts of Mauritius compare for people moving here:
+      weather and schools and healthcare and property and getting around.
+    shortAnswer: >-
+      The north has more of everything on the official lists: more international
+      schools and more private clinics and more developments for foreign buyers.
+      The west is the driest and sunniest side of the island with sunsets over
+      the sea and the national park and kitesurfing at Le Morne. It has a
+      smaller choice of schools around Tamarin and Flic en Flac.
     table:
-      caption: "West and north coasts side by side"
+      caption: West and north coasts side by side
       headers:
-        - ""
-        - "West coast (Flic en Flac to Le Morne)"
-        - "North coast (around Grand Baie)"
+        - ''
+        - West coast (Flic en Flac to Le Morne)
+        - North coast (around Grand Baie)
       rows:
         - cells:
-            - "Weather"
-            - "The driest and sunniest side, sheltered from the trade winds"
-            - "Warm, humid summers and dry winters, like the whole island"
+            - Weather
+            - The driest and sunniest side and sheltered from the trade winds
+            - Warm humid summers and dry winters like the whole island
         - cells:
-            - "International schools (EDB list)"
-            - "4: Paul et Virginie, Telfair, Westcoast primary, Westcoast secondary"
-            - "6 or more, around Grand Baie, Mapou, Calebasses and Beau Plan"
+            - International schools (EDB list)
+            - >-
+              4: Paul et Virginie and Telfair and Westcoast primary and
+              Westcoast secondary
+            - 6 or more around Grand Baie and Mapou and Calebasses and Beau Plan
         - cells:
-            - "Private clinics (EDB list)"
-            - "2: Clinique de l'Occident, Artemis Cascavelle"
-            - "3: Clinique de Grand Baie, Centre Médical du Nord, a clinic at Trou aux Biches"
+            - Private clinics (EDB list)
+            - '2: Clinique de l''Occident and Artemis Cascavelle'
+            - >-
+              3: Clinique de Grand Baie and Centre Médical du Nord and a clinic
+              at Trou aux Biches
         - cells:
-            - "RES projects on the EDB's 2022 list"
-            - "22 of 77"
-            - "52 of 77"
+            - RES projects on the EDB's 2022 list
+            - 22 of 77
+            - 52 of 77
         - cells:
-            - "Smart cities"
-            - "Cap Tamarin, Medine"
-            - "Beau Plan, Mon Choisy"
+            - Smart cities
+            - Cap Tamarin and Medine
+            - Beau Plan and Mon Choisy
         - cells:
-            - "Nature"
-            - "National park, Le Morne, Chamarel"
-            - "The beaches of the north coast"
+            - Nature
+            - The national park and Le Morne and Chamarel
+            - The beaches of the north coast
     faqs:
-      - question: "Is the west or the north better for expats?"
-        answer: "It depends on what you value. The north has more international schools, clinics and developments on the official lists; the west is drier and sunnier, with the national park, Le Morne and sunsets over the sea."
-      - question: "Which coast has more international schools?"
-        answer: "The north. The Economic Development Board's list includes six or more international schools in the north, around Grand Baie, Mapou, Calebasses and Beau Plan, against four on the west coast."
-      - question: "Which coast has better weather?"
-        answer: "The west coast is the driest and sunniest side of Mauritius, sheltered from the trade winds that bring more rain to the east."
-      - question: "Where can foreigners buy more easily?"
-        answer: "Both coasts have many projects. On the EDB's November 2022 list of Real Estate Scheme projects, 52 of 77 are in the north and 22 on our stretch of the west coast."
-    seoDescription: "West vs north coast of Mauritius for expats: weather, schools, clinics, property and smart cities compared from official EDB lists, by a Mauritian."
+      - question: Is the west or the north better for expats?
+        answer: >-
+          It depends on what you value. The north has more international schools
+          and clinics and developments on the official lists. The west is drier
+          and sunnier with the national park and Le Morne and sunsets over the
+          sea.
+      - question: Which coast has more international schools?
+        answer: >-
+          The north. The Economic Development Board's list includes six or more
+          international schools in the north around Grand Baie and Mapou and
+          Calebasses and Beau Plan against four on the west coast.
+      - question: Which coast has better weather?
+        answer: >-
+          The west coast is the driest and sunniest side of Mauritius. It is
+          sheltered from the trade winds that bring more rain to the east.
+      - question: Where can foreigners buy more easily?
+        answer: >-
+          Both coasts have many projects. On the EDB's November 2022 list of
+          Real Estate Scheme projects 52 of 77 are in the north and 22 on our
+          stretch of the west coast.
+    seoDescription: >-
+      West vs north coast of Mauritius for expats: weather and schools and
+      clinics and property and smart cities compared from official EDB lists by
+      a Mauritian.
   fr:
-    title: "Côte ouest ou côte nord : laquelle pour les expatriés ?"
+    title: 'Côte ouest ou côte nord : laquelle pour les expatriés ?'
     slug: ouest-ou-nord-pour-les-expatries
-    excerpt: "Comparer les côtes ouest et nord de Maurice pour s’y installer : climat, écoles, santé, immobilier et déplacements."
-    shortAnswer: "Le nord a davantage de tout sur les listes officielles : plus d’écoles internationales, plus de cliniques privées et plus de projets pour acheteurs étrangers. L’ouest est le côté le plus sec et le plus ensoleillé de l’île, avec les couchers de soleil sur la mer, le parc national et le kitesurf au Morne, et un choix d’écoles plus réduit autour de Tamarin et Flic en Flac."
+    excerpt: >-
+      Comparer les côtes ouest et nord de Maurice pour s’y installer : climat,
+      écoles, santé, immobilier et déplacements.
+    shortAnswer: >-
+      Le nord a davantage de tout sur les listes officielles : plus d’écoles
+      internationales, plus de cliniques privées et plus de projets pour
+      acheteurs étrangers. L’ouest est le côté le plus sec et le plus ensoleillé
+      de l’île, avec les couchers de soleil sur la mer, le parc national et le
+      kitesurf au Morne, et un choix d’écoles plus réduit autour de Tamarin et
+      Flic en Flac.
     table:
-      caption: "Côtes ouest et nord côte à côte"
+      caption: Côtes ouest et nord côte à côte
       headers:
-        - ""
-        - "Côte ouest (de Flic en Flac au Morne)"
-        - "Côte nord (autour de Grand Baie)"
+        - ''
+        - Côte ouest (de Flic en Flac au Morne)
+        - Côte nord (autour de Grand Baie)
       rows:
         - cells:
-            - "Climat"
-            - "Le côté le plus sec et le plus ensoleillé, à l’abri des alizés"
-            - "Étés chauds et humides, hivers secs, comme toute l’île"
+            - Climat
+            - Le côté le plus sec et le plus ensoleillé, à l’abri des alizés
+            - Étés chauds et humides, hivers secs, comme toute l’île
         - cells:
-            - "Écoles internationales (liste EDB)"
-            - "4 : Paul et Virginie, Telfair, Westcoast primaire, Westcoast secondaire"
-            - "6 ou plus, autour de Grand Baie, Mapou, Calebasses et Beau Plan"
+            - Écoles internationales (liste EDB)
+            - >-
+              4 : Paul et Virginie, Telfair, Westcoast primaire, Westcoast
+              secondaire
+            - 6 ou plus, autour de Grand Baie, Mapou, Calebasses et Beau Plan
         - cells:
-            - "Cliniques privées (liste EDB)"
-            - "2 : Clinique de l’Occident, Artemis Cascavelle"
-            - "3 : Clinique de Grand Baie, Centre Médical du Nord, une clinique à Trou aux Biches"
+            - Cliniques privées (liste EDB)
+            - '2 : Clinique de l’Occident, Artemis Cascavelle'
+            - >-
+              3 : Clinique de Grand Baie, Centre Médical du Nord, une clinique à
+              Trou aux Biches
         - cells:
-            - "Projets RES sur la liste 2022 de l’EDB"
-            - "22 sur 77"
-            - "52 sur 77"
+            - Projets RES sur la liste 2022 de l’EDB
+            - 22 sur 77
+            - 52 sur 77
         - cells:
-            - "Smart cities"
-            - "Cap Tamarin, Médine"
-            - "Beau Plan, Mon Choisy"
+            - Smart cities
+            - Cap Tamarin, Médine
+            - Beau Plan, Mon Choisy
         - cells:
-            - "Nature"
-            - "Parc national, Le Morne, Chamarel"
-            - "Les plages de la côte nord"
+            - Nature
+            - Parc national, Le Morne, Chamarel
+            - Les plages de la côte nord
     faqs:
-      - question: "L’ouest ou le nord pour un expatrié ?"
-        answer: "Selon vos priorités. Le nord a plus d’écoles internationales, de cliniques et de projets sur les listes officielles ; l’ouest est plus sec et plus ensoleillé, avec le parc national, Le Morne et les couchers de soleil sur la mer."
-      - question: "Quelle côte a le plus d’écoles internationales ?"
-        answer: "Le nord. La liste de l’Economic Development Board compte six écoles internationales ou plus dans le nord, autour de Grand Baie, Mapou, Calebasses et Beau Plan, contre quatre sur la côte ouest."
-      - question: "Quelle côte a le meilleur climat ?"
-        answer: "La côte ouest est le côté le plus sec et le plus ensoleillé de Maurice, à l’abri des alizés qui apportent davantage de pluie à l’est."
-      - question: "Où un étranger achète le plus facilement ?"
-        answer: "Les deux côtes ont beaucoup de projets. Sur la liste des projets RES de l’EDB de novembre 2022, 52 sur 77 sont dans le nord et 22 sur notre côte ouest."
-    seoDescription: "Côte ouest ou côte nord de Maurice pour les expatriés : climat, écoles, cliniques, immobilier et smart cities comparés d’après les listes officielles de l’EDB."
+      - question: L’ouest ou le nord pour un expatrié ?
+        answer: >-
+          Selon vos priorités. Le nord a plus d’écoles internationales, de
+          cliniques et de projets sur les listes officielles ; l’ouest est plus
+          sec et plus ensoleillé, avec le parc national, Le Morne et les
+          couchers de soleil sur la mer.
+      - question: Quelle côte a le plus d’écoles internationales ?
+        answer: >-
+          Le nord. La liste de l’Economic Development Board compte six écoles
+          internationales ou plus dans le nord, autour de Grand Baie, Mapou,
+          Calebasses et Beau Plan, contre quatre sur la côte ouest.
+      - question: Quelle côte a le meilleur climat ?
+        answer: >-
+          La côte ouest est le côté le plus sec et le plus ensoleillé de
+          Maurice, à l’abri des alizés qui apportent davantage de pluie à l’est.
+      - question: Où un étranger achète le plus facilement ?
+        answer: >-
+          Les deux côtes ont beaucoup de projets. Sur la liste des projets RES
+          de l’EDB de novembre 2022, 52 sur 77 sont dans le nord et 22 sur notre
+          côte ouest.
+    seoDescription: >-
+      Côte ouest ou côte nord de Maurice pour les expatriés : climat, écoles,
+      cliniques, immobilier et smart cities comparés d’après les listes
+      officielles de l’EDB.

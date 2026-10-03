@@ -3,11 +3,19 @@ updatedAt: '2026-10-03'
 content:
   en:
     title: Privacy policy
-    intro: What personal data we collect, why, who receives it, and your rights.
-    seoDescription: "What personal data West of Mauritius collects through its forms, newsletter and WhatsApp group, why, who receives it, how long it is kept and your rights."
+    intro: >-
+      What personal data we collect and why. Who receives it and what your
+      rights are.
+    seoDescription: >-
+      What personal data West of Mauritius collects through its forms and
+      newsletter and WhatsApp group. Who receives it and how long it is kept and
+      what your rights are.
   fr:
     title: Politique de confidentialité
     intro: >-
       Quelles données personnelles nous collectons, pourquoi, qui les reçoit, et
       vos droits.
-    seoDescription: "Les données personnelles qu’Ouest Maurice collecte par ses formulaires, sa newsletter et son groupe WhatsApp, pourquoi, qui les reçoit, combien de temps et vos droits."
+    seoDescription: >-
+      Les données personnelles qu’Ouest Maurice collecte par ses formulaires, sa
+      newsletter et son groupe WhatsApp, pourquoi, qui les reçoit, combien de
+      temps et vos droits.

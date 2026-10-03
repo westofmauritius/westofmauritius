@@ -1,9 +1,9 @@
 {
   "Metadata": {
-    "description": "A Mauritian’s guide to the west coast of Mauritius: beaches, sunsets, places and living in Flic en Flac, Tamarin, Black River, La Gaulette, Le Morne and Chamarel.",
-    "areaTitle": "{name}, Mauritius: things to do and living guide",
-    "placeTitle": "{name}, Mauritius: map and visitor guide",
-    "placeTitleShort": "{name}, Mauritius"
+    "description": "A Mauritian’s guide to the west coast of Mauritius: beaches and sunsets and places and living in Flic en Flac and Tamarin and Black River and La Gaulette and Le Morne and Chamarel.",
+    "areaTitle": "{name} in Mauritius: things to do and living guide",
+    "placeTitle": "{name} in Mauritius: map and visitor guide",
+    "placeTitleShort": "{name} in Mauritius"
   },
   "Nav": {
     "areas": "Areas",
@@ -21,7 +21,7 @@
     "skipToContent": "Skip to content"
   },
   "Footer": {
-    "tagline": "A Mauritian’s guide to the west coast, from Flic en Flac to Le Morne.",
+    "tagline": "A Mauritian’s guide to the west coast from Flic en Flac to Le Morne.",
     "explore": "Explore",
     "liveHere": "Living here",
     "about": "About",
@@ -36,11 +36,11 @@
   },
   "Home": {
     "eyebrow": "A Mauritian’s guide to the west coast",
-    "title": "Lagoons, mountains and the island’s finest sunsets",
-    "intro": "Where to eat, swim and watch the sun go down, and what it takes to make the west coast home.",
+    "title": "Lagoons and mountains and the island’s finest sunsets",
+    "intro": "Where to eat swim and watch the sun go down and what it takes to make the west coast home.",
     "ctaGuides": "Explore the guides",
     "ctaLive": "Living in the West",
-    "areasTitle": "Six places, one coast",
+    "areasTitle": "Six places on one coast",
     "allAreas": "All areas",
     "featuredTitle": "Places to know",
     "allPlaces": "Browse all places",
@@ -49,34 +49,34 @@
     "allGuides": "All guides",
     "liveEyebrow": "Living in the West",
     "liveTitle": "Dreaming of a home by the lagoon?",
-    "liveText": "Whether you are moving from abroad or coming home, we explain how buying property on the west coast works, and put you in touch with people who can help.",
+    "liveText": "Whether you are moving from abroad or coming home we explain how buying property on the west coast works and put you in touch with people who can help.",
     "liveCta": "How buying works",
     "liveEnquire": "Tell us what you are looking for",
     "mapTitle": "The west on one map",
     "allOnMap": "Search all places",
     "localEyebrow": "From a local",
-    "localTitle": "The west coast, through Mauritian eyes",
-    "localText": "Where to swim, when to catch the sunset, which village suits you, and what it really takes to make a home here.",
+    "localTitle": "The west coast through Mauritian eyes",
+    "localText": "Where to swim when to catch the sunset which village suits you and what it really takes to make a home here.",
     "localAuthor": "About {name}",
     "localHow": "About this guide"
   },
   "Pages": {
     "areas": {
       "title": "Areas",
-      "intro": "Six places along the west coast, each with its own character.",
+      "intro": "Six places along the west coast each with its own character.",
       "metaTitle": "The six villages of the west coast of Mauritius",
-      "metaDescription": "Flic en Flac, Tamarin, Black River, La Gaulette, Le Morne and Chamarel: what each west coast village is like to visit or to live in, by a Mauritian."
+      "metaDescription": "Flic en Flac and Tamarin and Black River and La Gaulette and Le Morne and Chamarel: what each west coast village is like to visit or to live in. By a Mauritian."
     },
     "guides": {
       "title": "Guides",
-      "intro": "Beaches, sunsets, walks, places to eat and shop, and everything practical for a stay on the west coast.",
-      "metaTitle": "West coast Mauritius guides: beaches, sunsets and hikes",
-      "metaDescription": "Guides to the west coast of Mauritius by a local: the best beaches, sunset spots, hikes, day trips and practical tips for your stay."
+      "intro": "Beaches and sunsets and walks and places to eat and shop. Plus everything practical for a stay on the west coast.",
+      "metaTitle": "West coast Mauritius guides: beaches and sunsets and hikes",
+      "metaDescription": "Guides to the west coast of Mauritius by a local: the best beaches and sunset spots and hikes and day trips with practical tips for your stay."
     },
     "live": {
       "title": "Living in the West",
-      "metaTitle": "Living on the west coast of Mauritius: areas, costs and buying",
-      "intro": "Moving to the west coast of Mauritius, or coming home? Where to live, what it costs and how buying works, answered by a Mauritian."
+      "metaTitle": "Living on the west coast of Mauritius: areas and costs and buying",
+      "intro": "Moving to the west coast of Mauritius or coming home? Where to live and what it costs and how buying works. Answered by a Mauritian."
     },
     "about": {
       "title": "About",
@@ -84,7 +84,7 @@
     },
     "contact": {
       "title": "Contact",
-      "intro": "Questions, tips, corrections or partnerships? We would love to hear from you."
+      "intro": "Questions or tips or corrections or partnerships? We would love to hear from you."
     },
     "privacy": {
       "title": "Privacy",
@@ -95,14 +95,14 @@
     },
     "places": {
       "title": "Places",
-      "intro": "Restaurants, beaches, sunset spots, activities and shopping across the west coast. Search, or filter by area and theme.",
+      "intro": "Restaurants and beaches and sunset spots and activities and shopping across the west coast. Search or filter by area and theme.",
       "metaTitle": "West coast Mauritius on a map: beaches and sights",
-      "metaDescription": "Every beach, viewpoint, waterfall and sight on the west coast of Mauritius on one map, from Flic en Flac to Le Morne. Search and filter by area."
+      "metaDescription": "Every beach and viewpoint and waterfall and sight on the west coast of Mauritius on one map from Flic en Flac to Le Morne. Search and filter by area."
     },
     "community": {
       "title": "Join the west coast community",
       "metaTitle": "West coast Mauritius community: newsletter and WhatsApp group",
-      "intro": "Insider updates from the west coast, written by a local, and a WhatsApp group for people who live here, are moving here or keep coming back."
+      "intro": "Insider updates from the west coast written by a local. Plus a WhatsApp group for people who live here or are moving here or keep coming back."
     }
   },
   "NotFound": {
@@ -158,7 +158,7 @@
   },
   "AreaPage": {
     "placesTitle": "Places in {name}",
-    "placesIntro": "Where to eat, swim and watch the sunset in {name}.",
+    "placesIntro": "Where to eat swim and watch the sunset in {name}.",
     "noPlaces": "No places have been added for {name} yet.",
     "otherAreas": "Other areas on the west coast",
     "livingLink": "Living in {name}"
@@ -171,11 +171,11 @@
     "closed": "Closed",
     "website": "Visit website",
     "book": "Book or find out more",
-    "partnerLink": "Partner link: we may earn a commission, at no extra cost to you.",
+    "partnerLink": "Partner link: we may earn a commission at no extra cost to you.",
     "phone": "Phone",
     "directions": "Get directions",
     "lastVerified": "Details last checked {date}.",
-    "checkDetails": "Details can change, so check with the venue before you go.",
+    "checkDetails": "Details can change so check with the venue before you go.",
     "moreIn": "More in {area}",
     "photoBy": "Photo: {credit}",
     "galleryOpen": "Open photo {n} of {total}",
@@ -188,39 +188,39 @@
   "GuideCategories": {
     "restaurants": {
       "title": "Food",
-      "intro": "Mauritian food on the west coast: what to eat, where the dishes come from and what they cost.",
+      "intro": "Mauritian food on the west coast: what to eat where the dishes come from and what they cost.",
       "metaTitle": "Mauritian food on the west coast: what to eat",
-      "metaDescription": "What to eat on the west coast of Mauritius, from a Mauritian: street food, curries, rougaille, seafood and rum, where each dish comes from and what it costs."
+      "metaDescription": "What to eat on the west coast of Mauritius from a Mauritian: street food and curries and rougaille and seafood and rum. Where each dish comes from and what it costs."
     },
     "activities": {
       "title": "Activities",
       "intro": "Things to do on land and water along the west coast.",
       "metaTitle": "Things to do on the west coast of Mauritius",
-      "metaDescription": "Things to do on the west coast of Mauritius, on land and water: hikes, waterfalls, history and day trips, from a Mauritian who knows the coast."
+      "metaDescription": "Things to do on the west coast of Mauritius on land and water: hikes and waterfalls and history and day trips from a Mauritian who knows the coast."
     },
     "beaches": {
       "title": "Beaches",
-      "intro": "The west coast's beaches and lagoons, and what each is best for.",
+      "intro": "The west coast's beaches and lagoons and what each is best for.",
       "metaTitle": "Beaches on the west coast of Mauritius",
-      "metaDescription": "The beaches and lagoons of the west coast of Mauritius, from Flic en Flac to Le Morne, and what each one is best for: swimming, snorkelling or sunsets."
+      "metaDescription": "The beaches and lagoons of the west coast of Mauritius from Flic en Flac to Le Morne and what each one is best for: swimming or snorkelling or sunsets."
     },
     "sunsets": {
       "title": "Sunsets",
       "intro": "The best places to watch the sun go down over the Indian Ocean.",
       "metaTitle": "Sunset spots on the west coast of Mauritius",
-      "metaDescription": "The best places to watch the sun go down over the Indian Ocean on the west coast of Mauritius, and how to time it, from a local."
+      "metaDescription": "The best places to watch the sun go down over the Indian Ocean on the west coast of Mauritius and how to time it from a local."
     },
     "shopping": {
       "title": "Shopping",
-      "intro": "Markets, shops and shopping centres in the west.",
+      "intro": "Markets and shops and shopping centres in the west.",
       "metaTitle": "Shopping on the west coast of Mauritius",
-      "metaDescription": "Markets, shops and shopping centres on the west coast of Mauritius, from village markets to everyday supplies, area by area."
+      "metaDescription": "Markets and shops and shopping centres on the west coast of Mauritius from village markets to everyday supplies area by area."
     },
     "practical": {
       "title": "Plan your trip",
-      "intro": "Seasons, getting there and around, money, language and the practical details of a stay on the west coast.",
+      "intro": "Seasons and getting there and around. Money and language and the practical details of a stay on the west coast.",
       "metaTitle": "Plan your trip to the west coast of Mauritius",
-      "metaDescription": "Seasons, flights, getting around, money and language: the practical details of a stay on the west coast of Mauritius, from a Mauritian."
+      "metaDescription": "Seasons and flights and getting around and money and language: the practical details of a stay on the west coast of Mauritius from a Mauritian."
     }
   },
   "GuidesPage": {
@@ -245,7 +245,7 @@
   "PlacesPage": {
     "eyebrow": "The west coast",
     "search": "Search",
-    "searchPlaceholder": "Name, area or theme…",
+    "searchPlaceholder": "Name or area or theme…",
     "area": "Area",
     "anyArea": "All areas",
     "category": "Category",
@@ -266,16 +266,16 @@
     "audienceAbroad": "Moving from abroad",
     "audienceAbroadText": "You are dreaming of a life by the lagoon and want to know how buying works for foreigners.",
     "audienceHome": "Coming home",
-    "audienceHomeText": "You are Mauritian, living in Europe, the UK or Australia, and want a home on the west coast.",
+    "audienceHomeText": "You are Mauritian and live in Europe or the UK or Australia and want a home on the west coast.",
     "audienceInvest": "Investing",
-    "audienceInvestText": "You are looking at the west coast as a place to invest, with or without living here.",
+    "audienceInvestText": "You are looking at the west coast as a place to invest with or without living here.",
     "schemesTitle": "Ways to buy",
     "schemesIntro": "The schemes buyers from abroad ask about most.",
     "areasTitle": "Buying by area",
-    "areasIntro": "Schemes, homes on offer and the steps, area by area.",
+    "areasIntro": "Schemes and homes on offer and the steps area by area.",
     "generalTitle": "Before you buy",
     "enquireTitle": "Get a free personal shortlist",
-    "enquireText": "Tell us how you want to live and what you can spend. A local will suggest the areas and homes that fit, with no obligation.",
+    "enquireText": "Tell us how you want to live and what you can spend. A local will suggest the areas and homes that fit with no obligation.",
     "enquireCta": "Get my free shortlist",
     "readMore": "Read",
     "heroShortlist": "Get my free shortlist",
@@ -283,22 +283,22 @@
     "questionsTitle": "Start with the big questions",
     "questionsIntro": "The questions people ask most before moving to the west coast.",
     "areasLivingTitle": "Living in each area",
-    "areasLivingIntro": "Daily life, costs, schools and getting around, village by village.",
+    "areasLivingIntro": "Daily life and costs and schools and getting around village by village.",
     "compareTitle": "Compare before you choose",
-    "compareIntro": "Side by side, so you can see the differences that matter to you.",
+    "compareIntro": "Side by side so you can see the differences that matter to you.",
     "buyingTitle": "Buying property",
     "buyingIntro": "How foreigners and returning Mauritians can buy on the west coast."
   },
   "LiveArticle": {
     "ctaTitle": "Thinking of buying?",
     "ctaTitleArea": "Thinking of buying in {area}?",
-    "ctaText": "Tell us what you are looking for, and we will put you in touch with people who know the market.",
+    "ctaText": "Tell us what you are looking for and we will put you in touch with people who know the market.",
     "ctaButton": "Start your enquiry",
     "related": "More to read",
     "updated": "Updated {date}",
     "moveTitle": "Thinking of moving here?",
     "moveTitleArea": "Thinking of moving to {area}?",
-    "moveText": "Get a free personal shortlist: tell us what you need, and a local will suggest the areas and homes that fit.",
+    "moveText": "Get a free personal shortlist: tell us what you need and a local will suggest the areas and homes that fit.",
     "moveButton": "Get my free shortlist",
     "faqTitle": "Common questions",
     "areasTitle": "Living in these areas",
@@ -315,18 +315,18 @@
     "optional": "optional",
     "errors": {
       "required": "Please fill this in.",
-      "email": "Please enter a valid email address, e.g. name@example.com.",
+      "email": "Please enter a valid email address such as name@example.com.",
       "tooLong": "This is too long.",
       "invalid": "Please choose one of the options.",
       "consent": "Please tick this box to continue.",
-      "phoneInvalid": "Please enter a phone number with digits, e.g. +44 7700 900123."
+      "phoneInvalid": "Please enter a phone number with digits such as +44 7700 900123."
     },
     "errorSummary": "Please check {count} fields:",
     "errorSummaryOne": "Please check this field:",
     "status": {
       "sending": "Sending…",
       "rateLimited": "You have sent several messages in a short time. Please try again in an hour.",
-      "unavailable": "Sorry, the form is temporarily unavailable. Please try again later, or email us.",
+      "unavailable": "Sorry but the form is temporarily unavailable. Please try again later or email us.",
       "network": "The message could not be sent. Check your connection and try again."
     },
     "lead": {
@@ -336,26 +336,26 @@
       "name": "Full name",
       "email": "Email",
       "phone": "Phone or WhatsApp",
-      "phoneHint": "With country code, e.g. +33 6 12 34 56 78",
+      "phoneHint": "With country code e.g. +33 6 12 34 56 78",
       "country": "Country you live in",
       "countryPlaceholder": "Choose a country",
       "budget": "Budget",
       "timeframe": "When would you like to buy?",
       "areas": "Areas you are interested in",
-      "areasHint": "Choose any that appeal, or none if you are not sure yet.",
+      "areasHint": "Choose any that appeal or none if you are not sure yet.",
       "message": "Tell us more",
-      "messageHint": "Type of property, bedrooms, essentials…",
+      "messageHint": "Type of property and bedrooms and essentials…",
       "newsletter": "Also send me the West of Mauritius newsletter (you can unsubscribe at any time).",
       "privacy": "How we handle your data: privacy policy",
       "submit": "Send my enquiry",
-      "successTitle": "Thank you, your enquiry is on its way",
+      "successTitle": "Thank you! Your enquiry is on its way",
       "successText": "We have received your details and will be in touch soon. A confirmation has been sent to your email address.",
       "consentLabel": "Consent"
     },
     "budgets": {
-      "under-300k": "Under €300,000",
-      "300k-600k": "€300,000 to €600,000",
-      "600k-1m": "€600,000 to €1 million",
+      "under-300k": "Under €300 000",
+      "300k-600k": "€300 000 to €600 000",
+      "600k-1m": "€600 000 to €1 million",
       "over-1m": "Over €1 million",
       "unsure": "Not sure yet"
     },
@@ -382,8 +382,8 @@
       "topicPlaceholder": "Choose a subject"
     },
     "newsletter": {
-      "title": "Insider updates from the west coast, written by a local",
-      "text": "New guides and places, notes on living here and what is changing on the coast, from a Mauritian. A few emails a month, no spam.",
+      "title": "Insider updates from the west coast written by a local",
+      "text": "New guides and places and notes on living here and what is changing on the coast from a Mauritian. A few emails a month and no spam.",
       "email": "Email address",
       "submit": "Subscribe",
       "successTitle": "Almost there",
@@ -392,7 +392,7 @@
     "whatsapp": {
       "name": "Your name",
       "phone": "WhatsApp number",
-      "phoneHint": "With the country code, e.g. +230 5712 3456.",
+      "phoneHint": "With the country code e.g. +230 5712 3456.",
       "role": "You are…",
       "roles": {
         "live-here": "Living here",
@@ -400,13 +400,13 @@
         "visiting": "Visiting often"
       },
       "submit": "Ask for an invitation",
-      "successTitle": "Thank you, you are on the list",
+      "successTitle": "Thank you! You are on the list",
       "successText": "We will send you an invitation on WhatsApp when the group opens."
     }
   },
   "Enquire": {
     "title": "Tell us what you are looking for",
-    "intro": "Share your plans and we will put you in touch with developers and agents who can help. It takes two minutes, and there is no obligation."
+    "intro": "Share your plans and we will put you in touch with developers and agents who can help. It takes two minutes and there is no obligation."
   },
   "ThankYou": {
     "title": "Thank you",
@@ -418,14 +418,14 @@
   },
   "NewsletterStatus": {
     "title": "Newsletter",
-    "confirmed": "Thank you, your subscription is confirmed.",
+    "confirmed": "Thank you! Your subscription is confirmed.",
     "unsubscribed": "You have been unsubscribed. You will not receive any more newsletters.",
-    "invalid": "This link is not valid any more. If you need help, please contact us.",
+    "invalid": "This link is not valid any more. If you need help please contact us.",
     "default": "Manage your newsletter subscription from the links in our emails."
   },
   "CreditsPage": {
     "title": "Photo credits",
-    "intro": "The photographers whose work appears on this site, with the licence of each photo and a link to the original.",
+    "intro": "The photographers whose work appears on this site with the licence of each photo and a link to the original.",
     "shows": "Shows",
     "by": "Photo by {name}",
     "licence": "Licence: {licence}",
@@ -448,14 +448,14 @@
   "AreaLiving": {
     "eyebrow": "Living here",
     "title": "Living in {name}",
-    "intro": "For anyone thinking of moving to {name}: daily life, costs, schools, healthcare and getting around.",
-    "placeholder": "This section is being written. Text in [square brackets] is a placeholder, and no figure is shown until it has been checked and sourced.",
+    "intro": "For anyone thinking of moving to {name}: daily life and costs and schools and healthcare and getting around.",
+    "placeholder": "This section is being written. Text in [square brackets] is a placeholder and no figure is shown until it has been checked and sourced.",
     "shortAnswer": "The short answer",
     "livingHere": "Daily life",
     "pros": "Why people like it",
     "cons": "What to weigh up",
     "costsTitle": "What it costs",
-    "costsCaption": "Indicative costs for Mauritius as a whole, published by the Economic Development Board. They are not specific to {name}: ask local agents for current prices.",
+    "costsCaption": "Indicative costs for Mauritius as a whole published by the Economic Development Board. They are not specific to {name} so ask local agents for current prices.",
     "costItem": "Item",
     "costAmount": "Typical cost",
     "costChecked": "Checked",
@@ -474,13 +474,13 @@
     "newsletterPoints": [
       "New guides and places as soon as they are published",
       "Notes on living and buying on the west coast",
-      "A few emails a month, and you can leave with one click"
+      "A few emails a month and you can leave with one click"
     ],
     "whatsappTitle": "The WhatsApp group",
-    "whatsappText": "We are starting a WhatsApp group for the west coast: questions, tips and local news, shared by the people who know it. Leave your number and we will invite you when it opens.",
+    "whatsappText": "We are starting a WhatsApp group for the west coast with questions and tips and local news shared by the people who know it. Leave your number and we will invite you when it opens.",
     "homeEyebrow": "Community",
-    "homeTitle": "Insider updates from the west coast, written by a local",
-    "homeText": "Join the newsletter, or ask for an invitation to the west coast WhatsApp group.",
+    "homeTitle": "Insider updates from the west coast written by a local",
+    "homeText": "Join the newsletter or ask for an invitation to the west coast WhatsApp group.",
     "homeCta": "Join the community"
   },
   "Sunset": {
@@ -494,23 +494,23 @@
     "eyebrow": "Living in the West",
     "title": "Which west coast village is yours?",
     "metaTitle": "Which west coast village suits you? A three question quiz",
-    "intro": "Three questions about how you want to live, and we point you to the village on the west coast of Mauritius that fits best. Every match is based on what each village is really like.",
+    "intro": "Three questions about how you want to live and we point you to the village on the west coast of Mauritius that fits best. Every match is based on what each village is really like.",
     "questions": {
       "sea": {
         "legend": "What do you want from the sea?",
         "options": {
           "beach": "A long beach to walk every day",
           "surf": "Waves: surf or kitesurf",
-          "boats": "Boats, fishing and the islands",
+          "boats": "Boats and fishing and the islands",
           "hills": "I prefer the hills and cooler air"
         }
       },
       "pace": {
         "legend": "What pace of life?",
         "options": {
-          "lively": "Lively, with people around",
+          "lively": "Lively with people around",
           "village": "A real village where people know each other",
-          "nature": "Quiet, close to nature"
+          "nature": "Quiet and close to nature"
         }
       },
       "sunday": {

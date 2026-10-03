@@ -58,7 +58,7 @@ export async function Byline({
             ),
           })}
           {author.role && (
-            <span className="text-ink-muted">, {author.role}</span>
+            <span className="text-ink-muted"> · {author.role}</span>
           )}
         </p>
         <p className="text-ink-muted">

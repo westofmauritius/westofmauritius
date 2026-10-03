@@ -186,10 +186,16 @@ export default async function PlacePage({ params }: Props) {
                 <div>
                   <dt className="font-medium">{t("PlacePage.address")}</dt>
                   <dd className="mt-1 text-ink-muted">
-                    {/* Add the area unless the address already names it. */}
-                    {place.address.includes(area.name)
-                      ? place.address
-                      : `${place.address}, ${area.name}`}
+                    {/* One part per line rather than joined by commas, plus
+                        the area unless the address already names it. */}
+                    {[
+                      ...place.address.split(/,\s*/),
+                      ...(place.address.includes(area.name) ? [] : [area.name]),
+                    ].map((part, i) => (
+                      <span key={i} className="block">
+                        {part}
+                      </span>
+                    ))}
                   </dd>
                 </div>
               )}

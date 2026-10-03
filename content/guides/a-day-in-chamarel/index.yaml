@@ -1,15 +1,15 @@
 category: activities
 placeholder: false
 sources:
-  - title: 'Chamarel'
+  - title: Chamarel
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Chamarel
     checkedAt: '2026-10-01'
-  - title: 'Seven Coloured Earths'
+  - title: Seven Coloured Earths
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Seven_Coloured_Earths
     checkedAt: '2026-10-01'
-  - title: 'Black River Gorges National Park'
+  - title: Black River Gorges National Park
     publisher: Wikipedia
     url: https://en.wikipedia.org/wiki/Black_River_Gorges_National_Park
     checkedAt: '2026-10-01'
@@ -42,11 +42,12 @@ content:
   en:
     title: A day in Chamarel and the hills
     excerpt: >-
-      Leave the coast behind for a day: a viewpoint over the lagoon, the Seven
-      Coloured Earths, a 95 metre waterfall and the gorges of the national park.
+      Leave the coast behind for a day. See a viewpoint over the lagoon and the
+      Seven Coloured Earths and a 95 metre waterfall and the gorges of the
+      national park.
     seoDescription: >-
-      A day trip to Chamarel, west Mauritius: the viewpoint over Le Morne, the
-      Seven Coloured Earths, Chamarel Falls and the Gorges Viewpoint.
+      A day trip to Chamarel in west Mauritius: the viewpoint over Le Morne and
+      the Seven Coloured Earths with Chamarel Falls and the Gorges Viewpoint.
   fr:
     title: Une journée à Chamarel et dans les hauteurs
     slug: une-journee-a-chamarel
