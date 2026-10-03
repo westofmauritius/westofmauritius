@@ -1,68 +1,73 @@
 kind: question
 order: 1
-placeholder: true
-publishedAt: '2026-10-02'
 relatedAreas:
   - tamarin
+placeholder: false
+publishedAt: '2026-10-03'
+updatedAt: '2026-10-03'
+sources:
+  - title: "Cost of living in Mauritius"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/cost-of-living/
+    checkedAt: '2026-10-03'
+  - title: "International schools"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/practical-information/education/
+    checkedAt: '2026-10-03'
+  - title: "Healthcare and private clinics"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/practical-information/health/
+    checkedAt: '2026-10-03'
+  - title: "Driving distances and times"
+    publisher: "OpenStreetMap (OSRM routing)"
+    url: https://map.project-osrm.org/
+    checkedAt: '2026-10-03'
 content:
   en:
     title: "How much does it cost to live in Tamarin?"
     slug: cost-of-living-in-tamarin
-    excerpt: "Rent, groceries, utilities, transport and school fees in Tamarin, with the date and source of every figure."
-    shortAnswer: "[Placeholder: answer “How much does it cost to live in Tamarin?” in two or three sentences, before any detail.]"
+    excerpt: "Rent, utilities, groceries, transport and schools in Tamarin, using the official indicative figures for Mauritius."
+    shortAnswer: "There are no official figures for Tamarin alone. The Economic Development Board's indicative figures for Mauritius put rent at USD 500 to 1,000 a month for a 2 to 4 bedroom house and USD 1,200 to 2,400 for a villa with a garden and pool. Electricity, water and internet add roughly USD 55 to 135 a month. Families should add international school fees, which the schools give on request."
     table:
-      caption: "Monthly costs in Tamarin"
+      caption: "Indicative monthly costs (Mauritius)"
       headers:
         - ""
-        - "Single person"
-        - "Couple"
-        - "Family of four"
+        - "Indicative cost"
       rows:
         - cells:
-            - "Rent"
-            - "[To be checked]"
-            - "[To be checked]"
-            - "[To be checked]"
+            - "House, 2 to 4 bedrooms, rent"
+            - "USD 500 to 1,000 a month"
         - cells:
-            - "Groceries"
-            - "[To be checked]"
-            - "[To be checked]"
-            - "[To be checked]"
+            - "Villa with garden and pool, 3 to 6 bedrooms, rent"
+            - "USD 1,200 to 2,400 a month"
         - cells:
-            - "Electricity and water"
-            - "[To be checked]"
-            - "[To be checked]"
-            - "[To be checked]"
+            - "Electricity"
+            - "USD 20 to 100 a month"
         - cells:
-            - "Internet and phone"
-            - "[To be checked]"
-            - "[To be checked]"
-            - "[To be checked]"
+            - "Water, family of 3 to 4"
+            - "USD 3 to 6 a month"
         - cells:
-            - "Transport"
-            - "[To be checked]"
-            - "[To be checked]"
-            - "[To be checked]"
+            - "Internet, 20 Mbps"
+            - "USD 30 a month"
         - cells:
-            - "School fees"
-            - "[To be checked]"
-            - "[To be checked]"
-            - "[To be checked]"
+            - "Meal for two, moderately priced restaurant"
+            - "From USD 30"
         - cells:
-            - "Total"
-            - "[To be checked]"
-            - "[To be checked]"
-            - "[To be checked]"
+            - "Bus ticket, one way"
+            - "USD 1.00"
+        - cells:
+            - "Petrol"
+            - "USD 1.45 a litre"
     faqs:
       - question: "Is Tamarin expensive to live in?"
-        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+        answer: "No official figures exist for Tamarin alone. The EDB's indicative figures for Mauritius give rents from USD 500 a month for a 2 to 4 bedroom house to USD 2,400 for a large villa with a pool; ask local agents where Tamarin sits in that range today."
       - question: "How much is rent in Tamarin?"
-        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
-      - question: "How much do you need to live comfortably in Tamarin?"
-        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
-      - question: "Is Tamarin cheaper than Grand Baie?"
-        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
-    seoDescription: "The real cost of living in Tamarin, Mauritius: rent, groceries, utilities and schools, each figure dated and sourced by a local."
+        answer: "Use the EDB's indicative figures as a starting point: USD 500 to 1,000 a month for a house with 2 to 4 bedrooms, and USD 1,200 to 2,400 for a villa with a garden and pool. Some landlords also ask for a deposit and an agency fee."
+      - question: "How much are utilities in Tamarin?"
+        answer: "According to the EDB: electricity USD 20 to 100 a month depending on use, water USD 3 to 6 for a family of three to four, and internet around USD 30 for a 20 Mbps connection."
+      - question: "Do I need a car in Tamarin?"
+        answer: "It makes life much easier. Buses are cheap (about USD 1 a ticket, says the EDB), but schools, clinics and shops are spread along the coast. Note that buying a car in Mauritius comes with 100% excise duty."
+    seoDescription: "Cost of living in Tamarin, Mauritius: rent, utilities, groceries and transport from the official EDB figures, plus schools and healthcare nearby."
   fr:
     title: "Combien coûte la vie à Tamarin ?"
     slug: cout-de-la-vie-a-tamarin

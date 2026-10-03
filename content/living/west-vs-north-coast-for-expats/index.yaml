@@ -1,7 +1,5 @@
 kind: comparison
 order: 3
-placeholder: true
-publishedAt: '2026-10-02'
 relatedAreas:
   - flic-en-flac
   - tamarin
@@ -9,65 +7,77 @@ relatedAreas:
   - la-gaulette
   - le-morne
   - chamarel
+placeholder: false
+publishedAt: '2026-10-03'
+updatedAt: '2026-10-03'
+sources:
+  - title: "Geography of Mauritius (climate)"
+    publisher: "Wikipedia"
+    url: https://en.wikipedia.org/wiki/Geography_of_Mauritius
+    checkedAt: '2026-10-03'
+  - title: "International schools"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/practical-information/education/
+    checkedAt: '2026-10-03'
+  - title: "Healthcare and private clinics"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/practical-information/health/
+    checkedAt: '2026-10-03'
+  - title: "Projects under the Real Estate Scheme (November 2022)"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/wp-content/uploads/2021/06/List-of-Approved-RES-Projects_Nov22.pdf
+    checkedAt: '2026-10-03'
+  - title: "Summary of Smart City projects (2025)"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/wp-content/uploads/2021/06/List-Smart-City-projects-with-contact-details-2025.pdf
+    checkedAt: '2026-10-03'
 content:
   en:
     title: "West coast vs north coast: which is better for expats?"
     slug: west-vs-north-coast-for-expats
-    excerpt: "How the west and north coasts compare for daily life, beaches, costs, schools and the commute, side by side."
-    shortAnswer: "[Placeholder: answer “Should you live on the west coast or the north coast?” in two or three sentences, before any detail.]"
+    excerpt: "How the west and north coasts of Mauritius compare for people moving here: weather, schools, healthcare, property and getting around."
+    shortAnswer: "The north has more of everything on the official lists: more international schools, more private clinics and more developments for foreign buyers. The west is the driest and sunniest side of the island, with sunsets over the sea, the national park and kitesurfing at Le Morne, and a smaller choice of schools around Tamarin and Flic en Flac."
     table:
       caption: "West and north coasts side by side"
       headers:
         - ""
-        - "West coast"
-        - "North coast"
+        - "West coast (Flic en Flac to Le Morne)"
+        - "North coast (around Grand Baie)"
       rows:
         - cells:
-            - "Atmosphere"
-            - "[To be written]"
-            - "[To be written]"
-        - cells:
-            - "Beaches and sea"
-            - "[To be written]"
-            - "[To be written]"
-        - cells:
-            - "Restaurants and nightlife"
-            - "[To be written]"
-            - "[To be written]"
-        - cells:
-            - "Schools nearby"
-            - "[To be written]"
-            - "[To be written]"
-        - cells:
-            - "Drive to Port Louis"
-            - "[To be checked]"
-            - "[To be checked]"
-        - cells:
-            - "Drive to the airport"
-            - "[To be checked]"
-            - "[To be checked]"
-        - cells:
-            - "Rent, two bedroom apartment"
-            - "[To be checked]"
-            - "[To be checked]"
-        - cells:
-            - "Expat community"
-            - "[To be written]"
-            - "[To be written]"
-        - cells:
             - "Weather"
-            - "[To be written]"
-            - "[To be written]"
+            - "The driest and sunniest side, sheltered from the trade winds"
+            - "Warm, humid summers and dry winters, like the whole island"
+        - cells:
+            - "International schools (EDB list)"
+            - "4: Paul et Virginie, Telfair, Westcoast primary, Westcoast secondary"
+            - "6 or more, around Grand Baie, Mapou, Calebasses and Beau Plan"
+        - cells:
+            - "Private clinics (EDB list)"
+            - "2: Clinique de l'Occident, Artemis Cascavelle"
+            - "3: Clinique de Grand Baie, Centre Médical du Nord, a clinic at Trou aux Biches"
+        - cells:
+            - "RES projects on the EDB's 2022 list"
+            - "22 of 77"
+            - "52 of 77"
+        - cells:
+            - "Smart cities"
+            - "Cap Tamarin, Medine"
+            - "Beau Plan, Mon Choisy"
+        - cells:
+            - "Nature"
+            - "National park, Le Morne, Chamarel"
+            - "The beaches of the north coast"
     faqs:
-      - question: "Is the west or the north coast better for families?"
-        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
-      - question: "Which is cheaper, the west or the north coast?"
-        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
-      - question: "Which has better beaches, the west or the north coast?"
-        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
-      - question: "Which is closer to the airport, the west or the north coast?"
-        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
-    seoDescription: "West vs north coast of Mauritius for expats: weather, beaches, schools, costs and community compared by a Mauritian who knows both."
+      - question: "Is the west or the north better for expats?"
+        answer: "It depends on what you value. The north has more international schools, clinics and developments on the official lists; the west is drier and sunnier, with the national park, Le Morne and sunsets over the sea."
+      - question: "Which coast has more international schools?"
+        answer: "The north. The Economic Development Board's list includes six or more international schools in the north, around Grand Baie, Mapou, Calebasses and Beau Plan, against four on the west coast."
+      - question: "Which coast has better weather?"
+        answer: "The west coast is the driest and sunniest side of Mauritius, sheltered from the trade winds that bring more rain to the east."
+      - question: "Where can foreigners buy more easily?"
+        answer: "Both coasts have many projects. On the EDB's November 2022 list of Real Estate Scheme projects, 52 of 77 are in the north and 22 on our stretch of the west coast."
+    seoDescription: "West vs north coast of Mauritius for expats: weather, schools, clinics, property and smart cities compared from official EDB lists, by a Mauritian."
   fr:
     title: "La côte ouest ou la côte nord : où vivre ?"
     slug: west-ou-north-coast-for-expats

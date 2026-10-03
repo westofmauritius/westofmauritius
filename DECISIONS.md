@@ -526,3 +526,18 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
     such.
 - A content check now fails the build if French is switched on while any
   French text is still a placeholder.
+
+## All Living in the West pages written (October 2026)
+
+- Cost of living in Tamarin, best area on the west coast, Tamarin vs Flic
+  en Flac, Tamarin vs Grand Baie and west vs north coast are written, as
+  are the six "Buying property in X as a foreigner" guides. Living in the
+  West has no placeholder left.
+- Comparisons use only countable, sourced facts: the EDB's lists of
+  international schools, private clinics, RES projects and smart cities,
+  OpenStreetMap drive distances, the 2011 census figure for Grand Baie and
+  the island's climate from Wikipedia. Recommendations ("families:
+  Tamarin") are editorial and drawn from those facts.
+- Where an official source has nothing for a village (no RES project in La
+  Gaulette or Le Morne, no village level prices), the page says so instead
+  of filling the gap.

@@ -184,10 +184,8 @@ test("the Living in the West hub links every question, comparison and area", asy
   await page.goto("/en/living-in-the-west/cost-of-living-in-tamarin");
   await expect(page.getByText("The short answer")).toBeVisible();
   await expect(page.getByRole("table")).toBeVisible();
-  await expect(page.locator('meta[name="robots"]')).toHaveAttribute(
-    "content",
-    /noindex/,
-  );
+  // Written pages are open to search engines.
+  await expect(page.locator('meta[name="robots"]')).toHaveCount(0);
 });
 
 test("old Live in the West addresses redirect permanently", async ({

@@ -1,7 +1,5 @@
 kind: question
 order: 3
-placeholder: true
-publishedAt: '2026-10-02'
 relatedAreas:
   - flic-en-flac
   - tamarin
@@ -9,60 +7,76 @@ relatedAreas:
   - la-gaulette
   - le-morne
   - chamarel
+placeholder: false
+publishedAt: '2026-10-03'
+updatedAt: '2026-10-03'
+sources:
+  - title: "International schools"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/practical-information/education/
+    checkedAt: '2026-10-03'
+  - title: "Healthcare and private clinics"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/practical-information/health/
+    checkedAt: '2026-10-03'
+  - title: "Driving distances and times"
+    publisher: "OpenStreetMap (OSRM routing)"
+    url: https://map.project-osrm.org/
+    checkedAt: '2026-10-03'
 content:
   en:
     title: "Where is the best place to live on the west coast of Mauritius?"
     slug: best-area-to-live-on-the-west-coast
-    excerpt: "Flic en Flac, Tamarin, Black River, La Gaulette, Le Morne or Chamarel: which suits families, retirees, surfers and remote workers."
-    shortAnswer: "[Placeholder: answer “Which area on the west coast is best to live in, and for whom?” in two or three sentences, before any detail.]"
+    excerpt: "Flic en Flac, Tamarin, Black River, La Gaulette, Le Morne or Chamarel: which suits families, commuters, retirees, kitesurfers and nature lovers."
+    shortAnswer: "It depends on how you live. For families, Tamarin has two international primary schools in the village. For commuters, Flic en Flac is the closest to Port Louis and Ebène. For a quiet life by the lagoon, La Gaulette; for beaches and kitesurfing, Le Morne; for nature, Black River; for cool air and hills, Chamarel."
     table:
       caption: "The six areas compared"
       headers:
         - ""
         - "Best for"
-        - "Feel"
-        - "Typical rent"
+        - "Drive to Port Louis"
+        - "International schools (EDB list)"
       rows:
         - cells:
             - "Flic en Flac"
-            - "[To be written]"
-            - "[To be written]"
-            - "[To be checked]"
+            - "Beach life with services close by"
+            - "About 25 km"
+            - "Primary at Cascavelle, secondary at Medine nearby"
         - cells:
             - "Tamarin"
-            - "[To be written]"
-            - "[To be written]"
-            - "[To be checked]"
+            - "Families and surfers"
+            - "About 29 km"
+            - "Two primary schools in the village"
         - cells:
             - "Black River"
-            - "[To be written]"
-            - "[To be written]"
-            - "[To be checked]"
+            - "Nature, hiking and boats"
+            - "About 33 km"
+            - "Tamarin's schools about 4 km away"
         - cells:
             - "La Gaulette"
-            - "[To be written]"
-            - "[To be written]"
-            - "[To be checked]"
+            - "Quiet village life on the lagoon"
+            - "About 41 km"
+            - "None in the village"
         - cells:
             - "Le Morne"
-            - "[To be written]"
-            - "[To be written]"
-            - "[To be checked]"
+            - "Beaches and kitesurfing"
+            - "About 48 km"
+            - "None on the peninsula"
         - cells:
             - "Chamarel"
-            - "[To be written]"
-            - "[To be written]"
-            - "[To be checked]"
+            - "Cool hills and quiet"
+            - "About 45 km"
+            - "None in the village"
     faqs:
       - question: "Which west coast area is best for families?"
-        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
-      - question: "Where do expats live on the west coast of Mauritius?"
-        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+        answer: "Tamarin: two international primary schools on the Economic Development Board's list are in the village, and the Westcoast International schools are at Cascavelle and Medine nearby. Flic en Flac is the other strong choice, closer to Port Louis."
+      - question: "Which area is best if I commute to Port Louis or Ebène?"
+        answer: "Flic en Flac, about 25 km from Port Louis and 17 km from Ebène, the closest of the six. Tamarin and Black River come next."
       - question: "Which west coast village is the quietest?"
-        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
+        answer: "La Gaulette and Chamarel are the smallest and slowest paced of our six areas; Le Morne is the most remote on the coast."
       - question: "Is the west coast of Mauritius a good place to live?"
-        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
-    seoDescription: "The best place to live on the west coast of Mauritius, area by area: who each village suits, what it costs and how it feels, from a local."
+        answer: "For many people, yes: it is the driest and sunniest side of the island, sheltered from the trade winds, with the sun setting over the sea, the national park inland, and schools, clinics and a university campus around Flic en Flac and Tamarin."
+    seoDescription: "The best place to live on the west coast of Mauritius, area by area: who each village suits, drive times and schools, from a Mauritian with official sources."
   fr:
     title: "Où vivre sur la côte ouest de Maurice ?"
     slug: ou-vivre-sur-la-cote-ouest

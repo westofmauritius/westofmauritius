@@ -1,16 +1,30 @@
 kind: comparison
 order: 2
-placeholder: true
-publishedAt: '2026-10-02'
 relatedAreas:
   - tamarin
   - flic-en-flac
+placeholder: false
+publishedAt: '2026-10-03'
+updatedAt: '2026-10-03'
+sources:
+  - title: "International schools"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/practical-information/education/
+    checkedAt: '2026-10-03'
+  - title: "Healthcare and private clinics"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/practical-information/health/
+    checkedAt: '2026-10-03'
+  - title: "Driving distances and times"
+    publisher: "OpenStreetMap (OSRM routing)"
+    url: https://map.project-osrm.org/
+    checkedAt: '2026-10-03'
 content:
   en:
     title: "Tamarin vs Flic en Flac: which is better to live in?"
     slug: tamarin-vs-flic-en-flac
-    excerpt: "How Tamarin and Flic en Flac compare for daily life, beaches, costs, schools and the commute, side by side."
-    shortAnswer: "[Placeholder: answer “Should you live in Tamarin or Flic en Flac?” in two or three sentences, before any detail.]"
+    excerpt: "Two west coast villages twelve kilometres apart, compared on beaches, schools, healthcare, commuting and atmosphere."
+    shortAnswer: "Choose Flic en Flac for a long beach and the shortest drive to Port Louis and Ebène; choose Tamarin for a village feel, surf and two international primary schools within the village. They are only about 12 km apart, so you can enjoy both."
     table:
       caption: "Tamarin and Flic en Flac side by side"
       headers:
@@ -19,43 +33,43 @@ content:
         - "Flic en Flac"
       rows:
         - cells:
-            - "Atmosphere"
-            - "[To be written]"
-            - "[To be written]"
+            - "Feel"
+            - "A lived in village on a bay"
+            - "A long beach, lively at weekends"
         - cells:
-            - "Beaches and sea"
-            - "[To be written]"
-            - "[To be written]"
+            - "The sea"
+            - "Surf breaks and dolphins in the bay"
+            - "A calm lagoon behind the reef"
         - cells:
-            - "Restaurants and nightlife"
-            - "[To be written]"
-            - "[To be written]"
+            - "International schools (EDB list)"
+            - "Two primary schools in the village"
+            - "Primary at Cascavelle, secondary at Medine"
         - cells:
-            - "Schools nearby"
-            - "[To be written]"
-            - "[To be written]"
+            - "Nearest private clinic"
+            - "Artemis Cascavelle, about 9 km"
+            - "Clinique de l'Occident, in the village"
         - cells:
             - "Drive to Port Louis"
-            - "[To be checked]"
-            - "[To be checked]"
+            - "About 29 km"
+            - "About 25 km"
+        - cells:
+            - "Drive to Ebène"
+            - "About 21 km"
+            - "About 17 km"
         - cells:
             - "Drive to the airport"
-            - "[To be checked]"
-            - "[To be checked]"
-        - cells:
-            - "Rent, two bedroom apartment"
-            - "[To be checked]"
-            - "[To be checked]"
+            - "About 51 km"
+            - "About 47 km"
     faqs:
       - question: "Is Tamarin or Flic en Flac better for families?"
-        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
-      - question: "Which is cheaper, Tamarin or Flic en Flac?"
-        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
-      - question: "Which has better beaches, Tamarin or Flic en Flac?"
-        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
-      - question: "Which is closer to the airport, Tamarin or Flic en Flac?"
-        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
-    seoDescription: "Tamarin vs Flic en Flac: two west coast villages compared for daily life, beaches, costs, schools and the commute, by a local."
+        answer: "Both work. Tamarin has two international primary schools on the EDB's list within the village; Flic en Flac is close to Westcoast International Primary School at Cascavelle and the secondary school at Medine."
+      - question: "Which is closer to Port Louis?"
+        answer: "Flic en Flac, about 25 km against about 29 km from Tamarin, according to OpenStreetMap routing."
+      - question: "Which has the better beach?"
+        answer: "For a long beach and a calm lagoon, Flic en Flac. Tamarin's bay is better known for its surf and its dolphins."
+      - question: "How far apart are Tamarin and Flic en Flac?"
+        answer: "About 12 km along the coast road, roughly a quarter of an hour by car."
+    seoDescription: "Tamarin vs Flic en Flac: beaches, schools, clinics and drive times compared side by side for people moving to the west coast of Mauritius."
   fr:
     title: "Tamarin ou Flic en Flac : où vivre ?"
     slug: tamarin-ou-flic-en-flac

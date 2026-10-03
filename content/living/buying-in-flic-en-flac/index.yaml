@@ -1,16 +1,42 @@
 kind: area
 area: flic-en-flac
 order: 1
-placeholder: true
-publishedAt: '2026-10-02'
 relatedAreas:
   - flic-en-flac
+placeholder: false
+publishedAt: '2026-10-03'
+updatedAt: '2026-10-03'
+sources:
+  - title: "Residential real estate in Mauritius"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/acquire/
+    checkedAt: '2026-10-03'
+  - title: "Ground plus two apartments"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/acquire/ground-2-appartments/
+    checkedAt: '2026-10-03'
+  - title: "Guidelines for buyers of residential property under the IRS, RES and PDS (November 2024)"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/wp-content/uploads/2021/06/Guidelines-for-IRS-RES-PDS.pdf
+    checkedAt: '2026-10-03'
+  - title: "Projects under the Real Estate Scheme (November 2022)"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/wp-content/uploads/2021/06/List-of-Approved-RES-Projects_Nov22.pdf
+    checkedAt: '2026-10-03'
+  - title: "Summary of Smart City projects (2025)"
+    publisher: "Economic Development Board"
+    url: https://residency.mu/wp-content/uploads/2021/06/List-Smart-City-projects-with-contact-details-2025.pdf
+    checkedAt: '2026-10-03'
+  - title: "Driving distances and times"
+    publisher: "OpenStreetMap (OSRM routing)"
+    url: https://map.project-osrm.org/
+    checkedAt: '2026-10-03'
 content:
   en:
     title: "Buying property in Flic en Flac as a foreigner"
     slug: buying-property-in-flic-en-flac
-    excerpt: "Which schemes let foreigners buy in Flic en Flac, what homes are on offer, the costs on top of the price and the steps from first visit to keys."
-    shortAnswer: "[Placeholder: answer “Can a foreigner buy property in Flic en Flac, and how?” in two or three sentences, before any detail.]"
+    excerpt: "How foreigners can buy a home in Flic en Flac, what the official lists show for the area, the costs on top of the price and what living here is like."
+    shortAnswer: "Foreigners can buy in Flic en Flac through the PDS, IRS, RES or Smart City schemes, or an apartment of at least MUR 6 million in a building with at least two floors above ground. From USD 375,000 the purchase comes with a residence permit. No project on the EDB's November 2022 list of Real Estate Scheme projects is located in Flic en Flac itself."
     table:
       caption: "Buying in Flic en Flac at a glance"
       headers:
@@ -18,30 +44,30 @@ content:
         - "What to know"
       rows:
         - cells:
-            - "Schemes open to foreigners"
-            - "[To be checked]"
+            - "Ways to buy as a foreigner"
+            - "PDS, IRS, RES, Smart City, or a ground plus two apartment from MUR 6 million"
         - cells:
-            - "Types of homes"
-            - "[To be written]"
+            - "Residence permit"
+            - "From USD 375,000, while you own the home"
         - cells:
-            - "Typical price range"
-            - "[To be checked]"
+            - "RES projects on the EDB's 2022 list"
+            - "0"
         - cells:
-            - "Fees and taxes on top"
-            - "[To be checked]"
+            - "Registration duty"
+            - "5% under the PDS; under the IRS and RES, USD 70,000 or 5% on a first purchase, whichever is lower"
         - cells:
-            - "Residence permit with purchase"
-            - "[To be checked]"
+            - "Drive to Port Louis"
+            - "About 25 km"
     faqs:
       - question: "Can foreigners buy property in Flic en Flac?"
-        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
-      - question: "How much does a villa cost in Flic en Flac?"
-        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
-      - question: "Which schemes allow foreigners to buy in Flic en Flac?"
-        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
-      - question: "Does buying in Flic en Flac give you residency?"
-        answer: "[Placeholder: a clear answer in two or three sentences, with a source for every figure.]"
-    seoDescription: "Buying property in Flic en Flac, Mauritius, as a foreigner: the schemes that allow it, homes on offer, costs and steps, explained by a local."
+        answer: "Yes, through the schemes approved by the Economic Development Board (PDS, IRS, RES and Smart City), or as an apartment of at least MUR 6 million in a building with at least two floors above the ground floor."
+      - question: "Does buying in Flic en Flac give residency?"
+        answer: "Yes, if the home costs USD 375,000 or more. The residence permit lasts as long as you own the property."
+      - question: "Are there developments for foreigners in Flic en Flac?"
+        answer: "No project on the EDB's November 2022 list of Real Estate Scheme projects is located in Flic en Flac itself. Medine Smart City (Uniciti), which the EDB lists under Flic en Flac, includes residential estates alongside its education village and business park."
+      - question: "What does it cost to buy in Flic en Flac on top of the price?"
+        answer: "Registration duty (5% under the PDS; under the IRS and RES the lower of USD 70,000 or 5% on a first purchase), the EDB's MUR 25,000 processing fee and notary fees."
+    seoDescription: "Buying property in Flic en Flac, Mauritius, as a foreigner: the legal routes, the USD 375,000 residence permit, what the official lists show and the costs, by a local."
   fr:
     title: "Acheter un bien à Flic en Flac quand on est étranger"
     slug: acheter-un-bien-flic-en-flac
