@@ -192,7 +192,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         </Container>
       </section>
 
-      {/* Who writes this: the site's edge is a local, named author. */}
+      {/* From a local: the site is written by a named Mauritian. */}
       <section className="border-t border-line py-14 sm:py-20">
         <Container
           size="wide"

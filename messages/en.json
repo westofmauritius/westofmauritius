@@ -54,11 +54,11 @@
     "liveEnquire": "Tell us what you are looking for",
     "mapTitle": "The west on one map",
     "allOnMap": "Search all places",
-    "localEyebrow": "Who writes this",
-    "localTitle": "Written by a Mauritian, not a travel agency",
-    "localText": "West of Mauritius is written by {name}, a Mauritian. Every fact is checked against reliable sources and listed at the end of each guide, and nothing paid for appears without a label.",
+    "localEyebrow": "From a local",
+    "localTitle": "The west coast, through Mauritian eyes",
+    "localText": "Where to swim, when to catch the sunset, which village suits you, and what it really takes to make a home here.",
     "localAuthor": "About {name}",
-    "localHow": "How we write"
+    "localHow": "About this guide"
   },
   "Pages": {
     "areas": {
@@ -71,7 +71,7 @@
       "title": "Guides",
       "intro": "Beaches, sunsets, walks, places to eat and shop, and everything practical for a stay on the west coast.",
       "metaTitle": "West coast Mauritius guides: beaches, sunsets and hikes",
-      "metaDescription": "Guides to the west coast of Mauritius by a local: the best beaches, sunset spots, hikes, day trips and practical tips, every fact checked and sourced."
+      "metaDescription": "Guides to the west coast of Mauritius by a local: the best beaches, sunset spots, hikes, day trips and practical tips for your stay."
     },
     "live": {
       "title": "Living in the West",
@@ -442,7 +442,7 @@
   },
   "Sources": {
     "title": "Sources",
-    "intro": "The facts on this page were checked against:",
+    "intro": "Further reading:",
     "checked": "checked {date}"
   },
   "AreaLiving": {

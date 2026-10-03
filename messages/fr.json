@@ -54,11 +54,11 @@
     "liveEnquire": "Décrivez votre projet",
     "mapTitle": "Tout l’ouest sur une carte",
     "allOnMap": "Chercher une adresse",
-    "localEyebrow": "Qui écrit ce guide",
-    "localTitle": "Écrit par un Mauricien, pas par une agence de voyages",
-    "localText": "Ouest Maurice est écrit par {name}, un Mauricien. Chaque fait est vérifié auprès de sources fiables, citées à la fin de chaque guide, et rien de payant n’apparaît sans être signalé.",
+    "localEyebrow": "Par un Mauricien",
+    "localTitle": "La côte ouest, vue par un Mauricien",
+    "localText": "Où se baigner, quand voir le coucher du soleil, quel village vous ressemble, et ce qu’il faut vraiment pour s’installer ici.",
     "localAuthor": "À propos de {name}",
-    "localHow": "Notre façon d’écrire"
+    "localHow": "À propos de ce guide"
   },
   "Pages": {
     "areas": {
@@ -71,7 +71,7 @@
       "title": "Guides",
       "intro": "Plages, couchers de soleil, randonnées, restaurants et boutiques, et tout le côté pratique d’un séjour sur la côte ouest.",
       "metaTitle": "Guides de la côte ouest de Maurice",
-      "metaDescription": "Les guides de la côte ouest de Maurice par un Mauricien : plages, couchers de soleil, randonnées, excursions et infos pratiques, chaque fait vérifié."
+      "metaDescription": "Les guides de la côte ouest de Maurice par un Mauricien : plages, couchers de soleil, randonnées, excursions et infos pratiques pour votre séjour."
     },
     "live": {
       "title": "Vivre dans l’Ouest",
@@ -442,7 +442,7 @@
   },
   "Sources": {
     "title": "Sources",
-    "intro": "Les faits de cette page ont été vérifiés auprès de :",
+    "intro": "Pour aller plus loin :",
     "checked": "vérifié le {date}"
   },
   "AreaLiving": {
