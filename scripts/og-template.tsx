@@ -76,7 +76,9 @@ export function OgTemplate({
           <path d={brandMark.mountain} fill="white" />
           <rect {...brandMark.lagoon} fill={brandMark.colors.lagoonOnDark} />
         </svg>
-        <div style={{ fontFamily: "Newsreader", fontSize: 38 }}>{brand}</div>
+        <div style={{ fontFamily: "Wordmark", fontSize: 38, fontWeight: 600 }}>
+          {brand}
+        </div>
       </div>
       <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
         {eyebrow && (

@@ -108,6 +108,10 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         {/* Keeps the white text legible: darker under the text on phones,
             a fade from the blue into the photo on large screens. */}
         <div className="absolute inset-0 -z-10 bg-linear-to-t from-ocean-950/95 from-35% via-ocean-950/80 via-60% to-ocean-950/15 lg:left-[44%] lg:bg-linear-to-r lg:from-ocean-950 lg:from-0% lg:via-ocean-950/25 lg:via-35% lg:to-transparent" />
+        {/* Palm leaves hanging into the top of the photo, as if looking out
+            from under the palms. Dark silhouettes, away from the text. */}
+        <PalmFrond className="-top-16 -right-20 -z-10 w-64 rotate-[150deg] text-ocean-950/85 sm:w-96 lg:-top-24 lg:w-[34rem]" />
+        <PalmFrond className="-top-20 -left-24 -z-10 w-56 -scale-x-100 rotate-[150deg] text-ocean-950/80 sm:w-80 lg:hidden" />
         {/* On phones the text sits on the photo: a scrim on the text block
             itself (fading out in its top padding) keeps the small accent
             eyebrow above 4.5:1 however tall the screen is. */}
@@ -382,6 +386,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       {/* Living in the West: the entry to the property section */}
       <section className="relative isolate overflow-hidden bg-ocean-900 py-24 text-white sm:py-32">
         <Wave inside flip className="z-10 text-surface" />
+        <PalmFrond className="-right-28 -bottom-28 -z-10 w-80 rotate-[200deg] text-ocean-800 sm:w-[36rem]" />
         <div
           aria-hidden="true"
           className="absolute -top-40 -right-40 -z-10 size-[36rem] rounded-full bg-coral-500/25 blur-3xl"

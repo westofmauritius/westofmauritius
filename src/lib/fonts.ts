@@ -59,5 +59,19 @@ export const sans = localFont({
   adjustFontFallback: "Arial",
 });
 
+/**
+ * Fraunces in its soft, rounded cut, for the brand name in the logo only:
+ * a relaxed island feel next to the editorial Newsreader headlines. The
+ * file holds just the letters of the two brand names (2 kB).
+ */
+export const wordmark = localFont({
+  src: "../assets/fonts/web/wordmark.woff2",
+  weight: "600",
+  style: "normal",
+  variable: "--font-wordmark-loaded",
+  display: "swap",
+  adjustFontFallback: "Times New Roman",
+});
+
 /** Class names to put on <html> so the CSS variables exist everywhere. */
-export const fontVariables = `${serif.variable} ${serifItalic.variable} ${sans.variable}`;
+export const fontVariables = `${serif.variable} ${serifItalic.variable} ${sans.variable} ${wordmark.variable}`;

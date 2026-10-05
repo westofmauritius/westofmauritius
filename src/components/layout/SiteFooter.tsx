@@ -2,6 +2,7 @@ import { Container } from "@/components/ui/Container";
 import { Wordmark } from "@/components/ui/Wordmark";
 import { Link } from "@/i18n/Link";
 import { Wave } from "@/components/ui/Wave";
+import { PalmFrond } from "@/components/ui/PalmFrond";
 import type { NavItem } from "./nav";
 
 type SiteFooterProps = {
@@ -23,9 +24,18 @@ export function SiteFooter({
   newsletter,
 }: SiteFooterProps) {
   return (
-    <footer className="relative mt-auto bg-ocean-900 text-ocean-100">
+    <footer className="relative isolate mt-auto bg-ocean-900 text-ocean-100">
       {/* The shore: the warm page meets the deep ocean footer in a wave. */}
       <Wave className="text-ocean-900" />
+      {/* Palm fronds against the night sea. Clipped here, not on the footer,
+          so the wave above stays visible. */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
+      >
+        <PalmFrond className="-right-24 -bottom-24 w-80 rotate-[200deg] text-ocean-800 sm:w-[34rem]" />
+        <PalmFrond className="top-24 -left-32 hidden w-[26rem] -scale-x-100 rotate-[170deg] text-ocean-800/70 md:block" />
+      </div>
       {newsletter && (
         <div data-footer-newsletter className="border-b border-white/10">
           <Container

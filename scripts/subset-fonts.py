@@ -34,7 +34,17 @@ SOURCES = [
     ("Newsreader:opsz,wght@6..72,200..800", "serif-roman.woff2", {"opsz": 72, "wght": 500}),
     ("Newsreader:ital,opsz,wght@1,6..72,200..800", "serif-italic.woff2", {"opsz": 72, "wght": 500}),
     ("Figtree:wght@300..900", "sans.woff2", {"wght": (400, 600)}),
+    # The wordmark: Fraunces in its soft, rounded "wonky" cut, which gives the
+    # logo a relaxed island feel. Pinned to one static style.
+    (
+        "Fraunces:opsz,wght,SOFT,WONK@9..144,100..900,0..100,0..1",
+        "wordmark.woff2",
+        {"opsz": 144, "wght": 600, "SOFT": 100, "WONK": 1},
+    ),
 ]
+
+# The wordmark font only ever sets the two brand names.
+WORDMARK_UNICODES = sorted({ord(c) for c in "West of Mauritius Ouest Maurice"})
 
 # Basic Latin, Latin 1 (French accents, NBSP, «», ·, °, ²), Œ œ Ÿ, the narrow
 # no break space French typography uses, typographic quotes, ellipsis, the
@@ -90,7 +100,13 @@ for query, out, axes in SOURCES:
     options.name_IDs = [1, 2]
     options.hinting = False
     sub = subset.Subsetter(options)
-    sub.populate(unicodes=ITALIC_UNICODES if "italic" in out else UNICODES)
+    if "wordmark" in out:
+        chars = WORDMARK_UNICODES
+    elif "italic" in out:
+        chars = ITALIC_UNICODES
+    else:
+        chars = UNICODES
+    sub.populate(unicodes=chars)
     sub.subset(font)
     font.flavor = "woff2"
     font.save(OUT + out)
@@ -101,6 +117,11 @@ for query, out, axes in SOURCES:
 OG = [
     ("Newsreader:opsz,wght@6..72,200..800", "../Newsreader-Medium.ttf", {"opsz": 72, "wght": 500}),
     ("Figtree:wght@300..900", "../Figtree-Medium.ttf", {"wght": 500}),
+    (
+        "Fraunces:opsz,wght,SOFT,WONK@9..144,100..900,0..100,0..1",
+        "../Fraunces-Wordmark.ttf",
+        {"opsz": 144, "wght": 600, "SOFT": 100, "WONK": 1},
+    ),
 ]
 for query, out, axes in OG:
     font = TTFont(io.BytesIO(latin_file(query)))

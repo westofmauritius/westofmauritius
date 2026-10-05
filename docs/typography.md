@@ -4,11 +4,12 @@ The site uses the same typefaces and type style as the Hiriketiya site.
 
 ## Fonts
 
-| Role                     | Typeface                             | Files                                                      |
-| ------------------------ | ------------------------------------ | ---------------------------------------------------------- |
-| Headlines and wordmark   | Newsreader 500, display optical size | `serif-roman.woff2` (20 kB)                                |
-| Accent word in headlines | Newsreader 500 italic                | `serif-italic.woff2` (15 kB, letters and punctuation only) |
-| Body text and interface  | Figtree, variable 400 to 600         | `sans.woff2` (15 kB)                                       |
+| Role                     | Typeface                             | Files                                                        |
+| ------------------------ | ------------------------------------ | ------------------------------------------------------------ |
+| Headlines and wordmark   | Newsreader 500, display optical size | `serif-roman.woff2` (20 kB)                                  |
+| Accent word in headlines | Newsreader 500 italic                | `serif-italic.woff2` (15 kB, letters and punctuation only)   |
+| Body text and interface  | Figtree, variable 400 to 600         | `sans.woff2` (15 kB)                                         |
+| Wordmark (logo name)     | Fraunces 600, soft rounded cut       | `wordmark.woff2` (2 kB, only the letters of the brand names) |
 
 The files in `src/assets/fonts/web/` are built by `scripts/subset-fonts.py`
 from Google Fonts: only the characters English and French need, fixed axes

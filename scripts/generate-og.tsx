@@ -47,6 +47,11 @@ const fonts = [
     weight: 500 as const,
   },
   {
+    name: "Wordmark",
+    data: readFileSync("src/assets/fonts/Fraunces-Wordmark.ttf"),
+    weight: 600 as const,
+  },
+  {
     name: "Figtree",
     data: readFileSync("src/assets/fonts/Figtree-Medium.ttf"),
     weight: 500 as const,
@@ -69,6 +74,9 @@ const cache: Record<string, string> = existsSync(cacheFile)
   : {};
 // Bump when the template changes, so every image is redrawn.
 const TEMPLATE_VERSION = "3";
+const fontsKey = createHash("sha1")
+  .update(Buffer.concat(fonts.map((font) => font.data)))
+  .digest("hex");
 
 async function render(job: Job, locale: Locale) {
   const props = {
@@ -82,6 +90,8 @@ async function render(job: Job, locale: Locale) {
     photoFile && existsSync(photoFile) ? readFileSync(photoFile) : null;
   const key = createHash("sha1")
     .update(TEMPLATE_VERSION + JSON.stringify(props))
+    // A new font redraws every image too.
+    .update(fontsKey)
     .update(photoBytes ?? "")
     .digest("hex");
   const file = join(outDir, locale, `${job.path}.jpg`);

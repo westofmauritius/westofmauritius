@@ -631,3 +631,21 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
 - **Accent text moved from coral 600 to coral 700.** Coral 600 drops below
   4.5:1 on sand (4.3), coral 700 keeps 4.85 or more on every new
   background, so the eyebrows and accent words still pass WCAG 2.2 AA.
+
+## More tropical, and a new wordmark font (October 2026)
+
+- **Wordmark in Fraunces, soft cut.** The brand name in the logo uses
+  Fraunces 600 with its "soft" and "wonky" options: rounded, relaxed, with
+  an island boutique feel, while the headlines stay in Newsreader. Chosen
+  over script faces (Pacifico, Lobster) that read as surf shop rather than
+  guide. The file holds only the letters of "West of Mauritius" and "Ouest
+  Maurice" (2 kB). The social sharing images use it too.
+- **A tropical top on every page:** behind the content, a lagoon to sunset
+  wash fades into the cream, with palm fronds in the corners (set in the
+  locale layout, so every template gets it; the dark heroes cover it).
+- **Palm leaves hanging into the homepage hero photo** as dark silhouettes,
+  as if looking out from under the palms, away from the text.
+- **Fronds in the deep ocean** of the property section and the footer.
+- Contrast was measured on the rendered pixels of the text over the new
+  wash and fronds on twelve templates at phone and desktop width: all body
+  text keeps 4.5:1 (large text 3:1) with margin.
