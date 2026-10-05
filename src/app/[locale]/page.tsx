@@ -239,7 +239,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
             </p>
             {/* The short bio only once it is written (not a placeholder). */}
             {!author.placeholder && author.shortBio && (
-              <p className="mt-6 type-h4 serif-italic">{author.shortBio}</p>
+              <p className="mt-6 type-h4">{author.shortBio}</p>
             )}
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
               <Link

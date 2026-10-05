@@ -28,11 +28,11 @@ UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chr
 
 # Google Fonts CSS query, output file, and the axis values to keep: a number
 # pins an axis (a static font comes out), a (min, max) pair keeps a range.
-# The same typefaces as the Hiriketiya site: Newsreader for headlines at its
-# display optical size and weight 500, Figtree for text and the interface.
+# Lora 500 for headlines (Newsreader, the Hiriketiya serif, proved hard to
+# read on screen), Figtree for text and the interface.
 SOURCES = [
-    ("Newsreader:opsz,wght@6..72,200..800", "serif-roman.woff2", {"opsz": 72, "wght": 500}),
-    ("Newsreader:ital,opsz,wght@1,6..72,200..800", "serif-italic.woff2", {"opsz": 72, "wght": 500}),
+    ("Lora:wght@400..700", "serif-roman.woff2", {"wght": 500}),
+    ("Lora:ital,wght@1,400..700", "serif-italic.woff2", {"wght": 500}),
     ("Figtree:wght@300..900", "sans.woff2", {"wght": (400, 600)}),
     # The wordmark: Fraunces in its soft, rounded "wonky" cut, which gives the
     # logo a relaxed island feel. Pinned to one static style.
@@ -115,7 +115,7 @@ for query, out, axes in SOURCES:
 # Static TTF copies for the social sharing images (scripts/generate-og.tsx):
 # the image renderer cannot read WOFF2 or variable fonts.
 OG = [
-    ("Newsreader:opsz,wght@6..72,200..800", "../Newsreader-Medium.ttf", {"opsz": 72, "wght": 500}),
+    ("Lora:wght@400..700", "../Lora-Medium.ttf", {"wght": 500}),
     ("Figtree:wght@300..900", "../Figtree-Medium.ttf", {"wght": 500}),
     (
         "Fraunces:opsz,wght,SOFT,WONK@9..144,100..900,0..100,0..1",

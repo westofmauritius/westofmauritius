@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { cn } from "@/lib/cn";
 
 type Size = "display" | "h1" | "h2" | "h3" | "h4";
@@ -6,7 +7,9 @@ type HeadlineProps = {
   /**
    * The text. Wrap one key word in asterisks to set it in italic in the
    * accent colour: "The *best* coast." Editors can do the same in
-   * translations and Keystatic titles.
+   * translations and Keystatic titles. A line break ("\n") forces a new
+   * line: the homepage hero uses one so its lines never change when the
+   * web font arrives (no layout shift).
    */
   children: string;
   /** Which element to render; defaults to h2. Use h1 once per page. */
@@ -34,9 +37,9 @@ export function splitAccent(text: string) {
   }));
 }
 
-/** The text without accent markers, for page titles and metadata. */
+/** The text without accent markers or line breaks, for titles and metadata. */
 export function plainHeadline(text: string) {
-  return text.replace(/\*([^*]+)\*/g, "$1");
+  return text.replace(/\*([^*]+)\*/g, "$1").replace(/\s*\n\s*/g, " ");
 }
 
 /**
@@ -54,21 +57,26 @@ export function Headline({
   const step = size ?? (Tag === "p" ? "h2" : Tag);
   return (
     <Tag className={cn(sizes[step], className)}>
-      {splitAccent(children).map(({ text, accent }, i) =>
-        accent ? (
-          <em
-            key={i}
-            className={cn(
-              "serif-italic whitespace-nowrap",
-              tone === "dark" ? "text-accent-on-dark" : "text-accent",
-            )}
-          >
-            {text}
-          </em>
-        ) : (
-          text
-        ),
-      )}
+      {children.split("\n").map((line, l) => (
+        <Fragment key={l}>
+          {l > 0 && <br />}
+          {splitAccent(line).map(({ text, accent }, i) =>
+            accent ? (
+              <em
+                key={i}
+                className={cn(
+                  "serif-italic whitespace-nowrap",
+                  tone === "dark" ? "text-accent-on-dark" : "text-accent",
+                )}
+              >
+                {text}
+              </em>
+            ) : (
+              text
+            ),
+          )}
+        </Fragment>
+      ))}
     </Tag>
   );
 }

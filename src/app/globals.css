@@ -82,7 +82,7 @@
   --color-accent: var(--color-coral-700);
   --color-accent-on-dark: var(--color-coral-300);
 
-  /* Fonts, set by next/font in src/lib/fonts.ts: Newsreader for headlines,
+  /* Fonts, set by next/font in src/lib/fonts.ts: Lora for headlines,
      Figtree for text. The system fonts after them only show while the web
      fonts load (next/font adjusts their metrics so nothing jumps). */
   --font-display: var(--font-serif), "Times New Roman", serif;

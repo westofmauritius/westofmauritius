@@ -95,7 +95,7 @@ export function OgTemplate({
         )}
         <div
           style={{
-            fontFamily: "Newsreader",
+            fontFamily: "Lora",
             fontSize: titleSize,
             lineHeight: 1.05,
             maxWidth: 1000,

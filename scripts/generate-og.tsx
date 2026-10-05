@@ -42,8 +42,8 @@ const typeset = (text: string, locale: Locale) =>
 
 const fonts = [
   {
-    name: "Newsreader",
-    data: readFileSync("src/assets/fonts/Newsreader-Medium.ttf"),
+    name: "Lora",
+    data: readFileSync("src/assets/fonts/Lora-Medium.ttf"),
     weight: 500 as const,
   },
   {
@@ -142,8 +142,11 @@ async function main() {
     const jobs: Job[] = [
       {
         path: "default",
-        // Without the "*word*" accent markers the site's headline uses.
-        title: t.Home.title.replace(/\*([^*]+)\*/g, "$1"),
+        // Without the "*word*" accent markers and the line break the
+        // site's headline uses.
+        title: t.Home.title
+          .replace(/\*([^*]+)\*/g, "$1")
+          .replace(/\s*\n\s*/g, " "),
         eyebrow: t.Home.eyebrow,
         photo: hero(home.hero),
       },

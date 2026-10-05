@@ -98,12 +98,12 @@ export default async function StyleguidePage({
       </Section>
 
       <Section title="Typography">
-        {/* The type scale (docs/typography.md): Newsreader for headlines,
+        {/* The type scale (docs/typography.md): Lora for headlines,
             Figtree for text, as on the Hiriketiya site. */}
         <div className="space-y-10">
           <div>
             <p className="mb-2 text-xs text-ink-muted">
-              Eyebrow with pin · type-display with accent · Newsreader
+              Eyebrow with pin · type-display with accent · Lora
             </p>
             <Eyebrow icon="pin" className="mb-5">
               Tamarin · West coast · Mauritius

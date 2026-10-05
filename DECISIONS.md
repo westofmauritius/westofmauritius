@@ -649,3 +649,23 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
 - Contrast was measured on the rendered pixels of the text over the new
   wash and fronds on twelve templates at phone and desktop width: all body
   text keeps 4.5:1 (large text 3:1) with margin.
+
+## Lora for headlines (October 2026)
+
+- **Newsreader replaced by Lora** for headlines and the italic accent word.
+  The owner found Newsreader hard to read: at display size its sharp, high
+  contrast strokes and calligraphic italic tire the eye, most of all in a
+  full italic sentence. Lora was compared with Fraunces, Source Serif,
+  Literata, Gelasio and Young Serif on the hero headline and a paragraph;
+  its open shapes, large x height and calm italic read most easily while
+  staying warm. Same weight (500), same subsetting: 18 kB roman and 13 kB
+  italic, smaller than before. The social sharing images use it too.
+- The type style from the Hiriketiya site (eyebrow, display headline with
+  one italic accent word, airy Figtree text) stays; only the serif changed.
+- The author's short bio on the homepage is now upright rather than
+  italic: several lines of italic are harder to read in any typeface.
+- **The hero breaks deliberately: "The best / coast."** Lora's italic is
+  wider than the fallback font, so the line wrapped differently once the
+  font arrived and the hero jumped (layout shift 0.19 on mobile). A line
+  break in the text ("\n", supported by `<Headline>`) fixes the lines on
+  every screen and brings the shift back to 0.

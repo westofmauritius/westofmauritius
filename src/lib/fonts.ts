@@ -14,9 +14,10 @@ import localFont from "next/font/local";
  */
 
 /**
- * Newsreader, the headline serif of the Hiriketiya site: headlines and the
- * wordmark. One weight (500) at the display optical size, cut static by the
- * subset script.
+ * Lora, for headlines: open shapes and a large x height, so headlines and
+ * the occasional serif line stay easy to read (Newsreader, used before,
+ * proved too sharp on screen). One weight (500), cut static by the subset
+ * script.
  */
 export const serif = localFont({
   src: "../assets/fonts/web/serif-roman.woff2",
@@ -28,7 +29,7 @@ export const serif = localFont({
 });
 
 /**
- * Newsreader italic, for the one key word in a headline ("The *best*
+ * Lora italic, for the one key word in a headline ("The *best*
  * coast.") and short serif asides. A real italic: a slanted roman looks fake
  * at display sizes. Kept as its own family and not preloaded, so it is only
  * downloaded on pages that use it and never competes with the main photo
@@ -61,7 +62,7 @@ export const sans = localFont({
 
 /**
  * Fraunces in its soft, rounded cut, for the brand name in the logo only:
- * a relaxed island feel next to the editorial Newsreader headlines. The
+ * a relaxed island feel next to the Lora headlines. The
  * file holds just the letters of the two brand names (2 kB).
  */
 export const wordmark = localFont({
