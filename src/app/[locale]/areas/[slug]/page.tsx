@@ -164,6 +164,7 @@ export default async function AreaPage({ params }: Props) {
           aspect="aspect-[4/3]"
           sizes="(min-width: 1024px) 58vw, 100vw"
           priority
+          parallax
         />
       </Container>
 

@@ -82,6 +82,12 @@
   --color-accent: var(--color-coral-700);
   --color-accent-on-dark: var(--color-coral-300);
 
+  /* Living light (src/lib/light.ts): these follow the time of day in
+     Tamarin. Daytime values here; the other phases are set below. */
+  --color-wash-from: var(--color-lagoon-50);
+  --color-wash-via: var(--color-coral-50);
+  --color-hero: var(--color-ocean-950);
+
   /* Fonts, set by next/font in src/lib/fonts.ts: Lora for headlines,
      Figtree for text. The system fonts after them only show while the web
      fonts load (next/font adjusts their metrics so nothing jumps). */
@@ -123,6 +129,42 @@
   --text-button: 0.9375rem;
   --text-button--line-height: 1.25;
   --text-button--letter-spacing: 0.01em;
+}
+
+/*
+ * Living light: each phase of the day in Tamarin shifts the accent, the
+ * tints at the top of each page and the deep shade of the hero, gently.
+ * Every value keeps WCAG AA: the accent stays at 4.85:1 or more on every
+ * light background, the accent on dark at 7.8:1 or more (see
+ * docs/living-light.md). Without the script, the daytime values apply.
+ */
+html[data-light="morning"] {
+  --color-accent: #a63f28;
+  --color-accent-on-dark: #ffb59e;
+  --color-wash-from: #e4f2f7;
+  --color-wash-via: #fdf0e4;
+  --color-hero: #0b1e30;
+}
+html[data-light="golden"] {
+  --color-accent: #a3420f;
+  --color-accent-on-dark: #ffbe7a;
+  --color-wash-from: #fdf0d9;
+  --color-wash-via: #fde4d2;
+  --color-hero: #1a1520;
+}
+html[data-light="dusk"] {
+  --color-accent: #a3345a;
+  --color-accent-on-dark: #f5a9c4;
+  --color-wash-from: #f6e4ee;
+  --color-wash-via: #ebe7f7;
+  --color-hero: #191630;
+}
+html[data-light="night"] {
+  --color-accent: #97384f;
+  --color-accent-on-dark: #c9b8f2;
+  --color-wash-from: #e3e8f4;
+  --color-wash-via: #efecf8;
+  --color-hero: #08121f;
 }
 
 @layer base {
@@ -301,4 +343,74 @@
    community page), the footer's sign up band steps aside. */
 body:has([data-newsletter-inline]) [data-footer-newsletter] {
   display: none;
+}
+
+/*
+ * Motion polish. Scroll reveals and image parallax are CSS scroll driven
+ * animations: the browser plays them from the normal scroll position, so
+ * scrolling itself is never taken over, slowed or smoothed. They only run
+ * where supported and where the visitor has not asked for less motion;
+ * everywhere else the content is simply there, still.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    /* Cards and section headings rise gently into place as they enter. */
+    .reveal {
+      animation: reveal ease-out both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 60%;
+    }
+    /* Photos drift slightly slower than the page (the frame stays still).
+       clip, not hidden: overflow hidden would make the frame its own scroll
+       container and the image would follow that instead of the page. */
+    .parallax {
+      overflow: clip;
+    }
+    .parallax img {
+      scale: 1.12;
+      animation: parallax linear both;
+      animation-timeline: view();
+    }
+  }
+
+  /* Page changes: the browser cross fades from one page to the next
+     instead of cutting (cross document view transitions; pages are real
+     page loads). Short, so it never slows anyone down. */
+  @view-transition {
+    navigation: auto;
+  }
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 220ms;
+  }
+}
+
+/* A rise and a wipe up from below, never a fade: text is always at full
+   contrast (WCAG AA), only partly covered while it arrives. */
+@keyframes reveal {
+  from {
+    translate: 0 1.5rem;
+    clip-path: inset(0 0 40% 0);
+  }
+  to {
+    translate: 0 0;
+    clip-path: inset(0 0 -10% 0);
+  }
+}
+
+@keyframes parallax {
+  from {
+    translate: 0 -5%;
+  }
+  to {
+    translate: 0 5%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
 }

@@ -14,6 +14,8 @@ type PhotoProps = {
   sizes: string;
   /** Load immediately (for the main image at the top of a page). */
   priority?: boolean;
+  /** The photo drifts gently as the page scrolls (see .parallax). */
+  parallax?: boolean;
   className?: string;
 };
 
@@ -28,6 +30,7 @@ export function Photo({
   aspect,
   sizes,
   priority,
+  parallax,
   className,
 }: PhotoProps) {
   if (!photo) {
@@ -42,7 +45,12 @@ export function Photo({
   }
   return (
     <figure
-      className={cn("relative overflow-hidden bg-sand-100", aspect, className)}
+      className={cn(
+        "relative overflow-hidden bg-sand-100",
+        parallax && "parallax",
+        aspect,
+        className,
+      )}
     >
       <ResponsiveImage
         src={photo.src}

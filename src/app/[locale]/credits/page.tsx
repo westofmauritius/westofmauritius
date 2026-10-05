@@ -111,6 +111,21 @@ export default async function CreditsPage({ params }: Props) {
           })}
         </ul>
       )}
+
+      {/* The data behind the maps. */}
+      <section className="mt-20 max-w-2xl border-t border-line pt-10">
+        <h2 className="type-h3">{t("mapsTitle")}</h2>
+        <p className="mt-4 text-ink-muted">{t("terrain")}</p>
+        <a
+          href="https://github.com/tilezen/joerd/blob/master/docs/attribution.md"
+          rel="noopener"
+          target="_blank"
+          className="mt-2 inline-block text-small text-lagoon-700 underline underline-offset-4"
+        >
+          {t("terrainSource")}
+        </a>
+        <p className="mt-6 text-ink-muted">{t("osm")}</p>
+      </section>
     </Container>
   );
 }

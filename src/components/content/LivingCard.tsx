@@ -7,7 +7,7 @@ import type { LivingArticle } from "@/lib/content/types";
 export async function LivingCard({ article }: { article: LivingArticle }) {
   const t = await getTranslations();
   return (
-    <article className="group relative flex h-full flex-col rounded-sm border border-line bg-white p-6 transition-colors hover:border-ocean-900/40">
+    <article className="group reveal relative flex h-full flex-col rounded-sm border border-line bg-white p-6 transition-colors hover:border-ocean-900/40">
       {article.placeholder && (
         <Badge variant="placeholder" className="mb-4 self-start">
           {t("Placeholder.label")}

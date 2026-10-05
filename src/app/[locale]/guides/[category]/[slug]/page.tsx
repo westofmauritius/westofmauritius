@@ -186,6 +186,7 @@ export default async function GuidePage({ params }: Props) {
           aspect="aspect-[4/3] sm:aspect-[21/9]"
           sizes="100vw"
           priority
+          parallax
         />
       </Container>
 

@@ -669,3 +669,36 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
   font arrived and the hero jumped (layout shift 0.19 on mobile). A line
   break in the text ("\n", supported by `<Headline>`) fixes the lines on
   every screen and brings the shift back to 0.
+
+## Cinematic layer (October 2026)
+
+All of it is progressive: the content stays plain HTML, and every effect
+switches itself off where it would cost speed, data or comfort.
+
+- **Hero video, ready for footage.** `src/lib/hero-video.ts` lists the
+  files (empty for now: the photo shows). The player loads only after the
+  page has loaded and the browser is idle, never on 2G or 3G, with data
+  saver on or under reduced motion; plays only while on screen and the tab
+  is visible; fades in once actually playing and keeps the photo on any
+  error. A pause button meets WCAG 2.2.2. Tested with a generated clip:
+  mobile Lighthouse unchanged (93), CLS 0. The footage is in TODO_OLIVER.md.
+- **Living light** follows the time of day in Tamarin with the existing
+  sun calculation (now with sunrise). Set by a tiny head script before the
+  first paint, so nothing flashes; every phase keeps WCAG AA (table in
+  docs/living-light.md, measured on the real hero photo too).
+- **3D terrain map** with React Three Fiber, from AWS Terrain Tiles baked
+  into an 18 kB greyscale PNG (scripts/bake-terrain.py): no third party is
+  called. Area markers are real HTML buttons over the canvas (keyboard and
+  screen reader friendly); choosing one flies the camera there and opens a
+  card linking to the area. No wheel zoom, so the page scroll is never
+  captured. Shown only on desktop size screens with a mouse, a hardware
+  GPU, 4 or more cores and GB of memory, no data saver and no reduced
+  motion; three.js downloads only when the section comes near the screen.
+  Everyone else, phones included, keeps the 2D map. `?map3d=1` forces it
+  for testing.
+- **Motion** uses CSS scroll driven animations (reveals and parallax) and
+  native cross document view transitions (the site's links are real page
+  loads, so React's in app ViewTransition would never run). Nothing
+  listens to or changes scrolling; under reduced motion all of it is off.
+  Parallax frames use `overflow: clip`, because `overflow: hidden` makes an
+  element its own scroll container and the scroll timeline would follow it.

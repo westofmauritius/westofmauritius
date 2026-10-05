@@ -13,6 +13,8 @@ import { fontVariables } from "@/lib/fonts";
 import { brandName, searchIndexing, siteUrl } from "@/lib/site";
 import { openGraphBase } from "@/lib/seo/open-graph";
 import { PalmFrond } from "@/components/ui/PalmFrond";
+import { LivingLightClock } from "@/components/light/LivingLightClock";
+import { lightScript } from "@/lib/light";
 import "../globals.css";
 
 // Build one static version of every page per language.
@@ -63,8 +65,21 @@ export default async function LocaleLayout({
   });
 
   return (
-    <html lang={locale} className={`${fontVariables} h-full`}>
+    // suppressHydrationWarning: the head script below sets data-light on
+    // <html> before React hydrates, which is expected.
+    <html
+      lang={locale}
+      className={`${fontVariables} h-full`}
+      suppressHydrationWarning
+    >
+      <head>
+        {/* Living light: tints follow the time of day in Tamarin, set before
+            the first paint (src/lib/light.ts). Without JavaScript the
+            daytime light stays. */}
+        <script dangerouslySetInnerHTML={{ __html: lightScript() }} />
+      </head>
       <body className="flex min-h-full flex-col">
+        <LivingLightClock />
         {/*
           No NextIntlClientProvider for the whole site: header and footer get
           finished URLs and texts from the server, so most pages ship no
@@ -104,7 +119,7 @@ export default async function LocaleLayout({
               West simply cover it. */}
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[38rem] overflow-hidden bg-linear-to-b from-lagoon-50 via-coral-50/60 to-transparent"
+            className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[38rem] overflow-hidden bg-linear-to-b from-wash-from via-wash-via/60 to-transparent"
           >
             <PalmFrond className="-top-20 -right-24 w-72 rotate-[160deg] text-lagoon-200/50 sm:w-[30rem]" />
             <PalmFrond className="top-48 -left-52 hidden w-[24rem] -scale-x-100 rotate-[150deg] text-coral-200/40 lg:block" />

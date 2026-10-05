@@ -94,6 +94,7 @@ export function textPage(
               aspect="aspect-[16/10]"
               sizes="(min-width: 1024px) 58vw, 100vw"
               priority
+              parallax
             />
           </Container>
         ) : (

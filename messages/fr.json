@@ -58,7 +58,9 @@
     "localTitle": "La côte ouest vue par un *Mauricien*",
     "localText": "Où se baigner, quand voir le coucher du soleil, quel village vous ressemble, et ce qu’il faut vraiment pour s’installer ici.",
     "localAuthor": "À propos de {name}",
-    "localHow": "À propos de ce guide"
+    "localHow": "À propos de ce guide",
+    "videoPause": "Mettre la vidéo en pause",
+    "videoPlay": "Lire la vidéo"
   },
   "Pages": {
     "areas": {
@@ -430,7 +432,11 @@
     "by": "Photo de {name}",
     "licence": "Licence : {licence}",
     "source": "Voir l’original",
-    "none": "Pas encore de photos."
+    "none": "Pas encore de photos.",
+    "mapsTitle": "Données cartographiques",
+    "terrain": "La carte en 3D de la côte est dessinée à partir des AWS Terrain Tiles. Elles réunissent les données d’altitude de SRTM (NASA) et GMTED2010 (USGS) et ETOPO1 (NOAA) entre autres sources ouvertes.",
+    "terrainSource": "Sources et attribution des tuiles de relief",
+    "osm": "Les cartes à plat montrent les données OpenStreetMap © les contributeurs d’OpenStreetMap via OpenFreeMap."
   },
   "Author": {
     "by": "Par <link>{name}</link>",
@@ -540,5 +546,12 @@
   "Region": {
     "label": "Côte ouest · Maurice",
     "country": "Maurice"
+  },
+  "Map3D": {
+    "label": "Carte en 3D de la côte ouest de l’île Maurice avec ses montagnes et son lagon. Choisissez un village avec les boutons de la carte.",
+    "whole": "Toute la côte",
+    "open": "Découvrir {name}",
+    "hint": "Faites glisser pour tourner la côte. Choisissez un village pour vous y rendre.",
+    "loading": "Chargement de la carte en 3D…"
   }
 }
