@@ -26,6 +26,8 @@ import { AuthorAvatar } from "@/components/author/AuthorAvatar";
 import { getAuthor } from "@/lib/content/author";
 import { organizationSchema } from "@/lib/seo/schema";
 import { absoluteUrl } from "@/lib/seo/urls";
+import { Wave } from "@/components/ui/Wave";
+import { PalmFrond } from "@/components/ui/PalmFrond";
 import { brandName } from "@/lib/site";
 
 export async function generateMetadata({
@@ -210,7 +212,15 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       </section>
 
       {/* From a local: the site is written by a named Mauritian. */}
-      <section className="border-t border-line py-14 sm:py-20">
+      <section className="relative isolate bg-coral-50 py-14 sm:py-20">
+        <Wave className="text-coral-50" />
+        {/* Clipped separately: the wave above must stay outside the band. */}
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 -z-10 overflow-hidden"
+        >
+          <PalmFrond className="-bottom-24 -left-20 w-72 rotate-[200deg] text-coral-200/60 sm:w-[28rem]" />
+        </div>
         <Container
           size="wide"
           className="grid items-center gap-10 lg:grid-cols-[5fr_7fr] lg:gap-20"
@@ -257,7 +267,14 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
 
       {/* Places worth knowing */}
       {highlights.length > 0 && (
-        <section className="border-t border-line bg-sand-50 py-14 sm:py-20">
+        <section className="relative isolate bg-lagoon-50 py-14 sm:py-20">
+          <Wave className="text-lagoon-50" flip />
+          <div
+            aria-hidden="true"
+            className="absolute inset-0 -z-10 overflow-hidden"
+          >
+            <PalmFrond className="-top-16 -right-24 w-80 -scale-x-100 rotate-12 text-lagoon-200/60 sm:w-[32rem]" />
+          </div>
           <Container size="wide">
             <div className="flex flex-wrap items-end justify-between gap-6">
               <SectionHeading title={t("featuredTitle")} />
@@ -282,7 +299,8 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       )}
 
       {/* Guide themes and the latest guides */}
-      <section className="py-14 sm:py-20">
+      <section className="relative py-14 sm:py-20">
+        <Wave className="text-surface" />
         <Container size="wide">
           <SectionHeading title={t("themesTitle")} />
           <div className="mt-10">
@@ -311,7 +329,8 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       </section>
 
       {/* Every place on one map: the quickest way to see the coast at a glance. */}
-      <section className="border-t border-line bg-sand-50 py-14 sm:py-20">
+      <section className="relative bg-sand-50 py-14 sm:py-20">
+        <Wave className="text-sand-50" flip />
         <Container size="wide">
           <div className="flex flex-wrap items-end justify-between gap-6">
             <SectionHeading title={t("mapTitle")} />
@@ -335,7 +354,8 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       {/* Community: the newsletter offer and the WhatsApp group. The form
           itself is in the footer just below, so this band points to it and
           to the community page instead of repeating it. */}
-      <section className="border-t border-line py-14 sm:py-20">
+      <section className="relative py-14 sm:py-20">
+        <Wave className="text-surface" />
         <Container
           size="wide"
           className="grid items-center gap-8 lg:grid-cols-[7fr_5fr] lg:gap-16"
@@ -361,6 +381,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
 
       {/* Living in the West: the entry to the property section */}
       <section className="relative isolate overflow-hidden bg-ocean-900 py-24 text-white sm:py-32">
+        <Wave inside flip className="z-10 text-surface" />
         <div
           aria-hidden="true"
           className="absolute -top-40 -right-40 -z-10 size-[36rem] rounded-full bg-coral-500/25 blur-3xl"

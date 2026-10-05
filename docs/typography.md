@@ -51,12 +51,13 @@ Tokens live in `src/app/globals.css` (`@theme`). Headline sizes are fluid
 
 ## Accent colour and contrast (WCAG 2.2 AA)
 
-| Use                                 | Colour    | Background        | Ratio       | Needed |
-| ----------------------------------- | --------- | ----------------- | ----------- | ------ |
-| Eyebrow (small text)                | coral 600 | white / sand 50   | 5.0 / 4.7   | 4.5    |
-| Accent word (large text)            | coral 600 | white / sand 50   | 5.0 / 4.7   | 3      |
-| Eyebrow and accent on dark          | coral 300 | ocean 900 / 950   | 7.8 / 9.1   | 4.5    |
-| Homepage hero on the photo (phones) | coral 300 | photo under scrim | 6.9 or more | 4.5    |
+| Use                                 | Colour    | Background                      | Ratio            | Needed |
+| ----------------------------------- | --------- | ------------------------------- | ---------------- | ------ |
+| Eyebrow (small text)                | coral 700 | cream page / sand 50 / sand 100 | 5.8 / 5.3 / 4.85 | 4.5    |
+| Eyebrow (small text)                | coral 700 | lagoon 50 / coral 50 bands      | 5.5 / 5.45       | 4.5    |
+| Accent word (large text)            | coral 700 | any of the above                | 4.85 or more     | 3      |
+| Eyebrow and accent on dark          | coral 300 | ocean 900 / 950                 | 7.8 / 9.1        | 4.5    |
+| Homepage hero on the photo (phones) | coral 300 | photo under scrim               | 6.9 or more      | 4.5    |
 
 The homepage hero was measured on the real photo pixels at 360, 390, 430,
 768, 1024, 1440 and 1920 px wide. On phones a scrim on the text block keeps

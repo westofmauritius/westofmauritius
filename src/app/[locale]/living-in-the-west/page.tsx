@@ -202,7 +202,7 @@ export default async function LivingInTheWestPage({ params }: Props) {
                       pathname: "/living-in-the-west/[slug]",
                       params: { slug: a.slug },
                     }}
-                    className="type-h4 hover:text-coral-600"
+                    className="type-h4 hover:text-accent"
                   >
                     {a.title}
                   </Link>

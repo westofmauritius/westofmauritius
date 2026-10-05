@@ -611,3 +611,23 @@ React and Next.js's own JavaScript (~120 kB compressed). Pages marked as placeho
   94 and 96 now; Tamarin 97 to 98 before and now; the guides and areas
   indexes were already 93 to 96 before and still are. Local runs vary by
   about 2 points; check PageSpeed Insights on the live site.
+
+## A warmer, tropical theme (October 2026)
+
+- **Cream instead of white.** The page background is a warm cream
+  (`--color-surface: #fdf8f0`); the sand scale is warmer and a touch deeper
+  (sand 50 `#f8eddc`, sand 100 `#f2e2c8`), so cards and bands read as sand
+  rather than grey. Form fields and cards stay white for crispness.
+- **Colour bands from the coast:** the homepage alternates cream, a sunset
+  blush (coral 50) behind "From a local", the lagoon tint (lagoon 50
+  `#e6f5f1`) behind "Places to know", sand behind the map, then the deep
+  ocean property section and footer.
+- **Wave edges instead of hard lines** (`<Wave>`), like the lagoon meeting
+  the sand: between the homepage bands, above the "More to read" bands on
+  inner pages and above the ocean footer.
+- **Palm frond silhouettes** (`<PalmFrond>`, inline SVG, nothing to
+  download) in a corner of the blush and lagoon bands, one tone darker than
+  the band, behind the content.
+- **Accent text moved from coral 600 to coral 700.** Coral 600 drops below
+  4.5:1 on sand (4.3), coral 700 keeps 4.85 or more on every new
+  background, so the eyebrows and accent words still pass WCAG 2.2 AA.

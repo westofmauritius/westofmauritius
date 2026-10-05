@@ -78,7 +78,7 @@ export function MobileNav({
         <nav
           ref={menu}
           id="mobile-menu"
-          className="fixed inset-x-0 top-16 bottom-0 z-40 overflow-y-auto bg-white px-4 pt-6 pb-10"
+          className="fixed inset-x-0 top-16 bottom-0 z-40 overflow-y-auto bg-surface px-4 pt-6 pb-10"
         >
           <ul className="divide-y divide-line border-y border-line">
             {items.map((item) => (

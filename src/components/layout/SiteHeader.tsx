@@ -33,7 +33,7 @@ export function SiteHeader({
     // The frosted background sits on a ::before layer, not the header itself:
     // backdrop-blur on the header would trap the fixed-position mobile menu
     // inside the 64px header instead of covering the screen.
-    <header className="sticky top-0 z-50 border-b border-line before:absolute before:inset-0 before:-z-10 before:bg-white/90 before:backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-line before:absolute before:inset-0 before:-z-10 before:bg-surface/90 before:backdrop-blur-md">
       <Container size="wide" className="flex h-16 items-center justify-between">
         <Link href="/" aria-label={brandName}>
           <Wordmark name={brandName} className="text-xl sm:text-2xl" />

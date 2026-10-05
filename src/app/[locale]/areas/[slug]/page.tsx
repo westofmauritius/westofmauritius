@@ -29,6 +29,7 @@ import { openGraphBase } from "@/lib/seo/open-graph";
 import { areaSchema, faqSchema } from "@/lib/seo/schema";
 import { seoTitle } from "@/lib/seo/titles";
 import { absoluteUrl } from "@/lib/seo/urls";
+import { Wave } from "@/components/ui/Wave";
 import { brandName } from "@/lib/site";
 
 type Props = PageProps<"/[locale]/areas/[slug]">;
@@ -182,7 +183,8 @@ export default async function AreaPage({ params }: Props) {
         </aside>
       </Container>
 
-      <section className="mt-10 border-t border-line bg-sand-50 py-16">
+      <section className="relative mt-10 bg-sand-50 py-16">
+        <Wave className="text-sand-50" />
         <Container size="wide">
           <SectionHeading
             title={t("AreaPage.placesTitle", { name: area.name })}
@@ -232,7 +234,7 @@ export default async function AreaPage({ params }: Props) {
             <li key={a.slug}>
               <Link
                 href={{ pathname: "/areas/[slug]", params: { slug: a.slug } }}
-                className="hover:text-coral-600"
+                className="hover:text-accent"
               >
                 {a.name}
               </Link>

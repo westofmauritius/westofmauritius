@@ -9,19 +9,22 @@
  * `--text-*` into `text-h1` etc. Change a value here and it changes
  * everywhere.
  *
- * Contrast notes (WCAG AA needs 4.5:1 for body text):
- *   ocean-900 on white   14.8   — default text
- *   ink-muted on white    6.4   — secondary text
- *   lagoon-700 on white   6.5   — turquoise text/links (lagoon-500 is 3.1, so
- *                                 use it only for large or decorative elements)
- *   white on coral-600    5.0   — coral buttons
+ * The page is warm cream, not white, with sand, lagoon and sunset bands
+ * (sand-50, lagoon-50, coral-50) for a tropical feel. Contrast notes (WCAG
+ * AA needs 4.5:1 for body text), on the darkest of those backgrounds:
+ *   ocean-900 on sand-100   11.6   — default text
+ *   ink-muted on sand-100    5.0   — secondary text
+ *   lagoon-700 on sand-100   5.1   — turquoise text/links (lagoon-500 is 3.1,
+ *                                    so only for large or decorative elements)
+ *   coral-700 on sand-100    4.8   — the accent (eyebrows, accent words)
+ *   white on coral-600       5.0   — coral buttons
  *
  * `static` makes Tailwind output every token as a CSS variable, even ones no
  * class uses yet, so they can also be used directly as var(--color-…).
  */
 @theme static {
   /* Lagoon turquoise — the shallow water inside the reef. */
-  --color-lagoon-50: #effbfa;
+  --color-lagoon-50: #e6f5f1;
   --color-lagoon-100: #d5f4f1;
   --color-lagoon-200: #aee8e3;
   --color-lagoon-300: #79d6cf;
@@ -46,15 +49,15 @@
   --color-ocean-950: #0a1c2a;
 
   /* Sand beige — beaches and calm background sections. */
-  --color-sand-50: #fbf8f3;
-  --color-sand-100: #f5efe4;
-  --color-sand-200: #ece0cc;
+  --color-sand-50: #f8eddc;
+  --color-sand-100: #f2e2c8;
+  --color-sand-200: #e9d6b5;
   --color-sand-300: #ddc8a6;
   --color-sand-400: #c9ab7e;
   --color-sand-500: #b38f5f;
 
   /* Sunset coral — accents only: buttons, the sun in the logo, highlights. */
-  --color-coral-50: #fff4f1;
+  --color-coral-50: #fdeee6;
   --color-coral-100: #ffe5de;
   --color-coral-200: #ffc9bb;
   --color-coral-300: #ffa58f;
@@ -66,15 +69,17 @@
   /* Semantic names, so components say what a colour is for. */
   --color-ink: var(--color-ocean-900);
   --color-ink-muted: #4a6275;
-  --color-surface: #ffffff;
+  /* Warm cream page background: white felt cold. */
+  --color-surface: #fdf8f0;
   --color-surface-alt: var(--color-sand-50);
   --color-line: var(--color-sand-200);
 
   /* Accent: the eyebrow line and the italic key word in headlines.
-     coral-600 passes WCAG AA for small text on white and sand-50 (5.0 and
-     4.7); on dark sections and photos the lighter coral-300 does (7.8 on
-     ocean-900, 9.1 on ocean-950). See docs/typography.md. */
-  --color-accent: var(--color-coral-600);
+     coral-700 keeps WCAG AA for small text on every warm background (5.8 on
+     the cream page, 5.3 on sand-50, 5.5 on lagoon-50 and coral-50, 4.8 on
+     sand-100); on dark sections and photos the lighter coral-300 does (7.8
+     on ocean-900, 9.1 on ocean-950). See docs/typography.md. */
+  --color-accent: var(--color-coral-700);
   --color-accent-on-dark: var(--color-coral-300);
 
   /* Fonts, set by next/font in src/lib/fonts.ts: Newsreader for headlines,

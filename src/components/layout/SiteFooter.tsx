@@ -1,6 +1,7 @@
 import { Container } from "@/components/ui/Container";
 import { Wordmark } from "@/components/ui/Wordmark";
 import { Link } from "@/i18n/Link";
+import { Wave } from "@/components/ui/Wave";
 import type { NavItem } from "./nav";
 
 type SiteFooterProps = {
@@ -22,7 +23,9 @@ export function SiteFooter({
   newsletter,
 }: SiteFooterProps) {
   return (
-    <footer className="mt-auto bg-ocean-900 text-ocean-100">
+    <footer className="relative mt-auto bg-ocean-900 text-ocean-100">
+      {/* The shore: the warm page meets the deep ocean footer in a wave. */}
+      <Wave className="text-ocean-900" />
       {newsletter && (
         <div data-footer-newsletter className="border-b border-white/10">
           <Container

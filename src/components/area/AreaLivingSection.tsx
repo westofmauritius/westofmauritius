@@ -163,7 +163,7 @@ export async function AreaLivingSection({
                       pathname: "/living-in-the-west/[slug]",
                       params: { slug: a.slug },
                     }}
-                    className="flex min-h-12 items-center justify-between gap-4 py-3 hover:text-coral-600"
+                    className="flex min-h-12 items-center justify-between gap-4 py-3 hover:text-accent"
                   >
                     {a.title}
                     <span aria-hidden="true">→</span>

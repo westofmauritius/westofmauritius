@@ -57,7 +57,7 @@ export function AreaQuiz({
         {questions.map((question, i) => (
           <fieldset key={question.id}>
             <legend className="type-h4">
-              <span className="mr-3 text-coral-600">{i + 1}.</span>
+              <span className="mr-3 text-accent">{i + 1}.</span>
               {question.legend}
             </legend>
             <div className="mt-5 grid gap-3 sm:grid-cols-2">
