@@ -27,7 +27,7 @@ export function MapFrame({ className, loadingText, ...map }: MapFrameProps) {
   return (
     <div
       className={cn(
-        "relative overflow-hidden rounded-sm bg-lagoon-50",
+        "relative overflow-hidden rounded-2xl bg-sand-50",
         className,
       )}
     >

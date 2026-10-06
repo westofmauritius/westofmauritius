@@ -15,7 +15,7 @@ import type { SubmissionState } from "./useFormSubmission";
 export const fieldId = (form: string, name: string) => `${form}-${name}`;
 
 const inputClass =
-  "mt-2 block min-h-12 w-full rounded-sm border bg-white px-4 text-base text-ink transition-colors placeholder:text-ink-muted/70 focus:border-ocean-700";
+  "mt-2 block min-h-12 w-full rounded-xl border bg-white px-4 text-base text-ink transition-colors placeholder:text-ink-muted/70 focus:border-ocean-700";
 
 function useErrorText() {
   const t = useTranslations("Forms");
@@ -204,7 +204,7 @@ export function ChoiceGroup(
           <label
             key={o.value}
             className={cn(
-              "flex min-h-12 cursor-pointer items-center gap-3 rounded-sm border bg-white px-4 py-2 text-small transition-colors has-checked:border-ocean-900 has-checked:bg-sand-50 has-focus-visible:outline-2 has-focus-visible:outline-coral-500",
+              "flex min-h-12 cursor-pointer items-center gap-3 rounded-xl border bg-white px-4 py-2 text-small transition-colors has-checked:border-ocean-900 has-checked:bg-sand-50 has-focus-visible:outline-2 has-focus-visible:outline-coral-500",
               error ? "border-coral-600" : "border-line",
             )}
           >
@@ -302,7 +302,7 @@ export function ErrorSummary({
       ref={summaryRef}
       tabIndex={-1}
       role="alert"
-      className="rounded-sm border border-coral-400 bg-coral-50 p-5 text-small text-coral-700"
+      className="rounded-2xl border border-coral-400 bg-coral-50 p-5 text-small text-coral-700"
     >
       <p className="font-semibold">
         {names.length === 1
@@ -340,7 +340,7 @@ export function SubmissionMessage({ state }: { state: SubmissionState }) {
   return (
     <p
       role="alert"
-      className="rounded-sm bg-coral-50 p-4 text-small text-coral-700"
+      className="rounded-2xl bg-coral-50 p-4 text-small text-coral-700"
     >
       {text}
     </p>

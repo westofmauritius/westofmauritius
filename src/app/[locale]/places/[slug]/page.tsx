@@ -29,7 +29,6 @@ import { openGraphBase } from "@/lib/seo/open-graph";
 import { seoTitle } from "@/lib/seo/titles";
 import { brandName } from "@/lib/site";
 import { placeSchema } from "@/lib/seo/schema";
-import { Wave } from "@/components/ui/Wave";
 import { absoluteUrl } from "@/lib/seo/urls";
 
 type Props = PageProps<"/[locale]/places/[slug]">;
@@ -126,7 +125,7 @@ export default async function PlacePage({ params }: Props) {
           {area.name} · {t("Region.label")}
         </Eyebrow>
         <h1 className="max-w-4xl type-h1">{place.name}</h1>
-        <p className="mt-3 type-h4 serif-italic text-ink-muted">{category}</p>
+        <p className="mt-3 text-lead font-medium text-ink-muted">{category}</p>
         {/* Where the sunset is the point of going: tonight's time. */}
         {(place.category === "sunset" || place.category === "beach") && (
           <SunsetNow
@@ -180,7 +179,7 @@ export default async function PlacePage({ params }: Props) {
 
         {/* Practical details, beside the text on large screens. */}
         <aside className="space-y-8 lg:sticky lg:top-24 lg:self-start">
-          <div className="rounded-sm bg-sand-50 p-6 ring-1 ring-line">
+          <div className="rounded-2xl bg-sand-50 p-6 ring-1 ring-line">
             <h2 className="mb-6 eyebrow">{t("PlacePage.details")}</h2>
             <dl className="space-y-6 text-small">
               {place.address && (
@@ -350,7 +349,6 @@ export default async function PlacePage({ params }: Props) {
 
       {nearby.length > 0 && (
         <section className="relative bg-sand-50 py-16">
-          <Wave className="text-sand-50" />
           <Container size="wide">
             <h2 className="type-h3">
               {t("PlacePage.moreIn", { area: area.name })}

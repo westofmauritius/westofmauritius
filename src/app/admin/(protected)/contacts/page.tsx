@@ -24,7 +24,7 @@ export default async function AdminContactsPage() {
       </div>
       <ul className="mt-8 space-y-4">
         {messages.map((m) => (
-          <li key={m.id} className="rounded-sm bg-white p-5 ring-1 ring-line">
+          <li key={m.id} className="rounded-2xl bg-white p-5 ring-1 ring-line">
             <p className="text-small">
               <strong>{m.name}</strong> ·{" "}
               <a

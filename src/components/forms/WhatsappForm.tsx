@@ -116,7 +116,7 @@ export function WhatsappForm({
   }
 
   const input =
-    "mt-2 block min-h-12 w-full rounded-sm border bg-white px-4 text-base";
+    "mt-2 block min-h-12 w-full rounded-xl border bg-white px-4 text-base";
   const error = (key: keyof Errors) =>
     errors[key] && (
       <span
@@ -199,7 +199,7 @@ export function WhatsappForm({
           {labels.roles.map((r) => (
             <label
               key={r.value}
-              className="flex min-h-12 cursor-pointer items-center gap-3 rounded-sm border border-line bg-white px-4 text-small has-[:checked]:border-ocean-900 has-[:checked]:ring-1 has-[:checked]:ring-ocean-900"
+              className="flex min-h-12 cursor-pointer items-center gap-3 rounded-xl border border-line bg-white px-4 text-small has-[:checked]:border-ocean-900 has-[:checked]:ring-1 has-[:checked]:ring-ocean-900"
             >
               <input
                 type="radio"

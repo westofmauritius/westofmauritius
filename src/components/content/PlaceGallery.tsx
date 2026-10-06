@@ -53,7 +53,7 @@ export function PlaceGallery({ photos, labels }: PlaceGalleryProps) {
         type="button"
         onClick={() => open(0)}
         aria-label={fill(labels.open, { n: 1, total })}
-        className="group relative block aspect-[4/3] w-full overflow-hidden rounded-sm bg-sand-100 sm:aspect-[16/9] lg:aspect-[21/9]"
+        className="group relative block aspect-[4/3] w-full overflow-hidden rounded-2xl bg-sand-100 sm:aspect-[16/9] lg:aspect-[21/9]"
       >
         <ResponsiveImage
           src={main.src}
@@ -72,7 +72,7 @@ export function PlaceGallery({ photos, labels }: PlaceGalleryProps) {
                 type="button"
                 onClick={() => open(i + 1)}
                 aria-label={fill(labels.open, { n: i + 2, total })}
-                className="group relative block aspect-[4/3] w-full overflow-hidden rounded-sm bg-sand-100"
+                className="group relative block aspect-[4/3] w-full overflow-hidden rounded-2xl bg-sand-100"
               >
                 <ResponsiveImage
                   src={p.src}
@@ -106,7 +106,7 @@ export function PlaceGallery({ photos, labels }: PlaceGalleryProps) {
               <img
                 src={photo.src}
                 alt={photo.alt}
-                className="max-h-[78dvh] w-auto max-w-full rounded-sm object-contain"
+                className="max-h-[78dvh] w-auto max-w-full rounded-2xl object-contain"
               />
             )}
             <figcaption className="mt-3 text-center text-small text-ocean-100">

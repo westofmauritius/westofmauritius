@@ -95,6 +95,7 @@ export function textPage(
               sizes="(min-width: 1024px) 58vw, 100vw"
               priority
               parallax
+              className="rounded-2xl"
             />
           </Container>
         ) : (
@@ -120,7 +121,7 @@ export function textPage(
             {aside.length > 0 ? (
               <AreaPhotoStrip areas={aside} />
             ) : (
-              <div className="rounded-sm bg-sand-50 p-6 ring-1 ring-line">
+              <div className="rounded-2xl bg-sand-50 p-6 ring-1 ring-line">
                 <p className="type-h4">{t("TextPage.asideTitle")}</p>
                 <p className="mt-2 text-small text-ink-muted">
                   {t("TextPage.asideText")}

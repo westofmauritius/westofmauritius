@@ -40,20 +40,16 @@ const brand: Record<Locale, string> = {
 const typeset = (text: string, locale: Locale) =>
   locale === "fr" ? text.replace(/ ([:;?!»])/g, " $1") : text;
 
+// The site's one typeface, in the two weights the images use.
 const fonts = [
   {
-    name: "Lora",
-    data: readFileSync("src/assets/fonts/Lora-Medium.ttf"),
-    weight: 500 as const,
+    name: "Jakarta",
+    data: readFileSync("src/assets/fonts/PlusJakartaSans-Bold.ttf"),
+    weight: 700 as const,
   },
   {
-    name: "Wordmark",
-    data: readFileSync("src/assets/fonts/Fraunces-Wordmark.ttf"),
-    weight: 600 as const,
-  },
-  {
-    name: "Figtree",
-    data: readFileSync("src/assets/fonts/Figtree-Medium.ttf"),
+    name: "Jakarta",
+    data: readFileSync("src/assets/fonts/PlusJakartaSans-Medium.ttf"),
     weight: 500 as const,
   },
 ];

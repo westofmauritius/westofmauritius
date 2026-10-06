@@ -64,7 +64,7 @@ export function AreaQuiz({
               {question.options.map((option) => (
                 <label
                   key={option.id}
-                  className="flex min-h-14 cursor-pointer items-center gap-3 rounded-sm border border-line bg-white px-4 py-3 transition-colors hover:border-ocean-900/50 has-[:checked]:border-ocean-900 has-[:checked]:bg-sand-50 has-[:checked]:ring-1 has-[:checked]:ring-ocean-900"
+                  className="flex min-h-14 cursor-pointer items-center gap-3 rounded-xl border border-line bg-white px-4 py-3 transition-colors hover:border-ocean-900/50 has-[:checked]:border-ocean-900 has-[:checked]:bg-sand-50 has-[:checked]:ring-1 has-[:checked]:ring-ocean-900"
                 >
                   <input
                     type="radio"

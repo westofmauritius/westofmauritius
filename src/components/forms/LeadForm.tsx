@@ -66,7 +66,7 @@ export function LeadForm({ areas, countries, consentText }: LeadFormProps) {
     return (
       <div
         role="status"
-        className="rounded-sm bg-sand-50 p-8 ring-1 ring-line sm:p-12"
+        className="rounded-2xl bg-sand-50 p-8 ring-1 ring-line sm:p-12"
       >
         <h2 ref={successRef} tabIndex={-1} className="type-h3">
           {t("lead.successTitle")}

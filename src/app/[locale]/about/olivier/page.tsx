@@ -15,7 +15,6 @@ import { getAuthor } from "@/lib/content/author";
 import { getGuides } from "@/lib/content/guides";
 import { localeAlternates } from "@/lib/seo/alternates";
 import { openGraphBase } from "@/lib/seo/open-graph";
-import { Wave } from "@/components/ui/Wave";
 import { profilePageSchema } from "@/lib/seo/schema";
 
 type Props = PageProps<"/[locale]/about/olivier">;
@@ -135,7 +134,6 @@ export default async function AuthorPage({ params }: Props) {
 
       {written.length > 0 && (
         <section className="relative bg-sand-50 py-16">
-          <Wave className="text-sand-50" />
           <Container size="wide">
             <h2 className="type-h3">
               {t("Author.writes", { name: author.name })}

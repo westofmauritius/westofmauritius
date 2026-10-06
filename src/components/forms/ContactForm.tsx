@@ -35,7 +35,10 @@ export function ContactForm() {
 
   if (state === "success") {
     return (
-      <div role="status" className="rounded-sm bg-sand-50 p-8 ring-1 ring-line">
+      <div
+        role="status"
+        className="rounded-2xl bg-sand-50 p-8 ring-1 ring-line"
+      >
         <h2 ref={successRef} tabIndex={-1} className="type-h3">
           {t("contact.successTitle")}
         </h2>

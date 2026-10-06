@@ -25,7 +25,6 @@ import { openGraphBase } from "@/lib/seo/open-graph";
 import { seoTitle } from "@/lib/seo/titles";
 import { faqSchema, livingArticleSchema } from "@/lib/seo/schema";
 import { absoluteUrl } from "@/lib/seo/urls";
-import { Wave } from "@/components/ui/Wave";
 import { brandName } from "@/lib/site";
 
 type Props = PageProps<"/[locale]/living-in-the-west/[slug]">;
@@ -147,7 +146,7 @@ export default async function LivingArticlePage({ params }: Props) {
 
           {/* The answer first: people (and search engines) want it before the detail. */}
           {article.shortAnswer && (
-            <div className="mt-10 border-l-4 border-lagoon-500 bg-lagoon-50 px-6 py-6 sm:px-8">
+            <div className="mt-10 rounded-2xl bg-sand-50 px-6 py-6 sm:px-8">
               <h2 className="eyebrow">{t("AreaLiving.shortAnswer")}</h2>
               <p className="mt-3 type-h4">{article.shortAnswer}</p>
             </div>
@@ -208,7 +207,6 @@ export default async function LivingArticlePage({ params }: Props) {
 
       {related.length > 0 && (
         <section className="relative bg-sand-50 py-16">
-          <Wave className="text-sand-50" />
           <Container size="wide">
             <h2 className="type-h3">{t("LiveArticle.related")}</h2>
             <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

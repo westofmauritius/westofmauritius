@@ -58,10 +58,6 @@ export default async function LivingInTheWestPage({ params }: Props) {
   return (
     <>
       <section className="relative isolate overflow-hidden bg-ocean-900 text-white">
-        <div
-          aria-hidden="true"
-          className="absolute -top-32 right-0 -z-10 size-[32rem] rounded-full bg-coral-500/25 blur-3xl"
-        />
         <Container size="wide" className="pt-8">
           <Breadcrumbs
             locale={locale}
@@ -136,7 +132,7 @@ export default async function LivingInTheWestPage({ params }: Props) {
                   hash="living"
                   className="group block"
                 >
-                  <div className="overflow-hidden rounded-sm">
+                  <div className="overflow-hidden rounded-2xl">
                     <Photo
                       photo={area.hero}
                       fallbackTone={area.placeholderTone}

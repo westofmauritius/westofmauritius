@@ -101,7 +101,7 @@ export function NewsletterForm({
   }
 
   const input =
-    "mt-2 block min-h-12 w-full rounded-sm border bg-white/5 px-4 text-base text-white placeholder:text-ocean-300";
+    "mt-2 block min-h-12 w-full rounded-xl border bg-white/5 px-4 text-base text-white placeholder:text-ocean-300";
 
   return (
     // A form inside the page hides the footer's copy (see globals.css), so

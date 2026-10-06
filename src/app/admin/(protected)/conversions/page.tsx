@@ -26,7 +26,7 @@ export default async function AdminConversionsPage() {
         page), <code>area-living-tamarin</code> (its Living section),{" "}
         <code>guide-…</code>, <code>living-…</code>, <code>footer</code>.
       </p>
-      <div className="mt-8 overflow-x-auto rounded-sm bg-white ring-1 ring-line">
+      <div className="mt-8 overflow-x-auto rounded-2xl bg-white ring-1 ring-line">
         <table className="w-full text-left text-small">
           <thead className="border-b border-line bg-sand-50 text-xs tracking-wide text-ink-muted uppercase">
             <tr>

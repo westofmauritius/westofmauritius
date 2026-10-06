@@ -98,12 +98,12 @@ export default async function StyleguidePage({
       </Section>
 
       <Section title="Typography">
-        {/* The type scale (docs/typography.md): Lora for headlines,
-            Figtree for text, as on the Hiriketiya site. */}
+        {/* The type scale (docs/typography.md): Plus Jakarta Sans for
+            everything, headlines bold and tightly set. */}
         <div className="space-y-10">
           <div>
             <p className="mb-2 text-xs text-ink-muted">
-              Eyebrow with pin · type-display with accent · Lora
+              Eyebrow with pin · type-display with accent · Plus Jakarta Sans
             </p>
             <Eyebrow icon="pin" className="mb-5">
               Tamarin · West coast · Mauritius
@@ -121,7 +121,7 @@ export default async function StyleguidePage({
             </div>
           ))}
           <div className="max-w-2xl">
-            <p className="mb-2 text-xs text-ink-muted">lead · Figtree</p>
+            <p className="mb-2 text-xs text-ink-muted">lead</p>
             <p className="lead text-ink-muted">
               Lead paragraph. Placeholder text: this is where an introduction to
               an area or a guide will go, written in a calm, editorial voice.

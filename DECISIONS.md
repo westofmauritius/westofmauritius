@@ -702,3 +702,31 @@ switches itself off where it would cost speed, data or comfort.
   listens to or changes scrolling; under reduced motion all of it is off.
   Parallax frames use `overflow: clip`, because `overflow: hidden` makes an
   element its own scroll container and the scroll timeline would follow it.
+
+## One modern theme (October 2026)
+
+The owner found the site a mix of themes, disliked the purple and the
+headline font and asked for a normal map and a more modern look.
+
+- **One typeface: Plus Jakarta Sans** for everything (headlines bold and
+  tightly set, text, buttons, the logo in extra bold). Compared with
+  Manrope, Outfit, Sora, Inter Tight, DM Sans, Figtree, Urbanist, Onest and
+  Bricolage Grotesque; Jakarta reads cleanly and has a friendly, travel
+  appropriate character. One 16 kB file replaces four (about 50 kB).
+- **The accent word is colour only**, no italic.
+- **One palette:** a warm white page, soft stone panels (sand 50/100/200 are
+  now neutral stone instead of beige), ocean ink, one coral accent
+  (#b83d24 for text, AA on every background) and ocean 900 as the only dark
+  band (the Living in the West block and the footer).
+- **Removed:** the living light time of day colours (they produced the
+  purple), the coral and lagoon glows on dark sections (mauve), the colour
+  bands on the homepage, the page top washes, the palm fronds and the
+  waves. Short answer boxes, map frames and community panels all use the
+  same stone panel.
+- **Map back to the normal 2D map**; the 3D terrain map, its data and
+  three.js are removed.
+- **Modern shapes:** rounded corners (panels, cards and photos 2xl, fields
+  xl), pill buttons, cards that lift gently on hover. The hover lift uses
+  `transform` because the scroll reveal animates `translate`.
+- Kept: the hero video support, scroll reveals, parallax and page cross
+  fades (all off under reduced motion).

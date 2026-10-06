@@ -9,14 +9,13 @@
  * `--text-*` into `text-h1` etc. Change a value here and it changes
  * everywhere.
  *
- * The page is warm cream, not white, with sand, lagoon and sunset bands
- * (sand-50, lagoon-50, coral-50) for a tropical feel. Contrast notes (WCAG
- * AA needs 4.5:1 for body text), on the darkest of those backgrounds:
- *   ocean-900 on sand-100   11.6   — default text
- *   ink-muted on sand-100    5.0   — secondary text
- *   lagoon-700 on sand-100   5.1   — turquoise text/links (lagoon-500 is 3.1,
- *                                    so only for large or decorative elements)
- *   coral-700 on sand-100    4.8   — the accent (eyebrows, accent words)
+ * One calm theme: a warm white page, soft stone panels (sand-50), ocean
+ * ink and a single coral accent. Contrast notes (WCAG AA needs 4.5:1 for
+ * body text), on the darkest light background (sand-100):
+ *   ocean-900 on sand-100   11.9   — default text
+ *   ink-muted on sand-100    5.1   — secondary text
+ *   lagoon-700 on sand-100   5.2   — links
+ *   accent on sand-100       4.5   — eyebrows and accent words
  *   white on coral-600       5.0   — coral buttons
  *
  * `static` makes Tailwind output every token as a CSS variable, even ones no
@@ -49,9 +48,9 @@
   --color-ocean-950: #0a1c2a;
 
   /* Sand beige — beaches and calm background sections. */
-  --color-sand-50: #f8eddc;
-  --color-sand-100: #f2e2c8;
-  --color-sand-200: #e9d6b5;
+  --color-sand-50: #f3f0eb;
+  --color-sand-100: #ebe6df;
+  --color-sand-200: #e3ddd4;
   --color-sand-300: #ddc8a6;
   --color-sand-400: #c9ab7e;
   --color-sand-500: #b38f5f;
@@ -69,33 +68,28 @@
   /* Semantic names, so components say what a colour is for. */
   --color-ink: var(--color-ocean-900);
   --color-ink-muted: #4a6275;
-  /* Warm cream page background: white felt cold. */
-  --color-surface: #fdf8f0;
+  /* One calm theme: a warm white page, soft stone panels, ocean ink, one
+     coral accent. */
+  --color-surface: #fcfaf7;
   --color-surface-alt: var(--color-sand-50);
   --color-line: var(--color-sand-200);
 
-  /* Accent: the eyebrow line and the italic key word in headlines.
-     coral-700 keeps WCAG AA for small text on every warm background (5.8 on
-     the cream page, 5.3 on sand-50, 5.5 on lagoon-50 and coral-50, 4.8 on
-     sand-100); on dark sections and photos the lighter coral-300 does (7.8
-     on ocean-900, 9.1 on ocean-950). See docs/typography.md. */
-  --color-accent: var(--color-coral-700);
+  /* Accent: eyebrows and the key word in headlines. #b83d24 keeps WCAG AA
+     for small text on every background of the site (5.4 on the page, 4.95
+     on stone panels, 4.5 on the darker stone); on dark sections and photos
+     the lighter coral-300 does (7.8 on ocean-900, 9.1 on ocean-950). */
+  --color-accent: #b83d24;
   --color-accent-on-dark: var(--color-coral-300);
-
-  /* Living light (src/lib/light.ts): these follow the time of day in
-     Tamarin. Daytime values here; the other phases are set below. */
-  --color-wash-from: var(--color-lagoon-50);
-  --color-wash-via: var(--color-coral-50);
   --color-hero: var(--color-ocean-950);
 
-  /* Fonts, set by next/font in src/lib/fonts.ts: Lora for headlines,
-     Figtree for text. The system fonts after them only show while the web
-     fonts load (next/font adjusts their metrics so nothing jumps). */
-  --font-display: var(--font-serif), "Times New Roman", serif;
-  --font-wordmark: var(--font-wordmark-loaded), var(--font-serif), serif;
+  /* One typeface, set by next/font in src/lib/fonts.ts: Plus Jakarta Sans.
+     The system fonts after it only show while it loads (next/font adjusts
+     their metrics so nothing jumps). */
   --font-sans:
     var(--font-sans-loaded), system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
+  --font-display: var(--font-sans);
+  --font-wordmark: var(--font-sans);
 
   /*
    * Type scale. Each step is a design token (font size, line height and
@@ -105,21 +99,22 @@
    */
   --text-eyebrow: 0.75rem;
   --text-eyebrow--line-height: 1.4;
-  --text-eyebrow--letter-spacing: 0.24em;
-  --text-display: clamp(3.4rem, 1.7rem + 7.2vw, 7.5rem);
-  --text-display--line-height: 0.98;
-  --text-display--letter-spacing: -0.02em;
-  --text-h1: clamp(2.75rem, 1.9rem + 3.9vw, 5.25rem);
-  --text-h1--line-height: 1;
-  --text-h1--letter-spacing: -0.018em;
-  --text-h2: clamp(2.1rem, 1.6rem + 2.2vw, 3.6rem);
-  --text-h2--line-height: 1.05;
-  --text-h2--letter-spacing: -0.012em;
-  --text-h3: clamp(1.55rem, 1.35rem + 0.95vw, 2.25rem);
-  --text-h3--line-height: 1.12;
-  --text-h3--letter-spacing: -0.008em;
-  --text-h4: clamp(1.25rem, 1.17rem + 0.35vw, 1.5rem);
-  --text-h4--line-height: 1.25;
+  --text-eyebrow--letter-spacing: 0.16em;
+  --text-display: clamp(3rem, 1.6rem + 6.4vw, 6.75rem);
+  --text-display--line-height: 1;
+  --text-display--letter-spacing: -0.045em;
+  --text-h1: clamp(2.4rem, 1.7rem + 3.3vw, 4.5rem);
+  --text-h1--line-height: 1.04;
+  --text-h1--letter-spacing: -0.04em;
+  --text-h2: clamp(1.9rem, 1.45rem + 2vw, 3.1rem);
+  --text-h2--line-height: 1.1;
+  --text-h2--letter-spacing: -0.035em;
+  --text-h3: clamp(1.4rem, 1.25rem + 0.7vw, 1.9rem);
+  --text-h3--line-height: 1.2;
+  --text-h3--letter-spacing: -0.025em;
+  --text-h4: clamp(1.125rem, 1.07rem + 0.25vw, 1.3rem);
+  --text-h4--line-height: 1.35;
+  --text-h4--letter-spacing: -0.015em;
   --text-lead: clamp(1.125rem, 1.04rem + 0.4vw, 1.3125rem);
   --text-lead--line-height: 1.65;
   --text-body: 1.0625rem;
@@ -129,42 +124,6 @@
   --text-button: 0.9375rem;
   --text-button--line-height: 1.25;
   --text-button--letter-spacing: 0.01em;
-}
-
-/*
- * Living light: each phase of the day in Tamarin shifts the accent, the
- * tints at the top of each page and the deep shade of the hero, gently.
- * Every value keeps WCAG AA: the accent stays at 4.85:1 or more on every
- * light background, the accent on dark at 7.8:1 or more (see
- * docs/living-light.md). Without the script, the daytime values apply.
- */
-html[data-light="morning"] {
-  --color-accent: #a63f28;
-  --color-accent-on-dark: #ffb59e;
-  --color-wash-from: #e4f2f7;
-  --color-wash-via: #fdf0e4;
-  --color-hero: #0b1e30;
-}
-html[data-light="golden"] {
-  --color-accent: #a3420f;
-  --color-accent-on-dark: #ffbe7a;
-  --color-wash-from: #fdf0d9;
-  --color-wash-via: #fde4d2;
-  --color-hero: #1a1520;
-}
-html[data-light="dusk"] {
-  --color-accent: #a3345a;
-  --color-accent-on-dark: #f5a9c4;
-  --color-wash-from: #f6e4ee;
-  --color-wash-via: #ebe7f7;
-  --color-hero: #191630;
-}
-html[data-light="night"] {
-  --color-accent: #97384f;
-  --color-accent-on-dark: #c9b8f2;
-  --color-wash-from: #e3e8f4;
-  --color-wash-via: #efecf8;
-  --color-hero: #08121f;
 }
 
 @layer base {
@@ -183,7 +142,7 @@ html[data-light="night"] {
   h2,
   h3,
   h4 {
-    @apply font-display font-medium text-balance;
+    @apply font-display font-bold text-balance;
   }
 
   :focus-visible {
@@ -216,36 +175,31 @@ html[data-light="night"] {
 /* Small uppercase label above headings ("Guides", "Tamarin" …). Set the
    colour where it is used, since it differs on light and dark backgrounds. */
 @utility eyebrow {
-  @apply font-sans text-eyebrow font-medium text-accent uppercase;
+  @apply font-sans text-eyebrow font-semibold text-accent uppercase;
 }
 
 /*
- * Headline styles: the serif at one step of the type scale. Use them on
+ * Headline styles: bold, tightly set, at one step of the type scale. Use them on
  * any element (an h2 can look like a display headline). The <Headline>
  * component (src/components/ui/Headline.tsx) picks one by size.
  */
 @utility type-display {
-  @apply font-display text-display font-medium text-balance;
+  @apply font-display text-display font-bold text-balance;
 }
 @utility type-h1 {
-  @apply font-display text-h1 font-medium text-balance;
+  @apply font-display text-h1 font-bold text-balance;
 }
 @utility type-h2 {
-  @apply font-display text-h2 font-medium text-balance;
+  @apply font-display text-h2 font-bold text-balance;
 }
 @utility type-h3 {
-  @apply font-display text-h3 font-medium text-balance;
+  @apply font-display text-h3 font-bold text-balance;
 }
 @utility type-h4 {
-  @apply font-display text-h4 font-medium;
-}
-/* Serif italic (the accent word in headlines, taglines, quotes). */
-@utility serif-italic {
-  font-family: var(--font-serif-italic), var(--font-display);
-  font-style: italic;
+  @apply font-display text-h4 font-semibold;
 }
 @utility type-button {
-  @apply font-sans text-button font-medium;
+  @apply font-sans text-button font-semibold;
 }
 
 /*
@@ -283,7 +237,7 @@ html[data-light="night"] {
     @apply mt-2;
   }
   .prose-west blockquote {
-    @apply border-l-2 border-coral-400 pl-5 type-h4 serif-italic;
+    @apply border-l-2 border-coral-400 pl-5 type-h4;
   }
 
   /* Map markers (created by src/components/map/PlacesMap.tsx). */

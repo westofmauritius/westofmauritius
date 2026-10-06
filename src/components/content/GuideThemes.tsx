@@ -35,7 +35,7 @@ export async function GuideThemes() {
             }}
             className="group block"
           >
-            <div className="relative overflow-hidden rounded-sm">
+            <div className="relative overflow-hidden rounded-2xl">
               {photoFor(key) ? (
                 <Photo
                   photo={photoFor(key)}

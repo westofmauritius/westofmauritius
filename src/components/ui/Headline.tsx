@@ -65,7 +65,7 @@ export function Headline({
               <em
                 key={i}
                 className={cn(
-                  "serif-italic whitespace-nowrap",
+                  "whitespace-nowrap not-italic",
                   tone === "dark" ? "text-accent-on-dark" : "text-accent",
                 )}
               >

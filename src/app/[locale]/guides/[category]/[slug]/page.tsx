@@ -28,7 +28,6 @@ import { openGraphBase } from "@/lib/seo/open-graph";
 import { seoTitle } from "@/lib/seo/titles";
 import { articleSchema } from "@/lib/seo/schema";
 import { absoluteUrl } from "@/lib/seo/urls";
-import { Wave } from "@/components/ui/Wave";
 import { brandName } from "@/lib/site";
 
 type Props = PageProps<"/[locale]/guides/[category]/[slug]">;
@@ -187,6 +186,7 @@ export default async function GuidePage({ params }: Props) {
           sizes="100vw"
           priority
           parallax
+          className="rounded-2xl"
         />
       </Container>
 
@@ -231,7 +231,6 @@ export default async function GuidePage({ params }: Props) {
 
       {places.length > 0 && (
         <section className="relative bg-sand-50 py-16">
-          <Wave className="text-sand-50" />
           <Container size="wide">
             <h2 className="type-h3">{t("GuidePage.placesTitle")}</h2>
             <div className="mt-10 grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4">

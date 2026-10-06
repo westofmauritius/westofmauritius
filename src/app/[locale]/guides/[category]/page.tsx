@@ -22,7 +22,6 @@ import { localeAlternates } from "@/lib/seo/alternates";
 import { ogImage } from "@/lib/seo/og-images";
 import { openGraphBase } from "@/lib/seo/open-graph";
 import { seoTitle } from "@/lib/seo/titles";
-import { Wave } from "@/components/ui/Wave";
 import { brandName } from "@/lib/site";
 
 type Props = PageProps<"/[locale]/guides/[category]">;
@@ -139,7 +138,6 @@ export default async function GuideCategoryPage({ params }: Props) {
       {/* Themes without places (practical information) end with the guides. */}
       {places && (
         <section className="relative bg-sand-50 py-16">
-          <Wave className="text-sand-50" />
           <Container size="wide">
             <h2 className="type-h3">
               {t("CategoryPage.placesTitle", { category: title })}

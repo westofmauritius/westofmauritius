@@ -19,7 +19,7 @@ export default async function AdminLoginPage({
 
   return (
     <main className="flex min-h-screen items-center justify-center px-4">
-      <div className="w-full max-w-sm rounded-sm bg-white p-8 shadow-sm ring-1 ring-line">
+      <div className="w-full max-w-sm rounded-2xl bg-white p-8 shadow-sm ring-1 ring-line">
         <Wordmark name="West of Mauritius" className="text-xl" />
         <h1 className="mt-8 text-3xl">Admin</h1>
         {!adminConfigured() ? (
@@ -37,7 +37,7 @@ export default async function AdminLoginPage({
             {message && (
               <p
                 role="alert"
-                className="rounded-sm bg-coral-50 p-3 text-small text-coral-700"
+                className="rounded-2xl bg-coral-50 p-3 text-small text-coral-700"
               >
                 {message}
               </p>
@@ -50,7 +50,7 @@ export default async function AdminLoginPage({
                 required
                 autoComplete="current-password"
                 autoFocus
-                className="mt-2 block min-h-12 w-full rounded-sm border border-line px-4 text-base"
+                className="mt-2 block min-h-12 w-full rounded-2xl border border-line px-4 text-base"
               />
             </label>
             <button

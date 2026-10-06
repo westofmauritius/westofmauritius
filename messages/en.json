@@ -434,8 +434,6 @@
     "source": "View the original",
     "none": "No photos yet.",
     "mapsTitle": "Map data",
-    "terrain": "The 3D map of the coast is drawn from the AWS Terrain Tiles. They combine elevation data from SRTM (NASA) and GMTED2010 (USGS) and ETOPO1 (NOAA) among other open sources.",
-    "terrainSource": "Terrain tiles sources and attribution",
     "osm": "The flat maps show OpenStreetMap data © OpenStreetMap contributors through OpenFreeMap."
   },
   "Author": {
@@ -546,12 +544,5 @@
   "Region": {
     "label": "West coast · Mauritius",
     "country": "Mauritius"
-  },
-  "Map3D": {
-    "label": "3D map of the west coast of Mauritius with its mountains and lagoon. Choose a village with the buttons on the map.",
-    "whole": "Whole coast",
-    "open": "Discover {name}",
-    "hint": "Drag to turn the coast. Choose a village to fly there.",
-    "loading": "Loading the 3D map…"
   }
 }

@@ -44,7 +44,8 @@ export function OgTemplate({
         padding: "64px 72px",
         backgroundImage: backgrounds[tone],
         color: "white",
-        fontFamily: "Figtree",
+        fontFamily: "Jakarta",
+        fontWeight: 500,
         position: "relative",
       }}
     >
@@ -76,7 +77,7 @@ export function OgTemplate({
           <path d={brandMark.mountain} fill="white" />
           <rect {...brandMark.lagoon} fill={brandMark.colors.lagoonOnDark} />
         </svg>
-        <div style={{ fontFamily: "Wordmark", fontSize: 38, fontWeight: 600 }}>
+        <div style={{ fontFamily: "Jakarta", fontSize: 38, fontWeight: 700 }}>
           {brand}
         </div>
       </div>
@@ -95,9 +96,11 @@ export function OgTemplate({
         )}
         <div
           style={{
-            fontFamily: "Lora",
+            fontFamily: "Jakarta",
+            fontWeight: 700,
             fontSize: titleSize,
             lineHeight: 1.05,
+            letterSpacing: "-0.035em",
             maxWidth: 1000,
           }}
         >

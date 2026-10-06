@@ -14,7 +14,7 @@ const dateTime = new Intl.DateTimeFormat("en-GB", {
 });
 
 const field =
-  "mt-1 block min-h-10 w-full rounded-sm border border-line bg-white px-3 text-small";
+  "mt-1 block min-h-10 w-full rounded-xl border border-line bg-white px-3 text-small";
 
 /** All leads, newest first, with filters and CSV export of the filtered list. */
 export default async function AdminLeadsPage({
@@ -50,14 +50,14 @@ export default async function AdminLeadsPage({
       </div>
 
       {!store && (
-        <p className="mt-6 rounded-sm bg-coral-50 p-4 text-small text-coral-700">
+        <p className="mt-6 rounded-2xl bg-coral-50 p-4 text-small text-coral-700">
           No database configured (DATABASE_URL). See Going live in README.md.
         </p>
       )}
 
       <form
         method="get"
-        className="mt-8 grid gap-4 rounded-sm bg-white p-5 ring-1 ring-line sm:grid-cols-3 lg:grid-cols-7"
+        className="mt-8 grid gap-4 rounded-2xl bg-white p-5 ring-1 ring-line sm:grid-cols-3 lg:grid-cols-7"
       >
         <label className="text-xs font-medium sm:col-span-3 lg:col-span-2">
           Search name or email
@@ -147,7 +147,7 @@ export default async function AdminLeadsPage({
         </div>
       </form>
 
-      <div className="mt-8 overflow-x-auto rounded-sm bg-white ring-1 ring-line">
+      <div className="mt-8 overflow-x-auto rounded-2xl bg-white ring-1 ring-line">
         <table className="w-full min-w-[64rem] text-left text-small">
           <thead className="border-b border-line bg-sand-50 text-xs tracking-wide text-ink-muted uppercase">
             <tr>

@@ -11,14 +11,14 @@ type WordmarkProps = {
 
 /**
  * Logo: the Rempart mountain with the setting sun behind it (see
- * src/lib/brand-mark.ts), followed by the brand name in the soft
- * Fraunces wordmark font (src/lib/fonts.ts). Inline SVG and text: sharp at any size, no image download.
+ * src/lib/brand-mark.ts), followed by the brand name in extra bold
+ * Plus Jakarta Sans. Inline SVG and text: sharp at any size, no image download.
  */
 export function Wordmark({ name, tone = "dark", className }: WordmarkProps) {
   return (
     <span
       className={cn(
-        "inline-flex items-center gap-2.5 font-wordmark text-2xl leading-none font-semibold tracking-[-0.01em] whitespace-nowrap",
+        "inline-flex items-center gap-2.5 font-wordmark text-2xl leading-none font-extrabold tracking-[-0.035em] whitespace-nowrap",
         tone === "dark" ? "text-ocean-900" : "text-white",
         className,
       )}

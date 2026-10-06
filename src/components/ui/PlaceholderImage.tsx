@@ -44,7 +44,7 @@ export function PlaceholderImage({
     >
       <span
         className={cn(
-          "absolute bottom-3 left-3 max-w-[calc(100%-1.5rem)] rounded-sm px-2 py-1 text-[0.625rem] font-medium tracking-[0.14em] uppercase",
+          "absolute bottom-3 left-3 max-w-[calc(100%-1.5rem)] rounded-md px-2 py-1 text-[0.625rem] font-medium tracking-[0.14em] uppercase",
           dark ? "bg-black/25 text-white" : "bg-white/70 text-ocean-900",
         )}
       >

@@ -54,14 +54,14 @@ export async function AreaLivingSection({
             </p>
           )}
           {living.placeholder && (
-            <p className="mt-6 rounded-sm border border-dashed border-coral-400 bg-coral-50 px-4 py-3 text-small text-coral-700">
+            <p className="mt-6 rounded-2xl border border-dashed border-coral-400 bg-coral-50 px-4 py-3 text-small text-coral-700">
               {t("placeholder")}
             </p>
           )}
         </div>
 
         {living.shortAnswer && (
-          <div className="mt-12 max-w-3xl border-l-4 border-lagoon-500 bg-lagoon-50 px-6 py-6 sm:px-8">
+          <div className="mt-12 max-w-3xl rounded-2xl bg-sand-50 px-6 py-6 sm:px-8">
             <h3 className="eyebrow">{t("shortAnswer")}</h3>
             <p className="mt-3 type-h4">{living.shortAnswer}</p>
           </div>
@@ -137,7 +137,7 @@ export async function AreaLivingSection({
               position={`area-living-${area.slug}`}
               tone="coral"
             />
-            <div className="rounded-sm bg-ocean-900 p-7">
+            <div className="rounded-2xl bg-ocean-900 p-7">
               <NewsletterSignup locale={locale} source={`area-${area.slug}`} />
             </div>
           </aside>

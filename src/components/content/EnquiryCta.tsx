@@ -44,7 +44,7 @@ export async function EnquiryCta({
   return (
     <aside
       className={cn(
-        "rounded-sm p-7 text-white",
+        "rounded-2xl p-7 text-white",
         tone === "coral" ? "bg-coral-600" : "bg-ocean-900",
         className,
       )}

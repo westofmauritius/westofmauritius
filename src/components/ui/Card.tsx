@@ -40,8 +40,13 @@ export function Card({
   className,
 }: CardProps) {
   return (
-    <article className={cn("group reveal relative flex flex-col", className)}>
-      <div className="relative overflow-hidden rounded-sm">
+    <article
+      className={cn(
+        "group reveal relative flex flex-col transition-transform duration-300 hover:[transform:translateY(-0.25rem)]",
+        className,
+      )}
+    >
+      <div className="relative overflow-hidden rounded-2xl shadow-sm transition-shadow duration-300 group-hover:shadow-xl group-hover:shadow-ocean-900/10">
         <div className="transition-transform duration-700 ease-out group-hover:scale-[1.03]">
           {image ?? (
             <PlaceholderImage

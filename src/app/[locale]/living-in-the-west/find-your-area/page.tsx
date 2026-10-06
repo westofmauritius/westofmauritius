@@ -53,7 +53,7 @@ export default async function FindYourAreaPage({ params }: Props) {
       area.slug,
       <article
         key={area.slug}
-        className="grid gap-8 rounded-sm bg-sand-50 p-6 sm:p-8 lg:grid-cols-[5fr_6fr] lg:items-center"
+        className="grid gap-8 rounded-2xl bg-sand-50 p-6 sm:p-8 lg:grid-cols-[5fr_6fr] lg:items-center"
       >
         <Photo
           photo={area.hero}

@@ -68,14 +68,14 @@ export function PlaceExplorer({
   };
 
   const fieldClass =
-    "mt-2 block min-h-11 w-full rounded-sm border border-line bg-white px-3 text-base text-ink focus:border-ocean-700";
+    "mt-2 block min-h-11 w-full rounded-xl border border-line bg-white px-3 text-base text-ink focus:border-ocean-700";
 
   return (
     <div>
       <form
         role="search"
         onSubmit={(e) => e.preventDefault()}
-        className="grid gap-4 rounded-sm bg-sand-50 p-5 ring-1 ring-line sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_auto] lg:items-end"
+        className="grid gap-4 rounded-2xl bg-sand-50 p-5 ring-1 ring-line sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_auto] lg:items-end"
       >
         <label className="block text-small font-medium sm:col-span-2 lg:col-span-1">
           {labels.search}

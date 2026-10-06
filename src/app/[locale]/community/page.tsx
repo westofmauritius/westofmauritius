@@ -62,7 +62,7 @@ export default async function CommunityPage({ params }: Props) {
         <div className="mt-14 grid gap-8 lg:grid-cols-2">
           <section
             aria-labelledby="newsletter-title"
-            className="rounded-sm bg-ocean-900 p-7 text-white sm:p-10"
+            className="rounded-2xl bg-ocean-900 p-7 text-white sm:p-10"
           >
             <h2
               id="newsletter-title"
@@ -85,7 +85,7 @@ export default async function CommunityPage({ params }: Props) {
 
           <section
             aria-labelledby="whatsapp-title"
-            className="rounded-sm bg-sand-100 p-7 sm:p-10"
+            className="rounded-2xl bg-sand-50 p-7 sm:p-10"
           >
             <h2 id="whatsapp-title" className="type-h3">
               {t("Community.whatsappTitle")}

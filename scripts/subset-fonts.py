@@ -28,23 +28,11 @@ UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chr
 
 # Google Fonts CSS query, output file, and the axis values to keep: a number
 # pins an axis (a static font comes out), a (min, max) pair keeps a range.
-# Lora 500 for headlines (Newsreader, the Hiriketiya serif, proved hard to
-# read on screen), Figtree for text and the interface.
+# One family for the whole site, headlines to buttons to the logo: Plus
+# Jakarta Sans, a clean modern sans with a friendly rounded character.
 SOURCES = [
-    ("Lora:wght@400..700", "serif-roman.woff2", {"wght": 500}),
-    ("Lora:ital,wght@1,400..700", "serif-italic.woff2", {"wght": 500}),
-    ("Figtree:wght@300..900", "sans.woff2", {"wght": (400, 600)}),
-    # The wordmark: Fraunces in its soft, rounded "wonky" cut, which gives the
-    # logo a relaxed island feel. Pinned to one static style.
-    (
-        "Fraunces:opsz,wght,SOFT,WONK@9..144,100..900,0..100,0..1",
-        "wordmark.woff2",
-        {"opsz": 144, "wght": 600, "SOFT": 100, "WONK": 1},
-    ),
+    ("Plus+Jakarta+Sans:wght@200..800", "sans.woff2", {"wght": (400, 800)}),
 ]
-
-# The wordmark font only ever sets the two brand names.
-WORDMARK_UNICODES = sorted({ord(c) for c in "West of Mauritius Ouest Maurice"})
 
 # Basic Latin, Latin 1 (French accents, NBSP, «», ·, °, ²), Œ œ Ÿ, the narrow
 # no break space French typography uses, typographic quotes, ellipsis, the
@@ -72,27 +60,19 @@ def latin_file(query):
     raise SystemExit(f"No latin file for {query}")
 
 
-# The italic only ever sets the accent word of a headline (and a tagline or
-# quote), so it keeps letters and basic punctuation only: no digits,
-# symbols or arrows. That makes it small enough to load on the homepage
-# without delaying the main photo.
-ITALIC_UNICODES = (
-    list(range(0x20, 0x30))
-    + [0x3A, 0x3B, 0x3F]
-    + list(range(0x41, 0x5B))
-    + list(range(0x61, 0x7B))
-    + [0xA0, 0xAB, 0xBB]
-    + list(range(0xC0, 0x100))
-    + [0x152, 0x153, 0x178, 0x202F, 0x2019, 0x201C, 0x201D, 0x2026]
-)
-
 for query, out, axes in SOURCES:
-    font = TTFont(io.BytesIO(latin_file(query)))
+    font = TTFont(io.BytesIO(latin_file(query)), lazy=False)
     if axes and "fvar" in font:
         # Keep only what the site uses; any other axis is pinned to its default.
         limits = {a.axisTag: None for a in font["fvar"].axes}
         limits.update(axes)
         font = instancer.instantiateVariableFont(font, limits)
+        # Reload it whole: the instancer leaves some tables half loaded, which
+        # trips the subsetter on glyphs without variation data.
+        buf = io.BytesIO()
+        font.save(buf)
+        buf.seek(0)
+        font = TTFont(buf, lazy=False)
     options = subset.Options()
     options.flavor = "woff2"
     # Kerning and ligatures stay; old style figures and the like go.
@@ -100,13 +80,7 @@ for query, out, axes in SOURCES:
     options.name_IDs = [1, 2]
     options.hinting = False
     sub = subset.Subsetter(options)
-    if "wordmark" in out:
-        chars = WORDMARK_UNICODES
-    elif "italic" in out:
-        chars = ITALIC_UNICODES
-    else:
-        chars = UNICODES
-    sub.populate(unicodes=chars)
+    sub.populate(unicodes=UNICODES)
     sub.subset(font)
     font.flavor = "woff2"
     font.save(OUT + out)
@@ -115,16 +89,11 @@ for query, out, axes in SOURCES:
 # Static TTF copies for the social sharing images (scripts/generate-og.tsx):
 # the image renderer cannot read WOFF2 or variable fonts.
 OG = [
-    ("Lora:wght@400..700", "../Lora-Medium.ttf", {"wght": 500}),
-    ("Figtree:wght@300..900", "../Figtree-Medium.ttf", {"wght": 500}),
-    (
-        "Fraunces:opsz,wght,SOFT,WONK@9..144,100..900,0..100,0..1",
-        "../Fraunces-Wordmark.ttf",
-        {"opsz": 144, "wght": 600, "SOFT": 100, "WONK": 1},
-    ),
+    ("Plus+Jakarta+Sans:wght@200..800", "../PlusJakartaSans-Bold.ttf", {"wght": 700}),
+    ("Plus+Jakarta+Sans:wght@200..800", "../PlusJakartaSans-Medium.ttf", {"wght": 500}),
 ]
 for query, out, axes in OG:
-    font = TTFont(io.BytesIO(latin_file(query)))
+    font = TTFont(io.BytesIO(latin_file(query)), lazy=False)
     font = instancer.instantiateVariableFont(font, axes)
     font.flavor = None
     font.save(OUT + out)

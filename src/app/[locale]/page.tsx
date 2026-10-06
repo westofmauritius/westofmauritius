@@ -26,13 +26,9 @@ import { AuthorAvatar } from "@/components/author/AuthorAvatar";
 import { getAuthor } from "@/lib/content/author";
 import { organizationSchema } from "@/lib/seo/schema";
 import { absoluteUrl } from "@/lib/seo/urls";
-import { Wave } from "@/components/ui/Wave";
-import { PalmFrond } from "@/components/ui/PalmFrond";
 import { HeroVideo } from "@/components/home/HeroVideo";
 import { heroVideo } from "@/lib/hero-video";
 import imageLoader from "@/lib/image-loader";
-import { TerrainMapSlot } from "@/components/map3d/TerrainMapSlot";
-import { getPathname } from "@/i18n/pathname";
 import { brandName } from "@/lib/site";
 
 export async function generateMetadata({
@@ -59,7 +55,6 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
   ]);
   const c = await getTranslations({ locale, namespace: "Community" });
   const r = await getTranslations({ locale, namespace: "Region" });
-  const m = await getTranslations({ locale, namespace: "Map3D" });
   // The hero's sunset clock: Tamarin's bay sits mid coast.
   const tamarin = areas.find((a) => a.slug === "tamarin");
   const areaName = (slug: string) =>
@@ -125,10 +120,6 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         {/* Keeps the white text legible: darker under the text on phones,
             a fade from the blue into the photo on large screens. */}
         <div className="absolute inset-0 -z-10 bg-linear-to-t from-hero/95 from-35% via-hero/80 via-60% to-hero/15 lg:left-[44%] lg:bg-linear-to-r lg:from-hero lg:from-0% lg:via-hero/25 lg:via-35% lg:to-transparent" />
-        {/* Palm leaves hanging into the top of the photo, as if looking out
-            from under the palms. Dark silhouettes, away from the text. */}
-        <PalmFrond className="-top-16 -right-20 -z-10 w-64 rotate-[150deg] text-hero/85 sm:w-96 lg:-top-24 lg:w-[34rem]" />
-        <PalmFrond className="-top-20 -left-24 -z-10 w-56 -scale-x-100 rotate-[150deg] text-hero/80 sm:w-80 lg:hidden" />
         {/* On phones the text sits on the photo: a scrim on the text block
             itself (fading out in its top padding) keeps the small accent
             eyebrow above 4.5:1 however tall the screen is. */}
@@ -201,7 +192,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                     pathname: "/areas/[slug]",
                     params: { slug: area.slug },
                   }}
-                  className="group relative block overflow-hidden rounded-sm"
+                  className="group relative block overflow-hidden rounded-2xl"
                 >
                   {area.hero ? (
                     <Photo
@@ -233,15 +224,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       </section>
 
       {/* From a local: the site is written by a named Mauritian. */}
-      <section className="relative isolate bg-coral-50 py-14 sm:py-20">
-        <Wave className="text-coral-50" />
-        {/* Clipped separately: the wave above must stay outside the band. */}
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 -z-10 overflow-hidden"
-        >
-          <PalmFrond className="-bottom-24 -left-20 w-72 rotate-[200deg] text-coral-200/60 sm:w-[28rem]" />
-        </div>
+      <section className="py-14 sm:py-20">
         <Container
           size="wide"
           className="grid items-center gap-10 lg:grid-cols-[5fr_7fr] lg:gap-20"
@@ -288,14 +271,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
 
       {/* Places worth knowing */}
       {highlights.length > 0 && (
-        <section className="relative isolate bg-lagoon-50 py-14 sm:py-20">
-          <Wave className="text-lagoon-50" flip />
-          <div
-            aria-hidden="true"
-            className="absolute inset-0 -z-10 overflow-hidden"
-          >
-            <PalmFrond className="-top-16 -right-24 w-80 -scale-x-100 rotate-12 text-lagoon-200/60 sm:w-[32rem]" />
-          </div>
+        <section className="py-14 sm:py-20">
           <Container size="wide">
             <div className="flex flex-wrap items-end justify-between gap-6">
               <SectionHeading title={t("featuredTitle")} />
@@ -320,8 +296,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       )}
 
       {/* Guide themes and the latest guides */}
-      <section className="relative py-14 sm:py-20">
-        <Wave className="text-surface" />
+      <section className="py-14 sm:py-20">
         <Container size="wide">
           <SectionHeading title={t("themesTitle")} />
           <div className="mt-10">
@@ -350,8 +325,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       </section>
 
       {/* Every place on one map: the quickest way to see the coast at a glance. */}
-      <section className="relative bg-sand-50 py-14 sm:py-20">
-        <Wave className="text-sand-50" flip />
+      <section className="py-14 sm:py-20">
         <Container size="wide">
           <div className="flex flex-wrap items-end justify-between gap-6">
             <SectionHeading title={t("mapTitle")} />
@@ -362,48 +336,20 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
               {t("allOnMap")} →
             </Link>
           </div>
-          {/* The signature 3D relief map on capable desktops; the 2D map of
-              every place for everyone else (and without JavaScript). */}
-          <TerrainMapSlot
-            className="mt-10 aspect-[21/9]"
-            areas={areas.map((area) => ({
-              slug: area.slug,
-              name: area.name,
-              tagline: area.tagline,
-              href: getPathname({
-                href: {
-                  pathname: "/areas/[slug]",
-                  params: { slug: area.slug },
-                },
-                locale,
-              }),
-              lat: area.location.lat,
-              lng: area.location.lng,
-            }))}
-            labels={{
-              label: m("label"),
-              whole: m("whole"),
-              open: m("open", { name: "{name}" }),
-              hint: m("hint"),
-              loading: m("loading"),
-            }}
-          >
-            <SiteMap
-              name={t("mapTitle")}
-              center={{ lat: -20.37, lng: 57.37 }}
-              zoom={10}
-              markers={places.map((place) => placeMarker(place, locale))}
-              className="mt-10 aspect-[4/5] sm:aspect-[16/9] lg:aspect-[21/9]"
-            />
-          </TerrainMapSlot>
+          <SiteMap
+            name={t("mapTitle")}
+            center={{ lat: -20.37, lng: 57.37 }}
+            zoom={10}
+            markers={places.map((place) => placeMarker(place, locale))}
+            className="mt-10 aspect-[4/5] sm:aspect-[16/9] lg:aspect-[21/9]"
+          />
         </Container>
       </section>
 
       {/* Community: the newsletter offer and the WhatsApp group. The form
           itself is in the footer just below, so this band points to it and
           to the community page instead of repeating it. */}
-      <section className="relative py-14 sm:py-20">
-        <Wave className="text-surface" />
+      <section className="py-14 sm:py-20">
         <Container
           size="wide"
           className="grid items-center gap-8 lg:grid-cols-[7fr_5fr] lg:gap-16"
@@ -429,16 +375,6 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
 
       {/* Living in the West: the entry to the property section */}
       <section className="relative isolate overflow-hidden bg-ocean-900 py-24 text-white sm:py-32">
-        <Wave inside flip className="z-10 text-surface" />
-        <PalmFrond className="-right-28 -bottom-28 -z-10 w-80 rotate-[200deg] text-ocean-800 sm:w-[36rem]" />
-        <div
-          aria-hidden="true"
-          className="absolute -top-40 -right-40 -z-10 size-[36rem] rounded-full bg-coral-500/25 blur-3xl"
-        />
-        <div
-          aria-hidden="true"
-          className="absolute -bottom-48 -left-32 -z-10 size-[30rem] rounded-full bg-lagoon-500/20 blur-3xl"
-        />
         <Container size="wide" className="max-w-3xl lg:max-w-6xl">
           <p className="mb-5 eyebrow text-accent-on-dark">{t("liveEyebrow")}</p>
           <Headline tone="dark" className="max-w-3xl text-white">
