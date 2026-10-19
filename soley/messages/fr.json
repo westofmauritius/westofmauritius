@@ -96,7 +96,7 @@
   },
   "home": {
     "metaTitle": "Comparez les devis solaires à Maurice",
-    "metaDescription": "Calculez vos économies et la nouvelle subvention de l’État, jusqu’à 75 000 Rs. Recevez ensuite jusqu’à trois devis d’installateurs vérifiés. Gratuit et indépendant.",
+    "metaDescription": "Calculez vos économies et la nouvelle subvention de l’État, jusqu’à {amount}. Recevez ensuite jusqu’à trois devis d’installateurs vérifiés. Gratuit et indépendant.",
     "eyebrow": "Indépendant · Gratuit pour les ménages",
     "title": "Le solaire chez vous, sans pression commerciale",
     "intro": "Calculez vos économies et la subvention de l’État. Recevez ensuite jusqu’à trois devis d’installateurs que nous avons vérifiés sur place, et comparez-les côte à côte.",
@@ -1055,5 +1055,67 @@
     "back": "Tous les installateurs",
     "about": "À propos de l’entreprise",
     "website": "Site web"
+  },
+  "guides": {
+    "metaTitle": "Guides solaires pour Maurice",
+    "metaDescription": "Des guides simples sur le solaire en toiture à Maurice : batteries, lecture d’un devis, déclaration au CEB et subvention de l’État.",
+    "title": "Guides solaires",
+    "intro": "Des guides simples pour vous aider à poser les bonnes questions aux installateurs. Nous renvoyons vers les sources officielles et indiquons quand nous les avons vérifiées.",
+    "reviewed": "Dernière vérification : {date}",
+    "back": "Tous les guides",
+    "read": "Lire le guide",
+    "ctaTitle": "Prêt à comparer de vrais devis ?",
+    "ctaButton": "Recevoir jusqu’à 3 devis",
+    "grantCard": "La subvention de l’État, étape par étape",
+    "grantCardBody": "Qui peut en bénéficier, ce qu’elle couvre et les étapes du devis à l’installation."
+  },
+  "grantGuide": {
+    "metaTitle": "Subvention solaire pour les ménages à Maurice : guide étape par étape",
+    "metaDescription": "Le Household Rooftop Solar PV Grant Scheme couvre {share} % d’un système agréé, jusqu’à {amount}. Son fonctionnement étape par étape, avec les sources officielles.",
+    "title": "La subvention solaire de l’État, étape par étape",
+    "intro": "Comment fonctionne le Household Rooftop Solar Photovoltaic Grant Scheme, et les étapes de votre premier devis à une installation déclarée. Soley est un service indépendant : nous ne traitons pas les demandes de subvention. Vérifiez toujours les pages officielles.",
+    "factsTitle": "La subvention en chiffres",
+    "factMax": "Subvention maximale par ménage",
+    "factShare": "Part du coût d’un système agréé",
+    "factLaunched": "Lancement du programme",
+    "factLaunchedValue": "Juillet 2026",
+    "factsSource": "Source : {source}. Vérifiez les conditions en vigueur sur les pages officielles avant de faire votre demande.",
+    "example": "Exemple : pour un système agréé coûtant {cost}, la subvention serait de {grant} et vous paieriez {net}.",
+    "stepsTitle": "Étape par étape",
+    "steps": {
+      "1": {
+        "title": "Vérifiez les conditions",
+        "body": "Lisez les conditions en vigueur du programme sur les pages officielles : qui peut en bénéficier, quels systèmes sont éligibles et quels documents sont nécessaires. Les conditions peuvent changer : vérifiez-les au moment de commencer."
+      },
+      "2": {
+        "title": "Demandez des devis pour un système agréé",
+        "body": "La subvention ne s’applique qu’à un système agréé. Demandez à chaque installateur de confirmer par écrit que le système proposé est éligible, et comparez au moins deux ou trois devis."
+      },
+      "3": {
+        "title": "Prévoyez le financement du reste",
+        "body": "Après la subvention, vous payez le reste du prix. Les ménages peuvent l’emprunter auprès de la Development Bank of Mauritius (DBM). Renseignez-vous auprès de la DBM sur les conditions du prêt avant de signer un devis."
+      },
+      "4": {
+        "title": "Faites la demande de subvention",
+        "body": "Suivez la procédure officielle de demande. Demandez à votre installateur quelles démarches il prend en charge, et gardez une copie de tout ce que vous envoyez."
+      },
+      "5": {
+        "title": "Installez et déclarez au CEB",
+        "body": "Une fois l’installation terminée, le système doit être déclaré au CEB. Le CEB a averti que les installations non enregistrées risquent d’être déconnectées. Assurez-vous que votre installateur inclut la déclaration."
+      },
+      "6": {
+        "title": "Conservez vos documents",
+        "body": "Gardez ensemble le devis, la facture, les garanties et tous les courriers concernant la subvention et la déclaration au CEB. Vous en aurez besoin pour faire jouer les garanties et si vous vendez la maison."
+      }
+    },
+    "officialTitle": "Sources officielles",
+    "officialCeb": "Central Electricity Board : programmes solaires et déclaration",
+    "officialDbm": "Development Bank of Mauritius : prêts",
+    "checked": "Lien vérifié le : {date}",
+    "notOfficial": "Soley n’est pas un service de l’État ni du CEB et ne traite pas les demandes de subvention. Ce guide est un résumé pour vous aider à vous préparer ; les pages officielles font toujours foi.",
+    "ctaTitle": "Commencez par de vrais devis",
+    "ctaBody": "Recevez jusqu’à trois devis d’installateurs vérifiés de votre district, pour des systèmes éligibles à la subvention.",
+    "ctaButton": "Recevoir jusqu’à 3 devis",
+    "calculatorLink": "Ou estimez votre subvention avec le calculateur"
   }
 }

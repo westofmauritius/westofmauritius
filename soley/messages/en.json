@@ -96,7 +96,7 @@
   },
   "home": {
     "metaTitle": "Compare solar quotes in Mauritius",
-    "metaDescription": "Work out your solar savings and the new government grant of up to Rs 75,000. Then get up to three quotes from installers we have vetted. Free and independent.",
+    "metaDescription": "Work out your solar savings and the new government grant of up to {amount}. Then get up to three quotes from installers we have vetted. Free and independent.",
     "eyebrow": "Independent · Free for households",
     "title": "Solar for your home, without the sales pressure",
     "intro": "Work out your savings and the government grant. Then get up to three quotes from installers we have vetted in person, and compare them side by side.",
@@ -1055,5 +1055,67 @@
     "back": "All installers",
     "about": "About the company",
     "website": "Website"
+  },
+  "guides": {
+    "metaTitle": "Solar guides for Mauritius",
+    "metaDescription": "Plain-language guides to rooftop solar in Mauritius: batteries, reading a quote, CEB registration and the government grant.",
+    "title": "Solar guides",
+    "intro": "Plain-language guides written to help you ask installers the right questions. We link to official sources and say when we last checked them.",
+    "reviewed": "Last reviewed: {date}",
+    "back": "All guides",
+    "read": "Read the guide",
+    "ctaTitle": "Ready to compare real quotes?",
+    "ctaButton": "Get up to 3 quotes",
+    "grantCard": "The government grant, step by step",
+    "grantCardBody": "Who can apply, how much it covers and the steps from quote to installation."
+  },
+  "grantGuide": {
+    "metaTitle": "Solar grant for households in Mauritius: step-by-step guide",
+    "metaDescription": "The Household Rooftop Solar PV Grant Scheme covers {share} % of an approved system, up to {amount}. How it works, step by step, with links to official sources.",
+    "title": "The government solar grant, step by step",
+    "intro": "How the Household Rooftop Solar Photovoltaic Grant Scheme works, and the steps from your first quote to a registered installation. Soley is an independent service: we do not process grant applications. Always check the official pages.",
+    "factsTitle": "The grant in figures",
+    "factMax": "Maximum grant per household",
+    "factShare": "Share of the cost of an approved system",
+    "factLaunched": "Scheme launched",
+    "factLaunchedValue": "July 2026",
+    "factsSource": "Source: {source}. Check the current conditions on the official pages before you apply.",
+    "example": "Example: for an approved system costing {cost}, the grant would be {grant} and you would pay {net}.",
+    "stepsTitle": "Step by step",
+    "steps": {
+      "1": {
+        "title": "Check the conditions",
+        "body": "Read the current conditions of the scheme on the official pages: who can apply, which systems qualify and what documents are needed. Conditions can change, so check them when you start."
+      },
+      "2": {
+        "title": "Get quotes for an approved system",
+        "body": "The grant only applies to an approved system. Ask every installer to confirm in writing that the system they quote qualifies, and compare at least two or three quotes."
+      },
+      "3": {
+        "title": "Plan how to pay the rest",
+        "body": "After the grant, you pay the rest of the price. Households can borrow it from the Development Bank of Mauritius (DBM). Ask the DBM about the loan conditions before you sign a quote."
+      },
+      "4": {
+        "title": "Apply for the grant",
+        "body": "Follow the official application process. Ask your installer which parts of the paperwork they handle, and keep copies of everything you send."
+      },
+      "5": {
+        "title": "Install and register with the CEB",
+        "body": "Once the installation is done, the system must be registered with the CEB. The CEB has warned that unregistered systems may be disconnected. Make sure your installer includes the registration."
+      },
+      "6": {
+        "title": "Keep your documents",
+        "body": "Keep the quote, the invoice, the warranties and every letter about the grant and the CEB registration together. You will need them for warranty claims and if you sell the house."
+      }
+    },
+    "officialTitle": "Official sources",
+    "officialCeb": "Central Electricity Board: solar schemes and registration",
+    "officialDbm": "Development Bank of Mauritius: loans",
+    "checked": "Link last checked: {date}",
+    "notOfficial": "Soley is not a government or CEB service and does not process grant applications. This guide is a summary to help you prepare; the official pages always take precedence.",
+    "ctaTitle": "Start with real quotes",
+    "ctaBody": "Get up to three quotes from vetted installers in your district, for systems that qualify for the grant.",
+    "ctaButton": "Get up to 3 quotes",
+    "calculatorLink": "Or estimate your grant with the calculator"
   }
 }

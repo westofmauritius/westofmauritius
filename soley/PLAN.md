@@ -276,3 +276,16 @@ certificates, years, reviews, LocalBusiness structured data). End-to-end
 tests: the whole journey in French on a phone (request, three installers
 quote, compare, choose), the review and moderation loop, and that a
 household cannot open another household's request.
+
+### Milestone 7: Guides, grant guide and SEO (done)
+
+Built: MDX guides with translated slugs (battery or not, how to read a
+quote, grid connection with the CEB) from a typed registry
+(`content/guides/index.ts`, tested), using only facts from
+`content/facts.ts` and pointing to the official pages; the grant guide
+with the live grant figures, six steps, official links with the date they
+were last checked and HowTo structured data; metadata on every page
+(canonical, hreflang including x-default, Open Graph, Twitter), a sitemap
+with language alternates (demo installers left out), robots rules (private
+areas blocked; demo and preview deployments not indexed at all), Open
+Graph images per language, icon and web manifest. End-to-end SEO tests.

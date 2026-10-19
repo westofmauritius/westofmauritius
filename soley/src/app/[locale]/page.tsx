@@ -37,11 +37,15 @@ export async function generateMetadata({
 }: PageProps<"/[locale]">): Promise<Metadata> {
   const locale = await resolveLocale(params);
   const t = await getTranslations({ locale, namespace: "home" });
+  const facts = await getLiveFacts();
   return pageMetadata({
     locale,
     href: "/",
     title: t("metaTitle"),
-    description: t("metaDescription"),
+    description: t("metaDescription", {
+      amount: formatMur(facts.grantMaxMur, locale),
+      share: facts.grantSharePercent,
+    }),
   });
 }
 
