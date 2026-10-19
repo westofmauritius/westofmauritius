@@ -466,7 +466,8 @@
     "invalid": "Please check this field.",
     "fileType": "Please upload a PDF, JPG or PNG file.",
     "fileSize": "Each file must be smaller than 5 MB.",
-    "summaryTitle": "Please check {count, plural, one {# field} other {# fields}}:"
+    "summaryTitle": "Please check {count, plural, one {# field} other {# fields}}:",
+    "tooShort": "Please write a little more (at least 20 characters)."
   },
   "auth": {
     "metaTitle": "Sign in",
@@ -939,5 +940,120 @@
         "roofM2PerKwp": "Roof area per kWp (m²)"
       }
     }
+  },
+  "account": {
+    "title": "My account",
+    "nav": {
+      "requests": "My requests",
+      "privacy": "My data"
+    },
+    "requestsTitle": "My quote requests",
+    "noRequests": "There are no quote requests for {email} yet.",
+    "startRequest": "Request quotes",
+    "requestCard": "Request {reference}",
+    "received": "Sent {date}",
+    "quotesCount": "{count, plural, =0 {No quotes yet} one {# quote received} other {# quotes received}}",
+    "open": "See details",
+    "request": {
+      "title": "Request {reference}",
+      "back": "My requests",
+      "progressTitle": "Where things stand",
+      "steps": {
+        "sent": "Request sent",
+        "matched": "Sent to installers",
+        "quotes": "Quotes received",
+        "chosen": "Installer chosen",
+        "installed": "Installed"
+      },
+      "installersTitle": "Installers working on your request",
+      "installersNone": "We are finding installers for your district. We will e-mail you as soon as your request has been sent.",
+      "installerStatus": {
+        "offered": "Has your request",
+        "accepted": "Preparing a quote",
+        "quoted": "Quote sent",
+        "won": "Chosen",
+        "lost": "Not chosen"
+      },
+      "compareTitle": "Compare your quotes",
+      "compareIntro": "Every installer filled in the same fields, so the quotes can be compared like for like. Scroll sideways to see all of them.",
+      "noQuotes": "No quotes yet. Installers usually contact you within two working days, and may visit before they quote.",
+      "best": "Best",
+      "rows": {
+        "installer": "Installer",
+        "price": "Total price",
+        "afterGrant": "After the grant (estimate)",
+        "perKwp": "Price per kWp",
+        "size": "System size",
+        "production": "Expected production",
+        "payback": "Payback (estimate)",
+        "panels": "Panels",
+        "inverter": "Inverter",
+        "battery": "Battery",
+        "panelWarranty": "Panel warranty",
+        "inverterWarranty": "Inverter warranty",
+        "workmanshipWarranty": "Workmanship warranty",
+        "batteryWarranty": "Battery warranty",
+        "start": "Can start in",
+        "duration": "Time on site",
+        "ceb": "CEB and grant paperwork included",
+        "validUntil": "Valid until",
+        "notes": "Notes"
+      },
+      "rating": "{rating} / 5 ({count, plural, one {# review} other {# reviews}})",
+      "noRating": "No reviews yet",
+      "verified": "Reviewed by Soley",
+      "yearsInBusiness": "{years} years in business",
+      "estimateNote": "The grant and payback are estimates based on our calculator's average values and your electricity bill. Check the grant with the installer.",
+      "choose": "Choose this quote",
+      "chooseConfirm": "Choose the quote from {company}? The other installers will be told that you chose another quote.",
+      "chosenTitle": "You chose {company}",
+      "chosenBody": "They will contact you to confirm the next steps. Make sure the system is registered with the CEB.",
+      "noneSuits": "None of these suits me",
+      "noneSuitsConfirm": "Close this request? The installers will be told you are not going ahead.",
+      "closedTitle": "This request is closed",
+      "installedQuestion": "Is the installation finished?",
+      "confirmInstalled": "Yes, it is installed",
+      "reviewTitle": "Review {company}",
+      "reviewIntro": "Your review helps other households choose. Only customers whose installation is finished can write one, and our team reads every review before it is published.",
+      "reviewFields": {
+        "rating": "Your rating",
+        "ratingOption": "{count, plural, one {# star} other {# stars}}",
+        "title": "Title",
+        "body": "Your experience",
+        "author_display_name": "Name shown with the review",
+        "author_display_nameHint": "For example your first name and district: Priya, Moka."
+      },
+      "sendReview": "Send review",
+      "reviewThanks": "Thank you. Your review will appear once our team has checked it.",
+      "reviewPending": "Your review is waiting for moderation.",
+      "reviewPublished": "Your review is published. Thank you."
+    }
+  },
+  "directory": {
+    "metaTitle": "Vetted solar installers in Mauritius",
+    "metaDescription": "Solar installers our team in Mauritius has visited and vetted, with their districts, certificates and reviews from verified customers.",
+    "title": "Vetted solar installers",
+    "intro": "Every installer here has been visited by our team in Mauritius, and their registration, insurance and finished work have been checked. Reviews come only from households whose installation was completed through Soley.",
+    "filter": "District",
+    "allRegions": "All districts",
+    "apply": "Show",
+    "empty": "No vetted installers in this district yet. Request quotes anyway: we will find installers for you.",
+    "emptyAll": "Our first installers are being vetted. Request quotes now and we will contact you as soon as installers in your district are ready.",
+    "badge": "Reviewed by Soley",
+    "badgeHint": "Visited in person; registration, insurance and finished work checked.",
+    "regions": "Districts",
+    "certifications": "Certificates",
+    "years": "{years} years installing solar",
+    "rating": "{rating} / 5 from {count, plural, one {# review} other {# reviews}}",
+    "noReviews": "No reviews yet",
+    "profile": "See profile",
+    "reviewsTitle": "Reviews from verified customers",
+    "reviewsNote": "Only households whose installation was completed through Soley can write a review, and our team checks each one before it is published.",
+    "cta": "Get quotes from vetted installers",
+    "ctaNote": "You cannot choose installers directly: we send your request to up to three vetted installers in your district, so the comparison stays fair.",
+    "paused": "Not taking new requests at the moment.",
+    "back": "All installers",
+    "about": "About the company",
+    "website": "Website"
   }
 }

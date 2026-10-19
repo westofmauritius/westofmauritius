@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { calculatorDefaults, type CalculatorSettingKey } from "@content/facts";
-import { ActionForm } from "@/components/admin/ActionForm";
+import { ActionForm } from "@/components/shared/ActionForm";
 import { Badge, Card, Checkbox, TextField } from "@/components/ui";
 import { resolveLocale } from "@/i18n/locale";
 import { requireAdmin } from "@/lib/auth/roles";

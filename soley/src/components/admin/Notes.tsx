@@ -4,7 +4,7 @@ import { Card, TextArea } from "@/components/ui";
 import type { Locale } from "@/i18n/routing";
 import { formatDate } from "@/lib/format";
 import { listNotes } from "@/lib/services/admin";
-import { ActionForm } from "./ActionForm";
+import { ActionForm } from "@/components/shared/ActionForm";
 
 /** Internal notes on an installer or a request (calls, visits, agreements). */
 export async function Notes({

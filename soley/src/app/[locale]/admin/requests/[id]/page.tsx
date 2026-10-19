@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { ActionButton } from "@/components/admin/ActionButton";
-import { ActionForm } from "@/components/admin/ActionForm";
+import { ActionButton } from "@/components/shared/ActionButton";
+import { ActionForm } from "@/components/shared/ActionForm";
 import { Notes } from "@/components/admin/Notes";
 import { RequestDetails } from "@/components/shared/RequestDetails";
 import { StatusBadge } from "@/components/shared/StatusBadge";

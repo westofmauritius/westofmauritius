@@ -27,10 +27,12 @@ that touches a flow.
   `*.test.ts` next to it (Vitest).
 - Validation: Zod schemas in `src/lib/validation/`, used by both the client
   form and the server action. The server always validates again.
-- Data access only through `getStore()` (`src/lib/data`). Never import the
+- Data access only through `getDb()` (`src/lib/data`), mostly via the
+  services in `src/lib/services`. Never import the
   Supabase service client in a client component; modules that use it start
   with `import "server-only"`.
-- Every server action checks the caller's role first (`requireRole`).
+- Every server action checks the caller's role first (`actionViewer()`);
+  pages use `requireAdmin`, `requireInstaller` or `requireHousehold`.
 - Components: the small library in `src/components/ui` (Button, Card,
   fields…). Import from `@/components/ui`.
 - Links: `Link`, `redirect`, `useRouter` from `@/i18n/navigation`, never

@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import { ActionButton } from "@/components/admin/ActionButton";
+import { ActionButton } from "@/components/shared/ActionButton";
 import { StatusBadge } from "@/components/shared/StatusBadge";
 import { buttonClasses } from "@/components/ui";
 import { Link } from "@/i18n/navigation";

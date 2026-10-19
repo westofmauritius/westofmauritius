@@ -466,7 +466,8 @@
     "invalid": "Veuillez vérifier ce champ.",
     "fileType": "Veuillez envoyer un fichier PDF, JPG ou PNG.",
     "fileSize": "Chaque fichier doit faire moins de 5 Mo.",
-    "summaryTitle": "Veuillez vérifier {count, plural, one {# champ} other {# champs}} :"
+    "summaryTitle": "Veuillez vérifier {count, plural, one {# champ} other {# champs}} :",
+    "tooShort": "Merci d’écrire un peu plus (au moins 20 caractères)."
   },
   "auth": {
     "metaTitle": "Connexion",
@@ -939,5 +940,120 @@
         "roofM2PerKwp": "Surface de toit par kWc (m²)"
       }
     }
+  },
+  "account": {
+    "title": "Mon compte",
+    "nav": {
+      "requests": "Mes demandes",
+      "privacy": "Mes données"
+    },
+    "requestsTitle": "Mes demandes de devis",
+    "noRequests": "Il n’y a pas encore de demande de devis pour {email}.",
+    "startRequest": "Demander des devis",
+    "requestCard": "Demande {reference}",
+    "received": "Envoyée le {date}",
+    "quotesCount": "{count, plural, =0 {Pas encore de devis} one {# devis reçu} other {# devis reçus}}",
+    "open": "Voir le détail",
+    "request": {
+      "title": "Demande {reference}",
+      "back": "Mes demandes",
+      "progressTitle": "Où en est votre demande",
+      "steps": {
+        "sent": "Demande envoyée",
+        "matched": "Transmise aux installateurs",
+        "quotes": "Devis reçus",
+        "chosen": "Installateur choisi",
+        "installed": "Installée"
+      },
+      "installersTitle": "Installateurs qui travaillent sur votre demande",
+      "installersNone": "Nous cherchons des installateurs pour votre district. Nous vous écrirons dès que votre demande aura été transmise.",
+      "installerStatus": {
+        "offered": "A reçu votre demande",
+        "accepted": "Prépare un devis",
+        "quoted": "Devis envoyé",
+        "won": "Choisi",
+        "lost": "Non retenu"
+      },
+      "compareTitle": "Comparez vos devis",
+      "compareIntro": "Chaque installateur a rempli les mêmes champs : les devis se comparent donc à l’identique. Faites défiler sur le côté pour tous les voir.",
+      "noQuotes": "Pas encore de devis. Les installateurs vous contactent en général sous deux jours ouvrables et peuvent passer avant de faire leur devis.",
+      "best": "Meilleur",
+      "rows": {
+        "installer": "Installateur",
+        "price": "Prix total",
+        "afterGrant": "Après la subvention (estimation)",
+        "perKwp": "Prix par kWc",
+        "size": "Taille du système",
+        "production": "Production prévue",
+        "payback": "Retour sur investissement (estimation)",
+        "panels": "Panneaux",
+        "inverter": "Onduleur",
+        "battery": "Batterie",
+        "panelWarranty": "Garantie des panneaux",
+        "inverterWarranty": "Garantie de l’onduleur",
+        "workmanshipWarranty": "Garantie de main-d’œuvre",
+        "batteryWarranty": "Garantie de la batterie",
+        "start": "Peut commencer dans",
+        "duration": "Durée du chantier",
+        "ceb": "Démarches CEB et subvention comprises",
+        "validUntil": "Valable jusqu’au",
+        "notes": "Remarques"
+      },
+      "rating": "{rating} / 5 ({count, plural, one {# avis} other {# avis}})",
+      "noRating": "Pas encore d’avis",
+      "verified": "Vérifié par Soley",
+      "yearsInBusiness": "{years} ans d’activité",
+      "estimateNote": "La subvention et le retour sur investissement sont des estimations fondées sur les valeurs moyennes de notre calculateur et sur votre facture d’électricité. Vérifiez la subvention avec l’installateur.",
+      "choose": "Choisir ce devis",
+      "chooseConfirm": "Choisir le devis de {company} ? Les autres installateurs seront informés que vous avez choisi un autre devis.",
+      "chosenTitle": "Vous avez choisi {company}",
+      "chosenBody": "L’installateur vous contactera pour confirmer la suite. Assurez-vous que l’installation est déclarée au CEB.",
+      "noneSuits": "Aucun ne me convient",
+      "noneSuitsConfirm": "Clore cette demande ? Les installateurs seront informés que vous ne donnez pas suite.",
+      "closedTitle": "Cette demande est close",
+      "installedQuestion": "L’installation est-elle terminée ?",
+      "confirmInstalled": "Oui, elle est installée",
+      "reviewTitle": "Donner votre avis sur {company}",
+      "reviewIntro": "Votre avis aide d’autres ménages à choisir. Seuls les clients dont l’installation est terminée peuvent en écrire un, et notre équipe lit chaque avis avant publication.",
+      "reviewFields": {
+        "rating": "Votre note",
+        "ratingOption": "{count, plural, one {# étoile} other {# étoiles}}",
+        "title": "Titre",
+        "body": "Votre expérience",
+        "author_display_name": "Nom affiché avec l’avis",
+        "author_display_nameHint": "Par exemple votre prénom et votre district : Priya, Moka."
+      },
+      "sendReview": "Envoyer l’avis",
+      "reviewThanks": "Merci. Votre avis apparaîtra une fois vérifié par notre équipe.",
+      "reviewPending": "Votre avis est en attente de modération.",
+      "reviewPublished": "Votre avis est publié. Merci."
+    }
+  },
+  "directory": {
+    "metaTitle": "Installateurs solaires vérifiés à Maurice",
+    "metaDescription": "Des installateurs solaires que notre équipe à Maurice a visités et vérifiés, avec leurs districts, leurs certificats et les avis de clients vérifiés.",
+    "title": "Installateurs solaires vérifiés",
+    "intro": "Chaque installateur présenté ici a reçu la visite de notre équipe à Maurice ; son immatriculation, son assurance et ses chantiers terminés ont été contrôlés. Les avis proviennent uniquement de ménages dont l’installation a été réalisée via Soley.",
+    "filter": "District",
+    "allRegions": "Tous les districts",
+    "apply": "Afficher",
+    "empty": "Pas encore d’installateur vérifié dans ce district. Demandez quand même des devis : nous trouverons des installateurs pour vous.",
+    "emptyAll": "Nos premiers installateurs sont en cours de vérification. Demandez des devis dès maintenant : nous vous contacterons dès que des installateurs de votre district seront prêts.",
+    "badge": "Vérifié par Soley",
+    "badgeHint": "Visité sur place ; immatriculation, assurance et chantiers terminés contrôlés.",
+    "regions": "Districts",
+    "certifications": "Certificats",
+    "years": "{years} ans d’expérience dans le solaire",
+    "rating": "{rating} / 5 sur {count, plural, one {# avis} other {# avis}}",
+    "noReviews": "Pas encore d’avis",
+    "profile": "Voir le profil",
+    "reviewsTitle": "Avis de clients vérifiés",
+    "reviewsNote": "Seuls les ménages dont l’installation a été réalisée via Soley peuvent écrire un avis, et notre équipe vérifie chacun avant publication.",
+    "cta": "Recevoir des devis d’installateurs vérifiés",
+    "ctaNote": "Vous ne choisissez pas les installateurs directement : nous envoyons votre demande à trois installateurs vérifiés au maximum dans votre district, pour que la comparaison reste équitable.",
+    "paused": "Ne prend pas de nouvelles demandes pour le moment.",
+    "back": "Tous les installateurs",
+    "about": "À propos de l’entreprise",
+    "website": "Site web"
   }
 }

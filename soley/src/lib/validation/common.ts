@@ -93,6 +93,7 @@ const knownKeys = {
   phone: 1,
   tooLong: 1,
   tooSmall: 1,
+  tooShort: 1,
   tooLarge: 1,
   consent: 1,
   invalid: 1,

@@ -260,3 +260,19 @@ end-to-end tests. Also fixed: the header overflowed on 390 px phones.
 Interpretation: "cost per request" on the dashboard is shown as the
 average amount billed to installers per request received, since Soley
 has no other cost data in version 1.
+
+### Milestone 6: Quote comparison, choice and reviews (done)
+
+Built: the household account (requests with status and progress), the
+side-by-side comparison (one column per installer, sticky row labels on
+phones, "Best" labels per row, price after the grant, price per kWp and a
+payback estimate from the household's own bill; `src/lib/compare.ts` is
+tested), choosing a quote (the other installers are told), closing a
+request when none suits, confirming the installation, and reviews that only
+a verified customer can write, once, after installation, and that are
+published only after moderation. The public installer directory and
+profiles (approved installers only, "Reviewed by Soley" badge, districts,
+certificates, years, reviews, LocalBusiness structured data). End-to-end
+tests: the whole journey in French on a phone (request, three installers
+quote, compare, choose), the review and moderation loop, and that a
+household cannot open another household's request.

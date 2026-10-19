@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import { ActionForm } from "@/components/admin/ActionForm";
+import { ActionForm } from "@/components/shared/ActionForm";
 import { StatusBadge } from "@/components/shared/StatusBadge";
 import { Badge, Card, RadioCards, TextField } from "@/components/ui";
 import { resolveLocale } from "@/i18n/locale";

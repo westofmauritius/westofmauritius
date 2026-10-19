@@ -69,6 +69,49 @@ export async function signIn(
   await page.goto(link);
 }
 
+const formLabels = {
+  en: {
+    path: "/en/get-quotes",
+    house: "House",
+    owner: "I own it",
+    roof: "Flat concrete roof",
+    shade: "No shade",
+    next: "Next",
+    electricity: "Electricity",
+    battery: "Not sure, advise me",
+    district: "District",
+    timeline: "Within 3 months",
+    financing: "From savings",
+    name: "Your name",
+    email: "E-mail",
+    phone: "Phone",
+    whatsapp: "WhatsApp",
+    consent: /I agree that Soley/,
+    send: "Send my request",
+    thanks: /thank-you/,
+  },
+  fr: {
+    path: "/fr/obtenir-des-devis",
+    house: "Maison",
+    owner: "Je suis propriétaire",
+    roof: "Toit plat en béton",
+    shade: "Pas d’ombre",
+    next: "Suivant",
+    electricity: "Électricité",
+    battery: "Je ne sais pas, conseillez-moi",
+    district: "District",
+    timeline: "D’ici 3 mois",
+    financing: "Avec mon épargne",
+    name: "Votre nom",
+    email: "E-mail",
+    phone: "Téléphone",
+    whatsapp: "WhatsApp",
+    consent: /J’accepte que Soley/,
+    send: "Envoyer ma demande",
+    thanks: /merci/,
+  },
+} as const;
+
 /** Fills and sends the quote form; returns the request reference. */
 export async function requestQuotes(
   page: Page,
@@ -76,33 +119,102 @@ export async function requestQuotes(
     email,
     region = "moka",
     name = "Test Household",
-  }: { email: string; region?: string; name?: string },
+    locale = "en",
+  }: { email: string; region?: string; name?: string; locale?: "en" | "fr" },
 ) {
-  await page.goto(`/en/get-quotes?bill=4000&region=${region}`);
-  await page.getByRole("radio", { name: "House" }).check();
-  await page.getByRole("radio", { name: "I own it" }).check();
-  await page.getByRole("radio", { name: "Flat concrete roof" }).check();
-  await page.getByRole("radio", { name: "No shade" }).check();
-  await page.getByRole("button", { name: "Next" }).click();
+  const l = formLabels[locale];
+  await page.goto(`${l.path}?bill=4000&region=${region}`);
+  await page.getByRole("radio", { name: l.house }).check();
+  await page.getByRole("radio", { name: l.owner }).check();
+  await page.getByRole("radio", { name: l.roof }).check();
+  await page.getByRole("radio", { name: l.shade }).check();
+  await page.getByRole("button", { name: l.next }).click();
   await expect(
-    page.getByRole("heading", { name: "Electricity" }),
+    page.getByRole("heading", { name: l.electricity }),
   ).toBeVisible();
-  await page.getByRole("radio", { name: "Not sure, advise me" }).check();
-  await page.getByRole("button", { name: "Next" }).click();
-  await expect(page.getByRole("heading", { name: "District" })).toBeVisible();
-  await page.getByRole("button", { name: "Next" }).click();
-  await page.getByRole("radio", { name: "Within 3 months" }).check();
-  await page.getByRole("radio", { name: "From savings" }).check();
-  await page.getByRole("button", { name: "Next" }).click();
-  await page.getByRole("textbox", { name: "Your name" }).fill(name);
-  await page.getByRole("textbox", { name: "E-mail" }).fill(email);
-  await page.getByRole("textbox", { name: "Phone" }).fill("+230 5123 4567");
-  await page.getByRole("radio", { name: "WhatsApp" }).check();
-  await page.getByRole("checkbox", { name: /I agree that Soley/ }).check();
-  await page.getByRole("button", { name: "Send my request" }).click();
-  await page.waitForURL(/thank-you/);
+  await page.getByRole("radio", { name: l.battery }).check();
+  await page.getByRole("button", { name: l.next }).click();
+  await expect(page.getByRole("heading", { name: l.district })).toBeVisible();
+  await page.getByRole("button", { name: l.next }).click();
+  await page.getByRole("radio", { name: l.timeline }).check();
+  await page.getByRole("radio", { name: l.financing }).check();
+  await page.getByRole("button", { name: l.next }).click();
+  await page.getByRole("textbox", { name: l.name }).fill(name);
+  await page.getByRole("textbox", { name: l.email }).fill(email);
+  await page.getByRole("textbox", { name: l.phone }).fill("+230 5123 4567");
+  await page.getByRole("radio", { name: l.whatsapp }).check();
+  await page.getByRole("checkbox", { name: l.consent }).check();
+  await page.getByRole("button", { name: l.send }).click();
+  await page.waitForURL(l.thanks);
   const text = await page.getByTestId("reference").innerText();
   return text.match(/SOL-[0-9A-Z]{5}/)![0];
+}
+
+/** Installers who were offered a request, read from the new-lead e-mails. */
+export async function offeredInstallers(
+  request: APIRequestContext,
+  count: number,
+) {
+  let emails: string[] = [];
+  await expect
+    .poll(async () => {
+      const all = (await (
+        await request.get("/api/dev/outbox")
+      ).json()) as (OutboxEmail & {
+        sentAt: string;
+      })[];
+      emails = all
+        .filter((e) => e.tag === "new-lead")
+        .slice(0, count)
+        .map((e) => e.to);
+      return emails.length;
+    })
+    .toBe(count);
+  return emails;
+}
+
+/** An installer accepts the request and sends a quote at the given price. */
+export async function acceptAndQuote(
+  page: Page,
+  installerEmail: string,
+  reference: string,
+  price: number,
+) {
+  await signIn(page, installerEmail);
+  await page.goto("/en/portal");
+  await page
+    .getByRole("listitem")
+    .filter({ hasText: reference })
+    .getByRole("link", { name: /Open/ })
+    .click();
+  await page.getByRole("button", { name: "Accept the request" }).click();
+  await expect(page.getByRole("button", { name: "Send quote" })).toBeVisible();
+  await page.getByRole("textbox", { name: /Total price/ }).fill(String(price));
+  await page.getByRole("textbox", { name: "System size (kWp)" }).fill("3.5");
+  await page.getByRole("textbox", { name: /Expected production/ }).fill("4800");
+  await page.getByRole("textbox", { name: "Panel brand" }).fill("Test Panels");
+  await page.getByRole("textbox", { name: "Number of panels" }).fill("8");
+  await page
+    .getByRole("textbox", { name: "Inverter brand" })
+    .fill("Test Inverter");
+  await page
+    .getByRole("textbox", { name: "Panel warranty (years)" })
+    .fill("25");
+  await page
+    .getByRole("textbox", { name: "Inverter warranty (years)" })
+    .fill("10");
+  await page
+    .getByRole("textbox", { name: "Workmanship warranty (years)" })
+    .fill("5");
+  await page
+    .getByRole("textbox", { name: /Weeks until installation/ })
+    .fill("3");
+  await page.getByRole("textbox", { name: "Days on site" }).fill("2");
+  await page.getByRole("button", { name: "Send quote" }).click();
+  await expect(
+    page.getByRole("status").filter({ hasText: "Quote saved" }),
+  ).toBeVisible();
+  await page.context().clearCookies();
 }
 
 /** A unique e-mail address per test run. */
