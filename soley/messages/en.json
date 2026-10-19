@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "siteName": "Soley",
+    "defaultTitle": "Soley: compare solar quotes in Mauritius",
+    "defaultDescription": "Work out your solar savings and the government grant, then compare up to three quotes from vetted installers in your district. Independent and free for households."
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "fr": "Français",
+    "switchTo": "Read this page in {language}"
+  },
+  "common": {
+    "skipToContent": "Skip to content",
+    "independent": "Soley is an independent service. We are not the CEB, the government or an installer.",
+    "estimate": "Estimate",
+    "estimateNote": "All figures are estimates based on average values. Only an installer's quote gives a real price.",
+    "placeholderPhoto": "Placeholder illustration. Real photos of Mauritian homes will replace it.",
+    "source": "Source: {source}",
+    "sourceWithDate": "Source: {source}, {date}",
+    "lastChecked": "Last checked: {date}",
+    "optional": "(optional)",
+    "back": "Back",
+    "next": "Next",
+    "continue": "Continue",
+    "save": "Save",
+    "saved": "Saved",
+    "cancel": "Cancel",
+    "submit": "Send",
+    "sending": "Sending…",
+    "loading": "Loading…",
+    "yes": "Yes",
+    "no": "No",
+    "notSet": "Not set",
+    "demo": "Demo",
+    "demoNotice": "Demo data: not a real company.",
+    "required": "Required",
+    "signOut": "Sign out",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "menu": "Menu",
+    "readMore": "Read more",
+    "kwp": "{value} kWp",
+    "years": "{count, plural, one {# year} other {# years}}",
+    "months": "{count, plural, one {# month} other {# months}}",
+    "perYear": "per year"
+  },
+  "nav": {
+    "main": "Main",
+    "calculator": "Calculator",
+    "grantGuide": "Grant guide",
+    "installers": "Installers",
+    "guides": "Guides",
+    "forInstallers": "For installers",
+    "getQuotes": "Get quotes",
+    "signIn": "Sign in",
+    "account": "My requests",
+    "portal": "Installer portal",
+    "admin": "Admin"
+  },
+  "footer": {
+    "tagline": "Independent help to get rooftop solar in Mauritius, with up to three quotes from installers we have vetted.",
+    "service": "Service",
+    "company": "Soley",
+    "legal": "Legal",
+    "about": "About us",
+    "contact": "Contact",
+    "privacy": "Privacy policy",
+    "terms": "Terms",
+    "cookies": "Cookie policy",
+    "cookieSettings": "Cookie settings",
+    "copyright": "© {year} Soley",
+    "notOfficial": "Soley is not a government service. For official information, go to the CEB and the relevant ministry."
+  },
+  "regions": {
+    "port-louis": "Port Louis",
+    "pamplemousses": "Pamplemousses",
+    "riviere-du-rempart": "Rivière du Rempart",
+    "flacq": "Flacq",
+    "grand-port": "Grand Port",
+    "savanne": "Savanne",
+    "black-river": "Black River",
+    "plaines-wilhems": "Plaines Wilhems",
+    "moka": "Moka",
+    "rodrigues": "Rodrigues"
+  },
+  "whatsapp": {
+    "label": "Chat with us on WhatsApp",
+    "prefill": "Hello Soley, I have a question about solar panels."
+  },
+  "consent": {
+    "title": "Anonymous visitor statistics?",
+    "body": "With your permission we count visits with Plausible. It uses no cookies and collects no personal data. Nothing is counted until you agree.",
+    "accept": "Allow statistics",
+    "decline": "No thanks",
+    "more": "Cookie policy"
+  },
+  "home": {
+    "metaTitle": "Compare solar quotes in Mauritius",
+    "metaDescription": "Work out your solar savings and the new government grant of up to Rs 75,000. Then get up to three quotes from installers we have vetted. Free and independent.",
+    "eyebrow": "Independent · Free for households",
+    "title": "Solar for your home, without the sales pressure",
+    "intro": "Work out your savings and the government grant. Then get up to three quotes from installers we have vetted in person, and compare them side by side.",
+    "ctaQuotes": "Get up to 3 quotes",
+    "ctaCalculator": "Work out my savings",
+    "grantBadge": "New grant: up to {amount} back ({share} % of the cost)",
+    "calculatorTitle": "What could solar save you?",
+    "calculatorIntro": "Enter your monthly electricity bill. You can fine-tune the rest.",
+    "howTitle": "How it works",
+    "howIntro": "Three steps, no obligation and no cost to you.",
+    "steps": {
+      "1": {
+        "title": "Work out your savings",
+        "body": "The calculator estimates the system size, the grant, your net cost and how long it takes to pay back."
+      },
+      "2": {
+        "title": "Tell us about your home",
+        "body": "A short form about your roof, your bill and your district. It takes about three minutes."
+      },
+      "3": {
+        "title": "Compare up to three quotes",
+        "body": "Vetted installers in your district send a quote. You compare them side by side and choose, or say no to all."
+      }
+    },
+    "trustTitle": "Why households trust Soley",
+    "trust": {
+      "vetted": {
+        "title": "Installers vetted in person",
+        "body": "Our team in Mauritius visits every installer and checks documents and finished work before they can send a quote."
+      },
+      "independent": {
+        "title": "Independent",
+        "body": "We do not sell or install panels, and we are not part of the CEB or the government. Every installer pays the same fee per request, so the fee never affects which installers you see."
+      },
+      "free": {
+        "title": "Free for households",
+        "body": "You pay nothing, now or later. You are never obliged to accept a quote."
+      },
+      "privacy": {
+        "title": "Your details go to three installers at most",
+        "body": "Only the installers matched to your request see your details. We never sell them, and you can delete them at any time."
+      }
+    },
+    "grantTitle": "The government grant in brief",
+    "grantBody": "The Household Rooftop Solar Photovoltaic Grant Scheme was launched in July 2026. It covers {share} % of the cost of an approved system, up to {amount} per household. You can borrow the rest from the Development Bank of Mauritius.",
+    "grantLink": "Read the step-by-step grant guide",
+    "warningTitle": "Register your system",
+    "warningBody": "The CEB has warned that solar systems that are not registered may be disconnected. Every installer on Soley must help you register with the CEB.",
+    "faqTitle": "Frequently asked questions",
+    "faq": {
+      "cost": {
+        "q": "What does Soley cost?",
+        "a": "Nothing for households. Installers pay Soley a fixed fee for each request they accept. That fee is the same for every installer and does not depend on whether you choose them."
+      },
+      "who": {
+        "q": "Who will contact me?",
+        "a": "At most three installers matched to your district. Nobody else gets your details. You choose in the form whether they call you, write to you on WhatsApp or e-mail you."
+      },
+      "vetting": {
+        "q": "How do you vet installers?",
+        "a": "Our team visits each company, checks registration, insurance and certificates, and looks at installations they have finished. Installers who receive repeated complaints are removed."
+      },
+      "grant": {
+        "q": "Can I get the government grant?",
+        "a": "The grant scheme covers {share} % of the cost of an approved system, up to {amount} per household. Check the conditions on the official pages; our grant guide links to them."
+      },
+      "official": {
+        "q": "Is Soley part of the CEB or the government?",
+        "a": "No. Soley is an independent private service. We explain the official schemes and link to the official pages, but we do not process grant applications."
+      },
+      "obligation": {
+        "q": "Do I have to accept a quote?",
+        "a": "No. You can compare the quotes and decline them all. Soley never charges you anything."
+      }
+    },
+    "ctaTitle": "Ready to see real prices?",
+    "ctaBody": "One short form, up to three quotes, no obligation.",
+    "ctaButton": "Get my quotes",
+    "heroImageAlt": "Illustration of a flat-roofed Mauritian house with solar panels under a bright sun"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "This page does not exist or has moved.",
+    "home": "Go to the start page"
+  },
+  "error": {
+    "title": "Something went wrong",
+    "body": "Please try again. If the problem continues, contact us.",
+    "retry": "Try again"
+  }
+}

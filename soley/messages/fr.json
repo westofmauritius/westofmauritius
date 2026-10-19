@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "siteName": "Soley",
+    "defaultTitle": "Soley : comparez les devis solaires à Maurice",
+    "defaultDescription": "Calculez vos économies grâce au solaire et la subvention de l’État, puis comparez jusqu’à trois devis d’installateurs vérifiés dans votre district. Indépendant et gratuit pour les ménages."
+  },
+  "language": {
+    "label": "Langue",
+    "en": "English",
+    "fr": "Français",
+    "switchTo": "Lire cette page en {language}"
+  },
+  "common": {
+    "skipToContent": "Aller au contenu",
+    "independent": "Soley est un service indépendant. Nous ne sommes ni le CEB, ni l’État, ni un installateur.",
+    "estimate": "Estimation",
+    "estimateNote": "Tous les chiffres sont des estimations fondées sur des valeurs moyennes. Seul le devis d’un installateur donne un prix réel.",
+    "placeholderPhoto": "Illustration provisoire. De vraies photos de maisons mauriciennes la remplaceront.",
+    "source": "Source : {source}",
+    "sourceWithDate": "Source : {source}, {date}",
+    "lastChecked": "Dernière vérification : {date}",
+    "optional": "(facultatif)",
+    "back": "Retour",
+    "next": "Suivant",
+    "continue": "Continuer",
+    "save": "Enregistrer",
+    "saved": "Enregistré",
+    "cancel": "Annuler",
+    "submit": "Envoyer",
+    "sending": "Envoi…",
+    "loading": "Chargement…",
+    "yes": "Oui",
+    "no": "Non",
+    "notSet": "Non renseigné",
+    "demo": "Démo",
+    "demoNotice": "Données de démonstration : pas une vraie entreprise.",
+    "required": "Obligatoire",
+    "signOut": "Se déconnecter",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "menu": "Menu",
+    "readMore": "Lire la suite",
+    "kwp": "{value} kWc",
+    "years": "{count, plural, one {# an} other {# ans}}",
+    "months": "{count, plural, one {# mois} other {# mois}}",
+    "perYear": "par an"
+  },
+  "nav": {
+    "main": "Principal",
+    "calculator": "Calculateur",
+    "grantGuide": "Guide de la subvention",
+    "installers": "Installateurs",
+    "guides": "Guides",
+    "forInstallers": "Pour les installateurs",
+    "getQuotes": "Obtenir des devis",
+    "signIn": "Se connecter",
+    "account": "Mes demandes",
+    "portal": "Portail installateur",
+    "admin": "Admin"
+  },
+  "footer": {
+    "tagline": "Une aide indépendante pour installer des panneaux solaires à Maurice, avec jusqu’à trois devis d’installateurs que nous avons vérifiés.",
+    "service": "Service",
+    "company": "Soley",
+    "legal": "Mentions légales",
+    "about": "Qui sommes-nous",
+    "contact": "Contact",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d’utilisation",
+    "cookies": "Politique en matière de cookies",
+    "cookieSettings": "Paramètres des cookies",
+    "copyright": "© {year} Soley",
+    "notOfficial": "Soley n’est pas un service public. Pour les informations officielles, consultez le CEB et le ministère concerné."
+  },
+  "regions": {
+    "port-louis": "Port-Louis",
+    "pamplemousses": "Pamplemousses",
+    "riviere-du-rempart": "Rivière-du-Rempart",
+    "flacq": "Flacq",
+    "grand-port": "Grand-Port",
+    "savanne": "Savanne",
+    "black-river": "Rivière-Noire",
+    "plaines-wilhems": "Plaines-Wilhems",
+    "moka": "Moka",
+    "rodrigues": "Rodrigues"
+  },
+  "whatsapp": {
+    "label": "Discuter avec nous sur WhatsApp",
+    "prefill": "Bonjour Soley, j’ai une question sur les panneaux solaires."
+  },
+  "consent": {
+    "title": "Des statistiques de visite anonymes ?",
+    "body": "Avec votre accord, nous comptons les visites avec Plausible. Il n’utilise aucun cookie et ne collecte aucune donnée personnelle. Rien n’est compté tant que vous n’avez pas accepté.",
+    "accept": "Autoriser les statistiques",
+    "decline": "Non merci",
+    "more": "Politique en matière de cookies"
+  },
+  "home": {
+    "metaTitle": "Comparez les devis solaires à Maurice",
+    "metaDescription": "Calculez vos économies et la nouvelle subvention de l’État, jusqu’à 75 000 Rs. Recevez ensuite jusqu’à trois devis d’installateurs vérifiés. Gratuit et indépendant.",
+    "eyebrow": "Indépendant · Gratuit pour les ménages",
+    "title": "Le solaire chez vous, sans pression commerciale",
+    "intro": "Calculez vos économies et la subvention de l’État. Recevez ensuite jusqu’à trois devis d’installateurs que nous avons vérifiés sur place, et comparez-les côte à côte.",
+    "ctaQuotes": "Recevoir jusqu’à 3 devis",
+    "ctaCalculator": "Calculer mes économies",
+    "grantBadge": "Nouvelle subvention : jusqu’à {amount} ({share} % du coût)",
+    "calculatorTitle": "Combien le solaire peut-il vous faire économiser ?",
+    "calculatorIntro": "Indiquez votre facture d’électricité mensuelle. Vous pouvez affiner le reste.",
+    "howTitle": "Comment ça marche",
+    "howIntro": "Trois étapes, sans engagement et sans frais pour vous.",
+    "steps": {
+      "1": {
+        "title": "Calculez vos économies",
+        "body": "Le calculateur estime la taille du système, la subvention, votre coût net et le temps de retour sur investissement."
+      },
+      "2": {
+        "title": "Parlez-nous de votre maison",
+        "body": "Un court formulaire sur votre toit, votre facture et votre district. Comptez environ trois minutes."
+      },
+      "3": {
+        "title": "Comparez jusqu’à trois devis",
+        "body": "Des installateurs vérifiés de votre district vous envoient un devis. Vous les comparez côte à côte et choisissez, ou vous les refusez tous."
+      }
+    },
+    "trustTitle": "Pourquoi les ménages font confiance à Soley",
+    "trust": {
+      "vetted": {
+        "title": "Des installateurs vérifiés sur place",
+        "body": "Notre équipe à Maurice rend visite à chaque installateur et contrôle ses documents et ses chantiers terminés avant qu’il puisse envoyer un devis."
+      },
+      "independent": {
+        "title": "Indépendant",
+        "body": "Nous ne vendons ni n’installons de panneaux, et nous ne faisons partie ni du CEB ni de l’État. Chaque installateur paie les mêmes frais par demande : ces frais n’influencent jamais les installateurs qui vous sont proposés."
+      },
+      "free": {
+        "title": "Gratuit pour les ménages",
+        "body": "Vous ne payez rien, ni maintenant ni plus tard. Vous n’êtes jamais obligé d’accepter un devis."
+      },
+      "privacy": {
+        "title": "Vos coordonnées vont à trois installateurs au maximum",
+        "body": "Seuls les installateurs retenus pour votre demande voient vos coordonnées. Nous ne les vendons jamais et vous pouvez les supprimer à tout moment."
+      }
+    },
+    "grantTitle": "La subvention de l’État en bref",
+    "grantBody": "Le Household Rooftop Solar Photovoltaic Grant Scheme a été lancé en juillet 2026. Il couvre {share} % du coût d’un système agréé, jusqu’à {amount} par ménage. Vous pouvez emprunter le reste auprès de la Development Bank of Mauritius.",
+    "grantLink": "Lire le guide de la subvention étape par étape",
+    "warningTitle": "Déclarez votre installation",
+    "warningBody": "Le CEB a averti que les installations solaires non enregistrées risquent d’être déconnectées. Chaque installateur présent sur Soley doit vous aider à vous enregistrer auprès du CEB.",
+    "faqTitle": "Questions fréquentes",
+    "faq": {
+      "cost": {
+        "q": "Combien coûte Soley ?",
+        "a": "Rien pour les ménages. Les installateurs paient à Soley des frais fixes pour chaque demande qu’ils acceptent. Ces frais sont les mêmes pour tous les installateurs et ne dépendent pas de votre choix."
+      },
+      "who": {
+        "q": "Qui va me contacter ?",
+        "a": "Trois installateurs au maximum, retenus pour votre district. Personne d’autre ne reçoit vos coordonnées. Vous choisissez dans le formulaire s’ils vous appellent, vous écrivent sur WhatsApp ou par e-mail."
+      },
+      "vetting": {
+        "q": "Comment vérifiez-vous les installateurs ?",
+        "a": "Notre équipe rend visite à chaque entreprise, contrôle son immatriculation, son assurance et ses certificats, et examine des installations terminées. Les installateurs qui font l’objet de plaintes répétées sont retirés."
+      },
+      "grant": {
+        "q": "Puis-je obtenir la subvention de l’État ?",
+        "a": "Le programme couvre {share} % du coût d’un système agréé, jusqu’à {amount} par ménage. Vérifiez les conditions sur les pages officielles ; notre guide de la subvention y renvoie."
+      },
+      "official": {
+        "q": "Soley fait-il partie du CEB ou de l’État ?",
+        "a": "Non. Soley est un service privé indépendant. Nous expliquons les programmes officiels et renvoyons vers les pages officielles, mais nous ne traitons pas les demandes de subvention."
+      },
+      "obligation": {
+        "q": "Suis-je obligé d’accepter un devis ?",
+        "a": "Non. Vous pouvez comparer les devis et tous les refuser. Soley ne vous facture jamais rien."
+      }
+    },
+    "ctaTitle": "Prêt à voir de vrais prix ?",
+    "ctaBody": "Un court formulaire, jusqu’à trois devis, sans engagement.",
+    "ctaButton": "Recevoir mes devis",
+    "heroImageAlt": "Illustration d’une maison mauricienne à toit plat équipée de panneaux solaires sous un soleil éclatant"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "body": "Cette page n’existe pas ou a été déplacée.",
+    "home": "Aller à la page d’accueil"
+  },
+  "error": {
+    "title": "Une erreur s’est produite",
+    "body": "Veuillez réessayer. Si le problème persiste, contactez-nous.",
+    "retry": "Réessayer"
+  }
+}

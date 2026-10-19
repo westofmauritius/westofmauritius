@@ -1,0 +1,177 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens. Every colour and font in the design is defined here;
+ * Tailwind turns `--color-*` into utilities (`bg-ocean-900`, `text-sun-400`).
+ *
+ * Direction: light, warm and trustworthy. Deep ocean blue is the base,
+ * sun yellow the single accent, a warm white page.
+ *
+ * Contrast (WCAG 2.2 AA needs 4.5:1 for body text, 3:1 for large text and
+ * interface parts), measured on the page colour (#fffbf3):
+ *   ocean-900 text        13.6:1
+ *   ink-muted text         6.6:1
+ *   ocean-600 links        7.0:1
+ *   ocean-900 on sun-400  10.0:1  (primary buttons: dark text on yellow)
+ *   white on ocean-800    11.0:1  (secondary buttons, dark sections)
+ *   sun-300 on ocean-900  10.2:1  (accent words on dark sections)
+ * Yellow is never used for text on light backgrounds (it fails contrast).
+ */
+@theme static {
+  --color-ocean-50: #eef6fb;
+  --color-ocean-100: #dcebf5;
+  --color-ocean-200: #b5d4ea;
+  --color-ocean-300: #82b3d8;
+  --color-ocean-400: #4b8cc0;
+  --color-ocean-500: #2b6fa3;
+  --color-ocean-600: #1d5a8a;
+  --color-ocean-700: #164a73;
+  --color-ocean-800: #103c5f;
+  --color-ocean-900: #0a2e4a;
+  --color-ocean-950: #061f33;
+
+  --color-sun-50: #fff8e1;
+  --color-sun-100: #ffefbf;
+  --color-sun-200: #ffe28a;
+  --color-sun-300: #ffd35a;
+  --color-sun-400: #fcc436;
+  --color-sun-500: #f0ac0c;
+  --color-sun-600: #c98a00;
+
+  --color-sand-50: #fffbf3;
+  --color-sand-100: #fbf3e4;
+  --color-sand-200: #f2e6cf;
+  --color-sand-300: #e4d3b2;
+
+  --color-ink: var(--color-ocean-900);
+  --color-ink-muted: #44596e;
+  --color-surface: var(--color-sand-50);
+  --color-surface-alt: var(--color-sand-100);
+  --color-line: #e6dac3;
+
+  --color-success-50: #e8f6ee;
+  --color-success-700: #17663f;
+  --color-danger-50: #fdecea;
+  --color-danger-700: #a3241a;
+  --color-warning-50: #fff6e0;
+  --color-warning-800: #6b4a00;
+
+  --font-sans:
+    var(--font-figtree), ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, sans-serif;
+
+  --radius-card: 1.25rem;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    background: var(--color-surface);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    font-weight: 700;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* A clearly visible keyboard focus ring everywhere (WCAG 2.4.7 / 2.4.13):
+     a 3 px dark ring with a light gap, visible on light and dark sections. */
+  :focus-visible {
+    outline: 3px solid var(--color-ocean-600);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+  .on-dark :focus-visible {
+    outline-color: var(--color-sun-300);
+  }
+
+  /* Touch targets: at least 24 × 24 px (WCAG 2.5.8); our buttons are 44+. */
+  input[type="checkbox"],
+  input[type="radio"] {
+    width: 1.25rem;
+    height: 1.25rem;
+    accent-color: var(--color-ocean-700);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Long-form text: guides, legal pages. */
+  .prose {
+    max-width: 68ch;
+    font-size: 1.0625rem;
+  }
+  .prose > * + * {
+    margin-top: 1em;
+  }
+  .prose h2 {
+    margin-top: 2em;
+    font-size: 1.5rem;
+  }
+  .prose h3 {
+    margin-top: 1.5em;
+    font-size: 1.2rem;
+  }
+  .prose a {
+    color: var(--color-ocean-600);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .prose ul {
+    list-style: disc;
+    padding-left: 1.25em;
+  }
+  .prose ol {
+    list-style: decimal;
+    padding-left: 1.25em;
+  }
+  .prose li + li {
+    margin-top: 0.4em;
+  }
+  .prose strong {
+    font-weight: 700;
+  }
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+  }
+  .prose th,
+  .prose td {
+    border-bottom: 1px solid var(--color-line);
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    text-align: left;
+    vertical-align: top;
+  }
+  .prose blockquote {
+    border-left: 4px solid var(--color-sun-400);
+    padding-left: 1rem;
+    color: var(--color-ink-muted);
+  }
+}
