@@ -85,19 +85,8 @@ create index quote_requests_status on public.quote_requests (status, created_at 
 create trigger quote_requests_updated before update on public.quote_requests
   for each row execute function public.touch_updated_at();
 
--- Consent to share details with at most three installers: what was agreed,
--- which version of the text, and when.
-create table public.consents (
-  id uuid primary key default gen_random_uuid(),
-  household_id uuid references public.households(id) on delete cascade,
-  quote_request_id uuid references public.quote_requests(id) on delete cascade,
-  purpose text not null,                  -- share_with_installers, terms, ...
-  text_version text not null,
-  locale text not null,
-  granted boolean not null,
-  created_at timestamptz not null default now()
-);
-create index consents_household on public.consents (household_id);
+
+
 
 -- ------------------------------------------------------------- installers
 
@@ -132,6 +121,22 @@ create table public.installers (
 );
 create trigger installers_updated before update on public.installers
   for each row execute function public.touch_updated_at();
+
+-- Consents: what was agreed, which version of the text, and when.
+-- Households agree to share their request with at most three installers;
+-- installers agree to the partner terms.
+create table public.consents (
+  id uuid primary key default gen_random_uuid(),
+  household_id uuid references public.households(id) on delete cascade,
+  quote_request_id uuid references public.quote_requests(id) on delete cascade,
+  installer_id uuid references public.installers(id) on delete cascade,
+  purpose text not null,                  -- shareWithInstallers, installerTerms
+  text_version text not null,
+  locale text not null,
+  granted boolean not null,
+  created_at timestamptz not null default now()
+);
+create index consents_household on public.consents (household_id);
 
 create table public.installer_regions (
   installer_id uuid not null references public.installers(id) on delete cascade,

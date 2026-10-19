@@ -295,3 +295,76 @@ export function Checkbox({
     </div>
   );
 }
+
+/** Several checkboxes under one legend; submitted as repeated `name` values. */
+export function CheckboxGroup({
+  legend,
+  name,
+  options,
+  defaultValues = [],
+  error,
+  hint,
+  id,
+}: {
+  legend: string;
+  name: string;
+  options: readonly Option[];
+  defaultValues?: readonly string[];
+  error?: string;
+  hint?: string;
+  id?: string;
+}) {
+  const ids = useFieldIds(id ?? name);
+  return (
+    <fieldset aria-describedby={describedBy(ids, hint, error)}>
+      <legend className="font-semibold">{legend}</legend>
+      <Describe {...ids} hint={hint} />
+      <div className="mt-2 grid gap-2 sm:grid-cols-2">
+        {options.map((option, index) => (
+          <label
+            key={option.value}
+            className="flex min-h-11 cursor-pointer items-center gap-3 rounded-xl border border-ocean-900/20 bg-white px-3 has-checked:border-ocean-700 has-checked:bg-ocean-50"
+          >
+            <input
+              id={index === 0 ? id : undefined}
+              type="checkbox"
+              name={name}
+              value={option.value}
+              defaultChecked={defaultValues.includes(option.value)}
+            />
+            {option.label}
+          </label>
+        ))}
+      </div>
+      <Describe {...ids} error={error} />
+    </fieldset>
+  );
+}
+
+export function FileField({
+  label,
+  hint,
+  error,
+  optionalLabel,
+  className,
+  id,
+  ...input
+}: FieldBase & Omit<React.InputHTMLAttributes<HTMLInputElement>, "type">) {
+  const ids = useFieldIds(id);
+  return (
+    <div className={className}>
+      <label htmlFor={ids.id}>
+        <LabelText label={label} optionalLabel={optionalLabel} />
+      </label>
+      <input
+        id={ids.id}
+        type="file"
+        aria-invalid={error ? true : undefined}
+        aria-describedby={describedBy(ids, hint, error)}
+        className="mt-1.5 block w-full rounded-xl border border-dashed border-ocean-900/40 bg-white p-3 text-base file:mr-3 file:min-h-10 file:rounded-full file:border-0 file:bg-ocean-100 file:px-4 file:font-semibold file:text-ocean-900"
+        {...input}
+      />
+      <Describe {...ids} hint={hint} error={error} />
+    </div>
+  );
+}

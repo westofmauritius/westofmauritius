@@ -14,6 +14,13 @@ const nextConfig: NextConfig = {
   turbopack: { root },
   // Guides are MDX files imported by the guide pages (content/guides).
   pageExtensions: ["ts", "tsx", "mdx"],
+  experimental: {
+    // forbidden() for signed-in people without the right role.
+    authInterrupts: true,
+    // Installer applications carry documents. Vercel accepts request
+    // bodies up to 4.5 MB, so the form allows 4 MB of files in total.
+    serverActions: { bodySizeLimit: "5mb" },
+  },
   // Do not advertise the framework in a response header.
   poweredByHeader: false,
   async headers() {

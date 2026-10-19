@@ -228,3 +228,16 @@ local draft, error summary, Turnstile, a rate limit and a consent log
 installers (`src/lib/routing.ts`, 11 tests), brought forward from
 milestone 5 because a new request needs it.
 Left for later: sign-in and the household's account (milestones 4 and 6).
+
+### Milestone 4: Installer portal and application (done)
+
+Built: magic-link sign-in for all roles (Supabase Auth in production, a
+signed demo link and cookie in demo mode), session refresh in the proxy,
+role checks (`requireAdmin`, `requireInstaller`, `forbidden()`); the
+installer sales page with the live lead price; the partner application
+with regions, documents (private storage, 4 MB total because of Vercel's
+request limit) and a logged consent to the partner terms; the portal with
+an inbox, lead page (contact details only after accepting), accept or
+decline with a reason, the structured quote form, billing with results,
+and a profile page (pause, monthly cap, regions, language, more
+documents). Playwright end-to-end tests for both installer flows.

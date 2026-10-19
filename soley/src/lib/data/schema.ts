@@ -67,6 +67,7 @@ export type ConsentRow = {
   id: string;
   household_id: string | null;
   quote_request_id: string | null;
+  installer_id: string | null;
   purpose: string;
   text_version: string;
   locale: string;

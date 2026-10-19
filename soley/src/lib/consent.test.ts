@@ -14,6 +14,7 @@ const fingerprint = (...texts: string[]) =>
  */
 const recorded = {
   shareWithInstallers: { version: "2026-10-19.1", fingerprint: "75c06b62d031" },
+  installerTerms: { version: "2026-10-19.1", fingerprint: "89ec88081e02" },
 };
 
 describe("consent texts", () => {
@@ -25,5 +26,15 @@ describe("consent texts", () => {
         fr.quoteForm.consent.label,
       ),
     }).toEqual(recorded.shareWithInstallers);
+  });
+
+  it("installer terms have a matching version", () => {
+    expect({
+      version: consentVersions.installerTerms,
+      fingerprint: fingerprint(
+        en.forInstallers.apply.terms,
+        fr.forInstallers.apply.terms,
+      ),
+    }).toEqual(recorded.installerTerms);
   });
 });

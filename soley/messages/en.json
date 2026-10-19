@@ -438,7 +438,9 @@
     "errors": {
       "rateLimited": "Too many requests from this connection. Please try again in an hour, or contact us on WhatsApp.",
       "captcha": "The security check failed. Please try again.",
-      "server": "Something went wrong on our side. Your answers are saved; please try again in a moment."
+      "server": "Something went wrong on our side. Your answers are saved; please try again in a moment.",
+      "conflict": "An application with this e-mail address already exists. Sign in to see its status, or contact us.",
+      "notAllowed": "You cannot do this."
     },
     "thankYou": {
       "metaTitle": "Request received",
@@ -465,5 +467,277 @@
     "fileType": "Please upload a PDF, JPG or PNG file.",
     "fileSize": "Each file must be smaller than 5 MB.",
     "summaryTitle": "Please check {count, plural, one {# field} other {# fields}}:"
+  },
+  "auth": {
+    "metaTitle": "Sign in",
+    "title": "Sign in to Soley",
+    "intro": "Households, installers and the Soley team all sign in the same way: enter your e-mail address and we send you a sign-in link. No password needed.",
+    "emailLabel": "E-mail address",
+    "emailHint": "Households: use the e-mail address from your quote request. Installers: use the contact e-mail from your application.",
+    "submit": "Send me a sign-in link",
+    "linkError": "That sign-in link is no longer valid. Links work once and expire after an hour. Ask for a new one below.",
+    "checkTitle": "Check your e-mail",
+    "checkBody": "If the address is correct, a sign-in link is on its way. It works once and expires in one hour. Check your spam folder if you cannot find it.",
+    "checkAgain": "Use another e-mail address",
+    "signedInTitle": "You are signed in",
+    "signedInAs": "Signed in as {email}",
+    "goAccount": "My quote requests",
+    "goPortal": "Installer portal",
+    "goAdmin": "Admin panel",
+    "noRole": "There is nothing linked to this e-mail address yet. Request quotes, or apply as an installer.",
+    "forbiddenTitle": "No access",
+    "forbiddenBody": "Your account does not have access to this page. Sign in with another e-mail address if you have one.",
+    "signedInAsShort": "Signed in as {email}"
+  },
+  "forInstallers": {
+    "metaTitle": "For solar installers: become a Soley partner",
+    "metaDescription": "Receive qualified solar requests from households in your districts. Pay only for requests you accept. No ranking for sale: speed and quality decide.",
+    "eyebrow": "For installers",
+    "title": "Qualified solar requests from households in your districts",
+    "intro": "Soley sends each household's request to at most three vetted installers. You only pay for requests you accept, and you can never buy a better position.",
+    "cta": "Apply to become a partner",
+    "priceTitle": "Simple pricing",
+    "priceSet": "{price} per request you accept. Declined requests are free.",
+    "priceUnset": "A fixed price per request you accept, agreed with you before you start. Declined requests are free.",
+    "priceInvoice": "You receive one invoice per month from the portal. There is no subscription and no contract term.",
+    "howTitle": "How it works for installers",
+    "steps": {
+      "1": {
+        "title": "Apply",
+        "body": "Send your company details, the districts you cover and your documents. It takes about ten minutes."
+      },
+      "2": {
+        "title": "We visit you",
+        "body": "Our team in Mauritius checks your documents, visits your company and looks at installations you have finished."
+      },
+      "3": {
+        "title": "Receive requests",
+        "body": "Requests from your districts arrive by e-mail. Accept or decline within 48 hours. You see the household's contact details once you accept."
+      },
+      "4": {
+        "title": "Send a structured quote",
+        "body": "Enter your quote in the portal: price, panels, inverter, battery, warranties, production and timing. Households compare the quotes side by side."
+      }
+    },
+    "fairTitle": "Fair for everyone",
+    "fair": {
+      "1": "At most three installers per request, so your quote gets attention.",
+      "2": "Requests are shared by fast response, good reviews and fair rotation. Nobody can pay to rank higher.",
+      "3": "You can set a monthly maximum and pause new requests at any time.",
+      "4": "Only verified customers can review you, and our team checks every review before it is published."
+    },
+    "requirementsTitle": "What we ask of partners",
+    "requirements": {
+      "1": "A registered company in Mauritius with valid insurance.",
+      "2": "Experience with installations that are registered with the CEB, and help for households with the registration.",
+      "3": "Clear written quotes with warranties on panels, inverter and workmanship.",
+      "4": "An answer to every request within 48 hours."
+    },
+    "apply": {
+      "metaTitle": "Apply to become a Soley partner",
+      "title": "Partner application",
+      "intro": "Tell us about your company. We review every application, visit you in Mauritius and reply by e-mail.",
+      "companySection": "Your company",
+      "contactSection": "Contact person",
+      "coverageSection": "Where and how you work",
+      "documentsSection": "Documents",
+      "documentsIntro": "PDF, JPG or PNG, 4 MB in total. You can add more documents later in the portal.",
+      "fields": {
+        "company_name": "Company name",
+        "brn": "Business Registration Number (BRN)",
+        "address": "Business address",
+        "website": "Website",
+        "years_in_business": "Years installing solar systems",
+        "contact_name": "Name",
+        "contact_email": "E-mail",
+        "contact_emailHint": "You will sign in to the portal with this address.",
+        "phone": "Phone",
+        "whatsapp": "WhatsApp",
+        "regions": "Districts you cover",
+        "certifications": "Certificates and accreditations",
+        "certificationsHint": "One per line.",
+        "ceb_registered": "We have installed systems registered with the CEB",
+        "description": "Short description of your company",
+        "descriptionHint": "Shown on your public profile after approval.",
+        "locale": "Language for e-mails and the portal",
+        "doc_registration": "Business registration certificate",
+        "doc_insurance": "Insurance certificate",
+        "doc_certificate": "Other certificate"
+      },
+      "terms": "I confirm that the information is correct and I agree to the partner terms, including the fee per accepted request.",
+      "termsLink": "Read the terms",
+      "submit": "Send application",
+      "duplicate": "An application with this e-mail address already exists. Sign in to see its status, or contact us."
+    },
+    "thanks": {
+      "metaTitle": "Application received",
+      "title": "Thank you for your application",
+      "body": "We have sent a confirmation to your e-mail. Our team will check your documents and contact you to arrange a visit.",
+      "signIn": "You can sign in to the portal at any time to see the status of your application."
+    }
+  },
+  "quote": {
+    "price_mur": "Total price (Rs)",
+    "price_murHint": "Before the government grant, all costs included.",
+    "system_kwp": "System size (kWp)",
+    "panels": "Panels",
+    "panel_brand": "Panel brand",
+    "panel_model": "Panel model",
+    "panel_count": "Number of panels",
+    "panel_watt": "Watts per panel",
+    "inverter": "Inverter",
+    "inverter_brand": "Inverter brand",
+    "inverter_model": "Inverter model",
+    "inverter_kw": "Inverter size (kW)",
+    "battery": "Battery",
+    "battery_brand": "Battery brand",
+    "battery_brandHint": "Leave empty if the quote has no battery.",
+    "battery_kwh": "Battery capacity (kWh)",
+    "warranties": "Warranties",
+    "panel_warranty_years": "Panel warranty (years)",
+    "inverter_warranty_years": "Inverter warranty (years)",
+    "workmanship_warranty_years": "Workmanship warranty (years)",
+    "battery_warranty_years": "Battery warranty (years)",
+    "yearly_production_kwh": "Expected production (kWh per year)",
+    "timing": "Timing",
+    "start_weeks": "Weeks until installation can start",
+    "duration_days": "Days on site",
+    "includes_ceb_application": "Includes the CEB registration and grant paperwork",
+    "valid_until": "Quote valid until",
+    "notes": "Notes for the household",
+    "noBattery": "No battery",
+    "weeks": "{count, plural, one {# week} other {# weeks}}",
+    "days": "{count, plural, one {# day} other {# days}}",
+    "yearsShort": "{count} yrs",
+    "kwhYear": "{kwh} kWh/yr"
+  },
+  "status": {
+    "request": {
+      "new": "New",
+      "assigned": "Sent to installers",
+      "quoted": "Quotes received",
+      "chosen": "Installer chosen",
+      "installed": "Installed",
+      "cancelled": "Cancelled"
+    },
+    "assignment": {
+      "offered": "New",
+      "accepted": "Accepted",
+      "declined": "Declined",
+      "quoted": "Quote sent",
+      "won": "Won",
+      "lost": "Not chosen",
+      "withdrawn": "Withdrawn"
+    },
+    "installer": {
+      "applied": "Application received",
+      "in_review": "In review",
+      "approved": "Approved",
+      "rejected": "Not approved",
+      "suspended": "Suspended"
+    },
+    "review": {
+      "pending": "Waiting for moderation",
+      "approved": "Published",
+      "rejected": "Rejected"
+    },
+    "invoice": {
+      "draft": "Draft",
+      "sent": "Sent",
+      "paid": "Paid",
+      "void": "Void"
+    }
+  },
+  "portal": {
+    "title": "Installer portal",
+    "nav": {
+      "inbox": "Requests",
+      "billing": "Billing",
+      "profile": "Profile"
+    },
+    "pendingTitle": "Your application is being reviewed",
+    "pendingBody": "Our team will contact you to arrange a visit. You will receive requests once your company is approved.",
+    "suspendedTitle": "Your account is suspended",
+    "suspendedBody": "You do not receive new requests at the moment. Contact us if you have questions.",
+    "pausedNotice": "New requests are paused. Turn them back on in your profile.",
+    "inboxTitle": "Requests",
+    "groups": {
+      "new": "Waiting for your answer",
+      "active": "In progress",
+      "closed": "Closed"
+    },
+    "empty": "No requests here yet.",
+    "offeredOn": "Received {date}",
+    "billLine": "Bill {bill} a month",
+    "open": "Open",
+    "lead": {
+      "title": "Request {reference}",
+      "back": "All requests",
+      "details": "The home",
+      "contact": "Contact details",
+      "contactHidden": "You see the household's name, phone and e-mail once you accept the request.",
+      "erased": "The household has deleted its personal data.",
+      "preferred": "Prefers: {method}",
+      "acceptTitle": "Accept or decline",
+      "acceptBody": "Accepting shares the household's contact details with you and adds the request to this month's invoice ({price}). Please answer within 48 hours.",
+      "acceptBodyNoPrice": "Accepting shares the household's contact details with you. Please answer within 48 hours.",
+      "accept": "Accept the request",
+      "decline": "Decline",
+      "declineReason": "Reason",
+      "declineReasons": {
+        "tooFar": "Too far away",
+        "tooBusy": "Fully booked",
+        "tooSmall": "Project too small",
+        "notSuitable": "Not suitable for us",
+        "other": "Other"
+      },
+      "accepted": "Request accepted. Contact the household, then send your quote below.",
+      "declined": "You declined this request.",
+      "closed": "This request is closed.",
+      "quoteTitle": "Your quote",
+      "quoteIntro": "The household compares every quote side by side using these fields, so please fill them in completely.",
+      "sendQuote": "Send quote",
+      "updateQuote": "Update quote",
+      "quoteSaved": "Quote saved. The household has been notified.",
+      "quoteUpdated": "Quote updated.",
+      "won": "The household chose your quote. Please confirm the next steps with them.",
+      "lost": "The household chose another quote."
+    },
+    "billing": {
+      "title": "Billing",
+      "intro": "You pay a fixed fee for each request you accept. Declined requests are free. Invoices are sent by e-mail each month.",
+      "month": "Month",
+      "leads": "Accepted requests",
+      "amount": "Amount",
+      "invoice": "Invoice",
+      "status": "Status",
+      "noInvoice": "Not invoiced yet",
+      "empty": "No billable requests yet.",
+      "stats": "Your results",
+      "accepted": "Accepted",
+      "won": "Won",
+      "winRate": "Win rate",
+      "responseTime": "Average response time",
+      "hours": "{hours} h"
+    },
+    "profile": {
+      "title": "Profile",
+      "company": "Company",
+      "publicLink": "See your public profile",
+      "leadsTitle": "Requests",
+      "active": "Receive new requests",
+      "activeHint": "Untick to pause new requests, for example during holidays.",
+      "cap": "Maximum requests per month",
+      "capHint": "Leave empty for the standard maximum ({cap}).",
+      "regions": "Districts you cover",
+      "saved": "Profile saved.",
+      "documentsTitle": "Documents",
+      "documentsIntro": "Only the Soley team can see these documents.",
+      "upload": "Add a document",
+      "uploadKind": "Type",
+      "uploadFile": "File",
+      "uploaded": "Document added.",
+      "noDocuments": "No documents yet."
+    }
   }
 }

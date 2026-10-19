@@ -78,6 +78,7 @@ export async function createQuoteRequest(
     id: newId(),
     household_id: household.id,
     quote_request_id: request.id,
+    installer_id: null,
     purpose: "shareWithInstallers",
     text_version: consentVersions.shareWithInstallers,
     locale,

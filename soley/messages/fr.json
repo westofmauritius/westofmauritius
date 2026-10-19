@@ -438,7 +438,9 @@
     "errors": {
       "rateLimited": "Trop de demandes depuis cette connexion. Veuillez réessayer dans une heure ou nous contacter sur WhatsApp.",
       "captcha": "La vérification de sécurité a échoué. Veuillez réessayer.",
-      "server": "Un problème est survenu de notre côté. Vos réponses sont enregistrées ; veuillez réessayer dans un instant."
+      "server": "Un problème est survenu de notre côté. Vos réponses sont enregistrées ; veuillez réessayer dans un instant.",
+      "conflict": "Une candidature existe déjà avec cette adresse e-mail. Connectez-vous pour voir son statut, ou contactez-nous.",
+      "notAllowed": "Vous ne pouvez pas faire cela."
     },
     "thankYou": {
       "metaTitle": "Demande reçue",
@@ -465,5 +467,277 @@
     "fileType": "Veuillez envoyer un fichier PDF, JPG ou PNG.",
     "fileSize": "Chaque fichier doit faire moins de 5 Mo.",
     "summaryTitle": "Veuillez vérifier {count, plural, one {# champ} other {# champs}} :"
+  },
+  "auth": {
+    "metaTitle": "Connexion",
+    "title": "Se connecter à Soley",
+    "intro": "Ménages, installateurs et équipe Soley se connectent de la même façon : indiquez votre adresse e-mail et nous vous envoyons un lien de connexion. Aucun mot de passe.",
+    "emailLabel": "Adresse e-mail",
+    "emailHint": "Ménages : utilisez l’adresse e-mail de votre demande de devis. Installateurs : utilisez l’e-mail de contact de votre candidature.",
+    "submit": "M’envoyer un lien de connexion",
+    "linkError": "Ce lien de connexion n’est plus valable. Les liens fonctionnent une seule fois et expirent au bout d’une heure. Demandez-en un nouveau ci-dessous.",
+    "checkTitle": "Consultez vos e-mails",
+    "checkBody": "Si l’adresse est correcte, un lien de connexion est en route. Il fonctionne une seule fois et expire au bout d’une heure. Vérifiez vos courriers indésirables si vous ne le trouvez pas.",
+    "checkAgain": "Utiliser une autre adresse e-mail",
+    "signedInTitle": "Vous êtes connecté",
+    "signedInAs": "Connecté en tant que {email}",
+    "goAccount": "Mes demandes de devis",
+    "goPortal": "Portail installateur",
+    "goAdmin": "Administration",
+    "noRole": "Rien n’est encore lié à cette adresse e-mail. Demandez des devis ou posez votre candidature comme installateur.",
+    "forbiddenTitle": "Accès refusé",
+    "forbiddenBody": "Votre compte n’a pas accès à cette page. Connectez-vous avec une autre adresse e-mail si vous en avez une.",
+    "signedInAsShort": "Connecté : {email}"
+  },
+  "forInstallers": {
+    "metaTitle": "Pour les installateurs solaires : devenez partenaire de Soley",
+    "metaDescription": "Recevez des demandes solaires qualifiées de ménages dans vos districts. Ne payez que les demandes que vous acceptez. Aucun classement à vendre : la rapidité et la qualité décident.",
+    "eyebrow": "Pour les installateurs",
+    "title": "Des demandes solaires qualifiées de ménages dans vos districts",
+    "intro": "Soley transmet la demande de chaque ménage à trois installateurs vérifiés au maximum. Vous ne payez que les demandes que vous acceptez, et vous ne pouvez jamais acheter une meilleure position.",
+    "cta": "Devenir partenaire",
+    "priceTitle": "Des tarifs simples",
+    "priceSet": "{price} par demande acceptée. Les demandes refusées sont gratuites.",
+    "priceUnset": "Un prix fixe par demande acceptée, convenu avec vous avant de commencer. Les demandes refusées sont gratuites.",
+    "priceInvoice": "Vous recevez une facture par mois depuis le portail. Pas d’abonnement, pas de durée d’engagement.",
+    "howTitle": "Comment ça marche pour les installateurs",
+    "steps": {
+      "1": {
+        "title": "Postulez",
+        "body": "Envoyez les informations de votre entreprise, les districts que vous couvrez et vos documents. Comptez environ dix minutes."
+      },
+      "2": {
+        "title": "Nous vous rendons visite",
+        "body": "Notre équipe à Maurice contrôle vos documents, visite votre entreprise et examine des installations que vous avez terminées."
+      },
+      "3": {
+        "title": "Recevez des demandes",
+        "body": "Les demandes de vos districts arrivent par e-mail. Acceptez-les ou refusez-les sous 48 heures. Vous voyez les coordonnées du ménage une fois la demande acceptée."
+      },
+      "4": {
+        "title": "Envoyez un devis structuré",
+        "body": "Saisissez votre devis dans le portail : prix, panneaux, onduleur, batterie, garanties, production et délais. Les ménages comparent les devis côte à côte."
+      }
+    },
+    "fairTitle": "Équitable pour tous",
+    "fair": {
+      "1": "Trois installateurs au maximum par demande : votre devis reçoit l’attention qu’il mérite.",
+      "2": "Les demandes sont réparties selon la rapidité de réponse, les bons avis et une rotation équitable. Personne ne peut payer pour être mieux placé.",
+      "3": "Vous pouvez fixer un maximum mensuel et suspendre les nouvelles demandes à tout moment.",
+      "4": "Seuls des clients vérifiés peuvent donner leur avis, et notre équipe contrôle chaque avis avant publication."
+    },
+    "requirementsTitle": "Ce que nous demandons aux partenaires",
+    "requirements": {
+      "1": "Une entreprise immatriculée à Maurice, avec une assurance valide.",
+      "2": "Une expérience d’installations déclarées au CEB, et une aide aux ménages pour la déclaration.",
+      "3": "Des devis écrits et clairs, avec des garanties sur les panneaux, l’onduleur et la main-d’œuvre.",
+      "4": "Une réponse à chaque demande sous 48 heures."
+    },
+    "apply": {
+      "metaTitle": "Devenir partenaire de Soley",
+      "title": "Candidature partenaire",
+      "intro": "Présentez-nous votre entreprise. Nous examinons chaque candidature, vous rendons visite à Maurice et répondons par e-mail.",
+      "companySection": "Votre entreprise",
+      "contactSection": "Personne de contact",
+      "coverageSection": "Où et comment vous travaillez",
+      "documentsSection": "Documents",
+      "documentsIntro": "PDF, JPG ou PNG, 4 Mo au total. Vous pourrez ajouter d’autres documents plus tard dans le portail.",
+      "fields": {
+        "company_name": "Nom de l’entreprise",
+        "brn": "Numéro d’immatriculation (BRN)",
+        "address": "Adresse de l’entreprise",
+        "website": "Site web",
+        "years_in_business": "Années d’expérience en installation solaire",
+        "contact_name": "Nom",
+        "contact_email": "E-mail",
+        "contact_emailHint": "Vous vous connecterez au portail avec cette adresse.",
+        "phone": "Téléphone",
+        "whatsapp": "WhatsApp",
+        "regions": "Districts couverts",
+        "certifications": "Certificats et agréments",
+        "certificationsHint": "Un par ligne.",
+        "ceb_registered": "Nous avons réalisé des installations déclarées au CEB",
+        "description": "Courte présentation de votre entreprise",
+        "descriptionHint": "Affichée sur votre profil public après approbation.",
+        "locale": "Langue des e-mails et du portail",
+        "doc_registration": "Certificat d’immatriculation",
+        "doc_insurance": "Attestation d’assurance",
+        "doc_certificate": "Autre certificat"
+      },
+      "terms": "Je confirme que les informations sont exactes et j’accepte les conditions partenaires, y compris les frais par demande acceptée.",
+      "termsLink": "Lire les conditions",
+      "submit": "Envoyer la candidature",
+      "duplicate": "Une candidature existe déjà avec cette adresse e-mail. Connectez-vous pour voir son statut, ou contactez-nous."
+    },
+    "thanks": {
+      "metaTitle": "Candidature reçue",
+      "title": "Merci pour votre candidature",
+      "body": "Nous vous avons envoyé une confirmation par e-mail. Notre équipe va vérifier vos documents et vous contacter pour organiser une visite.",
+      "signIn": "Vous pouvez vous connecter au portail à tout moment pour voir où en est votre candidature."
+    }
+  },
+  "quote": {
+    "price_mur": "Prix total (Rs)",
+    "price_murHint": "Avant la subvention de l’État, tous frais compris.",
+    "system_kwp": "Taille du système (kWc)",
+    "panels": "Panneaux",
+    "panel_brand": "Marque des panneaux",
+    "panel_model": "Modèle des panneaux",
+    "panel_count": "Nombre de panneaux",
+    "panel_watt": "Watts par panneau",
+    "inverter": "Onduleur",
+    "inverter_brand": "Marque de l’onduleur",
+    "inverter_model": "Modèle de l’onduleur",
+    "inverter_kw": "Puissance de l’onduleur (kW)",
+    "battery": "Batterie",
+    "battery_brand": "Marque de la batterie",
+    "battery_brandHint": "Laissez vide si le devis ne comprend pas de batterie.",
+    "battery_kwh": "Capacité de la batterie (kWh)",
+    "warranties": "Garanties",
+    "panel_warranty_years": "Garantie des panneaux (ans)",
+    "inverter_warranty_years": "Garantie de l’onduleur (ans)",
+    "workmanship_warranty_years": "Garantie de main-d’œuvre (ans)",
+    "battery_warranty_years": "Garantie de la batterie (ans)",
+    "yearly_production_kwh": "Production prévue (kWh par an)",
+    "timing": "Délais",
+    "start_weeks": "Semaines avant le début de l’installation",
+    "duration_days": "Jours de chantier",
+    "includes_ceb_application": "Comprend la déclaration au CEB et le dossier de subvention",
+    "valid_until": "Devis valable jusqu’au",
+    "notes": "Remarques pour le ménage",
+    "noBattery": "Sans batterie",
+    "weeks": "{count, plural, one {# semaine} other {# semaines}}",
+    "days": "{count, plural, one {# jour} other {# jours}}",
+    "yearsShort": "{count} ans",
+    "kwhYear": "{kwh} kWh/an"
+  },
+  "status": {
+    "request": {
+      "new": "Nouvelle",
+      "assigned": "Transmise aux installateurs",
+      "quoted": "Devis reçus",
+      "chosen": "Installateur choisi",
+      "installed": "Installée",
+      "cancelled": "Annulée"
+    },
+    "assignment": {
+      "offered": "Nouvelle",
+      "accepted": "Acceptée",
+      "declined": "Refusée",
+      "quoted": "Devis envoyé",
+      "won": "Gagnée",
+      "lost": "Non retenue",
+      "withdrawn": "Retirée"
+    },
+    "installer": {
+      "applied": "Candidature reçue",
+      "in_review": "En cours d’examen",
+      "approved": "Approuvé",
+      "rejected": "Non approuvé",
+      "suspended": "Suspendu"
+    },
+    "review": {
+      "pending": "En attente de modération",
+      "approved": "Publié",
+      "rejected": "Refusé"
+    },
+    "invoice": {
+      "draft": "Brouillon",
+      "sent": "Envoyée",
+      "paid": "Payée",
+      "void": "Annulée"
+    }
+  },
+  "portal": {
+    "title": "Portail installateur",
+    "nav": {
+      "inbox": "Demandes",
+      "billing": "Facturation",
+      "profile": "Profil"
+    },
+    "pendingTitle": "Votre candidature est en cours d’examen",
+    "pendingBody": "Notre équipe vous contactera pour organiser une visite. Vous recevrez des demandes une fois votre entreprise approuvée.",
+    "suspendedTitle": "Votre compte est suspendu",
+    "suspendedBody": "Vous ne recevez pas de nouvelles demandes pour le moment. Contactez-nous si vous avez des questions.",
+    "pausedNotice": "Les nouvelles demandes sont suspendues. Réactivez-les dans votre profil.",
+    "inboxTitle": "Demandes",
+    "groups": {
+      "new": "En attente de votre réponse",
+      "active": "En cours",
+      "closed": "Terminées"
+    },
+    "empty": "Aucune demande pour l’instant.",
+    "offeredOn": "Reçue le {date}",
+    "billLine": "Facture de {bill} par mois",
+    "open": "Ouvrir",
+    "lead": {
+      "title": "Demande {reference}",
+      "back": "Toutes les demandes",
+      "details": "Le logement",
+      "contact": "Coordonnées",
+      "contactHidden": "Vous voyez le nom, le téléphone et l’e-mail du ménage une fois la demande acceptée.",
+      "erased": "Le ménage a supprimé ses données personnelles.",
+      "preferred": "Préfère : {method}",
+      "acceptTitle": "Accepter ou refuser",
+      "acceptBody": "En acceptant, vous recevez les coordonnées du ménage et la demande est ajoutée à la facture de ce mois ({price}). Merci de répondre sous 48 heures.",
+      "acceptBodyNoPrice": "En acceptant, vous recevez les coordonnées du ménage. Merci de répondre sous 48 heures.",
+      "accept": "Accepter la demande",
+      "decline": "Refuser",
+      "declineReason": "Motif",
+      "declineReasons": {
+        "tooFar": "Trop loin",
+        "tooBusy": "Carnet de commandes complet",
+        "tooSmall": "Projet trop petit",
+        "notSuitable": "Ne nous convient pas",
+        "other": "Autre"
+      },
+      "accepted": "Demande acceptée. Contactez le ménage, puis envoyez votre devis ci-dessous.",
+      "declined": "Vous avez refusé cette demande.",
+      "closed": "Cette demande est close.",
+      "quoteTitle": "Votre devis",
+      "quoteIntro": "Le ménage compare tous les devis côte à côte à partir de ces champs : merci de les remplir entièrement.",
+      "sendQuote": "Envoyer le devis",
+      "updateQuote": "Mettre à jour le devis",
+      "quoteSaved": "Devis enregistré. Le ménage a été prévenu.",
+      "quoteUpdated": "Devis mis à jour.",
+      "won": "Le ménage a choisi votre devis. Merci de convenir de la suite avec lui.",
+      "lost": "Le ménage a choisi un autre devis."
+    },
+    "billing": {
+      "title": "Facturation",
+      "intro": "Vous payez des frais fixes pour chaque demande acceptée. Les demandes refusées sont gratuites. Les factures sont envoyées par e-mail chaque mois.",
+      "month": "Mois",
+      "leads": "Demandes acceptées",
+      "amount": "Montant",
+      "invoice": "Facture",
+      "status": "Statut",
+      "noInvoice": "Pas encore facturé",
+      "empty": "Aucune demande facturable pour l’instant.",
+      "stats": "Vos résultats",
+      "accepted": "Acceptées",
+      "won": "Gagnées",
+      "winRate": "Taux de réussite",
+      "responseTime": "Temps de réponse moyen",
+      "hours": "{hours} h"
+    },
+    "profile": {
+      "title": "Profil",
+      "company": "Entreprise",
+      "publicLink": "Voir votre profil public",
+      "leadsTitle": "Demandes",
+      "active": "Recevoir de nouvelles demandes",
+      "activeHint": "Décochez pour suspendre les nouvelles demandes, par exemple pendant les congés.",
+      "cap": "Nombre maximum de demandes par mois",
+      "capHint": "Laissez vide pour le maximum standard ({cap}).",
+      "regions": "Districts couverts",
+      "saved": "Profil enregistré.",
+      "documentsTitle": "Documents",
+      "documentsIntro": "Seule l’équipe Soley peut voir ces documents.",
+      "upload": "Ajouter un document",
+      "uploadKind": "Type",
+      "uploadFile": "Fichier",
+      "uploaded": "Document ajouté.",
+      "noDocuments": "Aucun document pour l’instant."
+    }
   }
 }
