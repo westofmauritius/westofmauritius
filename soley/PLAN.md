@@ -303,3 +303,38 @@ shared with) and erasure (personal data removed, open requests cancelled and
 withdrawn from installers, reviews deleted, the Supabase sign-in account
 removed). Unit tests for export and erasure; end-to-end tests for export,
 deletion, the contact form and the draft notices.
+
+### Milestone 9: End-to-end tests, performance, accessibility and deployment (done, except the live deployment)
+
+Built: 60 Playwright tests in a phone-sized browser (and desktop for SEO and
+accessibility) covering every flow, axe checks for WCAG 2.2 A/AA on every
+page type (signed-in areas included), keyboard checks, daily reminder
+e-mails (unanswered leads after 24 hours, uncompared quotes after five
+days; `src/lib/reminders.ts` is tested) scheduled with Vercel Cron, a
+GitHub Actions workflow (check, build, e2e), `vercel.json`, README and
+LAUNCH_CHECKLIST.md. Fixed on the way: scrollable tables were not reachable
+by keyboard on phones.
+
+Lighthouse on the phone profile, production build without demo mode:
+
+| Page                         | Performance | Accessibility | Best practices | SEO |
+| ---------------------------- | ----------- | ------------- | -------------- | --- |
+| `/en`                        | 98          | 100           | 100            | 100 |
+| `/fr/calculateur`            | 97          | 100           | 100            | 100 |
+| `/en/get-quotes`             | 99          | 100           | 100            | 100 |
+| `/en/grant-guide`            | 98          | 100           | 100            | 100 |
+| `/fr/guides/batterie-ou-pas` | 99          | 100           | 100            | 100 |
+
+Not done: **the site is not deployed to Vercel yet.** This session had no
+Vercel or Supabase account access; the steps are in README → Deploying to
+Vercel, and the owner's tasks in LAUNCH_CHECKLIST.md. GitHub Actions will
+run once the branch is pushed.
+
+## What remains after version 1
+
+- The live deployment and every item in LAUNCH_CHECKLIST.md.
+- Mauritian Creole (the structure is ready; see README → Adding a language).
+- A Content-Security-Policy header once the final third parties are known.
+- Data retention: automatic anonymisation after the period the lawyer sets.
+- Installer-side deletion of household data on request (today by contact).
+- Payments (excluded from version 1 by the brief).

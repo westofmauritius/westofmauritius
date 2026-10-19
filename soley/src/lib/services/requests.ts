@@ -69,6 +69,7 @@ export async function createQuoteRequest(
     chosen_quote_id: null,
     chosen_at: null,
     installed_at: null,
+    quote_reminder_sent_at: null,
     is_demo: false,
     created_at: now,
     updated_at: now,

@@ -76,6 +76,7 @@ create table public.quote_requests (
   chosen_quote_id uuid,                   -- set when the household chooses
   chosen_at timestamptz,
   installed_at timestamptz,
+  quote_reminder_sent_at timestamptz,     -- "compare your quotes" reminder
   is_demo boolean not null default false,
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now()

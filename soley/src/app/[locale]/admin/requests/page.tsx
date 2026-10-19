@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { StatusBadge } from "@/components/shared/StatusBadge";
-import { Badge } from "@/components/ui";
+import { Badge, ScrollRegion } from "@/components/ui";
 import { Link } from "@/i18n/navigation";
 import { resolveLocale } from "@/i18n/locale";
 import { requireAdmin } from "@/lib/auth/roles";
@@ -63,7 +63,10 @@ export default async function AdminRequests({
       {requests.length === 0 ? (
         <p className="text-ink-muted">{t("empty")}</p>
       ) : (
-        <div className="overflow-x-auto rounded-card border border-line bg-white">
+        <ScrollRegion
+          label={tc("scrollTable")}
+          className="rounded-card border border-line bg-white"
+        >
           <table className="w-full min-w-[40rem] text-left">
             <thead className="bg-sand-100 text-sm">
               <tr>
@@ -126,7 +129,7 @@ export default async function AdminRequests({
               })}
             </tbody>
           </table>
-        </div>
+        </ScrollRegion>
       )}
     </div>
   );

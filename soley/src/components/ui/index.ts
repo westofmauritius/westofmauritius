@@ -16,6 +16,7 @@ export {
   TextField,
   type Option,
 } from "./fields";
+export { ScrollRegion } from "./ScrollRegion";
 export { SectionHeading } from "./SectionHeading";
 export { Stat } from "./Stat";
 export { VisuallyHidden } from "./VisuallyHidden";

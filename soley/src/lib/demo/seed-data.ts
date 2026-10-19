@@ -231,6 +231,7 @@ export function demoData(now = Date.now()) {
     notes: null,
     max_installers: 3,
     installed_at: null,
+    quote_reminder_sent_at: null,
     is_demo: true,
   } as const;
 

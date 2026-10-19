@@ -1,0 +1,51 @@
+# Continuous integration for the Soley app in soley/. The West of Mauritius
+# site at the repository root is not affected.
+name: Soley CI
+
+on:
+  push:
+    paths: ["soley/**", ".github/workflows/soley.yml"]
+  pull_request:
+    paths: ["soley/**", ".github/workflows/soley.yml"]
+
+defaults:
+  run:
+    working-directory: soley
+
+jobs:
+  check:
+    name: Lint, types, unit tests and build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: soley/.nvmrc
+          cache: npm
+          cache-dependency-path: soley/package-lock.json
+      - run: npm ci
+      - run: npm run check
+      - run: npm run build
+
+  e2e:
+    name: End-to-end and accessibility tests
+    runs-on: ubuntu-latest
+    needs: check
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: soley/.nvmrc
+          cache: npm
+          cache-dependency-path: soley/package-lock.json
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
+        env:
+          CI: "true"
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report
+          path: soley/playwright-report
+          retention-days: 7

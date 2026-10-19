@@ -58,6 +58,7 @@ export type QuoteRequestRow = {
   chosen_quote_id: string | null;
   chosen_at: string | null;
   installed_at: string | null;
+  quote_reminder_sent_at: string | null;
   is_demo: boolean;
   created_at: string;
   updated_at: string;

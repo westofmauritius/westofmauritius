@@ -42,7 +42,8 @@
     "kwp": "{value} kWp",
     "years": "{count, plural, one {# year} other {# years}}",
     "months": "{count, plural, one {# month} other {# months}}",
-    "perYear": "per year"
+    "perYear": "per year",
+    "scrollTable": "Table: scroll sideways to see all columns"
   },
   "nav": {
     "main": "Main",

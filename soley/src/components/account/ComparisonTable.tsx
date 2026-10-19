@@ -1,7 +1,7 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import type { CalculatorSettings } from "@content/facts";
 import { ActionButton } from "@/components/shared/ActionButton";
-import { Badge } from "@/components/ui";
+import { Badge, ScrollRegion } from "@/components/ui";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 import type { GrantRules } from "@/lib/calculator";
@@ -187,7 +187,10 @@ export async function ComparisonTable({
   ];
 
   return (
-    <div className="overflow-x-auto rounded-card border border-line bg-white">
+    <ScrollRegion
+      label={tc("scrollTable")}
+      className="rounded-card border border-line bg-white"
+    >
       <table className="w-full border-collapse text-left">
         <thead>
           <tr>
@@ -283,6 +286,6 @@ export async function ComparisonTable({
           )}
         </tbody>
       </table>
-    </div>
+    </ScrollRegion>
   );
 }

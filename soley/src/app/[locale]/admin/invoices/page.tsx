@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { ActionButton } from "@/components/shared/ActionButton";
 import { StatusBadge } from "@/components/shared/StatusBadge";
-import { buttonClasses } from "@/components/ui";
+import { buttonClasses, ScrollRegion } from "@/components/ui";
 import { Link } from "@/i18n/navigation";
 import { resolveLocale } from "@/i18n/locale";
 import { requireAdmin } from "@/lib/auth/roles";
@@ -64,7 +64,10 @@ export default async function AdminInvoices({
       {lines.length === 0 ? (
         <p className="text-ink-muted">{t("empty")}</p>
       ) : (
-        <div className="overflow-x-auto rounded-card border border-line bg-white">
+        <ScrollRegion
+          label={(await getTranslations("common"))("scrollTable")}
+          className="rounded-card border border-line bg-white"
+        >
           <table className="w-full min-w-[46rem] text-left">
             <thead className="bg-sand-100 text-sm">
               <tr>
@@ -162,7 +165,7 @@ export default async function AdminInvoices({
               ))}
             </tbody>
           </table>
-        </div>
+        </ScrollRegion>
       )}
     </div>
   );

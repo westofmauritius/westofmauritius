@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { StatusBadge } from "@/components/shared/StatusBadge";
-import { Stat } from "@/components/ui";
+import { Stat, ScrollRegion } from "@/components/ui";
 import { resolveLocale } from "@/i18n/locale";
 import { requireInstaller } from "@/lib/auth/roles";
 import { formatMonth, formatMur, formatNumber } from "@/lib/format";
@@ -64,7 +64,10 @@ export default async function BillingPage({
         {lines.length === 0 ? (
           <p className="text-ink-muted">{t("empty")}</p>
         ) : (
-          <div className="overflow-x-auto rounded-card border border-line bg-white">
+          <ScrollRegion
+            label={(await getTranslations("common"))("scrollTable")}
+            className="rounded-card border border-line bg-white"
+          >
             <table className="w-full text-left">
               <caption id="months" className="sr-only">
                 {t("title")}
@@ -112,7 +115,7 @@ export default async function BillingPage({
                 ))}
               </tbody>
             </table>
-          </div>
+          </ScrollRegion>
         )}
       </section>
     </div>
