@@ -241,3 +241,22 @@ an inbox, lead page (contact details only after accepting), accept or
 decline with a reason, the structured quote form, billing with results,
 and a profile page (pause, monthly cap, regions, language, more
 documents). Playwright end-to-end tests for both installer flows.
+
+### Milestone 5: Routing and admin panel (done)
+
+Built: the admin panel (`/en/admin`, same paths in French) with an
+overview (to-do list, requests per week, response time, share of quoted
+requests where a quote was chosen, billed amount per request), the vetting
+queue with a six-point checklist that must be complete before approval,
+site visit notes and document downloads, request routing (the routing
+rules' suggestion with scores and reasons for skipped installers, manual
+assignment, withdraw, cancel, mark installed), invoices per installer and
+month with a CSV export (one row per accepted request), review moderation,
+and editors for facts and calculator/platform settings that update the
+public site without a deployment. Admin actions all check the role on the
+server. Dashboard metrics and CSV are unit tested; admin flows have
+end-to-end tests. Also fixed: the header overflowed on 390 px phones.
+
+Interpretation: "cost per request" on the dashboard is shown as the
+average amount billed to installers per request received, since Soley
+has no other cost data in version 1.

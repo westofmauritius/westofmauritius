@@ -46,10 +46,14 @@ export function LanguageSwitcher({ className }: { className?: string }) {
               event.preventDefault();
               window.location.assign(targetFor(l));
             }}
-            className="inline-flex min-h-11 items-center rounded-full px-3 font-semibold underline-offset-4 hover:underline"
+            className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full px-2 font-semibold underline-offset-4 hover:underline sm:px-3"
             title={t("switchTo", { language: t(l) })}
           >
-            {t(l)}
+            {/* The code on small phones, where the full name does not fit. */}
+            <span aria-hidden="true" className="sm:hidden">
+              {l.toUpperCase()}
+            </span>
+            <span className="sr-only sm:not-sr-only">{t(l)}</span>
           </a>
         </li>
       ))}
