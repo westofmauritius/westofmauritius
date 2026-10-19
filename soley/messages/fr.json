@@ -1027,6 +1027,24 @@
       "reviewThanks": "Merci. Votre avis apparaîtra une fois vérifié par notre équipe.",
       "reviewPending": "Votre avis est en attente de modération.",
       "reviewPublished": "Votre avis est publié. Merci."
+    },
+    "privacy": {
+      "title": "Mes données",
+      "intro": "Vous décidez de ce qu’il advient de vos données. Vous pouvez télécharger tout ce que nous détenons sur vous, ou le supprimer.",
+      "exportTitle": "Télécharger mes données",
+      "exportBody": "Un fichier (JSON) avec vos coordonnées, vos demandes, les installateurs auxquels elles ont été transmises, les devis et vos consentements.",
+      "exportButton": "Télécharger mes données",
+      "deleteTitle": "Supprimer mes données",
+      "deleteBody": "Nous supprimons votre nom, votre e-mail, vos numéros de téléphone et vos remarques, annulons toute demande en cours en informant les installateurs qu’elle est retirée, et supprimons vos avis. Les installateurs qui ont déjà vos coordonnées doivent aussi les supprimer sur demande : contactez-les, ou contactez-nous et nous le leur demanderons. Les données anonymes des demandes (district, toit, facture) sont conservées pour notre comptabilité.",
+      "deleteConfirmLabel": "Tapez SUPPRIMER pour confirmer",
+      "deleteWord": "SUPPRIMER",
+      "deleteButton": "Supprimer définitivement mes données",
+      "deleteMismatch": "Tapez le mot exactement comme indiqué pour confirmer.",
+      "deleted": "Vos données ont été supprimées. Vous avez été déconnecté.",
+      "consentsTitle": "Vos consentements",
+      "consentLine": "{date} : demande {reference} transmise à trois installateurs au maximum (version du texte {version})",
+      "noConsents": "Aucun consentement enregistré.",
+      "rights": "Vous avez aussi le droit de faire rectifier vos données, de vous opposer à leur traitement et de porter plainte auprès d’une autorité de protection des données. Voir la politique de confidentialité."
     }
   },
   "directory": {
@@ -1117,5 +1135,47 @@
     "ctaBody": "Recevez jusqu’à trois devis d’installateurs vérifiés de votre district, pour des systèmes éligibles à la subvention.",
     "ctaButton": "Recevoir jusqu’à 3 devis",
     "calculatorLink": "Ou estimez votre subvention avec le calculateur"
+  },
+  "legal": {
+    "draftNotice": "Projet : ce texte n’a pas encore été relu par un juriste et sera mis à jour avant le lancement.",
+    "updated": "Dernière mise à jour : {date}",
+    "privacyTitle": "Politique de confidentialité",
+    "termsTitle": "Conditions d’utilisation",
+    "cookiesTitle": "Politique en matière de cookies",
+    "privacyDescription": "Comment Soley collecte, utilise et protège vos données personnelles, et quels sont vos droits.",
+    "termsDescription": "Les conditions d’utilisation de Soley, pour les ménages et les installateurs.",
+    "cookiesDescription": "Ce que Soley enregistre sur votre appareil, et comment modifier votre choix."
+  },
+  "about": {
+    "metaTitle": "Qui sommes-nous",
+    "metaDescription": "Soley est un service indépendant qui aide les ménages à Maurice à passer au solaire en toute confiance, avec des devis d’installateurs vérifiés sur place.",
+    "title": "Qui sommes-nous",
+    "intro": "Soley (« soleil » en créole mauricien) aide les ménages à Maurice à installer des panneaux solaires en toute confiance.",
+    "whyTitle": "Pourquoi Soley",
+    "why": "La nouvelle subvention de l’État rend le solaire en toiture accessible à beaucoup plus de familles. Cela attire aussi de nouveaux installateurs et beaucoup de pression commerciale. Nous voulons que les ménages puissent comparer des devis honnêtes d’installateurs que quelqu’un a réellement vérifiés.",
+    "teamTitle": "Qui nous sommes",
+    "team": "Soley est géré depuis la Suède par son fondateur. Des membres de sa famille vivant à Maurice rendent visite aux installateurs, contrôlent leurs documents et examinent des installations terminées. Nous ne vendons ni n’installons de panneaux.",
+    "moneyTitle": "Comment nous gagnons de l’argent",
+    "money": "Les installateurs paient des frais fixes pour chaque demande qu’ils acceptent. Ces frais sont les mêmes pour tous et ne dépendent pas de votre choix : ils n’influencent donc jamais les installateurs qui vous sont proposés. Les ménages ne paient rien.",
+    "notTitle": "Ce que nous ne sommes pas",
+    "not": "Soley n’est ni le CEB, ni un service de l’État, ni un installateur. Nous expliquons les programmes officiels et renvoyons vers les pages officielles, mais nous ne traitons pas les demandes de subvention.",
+    "photoNote": "Des photos de notre équipe et de maisons à Maurice seront ajoutées ici."
+  },
+  "contact": {
+    "metaTitle": "Contacter Soley",
+    "metaDescription": "Des questions sur les devis solaires, la subvention ou le partenariat installateur ? Contactez Soley par e-mail, WhatsApp ou via le formulaire.",
+    "title": "Nous contacter",
+    "intro": "Des questions sur votre demande, la subvention ou le partenariat ? Nous répondons en français ou en anglais, en général sous un jour ouvrable.",
+    "emailLabel": "E-mail",
+    "whatsappLabel": "WhatsApp",
+    "whatsappLink": "Nous écrire sur WhatsApp",
+    "formTitle": "Envoyez-nous un message",
+    "name": "Votre nom",
+    "email": "Votre e-mail",
+    "message": "Votre message",
+    "send": "Envoyer le message",
+    "sent": "Merci. Votre message a été envoyé et nous vous répondrons par e-mail.",
+    "privacyNote": "Nous utilisons vos coordonnées uniquement pour répondre à votre message.",
+    "controller": "Soley est exploité par [NOM LÉGAL DU PROPRIÉTAIRE OU DE LA SOCIÉTÉ — à compléter], Suède."
   }
 }

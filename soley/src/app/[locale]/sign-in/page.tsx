@@ -93,6 +93,11 @@ export default async function SignInPage({
   return (
     <Container narrow className="py-12">
       <SectionHeading as="h1" title={t("title")} intro={t("intro")} />
+      {query.deleted === "1" && (
+        <Alert tone="success" role="status" className="mt-6">
+          {(await getTranslations("account.privacy"))("deleted")}
+        </Alert>
+      )}
       {query.error === "link" && (
         <Alert tone="warning" role="alert" className="mt-6">
           {t("linkError")}

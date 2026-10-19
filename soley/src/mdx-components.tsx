@@ -2,10 +2,17 @@ import type { MDXComponents } from "mdx/types";
 
 /**
  * How MDX guides render. The `.prose` class (globals.css) styles the text;
- * here, links to other sites open safely and internal links stay normal.
+ * here, links to other sites open safely, internal links stay normal and
+ * tables scroll on narrow screens.
  * Required by @next/mdx for the App Router.
  */
 const components: MDXComponents = {
+  // Wide tables scroll sideways on phones instead of widening the page.
+  table: (props) => (
+    <div className="overflow-x-auto">
+      <table {...props} />
+    </div>
+  ),
   a: ({ href = "", children, ...props }) => {
     const external = /^https?:\/\//.test(href);
     return (

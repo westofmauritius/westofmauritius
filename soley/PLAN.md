@@ -289,3 +289,17 @@ were last checked and HowTo structured data; metadata on every page
 with language alternates (demo installers left out), robots rules (private
 areas blocked; demo and preview deployments not indexed at all), Open
 Graph images per language, icon and web manifest. End-to-end SEO tests.
+
+### Milestone 8: Legal pages, consent, export and deletion (done)
+
+Built: draft privacy policy, terms and cookie policy in English and French
+(MDX in `content/legal`), each with a visible "draft, not yet reviewed by a
+lawyer" notice and [bracketed] placeholders for the controller's legal
+name, retention periods, processors and liability; About and Contact pages
+(contact form with Turnstile and a rate limit, replies go to the visitor);
+"My data" in the household account: the consent log (text version and
+date), a JSON export of everything held (including who the request was
+shared with) and erasure (personal data removed, open requests cancelled and
+withdrawn from installers, reviews deleted, the Supabase sign-in account
+removed). Unit tests for export and erasure; end-to-end tests for export,
+deletion, the contact form and the draft notices.

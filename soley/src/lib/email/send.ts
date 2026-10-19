@@ -8,6 +8,8 @@ export type Email = {
   html: string;
   /** A tag for the outbox and logs, e.g. "request-received". */
   tag: string;
+  /** Where replies go (e.g. the visitor who used the contact form). */
+  replyTo?: string;
 };
 
 export type SentEmail = Email & { sentAt: string };
@@ -47,6 +49,7 @@ export async function sendEmail(email: Email): Promise<boolean> {
         text: email.text,
         html: email.html,
         tags: [{ name: "type", value: email.tag }],
+        ...(email.replyTo ? { reply_to: email.replyTo } : {}),
       }),
     });
     if (!response.ok) {

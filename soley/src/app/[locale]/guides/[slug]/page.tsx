@@ -11,8 +11,6 @@ import { formatDate } from "@/lib/format";
 import { absoluteUrl, pageMetadata } from "@/lib/seo";
 import { site } from "@/lib/site";
 
-export const dynamicParams = false;
-
 export function generateStaticParams({
   params,
 }: {

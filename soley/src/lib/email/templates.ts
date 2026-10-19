@@ -284,3 +284,23 @@ export function emailMagicLink(to: string, locale: Locale, url: string) {
     button: { label: t("magicLink.button"), url },
   }));
 }
+
+/** A message from the contact form, to the Soley team; replies go to the visitor. */
+export function emailContactMessage(
+  to: string,
+  data: { name: string; email: string; message: string; locale: Locale },
+) {
+  const { html, text } = renderEmail({
+    greeting: `Contact form (${data.locale}) from ${data.name} <${data.email}>`,
+    paragraphs: data.message.split(/\n{2,}/),
+    footer: ["Reply to this e-mail to answer the visitor."],
+  });
+  return sendEmail({
+    tag: "contact",
+    to,
+    subject: `Soley contact: ${data.name}`,
+    html,
+    text,
+    replyTo: data.email,
+  });
+}

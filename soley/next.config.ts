@@ -45,7 +45,9 @@ const nextConfig: NextConfig = {
   },
 };
 
-const withMDX = createMDX({});
+// Plugins are given by package name so they also work with Turbopack.
+// remark-gfm adds tables (used by the cookie policy).
+const withMDX = createMDX({ options: { remarkPlugins: [["remark-gfm", {}]] } });
 const withNextIntl = createNextIntlPlugin();
 
 export default withNextIntl(withMDX(nextConfig));

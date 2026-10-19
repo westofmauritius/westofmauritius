@@ -1027,6 +1027,24 @@
       "reviewThanks": "Thank you. Your review will appear once our team has checked it.",
       "reviewPending": "Your review is waiting for moderation.",
       "reviewPublished": "Your review is published. Thank you."
+    },
+    "privacy": {
+      "title": "My data",
+      "intro": "You decide what happens to your data. You can download everything we hold about you, or delete it.",
+      "exportTitle": "Download my data",
+      "exportBody": "A file (JSON) with your contact details, your requests, the installers they were shared with, the quotes and your consents.",
+      "exportButton": "Download my data",
+      "deleteTitle": "Delete my data",
+      "deleteBody": "We delete your name, e-mail, phone numbers and notes, cancel any open request and tell the installers it is withdrawn, and delete your reviews. Installers who already have your contact details must delete them on request too; contact them, or contact us and we will ask them. Anonymous request data (district, roof, bill) is kept for our accounts.",
+      "deleteConfirmLabel": "Type DELETE to confirm",
+      "deleteWord": "DELETE",
+      "deleteButton": "Delete my data permanently",
+      "deleteMismatch": "Type the word exactly as shown to confirm.",
+      "deleted": "Your data has been deleted. You have been signed out.",
+      "consentsTitle": "Your consents",
+      "consentLine": "{date}: shared request {reference} with at most three installers (text version {version})",
+      "noConsents": "No consents recorded.",
+      "rights": "You also have the right to correct your data, to object and to complain to a data protection authority. See the privacy policy."
     }
   },
   "directory": {
@@ -1117,5 +1135,47 @@
     "ctaBody": "Get up to three quotes from vetted installers in your district, for systems that qualify for the grant.",
     "ctaButton": "Get up to 3 quotes",
     "calculatorLink": "Or estimate your grant with the calculator"
+  },
+  "legal": {
+    "draftNotice": "Draft: this text has not yet been reviewed by a lawyer and will be updated before launch.",
+    "updated": "Last updated: {date}",
+    "privacyTitle": "Privacy policy",
+    "termsTitle": "Terms of use",
+    "cookiesTitle": "Cookie policy",
+    "privacyDescription": "How Soley collects, uses and protects your personal data, and your rights.",
+    "termsDescription": "The terms for using Soley, for households and installers.",
+    "cookiesDescription": "What Soley stores on your device, and how to change your choice."
+  },
+  "about": {
+    "metaTitle": "About Soley",
+    "metaDescription": "Soley is an independent service that helps households in Mauritius get solar safely, with quotes from installers vetted in person.",
+    "title": "About Soley",
+    "intro": "Soley (\"sun\" in Mauritian Creole) helps households in Mauritius get rooftop solar with confidence.",
+    "whyTitle": "Why we started",
+    "why": "The new government grant makes rooftop solar affordable for many more families. That also brings new installers and a lot of sales pressure. We want households to be able to compare honest quotes from installers someone has actually checked.",
+    "teamTitle": "Who we are",
+    "team": "Soley is run from Sweden by its founder. Family members living in Mauritius visit installers in person, check their documents and look at installations they have finished. We do not sell or install panels.",
+    "moneyTitle": "How we earn money",
+    "money": "Installers pay a fixed fee for each request they accept. The fee is the same for every installer and does not depend on whether you choose them, so it never affects which installers you see. Households pay nothing.",
+    "notTitle": "What we are not",
+    "not": "Soley is not the CEB, not a government service and not an installer. We explain the official schemes and link to the official pages, but we do not process grant applications.",
+    "photoNote": "Photos of our team and of homes in Mauritius will be added here."
+  },
+  "contact": {
+    "metaTitle": "Contact Soley",
+    "metaDescription": "Questions about solar quotes, the grant or becoming a partner installer? Contact Soley by e-mail, WhatsApp or the form.",
+    "title": "Contact us",
+    "intro": "Questions about your request, the grant or becoming a partner? We answer in English or French, usually within one working day.",
+    "emailLabel": "E-mail",
+    "whatsappLabel": "WhatsApp",
+    "whatsappLink": "Write to us on WhatsApp",
+    "formTitle": "Send us a message",
+    "name": "Your name",
+    "email": "Your e-mail",
+    "message": "Your message",
+    "send": "Send message",
+    "sent": "Thank you. Your message has been sent and we will reply by e-mail.",
+    "privacyNote": "We use your details only to answer your message.",
+    "controller": "Soley is run by [OWNER'S LEGAL NAME OR COMPANY — to be completed], Sweden."
   }
 }
