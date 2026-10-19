@@ -237,5 +237,233 @@
     "placeholderValue": "Moyenne provisoire",
     "surplusNote": "Le surplus d’électricité peut être revendu au CEB, mais le calculateur ne compte pas ce revenu : l’économie réelle peut donc être plus élevée.",
     "grantNote": "Subvention : {share} % du coût d’un système agréé, jusqu’à {max} par ménage."
+  },
+  "email": {
+    "greeting": "Bonjour {name},",
+    "greetingTeam": "Bonjour l’équipe Soley,",
+    "footer": {
+      "independent": "Soley est un service indépendant. Nous ne sommes ni le CEB, ni l’État, ni un installateur.",
+      "contact": "Des questions ? Répondez à cet e-mail ou écrivez à {email}."
+    },
+    "requestReceived": {
+      "subject": "Nous avons bien reçu votre demande {reference}",
+      "body1": "Merci. Votre demande {reference} est bien arrivée. Nous la transmettons maintenant à trois installateurs vérifiés au maximum dans votre district.",
+      "body2": "Ils vous contacteront comme vous l’avez demandé, et leurs devis apparaîtront dans votre compte pour que vous puissiez les comparer côte à côte. Vous n’êtes jamais obligé d’accepter un devis.",
+      "button": "Voir ma demande"
+    },
+    "adminNewRequest": {
+      "subject": "Nouvelle demande {reference}",
+      "body": "Une nouvelle demande de devis {reference} est arrivée de {region}.",
+      "button": "Ouvrir la demande"
+    },
+    "newLead": {
+      "subject": "Nouvelle demande solaire à {region}",
+      "body1": "Soley a une nouvelle demande pour vous à {region} (facture d’électricité d’environ {bill} par mois).",
+      "body2": "Merci de l’accepter ou de la refuser sous 48 heures. Vous voyez les coordonnées du ménage une fois la demande acceptée. Les frais ne s’appliquent qu’aux demandes que vous acceptez.",
+      "button": "Ouvrir la demande"
+    },
+    "leadReminder": {
+      "subject": "Un ménage attend votre réponse",
+      "body": "Vous avez une demande sur Soley à laquelle vous n’avez pas encore répondu. Merci de l’accepter ou de la refuser pour ne pas faire attendre le ménage."
+    },
+    "newQuote": {
+      "subject": "Nouveau devis de {company}",
+      "body1": "{company} a envoyé un devis pour votre demande {reference}.",
+      "body2": "Vous avez maintenant {count, plural, one {# devis} other {# devis}} à comparer côte à côte. Prenez votre temps : vous n’êtes jamais obligé d’accepter.",
+      "button": "Comparer mes devis"
+    },
+    "quoteReminder": {
+      "subject": "Vos devis solaires sont prêts à être comparés",
+      "body": "Vos devis vous attendent dans votre compte Soley. Quand vous avez choisi, indiquez-le pour que les autres installateurs soient prévenus. Si aucun ne vous convient, vous pouvez tous les refuser."
+    },
+    "quoteWon": {
+      "subject": "Vous avez été choisi pour {reference}",
+      "body": "Bonne nouvelle : le ménage a choisi votre devis. Contactez-le pour confirmer la suite et aidez-le à déclarer l’installation auprès du CEB."
+    },
+    "quoteLost": {
+      "subject": "Demande {reference} : un autre devis a été choisi",
+      "body": "Le ménage a choisi un autre devis cette fois-ci. Merci pour votre offre."
+    },
+    "reviewInvite": {
+      "subject": "Comment s’est passée votre installation avec {company} ?",
+      "body": "Nous espérons que votre installation solaire fonctionne bien. Un court avis sur {company} aide d’autres ménages à Maurice à choisir en confiance.",
+      "button": "Donner mon avis"
+    },
+    "applicationReceived": {
+      "subject": "Nous avons bien reçu votre candidature",
+      "body1": "Merci d’avoir posé la candidature de {company} pour devenir partenaire de Soley.",
+      "body2": "Notre équipe à Maurice va vérifier vos documents et vous contacter pour organiser une visite. Nous vous informerons de notre décision par e-mail."
+    },
+    "adminNewApplication": {
+      "subject": "Nouvelle candidature d’installateur : {company}",
+      "body": "{company} a posé sa candidature pour devenir installateur partenaire.",
+      "button": "Examiner la candidature"
+    },
+    "installerApproved": {
+      "subject": "Bienvenue chez Soley",
+      "body": "{company} est désormais un partenaire vérifié de Soley. Vous recevrez par e-mail les demandes de vos régions. Connectez-vous avec cette adresse e-mail pour y répondre.",
+      "button": "Se connecter au portail"
+    },
+    "installerRejected": {
+      "subject": "Votre candidature Soley",
+      "body": "Merci pour la candidature de {company}. Nous ne pouvons pas l’accepter pour le moment. Répondez à cet e-mail si vous avez des questions ou souhaitez postuler à nouveau plus tard."
+    },
+    "magicLink": {
+      "subject": "Votre lien de connexion Soley",
+      "greeting": "Bonjour,",
+      "body": "Utilisez le bouton ci-dessous pour vous connecter à Soley. Le lien ne fonctionne qu’une fois et expire au bout d’une heure. Si vous ne l’avez pas demandé, ignorez cet e-mail.",
+      "button": "Se connecter"
+    }
+  },
+  "quoteForm": {
+    "metaTitle": "Recevez jusqu’à trois devis solaires",
+    "metaDescription": "Parlez-nous de votre maison et de votre facture d’électricité. Soley transmet votre demande à trois installateurs vérifiés au maximum dans votre district. Gratuit, sans engagement.",
+    "title": "Recevez jusqu’à trois devis",
+    "intro": "Cinq courtes étapes, environ trois minutes. Vos réponses sont enregistrées sur cet appareil au fur et à mesure : rien n’est perdu si vous êtes interrompu.",
+    "stepOf": "Étape {current} sur {total}",
+    "progress": "Progression",
+    "steps": {
+      "home": "Votre maison",
+      "usage": "Électricité",
+      "location": "District",
+      "plan": "Calendrier et financement",
+      "contact": "Coordonnées"
+    },
+    "draftRestored": "Nous avons restauré les réponses que vous aviez commencées.",
+    "clearDraft": "Recommencer",
+    "fields": {
+      "property_type": {
+        "legend": "De quel type de logement s’agit-il ?",
+        "house": "Maison",
+        "apartment": "Appartement",
+        "other": "Autre"
+      },
+      "ownership": {
+        "legend": "En êtes-vous propriétaire ?",
+        "owner": "Je suis propriétaire",
+        "tenant": "Je suis locataire"
+      },
+      "ownershipTenantNote": "Les locataires ont besoin de l’accord écrit du propriétaire avant une installation. Les installateurs peuvent vous dire ce qu’il faut.",
+      "roof_type": {
+        "legend": "En quoi est fait le toit ?",
+        "concrete_flat": "Toit plat en béton",
+        "sheet_metal": "Tôle",
+        "tiles": "Tuiles",
+        "other": "Autre ou je ne sais pas"
+      },
+      "roof_area_m2": {
+        "label": "Surface de toit utilisable (m²)",
+        "hint": "Laissez vide si vous ne savez pas. L’installateur la mesurera."
+      },
+      "shading": {
+        "legend": "Le toit est-il à l’ombre pendant la journée ?",
+        "none": "Pas d’ombre",
+        "some": "Un peu d’ombre",
+        "a_lot": "Beaucoup d’ombre",
+        "unknown": "Je ne sais pas"
+      },
+      "monthly_bill_mur": {
+        "label": "Facture d’électricité mensuelle moyenne (Rs)",
+        "hint": "Regardez une facture récente du CEB."
+      },
+      "battery_interest": {
+        "legend": "Une batterie vous intéresse-t-elle ?",
+        "hint": "Une batterie stocke l’énergie solaire pour le soir et les coupures de courant. Elle augmente le coût.",
+        "yes": "Oui",
+        "no": "Non",
+        "unsure": "Je ne sais pas, conseillez-moi"
+      },
+      "desired_kwp": {
+        "label": "Taille envisagée (kWc)",
+        "hint": "Laissez vide : les installateurs vous en recommanderont une."
+      },
+      "region": {
+        "label": "District",
+        "hint": "Nous envoyons votre demande uniquement aux installateurs qui travaillent dans ce district."
+      },
+      "town": {
+        "label": "Ville ou village",
+        "hint": "Aide les installateurs à planifier une visite."
+      },
+      "timeline": {
+        "legend": "Quand souhaitez-vous l’installation ?",
+        "asap": "Dès que possible",
+        "3_months": "D’ici 3 mois",
+        "6_months": "D’ici 6 mois",
+        "exploring": "Je me renseigne simplement"
+      },
+      "financing": {
+        "legend": "Comment comptez-vous payer ?",
+        "cash": "Avec mon épargne",
+        "dbm_loan": "Prêt de la Development Bank of Mauritius",
+        "bank_loan": "Prêt d’une autre banque",
+        "unsure": "Je ne sais pas encore"
+      },
+      "grant_interest": {
+        "label": "Je souhaite demander la subvention de l’État",
+        "hint": "Les installateurs proposeront un système éligible et pourront vous aider pour les démarches."
+      },
+      "name": {
+        "label": "Votre nom"
+      },
+      "email": {
+        "label": "E-mail",
+        "hint": "Nous y envoyons votre confirmation et un lien pour comparer vos devis."
+      },
+      "phone": {
+        "label": "Téléphone"
+      },
+      "whatsapp": {
+        "label": "Numéro WhatsApp",
+        "hint": "Seulement s’il est différent de votre numéro de téléphone."
+      },
+      "preferred_contact": {
+        "legend": "Comment les installateurs doivent-ils vous contacter ?",
+        "phone": "Appel téléphonique",
+        "whatsapp": "WhatsApp",
+        "email": "E-mail"
+      },
+      "notes": {
+        "label": "Autre chose que les installateurs devraient savoir ?"
+      }
+    },
+    "consent": {
+      "label": "J’accepte que Soley transmette ma demande et mes coordonnées à trois installateurs vérifiés au maximum dans mon district afin qu’ils m’envoient un devis. J’ai lu la politique de confidentialité.",
+      "privacyLink": "Lire la politique de confidentialité",
+      "note": "Vous pouvez retirer votre consentement et supprimer vos données à tout moment depuis votre compte.",
+      "short": "Consentement"
+    },
+    "turnstileLabel": "Vérification de sécurité",
+    "submit": "Envoyer ma demande",
+    "errors": {
+      "rateLimited": "Trop de demandes depuis cette connexion. Veuillez réessayer dans une heure ou nous contacter sur WhatsApp.",
+      "captcha": "La vérification de sécurité a échoué. Veuillez réessayer.",
+      "server": "Un problème est survenu de notre côté. Vos réponses sont enregistrées ; veuillez réessayer dans un instant."
+    },
+    "thankYou": {
+      "metaTitle": "Demande reçue",
+      "title": "Merci, votre demande est bien arrivée",
+      "reference": "Votre référence : {reference}",
+      "next": "La suite",
+      "step1": "Nous transmettons votre demande à trois installateurs vérifiés au maximum dans votre district. Vous recevez dès maintenant une confirmation par e-mail.",
+      "step2": "Les installateurs vous contactent comme vous l’avez demandé, en général sous deux jours ouvrables, et peuvent passer vérifier le toit.",
+      "step3": "Leurs devis apparaissent dans votre compte. Connectez-vous avec votre adresse e-mail pour les comparer côte à côte et choisir.",
+      "account": "Aller à mon compte",
+      "grant": "En attendant : lisez le guide de la subvention"
+    }
+  },
+  "validation": {
+    "required": "Veuillez remplir ce champ.",
+    "number": "Veuillez saisir un nombre.",
+    "email": "Veuillez saisir une adresse e-mail valide.",
+    "phone": "Veuillez saisir un numéro de téléphone valide, par exemple +230 5123 4567.",
+    "tooLong": "Ce texte est trop long.",
+    "tooSmall": "Cette valeur est trop petite.",
+    "tooLarge": "Cette valeur est trop grande.",
+    "consent": "Veuillez cocher cette case pour continuer.",
+    "invalid": "Veuillez vérifier ce champ.",
+    "fileType": "Veuillez envoyer un fichier PDF, JPG ou PNG.",
+    "fileSize": "Chaque fichier doit faire moins de 5 Mo.",
+    "summaryTitle": "Veuillez vérifier {count, plural, one {# champ} other {# champs}} :"
   }
 }

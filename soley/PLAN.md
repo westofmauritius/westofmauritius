@@ -214,3 +214,17 @@ promise and on its own page (`/en/calculator`, `/fr/calculateur`), which
 lists every assumption with a "provisional average" label on placeholders.
 The "Get quotes" button carries the answers over to the quote form.
 Left for later: settings from the database (milestone 3/5).
+
+### Milestone 3: Quote form, database and e-mail (done)
+
+Built: the Supabase migration (all tables, RLS on every table, a rate
+limit function, a private document bucket), tested on an in-process
+Postgres (PGlite) including the RLS rules; the data layer with Supabase
+and memory adapters; clearly marked demo data and `npm run db:seed`; Zod
+validation shared by client and server; the five-step quote form with a
+local draft, error summary, Turnstile, a rate limit and a consent log
+(text version + timestamp, guarded by a test); e-mails through Resend
+(or the development outbox); and automatic routing to up to three
+installers (`src/lib/routing.ts`, 11 tests), brought forward from
+milestone 5 because a new request needs it.
+Left for later: sign-in and the household's account (milestones 4 and 6).

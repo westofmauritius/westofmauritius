@@ -237,5 +237,233 @@
     "placeholderValue": "Provisional average",
     "surplusNote": "Surplus electricity can be sold back to the CEB, but the calculator does not count that income, so the real saving may be higher.",
     "grantNote": "Grant: {share} % of the cost of an approved system, up to {max} per household."
+  },
+  "email": {
+    "greeting": "Hello {name},",
+    "greetingTeam": "Hello Soley team,",
+    "footer": {
+      "independent": "Soley is an independent service. We are not the CEB, the government or an installer.",
+      "contact": "Questions? Reply to this e-mail or write to {email}."
+    },
+    "requestReceived": {
+      "subject": "We have your request {reference}",
+      "body1": "Thank you. Your request {reference} has arrived. We are now matching it with up to three vetted installers in your district.",
+      "body2": "They will contact you the way you asked, and their quotes will appear in your account so you can compare them side by side. You are never obliged to accept a quote.",
+      "button": "See my request"
+    },
+    "adminNewRequest": {
+      "subject": "New request {reference}",
+      "body": "A new quote request {reference} has arrived from {region}.",
+      "button": "Open the request"
+    },
+    "newLead": {
+      "subject": "New solar request in {region}",
+      "body1": "Soley has a new request for you in {region} (electricity bill about {bill} a month).",
+      "body2": "Please accept or decline it within 48 hours. You see the household's contact details once you accept. The lead fee only applies to requests you accept.",
+      "button": "Open the request"
+    },
+    "leadReminder": {
+      "subject": "A household is waiting for your answer",
+      "body": "You have a request on Soley that you have not answered yet. Please accept or decline it, so the household is not kept waiting."
+    },
+    "newQuote": {
+      "subject": "New quote from {company}",
+      "body1": "{company} has sent a quote for your request {reference}.",
+      "body2": "You now have {count, plural, one {# quote} other {# quotes}} to compare side by side. Take your time: you are never obliged to accept.",
+      "button": "Compare my quotes"
+    },
+    "quoteReminder": {
+      "subject": "Your solar quotes are ready to compare",
+      "body": "Your quotes are waiting in your Soley account. When you have chosen, tell us there so the other installers know. If none suits you, you can decline them all."
+    },
+    "quoteWon": {
+      "subject": "You were chosen for {reference}",
+      "body": "Good news: the household chose your quote. Please contact them to confirm the next steps, and help them register the system with the CEB."
+    },
+    "quoteLost": {
+      "subject": "Request {reference}: another quote was chosen",
+      "body": "The household chose another quote this time. Thank you for your offer."
+    },
+    "reviewInvite": {
+      "subject": "How did your installation with {company} go?",
+      "body": "We hope your solar system is working well. A short review of {company} helps other households in Mauritius choose with confidence.",
+      "button": "Write a review"
+    },
+    "applicationReceived": {
+      "subject": "We have received your application",
+      "body1": "Thank you for applying to become a Soley partner with {company}.",
+      "body2": "Our team in Mauritius will check your documents and contact you to arrange a visit. We will let you know our decision by e-mail."
+    },
+    "adminNewApplication": {
+      "subject": "New installer application: {company}",
+      "body": "{company} has applied to become a partner installer.",
+      "button": "Review the application"
+    },
+    "installerApproved": {
+      "subject": "Welcome to Soley",
+      "body": "{company} is now a vetted Soley partner. You will receive requests from your regions by e-mail. Sign in with this e-mail address to answer them.",
+      "button": "Sign in to the portal"
+    },
+    "installerRejected": {
+      "subject": "Your Soley application",
+      "body": "Thank you for applying with {company}. We cannot approve the application at the moment. Reply to this e-mail if you have questions or want to apply again later."
+    },
+    "magicLink": {
+      "subject": "Your Soley sign-in link",
+      "greeting": "Hello,",
+      "body": "Use the button below to sign in to Soley. The link works once and expires in one hour. If you did not ask for it, you can ignore this e-mail.",
+      "button": "Sign in"
+    }
+  },
+  "quoteForm": {
+    "metaTitle": "Get up to three solar quotes",
+    "metaDescription": "Tell us about your home and your electricity bill. Soley passes your request to up to three vetted installers in your district. Free, no obligation.",
+    "title": "Get up to three quotes",
+    "intro": "Five short steps, about three minutes. Your answers are saved on this device as you go, so nothing is lost if you are interrupted.",
+    "stepOf": "Step {current} of {total}",
+    "progress": "Progress",
+    "steps": {
+      "home": "Your home",
+      "usage": "Electricity",
+      "location": "District",
+      "plan": "Timing and financing",
+      "contact": "Contact details"
+    },
+    "draftRestored": "We restored the answers you started earlier.",
+    "clearDraft": "Start again",
+    "fields": {
+      "property_type": {
+        "legend": "What type of property is it?",
+        "house": "House",
+        "apartment": "Apartment",
+        "other": "Other"
+      },
+      "ownership": {
+        "legend": "Do you own it?",
+        "owner": "I own it",
+        "tenant": "I rent it"
+      },
+      "ownershipTenantNote": "Tenants need the owner's written permission before an installation. Installers can tell you what is needed.",
+      "roof_type": {
+        "legend": "What is the roof made of?",
+        "concrete_flat": "Flat concrete roof",
+        "sheet_metal": "Sheet metal",
+        "tiles": "Tiles",
+        "other": "Other or not sure"
+      },
+      "roof_area_m2": {
+        "label": "Usable roof area (m²)",
+        "hint": "Leave empty if you are not sure. The installer will measure it."
+      },
+      "shading": {
+        "legend": "Is the roof in shade during the day?",
+        "none": "No shade",
+        "some": "Some shade",
+        "a_lot": "A lot of shade",
+        "unknown": "Not sure"
+      },
+      "monthly_bill_mur": {
+        "label": "Average monthly electricity bill (Rs)",
+        "hint": "Look at a recent CEB bill."
+      },
+      "battery_interest": {
+        "legend": "Are you interested in a battery?",
+        "hint": "A battery stores solar power for the evening and for power cuts. It adds to the cost.",
+        "yes": "Yes",
+        "no": "No",
+        "unsure": "Not sure, advise me"
+      },
+      "desired_kwp": {
+        "label": "Size you have in mind (kWp)",
+        "hint": "Leave empty and the installers will recommend one."
+      },
+      "region": {
+        "label": "District",
+        "hint": "We only send your request to installers who work in this district."
+      },
+      "town": {
+        "label": "Town or village",
+        "hint": "Helps installers plan a visit."
+      },
+      "timeline": {
+        "legend": "When would you like the installation?",
+        "asap": "As soon as possible",
+        "3_months": "Within 3 months",
+        "6_months": "Within 6 months",
+        "exploring": "I am just exploring"
+      },
+      "financing": {
+        "legend": "How do you plan to pay?",
+        "cash": "From savings",
+        "dbm_loan": "Loan from the Development Bank of Mauritius",
+        "bank_loan": "Loan from another bank",
+        "unsure": "Not sure yet"
+      },
+      "grant_interest": {
+        "label": "I want to apply for the government grant",
+        "hint": "Installers will quote for a system that qualifies and can help with the paperwork."
+      },
+      "name": {
+        "label": "Your name"
+      },
+      "email": {
+        "label": "E-mail",
+        "hint": "We send your confirmation and a link to compare your quotes here."
+      },
+      "phone": {
+        "label": "Phone"
+      },
+      "whatsapp": {
+        "label": "WhatsApp number",
+        "hint": "Only if it differs from your phone number."
+      },
+      "preferred_contact": {
+        "legend": "How should installers contact you?",
+        "phone": "Phone call",
+        "whatsapp": "WhatsApp",
+        "email": "E-mail"
+      },
+      "notes": {
+        "label": "Anything else installers should know?"
+      }
+    },
+    "consent": {
+      "label": "I agree that Soley shares my request and contact details with at most three vetted installers in my district so they can send me a quote. I have read the privacy policy.",
+      "privacyLink": "Read the privacy policy",
+      "note": "You can withdraw your consent and delete your details at any time from your account.",
+      "short": "Consent"
+    },
+    "turnstileLabel": "Security check",
+    "submit": "Send my request",
+    "errors": {
+      "rateLimited": "Too many requests from this connection. Please try again in an hour, or contact us on WhatsApp.",
+      "captcha": "The security check failed. Please try again.",
+      "server": "Something went wrong on our side. Your answers are saved; please try again in a moment."
+    },
+    "thankYou": {
+      "metaTitle": "Request received",
+      "title": "Thank you, your request has arrived",
+      "reference": "Your reference: {reference}",
+      "next": "What happens next",
+      "step1": "We send your request to up to three vetted installers in your district. You get an e-mail confirmation now.",
+      "step2": "The installers contact you the way you asked, usually within two working days, and may visit to check the roof.",
+      "step3": "Their quotes appear in your account. Sign in with your e-mail address to compare them side by side and choose.",
+      "account": "Go to my account",
+      "grant": "Meanwhile: read the grant guide"
+    }
+  },
+  "validation": {
+    "required": "Please fill in this field.",
+    "number": "Please enter a number.",
+    "email": "Please enter a valid e-mail address.",
+    "phone": "Please enter a valid phone number, for example +230 5123 4567.",
+    "tooLong": "This is too long.",
+    "tooSmall": "This value is too small.",
+    "tooLarge": "This value is too large.",
+    "consent": "Please tick this box to continue.",
+    "invalid": "Please check this field.",
+    "fileType": "Please upload a PDF, JPG or PNG file.",
+    "fileSize": "Each file must be smaller than 5 MB.",
+    "summaryTitle": "Please check {count, plural, one {# field} other {# fields}}:"
   }
 }

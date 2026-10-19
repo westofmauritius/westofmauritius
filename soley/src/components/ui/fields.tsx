@@ -195,7 +195,10 @@ export function RadioCards({
   hint,
   columns = 2,
   required,
+  id,
 }: {
+  /** Set on the first option, so error links can focus the group. */
+  id?: string;
   legend: string;
   name: string;
   options: readonly (Option & { description?: string })[];
@@ -219,7 +222,7 @@ export function RadioCards({
           columns === 3 && "sm:grid-cols-3",
         )}
       >
-        {options.map((option) => (
+        {options.map((option, index) => (
           <label
             key={option.value}
             className={cn(
@@ -230,6 +233,7 @@ export function RadioCards({
             )}
           >
             <input
+              id={index === 0 ? id : undefined}
               type="radio"
               name={name}
               value={option.value}
