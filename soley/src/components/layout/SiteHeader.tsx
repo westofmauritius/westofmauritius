@@ -43,7 +43,7 @@ export async function SiteHeader() {
           </Link>
           <ButtonLink
             href="/get-quotes"
-            className="hidden whitespace-nowrap sm:inline-flex"
+            className="whitespace-nowrap max-[359px]:hidden"
           >
             {t("getQuotes")}
           </ButtonLink>

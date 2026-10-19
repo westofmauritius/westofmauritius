@@ -17,7 +17,6 @@
     "estimateNote": "Tous les chiffres sont des estimations fondées sur des valeurs moyennes. Seul le devis d’un installateur donne un prix réel.",
     "placeholderPhoto": "Illustration provisoire. De vraies photos de maisons mauriciennes la remplaceront.",
     "source": "Source : {source}",
-    "sourceWithDate": "Source : {source}, {date}",
     "lastChecked": "Dernière vérification : {date}",
     "optional": "(facultatif)",
     "back": "Retour",
@@ -187,5 +186,56 @@
     "title": "Une erreur s’est produite",
     "body": "Veuillez réessayer. Si le problème persiste, contactez-nous.",
     "retry": "Réessayer"
+  },
+  "calculator": {
+    "metaTitle": "Calculateur d’économies solaires pour Maurice",
+    "metaDescription": "Estimez la taille du système solaire, son coût, la subvention de l’État, l’économie annuelle et le temps de retour pour votre maison à Maurice, à partir de votre facture.",
+    "title": "Calculateur d’économies solaires",
+    "intro": "Commencez par votre facture d’électricité mensuelle. Le calculateur estime la taille du système, le coût, la subvention de l’État, votre coût net et le temps de retour sur investissement.",
+    "billLabel": "Facture d’électricité mensuelle (Rs)",
+    "billHint": "Un mois moyen. Consultez une facture récente du CEB.",
+    "sizingLegend": "Comment dimensionner le système ?",
+    "sizing": {
+      "bill": "D’après ma facture",
+      "roof": "D’après la surface de mon toit",
+      "size": "Je connais la taille"
+    },
+    "roofLabel": "Surface de toit utilisable (m²)",
+    "roofHint": "Surface ensoleillée, sans réservoirs d’eau ni ombre.",
+    "kwpLabel": "Taille du système (kWc)",
+    "kwpHint": "Par exemple 3 ou 5.",
+    "regionLabel": "District",
+    "regionHint": "Pour trouver des installateurs près de chez vous.",
+    "regionPlaceholder": "Choisissez un district",
+    "batteryLegend": "Ajouter une batterie ?",
+    "resultsTitle": "Votre estimation",
+    "empty": "Indiquez votre facture mensuelle pour voir une estimation.",
+    "result": {
+      "size": "Taille recommandée",
+      "coverage": "Couvre environ {percent} % de votre consommation",
+      "limitedByRoof": "Limitée par la surface de votre toit",
+      "cost": "Coût estimé",
+      "grant": "Subvention de l’État ({share} %)",
+      "grantCapped": "Plafonnée à {max}",
+      "netCost": "Votre coût net",
+      "saving": "Économie par an",
+      "production": "Environ {kwh} kWh par an",
+      "payback": "Temps de retour",
+      "paybackValue": "{years} ans"
+    },
+    "cta": "Recevoir des devis pour ce système",
+    "assumptionsTitle": "Comment l’estimation est calculée",
+    "assumptionsIntro": "Le calculateur utilise des valeurs moyennes. Notre équipe les revoit et vous pouvez toutes les voir ici. Un vrai devis les remplace par les prix réels de votre installateur.",
+    "assumptions": {
+      "tariffMurPerKwh": "Prix de l’électricité : {value} Rs par kWh",
+      "sunHoursPerDay": "Ensoleillement : {value} heures d’ensoleillement maximal par jour",
+      "performanceRatio": "Rendement du système : {value}",
+      "costPerKwpMur": "Prix installé : {value} Rs par kWc",
+      "batteryCostMur": "Batterie : {value} Rs",
+      "roofM2PerKwp": "Surface de toit : {value} m² par kWc"
+    },
+    "placeholderValue": "Moyenne provisoire",
+    "surplusNote": "Le surplus d’électricité peut être revendu au CEB, mais le calculateur ne compte pas ce revenu : l’économie réelle peut donc être plus élevée.",
+    "grantNote": "Subvention : {share} % du coût d’un système agréé, jusqu’à {max} par ménage."
   }
 }

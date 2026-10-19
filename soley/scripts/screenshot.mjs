@@ -7,6 +7,7 @@ const browser = await chromium
 const page = await browser.newPage({
   viewport: { width: Number(width), height: 844 },
 });
-await page.goto(url, { waitUntil: "networkidle" });
+await page.goto(url, { waitUntil: "load" });
+await page.waitForTimeout(500);
 await page.screenshot({ path: out, fullPage: true });
 await browser.close();

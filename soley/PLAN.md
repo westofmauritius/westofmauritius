@@ -205,3 +205,12 @@ mobile menu, footer with the independence notice, language switcher
 (Plausible only after a yes), the start page with Organization and FAQPage
 structured data, and `content/facts.ts` with every sourced fact.
 Left for later: the calculator on the start page (milestone 2).
+
+### Milestone 2: Calculator (done)
+
+Built: `src/lib/calculator.ts` (pure function, 10 unit tests) and the
+calculator form with live results, on the start page right below the
+promise and on its own page (`/en/calculator`, `/fr/calculateur`), which
+lists every assumption with a "provisional average" label on placeholders.
+The "Get quotes" button carries the answers over to the quote form.
+Left for later: settings from the database (milestone 3/5).

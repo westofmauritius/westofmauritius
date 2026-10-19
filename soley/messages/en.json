@@ -17,7 +17,6 @@
     "estimateNote": "All figures are estimates based on average values. Only an installer's quote gives a real price.",
     "placeholderPhoto": "Placeholder illustration. Real photos of Mauritian homes will replace it.",
     "source": "Source: {source}",
-    "sourceWithDate": "Source: {source}, {date}",
     "lastChecked": "Last checked: {date}",
     "optional": "(optional)",
     "back": "Back",
@@ -187,5 +186,56 @@
     "title": "Something went wrong",
     "body": "Please try again. If the problem continues, contact us.",
     "retry": "Try again"
+  },
+  "calculator": {
+    "metaTitle": "Solar savings calculator for Mauritius",
+    "metaDescription": "Estimate the solar system size, cost, government grant, yearly saving and payback time for your home in Mauritius, from your electricity bill.",
+    "title": "Solar savings calculator",
+    "intro": "Start with your monthly electricity bill. The calculator estimates the system size, the cost, the government grant, your net cost and the payback time.",
+    "billLabel": "Monthly electricity bill (Rs)",
+    "billHint": "An average month. Check a recent CEB bill.",
+    "sizingLegend": "How should we size the system?",
+    "sizing": {
+      "bill": "From my bill",
+      "roof": "From my roof area",
+      "size": "I know the size"
+    },
+    "roofLabel": "Usable roof area (m²)",
+    "roofHint": "Sunny area free of water tanks and shade.",
+    "kwpLabel": "System size (kWp)",
+    "kwpHint": "For example 3 or 5.",
+    "regionLabel": "District",
+    "regionHint": "Used to find installers near you.",
+    "regionPlaceholder": "Choose a district",
+    "batteryLegend": "Add a battery?",
+    "resultsTitle": "Your estimate",
+    "empty": "Enter your monthly bill to see an estimate.",
+    "result": {
+      "size": "Recommended size",
+      "coverage": "Covers about {percent} % of your use",
+      "limitedByRoof": "Limited by your roof area",
+      "cost": "Estimated cost",
+      "grant": "Government grant ({share} %)",
+      "grantCapped": "Capped at {max}",
+      "netCost": "Your net cost",
+      "saving": "Saving per year",
+      "production": "About {kwh} kWh a year",
+      "payback": "Payback time",
+      "paybackValue": "{years} years"
+    },
+    "cta": "Get quotes for this system",
+    "assumptionsTitle": "How the estimate works",
+    "assumptionsIntro": "The calculator uses average values. Our team reviews them, and you can see them all here. A real quote replaces them with your installer's actual prices.",
+    "assumptions": {
+      "tariffMurPerKwh": "Electricity price: Rs {value} per kWh",
+      "sunHoursPerDay": "Sun: {value} peak sun hours a day",
+      "performanceRatio": "System efficiency: {value}",
+      "costPerKwpMur": "Installed price: Rs {value} per kWp",
+      "batteryCostMur": "Battery: Rs {value}",
+      "roofM2PerKwp": "Roof area: {value} m² per kWp"
+    },
+    "placeholderValue": "Provisional average",
+    "surplusNote": "Surplus electricity can be sold back to the CEB, but the calculator does not count that income, so the real saving may be higher.",
+    "grantNote": "Grant: {share} % of the cost of an approved system, up to {max} per household."
   }
 }

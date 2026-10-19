@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import { Calculator } from "@/components/calculator/Calculator";
 import { Faq } from "@/components/home/Faq";
 import { HouseIllustration } from "@/components/home/HouseIllustration";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -83,29 +84,33 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       />
 
       {/* Hero: the promise and the calculator, both above the fold. */}
-      <section className="bg-gradient-to-b from-ocean-50 to-surface pt-8 pb-12 sm:pt-14">
+      <section className="bg-gradient-to-b from-ocean-50 to-surface pt-6 pb-6 sm:pt-14 sm:pb-12">
         <Container>
           <div className="grid items-center gap-8 lg:grid-cols-[1.1fr_1fr]">
             <div>
               <p className="inline-flex rounded-full bg-sun-100 px-3 py-1 text-sm font-bold text-ocean-900">
                 {t("grantBadge", { amount, share })}
               </p>
-              <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl">
+              <h1 className="mt-3 text-[2rem] sm:text-5xl lg:text-6xl">
                 {t("title")}
               </h1>
-              <p className="mt-4 max-w-xl text-lg text-ink-muted sm:text-xl">
+              <p className="mt-3 max-w-xl text-ink-muted sm:mt-4 sm:text-xl">
                 {t("intro")}
               </p>
-              <p className="mt-3 text-sm font-semibold text-ocean-700">
+              <p className="mt-3 hidden text-sm font-semibold text-ocean-700 sm:block">
                 {t("eyebrow")}
               </p>
-              <div className="mt-6 flex flex-wrap gap-3">
+              <div className="mt-5 flex flex-wrap gap-3">
                 <ButtonLink href="/get-quotes" size="lg">
                   {t("ctaQuotes")}
                 </ButtonLink>
-                <ButtonLink href="/calculator" size="lg" variant="ghost">
-                  {t("ctaCalculator")}
-                </ButtonLink>
+                {/* On phones the calculator follows right below, so the second
+                    button is left out there. */}
+                <span className="hidden sm:inline">
+                  <ButtonLink href="/calculator" size="lg" variant="ghost">
+                    {t("ctaCalculator")}
+                  </ButtonLink>
+                </span>
               </div>
             </div>
             <figure className="hidden lg:block">
@@ -114,6 +119,27 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
                 {tc("placeholderPhoto")}
               </figcaption>
             </figure>
+          </div>
+        </Container>
+      </section>
+
+      {/* The calculator, straight after the promise. */}
+      <section aria-labelledby="calc" id="calculator" className="pb-6">
+        <Container>
+          <SectionHeading
+            id="calc"
+            title={t("calculatorTitle")}
+            intro={t("calculatorIntro")}
+          />
+          <div className="mt-6">
+            <Calculator
+              headingLevel="h3"
+              settings={facts.calculator}
+              grant={{
+                sharePercent: facts.grantSharePercent,
+                maxMur: facts.grantMaxMur,
+              }}
+            />
           </div>
         </Container>
       </section>
