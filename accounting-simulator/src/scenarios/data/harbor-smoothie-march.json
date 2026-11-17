@@ -1,0 +1,1098 @@
+{
+  "id": "harbor-smoothie-march",
+  "title": "Your first month at Harbor Smoothie Co.",
+  "order": 1,
+  "company": {
+    "name": "Harbor Smoothie Co.",
+    "tagline": "Fresh smoothies and juices by the harbor",
+    "about": [
+      "Harbor Smoothie Co. is a small smoothie shop by the harbor. It sells smoothies and juices over the counter.",
+      "It also delivers smoothies on credit to local gyms and offices. Those customers get an invoice and pay later.",
+      "The company is fictional. Every name, invoice and number in this scenario is made up for practice."
+    ]
+  },
+  "learner": {
+    "role": "Junior accountant",
+    "reportsTo": "Daniel Brooks, Controller",
+    "about": [
+      "It is your first day. You join the finance team as a junior accountant.",
+      "Documents will land in your inbox during March. For each one you decide what to do and, where needed, you book it.",
+      "After every step you can see what changed in the books. Take your time. Nobody expects you to know everything on day one."
+    ]
+  },
+  "people": [
+    { "name": "Daniel Brooks", "role": "Controller", "note": "Your manager. Runs the books and the month end close." },
+    { "name": "Priya Raman", "role": "CFO", "note": "Owns the numbers and signs off big payments." },
+    { "name": "Maya Chen", "role": "Approver", "note": "Store manager. Approves invoices for the shop." },
+    { "name": "Leo Park", "role": "Purchasing", "note": "Orders fruit, cups and everything else the shop needs." },
+    { "name": "Sam Ortiz", "role": "Treasury", "note": "Looks after the bank account and the payment runs." }
+  ],
+  "period": { "label": "March 2026", "start": "2026-03-01", "end": "2026-03-31" },
+  "accounts": [
+    { "id": "cash", "code": "1000", "name": "Cash", "type": "asset", "cash": true },
+    { "id": "accounts_receivable", "code": "1100", "name": "Accounts receivable", "type": "asset" },
+    { "id": "inventory", "code": "1200", "name": "Inventory", "type": "asset" },
+    { "id": "prepaid_expenses", "code": "1300", "name": "Prepaid expenses", "type": "asset" },
+    { "id": "equipment", "code": "1500", "name": "Equipment", "type": "asset" },
+    {
+      "id": "accumulated_depreciation",
+      "code": "1510",
+      "name": "Accumulated depreciation",
+      "type": "asset",
+      "contra": true
+    },
+    { "id": "accounts_payable", "code": "2000", "name": "Accounts payable", "type": "liability" },
+    { "id": "accrued_expenses", "code": "2100", "name": "Accrued expenses", "type": "liability" },
+    { "id": "deferred_revenue", "code": "2200", "name": "Deferred revenue", "type": "liability" },
+    { "id": "bank_loan", "code": "2500", "name": "Bank loan", "type": "liability" },
+    { "id": "share_capital", "code": "3000", "name": "Share capital", "type": "equity" },
+    { "id": "retained_earnings", "code": "3100", "name": "Retained earnings", "type": "equity" },
+    { "id": "revenue", "code": "4000", "name": "Revenue", "type": "revenue" },
+    { "id": "cost_of_goods_sold", "code": "5000", "name": "Cost of goods sold", "type": "expense" },
+    { "id": "rent_expense", "code": "6000", "name": "Rent expense", "type": "expense" },
+    { "id": "salaries_expense", "code": "6100", "name": "Salaries expense", "type": "expense" },
+    { "id": "insurance_expense", "code": "6200", "name": "Insurance expense", "type": "expense" },
+    { "id": "utilities_expense", "code": "6300", "name": "Utilities expense", "type": "expense" },
+    { "id": "depreciation_expense", "code": "6400", "name": "Depreciation expense", "type": "expense" },
+    { "id": "interest_expense", "code": "7000", "name": "Interest expense", "type": "expense" },
+    { "id": "bank_fees", "code": "7100", "name": "Bank fees", "type": "expense" }
+  ],
+  "opening": {
+    "date": "2026-03-01",
+    "description": "Opening balances at 1 March",
+    "reference": "Opening",
+    "lines": [
+      { "account": "cash", "debit": 50000 },
+      { "account": "accounts_receivable", "debit": 8000 },
+      { "account": "inventory", "debit": 12000 },
+      { "account": "equipment", "debit": 36000 },
+      { "account": "accumulated_depreciation", "credit": 6000 },
+      { "account": "accounts_payable", "credit": 6000 },
+      { "account": "bank_loan", "credit": 30000 },
+      { "account": "share_capital", "credit": 20000 },
+      { "account": "retained_earnings", "credit": 44000 }
+    ]
+  },
+  "tasks": [
+    {
+      "id": "fruit-invoice",
+      "title": "Supplier invoice: fruit and frozen berries",
+      "from": "Coastal Fresh Produce",
+      "date": "2026-03-02",
+      "summary": "Invoice CFP 5521 for 4,000",
+      "documents": [
+        {
+          "kind": "invoice",
+          "title": "Invoice",
+          "from": { "name": "Coastal Fresh Produce", "address": "18 Market Road, Bayport" },
+          "to": { "name": "Harbor Smoothie Co.", "address": "2 Pier Street, Bayport" },
+          "number": "CFP 5521",
+          "date": "2026-03-02",
+          "dueDate": "2026-04-01",
+          "orderNumber": "PO 3107",
+          "lines": [
+            { "description": "Bananas, case of 18 kg", "quantity": 40, "unitPrice": 30, "amount": 1200 },
+            { "description": "Frozen mixed berries, 10 kg bag", "quantity": 50, "unitPrice": 40, "amount": 2000 },
+            { "description": "Mangoes, case of 6 kg", "quantity": 25, "unitPrice": 32, "amount": 800 }
+          ],
+          "total": 4000,
+          "notes": ["Payment terms: 30 days from invoice date."],
+          "stamp": { "text": "Matched to PO 3107 and delivery. Approved by Maya Chen", "tone": "good" }
+        }
+      ],
+      "steps": [
+        {
+          "id": "post",
+          "kind": "entry",
+          "prompt": "This invoice matches the purchase order and the delivery, and Maya has approved it. Book it in the journal.",
+          "hint": "The fruit is not used yet. It sits in the fridge until it goes into a smoothie. So it is something the company owns. And the company has not paid yet. Which account shows money the company owes to suppliers?",
+          "explanation": "Debit Inventory 4,000, because the company now owns more fruit. Credit Accounts payable 4,000, because the company owes the supplier and will pay within 30 days. No cash moves today.",
+          "correctFeedback": "Spot on. The fruit goes into Inventory, an asset, and the amount owed goes into Accounts payable, a liability. Cash does not change until Treasury pays the supplier.",
+          "entry": {
+            "date": "2026-03-02",
+            "description": "Coastal Fresh Produce, fruit and frozen berries",
+            "reference": "CFP 5521",
+            "lines": [
+              { "account": "inventory", "debit": 4000 },
+              { "account": "accounts_payable", "credit": 4000 }
+            ]
+          }
+        }
+      ],
+      "involved": [
+        { "role": "Purchasing", "action": "Leo created purchase order PO 3107 for 4,000." },
+        { "role": "Accounts payable", "action": "Matched the invoice to the order and the delivery note.", "you": true },
+        { "role": "Approver", "action": "Maya, the store manager, approved the invoice." },
+        { "role": "Accounts payable", "action": "Posted the invoice in the books.", "you": true },
+        { "role": "Treasury", "action": "Will pay it in a later payment run, within 30 days." }
+      ],
+      "learned": "A supplier invoice for stock increases Inventory and Accounts payable. Cash only moves when you pay."
+    },
+    {
+      "id": "cups-mismatch",
+      "title": "Supplier invoice that does not match",
+      "from": "PackRight Supplies",
+      "date": "2026-03-04",
+      "summary": "Invoice PR 8830 for 1,350",
+      "documents": [
+        {
+          "kind": "invoice",
+          "title": "Purchase order",
+          "from": { "name": "Harbor Smoothie Co.", "address": "2 Pier Street, Bayport" },
+          "to": { "name": "PackRight Supplies" },
+          "number": "PO 3112",
+          "date": "2026-02-24",
+          "lines": [
+            { "description": "Smoothie cups, 16 oz", "quantity": 3000, "unitPrice": 0.25, "amount": 750 },
+            { "description": "Flat lids with straw slot", "quantity": 3000, "unitPrice": 0.15, "amount": 450 }
+          ],
+          "total": 1200,
+          "notes": ["Ordered by Leo Park, Purchasing. Price agreed by phone on 24 February."]
+        },
+        {
+          "kind": "invoice",
+          "title": "Delivery note",
+          "from": { "name": "PackRight Supplies" },
+          "to": { "name": "Harbor Smoothie Co." },
+          "number": "DN 4471",
+          "date": "2026-03-03",
+          "orderNumber": "PO 3112",
+          "showPrices": false,
+          "lines": [
+            { "description": "Smoothie cups, 16 oz", "quantity": 3000, "amount": 0 },
+            { "description": "Flat lids with straw slot", "quantity": 3000, "amount": 0 }
+          ],
+          "total": 0,
+          "notes": ["Received in full by the shop on 3 March."]
+        },
+        {
+          "kind": "invoice",
+          "title": "Invoice",
+          "from": { "name": "PackRight Supplies", "address": "7 Dockside Lane, Bayport" },
+          "to": { "name": "Harbor Smoothie Co.", "address": "2 Pier Street, Bayport" },
+          "number": "PR 8830",
+          "date": "2026-03-04",
+          "dueDate": "2026-04-03",
+          "orderNumber": "PO 3112",
+          "lines": [
+            { "description": "Smoothie cups, 16 oz", "quantity": 3000, "unitPrice": 0.25, "amount": 750 },
+            { "description": "Flat lids with straw slot", "quantity": 3000, "unitPrice": 0.2, "amount": 600 }
+          ],
+          "total": 1350
+        }
+      ],
+      "steps": [
+        {
+          "id": "decide",
+          "kind": "choice",
+          "prompt": "Compare the three documents: the purchase order, the delivery note and the invoice. What do you do with this invoice?",
+          "hint": "Put the three documents side by side. Check quantities first, then prices, line by line. Do they all agree?",
+          "explanation": "Put it on hold and contact the supplier. The quantities match the order and the delivery, but the lids are charged at 0.20 instead of the agreed 0.15. That is 150 too much. You only post an invoice when the order, the delivery and the invoice agree. This check is called three way matching.",
+          "correctFeedback": "Well spotted. The lids are charged at 0.20 each, but Leo agreed 0.15. That is 150 too much on 3,000 lids. You put the invoice on hold and ask PackRight for a corrected invoice. Nothing goes into the books yet. This check of order, delivery and invoice is called three way matching, and it is one of the most useful habits in accounts payable.",
+          "options": [
+            {
+              "id": "post",
+              "label": "Post it for 1,350. The goods arrived, so the company owes the money.",
+              "feedback": "The goods did arrive, but the company only owes the agreed price. If you post 1,350, the company would pay 150 too much. Look at the lid price on each document."
+            },
+            {
+              "id": "post_po",
+              "label": "Post it for 1,200, the amount on the purchase order.",
+              "feedback": "Good thinking that 1,200 is the right amount. But you cannot post a different amount than the invoice says. The books must follow a valid document, so ask the supplier for a corrected invoice first."
+            },
+            {
+              "id": "hold",
+              "label": "Put it on hold and contact the supplier.",
+              "feedback": ""
+            },
+            {
+              "id": "approval",
+              "label": "Send it to Maya for approval so she can decide.",
+              "feedback": "Approval comes after the documents agree. Maya approves the spending, not a price error. Sort out the difference with the supplier first."
+            }
+          ],
+          "answer": "hold"
+        }
+      ],
+      "involved": [
+        { "role": "Purchasing", "action": "Leo created purchase order PO 3112 for 1,200." },
+        { "role": "Accounts payable", "action": "Compared order, delivery note and invoice and found a 150 price difference.", "you": true },
+        { "role": "Accounts payable", "action": "Put the invoice on hold and emailed PackRight for a corrected invoice.", "you": true },
+        { "role": "Purchasing", "action": "Leo confirmed to PackRight that the agreed lid price is 0.15." }
+      ],
+      "learned": "Three way matching: only post a supplier invoice when the order, the delivery and the invoice agree."
+    },
+    {
+      "id": "cups-corrected",
+      "title": "Corrected cups and lids invoice",
+      "from": "PackRight Supplies",
+      "date": "2026-03-09",
+      "summary": "Corrected invoice PR 8830C for 1,200",
+      "documents": [
+        {
+          "kind": "invoice",
+          "title": "Corrected invoice",
+          "from": { "name": "PackRight Supplies", "address": "7 Dockside Lane, Bayport" },
+          "to": { "name": "Harbor Smoothie Co.", "address": "2 Pier Street, Bayport" },
+          "number": "PR 8830C",
+          "date": "2026-03-09",
+          "dueDate": "2026-04-08",
+          "orderNumber": "PO 3112",
+          "lines": [
+            { "description": "Smoothie cups, 16 oz", "quantity": 3000, "unitPrice": 0.25, "amount": 750 },
+            { "description": "Flat lids with straw slot", "quantity": 3000, "unitPrice": 0.15, "amount": 450 }
+          ],
+          "total": 1200,
+          "notes": ["This invoice replaces invoice PR 8830. Sorry for the error on the lid price."],
+          "stamp": { "text": "Matched to PO 3112 and DN 4471. Approved by Maya Chen", "tone": "good" }
+        }
+      ],
+      "steps": [
+        {
+          "id": "post",
+          "kind": "entry",
+          "prompt": "PackRight sent a corrected invoice. It now matches the order and the delivery, and Maya approved it. Book it.",
+          "hint": "This works just like the fruit invoice. Cups and lids are stock the shop uses up when it sells smoothies.",
+          "explanation": "Debit Inventory 1,200 and credit Accounts payable 1,200. Cups and lids are part of what the shop sells, so they are inventory until they are used. The old invoice of 1,350 was never posted, so there is nothing to reverse.",
+          "correctFeedback": "Correct. Inventory goes up by 1,200 and so does Accounts payable. Because you held the wrong invoice, there is nothing to reverse now. That is the benefit of checking before posting.",
+          "entry": {
+            "date": "2026-03-09",
+            "description": "PackRight Supplies, cups and lids",
+            "reference": "PR 8830C",
+            "lines": [
+              { "account": "inventory", "debit": 1200 },
+              { "account": "accounts_payable", "credit": 1200 }
+            ]
+          }
+        }
+      ],
+      "involved": [
+        { "role": "Purchasing", "action": "Leo confirmed the corrected price with PackRight." },
+        { "role": "Accounts payable", "action": "Matched the corrected invoice to the order and delivery.", "you": true },
+        { "role": "Approver", "action": "Maya approved the corrected invoice." },
+        { "role": "Accounts payable", "action": "Posted the invoice.", "you": true }
+      ],
+      "learned": "When an invoice was held and never posted, a corrected invoice is simply posted. There is nothing to reverse."
+    },
+    {
+      "id": "rent-invoice",
+      "title": "Rent invoice for March",
+      "from": "Pier Street Properties",
+      "date": "2026-03-10",
+      "summary": "Invoice PSP 0312 for 3,000",
+      "documents": [
+        {
+          "kind": "invoice",
+          "title": "Invoice",
+          "from": { "name": "Pier Street Properties", "address": "40 Harbor Avenue, Bayport" },
+          "to": { "name": "Harbor Smoothie Co.", "address": "2 Pier Street, Bayport" },
+          "number": "PSP 0312",
+          "date": "2026-03-01",
+          "dueDate": "2026-03-31",
+          "lines": [{ "description": "Shop rent, 2 Pier Street, March 2026", "amount": 3000 }],
+          "total": 3000,
+          "notes": ["Please pay by 31 March."],
+          "stamp": { "text": "Not yet approved", "tone": "warn" }
+        }
+      ],
+      "steps": [
+        {
+          "id": "decide",
+          "kind": "choice",
+          "prompt": "There is no purchase order for rent. It is a fixed monthly cost under the lease. The company rule is that every invoice without a purchase order needs approval by the budget holder. What do you do first?",
+          "hint": "Without a purchase order, nobody has said yes to this cost yet. Who owns the shop budget?",
+          "explanation": "Send it to Maya, the store manager, for approval. Invoices without a purchase order need someone with budget authority to confirm the cost before it is booked. That control stops fake or wrong invoices from being paid.",
+          "correctFeedback": "Right. No purchase order means nobody has confirmed this cost yet, so it goes to Maya first. Approval is a simple control that protects the company from paying invoices it should not pay.",
+          "options": [
+            {
+              "id": "post",
+              "label": "Post it now. Rent is the same every month.",
+              "feedback": "Rent is predictable, but the rule still applies. Fake rent invoices are a known fraud trick. Someone with budget authority needs to confirm it first."
+            },
+            {
+              "id": "approval",
+              "label": "Send it to Maya, the store manager, for approval.",
+              "feedback": ""
+            },
+            {
+              "id": "pay",
+              "label": "Ask Treasury to pay it right away.",
+              "feedback": "Paying comes last. First it needs approval and then it needs to be in the books. Treasury pays approved invoices in the payment run."
+            },
+            {
+              "id": "hold",
+              "label": "Put it on hold and contact the landlord.",
+              "feedback": "Nothing on this invoice looks wrong, so there is nothing to ask the landlord. It just needs approval."
+            }
+          ],
+          "answer": "approval"
+        },
+        {
+          "id": "post",
+          "kind": "entry",
+          "title": "Maya approved it",
+          "prompt": "Maya approved the invoice. Now book it.",
+          "hint": "Rent for March is a cost of March. And the company has not paid the landlord yet.",
+          "explanation": "Debit Rent expense 3,000, because March rent is a cost of running the shop in March. Credit Accounts payable 3,000, because the company owes the landlord until Treasury pays.",
+          "correctFeedback": "Correct. Rent expense goes up, so March profit goes down by 3,000. The company owes the landlord, so Accounts payable goes up. Treasury will pay it later this month.",
+          "documents": [
+            {
+              "kind": "invoice",
+              "title": "Invoice",
+              "from": { "name": "Pier Street Properties", "address": "40 Harbor Avenue, Bayport" },
+              "to": { "name": "Harbor Smoothie Co.", "address": "2 Pier Street, Bayport" },
+              "number": "PSP 0312",
+              "date": "2026-03-01",
+              "dueDate": "2026-03-31",
+              "lines": [{ "description": "Shop rent, 2 Pier Street, March 2026", "amount": 3000 }],
+              "total": 3000,
+              "notes": ["Please pay by 31 March."],
+              "stamp": { "text": "Approved by Maya Chen on 10 March", "tone": "good" }
+            }
+          ],
+          "entry": {
+            "date": "2026-03-10",
+            "description": "Pier Street Properties, rent for March",
+            "reference": "PSP 0312",
+            "lines": [
+              { "account": "rent_expense", "debit": 3000 },
+              { "account": "accounts_payable", "credit": 3000 }
+            ]
+          }
+        }
+      ],
+      "involved": [
+        { "role": "Accounts payable", "action": "Received the invoice and sent it for approval.", "you": true },
+        { "role": "Approver", "action": "Maya approved the rent for March." },
+        { "role": "Accounts payable", "action": "Posted the invoice.", "you": true },
+        { "role": "Treasury", "action": "Will pay it before 31 March." }
+      ],
+      "learned": "Invoices without a purchase order need approval from the budget holder before they are booked."
+    },
+    {
+      "id": "payment-run-1",
+      "title": "Payment run",
+      "from": "Sam Ortiz, Treasury",
+      "date": "2026-03-12",
+      "summary": "Payment run for 6,000 sent from the bank",
+      "documents": [
+        {
+          "kind": "memo",
+          "from": "Sam Ortiz, Treasury",
+          "to": "Accounts payable",
+          "date": "2026-03-12",
+          "subject": "Payment run of 12 March is done",
+          "body": [
+            "Hi, the payment run is approved by Priya and sent from the bank today.",
+            "These are the invoices from February that were open on 1 March. Can you book the payments?"
+          ],
+          "table": {
+            "headers": ["Supplier", "Invoice", "Amount"],
+            "rows": [
+              ["Coastal Fresh Produce", "CFP 5390", 3800],
+              ["PackRight Supplies", "PR 8702", 2200],
+              ["Total", "", 6000]
+            ]
+          },
+          "stamp": { "text": "Paid from the bank on 12 March", "tone": "good" }
+        }
+      ],
+      "steps": [
+        {
+          "id": "post",
+          "kind": "entry",
+          "prompt": "Book the payment of the two supplier invoices from February.",
+          "hint": "The invoices were already booked in February, so the cost is already in the books. Paying them reduces what the company owes. What else goes down?",
+          "explanation": "Debit Accounts payable 6,000, because the company no longer owes these suppliers. Credit Cash 6,000, because the money left the bank. There is no expense here. The cost was booked in February when the invoices came in.",
+          "correctFeedback": "Exactly. Accounts payable goes down and Cash goes down. Profit does not change, because the cost was already booked when the invoices arrived. Paying a bill only settles a debt.",
+          "entry": {
+            "date": "2026-03-12",
+            "description": "Payment run, February supplier invoices",
+            "reference": "PAY 0312",
+            "lines": [
+              { "account": "accounts_payable", "debit": 6000 },
+              { "account": "cash", "credit": 6000 }
+            ]
+          }
+        }
+      ],
+      "involved": [
+        { "role": "Accounts payable", "action": "Prepared the list of invoices that were due.", "you": true },
+        { "role": "CFO", "action": "Priya approved the payment run in the bank." },
+        { "role": "Treasury", "action": "Sam released the payments from the bank." },
+        { "role": "Accounts payable", "action": "Booked the payments and marked the invoices as paid.", "you": true }
+      ],
+      "learned": "Paying a supplier reduces Cash and Accounts payable. It is not a new expense."
+    },
+    {
+      "id": "sales-gym",
+      "title": "Sales invoice to a gym chain",
+      "from": "Accounts receivable",
+      "date": "2026-03-14",
+      "summary": "Sales invoice HS 1041 to PeakFit Gyms for 9,000",
+      "documents": [
+        {
+          "kind": "invoice",
+          "title": "Sales invoice",
+          "from": { "name": "Harbor Smoothie Co.", "address": "2 Pier Street, Bayport" },
+          "to": { "name": "PeakFit Gyms", "address": "Three locations in Bayport" },
+          "number": "HS 1041",
+          "date": "2026-03-14",
+          "dueDate": "2026-04-13",
+          "lines": [
+            { "description": "Protein smoothies delivered, 1 to 14 March", "quantity": 450, "unitPrice": 12, "amount": 5400 },
+            { "description": "Green juices delivered, 1 to 14 March", "quantity": 400, "unitPrice": 9, "amount": 3600 }
+          ],
+          "total": 9000,
+          "notes": ["Payment terms: 30 days."]
+        },
+        {
+          "kind": "memo",
+          "from": "Maya Chen, Store manager",
+          "to": "Finance",
+          "date": "2026-03-14",
+          "subject": "Stock used for the PeakFit deliveries",
+          "body": ["The fruit, juice bases, cups and lids used for these deliveries cost 5,000 at purchase price."]
+        }
+      ],
+      "steps": [
+        {
+          "id": "revenue",
+          "kind": "entry",
+          "title": "Book the sale",
+          "prompt": "The smoothies were delivered and the invoice is sent. First, book the sale.",
+          "hint": "The shop earned the money by delivering the smoothies. But PeakFit pays later. Which asset shows money that customers owe the company?",
+          "explanation": "Debit Accounts receivable 9,000, because PeakFit owes the company. Credit Revenue 9,000, because the company earned it by delivering the smoothies in March. Revenue is recorded when it is earned, not when the cash comes in.",
+          "correctFeedback": "Correct. Revenue goes up by 9,000 because the work is done. PeakFit has not paid yet, so the company has a receivable. This is the accrual principle in action.",
+          "entry": {
+            "date": "2026-03-14",
+            "description": "PeakFit Gyms, smoothie deliveries",
+            "reference": "HS 1041",
+            "lines": [
+              { "account": "accounts_receivable", "debit": 9000 },
+              { "account": "revenue", "credit": 9000 }
+            ]
+          }
+        },
+        {
+          "id": "cogs",
+          "kind": "entry",
+          "title": "Book the cost of the stock used",
+          "prompt": "Now book the cost of the fruit, cups and lids used for these smoothies. Maya says it was 5,000.",
+          "hint": "The stock is gone, it went into the smoothies. So one asset goes down. The cost of what you sold is an expense with its own account.",
+          "explanation": "Debit Cost of goods sold 5,000 and credit Inventory 5,000. The stock left the fridge and the shelves, so Inventory goes down. Its cost becomes an expense in the same month as the sale. Matching the cost to the revenue shows the real margin.",
+          "correctFeedback": "Well done. Inventory goes down by 5,000 and Cost of goods sold goes up by 5,000. Now March shows both the 9,000 sale and the 5,000 it cost, so the margin is 4,000.",
+          "entry": {
+            "date": "2026-03-14",
+            "description": "Stock used for PeakFit deliveries",
+            "reference": "HS 1041",
+            "lines": [
+              { "account": "cost_of_goods_sold", "debit": 5000 },
+              { "account": "inventory", "credit": 5000 }
+            ]
+          }
+        }
+      ],
+      "involved": [
+        { "role": "Accounts receivable", "action": "Created sales invoice HS 1041 from the delivery list." },
+        { "role": "Controller", "action": "Daniel checked the prices against the PeakFit contract." },
+        { "role": "Accounts receivable", "action": "Sent the invoice to PeakFit." },
+        { "role": "Accounts receivable", "action": "Booked the sale and the cost of the stock used.", "you": true },
+        { "role": "Accounts receivable", "action": "Will follow up if PeakFit does not pay within 30 days." }
+      ],
+      "learned": "A sale on credit increases Accounts receivable and Revenue, and the stock used becomes Cost of goods sold."
+    },
+    {
+      "id": "customer-payment",
+      "title": "Customer payment",
+      "from": "Harbor Bank",
+      "date": "2026-03-16",
+      "summary": "Bayview Offices paid 8,000",
+      "documents": [
+        {
+          "kind": "bankStatement",
+          "bank": "Harbor Bank",
+          "accountName": "Harbor Smoothie Co., business account",
+          "period": "16 March 2026",
+          "lines": [
+            {
+              "date": "2026-03-16",
+              "description": "Incoming payment from Bayview Offices, ref HS 1029",
+              "amount": 8000,
+              "highlight": true
+            }
+          ]
+        },
+        {
+          "kind": "memo",
+          "from": "Accounts receivable",
+          "to": "Finance",
+          "date": "2026-03-16",
+          "subject": "Open customer invoices on 1 March",
+          "body": ["Invoice HS 1029 to Bayview Offices for February deliveries is still open for 8,000."],
+          "table": {
+            "headers": ["Customer", "Invoice", "Amount"],
+            "rows": [
+              ["Bayview Offices", "HS 1029", 8000],
+              ["Total", "", 8000]
+            ]
+          }
+        }
+      ],
+      "steps": [
+        {
+          "id": "think",
+          "kind": "choice",
+          "prompt": "Bayview Offices paid invoice HS 1029. How does this payment affect March revenue?",
+          "hint": "When were these smoothies delivered, and when was that sale booked?",
+          "explanation": "No effect on revenue. The smoothies were delivered in February and the sale was booked then, which created the receivable. Today the company just swaps one asset for another: the receivable becomes cash.",
+          "correctFeedback": "Right. The revenue was already booked in February when the smoothies were delivered. The payment only turns a receivable into cash.",
+          "options": [
+            {
+              "id": "up",
+              "label": "March revenue goes up by 8,000.",
+              "feedback": "This is a very common mistake. The sale was booked in February when the smoothies were delivered. Booking it again would count the same sale twice."
+            },
+            {
+              "id": "none",
+              "label": "No effect. The sale was already booked in February.",
+              "feedback": ""
+            },
+            {
+              "id": "deferred",
+              "label": "It is deferred revenue until April.",
+              "feedback": "Deferred revenue is for money received before the work is done. Here the work was done in February, before the payment."
+            }
+          ],
+          "answer": "none"
+        },
+        {
+          "id": "post",
+          "kind": "entry",
+          "title": "Book the payment",
+          "prompt": "Now book the payment.",
+          "hint": "Cash goes up. Which asset goes down because Bayview no longer owes the money?",
+          "explanation": "Debit Cash 8,000 and credit Accounts receivable 8,000. Total assets stay the same, they just change form.",
+          "correctFeedback": "Correct. Cash goes up and Accounts receivable goes down by the same amount. The income statement does not move at all.",
+          "entry": {
+            "date": "2026-03-16",
+            "description": "Bayview Offices pays invoice HS 1029",
+            "reference": "HS 1029",
+            "lines": [
+              { "account": "cash", "debit": 8000 },
+              { "account": "accounts_receivable", "credit": 8000 }
+            ]
+          }
+        }
+      ],
+      "involved": [
+        { "role": "Treasury", "action": "Sam saw the incoming payment on the bank statement." },
+        { "role": "Accounts receivable", "action": "Matched the payment to open invoice HS 1029." },
+        { "role": "Accounts receivable", "action": "Booked the payment and closed the invoice.", "you": true }
+      ],
+      "learned": "A customer payment turns a receivable into cash. It is not new revenue."
+    },
+    {
+      "id": "payroll",
+      "title": "Payroll",
+      "from": "Payroll",
+      "date": "2026-03-25",
+      "summary": "March salaries of 7,000 paid",
+      "documents": [
+        {
+          "kind": "payroll",
+          "period": "March 2026",
+          "payDate": "2026-03-25",
+          "employees": [
+            { "name": "Ana Lopez", "role": "Shift lead", "amount": 2600 },
+            { "name": "Ben Carter", "role": "Smoothie maker", "amount": 2200 },
+            { "name": "Chloe Ng", "role": "Smoothie maker and delivery", "amount": 2200 }
+          ],
+          "total": 7000,
+          "notes": [
+            "Approved by Priya Raman, CFO.",
+            "Practice simplification: payroll taxes and deductions are left out of this scenario."
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "post",
+          "kind": "entry",
+          "prompt": "Salaries for March were paid from the bank today. Book the payroll.",
+          "hint": "Salaries are a cost of running the shop this month. They were paid today, so which asset went down?",
+          "explanation": "Debit Salaries expense 7,000 and credit Cash 7,000. The staff worked in March, so it is a March cost, and it was paid straight away.",
+          "correctFeedback": "Correct. Salaries expense goes up and Cash goes down by 7,000. In a real company, payroll also has taxes and deductions that are owed to the government. They are left out here to keep the first month simple. You will meet them in a later scenario.",
+          "entry": {
+            "date": "2026-03-25",
+            "description": "Salaries for March",
+            "reference": "PAYROLL 03",
+            "lines": [
+              { "account": "salaries_expense", "debit": 7000 },
+              { "account": "cash", "credit": 7000 }
+            ]
+          }
+        }
+      ],
+      "involved": [
+        { "role": "Payroll", "action": "Calculated salaries from the hours and contracts." },
+        { "role": "CFO", "action": "Priya approved the payroll total." },
+        { "role": "Treasury", "action": "Sam paid the salaries from the bank." },
+        { "role": "Payroll", "action": "Sent the payroll summary to finance." },
+        { "role": "Controller", "action": "Booked the payroll.", "you": true }
+      ],
+      "learned": "Salaries paid are an expense of the month the staff worked."
+    },
+    {
+      "id": "loan-payment",
+      "title": "Loan payment",
+      "from": "Harbor Bank",
+      "date": "2026-03-26",
+      "summary": "Loan instalment of 1,200 paid",
+      "documents": [
+        {
+          "kind": "memo",
+          "from": "Harbor Bank, Business lending",
+          "to": "Harbor Smoothie Co.",
+          "date": "2026-03-26",
+          "subject": "Loan instalment for March",
+          "body": ["We have collected your monthly instalment from your business account. Here is how it is split."],
+          "table": {
+            "headers": ["Part", "Amount"],
+            "rows": [
+              ["Repayment of the loan", 1000],
+              ["Interest for March", 200],
+              ["Total collected", 1200]
+            ]
+          }
+        }
+      ],
+      "steps": [
+        {
+          "id": "post",
+          "kind": "entry",
+          "prompt": "The bank collected 1,200. Book the instalment. Look at how the bank split it.",
+          "hint": "Two different things happened here. Part of the money pays back the loan itself. The other part is the price of borrowing for a month. One reduces a liability, the other is a cost.",
+          "explanation": "Debit Bank loan 1,000, because the company now owes the bank less. Debit Interest expense 200, because interest is the cost of borrowing in March. Credit Cash 1,200 for the full amount that left the bank.",
+          "correctFeedback": "Nicely done. You split it in the right way. The 1,000 repayment reduces the loan and is not a cost. Only the 200 interest is an expense. Many beginners book the whole 1,200 as an expense, which would understate profit and overstate the loan.",
+          "entry": {
+            "date": "2026-03-26",
+            "description": "Harbor Bank, loan instalment for March",
+            "reference": "LOAN 03",
+            "lines": [
+              { "account": "bank_loan", "debit": 1000 },
+              { "account": "interest_expense", "debit": 200 },
+              { "account": "cash", "credit": 1200 }
+            ]
+          }
+        }
+      ],
+      "involved": [
+        { "role": "Treasury", "action": "Sam checked the amount the bank collected." },
+        { "role": "Controller", "action": "Split the instalment into repayment and interest using the loan schedule.", "you": true },
+        { "role": "Controller", "action": "Daniel reviewed the entry." }
+      ],
+      "learned": "A loan payment has two parts: repayment lowers the loan, interest is an expense."
+    },
+    {
+      "id": "insurance",
+      "title": "Annual insurance paid up front",
+      "from": "Shoreline Mutual Insurance",
+      "date": "2026-03-01",
+      "summary": "Policy for 12 months, 2,400 paid on 1 March",
+      "documents": [
+        {
+          "kind": "invoice",
+          "title": "Insurance invoice",
+          "from": { "name": "Shoreline Mutual Insurance", "address": "1 Lighthouse Square, Bayport" },
+          "to": { "name": "Harbor Smoothie Co.", "address": "2 Pier Street, Bayport" },
+          "number": "SMI 77210",
+          "date": "2026-03-01",
+          "lines": [
+            {
+              "description": "Shop insurance, cover from 1 March 2026 to 28 February 2027 (12 months)",
+              "amount": 2400
+            }
+          ],
+          "total": 2400,
+          "notes": ["Paid by bank transfer on 1 March. Thank you."],
+          "stamp": { "text": "Paid 1 March. Approved by Priya Raman", "tone": "good" }
+        }
+      ],
+      "steps": [
+        {
+          "id": "post",
+          "kind": "entry",
+          "prompt": "This policy was paid on 1 March, but the invoice only reached finance today. Book the payment. Think about which months the cover is for.",
+          "hint": "The company paid for twelve months of cover, and only one of those months is March. What do you call a cost that is paid before you use it?",
+          "explanation": "Debit Prepaid expenses 2,400 and credit Cash 2,400. The company paid for a full year of cover in advance. On 1 March nothing is used yet, so the whole amount is an asset. Each month, one twelfth becomes an expense. You will do that at month end.",
+          "correctFeedback": "Correct. You paid for a year of cover, so it is a prepaid expense, an asset, for now. At month end you move March's share of 200 to Insurance expense.",
+          "entry": {
+            "date": "2026-03-01",
+            "description": "Shoreline Mutual, annual shop insurance paid up front",
+            "reference": "SMI 77210",
+            "lines": [
+              { "account": "prepaid_expenses", "debit": 2400 },
+              { "account": "cash", "credit": 2400 }
+            ]
+          }
+        }
+      ],
+      "involved": [
+        { "role": "CFO", "action": "Priya chose the policy and approved the payment." },
+        { "role": "Treasury", "action": "Sam paid the premium on 1 March." },
+        { "role": "Controller", "action": "Booked it as a prepaid expense.", "you": true }
+      ],
+      "learned": "A cost paid in advance is a prepaid expense, an asset, until the months it covers go by."
+    },
+    {
+      "id": "customer-deposit",
+      "title": "Customer deposit",
+      "from": "Harbor Bank",
+      "date": "2026-03-27",
+      "summary": "Lighthouse Events paid 1,500 in advance",
+      "documents": [
+        {
+          "kind": "bankStatement",
+          "bank": "Harbor Bank",
+          "accountName": "Harbor Smoothie Co., business account",
+          "period": "27 March 2026",
+          "lines": [
+            {
+              "date": "2026-03-27",
+              "description": "Incoming payment from Lighthouse Events, deposit for catering",
+              "amount": 1500,
+              "highlight": true
+            }
+          ]
+        },
+        {
+          "kind": "memo",
+          "from": "Maya Chen, Store manager",
+          "to": "Finance",
+          "date": "2026-03-27",
+          "subject": "Catering for Lighthouse Events",
+          "body": [
+            "Lighthouse Events booked us for smoothie catering at their spring fair on 18 April.",
+            "They paid the full 1,500 up front. We deliver in April."
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "post",
+          "kind": "entry",
+          "prompt": "Book the money Lighthouse Events paid. The catering happens in April.",
+          "hint": "The money is in the bank, but the shop has not done the work yet. Until it does, does the company owe the customer something?",
+          "explanation": "Debit Cash 1,500 and credit Deferred revenue 1,500. The company has the money but has not earned it. If the event were cancelled, it would have to give the money back. So it is a liability until the catering is done in April. Then it becomes revenue.",
+          "correctFeedback": "Correct. Cash goes up, but this is not March revenue. The company still owes the catering, so the money sits in Deferred revenue, a liability. In April, after the event, it moves to Revenue.",
+          "entry": {
+            "date": "2026-03-27",
+            "description": "Lighthouse Events, deposit for April catering",
+            "reference": "DEP 0327",
+            "lines": [
+              { "account": "cash", "debit": 1500 },
+              { "account": "deferred_revenue", "credit": 1500 }
+            ]
+          }
+        }
+      ],
+      "involved": [
+        { "role": "Accounts receivable", "action": "Sent the catering quote and the request for payment." },
+        { "role": "Treasury", "action": "Sam saw the deposit arrive in the bank." },
+        { "role": "Accounts receivable", "action": "Booked it as deferred revenue.", "you": true }
+      ],
+      "learned": "Money received before the work is done is deferred revenue, a liability, not revenue."
+    },
+    {
+      "id": "payment-run-2",
+      "title": "Second payment run",
+      "from": "Sam Ortiz, Treasury",
+      "date": "2026-03-28",
+      "summary": "Rent of 3,000 paid",
+      "documents": [
+        {
+          "kind": "memo",
+          "from": "Sam Ortiz, Treasury",
+          "to": "Accounts payable",
+          "date": "2026-03-28",
+          "subject": "Payment run of 28 March is done",
+          "body": ["Only the rent was due before the end of the month, so this run had one payment."],
+          "table": {
+            "headers": ["Supplier", "Invoice", "Amount"],
+            "rows": [
+              ["Pier Street Properties", "PSP 0312", 3000],
+              ["Total", "", 3000]
+            ]
+          },
+          "stamp": { "text": "Paid from the bank on 28 March", "tone": "good" }
+        }
+      ],
+      "steps": [
+        {
+          "id": "post",
+          "kind": "entry",
+          "prompt": "Book the payment of the March rent invoice.",
+          "hint": "You already booked the rent expense when the invoice came in. What is left to settle?",
+          "explanation": "Debit Accounts payable 3,000 and credit Cash 3,000. The rent expense was booked on 10 March. Booking it again would double count it.",
+          "correctFeedback": "Correct. The rent expense is already in March from when you booked the invoice. Now the debt to the landlord is settled and cash goes down.",
+          "entry": {
+            "date": "2026-03-28",
+            "description": "Payment run, rent for March",
+            "reference": "PAY 0328",
+            "lines": [
+              { "account": "accounts_payable", "debit": 3000 },
+              { "account": "cash", "credit": 3000 }
+            ]
+          }
+        }
+      ],
+      "involved": [
+        { "role": "Accounts payable", "action": "Proposed the rent invoice for payment.", "you": true },
+        { "role": "Approver", "action": "Maya confirmed the invoice was still correct." },
+        { "role": "CFO", "action": "Priya approved the payment in the bank." },
+        { "role": "Treasury", "action": "Sam released the payment." },
+        { "role": "Accounts payable", "action": "Booked the payment.", "you": true }
+      ],
+      "learned": "When you book the invoice first and pay later, the payment only clears Accounts payable."
+    },
+    {
+      "id": "bank-reconciliation",
+      "title": "Bank reconciliation",
+      "from": "Daniel Brooks, Controller",
+      "date": "2026-03-31",
+      "summary": "Agree the books to the bank statement",
+      "documents": [
+        {
+          "kind": "reconciliation",
+          "date": "2026-03-31",
+          "bookBalance": 39900,
+          "bankBalance": 39875,
+          "notes": [
+            "Daniel: before we close March, the cash in our books must agree with the bank. Can you find the difference?"
+          ]
+        },
+        {
+          "kind": "bankStatement",
+          "bank": "Harbor Bank",
+          "accountName": "Harbor Smoothie Co., business account",
+          "period": "1 to 31 March 2026",
+          "openingBalance": 50000,
+          "closingBalance": 39875,
+          "lines": [
+            { "date": "2026-03-01", "description": "Shoreline Mutual Insurance, SMI 77210", "amount": -2400 },
+            { "date": "2026-03-12", "description": "Coastal Fresh Produce, CFP 5390", "amount": -3800 },
+            { "date": "2026-03-12", "description": "PackRight Supplies, PR 8702", "amount": -2200 },
+            { "date": "2026-03-16", "description": "Bayview Offices, HS 1029", "amount": 8000 },
+            { "date": "2026-03-25", "description": "Salaries March", "amount": -7000 },
+            { "date": "2026-03-26", "description": "Loan instalment", "amount": -1200 },
+            { "date": "2026-03-27", "description": "Lighthouse Events, deposit", "amount": 1500 },
+            { "date": "2026-03-28", "description": "Pier Street Properties, PSP 0312", "amount": -3000 },
+            { "date": "2026-03-31", "description": "Monthly account fee", "amount": -25 }
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "id": "find",
+          "kind": "choice",
+          "prompt": "Cash in the books is 39,900. The bank says 39,875. Tick through the statement against the Cash ledger on the right. What explains the 25 difference?",
+          "hint": "Open the Ledger tab and pick Cash. Every bank line should have a matching line in the ledger. Is there one that does not?",
+          "explanation": "The bank charged a 25 monthly account fee on 31 March. It is on the statement but not in the books, because no invoice came for it. Book it, and the books will agree with the bank.",
+          "correctFeedback": "Found it. The 25 monthly account fee is on the statement but not in the books. Bank fees often only show up on the statement, which is one reason we reconcile every month.",
+          "options": [
+            {
+              "id": "fee",
+              "label": "A 25 bank fee is on the statement but not in the books.",
+              "feedback": ""
+            },
+            {
+              "id": "customer",
+              "label": "A customer payment of 25 is not yet in the books.",
+              "feedback": "A missing customer payment would make the bank higher than the books. Here the bank is lower. Look for money out."
+            },
+            {
+              "id": "timing",
+              "label": "A supplier payment has not reached the bank yet.",
+              "feedback": "That can happen in real life, but every payment in the books is already on this statement. Look for a line on the statement that is not in the books."
+            },
+            {
+              "id": "bank_error",
+              "label": "The bank made a mistake. Ask them to correct it.",
+              "feedback": "Banks do make mistakes, but always check your own books first. There is a line on the statement you have not booked."
+            }
+          ],
+          "answer": "fee"
+        },
+        {
+          "id": "post",
+          "kind": "entry",
+          "title": "Book the bank fee",
+          "prompt": "Book the 25 bank fee so the books agree with the bank.",
+          "hint": "The fee is a cost, and it already left the bank account.",
+          "explanation": "Debit Bank fees 25 and credit Cash 25. Cash in the books is then 39,875, the same as the bank statement.",
+          "correctFeedback": "Done. Cash in the books is now 39,875, exactly what the bank says. The reconciliation is complete and Daniel can sign it off.",
+          "entry": {
+            "date": "2026-03-31",
+            "description": "Harbor Bank, monthly account fee",
+            "reference": "BANK 0331",
+            "lines": [
+              { "account": "bank_fees", "debit": 25 },
+              { "account": "cash", "credit": 25 }
+            ]
+          }
+        }
+      ],
+      "involved": [
+        { "role": "Treasury", "action": "Sam downloaded the March bank statement." },
+        { "role": "Controller", "action": "Compared the statement with the Cash ledger and found the fee.", "you": true },
+        { "role": "Controller", "action": "Booked the fee and prepared the reconciliation.", "you": true },
+        { "role": "Controller", "action": "Daniel reviewed and signed off the reconciliation." }
+      ],
+      "learned": "A bank reconciliation proves that cash in the books agrees with the bank, and catches items like fees."
+    },
+    {
+      "id": "month-end-close",
+      "title": "Month end close",
+      "from": "Daniel Brooks, Controller",
+      "date": "2026-03-31",
+      "summary": "Three adjustments before March is closed",
+      "documents": [],
+      "steps": [
+        {
+          "id": "insurance",
+          "kind": "entry",
+          "title": "Adjustment 1 of 3: insurance used in March",
+          "prompt": "One month of the insurance cover is now used. Move March's share out of Prepaid expenses.",
+          "hint": "The 2,400 covers twelve months. How much belongs to one month? It is now a cost, and the asset gets smaller.",
+          "explanation": "2,400 divided by 12 is 200. Debit Insurance expense 200 and credit Prepaid expenses 200. The other 2,200 stays as an asset for the eleven months still to come.",
+          "correctFeedback": "Correct. March carries 200 of insurance cost, and 2,200 stays in Prepaid expenses for April to February. You will repeat this every month until the cover runs out.",
+          "documents": [
+            {
+              "kind": "memo",
+              "from": "Daniel Brooks, Controller",
+              "to": "You",
+              "date": "2026-03-31",
+              "subject": "Close checklist, item 1: insurance",
+              "body": [
+                "We paid 2,400 on 1 March for twelve months of shop insurance. It sits in Prepaid expenses.",
+                "March is over, so one month of cover is used up."
+              ]
+            }
+          ],
+          "entry": {
+            "date": "2026-03-31",
+            "description": "Insurance used in March",
+            "reference": "CLOSE 1",
+            "lines": [
+              { "account": "insurance_expense", "debit": 200 },
+              { "account": "prepaid_expenses", "credit": 200 }
+            ]
+          }
+        },
+        {
+          "id": "utilities",
+          "kind": "entry",
+          "title": "Adjustment 2 of 3: electricity for March",
+          "prompt": "The electricity bill for March has not arrived yet. Book an estimate so March carries its own cost.",
+          "hint": "The shop used the electricity in March, so it is a March cost even without a bill. There is no invoice, so it is not Accounts payable. Which liability is for costs you owe but have not been billed for yet?",
+          "explanation": "Debit Utilities expense 450 and credit Accrued expenses 450. This is an accrual: you record a cost in the month it happens, using your best estimate. When the real bill arrives in April, you clear the accrual against it.",
+          "correctFeedback": "Correct. This is an accrual. March now carries its electricity cost even though the bill comes later. Accrued expenses holds the amount until the real invoice arrives.",
+          "documents": [
+            {
+              "kind": "memo",
+              "from": "Daniel Brooks, Controller",
+              "to": "You",
+              "date": "2026-03-31",
+              "subject": "Close checklist, item 2: electricity",
+              "body": [
+                "The electricity company bills us around the 10th of the next month.",
+                "Based on the last three bills and the meter reading on 31 March, our estimate for March is 450."
+              ]
+            }
+          ],
+          "entry": {
+            "date": "2026-03-31",
+            "description": "Estimated electricity for March",
+            "reference": "CLOSE 2",
+            "lines": [
+              { "account": "utilities_expense", "debit": 450 },
+              { "account": "accrued_expenses", "credit": 450 }
+            ]
+          }
+        },
+        {
+          "id": "depreciation",
+          "kind": "entry",
+          "title": "Adjustment 3 of 3: depreciation",
+          "prompt": "Book one month of depreciation on the blenders, fridges and counter.",
+          "hint": "36,000 spread over 3 years is how much per year, and then per month? The equipment itself stays at cost. The reduction goes into a separate contra account.",
+          "explanation": "36,000 over 3 years is 12,000 a year, or 1,000 a month. Debit Depreciation expense 1,000 and credit Accumulated depreciation 1,000. You do not credit Equipment directly. Keeping cost and accumulated depreciation apart shows both what was paid and how much is used up.",
+          "correctFeedback": "Correct. 36,000 over 36 months is 1,000 a month. Equipment stays at its cost of 36,000, and Accumulated depreciation grows to 7,000. The net book value is now 29,000.",
+          "documents": [
+            {
+              "kind": "memo",
+              "from": "Daniel Brooks, Controller",
+              "to": "You",
+              "date": "2026-03-31",
+              "subject": "Close checklist, item 3: depreciation",
+              "body": [
+                "Our equipment cost 36,000: blenders, fridges and the shop counter.",
+                "We depreciate it in equal amounts over 3 years, with nothing left at the end. This is called the straight line method."
+              ],
+              "table": {
+                "headers": ["Asset", "Cost", "Useful life"],
+                "rows": [
+                  ["Blenders, fridges and counter", 36000, "3 years"],
+                  ["Accumulated depreciation on 1 March", 6000, ""]
+                ]
+              }
+            }
+          ],
+          "entry": {
+            "date": "2026-03-31",
+            "description": "Depreciation of equipment for March",
+            "reference": "CLOSE 3",
+            "lines": [
+              { "account": "depreciation_expense", "debit": 1000 },
+              { "account": "accumulated_depreciation", "credit": 1000 }
+            ]
+          }
+        }
+      ],
+      "involved": [
+        { "role": "Controller", "action": "Daniel prepared the close checklist." },
+        { "role": "Controller", "action": "Booked the three adjustments.", "you": true },
+        { "role": "Controller", "action": "Daniel reviewed the trial balance and the statements." },
+        { "role": "CFO", "action": "Priya reviewed the March results and signed off the month." }
+      ],
+      "learned": "Month end adjustments put each cost in the right month: prepaid costs used, accrued costs and depreciation."
+    }
+  ],
+  "expected": {
+    "balances": {
+      "cash": 39875,
+      "accounts_receivable": 9000,
+      "inventory": 12200,
+      "prepaid_expenses": 2200,
+      "equipment": 36000,
+      "accumulated_depreciation": 7000,
+      "accounts_payable": 5200,
+      "accrued_expenses": 450,
+      "deferred_revenue": 1500,
+      "bank_loan": 29000,
+      "share_capital": 20000,
+      "retained_earnings": 44000,
+      "revenue": 9000,
+      "cost_of_goods_sold": 5000,
+      "rent_expense": 3000,
+      "salaries_expense": 7000,
+      "insurance_expense": 200,
+      "utilities_expense": 450,
+      "depreciation_expense": 1000,
+      "interest_expense": 200,
+      "bank_fees": 25
+    },
+    "netIncome": -7875
+  }
+}

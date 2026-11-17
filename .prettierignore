@@ -13,3 +13,5 @@ src/lib/generated
 public/og
 test-results
 playwright-report
+# A separate app with its own config and checks
+accounting-simulator

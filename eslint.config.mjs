@@ -17,6 +17,8 @@ const eslintConfig = defineConfig([
     ".wrangler/**",
     // Copied from node_modules by scripts/copy-maplibre-worker.mjs.
     "public/vendor/**",
+    // A separate app with its own config and checks.
+    "accounting-simulator/**",
   ]),
 ]);
 
