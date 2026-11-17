@@ -7,7 +7,9 @@ import path from "node:path";
 import type { Scenario } from "./types";
 import { validateScenario } from "./books";
 
-const DATA_DIR = path.join(process.cwd(), "src", "scenarios", "data");
+// Read at build time only; the ignore comment stops Next from tracing the
+// whole project folder into the server bundle.
+const DATA_DIR = path.join(/*turbopackIgnore: true*/ process.cwd(), "src", "scenarios", "data");
 
 export function loadScenarios(dir = DATA_DIR): Scenario[] {
   const files = fs.readdirSync(dir).filter((f) => f.endsWith(".json"));
